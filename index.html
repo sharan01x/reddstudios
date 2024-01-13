@@ -33,7 +33,11 @@
     gtag('config', 'G-XKBLWNVKJ9');
     </script>
     
+    
     <body class="appear-animate">
+
+        <!--Cursor Animation-->
+        <div id="cursor"></div>
         
         <!-- Page Loader -->        
         <div class="page-loader dark">
@@ -1057,6 +1061,35 @@
 
         </div>
         <!-- End Page Wrap -->
+
+        <!-- Cursor Animation -->
+        <script>
+            var cursor = document.getElementById('cursor');
+            var timeoutId, moveTimeoutId;
+        
+            document.addEventListener('mousemove', function(e) {
+                var x = e.clientX + Math.random() * 100 - 50; // Add or subtract up to 50px
+                var y = e.clientY + Math.random() * 100 - 50; // Add or subtract up to 50px
+        
+                // Clear the previous move timeout
+                clearTimeout(moveTimeoutId);
+        
+                // Set a new move timeout
+                moveTimeoutId = setTimeout(function() {
+                    cursor.style.left = x + 'px';
+                    cursor.style.top = y + 'px';
+                    cursor.style.opacity = 0.2; // Make the circle more transparent when in motion
+                }, 2000); // Delay in milliseconds before the circle starts moving
+        
+                // Clear the previous opacity timeout
+                clearTimeout(timeoutId);
+        
+                // Set a new opacity timeout
+                timeoutId = setTimeout(function() {
+                    cursor.style.opacity = 0.7; // Restore the original opacity when the mouse stops moving
+                }, 1500); // Delay in milliseconds
+            });
+        </script>
         
         
         <!-- JS -->

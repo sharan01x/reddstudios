@@ -6281,3 +6281,27 @@ table.shopping-cart-table tr td{
     -webkit-animation-duration: 1.2s;
     animation-duration: 1.2s;
 }
+
+
+/* ==============================
+   Cursor Animation Code
+   ============================== */
+
+@keyframes breathing {
+    0% { background-color: #ffff00; opacity: 0.4; }
+    50% { background-color: #ffdd00; opacity: 0.9; }
+    100% { background-color: #ffff00; opacity: 0.4; }
+}
+
+#cursor {
+    position: fixed;
+    height: 5px;
+    width: 5px;
+
+    border-radius: 50%;
+    pointer-events: none;
+    transition: top 1.5s ease-out, left 1.5s ease-out, opacity 0.5s ease-out;
+    z-index: 9999;
+    opacity: 0.2;
+    animation: breathing 2s infinite;
+}
