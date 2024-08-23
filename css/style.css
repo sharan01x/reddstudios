@@ -130,14 +130,39 @@ Primary use: Multipurpose Template
     font-display: swap;
 }
 
+/* 
+
+    CUSTOM FONT FOR REDD STUDIOS 
+    QuickSand for body copy
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..500&display=swap');
+
+.quicksand-300-light {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.quicksand-500-regular {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+
+
 
 /* ==============================
    Common styles
    ============================== */
 :root{
     scroll-behavior: auto;
-    --font-global: HK_Grotesk, arial, sans-serif;
-    --font-global-alt: HK_Grotesk_alt, arial, sans-serif;
+    --font-global: QuickSand, HK_Grotesk, arial, sans-serif;
+    --font-global-alt: QuickSand, HK_Grotesk_alt, arial, sans-serif;
 }
 html{
     overflow-y: scroll;
