@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redd Studios Blog</title>
+    <description>A space for raw ideas before they turn into something useful</description>
+    <link>http://localhost:4000/blog/</link>
+    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 24 Aug 2024 20:23:59 +0200</pubDate>
+    <lastBuildDate>Sat, 24 Aug 2024 20:23:59 +0200</lastBuildDate>
+    <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Designing a better feature request system</title>
+        <description>&lt;p&gt;&lt;em&gt;If we get feedback and feature requests from users regarding products we’ve built, we get valuable insights into understanding what the users want. This is a great place to involve LLMs to handle the issues involved in this process.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;This feedback system will do the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It will allow users to submit their feature requests&lt;/li&gt;
+  &lt;li&gt;To handle the problem of faster horses, it will produce a page where users can vote on things they didn’t think of before&lt;/li&gt;
+  &lt;li&gt;It will show a priority list to product teams that will allow them to understand what to develop next&lt;/li&gt;
+  &lt;li&gt;The same idea can be ported to handling bugs, but it needs to be a separate system altogether&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 06 Aug 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/feature-requests-made-better/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/feature-requests-made-better/</guid>
+        
+        <category>product</category>
+        
+        <category>design</category>
+        
+        
+        <category>Projects</category>
+        
+      </item>
+    
+      <item>
+        <title>DIY: A Raspberry Pi based Time Capsule</title>
+        <description>&lt;p&gt;&lt;em&gt;I built an efficient Apple Time Capsule clone that will perform the task of allowing any externally connected hard drive to be used as a backup destination using the Time Machine setup on your Mac.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what-this-is&quot;&gt;What this is&lt;/h2&gt;
+
+&lt;p&gt;If you want to build your own Apple Time Capsule clone using the Raspberry Pi and an external hard drive, this is the slimmest and most efficient solution that you could build in under an hour, without the bonus 3D printing bit in the end of course!&lt;/p&gt;
+
+&lt;p&gt;You may also be successful if you just follow the steps below, but there’s a step where you need to find your Raspberry Pi on your network and reserve a specific IP address in your router which I won’t be going into that may require some prior knowledge.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-unique-about-this-solution&quot;&gt;What’s unique about this solution&lt;/h2&gt;
+
+&lt;p&gt;This solution has the following characteristics that make it different from other solutions that you may have seen:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You don’t need any other software such as Open Media Vault, which is great if you want to do a whole bunch of other things, but is too much of an overhead if all you want to do is build a network backup solution&lt;/li&gt;
+  &lt;li&gt;This could be setup on very low horse-powered boards like the Raspberry Pi 3A+ as it runs with the services built into the OS&lt;/li&gt;
+  &lt;li&gt;This solution works with more than one Mac on your network&lt;/li&gt;
+  &lt;li&gt;It can do this for guest logins on a network and doesn’t require an account to be setup on the Pi, so this makes it easy to use for a home environment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;You need the following as a minimum:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Raspberry Pi 3 Model A+ with compatible power supply&lt;/li&gt;
+  &lt;li&gt;Micro SD Card with 4GB or more&lt;/li&gt;
+  &lt;li&gt;External hard drive of any capacity that is compatible with the Raspberry Pi’s USB port&lt;/li&gt;
+  &lt;li&gt;The drive will work with most laptops using different OS’s in case that’s needed at any time&lt;/li&gt;
+  &lt;li&gt;Raspberry Pi Imager software&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;software-setup&quot;&gt;Software Setup&lt;/h2&gt;
+
+&lt;h3 id=&quot;step-1-create-the-sd-card-image&quot;&gt;Step 1: Create the SD card image&lt;/h3&gt;
+
+&lt;p&gt;For this, simply do the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.1&lt;/strong&gt; Download the &lt;a href=&quot;https://www.raspberrypi.com/software/&quot;&gt;Raspberry Pi Imager&lt;/a&gt; software and open the file and follow the instructions to install the software on your Mac as you would any other software
+   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-9.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.2&lt;/strong&gt; Plug in the Micro SD card into your Mac. It doesn’t matter if it isn’t already formatted.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.3&lt;/strong&gt; Choose the Raspberry Pi OS Lite (64-bit) image to write to the Micro SD card
+   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-1.png&quot; /&gt;
+&lt;img src=&quot;../assets/images/timecapsule/timecapsule-2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/timecapsule/timecapsule-3.png&quot; /&gt;
+&lt;strong&gt;1.4&lt;/strong&gt; Choose the Micro SD card that you just inserted into your Mac as the storage destination and click ‘Next’
+   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-1.png&quot; /&gt;
+&lt;strong&gt;1.5&lt;/strong&gt; In the next step of OS customisation, make sure to Edit Settings and in the first tab
+   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-5.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.5.1&lt;/strong&gt; Setup the host name – this is the name of your Pi on the network. I’ve called mine “pinstripes”, but you could just call it “timecapsule” or anything else you’d like
+   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-6.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.5.2&lt;/strong&gt; User name and password for the machine. I suggest you set it to the default username and password for now which are ‘pi’ and ‘raspberry’. You can change this later if you’d like.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.5.3&lt;/strong&gt; Provide the SSID and password to enable it to connect to your Wifi network. You don’t need this if you’re using a different Raspberry Pi that connects using a LAN cable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.5.4&lt;/strong&gt; On the second tab called “Services”, make sure that you enable SSH and use the password authentication mechanism. This will allow you to remotely log into your Pi with the user name and password that you setup in the previous step.
+   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-7.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.5.5&lt;/strong&gt; Hit “Save” and in the next screen click “Yes” and then “Next” to begin the imaging step. You may need to type in your login and password for your computer to tell your computer that you authorise this action.&lt;/p&gt;
+
+&lt;p&gt;In about 15 minutes your Micro SD card is going to be ready. Just eject your card if not already done before pulling it out of your computer.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-initialise-your-pi-and-set-it-up-on-your-network&quot;&gt;Step 2: Initialise your Pi and set it up on your network&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;2.1&lt;/strong&gt; Setup the host name – this is the name of your Pi on the network, so you could just call it “timecapsule” for simplicity or name it anything else you’d likePlug in your Micro SD card into your Pi and then plug in the power cable to the Pi. After about 5 minutes, the Pi would have booted up and then connected to your network over Wifi (or LAN in case that’s how you’d connected). You don’t need to plug in your external hard drive to the Pi as yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.2&lt;/strong&gt;  Open up a Terminal window on a laptop on the network and type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ping timecapsule.local&lt;/code&gt;. Replace “timecapsule” with whatever you named your Pi in Step 1.5.1. This should return the IP address of your Pi on the network.
+   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-10.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.3&lt;/strong&gt;  Now type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arp -a&lt;/code&gt; and get the MAC addresses of all the devices connected to your network. Look for the Pi’s MAC address that corresponds to its IP address you found in the previous step.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.4&lt;/strong&gt; Now log into your router which assigns the IP addresses on your network and setup a fixed IP address for your Raspberry Pi’s MAC address. This whole thing may work without this address reservation, but I’ve never tested it. So if you absolutely cannot perform this step, just go through the rest and let me know if it works for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.5&lt;/strong&gt; If you’ve reserved a specific IP address for your Pi and it is different from the one it is currently assigned, you will need to reboot your Pi by turning off the power.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.6&lt;/strong&gt; Once your Pi comes back on your network, go back to your Terminal window and type in the following to log into your Pi through SSH - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh pi@192.168.0.10&lt;/code&gt; where ‘pi’ is the user name and the IP address is the one that you reserved for your Pi in step 2.4. If everything is setup properly, your Pi will ask you for a password and you could just type in ‘raspberry’ or whatever else you set up in Step 1.5.2.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3-prepare-your-external-hard-drive&quot;&gt;Step 3: Prepare your external hard drive&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;3.1&lt;/strong&gt; Get your external drive. Be sure you’re using a hard drive that doesn’t have any data that you want to retain as it will be lost forever once you’re done with this step. Connect the hard drive to your Mac.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.2&lt;/strong&gt; Use “Disk Utility” to Erase and initialise your external drive. Name the drive anything you’d like such as “TimeCapsule” but make sure to use “Exfat” and if asked, the “GUID” options for maximum compatibility of the drive across different OS’s. 
+&lt;img src=&quot;../assets/images/timecapsule/timecapsule-11.png&quot; /&gt;
+&lt;img src=&quot;../assets/images/timecapsule/timecapsule-12.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.3&lt;/strong&gt; Once the process is complete, eject your drive from your laptop. It is ready for plugging into your Pi in the next step.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4-get-the-software-setup&quot;&gt;Step 4: Get the software setup&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;4.1&lt;/strong&gt; While connected to your Pi through a Terminal window, do the following to update your Pi’s OS:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/timecapsule/timecapsule-13.png&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;1. `sudo apt update`
+2. `sudo apt upgrade`
+3. `sudo apt install exfat-fuse -y`
+4. `sudo apt install samba -y
+5. `sudo apt install avahi-daemon -y`
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2&lt;/strong&gt; Once the above packages are installed, let’s mount the external drive.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2.1&lt;/strong&gt; Plug in your external drive into the Pi&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2.2&lt;/strong&gt; Type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo df -Th&lt;/code&gt; which will list all the drives connected to the Pi. Find the identifier for your drive which should most likely be “sda2” but could be different too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2.3&lt;/strong&gt; Create a mount point by typing in the following commands &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir /mnt/timecapsule&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mount -t exfat /dev/sda2 /mnt/timecapsule&lt;/code&gt;. Just substitute “sda2” with whatever the drive’s identifier actually is.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2.4&lt;/strong&gt; Type in the following to find the UUID of your drive &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lsblk -f&lt;/code&gt; and all the drives connected to your Pi will show up (including the Micro SD card). Look for the UUID of the drive with the label ‘TimeCapsule’ if that’s what you named the drive in Step 3.2. Cross verify against the size of the drive to be sure. Copy the UUID into the clipboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2.5&lt;/strong&gt; To make the mount point persist across reboots of the Pi, you will need to add the following code to the file named “fstab”. You can do that by: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo nano /etc/fstab&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2.6&lt;/strong&gt; Paste the following in the end of the file  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UUID=your-uuid /mnt/timecapsule exfat defaults,uid=1000,gid=1000,umask=000 0 0&lt;/code&gt; but replace the UUID with the one you copied to the clipboard in the previous step.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2.7&lt;/strong&gt; Press Ctrl-X to save the file, Yes to write the buffer to file and enter to rewrite the file.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.3&lt;/strong&gt; Now write the configuration file to Samba, which is the file networking service that shows the drive on a network in a form that is compatible with Macs and Windows. To do this, you need to write the following code into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smb.conf&lt;/code&gt; file by typing in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo nano /etc/samba/smb.conf&lt;/code&gt; which should bring up the existing configurations in the file. Press the page down key on your keyboard to get to the end of the page and paste this and make sure the mount points are correct:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.4&lt;/strong&gt; Save the file as the other files in step 2.5.3 and then restart the service with the new configurations by typing in the command into your command prompt in the Terminal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl restart smbd&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.5&lt;/strong&gt; We’ve got to do the same for the avahi service configuration. To edit the file, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo nano /etc/avahi/services/samba.service&lt;/code&gt; and paste the following code. There are no changes needed to be made.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.6&lt;/strong&gt; Save the file as in step 2.5.3 and then restart the service by typing in the following command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl restart avahi-daemon&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I suggest restarting the device itself to make sure that it works even if it ends up restarting on it’s own in the future. To do this, type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo reboot now&lt;/code&gt; into your Terminal command prompt. This will disconnect your session and restart the Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;That’s it, you’re ready to go and setup the Time Machine backup from your Mac as always!&lt;/p&gt;
+
+&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
+
+&lt;p&gt;If for any reason you don’t see the newly setup drive when you are setting up Time Machine on your Mac, try to connect to the drive first on the network by going to the Finder &amp;gt; Go &amp;gt; Connect to Server and then typing in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smb://192.168.0.25&lt;/code&gt; replacing this with the IP address of your newly setup Time Capsule. You should be able to connect to the Raspberry Pi drive. Post that the Time Machine should automatically find the drive on the network. If for any reason this still doesn’t work, there’s probably some step above that you’ve missed. So give that a shot again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/timecapsule/timecapsule-14.png&quot; /&gt;
+&lt;img src=&quot;../assets/images/timecapsule/timecapsule-15.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;bonus-step&quot;&gt;Bonus Step&lt;/h2&gt;
+
+&lt;p&gt;Make a case for the Raspberry Pi and the hard drive to be situated together. I’m designing something for this purpose and should have a 3D printable file posted here soon. Check back in a bit. But if you’d like to print something else, look at the plethora of stuff that’s available to you on &lt;a href=&quot;https://www.printables.com/search/models?q=raspberry%20pi%203a+&amp;amp;ctx=models&quot;&gt;Printables&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 Aug 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/raspberry-pi-timecapsule/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/raspberry-pi-timecapsule/</guid>
+        
+        <category>DIY</category>
+        
+        <category>product</category>
+        
+        <category>design</category>
+        
+        
+        <category>Projects</category>
+        
+      </item>
+    
+      <item>
+        <title>Where the puck is going to be</title>
+        <description>&lt;p&gt;&lt;em&gt;Product design requires you to imagine the future version of a product, but how do you do it reliably? Ice Hockey may offer some insights.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;ice-hockey-and-product-design&quot;&gt;Ice Hockey and Product Design&lt;/h1&gt;
+
+&lt;p&gt;According to the Wayne Gretsky quote that goes, “I skate to where the puck is going to be, not where it is”, the way to win is to accurately anticipate the future outcomes as accurately as possible. The principle could be applied to product design too. The way to design a successful product is to know what the next version of the product is going to be. But the challenge of knowing what that is as challenging as judging where the hockey puck is going to be on the ice rink.&lt;/p&gt;
+
+&lt;p&gt;But while no one can be absolutely certain where exactly the puck is going to be on the rink at any given point in time, one thing everyone can be absolutely certain about is that the puck is headed towards the other team’s goal. In a similar way the product’s end goal is to suit the needs of the consumer perfectly.&lt;/p&gt;
+
+&lt;p&gt;The consumer is human. The form the product must then take is to suit the form of a human body. If the product is meant to be held, it must fit the hand perfectly. If it is meant to be worn on the ear, then it must fit various ear types. If it is meant to be used over a period of time, then it must use materials that will not strain the user during that period. In terms of the function it performs, it must serve the needs of the human as accurately while also needing as little effort as possible. The final version of the product therefore is possible to define, at least in the abstract. If it’s not a physical product, the final form is one that serves the needs of the user perfectly and is extremely simple to use.&lt;/p&gt;
+
+&lt;p&gt;Let me illustrate the idea with some examples. Consider the evolution of the USB cable. Type A USB cables required the user guess which way should be facing up before plugging it into a socket. Many users struggled with this and the act of plugging in the USB A cable into a socket was a hit or a miss &lt;em&gt;every time&lt;/em&gt;. Making the cable pluggable into a socket in either orientation therefore was obvious. Therefore that’s what happened in the future iteration of the USB C cable. 
+&lt;img src=&quot;../assets/images/USBCables.png&quot; /&gt;
+Another issue with the cable was that the sockets it plugged into on the other side was variable. There were the USB A plug, USB B plug, a mini USB plug and even a micro USB plug. You therefore had to have at least one cable of each type in order to be able to connect with various device types that one bought over time, not to mention the proprietary cables that were required by some devices like smart watches. Intuitively one can see that these were too many cables to basically perform the same task. Again, no wonder the USB C cable’s invention. As of the time of writing this article, the USB C cable too has various types, the ones that supply current and the ones that also transfer data. How long do you think that’s going to stay that way?&lt;/p&gt;
+
+&lt;p&gt;The same principle can be applied to Generative AI tools – do you think specialised prompts are going to be required much longer; computer keyboards – are they more convenient than speech;  or even subscription services – will Adobe get away with charging cancellation charges for their subscription service for much longer?&lt;/p&gt;
+
+&lt;p&gt;Or even consider the iPad. What was it’s evolution? I’d postulate that it came about because someone thought that the computers of the time were too “unnatural” for a human to use. Having a user type using a keyboard to communicate something or using a mouse or a track pad to point at something is a hard challenge for people who aren’t familiar with computers. Humans communicate by speaking, they point to things with their fingers. The iPad is a step in that direction. What would the future of this device be? Well, a computer that let’s a user express themselves with all the tools they have at their disposal – from communicating with their voice, pointing with their fingers or even setting the context of what they’re talking about by facing in a particular direction or looking at something with their eyes. The display of the iPad is an intermediate expression of the limitations of current technology. The computer of the future will not be something that is picked up and stared at with your head bent down. If you think the Apple Vision Pro headset is a step in that direction, I would agree that it is. But it’s not the end point.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/InstructionMethods.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The end point is something that will be even more seamless. It will be an assistant that the user can just converse with, something that can understand the full range of expressions that humans can emote with their faces, eyes, hand gestures, body positions and language and it will be seamless and something that is worn and always available. It will enable the user to do and perform everything they need in the real world but also to understand and appreciate everything much more.&lt;/p&gt;
+
+&lt;p&gt;For this to happen, we need a voice assistant with infinite knowledge and ability to learn about the human, wireless technologies that will seamlessly stay connected at all times, face tracking, body tracking, motion tracking, gesture tracking and even battery technology that will not only power something like this, but be in a form that is far more shaped like the person who will wear it.&lt;/p&gt;
+
+&lt;p&gt;These intermediate states therefore are not dictated not by the human being it is meant to serve, but by other constraints such as materials available, the tools, technologies, the people available to build that next version, legal and environmental constraints, the organisational politics, available marketing budgets or even the designer’s inability to understand who the user is. But knowing that these are necessary stages of evolution will allow the designers to keep their eye on the eventual goal. The task of the product designer or even the entrepreneur building this product is to negotiate the most efficient course between the current state of the product through to the final destination it is meant to be.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 24 Jul 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/where-the-puck-is-going-to-be/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/where-the-puck-is-going-to-be/</guid>
+        
+        <category>design</category>
+        
+        <category>opinion</category>
+        
+        
+        <category>Ideas</category>
+        
+      </item>
+    
+      <item>
+        <title>My experiments with 3D printing</title>
+        <description>&lt;p&gt;&lt;em&gt;My foray into the world of 3D printing and my learnings and insights so far. This is work in progress and will continue to be edited.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3d-printing-a-journey-into-a-promising-yet-challenging-field&quot;&gt;3D Printing: A Journey into a Promising, Yet Challenging Field&lt;/h1&gt;
+
+&lt;p&gt;Back in around 2015, I stumbled upon 3D printers during their nascent stage. The potential was clear, but the technology wasn’t quite there yet, and it was relegated to a niche space for tech enthusiasts. As a UX designer, my curiosity was piqued, especially considering the initial buzz surrounding its potential impact on ecommerce and logistics. However, being based in India at the time, affordability, availability of replacement parts, and local support were significant barriers to entry.&lt;/p&gt;
+
+&lt;p&gt;Fast forward to 2023, I was blown away by an amazing YouTube video showcasing a user designing and printing all the shelves he needed for his desk, as well as custom SD card holders. This experience resonated with me, reminding me of the excitement I get when visiting a hardware store or a craft shop, imagining the possibilities of creating useful things. I was eager to explore this technology further and get my hands on a 3D printer to discover what I could create.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-right-printer-for-me-balancing-usability-and-performance&quot;&gt;The Right Printer for Me: Balancing Usability and Performance&lt;/h2&gt;
+
+&lt;p&gt;As the 3D printing industry evolved, so did its focus on user experience. Although there are numerous resources available online for fine-tuning printers, many models offer excellent results straight out of the box.&lt;/p&gt;
+
+&lt;p&gt;In terms of the printing technologies, I narrowed down my choices to Fused Deposition Modelling (FDM) and Vat Polymerisation (VP) printers due to their popularity in the consumer space. VP printing introduced some unique challenges like the need for ventilation and dealing with smells arising from resin. Given that I wanted the printer to remain in my study, I opted for FDM. After thorough research, I selected a printer that offered ease of assembly, maintenance, and accessibility to support. The Bambu Labs X1 and Elegoo Neptune 4 Plus stood out, but ultimately, I went with the Neptune 4 due to its lower cost and absence of proprietary parts.&lt;/p&gt;
+
+&lt;h2 id=&quot;unboxing-and-setting-up-overcoming-challenges-together&quot;&gt;Unboxing and Setting Up: Overcoming Challenges Together&lt;/h2&gt;
+
+&lt;p&gt;The delivery took around a month due to pre-ordering, arriving during Christmas holidays, offering ample time for me to delve into learning about 3D printing. The setup was straightforward, but there were some complications like ensuring the correct cables were connected and checking voltage settings on the printer bed. Although these tasks weren’t particularly challenging for a technologically inclined user, they required careful attention and a bit of research to ensure a seamless experience.&lt;/p&gt;
+
+&lt;p&gt;Despite the occasional hurdles, the experience was rewarding, as I was able to build my 3D printer from scratch with all necessary tools supplied. The desktop software that came with the Neptune 4 pleasantly surprised me with pre-installed printable files of a tool stand for the printer!&lt;/p&gt;
+
+&lt;h2 id=&quot;designing-the-gap-in-the-ux-of-3d-modelling&quot;&gt;Designing: The Gap in the UX of 3D Modelling&lt;/h2&gt;
+
+&lt;p&gt;The design process in 3D modelling is complex and requires a good understanding of visualising 2D cross-sectional shapes to create 3D objects. Sculpting tools like Blender are suitable for creating aesthetically pleasing, non-functional designs, while functional 3D design tools like OnShape offer the best capabilities for product designers.&lt;/p&gt;
+
+&lt;p&gt;OnShape, a cloud-based platform, boasts responsive and great tools that keep users updated with the latest features. However, the pricing could use improvement to cater to hobbyists and make entry into this space more accessible. Simplifying design tools by incorporating user-friendly features specific to 3D printing would further enhance the overall UX.&lt;/p&gt;
+
+&lt;h2 id=&quot;design-marketplaces-tools-and-toys-for-everyone&quot;&gt;Design Marketplaces: Tools and Toys for Everyone&lt;/h2&gt;
+
+&lt;p&gt;Websites like &lt;a href=&quot;https://www.printables.com&quot;&gt;Printables&lt;/a&gt; and &lt;a href=&quot;https://www.thingiverse.com&quot;&gt;Thingiverse&lt;/a&gt; offer a wealth of user-generated designs, allowing anyone to download and print objects using their 3D printers. This sense of power to create and own is truly exhilarating, enabling users to go from ideation to tangible results in a matter of hours! However, there are challenges like inconsistent quality checks and potential issues with new designers’ designs not being fully optimised for mass consumption.&lt;/p&gt;
+
+&lt;p&gt;Improving the user experience could involve implementing better quality control measures or allowing experienced designers to review and approve new designs before they are released to the public. Additionally, providing more comprehensive information about dimensions, filament requirements, and print time would significantly improve the overall experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;printing-turning-ideas-into-reality&quot;&gt;Printing: Turning Ideas into Reality&lt;/h2&gt;
+
+&lt;p&gt;Printing in 3D isn’t without its challenges – files need to be converted from design formats (usually STL) to Gcode using slicing software like Cura before being printed. This step involves setting various parameters that determine the quality, strength, and speed of the final print. Although these steps are essential, they can be complex for new users. It is also not apparent to users that they may affect the final look of the object with the changes made to some of these settings.&lt;/p&gt;
+
+&lt;p&gt;Streamlining this process by incorporating it into authoring tools would greatly improve the user experience. Until then, there are numerous resources available online to help users learn the intricacies of 3D printing, allowing them to enjoy the satisfaction of turning their ideas into tangible objects.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion-a-promising-future&quot;&gt;Conclusion: A Promising Future&lt;/h1&gt;
+
+&lt;p&gt;The potential of 3D printing is immense, and I’m confident that significant improvements will be made to address the unique challenges in this space while keeping user experience at the forefront. Like with all the challenges solved in the 2D printing world, I envision 3D printers becoming an integral part of every household or as more likely, in the neighbourhood print shop. The key to realising this lies in simplifying the design authoring tools and making them accessible to everyone.&lt;/p&gt;
+
+&lt;h1 id=&quot;hurdles-and-insights&quot;&gt;Hurdles and Insights&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The plugging in of the cables for the gantry motors still requires some amount of understanding of connectors. This could be further simplified in future versions.&lt;/li&gt;
+  &lt;li&gt;The printer plate travels outside the frame of the printer itself which allows a user to make the mistake of placing it too close to a wall and having to learn &lt;em&gt;during printing&lt;/em&gt; that it needs to be moved. This could be explained as well.&lt;/li&gt;
+  &lt;li&gt;Going from 2D to 3D is incredibly difficult and staying in the 3D space from the start would be ideal, but the tools we have today are limited in their ability to express these ideas.&lt;/li&gt;
+  &lt;li&gt;Marketplaces are currently aimed at those that own 3D printers, whereas they should be aimed at the end-users of the products that are available on the sites.&lt;/li&gt;
+  &lt;li&gt;There are two outcomes to the world of 3D printers, they will either become a part of every household of the future as 2D printers today are, or they will become a part of every neighbourhood print shop.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 24 Jan 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/experiments-with-3d-printing/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/experiments-with-3d-printing/</guid>
+        
+        <category>3D</category>
+        
+        <category>design</category>
+        
+        
+        <category>Experiments</category>
+        
+      </item>
+    
+      <item>
+        <title>Review of the Rabbit R1</title>
+        <description>&lt;p&gt;&lt;em&gt;A detailed review of the newly launched Rabbit R1, exploring its hardware and software design, its strategic position in the market and its potential challenges&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;the-launch-of-something-new&quot;&gt;The Launch of Something New&lt;/h1&gt;
+
+&lt;p&gt;To say that the Rabbit team mimicked Steve Jobs’ keynote would be an understatement! The only thing missing was the Vera Wang turtleneck—it was a black t-shirt instead. Otherwise, the presentation featured the same slide style from Apple Keynote with the gradient, the same format, the hand gestures, and even the “One more thing…” announcement at the end. But OnePlus did this before too, turtleneck included. While it was considered cringe-worthy at the time, the product compensated for the lack of originality in the presentation. So, let’s not dwell on style and focus on the substance instead.&lt;/p&gt;
+&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+
+&lt;p&gt;The tech world has been in pursuit of two things over the past couple of years. The first is an answer to what will replace the smartphone. Depending on whom you ask, the smartphone has remained relatively unchanged since its debut in 2007. It has been upgraded in small ways with better screens, cameras, and sensors, but otherwise, the form factor has stayed largely the same since the beginning, despite some major flaws in the structure. But it’s been more than 16 years, Steve Jobs isn’t around, and everyone is looking for the smartphone killer.&lt;/p&gt;
+
+&lt;p&gt;Secondly, the success of OpenAI’s ChatGPT has demonstrated to everyone how powerful AI assistants can be. The open-source space has also made giant leaps with Llama 2 and Mistral AI models, and you can achieve the same capabilities as ChatGPT, and even the interface, running on your local computer with relative ease using tools like Ollama.&lt;/p&gt;
+
+&lt;p&gt;With the addition of vision, audio, and speech capabilities into AI models, they are now ready to move beyond the browser and integrate into people’s lives, understanding instructions within their own contexts. For this, they may need to leave desktop browser windows and move onto mobile phones instead. But mobile phones are still a reach-into-your-pockets-or-handbag away, and that’s not good enough either. People need something even more readily available. Enter Meta Ray-Ban, Humane’s AI Pin, etc.&lt;/p&gt;
+
+&lt;p&gt;Thirdly, these models have so far been hamstrung by their inability to perform actions on behalf of the user. They cannot yet click buttons on screens and other interfaces, and the OS architecture and security do not allow an app to interact with the interfaces of other apps as yet, and rightly so. But this also means that we have to duplicate actions and information across apps in order to achieve certain goals.&lt;/p&gt;
+
+&lt;p&gt;With this backdrop, I think we can evaluate what Rabbit R1 is doing much more accurately.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/RabbitR1-2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;hardware-design&quot;&gt;Hardware Design&lt;/h1&gt;
+
+&lt;p&gt;It seems they hired &lt;a href=&quot;https://twitter.com/@teenageengin33r&quot;&gt;Teenage Engineering&lt;/a&gt; (nice name), which appears to have a penchant for creating retro-futuristic tech products, reminiscent of Dieter Rams’ Braun designs. The design features a very cool, Lego-inspired shell that houses a great-looking touchscreen, a camera on a swivel, a scroll wheel, microphones, a slot for USB and SIM cards, and a push-button on the right side of the product. The touchscreen is a great addition, making interactions with apps, information delivery, and answering questions much faster than the audio-based delivery chosen by the AI Pin by Humane.&lt;/p&gt;
+
+&lt;p&gt;The camera on a swivel seems like a good idea, as the R1 can potentially scan the environment to find what a user may be referring to in their instructions. However, the plastic above the camera prevents the device from being held at an angle less than about 45 degrees, meaning the user must position the device almost vertically, like a smartphone, for the camera to see. This is odd, and I’m not sure why this choice was made.&lt;/p&gt;
+
+&lt;p&gt;Why not just position the camera on the very edge without the top plastic part causing an obstruction?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/RabbitR1-3.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m also struggling to understand the purpose of the analogue scroll wheel. Is it meant to help make selections within the touchscreen interface? That doesn’t seem likely, as it would potentially be faster to use your finger to scroll on the touchscreen itself. Is it intended for manually positioning the camera? If so, positioning it to the right of the camera would have been more logical. Is the idea to enable one-handed scrolling on the touchscreen? If I were holding the device in my left hand, using my index finger to scroll might be easier than using my thumb on the screen, but I would still need to make button selections, and for that, I might be hitting the push-button. This seems like a learned behaviour, but it’s the only explanation I can come up with given my limited understanding. However, if you hold this device in your right hand, the positioning of the scroll wheel becomes even more perplexing! You can’t scroll with the thumb that’s holding the side of the device, and you can’t use your left hand to operate the scroll wheel without blocking your view of the screen. So, why is it designed this way?&lt;/p&gt;
+
+&lt;p&gt;Finally, I didn’t notice any way for the product to be attached to a jacket or shirt, and the placement of the screen and push-button suggests that the R1 is intended to be carried in a pocket and pulled out when needed. This raises a significant concern for me. An AI companion needs to be readily accessible within the user’s physical space to understand instructions better (and to keep the instructions simpler). If it needs to be pulled out of a pocket—or more likely from a bag, since the smartphone will probably be in the pocket—it won’t be as easily accessible. The AI Pin addressed this better by being always accessible from the t-shirt or jacket where it is clipped. The Meta Ray-Ban was another good attempt, but since they are sunglasses, wearing them all the time is nearly impossible.&lt;/p&gt;
+
+&lt;h1 id=&quot;software-design&quot;&gt;Software Design&lt;/h1&gt;
+
+&lt;p&gt;Jesse Lyu, the founder and CEO, begins his keynote by recognising one of the most fundamental issues with the way smartphones are designed. This is an extremely deep insight, and I’m so glad someone on such a large stage was able to express it. During the early days of the smartphone, Apple proudly used the line, “There’s an app for that,” in their marketing to highlight how many apps there were in the App Store. You see, in their view, there was an app that could achieve any task that you wanted to do. But the mental model of a person who wants to perform a specific task requires them to choose the app that would enable them to do it, then open that app and make the right choices in the interface in order to achieve the task. If you’ve got more than one app that could help you do that task, there’s some time spent in your mind deciding between them. And if you have a task that needs more than one app to be achieved, you’ve just made the choices even more complex. Given that most people have about 90 different apps on their phones on average, this isn’t a small matter. You also need to have downloaded these apps ahead of time in anticipation of needing them in the future. But that’s another story altogether.&lt;/p&gt;
+
+&lt;p&gt;This is also third-generation thinking, where you have to consider the objective you need to achieve and then break it down into the steps required for the computer to help you achieve it. Contrast that with fourth-generation thinking, which simply requires the user to clearly express the goal, and the computer then breaks down the tasks into atomic bits, figures out the best tools to use to solve the problem, and solves it. This was science fiction before the advent of AI. This is reality today. There’s also the duplication of data and instructions between the apps to contend with. For example, travelling somewhere on a vacation requires an app for flight bookings, an app for hotel bookings, an app to book a ride, and another to research the highlights of the destination. Each of them will ask you for your name, dates, times, locations, your companions, your preferences, over and over again. And that’s not even considering the fact that you need to register with each app too!&lt;/p&gt;
+
+&lt;p&gt;This &lt;em&gt;is&lt;/em&gt; a problem today, and Jesse and his company used this idea as the foundation to build their solution to combat this problem. Kudos to them for being able to figure out a way around it with their Rabbit Hole interface, even though it doesn’t yet completely solve &lt;em&gt;all&lt;/em&gt; the problems. There’s much more to say about the software, the interfaces, and the UI design, which are all brilliant but table stakes for a game this big. The fact that they understood the above point and also broke through the 500ms (while not yet hitting the Doherty Threshold) makes the device feel really responsive, which is just amazing.&lt;/p&gt;
+
+&lt;h1 id=&quot;business-design&quot;&gt;Business Design&lt;/h1&gt;
+
+&lt;p&gt;The fact that the product was launched at $199 is simply a masterstroke. A device that purports to be an AI Companion is really only that useful today, and the price point is perfect. But how could they not have a recurring monthly fee? They must have servers running in the background to serve the needs of the users. How do they expect to fund this? To me, this is where the rabbit hole comes in. I think the apps need to pay to be listed there. Maybe not initially, but eventually. They also may have a local model running on the device that handles the majority of the daily queries and only passes along the complex ones to the server, à la &lt;a href=&quot;https://mistral.ai/news/mixtral-of-experts/&quot;&gt;Mixtral of Experts&lt;/a&gt;. This would keep their costs low too. There is a possibility that they will benefit from a model that understands the physical world of the user better. This is greenfield at the moment, and they are going to be one of the first to occupy this space. But this is me just conjecturing, and the answer may be far simpler; the operational costs may just be borne through VC funding until they hit some kind of threshold. Or maybe it has to do with advertising, a.k.a. “recommendations” that the agent provides.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;The R1 is intriguing and addresses some key concerns of mobile computing. However, several challenges persist. While the Rabbit R1 excels in software, the hardware design falls short of being an effective AI companion. A smartwatch with a camera still remains the form factor to beat. Given these shortcomings, I predict limited usage and abandonment by most users within a few months unless these improvements are implemented by the time they start shipping in March. With regard to competition, this concept could easily be replicated by smartphone manufacturers. If they cannot produce it independently, an acquisition could be on the cards, which may be the anticipated endgame anyway.&lt;/p&gt;
+
+&lt;p&gt;For any AI companion, the major obstacle remains payments. The demo didn’t quite show how the many payments that were alluded to actually took place, and I’m curious to see how this aspect works. While I don’t personally wish to purchase this product due to the aforementioned issues and deficiencies, I still regard it as a ‘directional innovation’ that pushes the industry in the right direction. There will be numerous iterations before the ideal form factor for the product is realised, as well as the perfect business models for the companies backing them. Consequently, I intend to keep a close eye on Jesse and his team to see if they adapt and iterate as I anticipate they will.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Jan 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/rabbit-r1-review/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/rabbit-r1-review/</guid>
+        
+        <category>design</category>
+        
+        <category>technology</category>
+        
+        <category>hardware</category>
+        
+        
+        <category>Reviews</category>
+        
+      </item>
+    
+      <item>
+        <title>Design review of the AI Pin by Humane</title>
+        <description>&lt;p&gt;As a product designer, I analysed Humane’s first product, the AI Pin, and identified several critical challenges that need to be addressed. While the product’s primary purpose of replacing mobile phones is laudable, it faces significant obstacles. Firstly, the device needs to offer a 10X better value proposition than the mobile phone to convince users to switch. However, this proved difficult as the AI Pin struggled to deliver on this promise, particularly in terms of call and message functionality, social media, calendar management, navigation, photography, entertainment, running apps, and more.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, the voice-based input/output and low-resolution screen limit the device’s usefulness compared to a high-resolution touchscreen display. Additionally, the need for a tap activation can be slow and cumbersome, hindering the AI assistant’s utility. Demonstrations showed that the AI assistant takes time to retrieve information and respond, leading to frustration in daily usage.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/HumaneAIPin.jpeg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To improve the product, I would ask the following questions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Why create a phone replacement as the first version of the product? It would have been more effective to demonstrate the usefulness of an always-available AI assistant, as Meta RayBan did.&lt;/li&gt;
+  &lt;li&gt;Why use tap as a wake gesture when hot keywords or head turns towards the device could be faster and more hands-free?&lt;/li&gt;
+  &lt;li&gt;What were the reasons for not pursuing a smartwatch with video capabilities? A watch offers familiar activation gestures like raising to wake, and provides a screen for information delivery and private touch inputs.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While many have criticised this project, upon closer examination, it appears that the product was rushed to market rather than be the example of the company’s vision. However, there is still hope for Humane as they continue to innovate. A truly effective always-available AI assistant has the potential to improve various aspects of life, and I await their future developments with interest.&lt;/p&gt;
+
+&lt;p&gt;It’s hard to go into uncharted waters, and one must admire them for trying.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 28 Nov 2023 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/review-of-humane-ai-pin/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/review-of-humane-ai-pin/</guid>
+        
+        <category>design</category>
+        
+        <category>hardware</category>
+        
+        
+        <category>Reviews</category>
+        
+      </item>
+    
+      <item>
+        <title>Is there room for another dating app?</title>
+        <description>&lt;p&gt;Examining whether there’s an actual need missing or a packaging problem&lt;/p&gt;
+
+&lt;h1 id=&quot;the-need&quot;&gt;The Need&lt;/h1&gt;
+
+&lt;p&gt;Meeting the person that is now my wife had been quite a challenge. I probably have been helped by friends, family and work colleagues and when that didn’t work, I even joined a singles group, signed up online on matrimonial sites and even dating apps. I finally met my wife on a dating app called OkCupid. To say that this field of allowing people to find each other is dear to me would be an understatement.&lt;/p&gt;
+
+&lt;p&gt;I’ve been happily married for a while now. I have several single friends my age and while a few of them want to find someone and get married eventually, some are choosing to stay single and are quite content doing so. However they would still like companionship and would like to meet people that are similarly inclined.&lt;/p&gt;
+
+&lt;p&gt;In a recent conversation with four twenty-something user experience designers, I asked about dating apps and whether they are serving the needs of people their age group. But surprisingly the complaints were the same as for those that belong to the older group I spoke of above. All of them said they had issues meeting people and that no dating app was serving them well.&lt;/p&gt;
+
+&lt;p&gt;On a broader societal level India has always been thought of as a nation with very traditional values and therefore the population had a majority of married people. But this trend is changing. People are getting married later in life if at all and many are also choosing to stay single, not seeing getting married and having kids as the final goal. Divorce laws in India are also complicated to say the least and this may be a contributing factor to people choosing to stay single.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/Pencil-sketch-of-a-happy-couple-sitting-across-each-other-at-a-sidewalk-cafe-in-a-European-city-with-2.jpeg.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-problems&quot;&gt;The Problems&lt;/h1&gt;
+
+&lt;p&gt;In my research, I’ve funnily had absolutely no trouble getting people to tell me about the issues they’ve faced while using dating apps. It usually ends up becoming an hour-long conversation and everyone wants to explain their individual journeys and issues that they’ve run into. In a lot of ways they want to vent their frustration and when someone like me comes along and asks what the issues are, it’s like opening the flood gates to a dam. But I feel their pain as I’ve been there myself.&lt;/p&gt;
+
+&lt;p&gt;To whit, the issues they presented for dating were as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Men find it harder to meet women as the percentage of men on dating platforms is much higher. This may be because it’s traditionally been uncommon for women to put their profiles online.&lt;/li&gt;
+  &lt;li&gt;It is not easy to convert an online encounter into a physical meeting due to concerns regarding security. They typically want to be very sure of the person before they meet.&lt;/li&gt;
+  &lt;li&gt;People prefer to meet others in real life rather than online as that is a more authentic way to find someone.&lt;/li&gt;
+  &lt;li&gt;Creating a good profile is key and people request others who have found success to create their profiles. But this inadvertently also adds to the catfishing concern as the profiles may not be authentic at all.&lt;/li&gt;
+  &lt;li&gt;People don’t always know that the person they are meeting online are verified in any way and this adds to security concerns.&lt;/li&gt;
+  &lt;li&gt;Dating apps that require women to initiate the connection may be adding a hurdle to introverted women. They may prefer to be approached instead. But this an an all-or-nothing kind of offering on such platforms.&lt;/li&gt;
+  &lt;li&gt;Ghosting is a big concern as people may be spending inordinate amounts of time trying to build a relationship with someone they met online whereas the other person may be not be interested at all but doesn’t know how to end this.&lt;/li&gt;
+  &lt;li&gt;The online medium is skewed towards good-looking people. The fact is that most platforms offer huge databases of people and it’s practically impossible to sift through all without being extremely quick to judge either based on photos or based on scanning of profiles very quickly.&lt;/li&gt;
+  &lt;li&gt;There are several scams that have occurred based on people meeting each other online in India. Scams involve extortion, confidence scams, honey traps and lots of other such issues that make this kind of meeting very dubious.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are some things that could be solved through better employment of technology. But there are a lot of things that can be solved in the real-world realm.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-with-sharp-focus-on-.jpeg.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;room-for-another&quot;&gt;Room for Another&lt;/h1&gt;
+&lt;p&gt;With the passage of time, it’s a good idea to evaluate old decisions over again. While I had previously thought that this market is overcrowded and that there is dating-app-fatigue that has set in, I think the advent of AI has made it possible to evaluate this once again.&lt;/p&gt;
+
+&lt;p&gt;Yes, I am very aware that platforms like e-harmony and OKCupid, and lots of others, have indeed marketed based on this idea. However, I don’t think they had the tools we have today to make that claim in earnest. Besides, the one flaw in their thinking was that they were only able to go so far as making a recommendation of who they would match with; they were never able to evaluate whether they had made the right prediction because they had no mechanism to receive such feedback. If they didn’t get any feedback, it definitely didn’t help make future recommendations any better either.&lt;/p&gt;
+
+&lt;p&gt;If one were to venture into this field, this is a key aspect that I would evaluate: did they have good recommendation engines that not only had recommendations but also had feedback loops to make future recommendations better?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/Pencil-sketch-of-two-people-in-business-suits-having-coffee-at-a-sidewalk-cafe-in-a-European-city-h.jpeg.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-business-case&quot;&gt;The Business Case&lt;/h1&gt;
+&lt;p&gt;In my quick study of this field I’ve come to the conclusion that the demand is off-the-charts. No platform has solved this problem as yet, so there’s definitely room for another entrant. There is no dearth of money as people are willing to pay out of money in order to meet the right person. So it can definitely be a profitable venture. But the solution has to be packaged correctly and the right promises need to be made.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-goal&quot;&gt;The Goal&lt;/h2&gt;
+&lt;p&gt;First and foremost it is important to set the right goals for a platform. Is it meant to result in a date, is it meant to result in a relationship, is it meant to result in a marriage or is it simply to develop companionship in this changing world. I think apps and platforms that promise finding the person to get married to are obviously overselling what they are capable of. I’d go so far as to say that even if they promise a great date. It takes a lot more to make a date memorable than the matching of characteristics in databases. I’d love to see an app that promises that the user would meet good people and that’s it, because that’s a promise that can be kept.&lt;/p&gt;
+
+&lt;h2 id=&quot;target-audience&quot;&gt;Target Audience&lt;/h2&gt;
+&lt;p&gt;While some people may be looking at getting married, some may simply be looking for companionship or even to meet other singles because the conversations with their married friends maybe something they can’t relate with anymore. I think it would be prudent to simply focus on the people looking to make friends. If something more were to develop from this, that’s just the cherry on top and not the baseline expectation.&lt;/p&gt;
+
+&lt;p&gt;This may also therefore not be an age or gender-related qualification.&lt;/p&gt;
+
+&lt;h2 id=&quot;packaging&quot;&gt;Packaging&lt;/h2&gt;
+&lt;p&gt;In my mind, the following are the core areas to keep in mind when designing a solution:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-security&quot;&gt;1. Security&lt;/h3&gt;
+&lt;p&gt;As mentioned above, we need to make security the main focus area. We need to find ways to make sure that people feel confident when participating on a platform. Vetted profiles, membership through recommendations, attracting people through the right channels, etc. are some of the things that we can do to make sure of this.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-authenticity&quot;&gt;2. Authenticity&lt;/h3&gt;
+&lt;p&gt;While making an effort to make all the profiles on the platform look good, the authenticity of the profile must not be lost. There is a fine balance here that must be found. Maybe the profile is written by those trained in it, but there could also be a video that the user records of themselves saying things that should be added with it.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-matching&quot;&gt;3. Matching&lt;/h3&gt;
+&lt;p&gt;At the fundamental level this is a matching problem. There is a lot of noise to sift through to find good information and characteristics to match people against. People often lie about themselves in order to appear a certain way and no questionnaire can overcome this hurdle. Or, they may not express what they want for fear of being judged for it. Yet again, they may simply not know what they want. All of this makes the matching problem more difficult for any system, but not for machine learning systems. Building a good matching engine that powers all of this is therefore the most important task. And for this, we need as many signals and feedback as possible.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-efficiency&quot;&gt;4. Efficiency&lt;/h3&gt;
+&lt;p&gt;This is one of the most ignored metrics within this field. People spend inordinate amounts of time trying to find the right person that they would like to be with. This increases the fatigue that they face and makes a lot of people give up in the middle of the process. Any new system that is built should definitely consider making this entire process more efficient. The system should try to match a person with a group of people that they share common ground with. The individual they meet within that group that they connect with is almost unnecessary to focus on.&lt;/p&gt;
+
+&lt;h2 id=&quot;pricing&quot;&gt;Pricing&lt;/h2&gt;
+&lt;p&gt;Pricing will obviously play a key role here. Pricing can be used to create an elite group that keeps the non-serious participants out, but too high a price and it will become elitist and exclusionary. People should also not be paying for individual participation, but rather for a few different events together so that they interact repeatedly as that is key to the success of this program.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-highly-detailed-and.jpeg.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;The world is yearning for deeper connections. With the power of technology at our fingertips, it’s time to harness it and create platforms that truly bring people together. We must seize this opportunity to build communities, foster companionship, and combat the growing loneliness in our society. It’s time to reimagine dating platforms as platforms that serve this need, where the focus is on meeting good people and forming meaningful connections. Let’s embrace the advancements in AI and recommendation engines to make this vision a reality. We have the tools, the potential, and the responsibility to improve the human connection. It’s time to take action and create a platform that truly changes lives. It must be attempted because it is important to achieve.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Jul 2023 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/is-there-room-for-another-dating-app/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/is-there-room-for-another-dating-app/</guid>
+        
+        <category>opinion</category>
+        
+        <category>society</category>
+        
+        
+        <category>Ideas</category>
+        
+      </item>
+    
+      <item>
+        <title>Generative AI Art Experiments</title>
+        <description>&lt;p&gt;Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Here are my experiments.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Being able to imagine something and bring it to life in the form of an image or video is a tempting prospect. While one part of the design world lamented the fact that these tools may replace our roles, I belong to the small minority that looks at these new technologies with the hope that it would lead to better design. I could after all never call myself a designer if I had never run into Photoshop all those years ago.&lt;/p&gt;
+
+&lt;p&gt;So I dove in head-first into figuring out what this new frontier holds for us. This is an on-going experiment and I am just documenting my learnings as I go along.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If not for Photoshop, I may have never become a designer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;what-did-i-expect&quot;&gt;What did I expect?&lt;/h1&gt;
+
+&lt;p&gt;While I started exploring this simply out of curiosity, it later was also a business decision as I anticipated that it would help my small team do more. After all we were about to launch a second product at work and I had to find ways to  sustain all of it with the current team size.&lt;/p&gt;
+
+&lt;p&gt;Therefore, I started by trying to find answers to the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What are the tools that are available?&lt;/li&gt;
+  &lt;li&gt;What’s the learning curve to use these technologies?&lt;/li&gt;
+  &lt;li&gt;How much control do I have over the output?&lt;/li&gt;
+  &lt;li&gt;How much post-processing is required?&lt;/li&gt;
+  &lt;li&gt;Can they produce consistent quality and style over a period of time?&lt;/li&gt;
+  &lt;li&gt;Are the technologies mature enough for everyday use?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;october-2022-ai-based-art-nfts&quot;&gt;October 2022: AI based art NFTs&lt;/h1&gt;
+
+&lt;p&gt;I had heard of AI generated art and was amazed by what I saw in some videos but I had no idea how this was done or how. I happened to run into NFT’s on Rarible at that time and saw this collection of AI based images that someone had made. I was just so amazed with its accuracy that I ended up buying a few of them simply in the hope that I was supporting someone who was working on this and possibly getting flack for not being a true artist.&lt;/p&gt;
+
+&lt;h2 id=&quot;learnings-from-this-phase&quot;&gt;Learnings from this phase:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;AI art is dividing the world into the group that thinks this is art and the group that thinks it isn’t&lt;/li&gt;
+  &lt;li&gt;No one expected AI would set its sights on the creative fields first.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&quot;display: table;&quot;&gt;
+&lt;div style=&quot;display: table-row;&quot;&gt;
+&lt;div style=&quot;display: table-cell;&quot;&gt;
+&lt;img src=&quot;../assets/images/GenerativeAIArt-2.webp&quot; alt=&quot;Image 1&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: table-cell;&quot;&gt;
+&lt;img src=&quot;../assets/images/GenerativeAIArt-3.webp&quot; alt=&quot;Image 2&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;february-2023-midjourney&quot;&gt;February 2023: MidJourney&lt;/h1&gt;
+
+&lt;p&gt;I ran into MidJourney back in late 2022 through a colleague who was using it to create some artwork that I was quite impressed with. I thought to try it out but the version that existed at the time was just not that great with the simple “prompts” I was able to provide it. It took too many tries and much too long to generate something just remotely close to what I wanted.&lt;/p&gt;
+
+&lt;p&gt;I saw others developing images that looked a lot better and saw what they had prompted MJ in order to produce it. I copied one of them that had produced a very cool image of a cat to produce an image of a dog. My dog image had three eyes!&lt;/p&gt;
+
+&lt;p&gt;My attempts at producing human portraits didn’t fare much better. All of them had messed up hands or too many fingers for some reason. I was producing Dali-esque images without intending to.&lt;/p&gt;
+
+&lt;p&gt;I walked away from a two hour session kind of impressed, but feeling that the tech wasn’t there yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;learnings-from-this-phase-1&quot;&gt;Learnings from this phase:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The learning curve was too great as I would never be able to understand all the words and prompts and styles and exclusions if I had to type all of this out&lt;/li&gt;
+  &lt;li&gt;The interface (Discord) was absolutely not the one that I could imagine using to produce images. It was a terrible fit and since I was in a public channel typing out my requests, I felt like I was being watched while I fumbled around trying to produce the output I wanted.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The tech wasn’t there yet, but I saw potential.&lt;/p&gt;
+
+&lt;h1 id=&quot;march-2023-midjourney-v5&quot;&gt;March 2023: MidJourney V5&lt;/h1&gt;
+
+&lt;p&gt;MJ V5 launched this month and I got really interested. This was a big update and they got a whole lot of changes in. They got the hands right, they got faces right, the quality of images was just amazing and the initially released with the Zoom Out feature that essentially imagined the parts of the frame that wasn’t there before and gave images this depth and drama that didn’t exist before.&lt;/p&gt;
+
+&lt;p&gt;The pace of smaller updates thereon has just been incredible and it was time for my team to start experimenting with it. As we had been working on building an NFT collection for use with the main product as rewards, this ability to generate a lot of graphics in a short period of time was important. The challenge was being able to get MJ5 to output the kinds of images that we had been producing until now with Blender.&lt;/p&gt;
+
+&lt;p&gt;The alternative was to produce a new style that worked with MJ5 but that also meant updating all the graphical properties that the company had, including the website, marketing collateral, transactional content and other assets such as NFTs.&lt;/p&gt;
+
+&lt;p&gt;So the team started to work with this and try and achieve our existing styles of artwork with the new tools. However this yielded pretty bad results. There was still a lot of manual effort required to bring the artwork to the same style. So we abandoned this approach and started pursuing the second strategy and came up with a new direction altogether.&lt;/p&gt;
+
+&lt;h2 id=&quot;learnings-from-this-phase-2&quot;&gt;Learnings from this phase:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The tooling was still not good enough for a designer. It seemed like you can only do a full-image edit and not something specific within it. For that you’d still need tools like Photoshop. Photoshop’s generative fill provides much more control.&lt;/li&gt;
+  &lt;li&gt;Knowing that we can produce the required graphics with such ease suddenly allowed us think about doing sweeping changes that we would never think about doing before. We’re now able to think about updating a website in preparation for a launch event.&lt;/li&gt;
+  &lt;li&gt;I feel that we’re still at a stage where you can still tell when artwork has been produced by AI. It’s just “too polished” and accurate. Not sure what this means as yet, but I’m trying to understand it more.&lt;/li&gt;
+  &lt;li&gt;Stable Diffusion came onto my radar as a platform that provides us more control within the AI generative tools space. So I started exploring that next.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;scribe-characters-created-with-blender&quot;&gt;‘SCRIBE’ CHARACTERS CREATED WITH BLENDER&lt;/h3&gt;
+&lt;div style=&quot;display: table;&quot;&gt;
+&lt;div style=&quot;display: table-row;&quot;&gt;
+&lt;div style=&quot;display: table-cell;&quot;&gt;
+&lt;img src=&quot;../assets/images/GenerativeAIArt-4.webp&quot; alt=&quot;Image 1&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: table-cell;&quot;&gt;
+&lt;img src=&quot;../assets/images/GenerativeAIArt-5.webp&quot; alt=&quot;Image 2&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: table-cell;&quot;&gt;
+&lt;img src=&quot;../assets/images/GenerativeAIArt-6.webp&quot; alt=&quot;Image 3&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;scribe-characters-created-with-midjourney-50&quot;&gt;‘SCRIBE’ CHARACTERS CREATED WITH MIDJOURNEY 5.0&lt;/h3&gt;
+
+&lt;div style=&quot;display: table;&quot;&gt;
+&lt;div style=&quot;display: table-row;&quot;&gt;
+&lt;div style=&quot;display: table-cell;&quot;&gt;
+&lt;img src=&quot;../assets/images/GenerativeAIArt-7.webp&quot; alt=&quot;Image 1&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: table-cell;&quot;&gt;
+&lt;img src=&quot;../assets/images/GenerativeAIArt-8.webp&quot; alt=&quot;Image 2&quot; /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: table-cell;&quot;&gt;
+&lt;img src=&quot;../assets/images/GenerativeAIArt-9.webp&quot; alt=&quot;Image 3&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 13 Jul 2023 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/generative-ai-art-experiments/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/generative-ai-art-experiments/</guid>
+        
+        <category>technology</category>
+        
+        <category>art</category>
+        
+        
+        <category>Experiments</category>
+        
+      </item>
+    
+      <item>
+        <title>Better tools should be better employed</title>
+        <description>&lt;p&gt;When you have access to tools that provide you unlimited capability, how should these tools be used.&lt;/p&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In the age of AI, the only limitation to creating things is our ability to imagine them. While AI tools allow for new possibilities, there is a real growing concern that our ability to imagine itself may be eviscerated. But uniquely to our time, there are dire consequences to using &lt;em&gt;and&lt;/em&gt; not using the technologies. The only way forward is to pay attention to where we employ these tools and where we don’t.&lt;/p&gt;
+
+&lt;p&gt;Design is about changing and managing perceptions and ideas about the world we live in. It’s powerful because when employed well, it works wonders as a way of wielding influence. This influence can broaden our horizons, make us aware of our hidden biases and even train good behaviour. Or, on the other hand, it can block progress and foster addictive and unhealthy behaviours such as providing positive reinforcement when we buy stuff we don’t need.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/BetterTools-2.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;two-stories&quot;&gt;Two Stories&lt;/h1&gt;
+&lt;p&gt;I recently watched this wonderful video by Dami Lee where she analysed the fantastic amount of detail that the people at &lt;a href=&quot;https://www.ghibli.jp/&quot;&gt;Studio Ghibli&lt;/a&gt; went into while creating some of the award-winning animated movies that they are known for. Since Dami Lee is an architect, she analysed the movies from that perspective and highlighted how thoughtfully the buildings were detailed, including the details of lobbies, the rooms themselves, and even what the long passageways mean in terms of the Japanese culture they represent. She’s fascinated that the studio is able to be this observant and dives in to find out what about their design process makes this possible. And this, to me, in my current role as the head of a design team, was what I found most interesting.&lt;/p&gt;
+
+&lt;p&gt;In the video, there are clips of interviews with one of the founders &lt;a href=&quot;https://en.wikipedia.org/wiki/Hayao_Miyazaki&quot;&gt;Hayao Miyazaki&lt;/a&gt; where he states that they force everyone to animate things in the traditional way “by hand” even though this is far more painstaking and tedious. He says that this, in fact, is the reason the studio has been able to be as observant as they have been. He insists that this is the case and goes on to berate anyone that wants to use technology or find a faster way to do things. He famously has said, “Anyone that eats instant ramen three times a day cannot be an animator,” further emphasising the idea.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Anyone that eats instant Ramen three times a day cannot be an animator”
+– Hayao Miyazaki, Co-Founder, Studio Ghibli&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In a completely different part of the world, a friend of mine had developed an appreciation for calligraphy and had begun dabbling with it. He showed me the various pages where he had written the same letter over and over again. Being extremely observant he had observed how he had to move his hand in order to achieve the right shape of the stroke and paid attention to how the ink flowed on the paper. He had even crafted the right kind of pens and nibs to be able to do this easily. But his biggest learning was that the effort involved in the art actually made him think many times about what it is that he wanted to convey. It had to be something important as the very act of embellishing the letters took a lot of time and effort.&lt;/p&gt;
+
+&lt;p&gt;He went on to remark at the virtues of the art of letter writing of the ages past that our grandparents were very familiar with. He saw that there was something beautiful in the effort one put not only into the writing of the letters, but also the pasting, stamping, walking the letter over to the nearby postbox that somehow conveyed to the recipient and made them so happy or at least important for being the beneficiary of such effort.&lt;/p&gt;
+
+&lt;p&gt;It seems there was something to the deliberation involved and the lack of speed, that made for greater appreciation. And this got me thinking about the design process I use in my daily work as a user experience designer.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/BetterTools-3.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;a-better-ux-design-process&quot;&gt;A Better UX Design Process&lt;/h1&gt;
+&lt;p&gt;User Experience Design as a field gained foothold with the advent of computers and the invention of the Graphical User Interface. It’s been a digital pursuit since it’s inception and as such technology has been used to improve every aspect of the process, right from research, wire-framing, visual design, implementation and testing.&lt;/p&gt;
+
+&lt;p&gt;For those unfamiliar with this field, the main job of a UX designer is to visualise how an application would look and feel like before it has been developed by programmers, much like an architect would render drawings of a building on paper before the building gets built. The task therefore is of communication to all the stakeholders. The hope is that any fixes that are required are done at the design stage when it is cheaper rather than at the development stage when it is definitely much more expensive.&lt;/p&gt;
+
+&lt;p&gt;But even a considerably simple application requires more than fifty screens to be designed if every scenario anticipated while using it needs to be thought through. For example, how does a user login, how do they set their preferences, how do they communicate with support personnel, how do they bring their friends onto the app, and so on. When you factor in the additional operating systems and the various devices and screen sizes that the application should work on, you can easily understand how many screens need to be developed.&lt;/p&gt;
+
+&lt;p&gt;Imagine if something that appears on all the screens needs to be changed (which happens more frequently than one thinks), a designer will have to manually locate the said element in each of the screens and replace them. Using Photoshop, Illustrator or Fireworks, which were tools we used to use to design these screens, this took hours or even days of mind-numbing effort and designers hated doing this. They would do anything to avoid rework, including pushing back on any change requests, pushing the task to the developers to handle at the time of development or even just changing the process to seek inputs and feedback on just key screens before all the associated screens in the process are completely developed which is not really the best way to do this as the stakeholders are evaluating based on insufficient information.&lt;/p&gt;
+
+&lt;p&gt;Today, we have much better tools like Figma which make these changes across hundreds of screens in a matter of seconds. This one ability has allowed us to create much better designs, seek feedback after a lot of screens covering a lot of scenarios are actually developed improving the quality of the output immensely. From my vantage point, it’s clearly evident that this kind of technology has been great for the industry.&lt;/p&gt;
+
+&lt;p&gt;But in this mad rush to achieve outputs faster, the same tools also offers the ability for designers to use templates to speed up the work even further. There are AI design tools that are being created that would create entire workflows and in some cases even apps with a single prompt. Like painters of canvasses, UX designers have also got to pay attention to every pixel that they place on the screen. Everything is deliberated upon and nothing happens by accident which is why the outputs are meaningful. This part of the process should remain slow for a reason. If technology is used to reduce the deliberation in an effort to ease this part of the process, the outputs of such processes will undoubtedly be mediocre.
+___&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/BetterTools-4.webp&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;counter-arguments&quot;&gt;Counter Arguments&lt;/h1&gt;
+&lt;p&gt;In some cases, “mediocre” may be a desirable step up. For example, A business owner for instance may simply want to test out an idea for an app without the kinds of expenses involved in the design and development of a custom-built application. But there’s a risk here. A friend of mine advised me about which bicycle to buy this way, “Don’t get a basic bike if you intend to get into this sport. You won’t like the bike and you’ll end up rejecting the sport instead.” I think there’s a lot of truth in that statement and I’d like to provide the same warning to the business owner who may be tempted to use this route. Testing out a good idea using mediocre ways to get you to the output is actually not testing out the idea at all.&lt;/p&gt;
+
+&lt;p&gt;A UX designer also may be tempted to use these tools to define a baseline for the app that they want to develop. These tools may still serve a purpose, but fixing a bad output is probably harder than creating the right output from scratch. There’s also the possibility that not every aspect of the output is examined as well as when creating the output in the first place. Would you want your app to go out to developers with these flaws still in it?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Don’t get a basic bike if you intend to get into this sport. You won’t like the bike and you’ll end up rejecting the sport instead.”
+– Rohan Kini, Bums on the Saddle&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;I think technology is a tool like any other and can be beneficial or detrimental depending on how we use it. It will always lure us with its promise of speed, scale, spread, smarts and asynchrony. While it can improve our lives, indiscriminate employment of it will only result in poor outputs. We must be vigilant about what we employ these tools for. Reduction of effort is a great reason to use technology, but if it can impede our thoughtfulness, it is probably a bad use of it.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jun 2023 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/better-tools-should-be-better-employed/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/better-tools-should-be-better-employed/</guid>
+        
+        <category>ux</category>
+        
+        <category>opinion</category>
+        
+        
+        <category>Ideas</category>
+        
+      </item>
+    
+      <item>
+        <title>Eight Essential Rules for Mastering Ethical UX Design</title>
+        <description>&lt;p&gt;Reflecting on the work of many others and my own work within the field, I have distilled the following rules to act as a guide&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;While UX design is a relatively young field, its importance in a product’s success cannot be overstated. Its impact on the world today is clear, but sadly its ability to effect positive change is coupled with its ability to inflict harm. As with anything that has such powerful duality, a code of ethics is necessary to act as a lodestone to guide those venturing into this field in the future.&lt;/p&gt;
+
+&lt;p&gt;Reflecting on the work of many others and my own work within the field, I have distilled the following rules that should act as a guide:&lt;/p&gt;
+
+&lt;h1 id=&quot;rule-1-your-foremost-duty-is-to-help-your-client-succeed&quot;&gt;Rule #1: Your foremost duty is to help your client succeed&lt;/h1&gt;
+
+&lt;p&gt;I started my design career at Adobe Systems and then went on to build my own UX design agency. My ideas regarding this subject have evolved from “The designer’s job is to advocate for the user within a company” to “The designer is the servant of two masters and needs to figure out how to balance the two”, and finally to understanding that a company simply cannot have interests in opposition to those of its customers for any reasonable length of time, as customers are not naive people waiting to be tricked and will just switch to the nearest substitute. So, it’s enough to simply take the interest of your client — their true long-term interest — and design for that.&lt;/p&gt;
+
+&lt;h1 id=&quot;rule-2-your-task-is-to-help-a-user-simply-navigate-a-complex-world&quot;&gt;Rule #2: Your task is to help a user simply navigate a complex world&lt;/h1&gt;
+
+&lt;p&gt;Software is usually employed by a user for the completion of reasonably complicated tasks. Depending on the user, they may be unfamiliar with how to use the software, use the hardware, understand how technology functions, or even have physical limitations such as not being able to see small fonts clearly. Our job as designers is to help them navigate the technology in such a way that it is very simple for them to achieve their tasks. We may need to help them understand the decisions they need to make better, they may need settings that make interfaces more visible, they may rely on the software to make certain choices for them, etc. The better we understand our users, the better we can serve them.&lt;/p&gt;
+
+&lt;h1 id=&quot;rule-3-dont-treat-the-user-like-a-commodity&quot;&gt;Rule #3: Don’t treat the user like a commodity&lt;/h1&gt;
+
+&lt;p&gt;The anonymity one has on the internet is a double-edged sword. While it encourages free speech and discourse, it allows people to behave worse online than they would in real life. In the commercial world, this extends to thinking of users of a product in the abstract, reducing them to single dimensions as pockets that need to be picked, resources meant to be exploited, rats to be subjected to dopamine experiments, or as commodities meant to be traded. This is not good for the company in the long run (a la rule #1), but people attempt to do it anyway. Designers can play a big role in breaking these mindsets and making product managers or companies look at the long-term welfare of their users and, consequently, their own companies.&lt;/p&gt;
+
+&lt;h1 id=&quot;rule-4-your-counsel-is-as-important-as-your-labour&quot;&gt;Rule #4: Your counsel is as important as your labour&lt;/h1&gt;
+
+&lt;p&gt;Far too often, we measure our work by the effort we put in or the number of screens and experiences we produce. But I’ve always felt that they hire you for your skills in the early part of your career, and when you’ve gained more experience, they &lt;a href=&quot;https://re/&quot;&gt;h&lt;/a&gt;ire you for your opinions . When we’re designing something, we’re deeply considering a specific point, making decisions based on them and learning from their outcomes. It is this distillation of experience that is more important to a client than our labour. They shouldn’t have to spend new money to learn old lessons.&lt;/p&gt;
+
+&lt;h1 id=&quot;rule-5-a-designer-must-respect-cultures-genders-physical-abilities-political-leanings-and-privacy-preferences-and-must-design-to-enhance-all-of-them&quot;&gt;Rule #5: A designer must respect cultures, genders, physical abilities, political leanings and privacy preferences and must design to enhance all of them&lt;/h1&gt;
+
+&lt;p&gt;Much too often we think only through the lens of our biases and it’s all too easy to exclude certain people or groups from our thinking. I am myself guilty of not accommodating people with poor eyesight and early on in my life as a designer, I’d design applications with small fonts because they made the interfaces so cool. But this meant I’d ostracise a large group of people that found it hard to read the small fonts.&lt;/p&gt;
+
+&lt;p&gt;An even more subtle example is the frustration that one feels while using tools like Google Docs or Microsoft Word or many other software, where they have to change the locale setting &lt;em&gt;every&lt;/em&gt; time they create a new document as it usually defaults to ‘US English’ even if you’ve previously gone and set this to ‘Indian English’, ‘UK English’ or ‘Australian English’, or any of the many other dialects. I’ve seen people delivering food in India wearing t-shirts that say “Hunger Savior” instead of “Hunger Saviour” because someone forgot to change the locale setting while writing the copy for that t-shirt ! But there are even worse examples I have seen websites that use “Father’s Name” as a label for a field where “Parent’s Name” would have been more appropriate. Should someone really pick the option that says “childless”, even if they &lt;em&gt;chose&lt;/em&gt; not to have children and wouldn’t choosing “0” against children not be a more neutral choice! But here’s something that probably affects a lot more people — the methods of proving that you’re a human by typing in the English text displayed in a box. The majority of the world &lt;strong&gt;&lt;em&gt;doesn’t&lt;/em&gt;&lt;/strong&gt; speak English natively!&lt;/p&gt;
+
+&lt;p&gt;While it may be challenging to cater to every user’s unique preferences, being aware of these potential biases is the first step in creating more inclusive designs. By being open to feedback from users and making an effort to understand their perspectives, designers can work towards creating applications and products that are welcoming and accommodating for everyone.&lt;/p&gt;
+
+&lt;h1 id=&quot;rule-6-protect-the-privacy-of-your-users&quot;&gt;Rule #6: Protect the privacy of your users&lt;/h1&gt;
+
+&lt;p&gt;In the digital age, privacy has become a vital concern for users as their personal information is often at risk of being exploited by powerful entities. Although many people understand the importance of privacy, not everyone is aware of its implications on their own lives or how to select platforms that prioritize this aspect.&lt;/p&gt;
+
+&lt;p&gt;As a result, it falls upon product designers to make critical decisions on behalf of their users, ensuring that privacy is protected throughout their designs. By being conscious of potential privacy risks and implementing robust security measures, designers can help safeguard users’ personal information and maintain their trust in the products and platforms they use.&lt;/p&gt;
+
+&lt;p&gt;Anne Cavoukian, the Information and Privacy officer of Ontario, proposed a set of seven foundational principles to protect the users of most information systems called “Privacy by Design” (PbD). The core idea is to address privacy concerns from the beginning, instead of adding privacy measures as an afterthought. PbD comprises seven foundational principles:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Proactive not Reactive; Preventative not Remedial: Privacy by Design emphasises anticipating and preventing privacy invasions before they happen, rather than waiting for breaches to occur and then taking remedial action.&lt;/li&gt;
+  &lt;li&gt;Privacy as the Default Setting: Privacy should be built into systems and services by default, so users don’t have to take any action to protect their privacy. This means that personal data should be automatically protected without requiring any user intervention.&lt;/li&gt;
+  &lt;li&gt;Privacy Embedded into Design: Privacy should be an integral part of the design and architecture of IT systems and business practices. This ensures that privacy is not treated as an add-on but is a core component of the system or service.&lt;/li&gt;
+  &lt;li&gt;Full Functionality — Positive-Sum, not Zero-Sum: PbD advocates for a “win-win” approach where both privacy and functionality are achieved, without compromising either. It rejects the idea that privacy must be sacrificed for security or other objectives.&lt;/li&gt;
+  &lt;li&gt;End-to-End Security — Lifecycle Protection: Privacy by Design emphasises the need for strong security measures throughout the entire data lifecycle — from collection to use, storage, and eventual disposal. This involves implementing robust access controls, encryption, and other security techniques.&lt;/li&gt;
+  &lt;li&gt;Visibility and Transparency: PbD emphasises being open and transparent about privacy practices, allowing users and other stakeholders to verify that privacy measures are in place and functioning as intended. This fosters trust and confidence in the system or service.&lt;/li&gt;
+  &lt;li&gt;Respect for User Privacy: Privacy by Design puts users at the centre, giving them control over their personal data and making it easy for them to exercise their privacy rights. This includes mechanisms for obtaining consent, providing access to personal information, and allowing users to correct or delete their data.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To make applications respect users’ privacy, follow these steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Conduct a privacy impact assessment at the beginning of the project to identify potential privacy risks and develop strategies to address them.&lt;/li&gt;
+  &lt;li&gt;Design the application with privacy in mind, incorporating the Privacy by Design principles from the start.&lt;/li&gt;
+  &lt;li&gt;Collect only the minimum necessary personal data and anonymise or pseudonymise data where possible.&lt;/li&gt;
+  &lt;li&gt;Implement strong access controls and encryption to protect personal data in transit and at rest.&lt;/li&gt;
+  &lt;li&gt;Establish clear and transparent privacy policies, making them easily accessible to users.&lt;/li&gt;
+  &lt;li&gt;Offer users options to manage their privacy settings, giving them control over their personal data.&lt;/li&gt;
+  &lt;li&gt;Regularly review and update privacy practices, staying informed of changes in regulations and industry best practices.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;rule-7-find-every-opportunity-to-reduce-the-carbon-footprint&quot;&gt;Rule #7: Find every opportunity to reduce the carbon footprint&lt;/h1&gt;
+
+&lt;p&gt;When e-commerce companies first launched in India, every step from the moment a user completed payment on a website to the final delivery of the product to the user’s home was new and untested. One such process was the packaging method.&lt;/p&gt;
+
+&lt;p&gt;It appears that packaging and shipping standards from another country were adopted, with every product arriving in bubble wrap and oversized boxes, regardless of the contents. However, it is well-known that India is averse to waste, be it food on a plate or in business, nothing is allowed to go to waste. When oversized boxes started appearing at people’s doorsteps for items as small as lipstick, deodorant, or a bar of soap, people began to complain!&lt;/p&gt;
+
+&lt;p&gt;This led to someone in the logistics department reevaluating the situation and adapting the Standard Operating Procedures (SOPs) to suit waste-intolerant Indian conditions. Packaging underwent a rapid transformation across all e-commerce players: boxes were replaced by envelopes when possible, clothes were wrapped in brown paper, the number of shipments decreased, and items were grouped. Other changes included shipping items to a neighbourhood store for customer pick-up and making numerous other adjustments in a short time. Encouraging a company to adopt environmentally-friendly practices is challenging, but e-commerce companies embraced these strategies because they aligned with their interests.&lt;/p&gt;
+
+&lt;p&gt;This prompted me to think about design interventions that could benefit the company, customer, and environment. A few ideas immediately came to mind that e-commerce companies could implement:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Allow users to specify their preferred packaging for the products they order.&lt;/li&gt;
+  &lt;li&gt;Let users indicate if they need their items urgently or are willing to wait for grouped deliveries with others in the area, enabling the packaging department to avoid always defaulting to the “safest” option.&lt;/li&gt;
+  &lt;li&gt;Food delivery companies can improve the value-per-mile metric for their delivery personnel by allowing them to collect used plastic containers from customers, streamlining recycling efforts.&lt;/li&gt;
+  &lt;li&gt;Offer subscription options for frequently ordered products, optimising delivery routes and making them more predictable.&lt;/li&gt;
+  &lt;li&gt;Allow users to inform product manufacturers of their preference for eco-friendly alternatives, which could encourage manufacturers to develop such options if there is sufficient demand.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These are five ideas with me spending a few hours thinking about the problem. Imagine the possibilities if designers everywhere also focussed on this problem. And that’s the main call to action in this rule.&lt;/p&gt;
+
+&lt;h1 id=&quot;rule-8-design-for-delight-not-for-addiction&quot;&gt;Rule #8: Design for delight, not for addiction&lt;/h1&gt;
+
+&lt;p&gt;Design is an incredibly powerful tool that can help achieve any goal. There have been numerous shows and documentaries highlighting how design can make applications addictive. It is possible to devise countless ways to captivate users, keeping them glued to your application. The primary benefits of this approach are pushing more ads to users or spying on them to build a profile for sale to the highest bidder. However, these are shortsighted goals and tactics. Awareness is growing among people, who now understand that if the product is free, they themselves are the product.&lt;/p&gt;
+
+&lt;p&gt;Moreover, there is a trend towards paying for software nowadays, as demonstrated by the growth of SaaS products, consumers’ willingness to pay for digital content on platforms like Netflix, Apple+, and others, and the increased use of cloud-only products such as the popular design tool Figma. Such services depend less on ad revenue and more on providing quality products and delightful experiences.&lt;/p&gt;
+
+&lt;p&gt;Users of these services have demonstrated that they are not only willing to pay for quality products and services but will also remain loyal to the company long-term. This contrasts with the software of the past, which would be uninstalled as soon as users had finished their intended tasks. In an era when the cost of acquiring customers is skyrocketing, wouldn’t you prefer to be the one retaining customers for the long haul?&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Ethics encompass the principles and values that guide human behaviour and decision-making, with a focus on concepts such as fairness, justice, and moral obligation. Ethics inspire individuals and organisations to contemplate the wider implications of their actions on others and the environment. By embracing these values, we can forge the kind of societies in which we yearn to live.&lt;/p&gt;
+
+&lt;p&gt;As UX designers, we now hold immense power and the capacity to shape the digital worlds we increasingly inhabit. It is time for us to take responsibility for our actions, learn from the best practices, and strive to create a positive impact that fosters long-term well-being. Let us seize this opportunity, embrace our ethical obligations, and design a brighter future for all.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Apr 2023 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/the-eight-rules-of-ethics-for-ux-designers/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/the-eight-rules-of-ethics-for-ux-designers/</guid>
+        
+        <category>ux</category>
+        
+        
+        <category>Ideas</category>
+        
+      </item>
+    
+  </channel>
+</rss>
