@@ -2,12 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Redd Studios Blog</title>
-    <description>A space for raw ideas before they turn into something useful</description>
+    <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Aug 2024 20:23:59 +0200</pubDate>
-    <lastBuildDate>Sat, 24 Aug 2024 20:23:59 +0200</lastBuildDate>
+    <pubDate>Thu, 12 Sep 2024 12:25:04 +0200</pubDate>
+    <lastBuildDate>Thu, 12 Sep 2024 12:25:04 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Five personal AI assistant devices reviewed and what they need to fix</title>
+        <description>&lt;p&gt;The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential. Having headed a UX design agency ranked among the top 100 globally, I’ve seen firsthand the challenges and nuances of designing new tech. Today, I want to share with you seven critical mistakes these products are making—and how I believe we can fix them.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-arent-personal-ai-assistants-taking-off&quot;&gt;Why Aren’t Personal AI Assistants Taking Off?&lt;/h2&gt;
+
+&lt;p&gt;Before diving into the nitty-gritty, let’s get one thing clear. The personal AI assistants I’m referring to aren’t like Siri or Google Assistant on your phone. We’re talking about devices that can break down complex tasks and execute them for you—whether it’s running apps, searching the web, or even coding in some cases.&lt;/p&gt;
+
+&lt;p&gt;These devices are mostly aimed at early adopters right now, but the goal is to create something for everyone. If you picture the product adoption lifecycle, we’re still in the early adopter phase. Right now, companies are testing their products in different niches, trying to figure out what sticks. It’s a chaotic phase, and we’re seeing an explosion of ideas—some good, some not so much. A lot of these ideas won’t make it to the mainstream, but that’s what makes this phase so exciting.&lt;/p&gt;
+
+&lt;p&gt;Now, let’s dig into the seven mistakes these AI assistant products are making and how I think they can course-correct.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-not-using-the-right-metaphor&quot;&gt;1. Not Using the Right Metaphor&lt;/h3&gt;
+
+&lt;p&gt;The first mistake is starting with the wrong metaphor. Products need to fit into a framework that users already understand. People don’t like adopting something completely alien. I always say evolution trumps revolution, especially in mass-market products. Finding a metaphor that connects the new with the familiar is crucial. AI assistants should be positioned as an evolution of tools people already know, not a radical shift that alienates potential users.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-limited-accessibility-and-reachability&quot;&gt;2. Limited Accessibility and Reachability&lt;/h3&gt;
+
+&lt;p&gt;For an AI assistant to succeed, it needs to be extremely accessible. Think about the evolution of computing—from desktops to laptops, tablets, smartphones, and now wearables. The goal is to bring tech closer to the user. Personal AI devices need to occupy that space between a smartphone and the user—something wearable that’s always available at a moment’s notice.&lt;/p&gt;
+
+&lt;p&gt;Users are going to need to learn a new behaviour—one where they think in terms of goals, not apps. The easier we make it for them to access the assistant, the quicker they’ll adapt.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-lack-of-multimodal-inputs-and-outputs&quot;&gt;3. Lack of Multimodal Inputs and Outputs&lt;/h3&gt;
+
+&lt;p&gt;Let’s be honest—audio alone isn’t enough. Yes, voice commands are intuitive and efficient for certain tasks, but information needs to be delivered in various ways. Visual feedback, like images and text, allows users to process information faster. Devices that rely only on voice, like some AI pins or pendants, miss out on the efficiency that visual data provides. The solution is to design devices with both visual and auditory outputs.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-poor-data-privacy-protections&quot;&gt;4. Poor Data Privacy Protections&lt;/h3&gt;
+
+&lt;p&gt;With AI, the question of privacy becomes even more critical. These devices will have access to mountains of personal data, and without strong privacy protections, they could easily become surveillance tools. The safest way to ensure privacy? Keep the data on the device itself. I think open-source projects like Open Interpreter, which runs locally on the user’s device, are on the right track. This model protects privacy and offers immediate feedback—something that cloud-based models struggle with.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-lag-in-response-time&quot;&gt;5. Lag in Response Time&lt;/h3&gt;
+
+&lt;p&gt;For AI assistants to feel natural, they need to respond quickly. Research shows that interactions that take longer than 400 milliseconds feel slow and clunky. Devices relying on cloud-based AI models are always going to have some lag, no matter how fast the server is. To hit that magical threshold of 400 milliseconds, AI models need to run locally on the device. Otherwise, users will experience delays that break the flow of interaction.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-lack-of-interoperability&quot;&gt;6. Lack of Interoperability&lt;/h3&gt;
+
+&lt;p&gt;We’re transitioning to a new kind of computing—one where AI agents handle tasks for us. These agents need to be able to interact seamlessly with existing systems and applications. If a user wants their AI assistant to book an Uber or play a song on Spotify, the interaction needs to be flawless. Devices that struggle with this will quickly fall out of favour. The future belongs to AI assistants that can bridge both the current and future computing models.&lt;/p&gt;
+
+&lt;h3 id=&quot;7-failure-to-create-universal-interfaces&quot;&gt;7. Failure to Create Universal Interfaces&lt;/h3&gt;
+
+&lt;p&gt;The final mistake I see is the lack of universal, adaptable interfaces. Every request a user makes might require a different interface—one that adapts in real-time. If I ask my AI assistant to book an Uber, the interface might display a map. If I want to pick between two songs, I’ll need a list. These interfaces need to be generated on the fly, based on the user’s specific request. A rigid interface simply won’t cut it.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-future-of-ai-assistants&quot;&gt;The Future of AI Assistants&lt;/h2&gt;
+
+&lt;p&gt;In my opinion, the best form factor for personal AI assistants is a wearable device—specifically a smartwatch. It’s close to the user, easy to access, and can incorporate the necessary screen for visual feedback. While today’s smartwatches may not have the power to run advanced AI models, the tech is catching up. With chip technology becoming more efficient and AI models getting smaller, we’re not far from a future where AI-powered smartwatches will be the norm.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, while none of the current products on the market have quite nailed it yet, some are closer than others. But in the end, it’s the big players—Google, Microsoft, and Meta—that are best positioned to dominate the personal AI assistant space. They have the data, and in AI, data is king.&lt;/p&gt;
+
+&lt;p&gt;As much as I root for the underdog, I wouldn’t bet my money on any of the current startups trying to break into this space. The race will be won by those with the resources to gather and process the vast amounts of data required to create truly effective AI assistants.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Sep 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/5-personal-ai-assistant-devices-reviewed/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/5-personal-ai-assistant-devices-reviewed/</guid>
+        
+        <category>product</category>
+        
+        <category>hardware</category>
+        
+        <category>design</category>
+        
+        <category>technology</category>
+        
+        
+        <category>Reviews</category>
+        
+      </item>
     
       <item>
         <title>Designing a better feature request system</title>
@@ -724,115 +791,6 @@ ___&lt;/p&gt;
         <category>ux</category>
         
         <category>opinion</category>
-        
-        
-        <category>Ideas</category>
-        
-      </item>
-    
-      <item>
-        <title>Eight Essential Rules for Mastering Ethical UX Design</title>
-        <description>&lt;p&gt;Reflecting on the work of many others and my own work within the field, I have distilled the following rules to act as a guide&lt;/p&gt;
-
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;While UX design is a relatively young field, its importance in a product’s success cannot be overstated. Its impact on the world today is clear, but sadly its ability to effect positive change is coupled with its ability to inflict harm. As with anything that has such powerful duality, a code of ethics is necessary to act as a lodestone to guide those venturing into this field in the future.&lt;/p&gt;
-
-&lt;p&gt;Reflecting on the work of many others and my own work within the field, I have distilled the following rules that should act as a guide:&lt;/p&gt;
-
-&lt;h1 id=&quot;rule-1-your-foremost-duty-is-to-help-your-client-succeed&quot;&gt;Rule #1: Your foremost duty is to help your client succeed&lt;/h1&gt;
-
-&lt;p&gt;I started my design career at Adobe Systems and then went on to build my own UX design agency. My ideas regarding this subject have evolved from “The designer’s job is to advocate for the user within a company” to “The designer is the servant of two masters and needs to figure out how to balance the two”, and finally to understanding that a company simply cannot have interests in opposition to those of its customers for any reasonable length of time, as customers are not naive people waiting to be tricked and will just switch to the nearest substitute. So, it’s enough to simply take the interest of your client — their true long-term interest — and design for that.&lt;/p&gt;
-
-&lt;h1 id=&quot;rule-2-your-task-is-to-help-a-user-simply-navigate-a-complex-world&quot;&gt;Rule #2: Your task is to help a user simply navigate a complex world&lt;/h1&gt;
-
-&lt;p&gt;Software is usually employed by a user for the completion of reasonably complicated tasks. Depending on the user, they may be unfamiliar with how to use the software, use the hardware, understand how technology functions, or even have physical limitations such as not being able to see small fonts clearly. Our job as designers is to help them navigate the technology in such a way that it is very simple for them to achieve their tasks. We may need to help them understand the decisions they need to make better, they may need settings that make interfaces more visible, they may rely on the software to make certain choices for them, etc. The better we understand our users, the better we can serve them.&lt;/p&gt;
-
-&lt;h1 id=&quot;rule-3-dont-treat-the-user-like-a-commodity&quot;&gt;Rule #3: Don’t treat the user like a commodity&lt;/h1&gt;
-
-&lt;p&gt;The anonymity one has on the internet is a double-edged sword. While it encourages free speech and discourse, it allows people to behave worse online than they would in real life. In the commercial world, this extends to thinking of users of a product in the abstract, reducing them to single dimensions as pockets that need to be picked, resources meant to be exploited, rats to be subjected to dopamine experiments, or as commodities meant to be traded. This is not good for the company in the long run (a la rule #1), but people attempt to do it anyway. Designers can play a big role in breaking these mindsets and making product managers or companies look at the long-term welfare of their users and, consequently, their own companies.&lt;/p&gt;
-
-&lt;h1 id=&quot;rule-4-your-counsel-is-as-important-as-your-labour&quot;&gt;Rule #4: Your counsel is as important as your labour&lt;/h1&gt;
-
-&lt;p&gt;Far too often, we measure our work by the effort we put in or the number of screens and experiences we produce. But I’ve always felt that they hire you for your skills in the early part of your career, and when you’ve gained more experience, they &lt;a href=&quot;https://re/&quot;&gt;h&lt;/a&gt;ire you for your opinions . When we’re designing something, we’re deeply considering a specific point, making decisions based on them and learning from their outcomes. It is this distillation of experience that is more important to a client than our labour. They shouldn’t have to spend new money to learn old lessons.&lt;/p&gt;
-
-&lt;h1 id=&quot;rule-5-a-designer-must-respect-cultures-genders-physical-abilities-political-leanings-and-privacy-preferences-and-must-design-to-enhance-all-of-them&quot;&gt;Rule #5: A designer must respect cultures, genders, physical abilities, political leanings and privacy preferences and must design to enhance all of them&lt;/h1&gt;
-
-&lt;p&gt;Much too often we think only through the lens of our biases and it’s all too easy to exclude certain people or groups from our thinking. I am myself guilty of not accommodating people with poor eyesight and early on in my life as a designer, I’d design applications with small fonts because they made the interfaces so cool. But this meant I’d ostracise a large group of people that found it hard to read the small fonts.&lt;/p&gt;
-
-&lt;p&gt;An even more subtle example is the frustration that one feels while using tools like Google Docs or Microsoft Word or many other software, where they have to change the locale setting &lt;em&gt;every&lt;/em&gt; time they create a new document as it usually defaults to ‘US English’ even if you’ve previously gone and set this to ‘Indian English’, ‘UK English’ or ‘Australian English’, or any of the many other dialects. I’ve seen people delivering food in India wearing t-shirts that say “Hunger Savior” instead of “Hunger Saviour” because someone forgot to change the locale setting while writing the copy for that t-shirt ! But there are even worse examples I have seen websites that use “Father’s Name” as a label for a field where “Parent’s Name” would have been more appropriate. Should someone really pick the option that says “childless”, even if they &lt;em&gt;chose&lt;/em&gt; not to have children and wouldn’t choosing “0” against children not be a more neutral choice! But here’s something that probably affects a lot more people — the methods of proving that you’re a human by typing in the English text displayed in a box. The majority of the world &lt;strong&gt;&lt;em&gt;doesn’t&lt;/em&gt;&lt;/strong&gt; speak English natively!&lt;/p&gt;
-
-&lt;p&gt;While it may be challenging to cater to every user’s unique preferences, being aware of these potential biases is the first step in creating more inclusive designs. By being open to feedback from users and making an effort to understand their perspectives, designers can work towards creating applications and products that are welcoming and accommodating for everyone.&lt;/p&gt;
-
-&lt;h1 id=&quot;rule-6-protect-the-privacy-of-your-users&quot;&gt;Rule #6: Protect the privacy of your users&lt;/h1&gt;
-
-&lt;p&gt;In the digital age, privacy has become a vital concern for users as their personal information is often at risk of being exploited by powerful entities. Although many people understand the importance of privacy, not everyone is aware of its implications on their own lives or how to select platforms that prioritize this aspect.&lt;/p&gt;
-
-&lt;p&gt;As a result, it falls upon product designers to make critical decisions on behalf of their users, ensuring that privacy is protected throughout their designs. By being conscious of potential privacy risks and implementing robust security measures, designers can help safeguard users’ personal information and maintain their trust in the products and platforms they use.&lt;/p&gt;
-
-&lt;p&gt;Anne Cavoukian, the Information and Privacy officer of Ontario, proposed a set of seven foundational principles to protect the users of most information systems called “Privacy by Design” (PbD). The core idea is to address privacy concerns from the beginning, instead of adding privacy measures as an afterthought. PbD comprises seven foundational principles:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Proactive not Reactive; Preventative not Remedial: Privacy by Design emphasises anticipating and preventing privacy invasions before they happen, rather than waiting for breaches to occur and then taking remedial action.&lt;/li&gt;
-  &lt;li&gt;Privacy as the Default Setting: Privacy should be built into systems and services by default, so users don’t have to take any action to protect their privacy. This means that personal data should be automatically protected without requiring any user intervention.&lt;/li&gt;
-  &lt;li&gt;Privacy Embedded into Design: Privacy should be an integral part of the design and architecture of IT systems and business practices. This ensures that privacy is not treated as an add-on but is a core component of the system or service.&lt;/li&gt;
-  &lt;li&gt;Full Functionality — Positive-Sum, not Zero-Sum: PbD advocates for a “win-win” approach where both privacy and functionality are achieved, without compromising either. It rejects the idea that privacy must be sacrificed for security or other objectives.&lt;/li&gt;
-  &lt;li&gt;End-to-End Security — Lifecycle Protection: Privacy by Design emphasises the need for strong security measures throughout the entire data lifecycle — from collection to use, storage, and eventual disposal. This involves implementing robust access controls, encryption, and other security techniques.&lt;/li&gt;
-  &lt;li&gt;Visibility and Transparency: PbD emphasises being open and transparent about privacy practices, allowing users and other stakeholders to verify that privacy measures are in place and functioning as intended. This fosters trust and confidence in the system or service.&lt;/li&gt;
-  &lt;li&gt;Respect for User Privacy: Privacy by Design puts users at the centre, giving them control over their personal data and making it easy for them to exercise their privacy rights. This includes mechanisms for obtaining consent, providing access to personal information, and allowing users to correct or delete their data.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To make applications respect users’ privacy, follow these steps:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Conduct a privacy impact assessment at the beginning of the project to identify potential privacy risks and develop strategies to address them.&lt;/li&gt;
-  &lt;li&gt;Design the application with privacy in mind, incorporating the Privacy by Design principles from the start.&lt;/li&gt;
-  &lt;li&gt;Collect only the minimum necessary personal data and anonymise or pseudonymise data where possible.&lt;/li&gt;
-  &lt;li&gt;Implement strong access controls and encryption to protect personal data in transit and at rest.&lt;/li&gt;
-  &lt;li&gt;Establish clear and transparent privacy policies, making them easily accessible to users.&lt;/li&gt;
-  &lt;li&gt;Offer users options to manage their privacy settings, giving them control over their personal data.&lt;/li&gt;
-  &lt;li&gt;Regularly review and update privacy practices, staying informed of changes in regulations and industry best practices.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;rule-7-find-every-opportunity-to-reduce-the-carbon-footprint&quot;&gt;Rule #7: Find every opportunity to reduce the carbon footprint&lt;/h1&gt;
-
-&lt;p&gt;When e-commerce companies first launched in India, every step from the moment a user completed payment on a website to the final delivery of the product to the user’s home was new and untested. One such process was the packaging method.&lt;/p&gt;
-
-&lt;p&gt;It appears that packaging and shipping standards from another country were adopted, with every product arriving in bubble wrap and oversized boxes, regardless of the contents. However, it is well-known that India is averse to waste, be it food on a plate or in business, nothing is allowed to go to waste. When oversized boxes started appearing at people’s doorsteps for items as small as lipstick, deodorant, or a bar of soap, people began to complain!&lt;/p&gt;
-
-&lt;p&gt;This led to someone in the logistics department reevaluating the situation and adapting the Standard Operating Procedures (SOPs) to suit waste-intolerant Indian conditions. Packaging underwent a rapid transformation across all e-commerce players: boxes were replaced by envelopes when possible, clothes were wrapped in brown paper, the number of shipments decreased, and items were grouped. Other changes included shipping items to a neighbourhood store for customer pick-up and making numerous other adjustments in a short time. Encouraging a company to adopt environmentally-friendly practices is challenging, but e-commerce companies embraced these strategies because they aligned with their interests.&lt;/p&gt;
-
-&lt;p&gt;This prompted me to think about design interventions that could benefit the company, customer, and environment. A few ideas immediately came to mind that e-commerce companies could implement:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Allow users to specify their preferred packaging for the products they order.&lt;/li&gt;
-  &lt;li&gt;Let users indicate if they need their items urgently or are willing to wait for grouped deliveries with others in the area, enabling the packaging department to avoid always defaulting to the “safest” option.&lt;/li&gt;
-  &lt;li&gt;Food delivery companies can improve the value-per-mile metric for their delivery personnel by allowing them to collect used plastic containers from customers, streamlining recycling efforts.&lt;/li&gt;
-  &lt;li&gt;Offer subscription options for frequently ordered products, optimising delivery routes and making them more predictable.&lt;/li&gt;
-  &lt;li&gt;Allow users to inform product manufacturers of their preference for eco-friendly alternatives, which could encourage manufacturers to develop such options if there is sufficient demand.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;These are five ideas with me spending a few hours thinking about the problem. Imagine the possibilities if designers everywhere also focussed on this problem. And that’s the main call to action in this rule.&lt;/p&gt;
-
-&lt;h1 id=&quot;rule-8-design-for-delight-not-for-addiction&quot;&gt;Rule #8: Design for delight, not for addiction&lt;/h1&gt;
-
-&lt;p&gt;Design is an incredibly powerful tool that can help achieve any goal. There have been numerous shows and documentaries highlighting how design can make applications addictive. It is possible to devise countless ways to captivate users, keeping them glued to your application. The primary benefits of this approach are pushing more ads to users or spying on them to build a profile for sale to the highest bidder. However, these are shortsighted goals and tactics. Awareness is growing among people, who now understand that if the product is free, they themselves are the product.&lt;/p&gt;
-
-&lt;p&gt;Moreover, there is a trend towards paying for software nowadays, as demonstrated by the growth of SaaS products, consumers’ willingness to pay for digital content on platforms like Netflix, Apple+, and others, and the increased use of cloud-only products such as the popular design tool Figma. Such services depend less on ad revenue and more on providing quality products and delightful experiences.&lt;/p&gt;
-
-&lt;p&gt;Users of these services have demonstrated that they are not only willing to pay for quality products and services but will also remain loyal to the company long-term. This contrasts with the software of the past, which would be uninstalled as soon as users had finished their intended tasks. In an era when the cost of acquiring customers is skyrocketing, wouldn’t you prefer to be the one retaining customers for the long haul?&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;Ethics encompass the principles and values that guide human behaviour and decision-making, with a focus on concepts such as fairness, justice, and moral obligation. Ethics inspire individuals and organisations to contemplate the wider implications of their actions on others and the environment. By embracing these values, we can forge the kind of societies in which we yearn to live.&lt;/p&gt;
-
-&lt;p&gt;As UX designers, we now hold immense power and the capacity to shape the digital worlds we increasingly inhabit. It is time for us to take responsibility for our actions, learn from the best practices, and strive to create a positive impact that fosters long-term well-being. Let us seize this opportunity, embrace our ethical obligations, and design a brighter future for all.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 21 Apr 2023 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/the-eight-rules-of-ethics-for-ux-designers/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/the-eight-rules-of-ethics-for-ux-designers/</guid>
-        
-        <category>ux</category>
         
         
         <category>Ideas</category>
