@@ -5,9 +5,84 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Sep 2024 12:25:04 +0200</pubDate>
-    <lastBuildDate>Thu, 12 Sep 2024 12:25:04 +0200</lastBuildDate>
+    <pubDate>Fri, 04 Oct 2024 16:22:06 +0200</pubDate>
+    <lastBuildDate>Fri, 04 Oct 2024 16:22:06 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Designing Web3 Wallets for Mainstream Users</title>
+        <description>&lt;p&gt;&lt;em&gt;There is a problem with Web3 wallets, they’re just too complex. But where’s the problem stemming from and how do we solve it?&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;web3-wallets-for-mainstream-users&quot;&gt;Web3 Wallets for Mainstream Users&lt;/h1&gt;
+
+&lt;p&gt;Web3, the next phase of the internet powered by blockchain technology, promises to revolutionise industries, but its complexity continues to alienate mainstream users. At the heart of this challenge is the Web3 wallet—a fundamental tool required for engaging with decentralised applications (dApps), managing cryptocurrencies, and accessing blockchain networks. While Web3 enthusiasts have embraced the wallet system, its cryptographic foundations and technical jargon have left everyday users overwhelmed and frustrated. To drive mainstream adoption of Web3, we need to focus on fixing the wallet experience, making it intuitive and accessible.&lt;/p&gt;
+
+&lt;p&gt;In this blog, we’ll explore why the wallet is the crux of Web3 usability challenges and how a thoughtful redesign grounded in familiar concepts, like banking, can unlock its full potential.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-wallet-conundrum-complexity-meets-confusion&quot;&gt;The Wallet Conundrum: Complexity Meets Confusion&lt;/h3&gt;
+
+&lt;p&gt;The primary function of a Web3 wallet is to store a user’s private and public keys. These cryptographic keys are used to authorise transactions and prove the user’s identity within the blockchain ecosystem. But this process, while secure and revolutionary, is incredibly foreign to non-technical users. Terms like “private key,” “public key,” and “signing messages” can cause even the most tech-savvy Web2 users to shy away. The need for simplification is apparent.&lt;/p&gt;
+
+&lt;p&gt;In Web2, users can easily send and receive money through banks or payment apps without ever having to understand the mechanics behind these systems. Web3, by contrast, demands users grasp cryptographic principles or risk losing access to their digital assets. The complexity isn’t just a barrier; it’s a deterrent.&lt;/p&gt;
+
+&lt;p&gt;Many existing wallets, such as Zerion or Rabby, have attempted to ease the user experience by iterating on older designs. And while they have indeed made Web3 more user-friendly, they still fall short of the mainstream appeal necessary for broad adoption. These wallets are excellent by Web3 standards, but they remain inscrutable for the average Web2 user, leaving us to ask: Why can’t a Web3 wallet be as intuitive as the apps we’re already accustomed to?&lt;/p&gt;
+
+&lt;h3 id=&quot;terminology-matters-the-language-of-web3&quot;&gt;Terminology Matters: The Language of Web3&lt;/h3&gt;
+
+&lt;p&gt;A significant part of the problem lies in the terminology itself. In Web3, terms like “wallet” are used inaccurately. In traditional banking, a wallet implies a place where you store something—cash, cards, and other financial instruments. However, in Web3, a wallet doesn’t “store” money in the traditional sense. Instead, it acts more like an access card to funds stored on the blockchain. Misleading terminology adds to the confusion, making it harder for users to understand how to manage their digital assets.&lt;/p&gt;
+
+&lt;p&gt;Open-source development, which is central to the Web3 ecosystem, has contributed to this confusion. Over time, various developers have used different terms to describe the same concepts, leading to inconsistent vocabulary across platforms. For instance, “public key,” “wallet address,” and “externally owned account” all refer to the same thing, but new users won’t know that. This inconsistency hinders their ability to trust and navigate the system confidently.&lt;/p&gt;
+
+&lt;p&gt;Language is powerful, and when users encounter familiar terms, they can better grasp unfamiliar concepts. Web2 sites like e-commerce platforms utilise relatable language (“add to cart,” “checkout”) that immediately makes sense to users. The same approach needs to be applied to Web3 wallets if we want to make them accessible to the average person.&lt;/p&gt;
+
+&lt;h3 id=&quot;building-familiarity-banking-as-a-metaphor&quot;&gt;Building Familiarity: Banking as a Metaphor&lt;/h3&gt;
+
+&lt;p&gt;To solve the wallet problem, we need to rethink the entire framework. Instead of framing wallets with cryptographic jargon, we should use a metaphor that resonates with mainstream users. And what’s more familiar than banking? Banking is a 2,000-year-old institution, and most people are already acquainted with its core concepts.&lt;/p&gt;
+
+&lt;p&gt;By reimagining the Web3 wallet as a piece of “banking software,” we can translate complex blockchain concepts into terms users already understand. For instance, the wallet itself could be referred to as “banking software,” the wallet address as an “account number,” the private key as a “signature,” blockchain networks as “networks,” and the various fees associated with a transaction such as “tip”, “gas” and such could be simplified into “transaction fees,” just as people are used to paying on traditional payment platforms.&lt;/p&gt;
+
+&lt;p&gt;This banking analogy would not only make Web3 wallets more relatable but also help ease users into the system without overwhelming them with technical details.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-three-account-structure-enhancing-security-and-usability&quot;&gt;A Three-Account Structure: Enhancing Security and Usability&lt;/h3&gt;
+
+&lt;p&gt;In addition to simplifying the terminology, a redesigned Web3 wallet should also mimic the structure of traditional banking. A banking app typically offers various types of accounts—checking, savings, and investment—and the same can be applied to Web3.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Checking Account&lt;/strong&gt;: This would be where users conduct everyday transactions with known entities or individuals, similar to a checking account in traditional banking.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Savings Account&lt;/strong&gt;: This would serve as a secure place to store assets, where users could stake cryptocurrencies or simply keep them safe. It would allow users to generate interest on their holdings without needing to interact with external applications.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Investment Account&lt;/strong&gt;: For users seeking higher risk and reward opportunities, this account would enable interaction with decentralised applications (dApps) for staking, lending, or other investment activities.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This compartmentalisation not only makes the system more intuitive but also enhances security. By limiting the interactions of the checking and savings accounts with external applications, users can reduce their exposure to potential security risks. Only the investment account, which is meant for higher-risk activities, would be open to external dApps.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-road-ahead-evolving-web3-for-the-mainstream&quot;&gt;The Road Ahead: Evolving Web3 for the Mainstream&lt;/h3&gt;
+
+&lt;p&gt;In conclusion, the wallet is the linchpin of Web3 adoption. If we can make the wallet experience seamless and intuitive, we can unlock Web3’s immense potential for a wider audience. The key lies in rethinking both the terminology and structure, using familiar banking concepts to demystify the process. By addressing these foundational issues, we can bridge the gap between Web2 and Web3, paving the way for mass adoption.&lt;/p&gt;
+
+&lt;p&gt;For designers and developers working on Web3 applications, this means prioritising usability over technical prowess. It means considering what mainstream users already know and building upon that knowledge, rather than introducing new, foreign concepts. The future of Web3 is bright, but only if we can make it accessible to everyone.&lt;/p&gt;
+
+&lt;h1 id=&quot;video-with-screens&quot;&gt;Video with screens&lt;/h1&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;338&quot; src=&quot;https://www.youtube.com/embed/flGWL54hJR4&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Mon, 30 Sep 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/web3-wallets-for-mainstream-users/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/web3-wallets-for-mainstream-users/</guid>
+        
+        <category>design</category>
+        
+        
+        <category>Projects</category>
+        
+      </item>
     
       <item>
         <title>Five personal AI assistant devices reviewed and what they need to fix</title>
@@ -58,6 +133,10 @@
 &lt;p&gt;Ultimately, while none of the current products on the market have quite nailed it yet, some are closer than others. But in the end, it’s the big players—Google, Microsoft, and Meta—that are best positioned to dominate the personal AI assistant space. They have the data, and in AI, data is king.&lt;/p&gt;
 
 &lt;p&gt;As much as I root for the underdog, I wouldn’t bet my money on any of the current startups trying to break into this space. The race will be won by those with the resources to gather and process the vast amounts of data required to create truly effective AI assistants.&lt;/p&gt;
+
+&lt;h1 id=&quot;watch-the-video&quot;&gt;Watch the Video&lt;/h1&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;338&quot; src=&quot;https://www.youtube.com/embed/7GPtfH1lYkI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Thu, 12 Sep 2024 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/blog/5-personal-ai-assistant-devices-reviewed/</link>
@@ -721,79 +800,6 @@ Another issue with the cable was that the sockets it plugged into on the other s
         
         
         <category>Experiments</category>
-        
-      </item>
-    
-      <item>
-        <title>Better tools should be better employed</title>
-        <description>&lt;p&gt;When you have access to tools that provide you unlimited capability, how should these tools be used.&lt;/p&gt;
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;In the age of AI, the only limitation to creating things is our ability to imagine them. While AI tools allow for new possibilities, there is a real growing concern that our ability to imagine itself may be eviscerated. But uniquely to our time, there are dire consequences to using &lt;em&gt;and&lt;/em&gt; not using the technologies. The only way forward is to pay attention to where we employ these tools and where we don’t.&lt;/p&gt;
-
-&lt;p&gt;Design is about changing and managing perceptions and ideas about the world we live in. It’s powerful because when employed well, it works wonders as a way of wielding influence. This influence can broaden our horizons, make us aware of our hidden biases and even train good behaviour. Or, on the other hand, it can block progress and foster addictive and unhealthy behaviours such as providing positive reinforcement when we buy stuff we don’t need.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/BetterTools-2.webp&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;two-stories&quot;&gt;Two Stories&lt;/h1&gt;
-&lt;p&gt;I recently watched this wonderful video by Dami Lee where she analysed the fantastic amount of detail that the people at &lt;a href=&quot;https://www.ghibli.jp/&quot;&gt;Studio Ghibli&lt;/a&gt; went into while creating some of the award-winning animated movies that they are known for. Since Dami Lee is an architect, she analysed the movies from that perspective and highlighted how thoughtfully the buildings were detailed, including the details of lobbies, the rooms themselves, and even what the long passageways mean in terms of the Japanese culture they represent. She’s fascinated that the studio is able to be this observant and dives in to find out what about their design process makes this possible. And this, to me, in my current role as the head of a design team, was what I found most interesting.&lt;/p&gt;
-
-&lt;p&gt;In the video, there are clips of interviews with one of the founders &lt;a href=&quot;https://en.wikipedia.org/wiki/Hayao_Miyazaki&quot;&gt;Hayao Miyazaki&lt;/a&gt; where he states that they force everyone to animate things in the traditional way “by hand” even though this is far more painstaking and tedious. He says that this, in fact, is the reason the studio has been able to be as observant as they have been. He insists that this is the case and goes on to berate anyone that wants to use technology or find a faster way to do things. He famously has said, “Anyone that eats instant ramen three times a day cannot be an animator,” further emphasising the idea.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Anyone that eats instant Ramen three times a day cannot be an animator”
-– Hayao Miyazaki, Co-Founder, Studio Ghibli&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In a completely different part of the world, a friend of mine had developed an appreciation for calligraphy and had begun dabbling with it. He showed me the various pages where he had written the same letter over and over again. Being extremely observant he had observed how he had to move his hand in order to achieve the right shape of the stroke and paid attention to how the ink flowed on the paper. He had even crafted the right kind of pens and nibs to be able to do this easily. But his biggest learning was that the effort involved in the art actually made him think many times about what it is that he wanted to convey. It had to be something important as the very act of embellishing the letters took a lot of time and effort.&lt;/p&gt;
-
-&lt;p&gt;He went on to remark at the virtues of the art of letter writing of the ages past that our grandparents were very familiar with. He saw that there was something beautiful in the effort one put not only into the writing of the letters, but also the pasting, stamping, walking the letter over to the nearby postbox that somehow conveyed to the recipient and made them so happy or at least important for being the beneficiary of such effort.&lt;/p&gt;
-
-&lt;p&gt;It seems there was something to the deliberation involved and the lack of speed, that made for greater appreciation. And this got me thinking about the design process I use in my daily work as a user experience designer.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/BetterTools-3.webp&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;a-better-ux-design-process&quot;&gt;A Better UX Design Process&lt;/h1&gt;
-&lt;p&gt;User Experience Design as a field gained foothold with the advent of computers and the invention of the Graphical User Interface. It’s been a digital pursuit since it’s inception and as such technology has been used to improve every aspect of the process, right from research, wire-framing, visual design, implementation and testing.&lt;/p&gt;
-
-&lt;p&gt;For those unfamiliar with this field, the main job of a UX designer is to visualise how an application would look and feel like before it has been developed by programmers, much like an architect would render drawings of a building on paper before the building gets built. The task therefore is of communication to all the stakeholders. The hope is that any fixes that are required are done at the design stage when it is cheaper rather than at the development stage when it is definitely much more expensive.&lt;/p&gt;
-
-&lt;p&gt;But even a considerably simple application requires more than fifty screens to be designed if every scenario anticipated while using it needs to be thought through. For example, how does a user login, how do they set their preferences, how do they communicate with support personnel, how do they bring their friends onto the app, and so on. When you factor in the additional operating systems and the various devices and screen sizes that the application should work on, you can easily understand how many screens need to be developed.&lt;/p&gt;
-
-&lt;p&gt;Imagine if something that appears on all the screens needs to be changed (which happens more frequently than one thinks), a designer will have to manually locate the said element in each of the screens and replace them. Using Photoshop, Illustrator or Fireworks, which were tools we used to use to design these screens, this took hours or even days of mind-numbing effort and designers hated doing this. They would do anything to avoid rework, including pushing back on any change requests, pushing the task to the developers to handle at the time of development or even just changing the process to seek inputs and feedback on just key screens before all the associated screens in the process are completely developed which is not really the best way to do this as the stakeholders are evaluating based on insufficient information.&lt;/p&gt;
-
-&lt;p&gt;Today, we have much better tools like Figma which make these changes across hundreds of screens in a matter of seconds. This one ability has allowed us to create much better designs, seek feedback after a lot of screens covering a lot of scenarios are actually developed improving the quality of the output immensely. From my vantage point, it’s clearly evident that this kind of technology has been great for the industry.&lt;/p&gt;
-
-&lt;p&gt;But in this mad rush to achieve outputs faster, the same tools also offers the ability for designers to use templates to speed up the work even further. There are AI design tools that are being created that would create entire workflows and in some cases even apps with a single prompt. Like painters of canvasses, UX designers have also got to pay attention to every pixel that they place on the screen. Everything is deliberated upon and nothing happens by accident which is why the outputs are meaningful. This part of the process should remain slow for a reason. If technology is used to reduce the deliberation in an effort to ease this part of the process, the outputs of such processes will undoubtedly be mediocre.
-___&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/BetterTools-4.webp&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;counter-arguments&quot;&gt;Counter Arguments&lt;/h1&gt;
-&lt;p&gt;In some cases, “mediocre” may be a desirable step up. For example, A business owner for instance may simply want to test out an idea for an app without the kinds of expenses involved in the design and development of a custom-built application. But there’s a risk here. A friend of mine advised me about which bicycle to buy this way, “Don’t get a basic bike if you intend to get into this sport. You won’t like the bike and you’ll end up rejecting the sport instead.” I think there’s a lot of truth in that statement and I’d like to provide the same warning to the business owner who may be tempted to use this route. Testing out a good idea using mediocre ways to get you to the output is actually not testing out the idea at all.&lt;/p&gt;
-
-&lt;p&gt;A UX designer also may be tempted to use these tools to define a baseline for the app that they want to develop. These tools may still serve a purpose, but fixing a bad output is probably harder than creating the right output from scratch. There’s also the possibility that not every aspect of the output is examined as well as when creating the output in the first place. Would you want your app to go out to developers with these flaws still in it?&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Don’t get a basic bike if you intend to get into this sport. You won’t like the bike and you’ll end up rejecting the sport instead.”
-– Rohan Kini, Bums on the Saddle&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;I think technology is a tool like any other and can be beneficial or detrimental depending on how we use it. It will always lure us with its promise of speed, scale, spread, smarts and asynchrony. While it can improve our lives, indiscriminate employment of it will only result in poor outputs. We must be vigilant about what we employ these tools for. Reduction of effort is a great reason to use technology, but if it can impede our thoughtfulness, it is probably a bad use of it.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 29 Jun 2023 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/better-tools-should-be-better-employed/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/better-tools-should-be-better-employed/</guid>
-        
-        <category>ux</category>
-        
-        <category>opinion</category>
-        
-        
-        <category>Ideas</category>
         
       </item>
     

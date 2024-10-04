@@ -109,6 +109,10 @@
 <lastmod>2024-09-12T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/web3-wallets-for-mainstream-users/</loc>
+<lastmod>2024-09-30T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog/about</loc>
 </url>
 <url>
@@ -137,5 +141,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/blog/page3/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/page4/</loc>
 </url>
 </urlset>
