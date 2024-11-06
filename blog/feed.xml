@@ -5,9 +5,98 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Oct 2024 16:28:34 +0200</pubDate>
-    <lastBuildDate>Fri, 04 Oct 2024 16:28:34 +0200</lastBuildDate>
+    <pubDate>Wed, 06 Nov 2024 18:07:30 +0100</pubDate>
+    <lastBuildDate>Wed, 06 Nov 2024 18:07:30 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Design Proposals that Boost Conversion Rates</title>
+        <description>&lt;p&gt;&lt;em&gt;Building proposal templates takes a lot of effort and you’re still left unsure of whether you’ve done it right. This article tries to help you fix that.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;creating-a-winning-ux-design-proposal-a-comprehensive-guide&quot;&gt;Creating a Winning UX Design Proposal: A Comprehensive Guide&lt;/h1&gt;
+
+&lt;p&gt;Crafting a UX design proposal can be challenging, but it is also an invaluable tool in securing new projects and demonstrating professionalism. A well-structured proposal not only showcases your understanding of the client’s needs but also reflects your agency’s strengths and your ability to foresee potential project challenges. Based on my years running a UX design agency, here’s a guide to creating a compelling proposal that can boost your conversion rates and help you stand out.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-understanding-the-purpose-of-a-proposal&quot;&gt;1. Understanding the Purpose of a Proposal&lt;/h2&gt;
+
+&lt;p&gt;A proposal is essentially the answer to the client’s questions before they commit to hiring you. They want to know if you understand their project, if you’re aligned on goals, and if your capabilities and deliverables match their expectations. Answering these questions clearly within your proposal gives clients the confidence they need to move forward with you.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-key-components-of-a-ux-proposal&quot;&gt;2. Key Components of a UX Proposal&lt;/h2&gt;
+
+&lt;p&gt;To make your proposal thorough and professional, include these eight essential components:&lt;/p&gt;
+&lt;h3 id=&quot;project-summary&quot;&gt;Project Summary&lt;/h3&gt;
+&lt;p&gt;The summary should ensure everyone is on the same page. Here, outline the specific project objectives, emphasising the agreed-upon approach. If your agency has unique strengths, such as a technical or development background, this is the place to highlight them. This section serves as a commitment to the client, defining exactly what you’ll focus on.&lt;/p&gt;
+
+&lt;h3 id=&quot;feature-list&quot;&gt;Feature List&lt;/h3&gt;
+&lt;p&gt;One of the most time-intensive sections, the feature list outlines the project at a high level, covering major elements without getting overly technical. For instance, if the project includes user authentication, mention this as a feature but avoid specific technical details like whether it will include OTP verification. This list demonstrates thorough planning, showing that you’re not just sending a generic proposal.&lt;/p&gt;
+
+&lt;h3 id=&quot;scope-of-work&quot;&gt;Scope of Work&lt;/h3&gt;
+&lt;p&gt;Outline all the deliverables you’ll provide. This section can also serve as a showcase for your agency’s full capabilities, even if some services aren’t part of this specific project. For example, list everything from wireframing to prototyping, and clarify which tools and formats you’ll use. Ensuring clarity on deliverables avoids confusion later on and establishes a sense of professionalism.&lt;/p&gt;
+
+&lt;h3 id=&quot;team-structure&quot;&gt;Team Structure&lt;/h3&gt;
+&lt;p&gt;Explain who will be working on the project, their roles, and their experience levels. This can include a project manager, UX/UI designers, and other support roles like content creators or icon designers. Detailing your team structure justifies your pricing, showing the client that the work involves skilled professionals rather than being handled solely by a generalist.&lt;/p&gt;
+
+&lt;h3 id=&quot;engagement-guidelines&quot;&gt;Engagement Guidelines&lt;/h3&gt;
+&lt;p&gt;Set out expectations on both sides. Define a single point of contact (Spock) on your team and request the same on the client’s end to streamline communication. Specify a regular meeting cadence, like weekly check-ins, to keep the project on track. This section also covers managing scope changes and clarifies your availability to avoid client requests at odd hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;support&quot;&gt;Support&lt;/h3&gt;
+&lt;p&gt;Support goes beyond project completion, as clients may need assistance once the design phase is over. Typically, offer 30 days of support post-handover to handle clarifications and minor adjustments, but make it clear that extensive support beyond this window will incur additional charges. This also includes defining the method of support, whether remote or on-site, with associated travel costs if needed.&lt;/p&gt;
+
+&lt;h3 id=&quot;cost-and-packages&quot;&gt;Cost and Packages&lt;/h3&gt;
+&lt;p&gt;Costing can be a make-or-break aspect of your proposal. Offering tiered packages—bare minimum, standard, and premium—can appeal to different budgets and give clients flexibility. Using a worksheet to customise package features and pricing quickly allows you to respond to client requests efficiently, showing professionalism and organisational readiness.&lt;/p&gt;
+
+&lt;h3 id=&quot;payment-schedule-and-protection-clauses&quot;&gt;Payment Schedule and Protection Clauses&lt;/h3&gt;
+&lt;p&gt;Establishing a payment schedule is essential for cash flow and client commitment. A common approach is 50% upfront, 25% midway, and the remaining 25% upon completion. Clearly state conditions for payment delays, such as the right to halt or terminate the project if payments are not made on time. Including protection clauses safeguards your interests, and clients typically view them as standard business practice.&lt;/p&gt;
+
+&lt;h3 id=&quot;additional-annexures&quot;&gt;Additional Annexures&lt;/h3&gt;
+
+&lt;p&gt;Finally, append any extra information that can strengthen your proposal, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Company Overview&lt;/strong&gt;: Highlight your agency’s expertise and how you stand out. Large clients, especially, may appreciate a quick reference on your background without needing to research separately.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Client Portfolio&lt;/strong&gt;: Showcasing similar past projects builds credibility. If your client seeks an e-commerce solution, for example, list other e-commerce projects you’ve completed to demonstrate your experience.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Team Bios (Optional)&lt;/strong&gt;: If certain team members have notable expertise, add brief bios. This personal touch can reinforce the unique value you bring to the project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-recognising-common-proposal-traps&quot;&gt;3. Recognising Common Proposal Traps&lt;/h2&gt;
+
+&lt;p&gt;Not all proposal requests are genuine. Some clients may seek proposals simply to benchmark costs, fulfil internal bidding quotas, or collect ideas without intending to hire. Though you can’t always avoid such situations, by treating ideas as renewable and presenting your unique perspective, you position yourself as a resourceful, innovative partner for potential clients.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-automating-for-efficiency-to-an-extent&quot;&gt;4. Automating for Efficiency (to an Extent)&lt;/h2&gt;
+
+&lt;p&gt;Automating repetitive proposal elements, like feature lists or pricing structures, can streamline your process. However, automation shouldn’t replace human interaction altogether. Proposals play a vital role in assessing potential clients and understanding their unique needs, so a fully automated system risks undermining this relationship-building opportunity. I chose to keep personal contact integral to my process, which allowed me to enjoy a diverse range of projects with clients I valued.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;A well-crafted UX design proposal is more than a sales document; it’s an opportunity to build trust and set clear expectations with clients. By including comprehensive components, adapting to different client needs, and presenting a strong sense of your agency’s capabilities, your proposal can serve as a valuable tool for both winning projects and ensuring smooth collaboration throughout.&lt;/p&gt;
+
+&lt;p&gt;With this framework, I hope you’ll find the proposal process smoother, more efficient, and ultimately more successful.&lt;/p&gt;
+
+&lt;h1 id=&quot;accompanying-video&quot;&gt;Accompanying Video&lt;/h1&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;338&quot; src=&quot;https://www.youtube.com/embed/3ckaYWWNzRU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;useful-items-mentioned&quot;&gt;Useful Items Mentioned&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.patreon.com/reddxf/shop/general-ux-design-proposal-template-585912&quot;&gt;General Purpose Proposal Template for UX Projects&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.patreon.com/reddxf/shop/general-ux-design-proposal-worksheet-586169&quot;&gt;General Purpose Proposal Worksheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 05 Nov 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/creating-proposals-that-convert/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/creating-proposals-that-convert/</guid>
+        
+        <category>design</category>
+        
+        <category>business</category>
+        
+        
+        <category>Ideas</category>
+        
+      </item>
     
       <item>
         <title>Designing Web3 Wallets for Mainstream Users</title>
@@ -666,140 +755,6 @@ Another issue with the cable was that the sockets it plugged into on the other s
         
         
         <category>Ideas</category>
-        
-      </item>
-    
-      <item>
-        <title>Generative AI Art Experiments</title>
-        <description>&lt;p&gt;Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Here are my experiments.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Being able to imagine something and bring it to life in the form of an image or video is a tempting prospect. While one part of the design world lamented the fact that these tools may replace our roles, I belong to the small minority that looks at these new technologies with the hope that it would lead to better design. I could after all never call myself a designer if I had never run into Photoshop all those years ago.&lt;/p&gt;
-
-&lt;p&gt;So I dove in head-first into figuring out what this new frontier holds for us. This is an on-going experiment and I am just documenting my learnings as I go along.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If not for Photoshop, I may have never become a designer&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;what-did-i-expect&quot;&gt;What did I expect?&lt;/h1&gt;
-
-&lt;p&gt;While I started exploring this simply out of curiosity, it later was also a business decision as I anticipated that it would help my small team do more. After all we were about to launch a second product at work and I had to find ways to  sustain all of it with the current team size.&lt;/p&gt;
-
-&lt;p&gt;Therefore, I started by trying to find answers to the following:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;What are the tools that are available?&lt;/li&gt;
-  &lt;li&gt;What’s the learning curve to use these technologies?&lt;/li&gt;
-  &lt;li&gt;How much control do I have over the output?&lt;/li&gt;
-  &lt;li&gt;How much post-processing is required?&lt;/li&gt;
-  &lt;li&gt;Can they produce consistent quality and style over a period of time?&lt;/li&gt;
-  &lt;li&gt;Are the technologies mature enough for everyday use?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;october-2022-ai-based-art-nfts&quot;&gt;October 2022: AI based art NFTs&lt;/h1&gt;
-
-&lt;p&gt;I had heard of AI generated art and was amazed by what I saw in some videos but I had no idea how this was done or how. I happened to run into NFT’s on Rarible at that time and saw this collection of AI based images that someone had made. I was just so amazed with its accuracy that I ended up buying a few of them simply in the hope that I was supporting someone who was working on this and possibly getting flack for not being a true artist.&lt;/p&gt;
-
-&lt;h2 id=&quot;learnings-from-this-phase&quot;&gt;Learnings from this phase:&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;AI art is dividing the world into the group that thinks this is art and the group that thinks it isn’t&lt;/li&gt;
-  &lt;li&gt;No one expected AI would set its sights on the creative fields first.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&quot;display: table;&quot;&gt;
-&lt;div style=&quot;display: table-row;&quot;&gt;
-&lt;div style=&quot;display: table-cell;&quot;&gt;
-&lt;img src=&quot;../assets/images/GenerativeAIArt-2.webp&quot; alt=&quot;Image 1&quot; /&gt;
-&lt;/div&gt;
-&lt;div style=&quot;display: table-cell;&quot;&gt;
-&lt;img src=&quot;../assets/images/GenerativeAIArt-3.webp&quot; alt=&quot;Image 2&quot; /&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;february-2023-midjourney&quot;&gt;February 2023: MidJourney&lt;/h1&gt;
-
-&lt;p&gt;I ran into MidJourney back in late 2022 through a colleague who was using it to create some artwork that I was quite impressed with. I thought to try it out but the version that existed at the time was just not that great with the simple “prompts” I was able to provide it. It took too many tries and much too long to generate something just remotely close to what I wanted.&lt;/p&gt;
-
-&lt;p&gt;I saw others developing images that looked a lot better and saw what they had prompted MJ in order to produce it. I copied one of them that had produced a very cool image of a cat to produce an image of a dog. My dog image had three eyes!&lt;/p&gt;
-
-&lt;p&gt;My attempts at producing human portraits didn’t fare much better. All of them had messed up hands or too many fingers for some reason. I was producing Dali-esque images without intending to.&lt;/p&gt;
-
-&lt;p&gt;I walked away from a two hour session kind of impressed, but feeling that the tech wasn’t there yet.&lt;/p&gt;
-
-&lt;h2 id=&quot;learnings-from-this-phase-1&quot;&gt;Learnings from this phase:&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The learning curve was too great as I would never be able to understand all the words and prompts and styles and exclusions if I had to type all of this out&lt;/li&gt;
-  &lt;li&gt;The interface (Discord) was absolutely not the one that I could imagine using to produce images. It was a terrible fit and since I was in a public channel typing out my requests, I felt like I was being watched while I fumbled around trying to produce the output I wanted.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The tech wasn’t there yet, but I saw potential.&lt;/p&gt;
-
-&lt;h1 id=&quot;march-2023-midjourney-v5&quot;&gt;March 2023: MidJourney V5&lt;/h1&gt;
-
-&lt;p&gt;MJ V5 launched this month and I got really interested. This was a big update and they got a whole lot of changes in. They got the hands right, they got faces right, the quality of images was just amazing and the initially released with the Zoom Out feature that essentially imagined the parts of the frame that wasn’t there before and gave images this depth and drama that didn’t exist before.&lt;/p&gt;
-
-&lt;p&gt;The pace of smaller updates thereon has just been incredible and it was time for my team to start experimenting with it. As we had been working on building an NFT collection for use with the main product as rewards, this ability to generate a lot of graphics in a short period of time was important. The challenge was being able to get MJ5 to output the kinds of images that we had been producing until now with Blender.&lt;/p&gt;
-
-&lt;p&gt;The alternative was to produce a new style that worked with MJ5 but that also meant updating all the graphical properties that the company had, including the website, marketing collateral, transactional content and other assets such as NFTs.&lt;/p&gt;
-
-&lt;p&gt;So the team started to work with this and try and achieve our existing styles of artwork with the new tools. However this yielded pretty bad results. There was still a lot of manual effort required to bring the artwork to the same style. So we abandoned this approach and started pursuing the second strategy and came up with a new direction altogether.&lt;/p&gt;
-
-&lt;h2 id=&quot;learnings-from-this-phase-2&quot;&gt;Learnings from this phase:&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The tooling was still not good enough for a designer. It seemed like you can only do a full-image edit and not something specific within it. For that you’d still need tools like Photoshop. Photoshop’s generative fill provides much more control.&lt;/li&gt;
-  &lt;li&gt;Knowing that we can produce the required graphics with such ease suddenly allowed us think about doing sweeping changes that we would never think about doing before. We’re now able to think about updating a website in preparation for a launch event.&lt;/li&gt;
-  &lt;li&gt;I feel that we’re still at a stage where you can still tell when artwork has been produced by AI. It’s just “too polished” and accurate. Not sure what this means as yet, but I’m trying to understand it more.&lt;/li&gt;
-  &lt;li&gt;Stable Diffusion came onto my radar as a platform that provides us more control within the AI generative tools space. So I started exploring that next.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;scribe-characters-created-with-blender&quot;&gt;‘SCRIBE’ CHARACTERS CREATED WITH BLENDER&lt;/h3&gt;
-&lt;div style=&quot;display: table;&quot;&gt;
-&lt;div style=&quot;display: table-row;&quot;&gt;
-&lt;div style=&quot;display: table-cell;&quot;&gt;
-&lt;img src=&quot;../assets/images/GenerativeAIArt-4.webp&quot; alt=&quot;Image 1&quot; /&gt;
-&lt;/div&gt;
-&lt;div style=&quot;display: table-cell;&quot;&gt;
-&lt;img src=&quot;../assets/images/GenerativeAIArt-5.webp&quot; alt=&quot;Image 2&quot; /&gt;
-&lt;/div&gt;
-&lt;div style=&quot;display: table-cell;&quot;&gt;
-&lt;img src=&quot;../assets/images/GenerativeAIArt-6.webp&quot; alt=&quot;Image 3&quot; /&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;scribe-characters-created-with-midjourney-50&quot;&gt;‘SCRIBE’ CHARACTERS CREATED WITH MIDJOURNEY 5.0&lt;/h3&gt;
-
-&lt;div style=&quot;display: table;&quot;&gt;
-&lt;div style=&quot;display: table-row;&quot;&gt;
-&lt;div style=&quot;display: table-cell;&quot;&gt;
-&lt;img src=&quot;../assets/images/GenerativeAIArt-7.webp&quot; alt=&quot;Image 1&quot; /&gt;
-&lt;/div&gt;
-&lt;div style=&quot;display: table-cell;&quot;&gt;
-&lt;img src=&quot;../assets/images/GenerativeAIArt-8.webp&quot; alt=&quot;Image 2&quot; /&gt;
-&lt;/div&gt;
-&lt;div style=&quot;display: table-cell;&quot;&gt;
-&lt;img src=&quot;../assets/images/GenerativeAIArt-9.webp&quot; alt=&quot;Image 3&quot; /&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 13 Jul 2023 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/generative-ai-art-experiments/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/generative-ai-art-experiments/</guid>
-        
-        <category>technology</category>
-        
-        <category>art</category>
-        
-        
-        <category>Experiments</category>
         
       </item>
     
