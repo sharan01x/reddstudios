@@ -75,7 +75,7 @@
                         <li><a href="design.html">Design</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="build.html">Build</a></li>
-                        <li><a href="index.html#business-of-design">Business of Design</a></li>
+                        <li><a href="business.html">Business of Design</a></li>
                         <li><a href="resources.html">Resources</a></li>
                         <li><a href="/blog/" target="_blank">Blog</a></li>
                         <li><a href="index.html#about">About</a></li>
@@ -114,17 +114,30 @@
                     <!-- Photo Grid -->
                     <div class="row mb-30 mb-xs-10">
 
-                                                <!-- Post Item -->
+                        <!-- Post Item -->
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <a href="https://www.youtube.com/watch?v=_U2i5HnWkyI" class="work-lightbox-link mfp-iframe">
-                                <div class="post-prev-img">
-                                    <div class="work-img">
-                                        <div class="work-img-bg wow-p scalexIn"></div>
-                                        <img src="images/uxreview-microsoftteams.jpeg" alt="UX Review: Microsoft Teams"
-                                             class="wow-p fadeIn" data-wow-delay="1s" />
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="post-prev-img">
+                                <a href="https://www.youtube.com/watch?v=7GPtfH1lYkI" class="work-lightbox-link mfp-iframe">
+                                    <img src="images/5aiassistantsreviewed.jpeg" alt="UX Review of Personal AI Assistant Devices" class="wow-p fadeIn" data-wow-delay="1s" />
+                                </a>
+                            </div>
+                            <h3 class="post-prev-title">
+                                <a href="blog-single-sidebar-right-dark.html">5 Personal AI Assistant Devices</a>
+                            </h3>
+                            <div class="post-prev-info">
+                                Review by Redd
+                            </div>
+                            <div class="post-prev-more">&nbsp;</div>
+                        </div>
+                        <!-- End Post Item -->
+
+                        <!-- Post Item -->
+                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
+                            <div class="post-prev-img">
+                                <a href="https://www.youtube.com/watch?v=_U2i5HnWkyI" class="work-lightbox-link mfp-iframe">
+                                    <img src="images/uxreview-microsoftteams.jpeg" alt="UX Review: Microsoft Teams" class="wow-p fadeIn" data-wow-delay="1s" />
+                                </a>
+                            </div>
                             <h3 class="post-prev-title">
                                 <a href="blog-single-sidebar-right-dark.html">Microsoft Teams</a>
                             </h3>
@@ -137,20 +150,16 @@
                         
                         <!-- Post Item -->
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <a href="https://www.youtube.com/watch?v=2VLbFUSXCqQ" class="work-lightbox-link mfp-iframe">
-                                <div class="post-prev-img">
-                                    <div class="work-img">
-                                        <div class="work-img-bg wow-p scalexIn"></div>
-                                        <img src="images/uxreview-paymentplatforms.jpeg" alt="UX Review: Online Payment Platforms"
-                                             class="wow-p fadeIn" data-wow-delay="1s" />
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="post-prev-img">
+                                <a href="https://www.youtube.com/watch?v=2VLbFUSXCqQ" class="work-lightbox-link mfp-iframe">
+                                    <img src="images/uxreview-paymentplatforms.jpeg" alt="UX Review: Online Payment Platforms" class="wow-p fadeIn" data-wow-delay="1s" />
+                                </a>
+                            </div>
                             <h3 class="post-prev-title">
                                 <a href="blog-single-sidebar-right-dark.html">Online Payment Platforms</a>
                             </h3>
                             <div class="post-prev-info">
-                                Review by the Redd Team 
+                                Review by the Redd Team
                             </div>
                             <div class="post-prev-more">&nbsp;</div>
                         </div>
@@ -158,14 +167,11 @@
                         
                         <!-- Post Item -->
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <a href="https://www.youtube.com/watch?v=m1uD56f2MoQ" class="work-lightbox-link mfp-iframe">
-                                <div class="post-prev-img">
-                                    <div class="work-img">
-                                        <div class="work-img-bg wow-p scalexIn"></div>
-                                        <img src="images/uxreview-spotify.jpeg" alt="UX Review: Spotify" class="wow-p fadeIn" data-wow-delay="1s" />
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="post-prev-img">
+                                <a href="https://www.youtube.com/watch?v=m1uD56f2MoQ" class="work-lightbox-link mfp-iframe">
+                                    <img src="images/uxreview-spotify.jpeg" alt="UX Review: Spotify" class="wow-p fadeIn" data-wow-delay="1s" />
+                                </a>
+                            </div>
                             <h3 class="post-prev-title">
                                 <a href="blog-single-sidebar-right-dark.html">Spotify</a>
                             </h3>
@@ -235,89 +241,8 @@
     </div>
     <!-- End Page Wrap -->
 
-    <!-- Cursor Animation -->
-    <script>
-        var cursor = document.getElementById('cursor');
-        var timeoutId, moveTimeoutId;
-
-        document.addEventListener('mousemove', function (e) {
-            var x = e.clientX + Math.random() * 100 - 50; // Add or subtract up to 50px
-            var y = e.clientY + Math.random() * 100 - 50; // Add or subtract up to 50px
-
-            // Clear the previous move timeout
-            clearTimeout(moveTimeoutId);
-
-            // Set a new move timeout
-            moveTimeoutId = setTimeout(function () {
-                cursor.style.left = x + 'px';
-                cursor.style.top = y + 'px';
-                cursor.style.opacity = 0.2; // Make the circle more transparent when in motion
-            }, 2000); // Delay in milliseconds before the circle starts moving
-
-            // Clear the previous opacity timeout
-            clearTimeout(timeoutId);
-
-            // Set a new opacity timeout
-            timeoutId = setTimeout(function () {
-                cursor.style.opacity = 0.7; // Restore the original opacity when the mouse stops moving
-            }, 1500); // Delay in milliseconds
-        });
-
-        var cursor2 = document.getElementById('cursor2');
-        var timeoutId2, moveTimeoutId2;
-
-        document.addEventListener('mousemove', function (e) {
-            var x = e.clientX + Math.random() * 100 - 20; // Add or subtract up to 50px
-            var y = e.clientY + Math.random() * 100 - 20; // Add or subtract up to 50px
-
-            // Clear the previous move timeout
-            clearTimeout(moveTimeoutId2);
-
-            // Set a new move timeout
-            moveTimeoutId2 = setTimeout(function () {
-                cursor2.style.left = x + 'px';
-                cursor2.style.top = y + 'px';
-                cursor2.style.opacity = 0.4; // Make the circle more transparent when in motion
-            }, 2500); // Delay in milliseconds before the circle starts moving
-
-            // Clear the previous opacity timeout
-            clearTimeout(timeoutId2);
-
-            // Set a new opacity timeout
-            timeoutId2 = setTimeout(function () {
-                cursor2.style.opacity = 0.5; // Restore the original opacity when the mouse stops moving
-            }, 1500); // Delay in milliseconds
-        });
-
-        var cursor3 = document.getElementById('cursor3');
-        var timeoutId3, moveTimeoutId3;
-
-        document.addEventListener('mousemove', function (e) {
-            var x = e.clientX + Math.random() * 100 - 30; // Add or subtract up to 50px
-            var y = e.clientY + Math.random() * 100 - 30; // Add or subtract up to 50px
-
-            // Clear the previous move timeout
-            clearTimeout(moveTimeoutId3);
-
-            // Set a new move timeout
-            moveTimeoutId3 = setTimeout(function () {
-                cursor3.style.left = x + 'px';
-                cursor3.style.top = y + 'px';
-                cursor3.style.opacity = 0.4; // Make the circle more transparent when in motion
-            }, 1500); // Delay in milliseconds before the circle starts moving
-
-            // Clear the previous opacity timeout
-            clearTimeout(timeoutId3);
-
-            // Set a new opacity timeout
-            timeoutId3 = setTimeout(function () {
-                cursor3.style.opacity = 0.5; // Restore the original opacity when the mouse stops moving
-            }, 1500); // Delay in milliseconds
-        });
-    </script>
-
-
     <!-- JS -->
+    <script src="js/cursoranimation.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
