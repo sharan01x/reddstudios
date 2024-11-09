@@ -6340,15 +6340,15 @@ table.shopping-cart-table tr td{
    ============================== */
 
 @keyframes breathing {
-    0% { background-color: #efefef; opacity: 0.4; }
-    50% { background-color: #efefef; opacity: 0.9; }
-    100% { background-color: #efefef; opacity: 0.4; }
+    0% { background-color: #444; opacity: 0.4; }
+    50% { background-color: #444; opacity: 0.9; }
+    100% { background-color: #444; opacity: 0.4; }
 }
 
 #cursor {
     position: fixed;
-    height: 20px; /* Set the height of the square */
-    width: 20px; /* Set the width of the square */
+    height: 30px; /* Set the height of the square */
+    width: 30px; /* Set the width of the square */
     border-radius: 5px; /* Set the border radius for rounded corners */
     pointer-events: none;
     transition: top 1.5s ease-out, left 1.5s ease-out, opacity 0.5s ease-out;
@@ -6360,8 +6360,8 @@ table.shopping-cart-table tr td{
 
 #cursor2 {
     position: fixed;
-    height: 15px; /* Set the height of the square */
-    width: 15px; /* Set the width of the square */
+    height: 25px; /* Set the height of the square */
+    width: 25px; /* Set the width of the square */
     border-radius: 4px; /* Set the border radius for rounded corners */
     pointer-events: none;
     transition: top 1.5s ease-out, left 1.5s ease-out, opacity 0.5s ease-out;
@@ -6373,8 +6373,8 @@ table.shopping-cart-table tr td{
 
 #cursor3 {
     position: fixed;
-    height: 10px; /* Set the height of the square */
-    width: 10px; /* Set the width of the square */
+    height: 20px; /* Set the height of the square */
+    width: 20px; /* Set the width of the square */
     border-radius: 3px; /* Set the border radius for rounded corners */
     pointer-events: none;
     transition: top 1.5s ease-out, left 1.5s ease-out, opacity 0.5s ease-out;
