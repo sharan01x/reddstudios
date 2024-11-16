@@ -5,9 +5,198 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Nov 2024 12:43:13 +0100</pubDate>
-    <lastBuildDate>Wed, 13 Nov 2024 12:43:13 +0100</lastBuildDate>
+    <pubDate>Fri, 15 Nov 2024 17:31:42 +0100</pubDate>
+    <lastBuildDate>Fri, 15 Nov 2024 17:31:42 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>How to hire the right design agency for your project</title>
+        <description>&lt;p&gt;&lt;em&gt;It doesn’t matter that the design agency has a high rating if they aren’t a good fit for your project. But how do you find the right one?&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;the-ultimate-guide-to-hiring-the-right-ux-design-agency-for-your-project&quot;&gt;The Ultimate Guide to Hiring the Right UX Design Agency for your Project&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In today’s tech-driven world, user experience (UX) design plays a pivotal role in shaping how users interact with your brand. Whether you’re building a new software application, improving an existing platform, or creating a product prototype, good UX design can help streamline user interactions and drive business success. However, hiring the right UX design agency or freelancer can be a daunting process for businesses unfamiliar with the field.&lt;/p&gt;
+
+&lt;p&gt;With so many options available, it can be difficult to determine which UX professionals are best suited to meet your needs. Do you go with an agency or hire a freelancer? How do you assess their skills, portfolios, and past work? What questions should you ask to ensure you’re making the right choice? This guide aims to answer these questions and more, offering you a comprehensive roadmap for hiring the right UX design talent for your business.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-start-with-defining-your-objective&quot;&gt;1. Start with Defining Your Objective&lt;/h3&gt;
+
+&lt;p&gt;The first step in hiring the right UX designer is to clearly define your objectives. What are you trying to achieve with your UX design project? Having a solid understanding of your goals will help you narrow down your choices and ensure the designer or agency you hire is the best fit. &lt;/p&gt;
+
+&lt;p&gt;Common reasons for hiring UX designers include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Developing a Prototype:&lt;/strong&gt; If you have a new idea for a product or feature and need a prototype to visualise the concept and test its feasibility.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cost Efficiency:&lt;/strong&gt; You want to reduce development costs by sorting out design issues upfront, before starting actual development. This “measure twice, cut once” approach helps you avoid costly mistakes later.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Building Consensus Among Stakeholders:&lt;/strong&gt; You may need to bring together multiple stakeholders and create a cohesive design to align the team and secure budget approval.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Assessing the Product:&lt;/strong&gt; Creating a design will help define the project’s scope and budget, allowing for better planning of resources and timelines.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By identifying your specific objective, you can better match the right designer or agency to the project. Different objectives may require different skill sets, and a clear goal will also help streamline the design process.&lt;/p&gt;
+&lt;h3 id=&quot;2-essential-qualities-of-a-good-ux-designer-or-agency&quot;&gt;2. Essential Qualities of a Good UX Designer or Agency&lt;/h3&gt;
+
+&lt;p&gt;Once you have defined your goals, it’s time to look at the qualities that make a great UX designer or agency. Whether you’re considering an individual freelancer or a full-service agency, certain attributes should always be present:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Clear Process Understanding:&lt;/strong&gt; A good UX designer should have a defined process and be able to articulate it clearly. Whether it’s a particular framework or set of methodologies (e.g., Design Thinking, Agile UX), they should be able to walk you through how they approach a project.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Project Estimates:&lt;/strong&gt; They should be able to provide reasonable estimates for project duration, costs, and resources required, even if they are preliminary.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Technical Understanding:&lt;/strong&gt; UX design is not only about aesthetics but also about how designs fit into the broader technological ecosystem. Your designer should understand how the design impacts system functionality, which is especially important when working with complex software.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Specialisation and Expertise:&lt;/strong&gt; The ideal design team will have specialised roles. For instance, one person may handle design, while another focuses on development, and someone else may manage user research. This specialisation helps ensure a high standard of work across the project.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Experience:&lt;/strong&gt; An agency or freelancer with significant experience will be better equipped to handle challenges and unforeseen problems that arise during the project. Experience doesn’t necessarily mean years in business but rather the volume and diversity of projects handled successfully.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Clear Communication:&lt;/strong&gt; They should have defined schedules for meetings, feedback, and payments, allowing you to track progress and stay on the same page throughout the project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If the designer or agency meets these criteria, you’re likely dealing with a professional team that knows how to deliver quality work.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-red-flags-to-watch-out-for&quot;&gt;3. Red Flags to Watch Out For&lt;/h3&gt;
+
+&lt;p&gt;Just as important as recognising the qualities of a good designer is being able to spot red flags that indicate the wrong fit. Here are some common signs to watch out for when vetting potential UX partners:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Overuse of Jargon: If a designer uses too much industry-specific jargon or technical terms that aren’t explained clearly, they may be trying to impress you with buzzwords instead of providing clear answers. UX design should be about simplifying experiences, so if they can’t explain their approach in plain language, they may not be the right fit.&lt;/li&gt;
+  &lt;li&gt;Lack of Interest in Your Objectives: If a designer doesn’t ask about your business goals or the specific problem you’re trying to solve, that’s a red flag. A good UX designer needs to understand your objectives to deliver a design that aligns with them.&lt;/li&gt;
+  &lt;li&gt;No Clear Payment Schedules: Designers or agencies that are vague about their payment terms or don’t discuss budgets upfront may lack professionalism or financial stability. Transparent payment terms are a hallmark of reliable partners.&lt;/li&gt;
+  &lt;li&gt;Overpromising Results: Beware of agencies or freelancers who promise perfection or unrealistic timelines without acknowledging the iterative nature of design. UX design is inherently based on user testing, feedback, and improvement.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spotting these red flags early can save your business from costly mistakes and delays.&lt;/p&gt;
+&lt;h3 id=&quot;4-reviewing-portfolios-what-to-look-for&quot;&gt;4. Reviewing Portfolios: What to Look For&lt;/h3&gt;
+
+&lt;p&gt;A designer’s portfolio is one of the most critical factors in evaluating their expertise. Here’s how to assess it effectively:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Relevance to Your Industry or Goals:&lt;/strong&gt; While industry-specific experience can be valuable, don’t dismiss candidates who haven’t worked in your field. Fresh perspectives can often lead to innovative solutions. However, ensure they demonstrate the ability to research and adapt to new industries.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Focus Areas:&lt;/strong&gt; Portfolios often reveal a designer’s strengths. For instance, some focus on visually stunning designs, while others excel in functionality and efficiency. Choose a designer whose style aligns with your project’s priorities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visual vs. Functional Strengths:&lt;/strong&gt; Portfolios reveal whether a designer focuses more on aesthetic appeal or functional efficiency. If your project requires a highly efficient user flow, prioritize functional strength. For consumer-facing apps, visual appeal may take precedence.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Diversity of Projects:&lt;/strong&gt; A strong portfolio showcases a variety of projects, from simple interfaces to complex systems. This indicates the designer’s ability to adapt to different challenges.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pay attention not just to the final designs but also to the thought process and problem-solving approaches behind each project.&lt;/p&gt;
+&lt;h3 id=&quot;5-key-questions-to-ask-potential-designers&quot;&gt;5. Key Questions to Ask Potential Designers&lt;/h3&gt;
+
+&lt;p&gt;During consultations, ask targeted questions to assess their expertise and working style. Here are some examples:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;How do you evaluate the success of your designs?&lt;/strong&gt;&lt;br /&gt;
+  A strong designer will focus on measurable outcomes tied to your business goals, like increased conversions or reduced user errors.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Have you worked in my industry? If not, how would you approach learning about it?&lt;/strong&gt;&lt;br /&gt;
+  This question helps you assess how well they can adapt to new challenges and conduct necessary research.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What challenges have you faced in past projects, and how did you overcome them?&lt;/strong&gt;&lt;br /&gt;
+  Understanding how they handle setbacks can give you insight into their problem-solving skills.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What has been the impact of your designs? Do you have data to support their success?&lt;/strong&gt;&lt;br /&gt;
+  Even if a designer doesn’t always have access to the full metrics from past projects, this question helps assess their understanding of design as a tool to achieve measurable business outcomes. A thoughtful answer indicates they value the results of their work.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What has caused delays in your past projects?&lt;/strong&gt;&lt;br /&gt;
+  Delays are a natural part of projects with multiple moving parts. By asking this, you’ll gain insights into their project management experience and how they handle challenges.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;How do you handle feedback and revisions?&lt;/strong&gt;&lt;br /&gt;
+  Good designers see feedback as an integral part of the process. Their ability to accept, process, and act on feedback is critical to delivering a design that meets your expectations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These questions help establish the designer’s professionalism, adaptability, and problem-solving skills, making it easier to evaluate if they’re the right fit for your project.&lt;/p&gt;
+&lt;h3 id=&quot;6-freelancer-vs-agency-which-is-right-for-you&quot;&gt;6. Freelancer vs. Agency: Which is Right for You?&lt;/h3&gt;
+
+&lt;p&gt;Choosing between a freelancer and an agency depends on the nature of your project and your business needs. Here’s a breakdown of when each option might be appropriate:&lt;/p&gt;
+&lt;h4 id=&quot;when-to-hire-a-freelancer&quot;&gt;When to Hire a Freelancer&lt;/h4&gt;
+
+&lt;p&gt;Freelancers can be a great choice if:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Your project is small or highly specific.&lt;/li&gt;
+  &lt;li&gt;You have a limited budget.&lt;/li&gt;
+  &lt;li&gt;You already have a clear vision and don’t need extensive strategy or team collaboration.&lt;/li&gt;
+  &lt;li&gt;You’re comfortable with some flexibility in timelines, as freelancers often juggle multiple clients.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However, freelancers may not be ideal for large-scale or long-term projects where teamwork and diverse skill sets are crucial.&lt;/p&gt;
+&lt;h4 id=&quot;when-to-hire-an-agency&quot;&gt;When to Hire an Agency&lt;/h4&gt;
+
+&lt;p&gt;Agencies are better suited for:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Large, complex projects requiring diverse expertise, such as research, design, and development.&lt;/li&gt;
+  &lt;li&gt;Long-term projects where consistent support and collaboration are needed.&lt;/li&gt;
+  &lt;li&gt;Situations where reliability and scalability are critical, as agencies typically have dedicated teams and processes to ensure continuity.&lt;/li&gt;
+  &lt;li&gt;Businesses seeking strategic guidance in addition to design services.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While agencies can be more expensive than freelancers, their team-based approach and structured workflows often result in higher-quality outcomes, particularly for complex or high-stakes projects.&lt;/p&gt;
+&lt;h3 id=&quot;7-budgeting-and-timeline-considerations&quot;&gt;7. Budgeting and Timeline Considerations&lt;/h3&gt;
+
+&lt;h4 id=&quot;setting-realistic-budgets&quot;&gt;Setting Realistic Budgets&lt;/h4&gt;
+
+&lt;p&gt;When determining your budget for a UX design project, it’s helpful to follow these guidelines:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Allocate Adequate Resources for Design:&lt;/strong&gt; A good rule of thumb is to assign an amount equivalent to the estimated development costs for web applications. For mobile apps, design costs may be slightly lower than development costs but still significant.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Avoid Cutting Corners:&lt;/strong&gt; Skipping the design phase or rushing through it often leads to delays and cost escalations during development. Proper design planning can prevent expensive fixes later.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;establishing-timelines&quot;&gt;Establishing Timelines&lt;/h4&gt;
+
+&lt;p&gt;The timeline for your project will depend on its complexity and scope. UX design typically involves multiple stages, including research, wireframing, prototyping, and user testing. Discuss realistic deadlines with your designer or agency upfront and plan for some flexibility to accommodate feedback and revisions.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-evaluating-technical-expertise-and-tools&quot;&gt;8. Evaluating Technical Expertise and Tools&lt;/h3&gt;
+
+&lt;p&gt;The UX design process often involves various tools and technologies. While you may not need to dictate the tools your designers use, you should:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Understand the Outputs You’ll Receive:&lt;/strong&gt; Ensure the final deliverables (e.g., prototypes, wireframes, or style guides) are in formats that your development team can easily work with.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ask About Tools They Use:&lt;/strong&gt; Popular platforms like Figma (for UX/UI design), Adobe XD, and Sketch are industry standards for design, while tools like Miro or FigJam might be used for collaboration.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you already have a design team in-house or a preferred development framework, confirm compatibility between their tools and the outputs you’ll need.&lt;/p&gt;
+
+&lt;h3 id=&quot;9-the-role-of-communication-in-successful-collaboration&quot;&gt;9. The Role of Communication in Successful Collaboration&lt;/h3&gt;
+
+&lt;p&gt;Effective communication is crucial for the success of any design project. Here’s why:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Clarity in Process and Goals:&lt;/strong&gt; A designer or agency should be able to explain their process in plain terms and ensure your goals are well understood.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Proactive Updates:&lt;/strong&gt; Regular updates on progress, challenges, and next steps keep the project on track and build trust.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Assessing Communication Style:&lt;/strong&gt; You can gauge communication style by how they respond to your initial queries. Agencies with blogs or resources that clearly explain their approach often excel in communication.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Remember, a team that communicates well is more likely to resolve issues efficiently and ensure a smooth project experience.&lt;/p&gt;
+
+&lt;h3 id=&quot;10-evaluating-understanding-of-your-goals-and-user-base&quot;&gt;10. Evaluating Understanding of Your Goals and User Base&lt;/h3&gt;
+
+&lt;p&gt;A successful UX design project depends on the designer’s ability to grasp your business objectives and audience needs. Here’s how you can evaluate this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Assess Their Proposal:&lt;/strong&gt; After an initial briefing, the agency should deliver a well-structured proposal. This document should clearly reflect your business goals, the problem to be solved, and their understanding of your user base.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Quality of Questions:&lt;/strong&gt; Pay attention to the types of questions the designer or agency asks during initial discussions. Are they probing deeper into your objectives, target audience, and potential challenges? This indicates how thoroughly they aim to tailor their approach to your needs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ability to Align with Your Brand:&lt;/strong&gt; The designer should demonstrate an understanding of your brand identity and values. This ensures the end product resonates with your audience and maintains consistency with your broader marketing efforts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A thorough discovery phase and thoughtful proposal are strong indicators of a team that prioritises understanding your unique needs.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-conclusion&quot;&gt;11. Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Hiring a UX designer, whether a freelancer or an agency, is a crucial step in creating user-centric products that align with your business goals. To make the right choice, it’s essential to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clearly define your project objectives.&lt;/li&gt;
+  &lt;li&gt;Look for designers with a solid process, strong portfolios, and relevant experience.&lt;/li&gt;
+  &lt;li&gt;Ask insightful questions to gauge their expertise, adaptability, and communication skills.&lt;/li&gt;
+  &lt;li&gt;Decide between freelancers and agencies based on the scale, complexity, and long-term impact of your project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Investing in UX design early not only saves time and resources in the development phase but also ensures that your product effectively serves your audience and achieves your business objectives. By following these guidelines, you’ll be well-equipped to find the right partner and set your project up for success.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Nov 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/how-to-hire-designers/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/how-to-hire-designers/</guid>
+        
+        <category>design</category>
+        
+        <category>business</category>
+        
+        
+        <category>Ideas</category>
+        
+      </item>
     
       <item>
         <title>Design Proposals that Boost Conversion Rates</title>
@@ -653,108 +842,6 @@ Another issue with the cable was that the sockets it plugged into on the other s
         
         
         <category>Reviews</category>
-        
-      </item>
-    
-      <item>
-        <title>Is there room for another dating app?</title>
-        <description>&lt;p&gt;Examining whether there’s an actual need missing or a packaging problem&lt;/p&gt;
-
-&lt;h1 id=&quot;the-need&quot;&gt;The Need&lt;/h1&gt;
-
-&lt;p&gt;Meeting the person that is now my wife had been quite a challenge. I probably have been helped by friends, family and work colleagues and when that didn’t work, I even joined a singles group, signed up online on matrimonial sites and even dating apps. I finally met my wife on a dating app called OkCupid. To say that this field of allowing people to find each other is dear to me would be an understatement.&lt;/p&gt;
-
-&lt;p&gt;I’ve been happily married for a while now. I have several single friends my age and while a few of them want to find someone and get married eventually, some are choosing to stay single and are quite content doing so. However they would still like companionship and would like to meet people that are similarly inclined.&lt;/p&gt;
-
-&lt;p&gt;In a recent conversation with four twenty-something user experience designers, I asked about dating apps and whether they are serving the needs of people their age group. But surprisingly the complaints were the same as for those that belong to the older group I spoke of above. All of them said they had issues meeting people and that no dating app was serving them well.&lt;/p&gt;
-
-&lt;p&gt;On a broader societal level India has always been thought of as a nation with very traditional values and therefore the population had a majority of married people. But this trend is changing. People are getting married later in life if at all and many are also choosing to stay single, not seeing getting married and having kids as the final goal. Divorce laws in India are also complicated to say the least and this may be a contributing factor to people choosing to stay single.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/Pencil-sketch-of-a-happy-couple-sitting-across-each-other-at-a-sidewalk-cafe-in-a-European-city-with-2.jpeg.webp&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;the-problems&quot;&gt;The Problems&lt;/h1&gt;
-
-&lt;p&gt;In my research, I’ve funnily had absolutely no trouble getting people to tell me about the issues they’ve faced while using dating apps. It usually ends up becoming an hour-long conversation and everyone wants to explain their individual journeys and issues that they’ve run into. In a lot of ways they want to vent their frustration and when someone like me comes along and asks what the issues are, it’s like opening the flood gates to a dam. But I feel their pain as I’ve been there myself.&lt;/p&gt;
-
-&lt;p&gt;To whit, the issues they presented for dating were as follows:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Men find it harder to meet women as the percentage of men on dating platforms is much higher. This may be because it’s traditionally been uncommon for women to put their profiles online.&lt;/li&gt;
-  &lt;li&gt;It is not easy to convert an online encounter into a physical meeting due to concerns regarding security. They typically want to be very sure of the person before they meet.&lt;/li&gt;
-  &lt;li&gt;People prefer to meet others in real life rather than online as that is a more authentic way to find someone.&lt;/li&gt;
-  &lt;li&gt;Creating a good profile is key and people request others who have found success to create their profiles. But this inadvertently also adds to the catfishing concern as the profiles may not be authentic at all.&lt;/li&gt;
-  &lt;li&gt;People don’t always know that the person they are meeting online are verified in any way and this adds to security concerns.&lt;/li&gt;
-  &lt;li&gt;Dating apps that require women to initiate the connection may be adding a hurdle to introverted women. They may prefer to be approached instead. But this an an all-or-nothing kind of offering on such platforms.&lt;/li&gt;
-  &lt;li&gt;Ghosting is a big concern as people may be spending inordinate amounts of time trying to build a relationship with someone they met online whereas the other person may be not be interested at all but doesn’t know how to end this.&lt;/li&gt;
-  &lt;li&gt;The online medium is skewed towards good-looking people. The fact is that most platforms offer huge databases of people and it’s practically impossible to sift through all without being extremely quick to judge either based on photos or based on scanning of profiles very quickly.&lt;/li&gt;
-  &lt;li&gt;There are several scams that have occurred based on people meeting each other online in India. Scams involve extortion, confidence scams, honey traps and lots of other such issues that make this kind of meeting very dubious.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;There are some things that could be solved through better employment of technology. But there are a lot of things that can be solved in the real-world realm.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-with-sharp-focus-on-.jpeg.webp&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;room-for-another&quot;&gt;Room for Another&lt;/h1&gt;
-&lt;p&gt;With the passage of time, it’s a good idea to evaluate old decisions over again. While I had previously thought that this market is overcrowded and that there is dating-app-fatigue that has set in, I think the advent of AI has made it possible to evaluate this once again.&lt;/p&gt;
-
-&lt;p&gt;Yes, I am very aware that platforms like e-harmony and OKCupid, and lots of others, have indeed marketed based on this idea. However, I don’t think they had the tools we have today to make that claim in earnest. Besides, the one flaw in their thinking was that they were only able to go so far as making a recommendation of who they would match with; they were never able to evaluate whether they had made the right prediction because they had no mechanism to receive such feedback. If they didn’t get any feedback, it definitely didn’t help make future recommendations any better either.&lt;/p&gt;
-
-&lt;p&gt;If one were to venture into this field, this is a key aspect that I would evaluate: did they have good recommendation engines that not only had recommendations but also had feedback loops to make future recommendations better?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/Pencil-sketch-of-two-people-in-business-suits-having-coffee-at-a-sidewalk-cafe-in-a-European-city-h.jpeg.webp&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;the-business-case&quot;&gt;The Business Case&lt;/h1&gt;
-&lt;p&gt;In my quick study of this field I’ve come to the conclusion that the demand is off-the-charts. No platform has solved this problem as yet, so there’s definitely room for another entrant. There is no dearth of money as people are willing to pay out of money in order to meet the right person. So it can definitely be a profitable venture. But the solution has to be packaged correctly and the right promises need to be made.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-goal&quot;&gt;The Goal&lt;/h2&gt;
-&lt;p&gt;First and foremost it is important to set the right goals for a platform. Is it meant to result in a date, is it meant to result in a relationship, is it meant to result in a marriage or is it simply to develop companionship in this changing world. I think apps and platforms that promise finding the person to get married to are obviously overselling what they are capable of. I’d go so far as to say that even if they promise a great date. It takes a lot more to make a date memorable than the matching of characteristics in databases. I’d love to see an app that promises that the user would meet good people and that’s it, because that’s a promise that can be kept.&lt;/p&gt;
-
-&lt;h2 id=&quot;target-audience&quot;&gt;Target Audience&lt;/h2&gt;
-&lt;p&gt;While some people may be looking at getting married, some may simply be looking for companionship or even to meet other singles because the conversations with their married friends maybe something they can’t relate with anymore. I think it would be prudent to simply focus on the people looking to make friends. If something more were to develop from this, that’s just the cherry on top and not the baseline expectation.&lt;/p&gt;
-
-&lt;p&gt;This may also therefore not be an age or gender-related qualification.&lt;/p&gt;
-
-&lt;h2 id=&quot;packaging&quot;&gt;Packaging&lt;/h2&gt;
-&lt;p&gt;In my mind, the following are the core areas to keep in mind when designing a solution:&lt;/p&gt;
-
-&lt;h3 id=&quot;1-security&quot;&gt;1. Security&lt;/h3&gt;
-&lt;p&gt;As mentioned above, we need to make security the main focus area. We need to find ways to make sure that people feel confident when participating on a platform. Vetted profiles, membership through recommendations, attracting people through the right channels, etc. are some of the things that we can do to make sure of this.&lt;/p&gt;
-
-&lt;h3 id=&quot;2-authenticity&quot;&gt;2. Authenticity&lt;/h3&gt;
-&lt;p&gt;While making an effort to make all the profiles on the platform look good, the authenticity of the profile must not be lost. There is a fine balance here that must be found. Maybe the profile is written by those trained in it, but there could also be a video that the user records of themselves saying things that should be added with it.&lt;/p&gt;
-
-&lt;h3 id=&quot;3-matching&quot;&gt;3. Matching&lt;/h3&gt;
-&lt;p&gt;At the fundamental level this is a matching problem. There is a lot of noise to sift through to find good information and characteristics to match people against. People often lie about themselves in order to appear a certain way and no questionnaire can overcome this hurdle. Or, they may not express what they want for fear of being judged for it. Yet again, they may simply not know what they want. All of this makes the matching problem more difficult for any system, but not for machine learning systems. Building a good matching engine that powers all of this is therefore the most important task. And for this, we need as many signals and feedback as possible.&lt;/p&gt;
-
-&lt;h3 id=&quot;4-efficiency&quot;&gt;4. Efficiency&lt;/h3&gt;
-&lt;p&gt;This is one of the most ignored metrics within this field. People spend inordinate amounts of time trying to find the right person that they would like to be with. This increases the fatigue that they face and makes a lot of people give up in the middle of the process. Any new system that is built should definitely consider making this entire process more efficient. The system should try to match a person with a group of people that they share common ground with. The individual they meet within that group that they connect with is almost unnecessary to focus on.&lt;/p&gt;
-
-&lt;h2 id=&quot;pricing&quot;&gt;Pricing&lt;/h2&gt;
-&lt;p&gt;Pricing will obviously play a key role here. Pricing can be used to create an elite group that keeps the non-serious participants out, but too high a price and it will become elitist and exclusionary. People should also not be paying for individual participation, but rather for a few different events together so that they interact repeatedly as that is key to the success of this program.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-highly-detailed-and.jpeg.webp&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;The world is yearning for deeper connections. With the power of technology at our fingertips, it’s time to harness it and create platforms that truly bring people together. We must seize this opportunity to build communities, foster companionship, and combat the growing loneliness in our society. It’s time to reimagine dating platforms as platforms that serve this need, where the focus is on meeting good people and forming meaningful connections. Let’s embrace the advancements in AI and recommendation engines to make this vision a reality. We have the tools, the potential, and the responsibility to improve the human connection. It’s time to take action and create a platform that truly changes lives. It must be attempted because it is important to achieve.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 18 Jul 2023 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/is-there-room-for-another-dating-app/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/is-there-room-for-another-dating-app/</guid>
-        
-        <category>opinion</category>
-        
-        <category>society</category>
-        
-        
-        <category>Ideas</category>
         
       </item>
     
