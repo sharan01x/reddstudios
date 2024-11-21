@@ -5,12 +5,83 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Nov 2024 17:31:42 +0100</pubDate>
-    <lastBuildDate>Fri, 15 Nov 2024 17:31:42 +0100</lastBuildDate>
+    <pubDate>Thu, 21 Nov 2024 07:51:26 +0100</pubDate>
+    <lastBuildDate>Thu, 21 Nov 2024 07:51:26 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
-        <title>How to hire the right design agency for your project</title>
+        <title>How to start designing for Web3</title>
+        <description>&lt;p&gt;&lt;em&gt;Web3 is a burgeoning field, but you can’t just take Web2 designs and expect them to work in Web3. What should you keep in mind?&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;how-to-go-from-designing-ux-in-web2-to-web3&quot;&gt;How to go from designing UX in Web2 to Web3&lt;/h1&gt;
+
+&lt;p&gt;Points to cover:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Decentralisation
+    &lt;ul&gt;
+      &lt;li&gt;Security&lt;/li&gt;
+      &lt;li&gt;Latency&lt;/li&gt;
+      &lt;li&gt;Scalability&lt;/li&gt;
+      &lt;li&gt;Immutability&lt;/li&gt;
+      &lt;li&gt;Architecture
+        &lt;ul&gt;
+          &lt;li&gt;Equivalents&lt;/li&gt;
+          &lt;li&gt;Differences&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Data ownership&lt;/li&gt;
+      &lt;li&gt;Interoperability&lt;/li&gt;
+      &lt;li&gt;Security and Trust&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Technical details
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;UX issues
+    &lt;ul&gt;
+      &lt;li&gt;Speed&lt;/li&gt;
+      &lt;li&gt;Asynchronous updates&lt;/li&gt;
+      &lt;li&gt;Failure scenarios&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Story arc:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How I got into it?&lt;/li&gt;
+  &lt;li&gt;Why did I stay?&lt;/li&gt;
+  &lt;li&gt;Thoughts about the future&lt;/li&gt;
+  &lt;li&gt;Leave behinds
+    &lt;ul&gt;
+      &lt;li&gt;YouTube Playlist&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;If you want to start working with Web3 companies and design effective applications for them, you need to understand the fundamental difference between Web2&lt;/p&gt;
+</description>
+        <pubDate>Sat, 16 Nov 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/how-to-design-for-web3/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/how-to-design-for-web3/</guid>
+        
+        <category>design</category>
+        
+        <category>crypto</category>
+        
+        <category>ux</category>
+        
+        
+        <category>Ideas</category>
+        
+      </item>
+    
+      <item>
+        <title>The Ultimate Guide to Hiring the Right UX Design Agency</title>
         <description>&lt;p&gt;&lt;em&gt;It doesn’t matter that the design agency has a high rating if they aren’t a good fit for your project. But how do you find the right one?&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -18,176 +89,158 @@
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;In today’s tech-driven world, user experience (UX) design plays a pivotal role in shaping how users interact with your brand. Whether you’re building a new software application, improving an existing platform, or creating a product prototype, good UX design can help streamline user interactions and drive business success. However, hiring the right UX design agency or freelancer can be a daunting process for businesses unfamiliar with the field.&lt;/p&gt;
+&lt;p&gt;When I used to run my UX design agency, we had a lot of clients that came to us after already having worked with another agency for the same project. Upon enquiring as to the reason for them to switch to us, we often were told some version of “The other team just didn’t get what we wanted”. The vain side of me would have been pleased, and I often was in the beginning, until I learnt that these situations weren’t only caused by mistakes made by the vendors, but also by the businesses that hired them. &lt;/p&gt;
 
-&lt;p&gt;With so many options available, it can be difficult to determine which UX professionals are best suited to meet your needs. Do you go with an agency or hire a freelancer? How do you assess their skills, portfolios, and past work? What questions should you ask to ensure you’re making the right choice? This guide aims to answer these questions and more, offering you a comprehensive roadmap for hiring the right UX design talent for your business.&lt;/p&gt;
+&lt;p&gt;If you’re a business that’s interested in hiring a UX design agency, read this article to avoid paying twice for the same thing and learn to hire the right agency for your project the first time!&lt;/p&gt;
+&lt;h1 id=&quot;understanding-ux-design&quot;&gt;Understanding UX Design&lt;/h1&gt;
 
-&lt;h3 id=&quot;1-start-with-defining-your-objective&quot;&gt;1. Start with Defining Your Objective&lt;/h3&gt;
+&lt;p&gt;A sure-fire way to hire the wrong agency is to not understand what UX design can do for you. Design, unlike art, is about solving problems. The job of a UX designer is to develop a solution to the business problem that you articulate. They translate the business objective that you set, into the form of an application that will help achieve that goal. They do this while balancing the needs of the customers against the business interests while working within limitations posed by technology and also by your company’s brand.&lt;/p&gt;
 
-&lt;p&gt;The first step in hiring the right UX designer is to clearly define your objectives. What are you trying to achieve with your UX design project? Having a solid understanding of your goals will help you narrow down your choices and ensure the designer or agency you hire is the best fit. &lt;/p&gt;
+&lt;p&gt;It isn’t a simple task but I hope you can see that it takes a special blend of someone that is business oriented, technically adept, artistically inclined, detail-oriented as well as sensitive to culture to do this job right. A good design agency will be a partner in helping you achieve your goals, not someone who will spit out something pretty to slap onto your website and call it a day. You on the other hand, should be figuring out the right way to engage with such a person or a team and demanding the right kind of output from it.&lt;/p&gt;
 
-&lt;p&gt;Common reasons for hiring UX designers include:&lt;/p&gt;
+&lt;p&gt;So, typically people hire UX designers to do one of the following: &lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Developing a Prototype:&lt;/strong&gt; If you have a new idea for a product or feature and need a prototype to visualise the concept and test its feasibility.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Cost Efficiency:&lt;/strong&gt; You want to reduce development costs by sorting out design issues upfront, before starting actual development. This “measure twice, cut once” approach helps you avoid costly mistakes later.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Building Consensus Among Stakeholders:&lt;/strong&gt; You may need to bring together multiple stakeholders and create a cohesive design to align the team and secure budget approval.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Assessing the Product:&lt;/strong&gt; Creating a design will help define the project’s scope and budget, allowing for better planning of resources and timelines.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;You have an idea for solving a certain business problem with software and you want to develop a prototype in order to further refine that idea and bring it into a form that is more real than just an idea. &lt;/li&gt;
+  &lt;li&gt;You want to reduce the overall costs of software production by working out all the kinks and details on paper as it were, before handing it off to a developer to build out — the “measure twice and cut once” approach.&lt;/li&gt;
+  &lt;li&gt;You need to bring all the disparate ideas of a bunch of stakeholders from across your organisation and put it into a cohesive form of a software application.&lt;/li&gt;
+  &lt;li&gt;You want to build a prototype and build consensus across all the major stakeholders within your organisation before allocating budgets and building it out.&lt;/li&gt;
+  &lt;li&gt;You want to get the product designed in order to plan out the efforts and expenses required in order to get this product built. It will also help you decide what the budget allocations need to be.
+    &lt;h1 id=&quot;preparing-a-brief&quot;&gt;Preparing a Brief&lt;/h1&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;By identifying your specific objective, you can better match the right designer or agency to the project. Different objectives may require different skill sets, and a clear goal will also help streamline the design process.&lt;/p&gt;
-&lt;h3 id=&quot;2-essential-qualities-of-a-good-ux-designer-or-agency&quot;&gt;2. Essential Qualities of a Good UX Designer or Agency&lt;/h3&gt;
+&lt;p&gt;As highlighted above, it is imperative to the success of the project that you take the time to define your business objectives clearly. Try being as specific as possible, by describing things like, “We have had most of our customers purchasing items from within a single vertical, but in an ideal world, every user landing on the website would generate a cart value of $2,000 with products from across three different product verticals”, or, “Our customer service division has some of the highest churn rates and this makes it difficult to impart the brand values of our company onto new hires so that they can interact with customers in line with the way we do things here”, etc.&lt;/p&gt;
 
-&lt;p&gt;Once you have defined your goals, it’s time to look at the qualities that make a great UX designer or agency. Whether you’re considering an individual freelancer or a full-service agency, certain attributes should always be present:&lt;/p&gt;
+&lt;p&gt;Unless it is critical for some reason, do not make the mistake of specifying &lt;strong&gt;&lt;em&gt;how&lt;/em&gt;&lt;/strong&gt; this should be done too early on. For example, don’t say, you need a website, an iOS app, etc. to do these things. It’s the design team’s job is to figure out the “how” of it all. Even if they will eventually land at the point of developing a website, etc. they sometimes may surprise you by solving the problem in another way that you may not have anticipated.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Clear Process Understanding:&lt;/strong&gt; A good UX designer should have a defined process and be able to articulate it clearly. Whether it’s a particular framework or set of methodologies (e.g., Design Thinking, Agile UX), they should be able to walk you through how they approach a project.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Project Estimates:&lt;/strong&gt; They should be able to provide reasonable estimates for project duration, costs, and resources required, even if they are preliminary.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Technical Understanding:&lt;/strong&gt; UX design is not only about aesthetics but also about how designs fit into the broader technological ecosystem. Your designer should understand how the design impacts system functionality, which is especially important when working with complex software.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Specialisation and Expertise:&lt;/strong&gt; The ideal design team will have specialised roles. For instance, one person may handle design, while another focuses on development, and someone else may manage user research. This specialisation helps ensure a high standard of work across the project.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Experience:&lt;/strong&gt; An agency or freelancer with significant experience will be better equipped to handle challenges and unforeseen problems that arise during the project. Experience doesn’t necessarily mean years in business but rather the volume and diversity of projects handled successfully.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Clear Communication:&lt;/strong&gt; They should have defined schedules for meetings, feedback, and payments, allowing you to track progress and stay on the same page throughout the project.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;One of the interactions that I remember fondly was with this client who was patiently listening to my team’s pitch as to the right solution to the problem he had stated previously. When one of his employees started to correct me about the mental model that I had used for designing the application, the boss, knowing fully well why he had hired us, politely interjected and asked the employee to allow me to finish. In the end, they were pleasantly surprised that we had removed an unnecessary layer while still achieving their objective. This wouldn’t have been possible if they had been hyper prescriptive about the solution they needed.&lt;/p&gt;
 
-&lt;p&gt;If the designer or agency meets these criteria, you’re likely dealing with a professional team that knows how to deliver quality work.&lt;/p&gt;
+&lt;h1 id=&quot;finding-potential-agencies&quot;&gt;Finding Potential Agencies&lt;/h1&gt;
 
-&lt;h3 id=&quot;3-red-flags-to-watch-out-for&quot;&gt;3. Red Flags to Watch Out For&lt;/h3&gt;
+&lt;p&gt;While the best method of finding a UX design agency is through a referral of someone that has worked with the agency because you’d also understand the fit, searching online and finding them on lists such as Clutch may be inevitable. &lt;/p&gt;
+&lt;h2 id=&quot;a-rankings&quot;&gt;a. Rankings&lt;/h2&gt;
+&lt;p&gt;One thing to keep in mind is that the rankings are not always completely objective. Their methods of evaluation aren’t so granular that you can reliably pass a judgement that someone ranked 20 is definitely better than someone ranked 30.&lt;/p&gt;
 
-&lt;p&gt;Just as important as recognising the qualities of a good designer is being able to spot red flags that indicate the wrong fit. Here are some common signs to watch out for when vetting potential UX partners:&lt;/p&gt;
+&lt;p&gt;While we were ranked among the top 20 within India and 100 in the global ranking, I really would pay more attention to whether the agency is a good fit for you, which is the most important thing. Still, these lists are undeniably a great resource to rely upon while looking for design partners.&lt;/p&gt;
+&lt;h2 id=&quot;b-local-vs-remote&quot;&gt;b. Local vs. Remote&lt;/h2&gt;
+&lt;p&gt;Design agencies can work remotely, but, I’d give the one that can come into your office a few times a greater preference score than an agency that absolutely cannot. There are specific stages, like discovery discussions, brainstorming, user testing, pitching ideas that could benefit from being done in person. So if the agency you are looking for can come into your office for these meetings specifically, it would be great, but if that’s not at all possible, it’s should not be a deal-breaker in any way.&lt;/p&gt;
+&lt;h2 id=&quot;c-industry-experience&quot;&gt;c. Industry Experience&lt;/h2&gt;
+&lt;p&gt;If your project has to do with improving an existing system of some kind, then industry expertise may help as you’d probably spend less time in explaining some fundamental ideas to the designers. But if you’re breaking new ground, I’d give less importance to the designers having the industry experience because most designers will learn the intricacies of the industry anyway, but also because designers that are new to a field may evaluate it with fresh eyes and see things in a different way which may be exactly what the doctor ordered. &lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Overuse of Jargon: If a designer uses too much industry-specific jargon or technical terms that aren’t explained clearly, they may be trying to impress you with buzzwords instead of providing clear answers. UX design should be about simplifying experiences, so if they can’t explain their approach in plain language, they may not be the right fit.&lt;/li&gt;
-  &lt;li&gt;Lack of Interest in Your Objectives: If a designer doesn’t ask about your business goals or the specific problem you’re trying to solve, that’s a red flag. A good UX designer needs to understand your objectives to deliver a design that aligns with them.&lt;/li&gt;
-  &lt;li&gt;No Clear Payment Schedules: Designers or agencies that are vague about their payment terms or don’t discuss budgets upfront may lack professionalism or financial stability. Transparent payment terms are a hallmark of reliable partners.&lt;/li&gt;
-  &lt;li&gt;Overpromising Results: Beware of agencies or freelancers who promise perfection or unrealistic timelines without acknowledging the iterative nature of design. UX design is inherently based on user testing, feedback, and improvement.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;d-alignment-of-values&quot;&gt;d. Alignment of Values&lt;/h2&gt;
+&lt;p&gt;There is a subjective aspect to design and that’s to do with taste. Some design agencies are drawn to flash while others are drawn to quiet efficiency. Some designers may take short-cuts to solving problems quickly while others take the long but reliable paths. In all these areas, taste matters. Don’t make the mistake of hiring a designer that clearly shows you one quality in all their work and expect that they will deliver on another quality that you want. You are never going to be able to demand every little be made a certain way. Engaging an agency inherently means that you are relying on them to make several micro-decisions on your behalf. So engage wit the agency that resonates with you so that you are going to be comfortable with these choices that they will make on your behalf. &lt;/p&gt;
 
-&lt;p&gt;Spotting these red flags early can save your business from costly mistakes and delays.&lt;/p&gt;
-&lt;h3 id=&quot;4-reviewing-portfolios-what-to-look-for&quot;&gt;4. Reviewing Portfolios: What to Look For&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Important Side Note:&lt;/em&gt;&lt;/strong&gt; &lt;em&gt;Do not evaluate design portfolio’s solely based on visual design expertise, unless that’s the requirement.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;A designer’s portfolio is one of the most critical factors in evaluating their expertise. Here’s how to assess it effectively:&lt;/p&gt;
+&lt;h1 id=&quot;filtration&quot;&gt;Filtration&lt;/h1&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Relevance to Your Industry or Goals:&lt;/strong&gt; While industry-specific experience can be valuable, don’t dismiss candidates who haven’t worked in your field. Fresh perspectives can often lead to innovative solutions. However, ensure they demonstrate the ability to research and adapt to new industries.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Focus Areas:&lt;/strong&gt; Portfolios often reveal a designer’s strengths. For instance, some focus on visually stunning designs, while others excel in functionality and efficiency. Choose a designer whose style aligns with your project’s priorities.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Visual vs. Functional Strengths:&lt;/strong&gt; Portfolios reveal whether a designer focuses more on aesthetic appeal or functional efficiency. If your project requires a highly efficient user flow, prioritize functional strength. For consumer-facing apps, visual appeal may take precedence.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Diversity of Projects:&lt;/strong&gt; A strong portfolio showcases a variety of projects, from simple interfaces to complex systems. This indicates the designer’s ability to adapt to different challenges.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Okay, so you’ve succeeded in short-listing a few design agencies that you want to work with. Now you’ve got to figure out which one of these is the right fit for you. The filtration process should help you find someone that is technically proficient, someone that has not portrayed themselves as something more than they are, someone who fits your culture and finally fits your budget. &lt;/p&gt;
 
-&lt;p&gt;Pay attention not just to the final designs but also to the thought process and problem-solving approaches behind each project.&lt;/p&gt;
-&lt;h3 id=&quot;5-key-questions-to-ask-potential-designers&quot;&gt;5. Key Questions to Ask Potential Designers&lt;/h3&gt;
+&lt;p&gt;To do this, you could begin by requesting a proposal from each of the agencies. You can call these agencies up and have a brief discussion with them on the phone. They may request a brief from you which you can send out to them. How long they take to send out a proposal to you would itself indicate whether they have their internal processes figured out or not.&lt;/p&gt;
 
-&lt;p&gt;During consultations, ask targeted questions to assess their expertise and working style. Here are some examples:&lt;/p&gt;
+&lt;p&gt;Once you get the proposal, that itself becomes a good device to evaluate the capability of the agency. You see, if they are good UX designers, they would make this process easy for you right from the get go. Their proposal will clearly spell out what is involved in the process, give you firm estimates of time and costs and also detail out the payment schedules. It would have been designed to answer all the questions in your mind about engaging the agency. If it does not, this is a sign of immaturity and likely a strike against the agency. &lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;How do you evaluate the success of your designs?&lt;/strong&gt;&lt;br /&gt;
-  A strong designer will focus on measurable outcomes tied to your business goals, like increased conversions or reduced user errors.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Have you worked in my industry? If not, how would you approach learning about it?&lt;/strong&gt;&lt;br /&gt;
-  This question helps you assess how well they can adapt to new challenges and conduct necessary research.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;What challenges have you faced in past projects, and how did you overcome them?&lt;/strong&gt;&lt;br /&gt;
-  Understanding how they handle setbacks can give you insight into their problem-solving skills.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;What has been the impact of your designs? Do you have data to support their success?&lt;/strong&gt;&lt;br /&gt;
-  Even if a designer doesn’t always have access to the full metrics from past projects, this question helps assess their understanding of design as a tool to achieve measurable business outcomes. A thoughtful answer indicates they value the results of their work.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;What has caused delays in your past projects?&lt;/strong&gt;&lt;br /&gt;
-  Delays are a natural part of projects with multiple moving parts. By asking this, you’ll gain insights into their project management experience and how they handle challenges.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;How do you handle feedback and revisions?&lt;/strong&gt;&lt;br /&gt;
-  Good designers see feedback as an integral part of the process. Their ability to accept, process, and act on feedback is critical to delivering a design that meets your expectations.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Post this, typically the agency may request a time slot to walk through the proposal with you. You could also request the same if they don’t offer one. In this call, make sure to cover the following questions:&lt;/p&gt;
 
-&lt;p&gt;These questions help establish the designer’s professionalism, adaptability, and problem-solving skills, making it easier to evaluate if they’re the right fit for your project.&lt;/p&gt;
-&lt;h3 id=&quot;6-freelancer-vs-agency-which-is-right-for-you&quot;&gt;6. Freelancer vs. Agency: Which is Right for You?&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;How do you evaluate the success of your design?&lt;br /&gt;
+ Design is a solution to a problem, and UX design is usually employed to solve business problems. The work that UX designers do there are not subjective but instead very clear solutions to business problems. If the design isn’t helping achieve that business goal, then the design isn’t successful.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Have you done any work in my field? If not, what would your approach be in the design of our application?
+ If they have worked in the same field, you’d be able to evaluate things on an apples-to-apples basis, but if they haven’t, you’ll understand how they’d approach learning about the field first and then solving the problem.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What has been the effect of your application design? Is there data to substantiate the success?&lt;br /&gt;
+ While the external design agency may not always have access to the data and analytics that emanated from their design work, this question will still let you assess whether the designer understand that their work is always based on a hypothesis and always an experiment that needs to be evaluated.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What has been the biggest reasons for delays in your past projects?
+ This question evaluates whether they’ve seen delays in past projects. There definitely will be a few where delays have occurred, and this is quite natural in endeavours that have a lot of interdependencies between clients and vendor teams. So the point is to probe whether they’ve understood what causes a lot of delays in projects and what steps they’ve taken to improve the process.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Have you determined issues with your design and fixed them after the initial design was delivered?
+ This goes back to the point about what designers think about their work. No matter how much research is done ahead of time, every project is based on several assumptions from the clients and from the designers, they are all based on a hypothetical understanding. The truth can only be learnt by putting the design in the hands of users and evaluated at that time. There will be things learnt that will reinforce our assumptions, but there will also be things that we will learn that could be improved. There is never a situation where everything is perfect. In reality, the designer may never have information on how things performed because the client may never share such information with external vendors. But the question is meant to probe whether designers understand the temporal nature of their work and what they do to improve their understanding and provide better solutions.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Choosing between a freelancer and an agency depends on the nature of your project and your business needs. Here’s a breakdown of when each option might be appropriate:&lt;/p&gt;
-&lt;h4 id=&quot;when-to-hire-a-freelancer&quot;&gt;When to Hire a Freelancer&lt;/h4&gt;
+&lt;h1 id=&quot;red-flags&quot;&gt;Red Flags&lt;/h1&gt;
 
-&lt;p&gt;Freelancers can be a great choice if:&lt;/p&gt;
+&lt;p&gt;An architect friend once mentioned this idea of inspection points. They said that if you want to examine the quality of construction of a building, you don’t need to go floor by floor and examine the beams, you can just go to the basement and look at the pillars there. If there’s any major faults in construction, the first place the weaknesses will show up will be on these pillars. In that same spirit, the following are some things that will indicate the quality of the agency that you’re working with.&lt;/p&gt;
+&lt;h2 id=&quot;1-acronym-overdose&quot;&gt;1. Acronym Overdose&lt;/h2&gt;
+&lt;p&gt;Acronyms are useful to express some ideas a little more efficiently. But it’s overuse stems from ineptitude or from a desire to hide behind them to hide a lack of knowledge. In any case, the job of a UX designer is to be understood, not to obfuscate. So if they’re not demonstrating an ability to speak to you, their potential clients, in a way that you can understand, they definitely will not be able to help you communicate any better with your end-users. &lt;/p&gt;
+&lt;h2 id=&quot;2-disinterest&quot;&gt;2. Disinterest&lt;/h2&gt;
+&lt;p&gt;For a designer to really help you succeed, it is imperative that they understand your true motivation behind working on this project. A good designer will definitely probe to find out this answer. If any of these designers haven’t bothered to do this, they will definitely not be delivering anything great for you.&lt;/p&gt;
+&lt;h2 id=&quot;3-absolute-certainty&quot;&gt;3. Absolute Certainty&lt;/h2&gt;
+&lt;p&gt;Regardless of how much experience an agency has, all design work is based on a hypothetical understanding of what the problem is and the design itself is a best-guess estimate of the solution. This is because the number of variables change from project to project including end-users. So be vary of the agency that states with absolute certainty that they have the right solution. They are more likely to make mistakes than those that approach the project with humility.&lt;/p&gt;
+&lt;h2 id=&quot;4-financial-discipline&quot;&gt;4. Financial Discipline&lt;/h2&gt;
+&lt;p&gt;If a designer doesn’t convey their payment schedules in their proposal, they are inexperienced and don’t have enough of an understanding of the impact of finances on the execution of a project. There have been agencies that have had to stop working on their client projects midway. This is clearly a result of the agency not understanding their processes well enough and knowing how much money they will burn while working on your project.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Your project is small or highly specific.&lt;/li&gt;
-  &lt;li&gt;You have a limited budget.&lt;/li&gt;
-  &lt;li&gt;You already have a clear vision and don’t need extensive strategy or team collaboration.&lt;/li&gt;
-  &lt;li&gt;You’re comfortable with some flexibility in timelines, as freelancers often juggle multiple clients.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&quot;budget-considerations&quot;&gt;Budget Considerations&lt;/h1&gt;
 
-&lt;p&gt;However, freelancers may not be ideal for large-scale or long-term projects where teamwork and diverse skill sets are crucial.&lt;/p&gt;
-&lt;h4 id=&quot;when-to-hire-an-agency&quot;&gt;When to Hire an Agency&lt;/h4&gt;
+&lt;p&gt;Even if you’ve not previously estimated how much you should spend for UX design, you would now have a great idea of how much it would cost based on the proposals that you would have received from the agencies that you reached out to. &lt;/p&gt;
 
-&lt;p&gt;Agencies are better suited for:&lt;/p&gt;
+&lt;p&gt;But I understand that a lot of businesses are perplexed by the idea of paying too much for something and they want to know what the “fair market value” is. I find the idea absurd as this is not a commodity where you can substitute one designer’s output with another’s. If you find a designer whose output you like, then the “fair market value” is whatever they want to charge you then, isn’t it? But then this argument may fall on deaf ears and sound less “rational” to some, so in an effort to provide a rational answer, you could do the following exercise.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Large, complex projects requiring diverse expertise, such as research, design, and development.&lt;/li&gt;
-  &lt;li&gt;Long-term projects where consistent support and collaboration are needed.&lt;/li&gt;
-  &lt;li&gt;Situations where reliability and scalability are critical, as agencies typically have dedicated teams and processes to ensure continuity.&lt;/li&gt;
-  &lt;li&gt;Businesses seeking strategic guidance in addition to design services.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;First, find out how much it would cost to employ a UX designer with about 2 years of experience on a full-time basis in your area. Divide that by 12 to get their monthly salary. Then, multiply that by 5 as a project typically requires the efforts of 4 people with varying levels of experience on a non-100% utilisation basis. That number is what you should expect to pay on a minimum (not maximum) for each month of engagement with any agency. There is no maximum that you can pay as the sky’s the limit. There are premiums you could add onto this for star designers on the teams or if the agency can bring additional skills to table, like motion design, film production, over an above the base level UX design.&lt;/p&gt;
 
-&lt;p&gt;While agencies can be more expensive than freelancers, their team-based approach and structured workflows often result in higher-quality outcomes, particularly for complex or high-stakes projects.&lt;/p&gt;
-&lt;h3 id=&quot;7-budgeting-and-timeline-considerations&quot;&gt;7. Budgeting and Timeline Considerations&lt;/h3&gt;
+&lt;p&gt;If your company is cost conscious and wants to find a way to reduce the costs, you could try to work across geographies. Vietnam, India and Ukraine have some great English speaking UX design agencies that can provide you a lot of value for up to 40% less than what it would cost you in the US or Western Europe.&lt;/p&gt;
 
-&lt;h4 id=&quot;setting-realistic-budgets&quot;&gt;Setting Realistic Budgets&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Important Side Note:&lt;/em&gt;&lt;/strong&gt; &lt;em&gt;The idea that you could hire four designers only for a few months and have them pull off a great output is absurd. A few of my clients at my agency have been those that have tried to do this and failed and then decided to hire an agency after all. They typically spent 1.5 to 2 times what it should have cost them in the first place, so keep that in mind.&lt;/em&gt; &lt;/p&gt;
 
-&lt;p&gt;When determining your budget for a UX design project, it’s helpful to follow these guidelines:&lt;/p&gt;
+&lt;h1 id=&quot;reviewing-agreements-and-contracts&quot;&gt;Reviewing Agreements and Contracts&lt;/h1&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Allocate Adequate Resources for Design:&lt;/strong&gt; A good rule of thumb is to assign an amount equivalent to the estimated development costs for web applications. For mobile apps, design costs may be slightly lower than development costs but still significant.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Avoid Cutting Corners:&lt;/strong&gt; Skipping the design phase or rushing through it often leads to delays and cost escalations during development. Proper design planning can prevent expensive fixes later.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Quite often large companies have standard boiler-plate engagement contracts for service providers, but in case you don’t you could request the engagement contract from your agency. Very often, if the proposal is detailed enough, that itself could be used to sign and formalise the engagement with the agency as it would contain all the usual terms that are covered in legal contracts. &lt;/p&gt;
 
-&lt;h4 id=&quot;establishing-timelines&quot;&gt;Establishing Timelines&lt;/h4&gt;
+&lt;p&gt;While there are very few “gotcha’s” to look out for, here are some key clauses that you want to examine before you sign the agreement. &lt;/p&gt;
+&lt;h2 id=&quot;1-scope&quot;&gt;1. Scope&lt;/h2&gt;
+&lt;p&gt;Please make sure that all that you intend to cover in this project is covered in the scope section. Despite any conversations that you may have had, the engagement will only be decided based on what’s covered in the scope section.  &lt;/p&gt;
+&lt;h2 id=&quot;2-delivery-formats&quot;&gt;2. Delivery Formats&lt;/h2&gt;
+&lt;p&gt;For UX design, the output is typically required by development teams, so make sure that they are receiving the following to make sure that your &lt;/p&gt;
 
-&lt;p&gt;The timeline for your project will depend on its complexity and scope. UX design typically involves multiple stages, including research, wireframing, prototyping, and user testing. Discuss realistic deadlines with your designer or agency upfront and plan for some flexibility to accommodate feedback and revisions.&lt;/p&gt;
+&lt;h2 id=&quot;3-fixed-costs&quot;&gt;3. Fixed Costs&lt;/h2&gt;
+&lt;p&gt;Please make sure that you are working with the agency on a fixed-cost basis. They may ask you to pay on an hourly-basis for additional work, but whatever is covered within the scope should be delivered within the costs specified.&lt;/p&gt;
+&lt;h2 id=&quot;4-ownership-of-intellectual-property&quot;&gt;4. Ownership of Intellectual Property&lt;/h2&gt;
+&lt;p&gt;While most agencies will be on a “work-for-hire” contract basis, be sure to clarify that all intellectual property developed through this project will belong to your company. This will help you use the output of the project to your benefit and further development in the future.&lt;/p&gt;
+&lt;h2 id=&quot;5-non-disclosure-agreement&quot;&gt;5. Non-Disclosure Agreement &lt;/h2&gt;
+&lt;p&gt;There will be several things that you discuss about your business in order for the agency to design their application. Make sure that the agency cannot disclose this information about your organisation without your permission. Having this agreement in place will also allow your team members to speak openly and freely with the designers allowing them to develop applications that more accurately serve your needs.&lt;/p&gt;
+&lt;h2 id=&quot;6-support&quot;&gt;6. Support&lt;/h2&gt;
+&lt;p&gt;Every design agency will need to provide support post the delivery of their work. Documentation will only go so far and some live support will be required once in a while to explain some intricacies of the design. Make sure that the contract includes a support period post delivery and also a method to seek support well after that as that is required sometimes. Get this for remote support as well as for in-person support if that’s an option.&lt;/p&gt;
+&lt;h1 id=&quot;freelancers-vs-agencies&quot;&gt;Freelancers vs. Agencies&lt;/h1&gt;
 
-&lt;h3 id=&quot;8-evaluating-technical-expertise-and-tools&quot;&gt;8. Evaluating Technical Expertise and Tools&lt;/h3&gt;
+&lt;p&gt;I must speak a little about hiring freelancers as that’s often an alternative that’s considered by businesses often. As I’ve been a freelancer before building an agency, I think I am in a good position to answer this and also argue for one over the other. &lt;/p&gt;
 
-&lt;p&gt;The UX design process often involves various tools and technologies. While you may not need to dictate the tools your designers use, you should:&lt;/p&gt;
+&lt;p&gt;It is my considered opinion that businesses should only hire freelancers in very specific situations:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Understand the Outputs You’ll Receive:&lt;/strong&gt; Ensure the final deliverables (e.g., prototypes, wireframes, or style guides) are in formats that your development team can easily work with.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Ask About Tools They Use:&lt;/strong&gt; Popular platforms like Figma (for UX/UI design), Adobe XD, and Sketch are industry standards for design, while tools like Miro or FigJam might be used for collaboration.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;The project is very cost sensitive&lt;/li&gt;
+  &lt;li&gt;The project is a one-off and does not have long term impact&lt;/li&gt;
+  &lt;li&gt;You already have done enough research to guide the designer&lt;/li&gt;
+  &lt;li&gt;You are okay with delays&lt;/li&gt;
+  &lt;li&gt;You are comfortable with the skills that are being provided&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;If you already have a design team in-house or a preferred development framework, confirm compatibility between their tools and the outputs you’ll need.&lt;/p&gt;
+&lt;p&gt;For all other situations, there is absolutely no reason to hire freelancers, because with a freelancer, you get the wisdom of just one person. Design requires a lot of debate, and that’s hard to achieve as an individual, not impossible, but hard. Their learnings may also be limited as they typically are employed only on small and short term projects.&lt;/p&gt;
 
-&lt;h3 id=&quot;9-the-role-of-communication-in-successful-collaboration&quot;&gt;9. The Role of Communication in Successful Collaboration&lt;/h3&gt;
+&lt;p&gt;I’ve seen cases where the freelancers don’t show up to meetings, they have ended projects without notice, or have behaved in unprofessional ways. Clients have thereafter had to find ways to scramble and recover from these setbacks.&lt;/p&gt;
 
-&lt;p&gt;Effective communication is crucial for the success of any design project. Here’s why:&lt;/p&gt;
+&lt;p&gt;So for these reasons, I suggest working with teams where these problems are usually not prevalent.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Clarity in Process and Goals:&lt;/strong&gt; A designer or agency should be able to explain their process in plain terms and ensure your goals are well understood.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Proactive Updates:&lt;/strong&gt; Regular updates on progress, challenges, and next steps keep the project on track and build trust.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Assessing Communication Style:&lt;/strong&gt; You can gauge communication style by how they respond to your initial queries. Agencies with blogs or resources that clearly explain their approach often excel in communication.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
-&lt;p&gt;Remember, a team that communicates well is more likely to resolve issues efficiently and ensure a smooth project experience.&lt;/p&gt;
+&lt;p&gt;A friend of mine sells bicycles and I went to him when I wanted to get into the sport. When I asked him to recommend a bike, he showed me something that was well over the amount that I had anticipated paying for a bike. So I said that since I was just getting into riding bikes, I wanted to get one that wasn’t so expensive and then if I like the sport, I would buy something more expensive. &lt;/p&gt;
 
-&lt;h3 id=&quot;10-evaluating-understanding-of-your-goals-and-user-base&quot;&gt;10. Evaluating Understanding of Your Goals and User Base&lt;/h3&gt;
+&lt;p&gt;What he said in response remains with me till today because it is extremely relevant to my field. He said that if I was serious about getting into the field, I should be getting the best bike I can afford, because buying the wrong bike will actually make me hate the sport. &lt;/p&gt;
 
-&lt;p&gt;A successful UX design project depends on the designer’s ability to grasp your business objectives and audience needs. Here’s how you can evaluate this:&lt;/p&gt;
+&lt;p&gt;I relate this story because it’s a great metaphor for choosing the right agency. If you make the wrong choice of agency and develop the wrong app based on their work, you may end up attributing the failure of the app to the weakness of the idea behind it. You may even end up making the wrong business decision whereas you may have come to a very different conclusion if you had just made a better decision while choosing the right agency.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Assess Their Proposal:&lt;/strong&gt; After an initial briefing, the agency should deliver a well-structured proposal. This document should clearly reflect your business goals, the problem to be solved, and their understanding of your user base.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Quality of Questions:&lt;/strong&gt; Pay attention to the types of questions the designer or agency asks during initial discussions. Are they probing deeper into your objectives, target audience, and potential challenges? This indicates how thoroughly they aim to tailor their approach to your needs.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Ability to Align with Your Brand:&lt;/strong&gt; The designer should demonstrate an understanding of your brand identity and values. This ensures the end product resonates with your audience and maintains consistency with your broader marketing efforts.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A thorough discovery phase and thoughtful proposal are strong indicators of a team that prioritises understanding your unique needs.&lt;/p&gt;
-
-&lt;h3 id=&quot;11-conclusion&quot;&gt;11. Conclusion&lt;/h3&gt;
-
-&lt;p&gt;Hiring a UX designer, whether a freelancer or an agency, is a crucial step in creating user-centric products that align with your business goals. To make the right choice, it’s essential to:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Clearly define your project objectives.&lt;/li&gt;
-  &lt;li&gt;Look for designers with a solid process, strong portfolios, and relevant experience.&lt;/li&gt;
-  &lt;li&gt;Ask insightful questions to gauge their expertise, adaptability, and communication skills.&lt;/li&gt;
-  &lt;li&gt;Decide between freelancers and agencies based on the scale, complexity, and long-term impact of your project.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Investing in UX design early not only saves time and resources in the development phase but also ensures that your product effectively serves your audience and achieves your business objectives. By following these guidelines, you’ll be well-equipped to find the right partner and set your project up for success.&lt;/p&gt;
+&lt;p&gt;Having said that, I hope this article is useful to you in making the right choice. But if you need any help, do reach out to me once you’ve shortlisted your agencies, and I’d be happy to help you make the final choice!&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 Nov 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/how-to-hire-designers/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/how-to-hire-designers/</guid>
+        <link>http://localhost:4000/blog/how-to-hire-design-agencies/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/how-to-hire-design-agencies/</guid>
         
         <category>design</category>
         
@@ -803,40 +856,6 @@ Another issue with the cable was that the sockets it plugged into on the other s
         <category>design</category>
         
         <category>technology</category>
-        
-        <category>hardware</category>
-        
-        
-        <category>Reviews</category>
-        
-      </item>
-    
-      <item>
-        <title>Design review of the AI Pin by Humane</title>
-        <description>&lt;p&gt;As a product designer, I analysed Humane’s first product, the AI Pin, and identified several critical challenges that need to be addressed. While the product’s primary purpose of replacing mobile phones is laudable, it faces significant obstacles. Firstly, the device needs to offer a 10X better value proposition than the mobile phone to convince users to switch. However, this proved difficult as the AI Pin struggled to deliver on this promise, particularly in terms of call and message functionality, social media, calendar management, navigation, photography, entertainment, running apps, and more.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, the voice-based input/output and low-resolution screen limit the device’s usefulness compared to a high-resolution touchscreen display. Additionally, the need for a tap activation can be slow and cumbersome, hindering the AI assistant’s utility. Demonstrations showed that the AI assistant takes time to retrieve information and respond, leading to frustration in daily usage.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/HumaneAIPin.jpeg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To improve the product, I would ask the following questions:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Why create a phone replacement as the first version of the product? It would have been more effective to demonstrate the usefulness of an always-available AI assistant, as Meta RayBan did.&lt;/li&gt;
-  &lt;li&gt;Why use tap as a wake gesture when hot keywords or head turns towards the device could be faster and more hands-free?&lt;/li&gt;
-  &lt;li&gt;What were the reasons for not pursuing a smartwatch with video capabilities? A watch offers familiar activation gestures like raising to wake, and provides a screen for information delivery and private touch inputs.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;While many have criticised this project, upon closer examination, it appears that the product was rushed to market rather than be the example of the company’s vision. However, there is still hope for Humane as they continue to innovate. A truly effective always-available AI assistant has the potential to improve various aspects of life, and I await their future developments with interest.&lt;/p&gt;
-
-&lt;p&gt;It’s hard to go into uncharted waters, and one must admire them for trying.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 28 Nov 2023 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/review-of-humane-ai-pin/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/review-of-humane-ai-pin/</guid>
-        
-        <category>design</category>
         
         <category>hardware</category>
         
