@@ -5,8 +5,8 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Nov 2024 07:51:26 +0100</pubDate>
-    <lastBuildDate>Thu, 21 Nov 2024 07:51:26 +0100</lastBuildDate>
+    <pubDate>Mon, 25 Nov 2024 15:35:26 +0100</pubDate>
+    <lastBuildDate>Mon, 25 Nov 2024 15:35:26 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -16,54 +16,6 @@
 &lt;hr /&gt;
 &lt;h1 id=&quot;how-to-go-from-designing-ux-in-web2-to-web3&quot;&gt;How to go from designing UX in Web2 to Web3&lt;/h1&gt;
 
-&lt;p&gt;Points to cover:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Decentralisation
-    &lt;ul&gt;
-      &lt;li&gt;Security&lt;/li&gt;
-      &lt;li&gt;Latency&lt;/li&gt;
-      &lt;li&gt;Scalability&lt;/li&gt;
-      &lt;li&gt;Immutability&lt;/li&gt;
-      &lt;li&gt;Architecture
-        &lt;ul&gt;
-          &lt;li&gt;Equivalents&lt;/li&gt;
-          &lt;li&gt;Differences&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Data ownership&lt;/li&gt;
-      &lt;li&gt;Interoperability&lt;/li&gt;
-      &lt;li&gt;Security and Trust&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Technical details
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;UX issues
-    &lt;ul&gt;
-      &lt;li&gt;Speed&lt;/li&gt;
-      &lt;li&gt;Asynchronous updates&lt;/li&gt;
-      &lt;li&gt;Failure scenarios&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Story arc:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;How I got into it?&lt;/li&gt;
-  &lt;li&gt;Why did I stay?&lt;/li&gt;
-  &lt;li&gt;Thoughts about the future&lt;/li&gt;
-  &lt;li&gt;Leave behinds
-    &lt;ul&gt;
-      &lt;li&gt;YouTube Playlist&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;If you want to start working with Web3 companies and design effective applications for them, you need to understand the fundamental difference between Web2&lt;/p&gt;
 </description>
         <pubDate>Sat, 16 Nov 2024 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/how-to-design-for-web3/</link>
@@ -237,6 +189,10 @@
 &lt;p&gt;I relate this story because it’s a great metaphor for choosing the right agency. If you make the wrong choice of agency and develop the wrong app based on their work, you may end up attributing the failure of the app to the weakness of the idea behind it. You may even end up making the wrong business decision whereas you may have come to a very different conclusion if you had just made a better decision while choosing the right agency.&lt;/p&gt;
 
 &lt;p&gt;Having said that, I hope this article is useful to you in making the right choice. But if you need any help, do reach out to me once you’ve shortlisted your agencies, and I’d be happy to help you make the final choice!&lt;/p&gt;
+
+&lt;h1 id=&quot;accompanying-video&quot;&gt;Accompanying Video&lt;/h1&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;338&quot; src=&quot;https://www.youtube.com/embed/pWzm4IwFXZI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Fri, 15 Nov 2024 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/how-to-hire-design-agencies/</link>
