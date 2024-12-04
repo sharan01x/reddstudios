@@ -5,8 +5,8 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Nov 2024 15:35:26 +0100</pubDate>
-    <lastBuildDate>Mon, 25 Nov 2024 15:35:26 +0100</lastBuildDate>
+    <pubDate>Wed, 04 Dec 2024 10:13:35 +0100</pubDate>
+    <lastBuildDate>Wed, 04 Dec 2024 10:13:35 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -15,7 +15,94 @@
 
 &lt;hr /&gt;
 &lt;h1 id=&quot;how-to-go-from-designing-ux-in-web2-to-web3&quot;&gt;How to go from designing UX in Web2 to Web3&lt;/h1&gt;
+&lt;p&gt;Web3 has been built by engineers, for engineers, until now. But the recent DevCon conference hosted by the Ethereum community in Bangkok, had a huge focus on user experience and that’s never happened before. Given how geeky this community has been, even talking about usability is a huge step! There’s a shift from focussing on building infrastructure to building applications on top of that now that a lot of the required infrastructure is in place. There’s a clear realisation within the community to focus on usability with the intention of attracting the mainstream population. This presents an unprecedented opportunity for designers. But transitioning hasn’t been easy and this article intends to make that part simple.&lt;/p&gt;
 
+&lt;hr /&gt;
+&lt;h1 id=&quot;firstly-understand-web3&quot;&gt;Firstly, Understand Web3&lt;/h1&gt;
+&lt;p&gt;As UX designers know, to design something effective, we need to begin by understanding as much as possible about the technology underneath. To that end, let’s begin by understanding what is different about Web3 in contrast with Web2.&lt;/p&gt;
+
+&lt;h2 id=&quot;different-stack&quot;&gt;Different Stack&lt;/h2&gt;
+&lt;p&gt;In Web2, you have companies that own the entire application stack – they own the servers, the databases, the back-end software, the payment layer and the front-end UI layer. Users go to these companies and create accounts with them and their usage information is stored on the databases owned and operated by these same companies.&lt;/p&gt;
+
+&lt;p&gt;In Web3, the network is composed of a huge number of nodes and they are the equivalents of the web server in Web2. The front-end may be built by the company and the users that want to use the software can just sign-in with their wallets and begin using it. Their data is stored on the public blockchain.&lt;/p&gt;
+
+&lt;p&gt;The results of these differences is vast. Let’s consider the scenario where the application is a social media app and the company wants to start charging a certain amount for the usage of the platform. If the user cannot afford the payment, in Web2, they have no choice but to leave the platform which also means leaving behind all the data they generated and all the friends they made on the platform. In Web3, there is no such thing as locking out the user as their data is always available on the public blockchain. If one front-end provider is charging a very high price for their app, they could use another front-end provider and still have access to all their data and their relationships.&lt;/p&gt;
+
+&lt;h2 id=&quot;composability&quot;&gt;Composability&lt;/h2&gt;
+&lt;p&gt;But Web3 is built on standards and protocols, so they’re highly composable. This means that developers can treat all data sources and all projects as if it were their own.&lt;/p&gt;
+
+&lt;p&gt;For instance, in the example given above, you can imagine a developer creating a different front-end that not only gets the social media posts from one platform, but could choose to include background music from the user’s song library from an entirely different platform and create an audio-visual experience altogether. This is possible because of the composability of Web3.&lt;/p&gt;
+
+&lt;h2 id=&quot;permissionlessness&quot;&gt;Permissionlessness&lt;/h2&gt;
+&lt;p&gt;If I wanted to develop this sort of an application on Web2, I need to get API Access from the provider, let’s say for example Twitter.  To get that access, I need to firstly submit a short essay on what I intend to do with my API access (to my own account) and then agree to terms and conditions set by Twitter’s lawyers. After this, my access remains conditional, and if I built something super popular but built something Twitter didn’t agree with or maybe felt like they would want to do themselves, they can pull my API access.&lt;/p&gt;
+
+&lt;p&gt;There’s none of that on Web3. Since the data is stored on a public blockchain, it will be publicly accessible for anyone to come and write programs that can use that data without asking anyone for permission to do so and without terms and conditions.&lt;/p&gt;
+
+&lt;h2 id=&quot;ownership-of-data&quot;&gt;Ownership of Data&lt;/h2&gt;
+&lt;p&gt;The data that is typically generated by users is publicly stored, but private data is typically encrypted using the user’s public key. This means that the data can only be decrypted by the user and no one else. This puts the user’s squarely in control of their information, not any corporation. Mining this data is also impossible if it’s encrypted, so users don’t ever have to worry about being exploited.&lt;/p&gt;
+
+&lt;h2 id=&quot;pseudonymity&quot;&gt;Pseudonymity&lt;/h2&gt;
+&lt;p&gt;It is a misnomer that people think that Web3 is anonymous. It is not. Every transaction on a blockchain is signed by a wallet. So all the data is identifiable as belonging to that wallet holder. The only piece of information that one doesn’t have is who the owner of the wallet is. But if anyone ever establishes that a certain wallet belongs to a specific person for example, the immediately stop being anonymous and their data becomes transparent on chain, otherwise known as getting doxxed.&lt;/p&gt;
+
+&lt;p&gt;Sometimes this is a deliberate thing, for example if a user wants social recognition in a game, they can establish their ownership of several items they have collected in their wallet, by demonstrating their ownership of that wallet. But often, users want to remain unknown and do not want to be doxxed if they can help it.&lt;/p&gt;
+
+&lt;h2 id=&quot;culture&quot;&gt;Culture&lt;/h2&gt;
+&lt;p&gt;Web3 has been built by idealists, but in a very pragmatic way in order to have real-world utility. You cannot miss hearing about the “original cypher punk” values that seem to be beneath all of it. Decentralisation is not a buzz word, it is the essence of the culture. Being authentic and original are virtues in this field. Having a different viewpoint is celebrated while corporate behaviour, censorship and authoritarianism are taboos.&lt;/p&gt;
+
+&lt;p&gt;The two biggest projects in the field Bitcoin and Ethreum. Bitcoin’s founder, is unknown. And Ethereum’s founder is Vitalik Buterin, who has actively tried to build a project that doesn’t need him to be around to succeed. He is a 29 year old billionaire who wears unicorn t-shirts and lives a nomadic lifestyle travelling the world with nothing more than what he has in his backpack. I mention these things to highlight the kind of culture that permeates through this world.&lt;/p&gt;
+
+&lt;h2 id=&quot;speed&quot;&gt;Speed&lt;/h2&gt;
+&lt;p&gt;Because of the decentralised structures, speed is often slow when compared to AWS or other such servers. This is something to keep in mind when designing systems. You have to afford for the latency as the result of actions may actually take a long time to be written to the blockchain and are not as immediate as when using equivalent systems built on Web2 standards.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;key-challenges-opportunities-facing-web3&quot;&gt;Key Challenges (Opportunities) Facing Web3&lt;/h1&gt;
+&lt;p&gt;For Web3 to become mainstream, there are some key challenges on the user-facing side. These are also opportunities for UX designers to come in and find solutions around.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-wallet&quot;&gt;The Wallet&lt;/h2&gt;
+&lt;p&gt;If a user wants to do anything on web3 they need a wallet. While a lot of very user-friendly wallets do exist and some even go so far as to allow Google-sign-ins to create accounts within these wallets, the purpose and usage of these wallets is not very well understood by users. This is an area that needs a lot of work as there are no direct analogies in Web2. Communicating the intricacies of public-private key cryptography is a challenge.&lt;/p&gt;
+&lt;h2 id=&quot;managing-security&quot;&gt;Managing Security&lt;/h2&gt;
+&lt;p&gt;One of the disadvantages of Web3 is that it only has one level of security. It’s the public private key pair and nothing else. It’s always the highest level of security.&lt;/p&gt;
+
+&lt;p&gt;Unlike in Web2, where you signed in only with a login and password on an app of low importance, and with login, password and 2FA to your email service and possibly login, password, OTP and FaceID on a banking app, there are no other levels in Web3. You can see the problems that occur if users started using the same account for social apps as well as to store their money and there was only one level of security that exists for both and that got compromised, they end up loosing everything.&lt;/p&gt;
+
+&lt;p&gt;Also, Web3 is pseudonymous, not anonymous, so if a user doxxed themselves on a social app, their social network could easily find out everything about their finances.&lt;/p&gt;
+
+&lt;p&gt;Finally, in case a user forgets a password in Web2, they know they can go through some steps and regain access to their accounts. This is not the case in Web3 as there’s no recovery. If the user doesn’t do a good job storing their passwords, they may loose access to their account forever.&lt;/p&gt;
+
+&lt;p&gt;These are all challenges that need design intervention to solve as an industry.&lt;/p&gt;
+&lt;h2 id=&quot;public-relations&quot;&gt;Public Relations&lt;/h2&gt;
+&lt;p&gt;Some regulators hate this field because they see it as a threat to their ability to control their population. Crypto has therefore long been portrayed as a scam by the mainstream media. The field has also had several grifters who perpetrated scams and those have also created very bad press. But just like the airline industry, each mishap has informed the field as to how to become better. Web3 truly has reached a level of maturity today where it can serve mainstream use cases and make the lives of end-users a lot better. But we’ll have to overcome this PR hurdle. As a designer, you can help.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;trends-to-keep-in-mind&quot;&gt;Trends to Keep in Mind&lt;/h1&gt;
+&lt;p&gt;There are some trends already taking place that you should pay attention to, and change if you’d like.&lt;/p&gt;
+&lt;h2 id=&quot;changing-demographics&quot;&gt;Changing Demographics&lt;/h2&gt;
+&lt;p&gt;While Web3 was built by engineers, for engineers, it is changing today. It is attracting far more non-technically inclined people who may be considered early-adopters. So interfaces have to cater to both audiences at the same time.&lt;/p&gt;
+
+&lt;p&gt;While engineers may need all the details and want to exercise control over how a transaction is performed, the early adopters tend to flock towards apps that remove the complexity and offer an opinionated (fastest transaction speeds), but simple experience. Building interfaces that cater to both may be the order of the day where interfaces can reveal more complex controls on demand.&lt;/p&gt;
+&lt;h2 id=&quot;changing-visual-styles&quot;&gt;Changing Visual Styles&lt;/h2&gt;
+&lt;p&gt;A couple of years ago, all of Web3 was specifically looking inwards and there was a strong visual identity. Colours were saturated, there were a ton of gradients, a lot of space themes, a lot of orbs, balls and atoms and felt very cutting edge. And everything was dark themed, possibly because the audience it was catering to were mainly male developers. But things have been changing. Things have grown a lot lighter now and the visual language has become a lot more accessible to the mainstream. The copy used on the websites also seem to be plain English these days and not filled with jargon and acronyms.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;whats-in-it-for-you&quot;&gt;What’s in it for you?&lt;/h1&gt;
+&lt;p&gt;After all that’s been said above, if you still need a reason to get into web3, here are a few:&lt;/p&gt;
+&lt;h2 id=&quot;professional-growth&quot;&gt;Professional Growth&lt;/h2&gt;
+&lt;p&gt;If you’re tired of building ecommerce portals, come over to Web3 because you’ll be working on something brand new everyday. Decentralised Finance, NFT projects, decentralised social, decentralised science, etc. these are all fields within Web3 that are being discovered everyday. If you’re interested in learning new things and staying on the bleeding edge, you should definitely consider the shift.&lt;/p&gt;
+&lt;h2 id=&quot;set-standards&quot;&gt;Set Standards&lt;/h2&gt;
+&lt;p&gt;There are several aspects that haven’t been figured out as yet. If you’re anything like me, you enjoy working in the unknown and figuring out and building standards.&lt;/p&gt;
+
+&lt;p&gt;As an example, a project called Uniswap presented a very simple interface for swapping tokens and that’s become the de-facto standard interface that is being used anywhere tokens are swapped. Or take the way Metamask did on-boarding, that’s become the standard for all wallets today. In the same way there are a ton of other aspects of Web3 that are still being figured out and you could be there contributing new ideas into the mix.&lt;/p&gt;
+&lt;h2 id=&quot;do-it-for-the-money&quot;&gt;Do it for the money&lt;/h2&gt;
+&lt;p&gt;If nothing else, do it because the money is good. Web3 projects typically pay very well because there aren’t a lot of designers who understand it. But that’s not all. Contributors are typically also given project tokens as part of the compensation in place of ESOPS. While some ESOPS go up by 20% if you’re lucky, tokens on the other hand can sometime go up by 20X, so in case of an upside, the values could be life-changing.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Just as AI transformed from a sci-fi concept to an everyday reality, Web3 is following a similar trajectory. We’re already seeing traditional companies like MicroStrategy transform its business by simply holding Bitcoin, growing its market value from $1.1 billion in 2020 to over $8 billion in 2021. And that’s just from using cryptocurrency as a treasury asset. You can imagine the potential when companies fully embrace Web3’s capabilities: decentralized operations, user-owned data, and transparent transactions.&lt;/p&gt;
+
+&lt;p&gt;As a UX designer in Web3, you’re not just designing interfaces – you’re designing the future of digital interaction. The challenges are significant, but so are the opportunities. Start small, focus on user needs, and don’t be afraid to challenge conventions.&lt;/p&gt;
+
+&lt;p&gt;Remember, every great interface began with someone asking, “Couldn’t this be simpler?” That’s your mission in Web3. The technology is ready; now it’s time to make it human.&lt;/p&gt;
 </description>
         <pubDate>Sat, 16 Nov 2024 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/how-to-design-for-web3/</link>
