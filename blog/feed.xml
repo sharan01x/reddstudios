@@ -5,9 +5,91 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Dec 2024 08:58:45 +0100</pubDate>
-    <lastBuildDate>Fri, 20 Dec 2024 08:58:45 +0100</lastBuildDate>
+    <pubDate>Wed, 01 Jan 2025 17:04:44 +0100</pubDate>
+    <lastBuildDate>Wed, 01 Jan 2025 17:04:44 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>The New Age of the Design Generalist</title>
+        <description>&lt;p&gt;&lt;em&gt;AI tools have made coding simpler. Skills are no longer relevant. Imagination and envisioning a particular future is more necessary than ever.&lt;/em&gt;
+___&lt;/p&gt;
+&lt;h1 id=&quot;the-boring-part&quot;&gt;The ‘Boring’ Part&lt;/h1&gt;
+
+&lt;p&gt;Recently I’ve been having a lot of difficulty in staying on top of my social media game. Not being a native to social media, I approached it with a certain disdain in the beginning and completely missed the wave. But given the new course I have set upon, I intend to learn as much as I can and get better at this now.️&lt;/p&gt;
+
+&lt;p&gt;But the tedious aspect of social media has got to be the manual process of posting content on each and every channel that I have become a part of. That’s the biggest hurdle and the most boring aspect of the entire process. There are some tools, and I subscribed to Typefully to be able to do this. But, alas, Typefully doesn’t support the social platforms on Web3 that I am a part of. So I looked for various solutions and none of them satisfied my needs. It occurred to me to try building an application that would do this for myself with the help of AI and I am so glad I did because, a whole new world has opened up to me now!&lt;/p&gt;
+
+&lt;p&gt;I began down this path in the usual way that one builds software these days. I got access to ChatGPT, but I found the idea of copy-pasting between the chat interface and VS Code tedious and quite problematic as I am not a very good developer and often made mistakes with where I copied and pasted from. Github Copilot Chat was like having the same ChatGPT capability but repurposed for use within VS Code, though I still had to copy and paste between panels. But GitHub Copilot has a new feature called “Edits” which would directly make the edits to your code. This made things a whole lot more convenient. I could even describe what I wanted to do in plain english and it would make the right edits directly in my code. This was a game-changer!&lt;/p&gt;
+
+&lt;p&gt;So, with my new setup in place, I began by describing what I intended to achieve at a high level and asked it to recommend the right technology stack. It recommended that I built with Vue.js for my intended purpose, I said “Fine” and it began whirring away setting up the environment with all the required files and started to build out my views.&lt;/p&gt;
+
+&lt;p&gt;I didn’t know what the limitations were going to be, so I wanted to do a trial project first. I gave it some instructions for a “Hello World” program and it performed it beautifully and I got it to work as expected without much difficulty. The trouble came afterwards where I asked it to scrap the trial project and begin working on the real one. It completely couldn’t figure out how to take steps backwards. It was easier for me to delete the entire project folder and start again, so that’s what I did. But it also highlighted to me that this would be a limitation I would have to deal with using this tool. So I had to chart a course of building features one by one while I get to the final version without having to remove or modify the previously built feature.&lt;/p&gt;
+
+&lt;p&gt;In my plan, I was going to build a social media posting utility that would allow me to post across multiple channels by supplying it with a single post. So the simplest form of that application was going to be a feature that would post a message on a single channel first, then I would add a drop-down with additional channels and then create a broadcaster that would post across every channel, then a scheduler, etc.&lt;/p&gt;
+
+&lt;p&gt;This approach worked out rather well. I had to learn to be very specific at times and very broad at other times and that was straightforward enough. But I hit a road block when, after building out the functionality, I wanted to improve the UI and started making fixes. Now these fixes needed to be made across all the interfaces, but for some reason it had a lot of difficulty doing this across the various modules that I had built. It got to bad that I decided to use an entirely different front-end framework that would keep things standardised out of the box so that I would have to do very minimal work in order to make the UI look good. I chose to build the application with Streamlit.&lt;/p&gt;
+
+&lt;p&gt;At the same time, I heard about Windsurf as an AI infused IDE and saw the demo video and it looked great, even better than Copilot Edits. So I downloaded it and built a simple demo application with the trial credits. It was simply an entirely different experience. I simply describe the application I wanted to build and broke it down into the steps that were going to be required to achieve that and since I had it in the “Write” mode, where it could make file edits and changes, it simply went about doing everything. If I was impressed with Copilot Edits, this blew my socks off. I had the entire application setup and ready to go with Windsurf taking some incredibly good decisions regarding the things I hadn’t mentioned. It even named all the modules and variables in the code as I would have done myself! It was simply outstanding. I was able to achieve what I could with GitHub Copilot over the 5 or 6 days in a matter of 1 day. It did help that I was doing this a second time around, so I knew what the right approach was and didn’t make as many mistakes.&lt;/p&gt;
+
+&lt;p&gt;But Windsurf hasn’t been without it’s flaws. There were two times where I asked it to write a module “like the edits that you made to the Twitter module…” and it not only wrote the new module in the way it had done the Twitter module, but went too far and made edits to other modules. I had to learn to limit its scope by adding “Do only this and don’t make any other edits” to my instructions and that stopped the problematic edits from being performed. So, the very thing that it was great at and extremely useful at the beginning stages of an application became it’s Achilles heel later on. It was quite literally the opposite of GitHub Edits in this regard. So, the workflow that I would use for future application development is to use Windsurf in the beginning stages of the application and then switch to GitHub Copilot for specific edits and module-level enhancements. But of course, I am talking about their qualities as of today. I completely expect that the teams behind these two tools will find ways to integrate the best features of each other’s AI code companions.&lt;/p&gt;
+
+&lt;p&gt;But this isn’t meant to be a discussion on the usage of these tools at all. Creating a video about the right ways to work with these AI tools is a fool’s errand because these tools have obviously been built by very smart people that really do understand what they’re bringing to this world and they will keep making improvements until these tools work just the right way it is meant to be by it’s users. No, it’s a discussion about the fact that I now stand in front of a very designed &lt;em&gt;and&lt;/em&gt; well built application that does exactly what I want it to do! The implications of this has in equal parts shaken me and blown my mind, and I had to talk about that!&lt;/p&gt;
+
+&lt;h1 id=&quot;the-interesting-part&quot;&gt;The Interesting Part&lt;/h1&gt;
+
+&lt;p&gt;The following are the changes that I expect to see on the horizon. There are numerous impacts of the stuff that I’ve been doing that I can see and I’ve done my best to list them in a logical order.&lt;/p&gt;
+
+&lt;h2 id=&quot;os&quot;&gt;OS&lt;/h2&gt;
+
+&lt;p&gt;Firstly, these tools, in their current form have made a huge leap forward in the span of a year. The capabilities of frontier and open-source AI models are only going to become better over time. This will allow them to factor more parameters into their operations. In other words, you will be able to communicate with the AI engines in as many ways as you need, speaking some actions, writing out some others and even supplying your Figma designs straight into the LLM’s for them to understand and execute.&lt;/p&gt;
+
+&lt;p&gt;But then, if you extend that idea, one may ask, why couldn’t the AI write the program at the time of need? Or even better, couldn’t the AI &lt;em&gt;become&lt;/em&gt; the application necessary to do the tasks and instead of providing a chat interface, provide the interface that an application would provide a user. A majority of applications are simply interfaces over some data source, so while there are many qualifiers to this sentence, the short answer is yes, it truly can become that super app and replace the user-facing part of the operating system. The OS will be relegated to managing security, permissions and managing the hardware interfaces.&lt;/p&gt;
+&lt;h2 id=&quot;skills&quot;&gt;Skills&lt;/h2&gt;
+
+&lt;p&gt;In this world, where would UX design fit in? If an AI can understand the best ways humans interact with interfaces, they can not only produce those interfaces with scarily effective interfaces, but also tune it to the needs of a single individual, no longer serving only the needs of the majority. In such a world, what role would a human UX designer play? I fear, it will no longer be relevant.&lt;/p&gt;
+
+&lt;h2 id=&quot;roles&quot;&gt;Roles&lt;/h2&gt;
+
+&lt;p&gt;In the short-term however, the role of the UX designer will change. They will no longer be beholden to a developer and their capabilities anymore and can circumvent them and develop a great application on their own – just as a developer will no longer need a designer for the applications they will create. As AI takes over more tasks, traditional design roles are likely to shift from execution-oriented to focus on strategic direction.&lt;/p&gt;
+
+&lt;p&gt;The job will be to instruct AI agents to perform the required tasks in the manner in which it needs to be done in order to achieve the goal. So practical imagination and planning will be the skills that will set us apart going forward. People like lead designers or lead design organisations are going to be much better equipped to jump into this role more naturally than anyone else. But this is only for the short-term and they too will need to go up the chain and up-skill themselves to think like entrepreneurs in the long term, because AI will take over the planning aspect as well soon.&lt;/p&gt;
+
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;/h2&gt;
+
+&lt;p&gt;Our current design tools are built for specialists and therefore are designed for precision. You can edit just this pixel, move exactly this screen and change exactly this effect. However AI can handle the details and the tools of the future are going to be designed around doing things with broad strokes. So it can take inputs like, “a background of a desert dune” or “a login flow with 2FA”, instead. The broad strokes are just going to get broader over time with humans being able to specify things in a increasingly abstracted manner. If you look at Krea.ai as an example and see what they’re doing with the Edit feature and compare that with the Photoshop workflow, this aspect will become even more evident.&lt;/p&gt;
+
+&lt;p&gt;Logically, this also means that the target audience is going to change. It’s no longer going to be appealing only to a graphic designer anymore but an entrepreneur running a company could use Krea, today, with little to no knowledge of graphic design and create some stunning artwork for themselves.&lt;/p&gt;
+
+&lt;h2 id=&quot;economies-of-scale&quot;&gt;Economies of Scale&lt;/h2&gt;
+
+&lt;p&gt;The dynamics of the economy will also change within the digital space. One of the biggest challenges in the software industry has been to design features that appeal to every individual. But because it costs a lot to design, code, test and release a certain feature, the decision has always been skewed towards appealing to the majority of users and ignoring the fringe needs. But with AI in the mix, this very dynamic can change. As I was discussing before, every feature and interface can be built to appeal to the individual user. Maybe the workflow will be that the human orchestrated output will be the feature that appeals to the majority of users, but AI can use that as a starting point and fill in the gaps to make that feature work for the fringe users? This changes the entire industry.&lt;/p&gt;
+
+&lt;h2 id=&quot;unexpected-benefactors&quot;&gt;Unexpected Benefactors&lt;/h2&gt;
+
+&lt;p&gt;One of the biggest benefactors of the economies of scale change are going to be the group of people that are currently disadvantaged by the digital world today. For example, these could be people with eyesight challenges or even the elderly that have so far been left behind by the digital world and are left more and more unsafe because of it. My own father keeps sending me fake videos of various things completely believing whatever thee video says. And since he’s at high risk in a digital world, I have had to ask him to not do any digital banking and completely prevented him from using UPI and such. My mother is unable to use these technologies as she’s a non-native-English-speaker and most interfaces are designed for English. Imagine user interfaces that will adapt to them without additional costs to the software developer. They would finally be able to cross the chasm and join the rest of the digital world.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-generalist&quot;&gt;The Generalist&lt;/h2&gt;
+
+&lt;p&gt;In this AI assisted world, there is a power-shift taking place. The users of AI are going to be able to build anything they can imagine. You no longer are constrained by needing a large team to execute on your vision. A lot of the roles of the team that one needed to build in the past can be executed by an AI agent today. It’s only going to be able to handle more roles in the future. This means that the required capital to build the companies of the future is only going to reduce. It therefore means that more and more people with the imagination and desire to do something will simply be able to.&lt;/p&gt;
+
+&lt;p&gt;A typical entrepreneur today is a generalist that understands a little bit of all the pieces that are required to execute something and can bring all those pieces together. Broadly speaking, they identify the need in the market, develop a vision for the solution to the problem, then they bring in specialists to fill in the gaps and capitalists to provide the capital required, and create the culture required to execute on the vision. It’s this very person’s role that will be made infinitely better in the future. In the digital world, we’re ushering in the dawn of the age of the generalist.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Dec 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/the-new-age-of-design/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/the-new-age-of-design/</guid>
+        
+        <category>design</category>
+        
+        <category>ux</category>
+        
+        <category>ai</category>
+        
+        
+        <category>Ideas</category>
+        
+        <category>Projects</category>
+        
+      </item>
     
       <item>
         <title>How to start designing for Web3</title>
@@ -849,75 +931,6 @@ Another issue with the cable was that the sockets it plugged into on the other s
         
         
         <category>Experiments</category>
-        
-      </item>
-    
-      <item>
-        <title>Review of the Rabbit R1</title>
-        <description>&lt;p&gt;&lt;em&gt;A detailed review of the newly launched Rabbit R1, exploring its hardware and software design, its strategic position in the market and its potential challenges&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h1 id=&quot;the-launch-of-something-new&quot;&gt;The Launch of Something New&lt;/h1&gt;
-
-&lt;p&gt;To say that the Rabbit team mimicked Steve Jobs’ keynote would be an understatement! The only thing missing was the Vera Wang turtleneck—it was a black t-shirt instead. Otherwise, the presentation featured the same slide style from Apple Keynote with the gradient, the same format, the hand gestures, and even the “One more thing…” announcement at the end. But OnePlus did this before too, turtleneck included. While it was considered cringe-worthy at the time, the product compensated for the lack of originality in the presentation. So, let’s not dwell on style and focus on the substance instead.&lt;/p&gt;
-&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
-
-&lt;p&gt;The tech world has been in pursuit of two things over the past couple of years. The first is an answer to what will replace the smartphone. Depending on whom you ask, the smartphone has remained relatively unchanged since its debut in 2007. It has been upgraded in small ways with better screens, cameras, and sensors, but otherwise, the form factor has stayed largely the same since the beginning, despite some major flaws in the structure. But it’s been more than 16 years, Steve Jobs isn’t around, and everyone is looking for the smartphone killer.&lt;/p&gt;
-
-&lt;p&gt;Secondly, the success of OpenAI’s ChatGPT has demonstrated to everyone how powerful AI assistants can be. The open-source space has also made giant leaps with Llama 2 and Mistral AI models, and you can achieve the same capabilities as ChatGPT, and even the interface, running on your local computer with relative ease using tools like Ollama.&lt;/p&gt;
-
-&lt;p&gt;With the addition of vision, audio, and speech capabilities into AI models, they are now ready to move beyond the browser and integrate into people’s lives, understanding instructions within their own contexts. For this, they may need to leave desktop browser windows and move onto mobile phones instead. But mobile phones are still a reach-into-your-pockets-or-handbag away, and that’s not good enough either. People need something even more readily available. Enter Meta Ray-Ban, Humane’s AI Pin, etc.&lt;/p&gt;
-
-&lt;p&gt;Thirdly, these models have so far been hamstrung by their inability to perform actions on behalf of the user. They cannot yet click buttons on screens and other interfaces, and the OS architecture and security do not allow an app to interact with the interfaces of other apps as yet, and rightly so. But this also means that we have to duplicate actions and information across apps in order to achieve certain goals.&lt;/p&gt;
-
-&lt;p&gt;With this backdrop, I think we can evaluate what Rabbit R1 is doing much more accurately.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/RabbitR1-2.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;hardware-design&quot;&gt;Hardware Design&lt;/h1&gt;
-
-&lt;p&gt;It seems they hired &lt;a href=&quot;https://twitter.com/@teenageengin33r&quot;&gt;Teenage Engineering&lt;/a&gt; (nice name), which appears to have a penchant for creating retro-futuristic tech products, reminiscent of Dieter Rams’ Braun designs. The design features a very cool, Lego-inspired shell that houses a great-looking touchscreen, a camera on a swivel, a scroll wheel, microphones, a slot for USB and SIM cards, and a push-button on the right side of the product. The touchscreen is a great addition, making interactions with apps, information delivery, and answering questions much faster than the audio-based delivery chosen by the AI Pin by Humane.&lt;/p&gt;
-
-&lt;p&gt;The camera on a swivel seems like a good idea, as the R1 can potentially scan the environment to find what a user may be referring to in their instructions. However, the plastic above the camera prevents the device from being held at an angle less than about 45 degrees, meaning the user must position the device almost vertically, like a smartphone, for the camera to see. This is odd, and I’m not sure why this choice was made.&lt;/p&gt;
-
-&lt;p&gt;Why not just position the camera on the very edge without the top plastic part causing an obstruction?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/RabbitR1-3.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’m also struggling to understand the purpose of the analogue scroll wheel. Is it meant to help make selections within the touchscreen interface? That doesn’t seem likely, as it would potentially be faster to use your finger to scroll on the touchscreen itself. Is it intended for manually positioning the camera? If so, positioning it to the right of the camera would have been more logical. Is the idea to enable one-handed scrolling on the touchscreen? If I were holding the device in my left hand, using my index finger to scroll might be easier than using my thumb on the screen, but I would still need to make button selections, and for that, I might be hitting the push-button. This seems like a learned behaviour, but it’s the only explanation I can come up with given my limited understanding. However, if you hold this device in your right hand, the positioning of the scroll wheel becomes even more perplexing! You can’t scroll with the thumb that’s holding the side of the device, and you can’t use your left hand to operate the scroll wheel without blocking your view of the screen. So, why is it designed this way?&lt;/p&gt;
-
-&lt;p&gt;Finally, I didn’t notice any way for the product to be attached to a jacket or shirt, and the placement of the screen and push-button suggests that the R1 is intended to be carried in a pocket and pulled out when needed. This raises a significant concern for me. An AI companion needs to be readily accessible within the user’s physical space to understand instructions better (and to keep the instructions simpler). If it needs to be pulled out of a pocket—or more likely from a bag, since the smartphone will probably be in the pocket—it won’t be as easily accessible. The AI Pin addressed this better by being always accessible from the t-shirt or jacket where it is clipped. The Meta Ray-Ban was another good attempt, but since they are sunglasses, wearing them all the time is nearly impossible.&lt;/p&gt;
-
-&lt;h1 id=&quot;software-design&quot;&gt;Software Design&lt;/h1&gt;
-
-&lt;p&gt;Jesse Lyu, the founder and CEO, begins his keynote by recognising one of the most fundamental issues with the way smartphones are designed. This is an extremely deep insight, and I’m so glad someone on such a large stage was able to express it. During the early days of the smartphone, Apple proudly used the line, “There’s an app for that,” in their marketing to highlight how many apps there were in the App Store. You see, in their view, there was an app that could achieve any task that you wanted to do. But the mental model of a person who wants to perform a specific task requires them to choose the app that would enable them to do it, then open that app and make the right choices in the interface in order to achieve the task. If you’ve got more than one app that could help you do that task, there’s some time spent in your mind deciding between them. And if you have a task that needs more than one app to be achieved, you’ve just made the choices even more complex. Given that most people have about 90 different apps on their phones on average, this isn’t a small matter. You also need to have downloaded these apps ahead of time in anticipation of needing them in the future. But that’s another story altogether.&lt;/p&gt;
-
-&lt;p&gt;This is also third-generation thinking, where you have to consider the objective you need to achieve and then break it down into the steps required for the computer to help you achieve it. Contrast that with fourth-generation thinking, which simply requires the user to clearly express the goal, and the computer then breaks down the tasks into atomic bits, figures out the best tools to use to solve the problem, and solves it. This was science fiction before the advent of AI. This is reality today. There’s also the duplication of data and instructions between the apps to contend with. For example, travelling somewhere on a vacation requires an app for flight bookings, an app for hotel bookings, an app to book a ride, and another to research the highlights of the destination. Each of them will ask you for your name, dates, times, locations, your companions, your preferences, over and over again. And that’s not even considering the fact that you need to register with each app too!&lt;/p&gt;
-
-&lt;p&gt;This &lt;em&gt;is&lt;/em&gt; a problem today, and Jesse and his company used this idea as the foundation to build their solution to combat this problem. Kudos to them for being able to figure out a way around it with their Rabbit Hole interface, even though it doesn’t yet completely solve &lt;em&gt;all&lt;/em&gt; the problems. There’s much more to say about the software, the interfaces, and the UI design, which are all brilliant but table stakes for a game this big. The fact that they understood the above point and also broke through the 500ms (while not yet hitting the Doherty Threshold) makes the device feel really responsive, which is just amazing.&lt;/p&gt;
-
-&lt;h1 id=&quot;business-design&quot;&gt;Business Design&lt;/h1&gt;
-
-&lt;p&gt;The fact that the product was launched at $199 is simply a masterstroke. A device that purports to be an AI Companion is really only that useful today, and the price point is perfect. But how could they not have a recurring monthly fee? They must have servers running in the background to serve the needs of the users. How do they expect to fund this? To me, this is where the rabbit hole comes in. I think the apps need to pay to be listed there. Maybe not initially, but eventually. They also may have a local model running on the device that handles the majority of the daily queries and only passes along the complex ones to the server, à la &lt;a href=&quot;https://mistral.ai/news/mixtral-of-experts/&quot;&gt;Mixtral of Experts&lt;/a&gt;. This would keep their costs low too. There is a possibility that they will benefit from a model that understands the physical world of the user better. This is greenfield at the moment, and they are going to be one of the first to occupy this space. But this is me just conjecturing, and the answer may be far simpler; the operational costs may just be borne through VC funding until they hit some kind of threshold. Or maybe it has to do with advertising, a.k.a. “recommendations” that the agent provides.&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;The R1 is intriguing and addresses some key concerns of mobile computing. However, several challenges persist. While the Rabbit R1 excels in software, the hardware design falls short of being an effective AI companion. A smartwatch with a camera still remains the form factor to beat. Given these shortcomings, I predict limited usage and abandonment by most users within a few months unless these improvements are implemented by the time they start shipping in March. With regard to competition, this concept could easily be replicated by smartphone manufacturers. If they cannot produce it independently, an acquisition could be on the cards, which may be the anticipated endgame anyway.&lt;/p&gt;
-
-&lt;p&gt;For any AI companion, the major obstacle remains payments. The demo didn’t quite show how the many payments that were alluded to actually took place, and I’m curious to see how this aspect works. While I don’t personally wish to purchase this product due to the aforementioned issues and deficiencies, I still regard it as a ‘directional innovation’ that pushes the industry in the right direction. There will be numerous iterations before the ideal form factor for the product is realised, as well as the perfect business models for the companies backing them. Consequently, I intend to keep a close eye on Jesse and his team to see if they adapt and iterate as I anticipate they will.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 10 Jan 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/rabbit-r1-review/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/rabbit-r1-review/</guid>
-        
-        <category>design</category>
-        
-        <category>technology</category>
-        
-        <category>hardware</category>
-        
-        
-        <category>Reviews</category>
         
       </item>
     
