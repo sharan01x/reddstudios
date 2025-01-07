@@ -5,9 +5,70 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Jan 2025 17:04:44 +0100</pubDate>
-    <lastBuildDate>Wed, 01 Jan 2025 17:04:44 +0100</lastBuildDate>
+    <pubDate>Tue, 07 Jan 2025 14:39:47 +0100</pubDate>
+    <lastBuildDate>Tue, 07 Jan 2025 14:39:47 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>The app-less world and it&apos;s implications on the world of computing</title>
+        <description>&lt;p&gt;&lt;em&gt;Among the many things AI has enabled, it now has made it possible to think beyond building software applications.&lt;/em&gt;
+___&lt;/p&gt;
+&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;I have [[2024-09-12-5-personal-ai-assistant-devices-reviewed#^1c44a7&lt;/td&gt;
+      &lt;td&gt;long believed]] that we are on the precipice of changing the fundamental way in which humans will interact with computers. Humans will soon be in a place where they can think in terms of the goals they want to achieve rather than thinking about the apps they need to string together in order to achieve the various pieces of it. The required technological pieces such as the [[2024-01-10-rabbit-r1-review#^a18b65&lt;/td&gt;
+      &lt;td&gt;LAM]] and [[2024-12-30-the-new-age-of-design#^5b3b30&lt;/td&gt;
+      &lt;td&gt;Just-in-Time Code]] being developed makes me believe that we are getting closer to this becoming real. There is still one big piece of the puzzle that is necessary which is the context of the user, but it’s only a matter of time and this will be achieved.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;data&quot;&gt;Data&lt;/h1&gt;
+
+&lt;p&gt;As of the writing of this article, the entities that have data about us are the large corporations that have spent years amassing it from our interactions in the digital sphere. They run very large data centres to store and process all this data to understand the user’s context and preferences. Hundreds and thousands of lines of code have been written to do this. So far it’s been employed to serve us ads or sell us stuff.&lt;/p&gt;
+
+&lt;p&gt;But we are now at a place where the hardware required for the user to be able to record this data about themselves is cheap enough that they could do this at their own homes. Open Source AI engines are also sophisticated and capable enough to replace the need for the many lines of code and instead be able to mine this data to understand the user’s preferences or to know what they said in the previous meeting whenever it is required.&lt;/p&gt;
+
+&lt;h1 id=&quot;digital-twin&quot;&gt;Digital Twin&lt;/h1&gt;
+
+&lt;p&gt;So, in theory, we can build a “digital twin” of a user that exists entirely in a computer that’s owned and controlled by them. This digital twin will be useful in so many ways. For instance, it can be examined to understand their preferred cuisine in order to order lunch or even to identify signs of depression if it comes to that. This digital twin is also available at all hours, so can represent the human in many digital spheres while the human is asleep.&lt;/p&gt;
+
+&lt;h1 id=&quot;ai-agents&quot;&gt;AI Agents&lt;/h1&gt;
+
+&lt;p&gt;AI agents are becoming more and more capable. They are able to search the web, make API calls, do calculations, make good decisions, write code, use computers and software applications and do it using multi-modal inputs and outputs.&lt;/p&gt;
+
+&lt;p&gt;Very quickly, this AI agent can learn to perform any tasks that the human may perform. The user will begin to speak to their agents in terms of the goals they want to achieve and leave it to the agent to figure out the plan and break it down into tasks that will help achieve that goal. The agent will operate software applications in oder to achieve these tasks. The human will use it to interact with and execute everything certainly in the digital sphere, but maybe some things in the physical world too (taxi hailing, ordering food or products, etc.)&lt;/p&gt;
+
+&lt;p&gt;These agents can also filter their actions through the Digital Twin in order to make choices and decisions just as the user would.&lt;/p&gt;
+
+&lt;h1 id=&quot;implications&quot;&gt;Implications&lt;/h1&gt;
+
+&lt;p&gt;Firstly, the AI agent becomes the universal interface for the user. This may happen gradually at first, but there is a real possibility that this becomes indispensable soon.&lt;/p&gt;
+
+&lt;p&gt;Secondly, if the agent is capable of writing code as required to perform a task, software as we know it will not be necessary anymore.&lt;/p&gt;
+
+&lt;p&gt;Thirdly, if the primary user of websites and applications is the AI agent, they will cease to exist in their current form and become far more like API’s. Future app-stores will be selling specialised data bundles or algorithms that will help analyse the user’s own data in novel ways.&lt;/p&gt;
+
+&lt;p&gt;Fourthly, with the human interacting more with the agent than with computers or phones, this may reduce their dependence on technology. We may finally settle on computing form factors such as the smart watch in the future.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 04 Jan 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/the-post-app-era-and-the-computing-powershift/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/the-post-app-era-and-the-computing-powershift/</guid>
+        
+        <category>design</category>
+        
+        <category>ux</category>
+        
+        <category>ai</category>
+        
+        
+        <category>Ideas</category>
+        
+      </item>
     
       <item>
         <title>The New Age of the Design Generalist</title>
@@ -43,7 +104,7 @@ ___&lt;/p&gt;
 
 &lt;p&gt;Firstly, these tools, in their current form have made a huge leap forward in the span of a year. The capabilities of frontier and open-source AI models are only going to become better over time. This will allow them to factor more parameters into their operations. In other words, you will be able to communicate with the AI engines in as many ways as you need, speaking some actions, writing out some others and even supplying your Figma designs straight into the LLM’s for them to understand and execute.&lt;/p&gt;
 
-&lt;p&gt;But then, if you extend that idea, one may ask, why couldn’t the AI write the program at the time of need? Or even better, couldn’t the AI &lt;em&gt;become&lt;/em&gt; the application necessary to do the tasks and instead of providing a chat interface, provide the interface that an application would provide a user. A majority of applications are simply interfaces over some data source, so while there are many qualifiers to this sentence, the short answer is yes, it truly can become that super app and replace the user-facing part of the operating system. The OS will be relegated to managing security, permissions and managing the hardware interfaces.&lt;/p&gt;
+&lt;p&gt;But then, if you extend that idea, one may ask, why couldn’t the AI write the program at the time of need? Or even better, couldn’t the AI &lt;em&gt;become&lt;/em&gt; the application necessary to do the tasks and instead of providing a chat interface, provide the interface that an application would provide a user. A majority of applications are simply interfaces over some data source, so while there are many qualifiers to this sentence, the short answer is yes, it truly can become that super app and replace the user-facing part of the operating system. The OS will be relegated to managing security, permissions and managing the hardware interfaces. ^5b3b30&lt;/p&gt;
 &lt;h2 id=&quot;skills&quot;&gt;Skills&lt;/h2&gt;
 
 &lt;p&gt;In this world, where would UX design fit in? If an AI can understand the best ways humans interact with interfaces, they can not only produce those interfaces with scarily effective interfaces, but also tune it to the needs of a single individual, no longer serving only the needs of the majority. In such a world, what role would a human UX designer play? I fear, it will no longer be relevant.&lt;/p&gt;
@@ -73,6 +134,11 @@ ___&lt;/p&gt;
 &lt;p&gt;In this AI assisted world, there is a power-shift taking place. The users of AI are going to be able to build anything they can imagine. You no longer are constrained by needing a large team to execute on your vision. A lot of the roles of the team that one needed to build in the past can be executed by an AI agent today. It’s only going to be able to handle more roles in the future. This means that the required capital to build the companies of the future is only going to reduce. It therefore means that more and more people with the imagination and desire to do something will simply be able to.&lt;/p&gt;
 
 &lt;p&gt;A typical entrepreneur today is a generalist that understands a little bit of all the pieces that are required to execute something and can bring all those pieces together. Broadly speaking, they identify the need in the market, develop a vision for the solution to the problem, then they bring in specialists to fill in the gaps and capitalists to provide the capital required, and create the culture required to execute on the vision. It’s this very person’s role that will be made infinitely better in the future. In the digital world, we’re ushering in the dawn of the age of the generalist.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;accompanying-video&quot;&gt;Accompanying Video&lt;/h1&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;338&quot; src=&quot;https://www.youtube.com/embed/uQgPwASdn5U&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Mon, 30 Dec 2024 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/the-new-age-of-design/</link>
@@ -199,6 +265,11 @@ ___&lt;/p&gt;
 &lt;p&gt;As a UX designer in Web3, you’re not just designing interfaces – you’re designing the future of digital interactions. The challenges are significant, but so are the opportunities. Start small, focus on user needs, and don’t be afraid to challenge conventions.&lt;/p&gt;
 
 &lt;p&gt;Remember, every great interface began with someone asking, “Couldn’t this be simpler?” That’s your mission in Web3. The technology is ready; now it’s time to make it human.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;accompanying-video&quot;&gt;Accompanying Video&lt;/h1&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;338&quot; src=&quot;https://www.youtube.com/embed/u_cEEB6D2Q8&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Wed, 04 Dec 2024 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/how-to-design-for-web3/</link>
@@ -574,7 +645,7 @@ ___&lt;/p&gt;
 
 &lt;p&gt;For an AI assistant to succeed, it needs to be extremely accessible. Think about the evolution of computing—from desktops to laptops, tablets, smartphones, and now wearables. The goal is to bring tech closer to the user. Personal AI devices need to occupy that space between a smartphone and the user—something wearable that’s always available at a moment’s notice.&lt;/p&gt;
 
-&lt;p&gt;Users are going to need to learn a new behaviour—one where they think in terms of goals, not apps. The easier we make it for them to access the assistant, the quicker they’ll adapt.&lt;/p&gt;
+&lt;p&gt;Users are going to need to learn a new behaviour—one where they think in terms of goals, not apps. The easier we make it for them to access the assistant, the quicker they’ll adapt. ^1c44a7&lt;/p&gt;
 
 &lt;h3 id=&quot;3-lack-of-multimodal-inputs-and-outputs&quot;&gt;3. Lack of Multimodal Inputs and Outputs&lt;/h3&gt;
 
@@ -863,74 +934,6 @@ Another issue with the cable was that the sockets it plugged into on the other s
         
         
         <category>Ideas</category>
-        
-      </item>
-    
-      <item>
-        <title>My experiments with 3D printing</title>
-        <description>&lt;p&gt;&lt;em&gt;My foray into the world of 3D printing and my learnings and insights so far. This is work in progress and will continue to be edited.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;3d-printing-a-journey-into-a-promising-yet-challenging-field&quot;&gt;3D Printing: A Journey into a Promising, Yet Challenging Field&lt;/h1&gt;
-
-&lt;p&gt;Back in around 2015, I stumbled upon 3D printers during their nascent stage. The potential was clear, but the technology wasn’t quite there yet, and it was relegated to a niche space for tech enthusiasts. As a UX designer, my curiosity was piqued, especially considering the initial buzz surrounding its potential impact on ecommerce and logistics. However, being based in India at the time, affordability, availability of replacement parts, and local support were significant barriers to entry.&lt;/p&gt;
-
-&lt;p&gt;Fast forward to 2023, I was blown away by an amazing YouTube video showcasing a user designing and printing all the shelves he needed for his desk, as well as custom SD card holders. This experience resonated with me, reminding me of the excitement I get when visiting a hardware store or a craft shop, imagining the possibilities of creating useful things. I was eager to explore this technology further and get my hands on a 3D printer to discover what I could create.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-right-printer-for-me-balancing-usability-and-performance&quot;&gt;The Right Printer for Me: Balancing Usability and Performance&lt;/h2&gt;
-
-&lt;p&gt;As the 3D printing industry evolved, so did its focus on user experience. Although there are numerous resources available online for fine-tuning printers, many models offer excellent results straight out of the box.&lt;/p&gt;
-
-&lt;p&gt;In terms of the printing technologies, I narrowed down my choices to Fused Deposition Modelling (FDM) and Vat Polymerisation (VP) printers due to their popularity in the consumer space. VP printing introduced some unique challenges like the need for ventilation and dealing with smells arising from resin. Given that I wanted the printer to remain in my study, I opted for FDM. After thorough research, I selected a printer that offered ease of assembly, maintenance, and accessibility to support. The Bambu Labs X1 and Elegoo Neptune 4 Plus stood out, but ultimately, I went with the Neptune 4 due to its lower cost and absence of proprietary parts.&lt;/p&gt;
-
-&lt;h2 id=&quot;unboxing-and-setting-up-overcoming-challenges-together&quot;&gt;Unboxing and Setting Up: Overcoming Challenges Together&lt;/h2&gt;
-
-&lt;p&gt;The delivery took around a month due to pre-ordering, arriving during Christmas holidays, offering ample time for me to delve into learning about 3D printing. The setup was straightforward, but there were some complications like ensuring the correct cables were connected and checking voltage settings on the printer bed. Although these tasks weren’t particularly challenging for a technologically inclined user, they required careful attention and a bit of research to ensure a seamless experience.&lt;/p&gt;
-
-&lt;p&gt;Despite the occasional hurdles, the experience was rewarding, as I was able to build my 3D printer from scratch with all necessary tools supplied. The desktop software that came with the Neptune 4 pleasantly surprised me with pre-installed printable files of a tool stand for the printer!&lt;/p&gt;
-
-&lt;h2 id=&quot;designing-the-gap-in-the-ux-of-3d-modelling&quot;&gt;Designing: The Gap in the UX of 3D Modelling&lt;/h2&gt;
-
-&lt;p&gt;The design process in 3D modelling is complex and requires a good understanding of visualising 2D cross-sectional shapes to create 3D objects. Sculpting tools like Blender are suitable for creating aesthetically pleasing, non-functional designs, while functional 3D design tools like OnShape offer the best capabilities for product designers.&lt;/p&gt;
-
-&lt;p&gt;OnShape, a cloud-based platform, boasts responsive and great tools that keep users updated with the latest features. However, the pricing could use improvement to cater to hobbyists and make entry into this space more accessible. Simplifying design tools by incorporating user-friendly features specific to 3D printing would further enhance the overall UX.&lt;/p&gt;
-
-&lt;h2 id=&quot;design-marketplaces-tools-and-toys-for-everyone&quot;&gt;Design Marketplaces: Tools and Toys for Everyone&lt;/h2&gt;
-
-&lt;p&gt;Websites like &lt;a href=&quot;https://www.printables.com&quot;&gt;Printables&lt;/a&gt; and &lt;a href=&quot;https://www.thingiverse.com&quot;&gt;Thingiverse&lt;/a&gt; offer a wealth of user-generated designs, allowing anyone to download and print objects using their 3D printers. This sense of power to create and own is truly exhilarating, enabling users to go from ideation to tangible results in a matter of hours! However, there are challenges like inconsistent quality checks and potential issues with new designers’ designs not being fully optimised for mass consumption.&lt;/p&gt;
-
-&lt;p&gt;Improving the user experience could involve implementing better quality control measures or allowing experienced designers to review and approve new designs before they are released to the public. Additionally, providing more comprehensive information about dimensions, filament requirements, and print time would significantly improve the overall experience.&lt;/p&gt;
-
-&lt;h2 id=&quot;printing-turning-ideas-into-reality&quot;&gt;Printing: Turning Ideas into Reality&lt;/h2&gt;
-
-&lt;p&gt;Printing in 3D isn’t without its challenges – files need to be converted from design formats (usually STL) to Gcode using slicing software like Cura before being printed. This step involves setting various parameters that determine the quality, strength, and speed of the final print. Although these steps are essential, they can be complex for new users. It is also not apparent to users that they may affect the final look of the object with the changes made to some of these settings.&lt;/p&gt;
-
-&lt;p&gt;Streamlining this process by incorporating it into authoring tools would greatly improve the user experience. Until then, there are numerous resources available online to help users learn the intricacies of 3D printing, allowing them to enjoy the satisfaction of turning their ideas into tangible objects.&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion-a-promising-future&quot;&gt;Conclusion: A Promising Future&lt;/h1&gt;
-
-&lt;p&gt;The potential of 3D printing is immense, and I’m confident that significant improvements will be made to address the unique challenges in this space while keeping user experience at the forefront. Like with all the challenges solved in the 2D printing world, I envision 3D printers becoming an integral part of every household or as more likely, in the neighbourhood print shop. The key to realising this lies in simplifying the design authoring tools and making them accessible to everyone.&lt;/p&gt;
-
-&lt;h1 id=&quot;hurdles-and-insights&quot;&gt;Hurdles and Insights&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The plugging in of the cables for the gantry motors still requires some amount of understanding of connectors. This could be further simplified in future versions.&lt;/li&gt;
-  &lt;li&gt;The printer plate travels outside the frame of the printer itself which allows a user to make the mistake of placing it too close to a wall and having to learn &lt;em&gt;during printing&lt;/em&gt; that it needs to be moved. This could be explained as well.&lt;/li&gt;
-  &lt;li&gt;Going from 2D to 3D is incredibly difficult and staying in the 3D space from the start would be ideal, but the tools we have today are limited in their ability to express these ideas.&lt;/li&gt;
-  &lt;li&gt;Marketplaces are currently aimed at those that own 3D printers, whereas they should be aimed at the end-users of the products that are available on the sites.&lt;/li&gt;
-  &lt;li&gt;There are two outcomes to the world of 3D printers, they will either become a part of every household of the future as 2D printers today are, or they will become a part of every neighbourhood print shop.&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Wed, 24 Jan 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/experiments-with-3d-printing/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/experiments-with-3d-printing/</guid>
-        
-        <category>3D</category>
-        
-        <category>design</category>
-        
-        
-        <category>Experiments</category>
         
       </item>
     
