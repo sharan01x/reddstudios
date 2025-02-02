@@ -5,9 +5,159 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Jan 2025 13:40:14 +0100</pubDate>
-    <lastBuildDate>Tue, 21 Jan 2025 13:40:14 +0100</lastBuildDate>
+    <pubDate>Sun, 02 Feb 2025 14:02:55 +0100</pubDate>
+    <lastBuildDate>Sun, 02 Feb 2025 14:02:55 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Review of Replit</title>
+        <description>&lt;p&gt;&lt;em&gt;Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.&lt;/em&gt;
+___&lt;/p&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;In my previous video, I wondered why design and coding tools had to be different and require constant translation when moving between them. Just two days later, Paul Graham tweeted that one of his well-known companies had ditched Figma in favour of Replit — validation that my curiosity was onto something big. As someone always eager to explore innovative tools, I couldn’t resist diving in myself. In this review, I’ll walk you through my experience with Replit and share whether it truly lives up to the hype.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;disclaimer&quot;&gt;Disclaimer&lt;/h1&gt;
+
+&lt;p&gt;Firstly, I must say that this article is in no way sponsored by Replit. I paid for the account myself and used the software and these opinions are mine alone. I got myself the $25/month plan. I paid extra per month firstly because I was just testing this out, but also because I feel that committing to a single platform for a whole year makes no sense when new tools are being developed and released all the time.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;using-replit&quot;&gt;Using Replit&lt;/h1&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;So, my objective was simple:  I wanted to prompt my way into bringing a working product to life and it needed to have the UX and UI that I wanted for it. The application that I was trying to build was one that could be used to take notes during meetings, summarise it and then share it with the user. I chose this as it’s not too complex but also not as easy as the demo apps that have been shown to work in a lot of cases.&lt;/p&gt;
+
+&lt;h2 id=&quot;third-attempt&quot;&gt;Third Attempt&lt;/h2&gt;
+
+&lt;p&gt;After signing up, I was presented this box that asked what I wanted to build today. In my first two attempts, I said that I wanted to build an audio recording application that does such and such. For some reason this just didn’t work. It failed miserably, but we’ll talk more about it later on. So what I describe here is my third attempt where I changed tactics and tried to approach this in a very non-technical way. &lt;/p&gt;
+
+&lt;p&gt;I began by stating that I wanted to build an app that would take notes during meetings. I further specified that there should be a toggle button to start and stop recordings, that it should clearly indicated that it is active and also send the recordings to a server for processing where it would be transcribed and the meeting notes generated. &lt;/p&gt;
+
+&lt;p&gt;I didn’t specifically mention any platforms or specifications of the UI. I was hesitant to provide too much detail as I have seen AI agents breakdown because of this. Providing too little detail also doesn’t usually provide me the output that I want, so I’m never quite sure exactly how much detail I needed to provide. But there’s a helpful, “Improve Prompt” button and I’ve seen that clicking these usually provides the level of detail that is expected by the system. So I clicked it and it added details about the UI itself and chose “dark mode” for some reason. I’m not a fan, but I don’t hate it enough to want to change it for a trial app, so I just went ahead and asked it to start building.&lt;/p&gt;
+
+&lt;p&gt;Some interesting things happened at this point. It started “Thinking…” and after a few seconds came back and reiterated what it thought I wanted it to build. Mind you, I had just asked it to improve my prompt, so from my perspective it was already aware of what it was supposed to build, so when it said something like, “So you want to build…” with added surprise like it had become aware of this message for the very first time, it felt like I was talking to a moron, not something that was going to make things any easier. &lt;/p&gt;
+
+&lt;p&gt;It feels like I’m splitting hairs here. I know the system needs to confirm what’s been understood, but I have seen more and more AI based interfaces use these conversational style interfaces and end up making this mistake of not keeping the user’s context in mind. &lt;/p&gt;
+
+&lt;p&gt;Anyway, the good thing was that it suggested additional features that I could add on to my initial request. The suggestions were great and extremely relevant, but, not something I really needed to consider at this moment. This was really mis-timed and should have been something that was suggested after the main request was completed (which it actually does). It would have made more sense to ask questions that it needed clarifications on at this point.&lt;/p&gt;
+
+&lt;p&gt;Moreover, my experience with using AI based tools to create applications has taught me that it is better to start small and then build up the set of features that you want. So you need to do some planning yourself actually. &lt;/p&gt;
+
+&lt;p&gt;Anyway, I asked it to just go ahead and build out the basic application first and then it began whirring away. The chat flow moved to the left and the right side showed a section called “Progress” and lots of things started to fly by. Pieces of code, snapshots of interfaces and more pieces of code, more snapshots, a database getting created, dependencies being installed, etc. and then finally, after about 3 to 5 minutes, it stopped, a panel slid up with the application in view (this is a nice feature by the way), and then in the chat, it asked me to confirm if the interface was visible to me. It had been taking snapshots until now, so I wasn’t sure what the question was. I clicked around on the interface and saw all the required components were indeed there. I clicked the microphone button and saw that nothing really happened. So I assumed that this is what was supposed to happen and so I responded in the chat stating that exactly, that the interface looked fine but nothing functioned as yet. But it didn’t quite respond to me and instead just went ahead and started building out the functionality. &lt;/p&gt;
+
+&lt;p&gt;Again, I saw a whole lot of code flash by and then it finally stopped and asked me to test out the functionality. To my utter amazement the application worked and even had a nice visualisation and everything. I started recording, said a few things and when I stopped it, it saved the recording and then moved it to the server.&lt;/p&gt;
+
+&lt;p&gt;The layout was a little messed up and I also needed to improve the algorithm behind the uploading to the server bit, because it was possible that the mobile phone that is recording the meeting isn’t always going to be able to stay connected to the server. So in such circumstances, it should save the recordings locally and then try to attempt to push the recording to the server whenever it connects again.&lt;/p&gt;
+&lt;h2 id=&quot;making-changes&quot;&gt;Making Changes&lt;/h2&gt;
+
+&lt;p&gt;After having made some edits in the previous attempts, I realised what was possible to edit and what wasn’t. So I just cut to the chase and got rid of troublesome elements and made it make some changes that I needed.&lt;/p&gt;
+
+&lt;p&gt;I was able to add additional features quite easily, but when I tried to ask it to work on a feature to mitigate upload issues and instead, to chunk the uploads in 10 second blocks and then try to upload it to the server, it failed to do this level of a complex task. But at this time, when I tried to go back to a previous checkpoint where things were working, it completely failed that and it seemed like it’s roll-back wasn’t well done. It seems that when it comes to using AI tools for development and prototyping work, there’s no going back, only forward.&lt;/p&gt;
+
+&lt;h2 id=&quot;failures&quot;&gt;Failures&lt;/h2&gt;
+
+&lt;p&gt;There was one early attempt that I made where Replit hit an obstacle that it couldn’t surmount. It gave me 3 options to continue trying,  try a different approach or to rewrite the whole thing in a completely different way.&lt;/p&gt;
+
+&lt;p&gt;I responded in the chat stating that exactly, that the interface looked fine but nothing functioned as yet. But it didn’t quite respond to me and instead just went ahead and started building out the functionality. There was a stop button and I clicked that but by that time, I think some code was written and that was that. It was a bad build and I just couldn’t recover from that point onwards. I had to scrap the project and begin again.&lt;/p&gt;
+
+&lt;h2 id=&quot;using-templates&quot;&gt;Using Templates&lt;/h2&gt;
+
+&lt;p&gt;I even thought that I am making my life difficult by trying to build an app from scratch. There are a lot of templates available on Replit and I thought I’d try that out. But when I use a template, the AI Agent is no longer available to me and I can only talk to the AI Assistant that cannot write the code like the agent. I thought this was really strange and I didn’t proceed with using the templates even though they seemed really appealing to me as starting points.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;lessons-learnt&quot;&gt;Lessons Learnt&lt;/h1&gt;
+
+&lt;p&gt;This was a very informative experience for me. When I used the trial version, it ran out of available credits. If you’ve watched an older video of mine, you know that I have tried using GitHub Copilot and Windsurf and I ran into some problems there that made the left the development experience wanting. So I was actually really looking forward to trying out Replit because I had heard so much about it. But here’s where I think things are at with Replit:&lt;/p&gt;
+
+&lt;h2 id=&quot;making-multiple-attempts-is-required&quot;&gt;Making multiple attempts is required&lt;/h2&gt;
+
+&lt;p&gt;I’ve seen this with other coding agents and it’s kind of interesting that I am seeing the same pattern occur here, but your chances of creating the application that you want in one shot is next to impossible. You need to go through the process multiple times like a video game and running into different bosses and striking out and then starting making sure to avoid those pitfalls when you try to build it all over again.&lt;/p&gt;
+
+&lt;h2 id=&quot;start-small-and-then-add-on&quot;&gt;Start small and then add on&lt;/h2&gt;
+
+&lt;p&gt;While Replit provides you the options to add a whole number of features all at the beginning, it’s not a good idea. I think it’s best to start with the barebones version of the application first and then once you have that bit working, add on new features.&lt;/p&gt;
+
+&lt;h2 id=&quot;editing-the-ui-is-hard&quot;&gt;Editing the UI is hard&lt;/h2&gt;
+
+&lt;p&gt;When I referenced elements on the screen by a certain logical name, it wasn’t always understood by the agent. But since there’s no way to point at a thing and identify them, it just wasn’t possible to edit some elements.&lt;/p&gt;
+
+&lt;p&gt;I also didn’t see where the files were until much later, so going through the code and referring to a specific element just wasn’t easy either.&lt;/p&gt;
+
+&lt;p&gt;So I used UI strategies where I worked around the need for these difficult elements.&lt;/p&gt;
+&lt;h2 id=&quot;checkpoints-dont-work-well&quot;&gt;Checkpoints don’t work well&lt;/h2&gt;
+
+&lt;p&gt;When I realised that the checkpoints weren’t working as expected and weren’t as reliable, I began downloading the files at the points where I felt I had things functioning just like I wanted.&lt;/p&gt;
+
+&lt;p&gt;Additionally, there was a point where I chose the wrong checkpoint that was a much earlier version of the code where things had been working. Once it tried to restore to that point, there was no way to go forward to the next checkpoint instead. This was severely frustrating for me.&lt;/p&gt;
+
+&lt;h2 id=&quot;couldnt-bring-it-to-life&quot;&gt;Couldn’t bring it to life&lt;/h2&gt;
+
+&lt;p&gt;Despite the three attempts, I couldn’t bring the project to life. I downloaded the code and while I tried to get it to function locally, I haven’t been able to install the database and build the structure as yet. There’s no file backup for the database elements, so I’ve got to figure this out on my own. I’m really not looking forward to this.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;bottom-line&quot;&gt;Bottom Line&lt;/h1&gt;
+
+&lt;h2 id=&quot;not-there-yet&quot;&gt;Not there yet&lt;/h2&gt;
+
+&lt;p&gt;I don’t know what Paul Graham’s acquaintance was thinking when they’ve committed to working with Replit and remove Figma. I don’t think Replit is there yet. Can they get there in the future? I sure hope so. But will I be replacing Figma, Framer and Windsurf right now? No, not at all.&lt;/p&gt;
+
+&lt;h2 id=&quot;ux-is-not-great&quot;&gt;UX is not great&lt;/h2&gt;
+
+&lt;p&gt;If you watch some videos of Replit from before, you’ll notice that the agent chat window has gone from being the ancillary element on the right to the primary element on the left. This signals that they thing of code and files as secondary elements to writing the code right now. But they haven’t evolved fully as yet. In order to appeal to designers or non-developers, the interface needs to be able to refer to elements and operate them in different ways. As an example, if I had a way to point at elements on the right-side preview pane, it would have made my life so very easy.&lt;/p&gt;
+
+&lt;p&gt;Additionally, they need to provide a way to build and utilise design systems at the same time.&lt;/p&gt;
+
+&lt;h2 id=&quot;really-not-meant-to-create-stuff-you-have-in-mind&quot;&gt;Really not meant to create stuff you have in mind&lt;/h2&gt;
+
+&lt;p&gt;It occurred to me that if I begin with a very specific idea in my mind and try to recreate that using Replit, it’s going to be super hard if not impossible. So this tool really isn’t about doing that, but instead to explore new ideas and interactions.&lt;/p&gt;
+
+&lt;p&gt;Even if I gave Replit exactly the same set of commands in the same order, I don’t think it would arrive at the same output at the end. That’s a challenge for anyone that wants to have any kind of control over the outcomes. But for exploration, it’s a fine approach.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-wouldnt-build-anything-large-or-serious&quot;&gt;I wouldn’t build anything large or serious&lt;/h2&gt;
+
+&lt;p&gt;As mentioned before, I have to assume that I need to attempt to build the project multiple times. This limits the kinds of things I can do with Replit. I cannot imagine building a large application.&lt;/p&gt;
+
+&lt;p&gt;Since the project that was output in the end felt like a precarious Jenga tower, I am not exactly certain that this application would perform well in production. I’m just not that confident. If it’s a blog or a static website, that’s an entirely different matter and I probably wouldn’t feel the same way about that.&lt;/p&gt;
+
+&lt;h2 id=&quot;deployment-is-a-nice-touch&quot;&gt;Deployment is a nice touch&lt;/h2&gt;
+
+&lt;p&gt;I think Claude and OpenAI demonstrated the artefacts panel in their interfaces. I found that to be extremely important because we could avoid the environment setup and things like that. With Replit, they’ve taken that to the next level by including deployment. So not only can you test and see stuff while building it, you don’t have to deal with deployment issues that are all too common when you’re ready to push the app and make it live.&lt;/p&gt;
+
+&lt;h2 id=&quot;local-software-incompatibility&quot;&gt;Local software incompatibility&lt;/h2&gt;
+
+&lt;p&gt;One of the biggest issues that you will face with Replit and it’s ilk is that you cannot have it interface with locally running software. In this example itself, I had the option of having this app work with Ollama installed locally because I would actually be running many tests and didn’t want to hook it up to OpenAI. But there was no way to do this that I could figure out.&lt;/p&gt;
+
+&lt;h2 id=&quot;theyre-straddling-two-boats-and-need-to-commit&quot;&gt;They’re straddling two boats and need to commit&lt;/h2&gt;
+
+&lt;p&gt;While it’s perfectly natural for every startup to pivot when they find new product-market-fits, I think Replit is currently mid-pivot as they haven’t really committed to building tools for non-developers as yet. They began as a developer focussed tool to begin with, and they haven’t completely changed their focus and redesigned the older tools to suit the needs of designers and other non-developers. Once they commit, I think I would expect a lot more from them.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;I have never hit “Cancel Subscription” on any tool faster than I did with Replit. The task they’ve undertaken is hard, but they’re not yet where they need to be to get me as a user. My experience developing an application was much better with Windsurf (in conjunction with Perplexity) and I’ll be going back to it.&lt;/p&gt;
+
+&lt;p&gt;But if this blog has somehow made its way to the Replit team, I would happily invite them to a chat with me as I can recommend many more things that they could do to get users like me on board. Otherwise, I wish them well and hope to use their software after a few months to see if it will suit me then. Until then, I wish them luck!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/review-of-replit/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/review-of-replit/</guid>
+        
+        <category>design</category>
+        
+        <category>ux</category>
+        
+        <category>ai</category>
+        
+        <category>tools</category>
+        
+        <category>technology</category>
+        
+        
+        <category>Reviews</category>
+        
+      </item>
     
       <item>
         <title>The app-less world and it&apos;s implications on the world of computing</title>
@@ -892,48 +1042,6 @@ ___&lt;/p&gt;
         
         
         <category>Projects</category>
-        
-      </item>
-    
-      <item>
-        <title>Where the puck is going to be</title>
-        <description>&lt;p&gt;&lt;em&gt;Product design requires you to imagine the future version of a product, but how do you do it reliably? Ice Hockey may offer some insights.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h1 id=&quot;ice-hockey-and-product-design&quot;&gt;Ice Hockey and Product Design&lt;/h1&gt;
-
-&lt;p&gt;According to the Wayne Gretsky quote that goes, “I skate to where the puck is going to be, not where it is”, the way to win is to accurately anticipate the future outcomes as accurately as possible. The principle could be applied to product design too. The way to design a successful product is to know what the next version of the product is going to be. But the challenge of knowing what that is as challenging as judging where the hockey puck is going to be on the ice rink.&lt;/p&gt;
-
-&lt;p&gt;But while no one can be absolutely certain where exactly the puck is going to be on the rink at any given point in time, one thing everyone can be absolutely certain about is that the puck is headed towards the other team’s goal. In a similar way the product’s end goal is to suit the needs of the consumer perfectly.&lt;/p&gt;
-
-&lt;p&gt;The consumer is human. The form the product must then take is to suit the form of a human body. If the product is meant to be held, it must fit the hand perfectly. If it is meant to be worn on the ear, then it must fit various ear types. If it is meant to be used over a period of time, then it must use materials that will not strain the user during that period. In terms of the function it performs, it must serve the needs of the human as accurately while also needing as little effort as possible. The final version of the product therefore is possible to define, at least in the abstract. If it’s not a physical product, the final form is one that serves the needs of the user perfectly and is extremely simple to use.&lt;/p&gt;
-
-&lt;p&gt;Let me illustrate the idea with some examples. Consider the evolution of the USB cable. Type A USB cables required the user guess which way should be facing up before plugging it into a socket. Many users struggled with this and the act of plugging in the USB A cable into a socket was a hit or a miss &lt;em&gt;every time&lt;/em&gt;. Making the cable pluggable into a socket in either orientation therefore was obvious. Therefore that’s what happened in the future iteration of the USB C cable. 
-&lt;img src=&quot;../assets/images/USBCables.png&quot; /&gt;
-Another issue with the cable was that the sockets it plugged into on the other side was variable. There were the USB A plug, USB B plug, a mini USB plug and even a micro USB plug. You therefore had to have at least one cable of each type in order to be able to connect with various device types that one bought over time, not to mention the proprietary cables that were required by some devices like smart watches. Intuitively one can see that these were too many cables to basically perform the same task. Again, no wonder the USB C cable’s invention. As of the time of writing this article, the USB C cable too has various types, the ones that supply current and the ones that also transfer data. How long do you think that’s going to stay that way?&lt;/p&gt;
-
-&lt;p&gt;The same principle can be applied to Generative AI tools – do you think specialised prompts are going to be required much longer; computer keyboards – are they more convenient than speech;  or even subscription services – will Adobe get away with charging cancellation charges for their subscription service for much longer?&lt;/p&gt;
-
-&lt;p&gt;Or even consider the iPad. What was it’s evolution? I’d postulate that it came about because someone thought that the computers of the time were too “unnatural” for a human to use. Having a user type using a keyboard to communicate something or using a mouse or a track pad to point at something is a hard challenge for people who aren’t familiar with computers. Humans communicate by speaking, they point to things with their fingers. The iPad is a step in that direction. What would the future of this device be? Well, a computer that let’s a user express themselves with all the tools they have at their disposal – from communicating with their voice, pointing with their fingers or even setting the context of what they’re talking about by facing in a particular direction or looking at something with their eyes. The display of the iPad is an intermediate expression of the limitations of current technology. The computer of the future will not be something that is picked up and stared at with your head bent down. If you think the Apple Vision Pro headset is a step in that direction, I would agree that it is. But it’s not the end point.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/InstructionMethods.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The end point is something that will be even more seamless. It will be an assistant that the user can just converse with, something that can understand the full range of expressions that humans can emote with their faces, eyes, hand gestures, body positions and language and it will be seamless and something that is worn and always available. It will enable the user to do and perform everything they need in the real world but also to understand and appreciate everything much more.&lt;/p&gt;
-
-&lt;p&gt;For this to happen, we need a voice assistant with infinite knowledge and ability to learn about the human, wireless technologies that will seamlessly stay connected at all times, face tracking, body tracking, motion tracking, gesture tracking and even battery technology that will not only power something like this, but be in a form that is far more shaped like the person who will wear it.&lt;/p&gt;
-
-&lt;p&gt;These intermediate states therefore are not dictated not by the human being it is meant to serve, but by other constraints such as materials available, the tools, technologies, the people available to build that next version, legal and environmental constraints, the organisational politics, available marketing budgets or even the designer’s inability to understand who the user is. But knowing that these are necessary stages of evolution will allow the designers to keep their eye on the eventual goal. The task of the product designer or even the entrepreneur building this product is to negotiate the most efficient course between the current state of the product through to the final destination it is meant to be.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 24 Jul 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/where-the-puck-is-going-to-be/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/where-the-puck-is-going-to-be/</guid>
-        
-        <category>design</category>
-        
-        <category>opinion</category>
-        
-        
-        <category>Ideas</category>
         
       </item>
     
