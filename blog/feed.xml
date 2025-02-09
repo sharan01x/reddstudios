@@ -5,12 +5,12 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Feb 2025 14:02:55 +0100</pubDate>
-    <lastBuildDate>Sun, 02 Feb 2025 14:02:55 +0100</lastBuildDate>
+    <pubDate>Sun, 09 Feb 2025 13:59:44 +0100</pubDate>
+    <lastBuildDate>Sun, 09 Feb 2025 13:59:44 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
-        <title>Review of Replit</title>
+        <title>Review of Replit, the Figma Killer</title>
         <description>&lt;p&gt;&lt;em&gt;Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.&lt;/em&gt;
 ___&lt;/p&gt;
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
@@ -139,6 +139,16 @@ ___&lt;/p&gt;
 &lt;p&gt;I have never hit “Cancel Subscription” on any tool faster than I did with Replit. The task they’ve undertaken is hard, but they’re not yet where they need to be to get me as a user. My experience developing an application was much better with Windsurf (in conjunction with Perplexity) and I’ll be going back to it.&lt;/p&gt;
 
 &lt;p&gt;But if this blog has somehow made its way to the Replit team, I would happily invite them to a chat with me as I can recommend many more things that they could do to get users like me on board. Otherwise, I wish them well and hope to use their software after a few months to see if it will suit me then. Until then, I wish them luck!&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;accompanying-video&quot;&gt;Accompanying video&lt;/h1&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;338&quot; src=&quot;https://www.youtube.com/embed/6n_U-AWtVLs&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;supplement-video-contrasting-features-with-lovabledev&quot;&gt;Supplement video contrasting features with Lovable.dev&lt;/h4&gt;
+
+&lt;iframe width=&quot;600&quot; height=&quot;338&quot; src=&quot;https://www.youtube.com/embed/EPCrwNTKr5s&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
 </description>
         <pubDate>Wed, 29 Jan 2025 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/review-of-replit/</link>
