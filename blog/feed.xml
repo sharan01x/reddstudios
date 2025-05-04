@@ -5,9 +5,140 @@
     <description>A space for raw ideas, opinions and experiments until they turn into something useful</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Feb 2025 13:59:44 +0100</pubDate>
-    <lastBuildDate>Sun, 09 Feb 2025 13:59:44 +0100</lastBuildDate>
+    <pubDate>Sun, 04 May 2025 13:53:32 +0200</pubDate>
+    <lastBuildDate>Sun, 04 May 2025 13:53:32 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>The Age of Goal Based Computing is Here</title>
+        <description>&lt;p&gt;&lt;em&gt;Among the many things AI has enabled, it has now made possible an entirely new method of interacting with our computers.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;I have &lt;a href=&quot;https://redd.in/blog/5-personal-ai-assistant-devices-reviewed/&quot;&gt;long believed&lt;/a&gt; that we are on the precipice of changing the fundamental way in which humans will interact with computers. We are stepping into an age where we are going to simply be able to tell our computers the goals we want to achieve and they will figure out the steps in order to achieve it and then execute it for us. But this powerful idea is founded on the notion that your computer will know what there is to know about you, including your preferences, your data and whatever else you can supply it. But that brings up many new questions regarding privacy, data ownership and data residency. But don’t worry, I’m not here just to whine, (though I will), but I also come bearing a solution and even ways for you to participate in it.&lt;/p&gt;
+&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+
+&lt;p&gt;To begin to understand the importance of what we’re currently living through, it is important for me to provide you a bit of background about three aspects of this industry.&lt;/p&gt;
+
+&lt;p&gt;First, I want to point out the evolution of computing from the perspective of how much effort it takes to have your computer do what you need it to do, the effort has been reducing over time. We’ve gone from writing our instructions on punch cards to writing programs using almost english sounding programming languages like BASIC or Python. After that, the evolution plateaued until the birth of LLMs. Now, we can speak to them in natural language and have them do things for us.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/GoalBasedComputing-EffortOverTime.png&quot; alt=&quot;Graph showning effort over time to have computers understand us&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second progression that I want you to pay attention to is the number of things a particular program is capable of doing. You see, at first you needed to employ programmers in your office to write you custom programs because there was just no other way to having your company use the efficiency that computers could bring to your organisation. Post that phase, applications were available to people to just download, install and use. Now app developers who were competing for the user’s dollars, either built apps to serve a niche audience or started building super-apps that could do everything. The latter group quickly ran into the limitations of the Graphical User Interface (GUI) because there was only so many things you can pack into a screen and still be user-friendly. This was the case, again, until LLMs. Now you had computers that could do anything, even write programs to do specific things.&lt;/p&gt;
+
+&lt;p&gt;Thirdly, apps have been very specific solutions to a problem. As such, they’ve been very brittle as you could only ask the app to do certain things and that’s it. Even when speech technology was applied, you still spent time learning the phrases that you could use a la, “Hey Google, turn my lights on in the living room”. If you said that phrase differently than it had been setup with, for example, if you said, “Hey, it’s too dark in the living room” – you couldn’t expect your app to understand that phrase. This hurdle again has been overcome by LLM’s because they can understand your meaning &lt;em&gt;past&lt;/em&gt; your words. For example, you could say “I’m thirsty”, “I’m parched” or even be euphemistic like “My mouth feels like the Sahara desert right now” and it would still get the meaning you want to convey. From a UX perspective, this ability for technology to fit into the life of human beings seamless is what I find most powerful.&lt;/p&gt;
+
+&lt;p&gt;So we are at the threshold of these three progressions having come to a head at once. This means that not only are our computers going to be super capable going forward, it’s going to be incredibly simple to use and no one has to spend any time even learning them. Can you imagine what an unlock this is for society? And this is the first time in history that the benefits of this technology is not just going to those of us who grew up with technology in our lives and we’ve found it comfortable because we spent the time learning them, it’s going to be a massive unlock for those that were so far left behind the technological divide or even the english-language.  These include people like my parents who find their smartphones challenging to use.&lt;/p&gt;
+
+&lt;p&gt;This, is huge.&lt;/p&gt;
+
+&lt;h1 id=&quot;context-is-everything&quot;&gt;Context is Everything&lt;/h1&gt;
+
+&lt;p&gt;For AI systems to go from just being effective on the baseline (based on what it’s learnt about humans as a whole from the internet) to doing things for you the way you prefer it be done requires understanding your context. They need to be able to study your behaviours and patterns in order to be able to emulate them. This may mean giving the AI access to not just your emails, calendars, contacts, photos but even allow it to watch your health data, medical records, your passwords, etc.&lt;/p&gt;
+
+&lt;p&gt;That’s when they can go to a place where they can understand that you prefer to say “clutch” over “cool” or like to order from this particular Chinese restaurant and the other one is there as a backup or that you prefer your screen font size large because you have trouble reading or even to cancel all your appointments automatically if you woke up unwell one day. It can figure all this out without you ever having to tell it these things explicitly.&lt;/p&gt;
+
+&lt;p&gt;But AI isn’t just going to be a useful assistant to have, it will soon become essential. We live in a world where information is being produced at unprecedented rates and we feel compelled to keep up. But we are reaching the limits of human capabilities and that’s just going to continue to be the case. There will be hundreds of decisions that we can delegate to AI that’s working on our behalf, the least of which is deciding which email is spam and which isn’t. If you want to participate in an accelerating world, having an AI assistant will become a necessity in the same way having a smartphone today is seen as a necessity.&lt;/p&gt;
+
+&lt;p&gt;So, the question is, where do you get your AI assistant.&lt;/p&gt;
+
+&lt;h1 id=&quot;shop-around&quot;&gt;Shop Around&lt;/h1&gt;
+
+&lt;p&gt;If there’s one thing we’ve learnt from the mistakes made by the social media decade is that if the service is free, you are the product. We’ve also seen the many ways data about users have been used against them. To most readers of this blog, I don’t need to list the kinds of things these large technology companies learn about us just through the ways in which we shop or even the intonations of our voice. We’ve seen how effective and accurate they have been, including stories about products being suggested to dads of teenagers who were pregnant, even before the dad knew about that pregnancy!&lt;/p&gt;
+
+&lt;p&gt;I would never trust these corporations with my context data, especially when that data could reveal infinitely more information than my social media profile ever could.&lt;/p&gt;
+
+&lt;p&gt;Let me be clear, I don’t think these corporations are necessarily evil. I find it hard to imagine anyone waking up every morning with the sole intention to destroy other people’s lives. But the incentives of corporations are definitely not aligned to serving the user. They are beholden to their shareholders and are mandated with generating profits for them. This mechanism doesn’t allow anyone to see the user as anything more than a resource to derive value from. If value can be generated by selling their data to the highest bidder, so be it.&lt;/p&gt;
+
+&lt;p&gt;Given this equation, let’s suppose you go ask a question about a certain type of cancer to the AI assistant from one of these large corporations or submitted a scan to this assistant with the intention of getting a second opinion. What if that AI assistant saw that and realised that your insurance company may be willing to pay a huge amount for that information because they could loose a lot more if they continue to cover you if you fell ill. Do you think the assistant would be programmed to act on your behalf or to generate a profit for the corporation?&lt;/p&gt;
+
+&lt;p&gt;The good news is that we don’t need to rely on these corporations. The open source world has realised these pitfalls and have been hard at work developing technologies that will ensure that this kind of a future doesn’t need to befall us. I also realise how important these efforts are and have been contributing my time and efforts to such projects as well.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-solution-is-simple&quot;&gt;The Solution is Simple&lt;/h1&gt;
+
+&lt;p&gt;While these big companies that own the frontier AI models want to portray themselves as the only option for this sort of intelligence, don’t be fooled. Know that you can have absolutely great stuff available to you without any of them in the picture. You can retain complete ownership of your data while still getting all the convenience. You can do all this locally, in the privacy of your own computer. You don’t have to learn prompting strategies either.&lt;/p&gt;
+
+&lt;p&gt;You can install Ollama and Move 37 on your machine and you’re good to go! All of it is completely free and you can even check and audit the code if you’re so inclined. Granted it’s a little bit of work to get this installed right now, but they are all making things easier all the time.&lt;/p&gt;
+
+&lt;p&gt;If you’d like to see a demo of this, I’d be happy to create one. If you want to find out how to install this also, I can create another video about it. But for now, here’s a very quick walkthrough.&lt;/p&gt;
+
+&lt;p&gt;[COMING SOON]&lt;/p&gt;
+
+&lt;p&gt;As mentioned, these two projects are available for free, from these locations. So go check them out:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ollama.com&quot;&gt;Ollama&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sharan01x/move37&quot;&gt;Move37&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;If you believe in an open future where individuals retain control over their own destinies, you can start using these technologies for yourself. But if you feel like you’d want to contribute more and be a part of these movements, there are many ways you can participate depending on your skills.&lt;/p&gt;
+
+&lt;p&gt;If you’re technically inclined:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Move37 is looking for help in testing, verifying the code completeness and various other items listed in their roadmap.&lt;/li&gt;
+  &lt;li&gt;UX designers can propose new ways to organise the frontend to make things easier and more efficient.&lt;/li&gt;
+  &lt;li&gt;The installation process could use a lot of simplifying and that’s something that you can contribute to, especially on Move37.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you’re not an engineer:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Use and provide feedback and spot bugs&lt;/li&gt;
+  &lt;li&gt;Spread the word and get more people to realise the problem and understand that there are solutions&lt;/li&gt;
+  &lt;li&gt;Create videos talking about the projects&lt;/li&gt;
+  &lt;li&gt;Add new recipes – the steps for using various applications&lt;/li&gt;
+  &lt;li&gt;Suggest new ideas and features that can be built&lt;/li&gt;
+  &lt;li&gt;Star the projects on GitHub so that they get more visibility&lt;/li&gt;
+  &lt;li&gt;Just donate to the projects if you’ve got the money, they can use it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;But whatever you choose, thanks for being a part of this! Until next time, ciao!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Apr 2025 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/blog/the-age-of-goal-based-computing/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/the-age-of-goal-based-computing/</guid>
+        
+        <category>design</category>
+        
+        <category>ux</category>
+        
+        <category>ai</category>
+        
+        
+        <category>Projects</category>
+        
+      </item>
+    
+      <item>
+        <title>WhatsApp or Slack for your startup?</title>
+        <description>&lt;p&gt;&lt;em&gt;These tools are relied upon by a lot of startups. But these tools can make or break your startup. So, which do you choose?&lt;/em&gt;
+___&lt;/p&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+</description>
+        <pubDate>Mon, 24 Mar 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/whatsapp-versus-slack/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/whatsapp-versus-slack/</guid>
+        
+        <category>design</category>
+        
+        <category>ux</category>
+        
+        <category>ai</category>
+        
+        <category>tools</category>
+        
+        <category>technology</category>
+        
+        
+        <category>Reviews</category>
+        
+      </item>
     
       <item>
         <title>Review of Replit, the Figma Killer</title>
@@ -853,205 +984,6 @@ ___&lt;/p&gt;
         
         
         <category>Reviews</category>
-        
-      </item>
-    
-      <item>
-        <title>Designing a better feature request system</title>
-        <description>&lt;p&gt;&lt;em&gt;If we get feedback and feature requests from users regarding products we’ve built, we get valuable insights into understanding what the users want. This is a great place to involve LLMs to handle the issues involved in this process.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
-
-&lt;p&gt;This feedback system will do the following:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;It will allow users to submit their feature requests&lt;/li&gt;
-  &lt;li&gt;To handle the problem of faster horses, it will produce a page where users can vote on things they didn’t think of before&lt;/li&gt;
-  &lt;li&gt;It will show a priority list to product teams that will allow them to understand what to develop next&lt;/li&gt;
-  &lt;li&gt;The same idea can be ported to handling bugs, but it needs to be a separate system altogether&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Tue, 06 Aug 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/feature-requests-made-better/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/feature-requests-made-better/</guid>
-        
-        <category>product</category>
-        
-        <category>design</category>
-        
-        
-        <category>Projects</category>
-        
-      </item>
-    
-      <item>
-        <title>DIY: A Raspberry Pi based Time Capsule</title>
-        <description>&lt;p&gt;&lt;em&gt;I built an efficient Apple Time Capsule clone that will perform the task of allowing any externally connected hard drive to be used as a backup destination using the Time Machine setup on your Mac.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;what-this-is&quot;&gt;What this is&lt;/h2&gt;
-
-&lt;p&gt;If you want to build your own Apple Time Capsule clone using the Raspberry Pi and an external hard drive, this is the slimmest and most efficient solution that you could build in under an hour, without the bonus 3D printing bit in the end of course!&lt;/p&gt;
-
-&lt;p&gt;You may also be successful if you just follow the steps below, but there’s a step where you need to find your Raspberry Pi on your network and reserve a specific IP address in your router which I won’t be going into that may require some prior knowledge.&lt;/p&gt;
-
-&lt;h2 id=&quot;whats-unique-about-this-solution&quot;&gt;What’s unique about this solution&lt;/h2&gt;
-
-&lt;p&gt;This solution has the following characteristics that make it different from other solutions that you may have seen:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You don’t need any other software such as Open Media Vault, which is great if you want to do a whole bunch of other things, but is too much of an overhead if all you want to do is build a network backup solution&lt;/li&gt;
-  &lt;li&gt;This could be setup on very low horse-powered boards like the Raspberry Pi 3A+ as it runs with the services built into the OS&lt;/li&gt;
-  &lt;li&gt;This solution works with more than one Mac on your network&lt;/li&gt;
-  &lt;li&gt;It can do this for guest logins on a network and doesn’t require an account to be setup on the Pi, so this makes it easy to use for a home environment&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
-
-&lt;p&gt;You need the following as a minimum:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Raspberry Pi 3 Model A+ with compatible power supply&lt;/li&gt;
-  &lt;li&gt;Micro SD Card with 4GB or more&lt;/li&gt;
-  &lt;li&gt;External hard drive of any capacity that is compatible with the Raspberry Pi’s USB port&lt;/li&gt;
-  &lt;li&gt;The drive will work with most laptops using different OS’s in case that’s needed at any time&lt;/li&gt;
-  &lt;li&gt;Raspberry Pi Imager software&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;software-setup&quot;&gt;Software Setup&lt;/h2&gt;
-
-&lt;h3 id=&quot;step-1-create-the-sd-card-image&quot;&gt;Step 1: Create the SD card image&lt;/h3&gt;
-
-&lt;p&gt;For this, simply do the following:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.1&lt;/strong&gt; Download the &lt;a href=&quot;https://www.raspberrypi.com/software/&quot;&gt;Raspberry Pi Imager&lt;/a&gt; software and open the file and follow the instructions to install the software on your Mac as you would any other software
-   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-9.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.2&lt;/strong&gt; Plug in the Micro SD card into your Mac. It doesn’t matter if it isn’t already formatted.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.3&lt;/strong&gt; Choose the Raspberry Pi OS Lite (64-bit) image to write to the Micro SD card
-   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-1.png&quot; /&gt;
-&lt;img src=&quot;../assets/images/timecapsule/timecapsule-2.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/timecapsule/timecapsule-3.png&quot; /&gt;
-&lt;strong&gt;1.4&lt;/strong&gt; Choose the Micro SD card that you just inserted into your Mac as the storage destination and click ‘Next’
-   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-1.png&quot; /&gt;
-&lt;strong&gt;1.5&lt;/strong&gt; In the next step of OS customisation, make sure to Edit Settings and in the first tab
-   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-5.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.5.1&lt;/strong&gt; Setup the host name – this is the name of your Pi on the network. I’ve called mine “pinstripes”, but you could just call it “timecapsule” or anything else you’d like
-   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-6.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.5.2&lt;/strong&gt; User name and password for the machine. I suggest you set it to the default username and password for now which are ‘pi’ and ‘raspberry’. You can change this later if you’d like.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.5.3&lt;/strong&gt; Provide the SSID and password to enable it to connect to your Wifi network. You don’t need this if you’re using a different Raspberry Pi that connects using a LAN cable.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.5.4&lt;/strong&gt; On the second tab called “Services”, make sure that you enable SSH and use the password authentication mechanism. This will allow you to remotely log into your Pi with the user name and password that you setup in the previous step.
-   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-7.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.5.5&lt;/strong&gt; Hit “Save” and in the next screen click “Yes” and then “Next” to begin the imaging step. You may need to type in your login and password for your computer to tell your computer that you authorise this action.&lt;/p&gt;
-
-&lt;p&gt;In about 15 minutes your Micro SD card is going to be ready. Just eject your card if not already done before pulling it out of your computer.&lt;/p&gt;
-
-&lt;h3 id=&quot;step-2-initialise-your-pi-and-set-it-up-on-your-network&quot;&gt;Step 2: Initialise your Pi and set it up on your network&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;2.1&lt;/strong&gt; Setup the host name – this is the name of your Pi on the network, so you could just call it “timecapsule” for simplicity or name it anything else you’d likePlug in your Micro SD card into your Pi and then plug in the power cable to the Pi. After about 5 minutes, the Pi would have booted up and then connected to your network over Wifi (or LAN in case that’s how you’d connected). You don’t need to plug in your external hard drive to the Pi as yet.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.2&lt;/strong&gt;  Open up a Terminal window on a laptop on the network and type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ping timecapsule.local&lt;/code&gt;. Replace “timecapsule” with whatever you named your Pi in Step 1.5.1. This should return the IP address of your Pi on the network.
-   &lt;img src=&quot;../assets/images/timecapsule/timecapsule-10.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.3&lt;/strong&gt;  Now type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arp -a&lt;/code&gt; and get the MAC addresses of all the devices connected to your network. Look for the Pi’s MAC address that corresponds to its IP address you found in the previous step.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.4&lt;/strong&gt; Now log into your router which assigns the IP addresses on your network and setup a fixed IP address for your Raspberry Pi’s MAC address. This whole thing may work without this address reservation, but I’ve never tested it. So if you absolutely cannot perform this step, just go through the rest and let me know if it works for you.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.5&lt;/strong&gt; If you’ve reserved a specific IP address for your Pi and it is different from the one it is currently assigned, you will need to reboot your Pi by turning off the power.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.6&lt;/strong&gt; Once your Pi comes back on your network, go back to your Terminal window and type in the following to log into your Pi through SSH - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh pi@192.168.0.10&lt;/code&gt; where ‘pi’ is the user name and the IP address is the one that you reserved for your Pi in step 2.4. If everything is setup properly, your Pi will ask you for a password and you could just type in ‘raspberry’ or whatever else you set up in Step 1.5.2.&lt;/p&gt;
-
-&lt;h3 id=&quot;step-3-prepare-your-external-hard-drive&quot;&gt;Step 3: Prepare your external hard drive&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;3.1&lt;/strong&gt; Get your external drive. Be sure you’re using a hard drive that doesn’t have any data that you want to retain as it will be lost forever once you’re done with this step. Connect the hard drive to your Mac.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3.2&lt;/strong&gt; Use “Disk Utility” to Erase and initialise your external drive. Name the drive anything you’d like such as “TimeCapsule” but make sure to use “Exfat” and if asked, the “GUID” options for maximum compatibility of the drive across different OS’s. 
-&lt;img src=&quot;../assets/images/timecapsule/timecapsule-11.png&quot; /&gt;
-&lt;img src=&quot;../assets/images/timecapsule/timecapsule-12.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3.3&lt;/strong&gt; Once the process is complete, eject your drive from your laptop. It is ready for plugging into your Pi in the next step.&lt;/p&gt;
-
-&lt;h3 id=&quot;step-4-get-the-software-setup&quot;&gt;Step 4: Get the software setup&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;4.1&lt;/strong&gt; While connected to your Pi through a Terminal window, do the following to update your Pi’s OS:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/timecapsule/timecapsule-13.png&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;1. `sudo apt update`
-2. `sudo apt upgrade`
-3. `sudo apt install exfat-fuse -y`
-4. `sudo apt install samba -y
-5. `sudo apt install avahi-daemon -y`
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2&lt;/strong&gt; Once the above packages are installed, let’s mount the external drive.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2.1&lt;/strong&gt; Plug in your external drive into the Pi&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2.2&lt;/strong&gt; Type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo df -Th&lt;/code&gt; which will list all the drives connected to the Pi. Find the identifier for your drive which should most likely be “sda2” but could be different too.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2.3&lt;/strong&gt; Create a mount point by typing in the following commands &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mkdir /mnt/timecapsule&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mount -t exfat /dev/sda2 /mnt/timecapsule&lt;/code&gt;. Just substitute “sda2” with whatever the drive’s identifier actually is.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2.4&lt;/strong&gt; Type in the following to find the UUID of your drive &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lsblk -f&lt;/code&gt; and all the drives connected to your Pi will show up (including the Micro SD card). Look for the UUID of the drive with the label ‘TimeCapsule’ if that’s what you named the drive in Step 3.2. Cross verify against the size of the drive to be sure. Copy the UUID into the clipboard.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2.5&lt;/strong&gt; To make the mount point persist across reboots of the Pi, you will need to add the following code to the file named “fstab”. You can do that by: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo nano /etc/fstab&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2.6&lt;/strong&gt; Paste the following in the end of the file  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UUID=your-uuid /mnt/timecapsule exfat defaults,uid=1000,gid=1000,umask=000 0 0&lt;/code&gt; but replace the UUID with the one you copied to the clipboard in the previous step.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2.7&lt;/strong&gt; Press Ctrl-X to save the file, Yes to write the buffer to file and enter to rewrite the file.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.3&lt;/strong&gt; Now write the configuration file to Samba, which is the file networking service that shows the drive on a network in a form that is compatible with Macs and Windows. To do this, you need to write the following code into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smb.conf&lt;/code&gt; file by typing in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo nano /etc/samba/smb.conf&lt;/code&gt; which should bring up the existing configurations in the file. Press the page down key on your keyboard to get to the end of the page and paste this and make sure the mount points are correct:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.4&lt;/strong&gt; Save the file as the other files in step 2.5.3 and then restart the service with the new configurations by typing in the command into your command prompt in the Terminal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl restart smbd&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.5&lt;/strong&gt; We’ve got to do the same for the avahi service configuration. To edit the file, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo nano /etc/avahi/services/samba.service&lt;/code&gt; and paste the following code. There are no changes needed to be made.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.6&lt;/strong&gt; Save the file as in step 2.5.3 and then restart the service by typing in the following command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl restart avahi-daemon&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;I suggest restarting the device itself to make sure that it works even if it ends up restarting on it’s own in the future. To do this, type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo reboot now&lt;/code&gt; into your Terminal command prompt. This will disconnect your session and restart the Raspberry Pi.&lt;/p&gt;
-
-&lt;p&gt;That’s it, you’re ready to go and setup the Time Machine backup from your Mac as always!&lt;/p&gt;
-
-&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
-
-&lt;p&gt;If for any reason you don’t see the newly setup drive when you are setting up Time Machine on your Mac, try to connect to the drive first on the network by going to the Finder &amp;gt; Go &amp;gt; Connect to Server and then typing in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smb://192.168.0.25&lt;/code&gt; replacing this with the IP address of your newly setup Time Capsule. You should be able to connect to the Raspberry Pi drive. Post that the Time Machine should automatically find the drive on the network. If for any reason this still doesn’t work, there’s probably some step above that you’ve missed. So give that a shot again.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/images/timecapsule/timecapsule-14.png&quot; /&gt;
-&lt;img src=&quot;../assets/images/timecapsule/timecapsule-15.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;bonus-step&quot;&gt;Bonus Step&lt;/h2&gt;
-
-&lt;p&gt;Make a case for the Raspberry Pi and the hard drive to be situated together. I’m designing something for this purpose and should have a 3D printable file posted here soon. Check back in a bit. But if you’d like to print something else, look at the plethora of stuff that’s available to you on &lt;a href=&quot;https://www.printables.com/search/models?q=raspberry%20pi%203a+&amp;amp;ctx=models&quot;&gt;Printables&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 04 Aug 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/raspberry-pi-timecapsule/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/raspberry-pi-timecapsule/</guid>
-        
-        <category>DIY</category>
-        
-        <category>product</category>
-        
-        <category>design</category>
-        
-        
-        <category>Projects</category>
         
       </item>
     
