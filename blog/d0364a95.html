@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Ways to Supercharge the UX of Web3 Wallets | Redd XF Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .header .date {
+            font-size: 0.8em;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Blog Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>Six Ways to Supercharge the UX of Web3 Wallets</h1>
+                <div class="subtitle">Wallets are the entry point to web3 and they shoulder a huge responsibility</div>
+                <div class="date">22 Jun 2022</div>
+            </div>
+
+            
+
+            <div class="content">
+                <h1>Let’s Set the Context</h1>
+<p>The debate surrounding ideal ways to organise societies is nearly as old as there have been people on this planet. We’ve gone from small bands of people living as hunter-gatherers whose primary concern was survival, to settlements centred around agriculture, which then formed countries whose primary concern became security.</p>
+<p>Because of the labour surplus created by each successive organisational structure of society, individuals gained more time to focus and specialise since they were able to depend on other members for the things necessary for their survival instead of having to produce it themselves. For example, the hunter-gatherers had to do the hunting, sheltering, protecting, entertaining, sewing, medicating and child-rearing all by themselves, leaving them little time in the day to focus on figuring out the science behind space travel; whereas today, I can write this article without worrying about hunting a boar to feed myself later. Interestingly, this specialisation of individuals has allowed the group to flourish and grow and this has spurred people on to develop even more focussed skillsets.</p>
+<p>On a side note, one of my favourite quotes is that of Robert Heinlein’s where he’s defining the “competent man” as I do feel a fuller perspective is useful. But it’s also special to me because it highlights how rapidly society has changed in the 50 years since it was coined!</p>
+<blockquote>
+<p>“A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyse a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects.”</p>
+<p>— Robert Heinlein, Author</p>
+</blockquote>
+<p>But while constructing societies around specialisation has obviously been beneficial, it hasn’t been without its flaws. There are still gross inefficiencies, inequities and injustices in any sizeable society. One may be tempted to blame it on corruption, but I think of it as a symptom and not the cause because it’s extremely hard to align any large group of people along a common goal — ask anyone who’s tried to arrange a dinner for a group! You try to select the restaurant that the majority prefer, or the most neutral place, or simply the boss’s favourite eatery — but none of these are going to satisfy the desires of the whole group and is bound to leave someone dissatisfied. While these strategies may be okay to apply in the case of planning dinners, they are problematic if used for anything more important; but these are also the models for the distribution of wealth, voting rights, laws to guide society, etc.</p>
+<p>The problems with organising societies based on majoritarian or authoritarian models are not new. They usually leave minorities without a voice and positive evolution takes a much longer time to take effect. Moreover, they enable a few of those in power to not just unduly enrich themselves, but to also change laws and processes that benefit them greatly. And far too often, there is discord between factions of people (domestically or internationally) so those in power are portrayed as necessary to maintain the peace. We allow these paradigms for societies to exist because we believe there isn’t a better way. But that’s an assumption based on the technologies of the past. However, technology has evolved and it’s time to reconsider our long-held beliefs.</p>
+<p>To develop a better model for societies, you need three things — the first is a way to organise groups around a common goal to achieve the things that can’t be done as individuals; second, a method to transact with other individuals in a trustworthy way so we don’t have to use violence as a method of resolving disagreements; and third, a foolproof system of owning property that allows us to benefit from the fruits of our labour. It wasn’t possible to provide these privileges without relying on central power structures to enforce them. Those in charge of these power structures (either through divine decree or as elected officials) used a varied set of tools like organised religion, currencies, laws, public relations and censorship to keep societies compliant and under control. When they weren’t able to do so with some individuals, they resorted to their usurped monopoly on violence to impose that control.</p>
+<blockquote>
+<p>I once heard the line in a movie: “Geography is destiny, my friend”, and it struck me as the fundamental definition of life for a lot of us. It’s purely the luck of the draw and far too few have opportunities to change them.</p>
+</blockquote>
+<p>The world of cryptography, blockchains and cryptocurrencies is one where trustless architectures are laying the foundations that will enable the reorganisation of societies in any number of ways that we may wish. These technologies allow for individuals to hold custody over their currencies on their own; organise themselves into groups, vote to perform a certain action and immediately disband thereafter; recognise efforts put in by people who participate in developing “public goods” that benefit society and many others. And if the crypto world can achieve what it has set out to, societies may never be organised around geographies again and instead be driven by ideas and philosophies. One could even belong to more than one society at a time if they chose to. How amazing would that world be?</p>
+<h1>Now, the Design Stuff</h1>
+<p>If you’ve navigated through the sociology nerd forest above and are still reading this, you may be wondering what all that has to do with Web3 wallets. Well, I’ve always believed that any good UX designer has to understand the context they’re designing within as well as possible.</p>
+<blockquote>
+<p>“Always design a thing by considering it in its next larger context — a chair in a room, a room in a house, a house in an environment, an environment in a city plan.”</p>
+<p>— Eliel Saarinen, Architect</p>
+</blockquote>
+<p>Web3 wallets are the first things anyone who is interested in becoming a part of the decentralised world will be exposed to. So it’s important to understand what its role is in the bigger picture before designing it otherwise your work will always be incremental.</p>
+<p>Having been first exposed to cryptocurrencies back in 2016, I’ve made mistakes, understood and overcome many of the technical limitations placed on me by the tech involved. I am now in a position to list improvements that will have the greatest impact on improving the user experience of these wallets and I’ve boiled it down to the following six areas:</p>
+<ol>
+<li>Education and awareness</li>
+<li>Security</li>
+<li>Daily usage</li>
+<li>Motivation for usage</li>
+<li>Taxation management</li>
+<li>Preferences management</li>
+</ol>
+<p>Let’s get into each of these in detail below.</p>
+<p><img alt="" src="0*VvxeiUlxaXoJ3Uf2" /></p>
+<p>Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=medium&amp;utm_medium=referral">Kelly Sikkema</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+<h2>Focus Area #1: Education and Awareness</h2>
+<p>In my crypto-related conversations with people over the years, I’ve found that there are specific questions that most seem to have before they feel comfortable enough to dive in and learn the concepts themselves. The following are topics we need to cover whether through simple FAQs, orientation videos and/or interactive experiences.</p>
+<p><strong><em>How can cryptocurrency be better than fiat?</em></strong></p>
+<p>Incremental benefits will not captivate anyone. We need to find a way to explain why cryptocurrencies and decentralised apps are 10X better than the fiat equivalents. We need to:</p>
+<ol>
+<li>
+<p>Explain why decentralised money is better than allowing a select few to decide what’s good for everyone else.</p>
+</li>
+<li>
+<p>Show how no one will be able to confiscate them for reasons as trivial as “the home address on record hasn’t been updated in a while”.</p>
+</li>
+<li>
+<p>Talk about the layers of people that are involved in traditional banking and how their salaries translate to the fees they apply on allowing us to perform even the most basic of transactions with our own money.</p>
+</li>
+<li>
+<p>Highlight the convenience of being able to transact with anyone instantaneously, without restrictions, and for a very small fee.</p>
+</li>
+<li>
+<p>Illustrate the benefits of being able to carry our capital anywhere in the world without any kind of constraints.</p>
+</li>
+</ol>
+<p><strong><em>What are the benefits of using Web3?</em></strong></p>
+<p>No one will use something if they don’t understand the reasons for doing so. Once the benefits of decentralised currencies are understood by our users, we need to explain the advantages of Web3 dApps.</p>
+<p>Here, we can highlight the obvious privacy benefits, the ability to carry our social network with us across platforms, the capacity to earn from anywhere, new job opportunities (including the ones for non-techies, which is usually a surprise to most) in the space and new business models that can help launch entirely new services and products that have not yet been built.</p>
+<p><strong><em>What exactly are these Web3 concepts?</em></strong></p>
+<p>We need to create a glossary of terms and concepts that explains all the ideas that one needs to understand in order to use a Web3 wallet.</p>
+<p><strong><em>Are there security measures in place?</em></strong></p>
+<p>One of the biggest fears is about security and the potential of losing money. We should build interfaces that take users step-by-step through the security measures that they need to take in order to secure themselves on the decentralised web. This section can also be updated on an ongoing basis if new threat vectors are found.</p>
+<p><strong><em>There’s no substitute for real sandboxes, is there?</em></strong></p>
+<p>Let’s face it, there’s no substitute to actually using the wallets and sending and receiving our first transactions for us to get the hang of using it. We must create sandboxes in which people can send and receive test tokens to simulate the real environment that they are working with. This should be as real as possible, including the ability to send and receive test tokens from friends.</p>
+<p><strong><em>Conversation, anyone?</em></strong>  </p>
+<p>This has been one of the best ways to learn about crypto for me. I can ask the questions that aren’t covered by videos, discussion threads, FAQs or the like to figure out exactly what we need to do. Wallets should have interfaces where such conversations can take place because asking someone to jump on Discord isn’t really a good alternative.</p>
+<p><img alt="" src="0*bKZv1FWAqIjmcuDi" /></p>
+<p>Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=medium&amp;utm_medium=referral">Philipp Katzenberger</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+<h2>Focus Area #2: Security</h2>
+<p>One of the biggest hurdles to adoption are the fears about security — security of key generation and management, recovery methods, volatility of currencies and, of course, scams.</p>
+<p><strong><em>Seed Phrases</em></strong></p>
+<p>While seed phrases have come a long way in simplifying the generation of private and public keys, it could be further eased by allowing users to specify their own words. They could then try to form sentences that will help with better recall if it ever becomes necessary.</p>
+<p><strong><em>Key Management</em></strong></p>
+<p>There’s a common phrase in the crypto world that goes: “Not your keys, not your crypto”, that encourages people to get off centralised exchanges and store their crypto on their own in cold wallets. But counterintuitively, it’s even more frightening to the everyday user because most of them don’t feel qualified enough to manage their own keys. This is a crucial area that needs to be addressed and solutions like those being developed by the likes of Arcana could help alleviate this problem.</p>
+<p><strong><em>Recovery Methods</em></strong></p>
+<p>Forgetting to store your keys is an all-too familiar problem as evidenced by the number of support calls on Coinbase about retrieving access to wallets because the users no longer remembered where their keys were. Good UX is forgiving and allows for people to recover from mistakes. So developing good and secure ways to regain wallet access is a necessity. There are several proposals for doing this, each trying to solve the problem for a certain type of user because there really isn’t a one-size-fits-all solution.</p>
+<p><strong><em>Assistance</em></strong></p>
+<p>Users that are unfamiliar with crypto wallets should be able to seek assistance from their family or friends. They could also appoint them as “guardians” who jump in to verify transactions in case the payment is an unexpectedly high amount or is being performed on an unsafe website or dApp.</p>
+<p><strong><em>Scams</em></strong></p>
+<p>Unfortunately there are rug pulls and cons all the time on the web — something about the anonymity seems to bring out the worst in some people. However, the wallet can take on the role of notifying users that they are operating on a website, a dApp or a wallet that’s been reported for scams by others. There are lots of details to wade through here to make this successful, but this is the higher-order bit.</p>
+<p><img alt="" src="0*Q2eH6YV78--HHhzl" /></p>
+<p>Photo by <a href="https://unsplash.com/@rupixen?utm_source=medium&amp;utm_medium=referral">rupixen.com</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+<h2>Focus Area #3: Daily Usage**</h2>
+<p>The greatest impact will lie in UX refinements in the parts of the wallet that are used frequently. This includes making payment for purchases made, receiving of funds, buying things, etc.</p>
+<p><strong><em>Payments</em></strong>  </p>
+<p>This is the primary use of most wallets, but it’s too complex primarily because of wallet addresses. We will need to focus on ways to make it as easy as sending payments on Venmo or Google Pay where the transfer of money takes place using people’s names or phone numbers.</p>
+<p><strong><em>Receipts</em></strong>  </p>
+<p>Receiving money is usually a four-step process where we have to first determine the currency to be used, share the appropriate wallet address next, then specify the amount that needs to be transferred and finally verify if the right amount was received. Simplification? Yes, please! Ethereum Name Service has taken a good vital first step, but wallets could go further in making this even easier.</p>
+<p><strong><em>Conversions</em></strong>  </p>
+<p>In the future, people may hold coins/tokens of various projects that they would like to support. But these coins and tokens will be superfluous when transacting with each other. The receiver will specify which coin/token they want to receive the payment in and the bridging between chains and tokens will need to be taken care of without the user’s intervention or awareness.</p>
+<p><strong><em>Volatility</em></strong>  </p>
+<p>People are also apprehensive of the volatility in the crypto world. In everyday usage, this is mainly caused by the denominator (typically USD) that is used to display the balance in wallets. However, our bank balances are not constantly showing us what the value is in another currency so why do we do this with our crypto wallets?</p>
+<p><strong><em>Transaction Fees</em></strong>  </p>
+<p>Sometimes, a big deterrent to performing transactions is the sky-high fees charged when the network is busy. There are lots of transactions that aren’t time-sensitive, such as moving funds between the user’s many wallets, settling bills between friends, and others that can actually wait to be done at a less expensive time. But there aren’t simple solutions to allow these to happen.</p>
+<p>The solution currently is to either try the same transaction at another time when the network isn’t as busy and expensive, or to try and fiddle with the settings to set a lower gas fee. These are not ideal as firstly, the fees a user may be willing to pay may occur several days later on the network and may require multiple attempts. Secondly, most people aren’t savvy enough to understand what the right settings for gas fees need to be and trial and error is sometimes more expensive than actually paying the fee amount that was being charged earlier.</p>
+<p>In addition to the features available today, users should also be able to simply set the price they are willing to pay and allow the transaction to occur whenever the network fees drop to that point. The wallet could let the user know if the fees set are so low as to be impractical and never occur.</p>
+<p><img alt="" src="0*xhQj6PbWbmZvbixz" /></p>
+<p>Photo by <a href="https://unsplash.com/@mbaumi?utm_source=medium&amp;utm_medium=referral">Mika Baumeister</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+<h2>Focus Area #4: Motivation for Usage</h2>
+<p>Just holding the coins or tokens isn’t going to be enough to build mass adoption. We need to encourage users to utilise their tokens too. The following are some ways to help them to do so.</p>
+<p><strong><em>Shopping</em></strong>  </p>
+<p>While it may not be the case in the future, the need of the hour is for people to understand where they can spend this money that they are accumulating. Knowing that they can purchase domains, pay for utilities or even spend it on pizza will help them to understand that cryptocurrencies aren’t just meant to be held but used.</p>
+<p><strong><em>Investing Easily</em></strong>  </p>
+<p>Undoubtedly, if the currencies held in a wallet can earn you money while they just sit there, it’s a big draw. Investments in DeFi should be made simple through an integration with the wallets.</p>
+<p><img alt="" src="0*KUa8oB5q51cqPBn0" /></p>
+<p>Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=medium&amp;utm_medium=referral">Kelly Sikkema</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+<h2>Focus Area #5: Taxes</h2>
+<p>Once regulation is more solidified, the role of the wallet in enabling tax filing and management starts to become important.</p>
+<p><strong><em>Simplifying Taxes</em></strong></p>
+<p>The wallets will need to handle more complex things like whether a transaction is taxable or not; for example, what if the user gets a virtual sword instead of tokens when trading, or what if I swap one NFT for two others? These and other questions will need to be managed by wallets.</p>
+<p><strong><em>Tax Guide</em></strong>  </p>
+<p>The wallets can also start to inform users of transactions that will incur high taxes compared to others that are tax beneficial. No tax consultant today can do this stuff and has therefore <em>got</em> to be handled by the wallets based on the regulations.</p>
+<p><img alt="" src="0*GzUqlylQOQrBLMqL" /></p>
+<p>Photo by <a href="https://unsplash.com/@stenslens?utm_source=medium&amp;utm_medium=referral">Sten Ritterfeld</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+<h2>Focus Area #6: Preferences</h2>
+<p>The settings features of wallets today extend only to how the wallet is set up and used — like default currency denominators, themes, languages, etc. But this is the decentralised world after all and the user’s preferences for the entire web and all the dApps are going to be eventually stored in the wallets.</p>
+<p><strong><em>ZK Proofs</em></strong>  </p>
+<p>Some dApps will require the user’s preference for light or dark modes so the dApp can adapt to it. But others will need to verify if the user is above a certain age and the wallet will have to share the relevant ZK proof for these kinds of interactions on their behalf.</p>
+<p><strong><em>Censorship Options</em></strong>  </p>
+<p>This is going to be another big area of focus. As detailed in <a href="https://medium.com/arcana-network-blog/the-future-of-censorship-as-we-transition-from-web2-to-web3-419b46a38278">another article</a> I’ve written before, users can define their preferences for censorship and subscribe to different filters of the web as well.</p>
+<p><strong><em>I. C. D.</em></strong>  </p>
+<p>While the industry is pretty young, having started in earnest around 2010, and the individuals in it relatively youthful, the demographics of the users will also be changing. Concerns regarding what needs to happen in case of death or permanent incapacitation of the primary wallet holder are springing up now. If the keys or access is not granted to their legal heir, the crypto stored by them are lost forever. Wallets can play a critical role here and enable the funds to be released (all at once or in specified instalments) to the next of kin in such cases.</p>
+<p><img alt="" src="0*iH28b2pVepvg-UMB" /></p>
+<p>Photo by <a href="https://unsplash.com/@withluke?utm_source=medium&amp;utm_medium=referral">Luke Stackpoole</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral">Unsplash</a></p>
+<h1>Conclusion</h1>
+<p>A long time ago, Personal Digital Assistants existed alongside mobile phones and the question of which device will take over the functionality of the other was being asked then. This is similar to the question that’s in front of us today. Will the wallet replace the functionality of the browser or will the browser take over the wallet? I don’t think the answer is any clearer today, but this is why we come to work everyday, isn’t it?</p>
+<p>We are going through the biggest paradigm shift in the technology space since Web 1.0 and the role the wallet is going to play in terms of providing access, protecting users and a whole lot more cannot be overstated. The dream of Web 1.0, to help create a decentralised world had one fatal flaw — it didn’t allow commerce on it then. But we’re able to put the final piece of the puzzle together today through cryptocurrencies and DeFi.</p>
+<p>While the tech is here, the role of user experience design will be extremely important in helping to remove all the complexity and making it ready for mainstream adoption. There’s a very long road ahead, but it’s also filled with opportunities. I hope this article will help to generate ideas and hopefully inspire you to start working in the field of wallets or even something in Web3.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>

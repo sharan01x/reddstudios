@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY: A Raspberry Pi based Time Capsule | Redd XF Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .header .date {
+            font-size: 0.8em;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Blog Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>DIY: A Raspberry Pi based Time Capsule</h1>
+                <div class="subtitle">I built an efficient Apple Time Capsule clone that will perform the task of allowing any externally connected hard drive to be used as a backup destination using the Time Machine setup on your Mac.</div>
+                <div class="date">04 Aug 2024</div>
+            </div>
+
+            
+
+            <div class="content">
+                <h2>What this is</h2>
+<p>If you want to build your own Apple Time Capsule clone using the Raspberry Pi and an external hard drive, this is the slimmest and most efficient solution that you could build in under an hour, without the bonus 3D printing bit in the end of course!</p>
+<p>You may also be successful if you just follow the steps below, but there's a step where you need to find your Raspberry Pi on your network and reserve a specific IP address in your router which I won't be going into that may require some prior knowledge.</p>
+<h2>What's unique about this solution</h2>
+<p>This solution has the following characteristics that make it different from other solutions that you may have seen:</p>
+<ul>
+<li>You don't need any other software such as Open Media Vault, which is great if you want to do a whole bunch of other things, but is too much of an overhead if all you want to do is build a network backup solution</li>
+<li>This could be setup on very low horse-powered boards like the Raspberry Pi 3A+ as it runs with the services built into the OS</li>
+<li>This solution works with more than one Mac on your network</li>
+<li>It can do this for guest logins on a network and doesn't require an account to be setup on the Pi, so this makes it easy to use for a home environment</li>
+</ul>
+<h2>Requirements</h2>
+<p>You need the following as a minimum:</p>
+<ol>
+<li>Raspberry Pi 3 Model A+ with compatible power supply</li>
+<li>Micro SD Card with 4GB or more</li>
+<li>External hard drive of any capacity that is compatible with the Raspberry Pi's USB port</li>
+<li>The drive will work with most laptops using different OS's in case that's needed at any time</li>
+<li>Raspberry Pi Imager software</li>
+</ol>
+<h2>Software Setup</h2>
+<h3>Step 1: Create the SD card image</h3>
+<p>For this, simply do the following:</p>
+<p><strong>1.1</strong> Download the <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a> software and open the file and follow the instructions to install the software on your Mac as you would any other software
+   <img src="/outputs/18433e48/images/18433e48_timecapsule-9.png"></p>
+<p><strong>1.2</strong> Plug in the Micro SD card into your Mac. It doesn't matter if it isn't already formatted.</p>
+<p><strong>1.3</strong> Choose the Raspberry Pi OS Lite (64-bit) image to write to the Micro SD card
+   <img src="/outputs/18433e48/images/18433e48_timecapsule-1.png">
+<img src="/outputs/18433e48/images/18433e48_timecapsule-2.png"></p>
+<p><img src="/outputs/18433e48/images/18433e48_timecapsule-3.png">
+<strong>1.4</strong> Choose the Micro SD card that you just inserted into your Mac as the storage destination and click 'Next'
+   <img src="/outputs/18433e48/images/18433e48_timecapsule-1.png">
+<strong>1.5</strong> In the next step of OS customisation, make sure to Edit Settings and in the first tab
+   <img src="/outputs/18433e48/images/18433e48_timecapsule-5.png"></p>
+<p><strong>1.5.1</strong> Setup the host name -- this is the name of your Pi on the network. I've called mine "pinstripes", but you could just call it "timecapsule" or anything else you'd like
+   <img src="/outputs/18433e48/images/18433e48_timecapsule-6.png">  </p>
+<p><strong>1.5.2</strong> User name and password for the machine. I suggest you set it to the default username and password for now which are 'pi' and 'raspberry'. You can change this later if you'd like.</p>
+<p><strong>1.5.3</strong> Provide the SSID and password to enable it to connect to your Wifi network. You don't need this if you're using a different Raspberry Pi that connects using a LAN cable.</p>
+<p><strong>1.5.4</strong> On the second tab called "Services", make sure that you enable SSH and use the password authentication mechanism. This will allow you to remotely log into your Pi with the user name and password that you setup in the previous step.
+   <img src="/outputs/18433e48/images/18433e48_timecapsule-7.png"></p>
+<p><strong>1.5.5</strong> Hit "Save" and in the next screen click "Yes" and then "Next" to begin the imaging step. You may need to type in your login and password for your computer to tell your computer that you authorise this action.</p>
+<p>In about 15 minutes your Micro SD card is going to be ready. Just eject your card if not already done before pulling it out of your computer.</p>
+<h3>Step 2: Initialise your Pi and set it up on your network</h3>
+<p><strong>2.1</strong> Setup the host name -- this is the name of your Pi on the network, so you could just call it "timecapsule" for simplicity or name it anything else you'd likePlug in your Micro SD card into your Pi and then plug in the power cable to the Pi. After about 5 minutes, the Pi would have booted up and then connected to your network over Wifi (or LAN in case that's how you'd connected). You don't need to plug in your external hard drive to the Pi as yet. </p>
+<p><strong>2.2</strong>  Open up a Terminal window on a laptop on the network and type in <code>ping timecapsule.local</code>. Replace "timecapsule" with whatever you named your Pi in Step 1.5.1. This should return the IP address of your Pi on the network.
+   <img src="/outputs/18433e48/images/18433e48_timecapsule-10.png"></p>
+<p><strong>2.3</strong>  Now type in <code>arp -a</code> and get the MAC addresses of all the devices connected to your network. Look for the Pi's MAC address that corresponds to its IP address you found in the previous step.</p>
+<p><strong>2.4</strong> Now log into your router which assigns the IP addresses on your network and setup a fixed IP address for your Raspberry Pi's MAC address. This whole thing may work without this address reservation, but I've never tested it. So if you absolutely cannot perform this step, just go through the rest and let me know if it works for you.</p>
+<p><strong>2.5</strong> If you've reserved a specific IP address for your Pi and it is different from the one it is currently assigned, you will need to reboot your Pi by turning off the power. </p>
+<p><strong>2.6</strong> Once your Pi comes back on your network, go back to your Terminal window and type in the following to log into your Pi through SSH - <code>ssh pi@192.168.0.10</code> where 'pi' is the user name and the IP address is the one that you reserved for your Pi in step 2.4. If everything is setup properly, your Pi will ask you for a password and you could just type in 'raspberry' or whatever else you set up in Step 1.5.2. </p>
+<h3>Step 3: Prepare your external hard drive</h3>
+<p><strong>3.1</strong> Get your external drive. Be sure you're using a hard drive that doesn't have any data that you want to retain as it will be lost forever once you're done with this step. Connect the hard drive to your Mac.</p>
+<p><strong>3.2</strong> Use "Disk Utility" to Erase and initialise your external drive. Name the drive anything you'd like such as "TimeCapsule" but make sure to use "Exfat" and if asked, the "GUID" options for maximum compatibility of the drive across different OS's. 
+<img src="/outputs/18433e48/images/18433e48_timecapsule-11.png">
+<img src="/outputs/18433e48/images/18433e48_timecapsule-12.png"></p>
+<p><strong>3.3</strong> Once the process is complete, eject your drive from your laptop. It is ready for plugging into your Pi in the next step.</p>
+<h3>Step 4: Get the software setup</h3>
+<p><strong>4.1</strong> While connected to your Pi through a Terminal window, do the following to update your Pi's OS:</p>
+<p><img src="/outputs/18433e48/images/18433e48_timecapsule-13.png"></p>
+<pre><code>1. `sudo apt update`
+2. `sudo apt upgrade`
+3. `sudo apt install exfat-fuse -y`
+4. `sudo apt install samba -y
+5. `sudo apt install avahi-daemon -y`
+</code></pre>
+<p><strong>4.2</strong> Once the above packages are installed, let's mount the external drive.</p>
+<p><strong>4.2.1</strong> Plug in your external drive into the Pi</p>
+<p><strong>4.2.2</strong> Type in <code>sudo df -Th</code> which will list all the drives connected to the Pi. Find the identifier for your drive which should most likely be "sda2" but could be different too. </p>
+<p><strong>4.2.3</strong> Create a mount point by typing in the following commands <code>sudo mkdir /mnt/timecapsule</code> and <code>sudo mount -t exfat /dev/sda2 /mnt/timecapsule</code>. Just substitute "sda2" with whatever the drive's identifier actually is. </p>
+<p><strong>4.2.4</strong> Type in the following to find the UUID of your drive <code>lsblk -f</code> and all the drives connected to your Pi will show up (including the Micro SD card). Look for the UUID of the drive with the label 'TimeCapsule' if that's what you named the drive in Step 3.2. Cross verify against the size of the drive to be sure. Copy the UUID into the clipboard.</p>
+<p><strong>4.2.5</strong> To make the mount point persist across reboots of the Pi, you will need to add the following code to the file named "fstab". You can do that by: <code>sudo nano /etc/fstab</code></p>
+<p><strong>4.2.6</strong> Paste the following in the end of the file  <code>UUID=your-uuid /mnt/timecapsule exfat defaults,uid=1000,gid=1000,umask=000 0 0</code> but replace the UUID with the one you copied to the clipboard in the previous step.</p>
+<p><strong>4.2.7</strong> Press Ctrl-X to save the file, Yes to write the buffer to file and enter to rewrite the file.</p>
+<p><strong>4.3</strong> Now write the configuration file to Samba, which is the file networking service that shows the drive on a network in a form that is compatible with Macs and Windows. To do this, you need to write the following code into the <code>smb.conf</code> file by typing in <code>sudo nano /etc/samba/smb.conf</code> which should bring up the existing configurations in the file. Press the page down key on your keyboard to get to the end of the page and paste this and make sure the mount points are correct:</p>
+<p><strong>4.4</strong> Save the file as the other files in step 2.5.3 and then restart the service with the new configurations by typing in the command into your command prompt in the Terminal <code>sudo systemctl restart smbd</code></p>
+<p><strong>4.5</strong> We've got to do the same for the avahi service configuration. To edit the file, <code>sudo nano /etc/avahi/services/samba.service</code> and paste the following code. There are no changes needed to be made.</p>
+<p><strong>4.6</strong> Save the file as in step 2.5.3 and then restart the service by typing in the following command <code>sudo systemctl restart avahi-daemon</code></p>
+<p>I suggest restarting the device itself to make sure that it works even if it ends up restarting on it's own in the future. To do this, type in <code>sudo reboot now</code> into your Terminal command prompt. This will disconnect your session and restart the Raspberry Pi. </p>
+<p>That's it, you're ready to go and setup the Time Machine backup from your Mac as always! </p>
+<h2>Troubleshooting</h2>
+<p>If for any reason you don't see the newly setup drive when you are setting up Time Machine on your Mac, try to connect to the drive first on the network by going to the Finder &gt; Go &gt; Connect to Server and then typing in <code>smb://192.168.0.25</code> replacing this with the IP address of your newly setup Time Capsule. You should be able to connect to the Raspberry Pi drive. Post that the Time Machine should automatically find the drive on the network. If for any reason this still doesn't work, there's probably some step above that you've missed. So give that a shot again.</p>
+<p><img src="/outputs/18433e48/images/18433e48_timecapsule-14.png">
+<img src="/outputs/18433e48/images/18433e48_timecapsule-15.png"></p>
+<h2>Bonus Step</h2>
+<p>Make a case for the Raspberry Pi and the hard drive to be situated together. I'm designing something for this purpose and should have a 3D printable file posted here soon. Check back in a bit. But if you'd like to print something else, look at the plethora of stuff that's available to you on <a href="https://www.printables.com/search/models?q=raspberry%20pi%203a+&amp;ctx=models">Printables</a>.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>

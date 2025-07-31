@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Web3 Wallets for Mainstream Users | Redd XF Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .header .date {
+            font-size: 0.8em;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Blog Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>Designing Web3 Wallets for Mainstream Users</h1>
+                <div class="subtitle">There is a problem with Web3 wallets, they're just too complex. But where's the problem stemming from and how do we solve it?</div>
+                <div class="date">30 Sept 2024</div>
+            </div>
+
+            
+
+            <div class="content">
+                <h1>Web3 Wallets for Mainstream Users</h1>
+<p>Web3, the next phase of the internet powered by blockchain technology, promises to revolutionise industries, but its complexity continues to alienate mainstream users. At the heart of this challenge is the Web3 wallet—a fundamental tool required for engaging with decentralised applications (dApps), managing cryptocurrencies, and accessing blockchain networks. While Web3 enthusiasts have embraced the wallet system, its cryptographic foundations and technical jargon have left everyday users overwhelmed and frustrated. To drive mainstream adoption of Web3, we need to focus on fixing the wallet experience, making it intuitive and accessible.</p>
+<p>In this blog, we’ll explore why the wallet is the crux of Web3 usability challenges and how a thoughtful redesign grounded in familiar concepts, like banking, can unlock its full potential.</p>
+<h3>The Wallet Conundrum: Complexity Meets Confusion</h3>
+<p>The primary function of a Web3 wallet is to store a user's private and public keys. These cryptographic keys are used to authorise transactions and prove the user's identity within the blockchain ecosystem. But this process, while secure and revolutionary, is incredibly foreign to non-technical users. Terms like "private key," "public key," and "signing messages" can cause even the most tech-savvy Web2 users to shy away. The need for simplification is apparent.</p>
+<p>In Web2, users can easily send and receive money through banks or payment apps without ever having to understand the mechanics behind these systems. Web3, by contrast, demands users grasp cryptographic principles or risk losing access to their digital assets. The complexity isn't just a barrier; it's a deterrent.</p>
+<p>Many existing wallets, such as Zerion or Rabby, have attempted to ease the user experience by iterating on older designs. And while they have indeed made Web3 more user-friendly, they still fall short of the mainstream appeal necessary for broad adoption. These wallets are excellent by Web3 standards, but they remain inscrutable for the average Web2 user, leaving us to ask: Why can't a Web3 wallet be as intuitive as the apps we're already accustomed to?</p>
+<h3>Terminology Matters: The Language of Web3</h3>
+<p>A significant part of the problem lies in the terminology itself. In Web3, terms like "wallet" are used inaccurately. In traditional banking, a wallet implies a place where you store something—cash, cards, and other financial instruments. However, in Web3, a wallet doesn’t "store" money in the traditional sense. Instead, it acts more like an access card to funds stored on the blockchain. Misleading terminology adds to the confusion, making it harder for users to understand how to manage their digital assets.</p>
+<p>Open-source development, which is central to the Web3 ecosystem, has contributed to this confusion. Over time, various developers have used different terms to describe the same concepts, leading to inconsistent vocabulary across platforms. For instance, "public key," "wallet address," and "externally owned account" all refer to the same thing, but new users won’t know that. This inconsistency hinders their ability to trust and navigate the system confidently.</p>
+<p>Language is powerful, and when users encounter familiar terms, they can better grasp unfamiliar concepts. Web2 sites like e-commerce platforms utilise relatable language ("add to cart," "checkout") that immediately makes sense to users. The same approach needs to be applied to Web3 wallets if we want to make them accessible to the average person.</p>
+<h3>Building Familiarity: Banking as a Metaphor</h3>
+<p>To solve the wallet problem, we need to rethink the entire framework. Instead of framing wallets with cryptographic jargon, we should use a metaphor that resonates with mainstream users. And what’s more familiar than banking? Banking is a 2,000-year-old institution, and most people are already acquainted with its core concepts.</p>
+<p>By reimagining the Web3 wallet as a piece of "banking software," we can translate complex blockchain concepts into terms users already understand. For instance, the wallet itself could be referred to as "banking software," the wallet address as an "account number," the private key as a "signature," blockchain networks as "networks," and the various fees associated with a transaction such as "tip", "gas" and such could be simplified into "transaction fees," just as people are used to paying on traditional payment platforms.</p>
+<p>This banking analogy would not only make Web3 wallets more relatable but also help ease users into the system without overwhelming them with technical details.</p>
+<h3>A Three-Account Structure: Enhancing Security and Usability</h3>
+<p>In addition to simplifying the terminology, a redesigned Web3 wallet should also mimic the structure of traditional banking. A banking app typically offers various types of accounts—checking, savings, and investment—and the same can be applied to Web3.</p>
+<ol>
+<li>
+<p><strong>Checking Account</strong>: This would be where users conduct everyday transactions with known entities or individuals, similar to a checking account in traditional banking.</p>
+</li>
+<li>
+<p><strong>Savings Account</strong>: This would serve as a secure place to store assets, where users could stake cryptocurrencies or simply keep them safe. It would allow users to generate interest on their holdings without needing to interact with external applications.</p>
+</li>
+<li>
+<p><strong>Investment Account</strong>: For users seeking higher risk and reward opportunities, this account would enable interaction with decentralised applications (dApps) for staking, lending, or other investment activities.</p>
+</li>
+</ol>
+<p>This compartmentalisation not only makes the system more intuitive but also enhances security. By limiting the interactions of the checking and savings accounts with external applications, users can reduce their exposure to potential security risks. Only the investment account, which is meant for higher-risk activities, would be open to external dApps.</p>
+<h3>The Road Ahead: Evolving Web3 for the Mainstream</h3>
+<p>In conclusion, the wallet is the linchpin of Web3 adoption. If we can make the wallet experience seamless and intuitive, we can unlock Web3’s immense potential for a wider audience. The key lies in rethinking both the terminology and structure, using familiar banking concepts to demystify the process. By addressing these foundational issues, we can bridge the gap between Web2 and Web3, paving the way for mass adoption.</p>
+<p>For designers and developers working on Web3 applications, this means prioritising usability over technical prowess. It means considering what mainstream users already know and building upon that knowledge, rather than introducing new, foreign concepts. The future of Web3 is bright, but only if we can make it accessible to everyone.</p>
+<h1>Video with screens</h1>
+<iframe width="600" height="338" src="https://www.youtube.com/embed/flGWL54hJR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>
