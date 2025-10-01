@@ -1,909 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redd XF</title>
-    <meta name="description" content="If you want to 10X your design game, this is the channel for you to watch.">
-    <meta charset="utf-8">
-    <meta name="author" content="Redd">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-responsive.css">
-    <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/splitting.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        
+                 .container {
+             max-width: 680px;
+             margin: 0 auto;
+             padding: 30px 20px;
+         }
+         
+         .header {
+             background: white;
+             color: #242424;
+             padding: 40px 0 40px 0;
+             text-align: center;
+         }
+         
+         /* Responsive container widths */
+         @media (min-width: 768px) {
+             .container {
+                 max-width: 900px;
+                 padding: 40px 30px;
+             }
+         }
+         
+         @media (min-width: 1024px) {
+             .container {
+                 max-width: 900px;
+                 padding: 50px 40px;
+             }
+         }
+         
+         @media (min-width: 1440px) {
+             .container {
+                 max-width: 900px;
+             }
+         }
+         
+         @media (min-width: 1600px) {
+             .container {
+                 max-width: 900px;
+             }
+         }
+        
+        .header h1 {
+             font-size: 2.8em;
+             margin-bottom: 16px;
+             font-weight: 700;
+             line-height: 1.2;
+             letter-spacing: -0.02em;
+         }
+         
+         .header .subtitle {
+             font-size: 1.2em;
+             color: #999;
+             font-weight: 400;
+             max-width: 600px;
+             margin: 0 auto;
+         }
+         
+         /* Responsive header typography */
+         @media (min-width: 1024px) {
+             .header h1 {
+                 font-size: 3.2em;
+             }
+             
+             .header .subtitle {
+                 font-size: 1.3em;
+                 max-width: 700px;
+             }
+         }
+         
+         @media (min-width: 1440px) {
+             .header h1 {
+                 font-size: 3.6em;
+             }
+             
+             .header .subtitle {
+                 font-size: 1.4em;
+                 max-width: 800px;
+             }
+         }
+        
+        .articles-list {
+             margin-top: 40px;
+             column-width: 260px;
+             column-gap: 24px;
+         }
+         
+         .article-item {
+             background: white;
+             border: 1px solid #e6e6e6;
+             border-radius: 8px;
+             padding: 24px;
+             transition: all 0.2s ease;
+             height: auto;
+             margin-bottom: 24px;
+             box-sizing: border-box;
+             display: inline-block;
+             width: 100%;
+             break-inside: avoid;
+         }
+         
+         /* Better article padding on larger screens */
+         @media (min-width: 1024px) {
+             .article-item {
+                 padding: 28px;
+                 border-radius: 12px;
+             }
+         }
+         
+         @media (min-width: 1440px) {
+             .article-item {
+                 padding: 32px;
+             }
+         }
+         
+         .article-item:hover {
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+             transform: translateY(-2px);
+         }
+         
+         /* Tablet: 2 columns */
+         @media (min-width: 768px) {
+             .articles-list {
+                 column-width: 260px;
+                 column-gap: 24px;
+             }
+         }
+         
+         /* Desktop: 3 columns */
+         @media (min-width: 1024px) {
+             .articles-list {
+                 column-width: 260px;
+                 column-gap: 24px;
+             }
+         }
+         
+         /* Large desktop: 4 columns */
+         @media (min-width: 1440px) {
+             .articles-list {
+                 column-width: 260px;
+                 column-gap: 24px;
+             }
+         }
+         
+         /* Extra large: 5 columns */
+         @media (min-width: 1600px) {
+             .articles-list {
+                 column-width: 260px;
+                 column-gap: 24px;
+             }
+         }
+        
+        .article-header h2 {
+            margin: 0 0 8px 0;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        
+        .article-header a {
+            color: #242424;
+            text-decoration: none;
+        }
+        
+        .article-header a:hover {
+            color: #666;
+        }
+        
+        .article-subtitle {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 12px;
+        }
+        
+        .article-date {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .no-articles {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            padding: 40px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #aaa;
+            margin-top: 60px;
+            padding-top: 20px;
+            font-size: 0.9em;
+        }
+        
+        .footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer i {
+            color: #e74c3c;
+        }
+        
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            .header h1 {
+                font-size: 2.2em;
+            }
+            
+            .article-item {
+                padding: 20px;
+            }
+            
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+        
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+        
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+        
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer i {
+            color: #e74c3c;
+        }
+        
+        @media (max-width: 768px) {
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+            
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XKBLWNVKJ9"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-XKBLWNVKJ9');
-</script>
-
-
-<body class="appear-animate">
-
-    <!--Cursor Animation-->
-    <div id="cursor"></div>
-    <div id="cursor2"></div>
-    <div id="cursor3"></div>
-
-    <!-- Page Loader -->
-    <div class="page-loader">
-        <div class="loader">Loading...</div>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+    
+    
+    <div class="container">
+        <div class="header">
+            <h1>Redd XF</h1>
+            <div class="subtitle">A space for ideas, opinions and experiments</div>
+        </div>
+        
+        <div class="articles-list">
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="99458576.html">Review of Replit, the Figma Killer</a></h2>
+                        <div class="article-subtitle">Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">31 Jul 2025</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="bc36ebfa.html">Designing Web3 Wallets for Mainstream Users</a></h2>
+                        <div class="article-subtitle">There is a problem with Web3 wallets, they're just too complex. But where's the problem stemming from and how do we solve it?</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">30 Sept 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="606545a5.html">The UX Problem with the Voting System in India</a></h2>
+                        <div class="article-subtitle">Something as important as voting is fraught with UX problems and the intention of the voter is not well expressed within the systems that exist in places such as India</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">30 May 2019</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="d5288f82.html">The New Age of the Design Generalist</a></h2>
+                        <div class="article-subtitle">AI tools have made coding simpler. Skills are no longer relevant. Imagination and envisioning a particular future is more necessary than ever.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">30 Dec 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="08134e4f.html">Better tools should be better employed</a></h2>
+                        <div class="article-subtitle">When you have access to tools that provide you unlimited capability, how should these tools be used.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">29 Jun 2023</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="38b6a525.html">Design review of the AI Pin by Humane</a></h2>
+                        <div class="article-subtitle">As a product designer, I analysed Humane's first product, the AI Pin, and identified several critical challenges that need to be addressed. While the product's primary purpose of replacing mobile phones is laudable, it faces significant obstacles. Firstly, the device needs to offer a 10X better value proposition than the mobile phone to convince users to switch. However, this proved difficult as the AI Pin struggled to deliver on this promise, particularly in terms of call and message functionality, social media, calendar management, navigation, photography, entertainment, running apps, and more.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">28 Nov 2023</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="6b67b868.html">My experiments with 3D printing</a></h2>
+                        <div class="article-subtitle">My foray into the world of 3D printing and my learnings and insights so far. This is work in progress and will continue to be edited.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">24 Jan 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="e7160570.html">Co-existence of Voice Interfaces in Apps</a></h2>
+                        <div class="article-subtitle">While every sci-fi show depicts Voice Interfaces as the future as it seemingly makes for very simple interactions with devices. I examine this idea.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">23 Aug 2019</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="c1af5dc6.html">Four Ways to Improve Patient Experience with UX Design Principles</a></h2>
+                        <div class="article-subtitle">Post my experience in designing an interface for a birthing hospital the importance of UX in this space was highlighted.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">21 Feb 2019</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="ca1ff969.html">Eight Essential Rules for Mastering Ethical UX Design</a></h2>
+                        <div class="article-subtitle">Reflecting on the work of many others and my own work within the field, I have distilled the following rules to act as a guide</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">21 Apr 2023</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="d8ae5f1e.html">Generative AI Art Experiments</a></h2>
+                        <div class="article-subtitle">Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Here are my experiments.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">2023-07-13</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="cccb3085.html">Fixing Censorship with Web3</a></h2>
+                        <div class="article-subtitle">It’s important to keep striving for better models of censorship that can benefit society without infringing on individual rights and freedoms.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">2023-02-28</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="2de0bd53.html">Cloudnine Hospitals</a></h2>
+                        <div class="article-subtitle"><div style="display: table;width: 100%;"></div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">2018-03-01</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="1023569b.html">FIS Mobile Banking</a></h2>
+                        <div class="article-subtitle"><div style="display: table;width: 100%;"></div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">2017-06-01</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="37f872a3.html">Designing for the Next Billion Users</a></h2>
+                        <div class="article-subtitle">These next big wave of users is coming not from the west but from the young, educated youth of India with access to cheap data plans and speaking many different languages.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">17 Oct 2019</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="a51973c2.html">The Ultimate Guide to Hiring the Right UX Design Agency</a></h2>
+                        <div class="article-subtitle">It doesn't matter that the design agency has a high rating if they aren't a good fit for your project. But how do you find the right one?</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">15 Nov 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="9b4e1115.html">Five personal AI assistant devices reviewed and what they need to fix</a></h2>
+                        <div class="article-subtitle">The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">12 Sept 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="3eb3bbbb.html">Review of the Rabbit R1</a></h2>
+                        <div class="article-subtitle">A detailed review of the newly launched Rabbit R1, exploring its hardware and software design, its strategic position in the market and its potential challenges</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">10 Jan 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="80e0ac3c.html">The Five Promises of Technology</a></h2>
+                        <div class="article-subtitle">Having a framework to evaluate the use of technology is useful in evaluating how it can be employed</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">10 Jan 2019</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="6e576ec9.html">Evolution, Not Revolution</a></h2>
+                        <div class="article-subtitle">How Gradual Progress Can Lead to Success in Product Design</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">08 Sept 2025</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="253b9d68.html">Design Proposals that Boost Conversion Rates</a></h2>
+                        <div class="article-subtitle">Building proposal templates takes a lot of effort and you're still left unsure of whether you've done it right. This article tries to help you fix that.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">05 Nov 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="9f31ab4a.html">Design Must Humanise Technology</a></h2>
+                        <div class="article-subtitle">Technology must function within the world of regular people</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">05 Dec 2016</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="915d435a.html">Why Your Design Should Reflect Your Values</a></h2>
+                        <div class="article-subtitle">User experience designers who are designing these experiences have their own world views that shape their designs. This is the right thing to do.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">05 Apr 2019</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="4b31984b.html">How to start designing for Web3</a></h2>
+                        <div class="article-subtitle">Web3 is a burgeoning field, but you can't just take Web2 designs and expect them to work in Web3. What should you keep in mind?</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">04 Dec 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="3e62d0c6.html">8 Crucial Insights from Building an AI-Infused App</a></h2>
+                        <div class="article-subtitle">Discover the critical lessons gained from developing a cutting-edge application in the evolving landscape of programming</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">04 Aug 2025</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="18433e48.html">DIY: A Raspberry Pi based Time Capsule</a></h2>
+                        <div class="article-subtitle">I built an efficient Apple Time Capsule clone that will perform the task of allowing any externally connected hard drive to be used as a backup destination using the Time Machine setup on your Mac.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">04 Aug 2024</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="b21695b0.html">Seven Lessons from the Aircraft Industry for UX Designers</a></h2>
+                        <div class="article-subtitle">There are a lot of things that have happened in the aircraft industry that apply in the user experience design field</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">04 Apr 2017</span>
+                    </div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="1fa29c9a.html">Lenskart</a></h2>
+                        <div class="article-subtitle">Project walkthrough</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">01 Jun 2018</span>
+                    </div>
+                </div>
+            
+        </div>
     </div>
-    <!-- End Page Loader -->
-
-    <!-- Page Wrap -->
-    <div class="page" id="top">
-
-        <!-- Navigation panel -->
-        <nav class="main-nav transparent stick-fixed wow-menubar">
-            <div class="full-wrapper relative clearfix">
-
-                <!-- Logo ( * your text or image into link tag *) -->
-                <div class="nav-logo-wrap local-scroll">
-                    <a href="#home" class="logo">
-                        <img src="images/Redd XF Full Lock-up Horizontal - White on Transparent.png" alt="Company logo" height="35" />
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="mobile-nav" role="button" tabindex="0">
-                    <i class="fa fa-bars"></i>
-                    <span class="sr-only">Menu</span>
-                </div>
-
-                <!-- Main Menu -->
-                <div class="inner-nav desktop-nav">
-                    <ul class="clearlist scroll-nav local-scroll">
-                        <li><a href="interviews.html">Interviews</a></li>
-                        <li><a href="design.html">Design</a></li>
-                        <li><a href="reviews.html">Reviews</a></li>
-                        <li><a href="build.html">Build</a></li>
-                        <li><a href="business.html">Business of Design</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="blog/index.html" target="_blank">Blog</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- End Main Menu -->
-
-            </div>
-        </nav>
-        <!-- End Navigation panel -->
-
-        <main id="main">
-
-            <!-- Fullwidth Slider -->
-            <div class="home-section fullwidth-slider-fadezoom" id="home">
-
-                <!-- Slide Item -->
-                <section class="home-section bg-scroll bg-dark-alfa-50" data-background="images/ReddXF-Background-Imagery-HiRes.png">
-                    <div class="container min-height-100vh d-flex align-items-center pt-100 pb-100">
-                        <div class="home-content">
-                            <h1 class="mb-30 mb-xs-20 wow fadeInUpShort" data-wow-delay=".1s">GREAT DESIGN CAN CHANGE THE WORLD</h1>
-                        </div>
-                    </div>
-                </section>
-                <!-- End Slide Item -->
-
-            </div>
-            <!-- End Fullwidth Slider -->
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0" />
-            <!-- End Divider -->
-
-
-            <!-- About Section -->
-            <section class="page-section" id="about">
-                <div class="container relative">
-                    <div class="row">
-
-                        <!-- Images -->
-                        <div class="col-lg-7 mb-md-60 mb-xs-30">
-                            <div class="call-action-2-images">
-
-                                <div class="call-action-2-image-1">
-                                    <img src="images/lighthouse.jpg" alt="" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </div>
-
-                                <div class="call-action-2-image-2">
-                                    <img src="images/cherry-blossom.jpg" alt="" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </div>
-
-                                <div class="call-action-2-image-3">
-                                    <img src="images/boat.jpg" alt="" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- End Images -->
-
-                        <!-- Text -->
-                        <div class="col-lg-5 wow fadeInUpShort" data-wow-duration="1.2s" data-wow-offset="255">
-
-                            <h2 class="section-title mb-50 mb-sm-20">Raison d'être</h2>
-
-                            <dl class="call-action-1-decription mb-60 mb-sm-30">
-                                <dd>
-                                    Redd XF is the successor of Redd Experience Design (RED) which was a User
-                                    Experience Design agency that was ranked among the top 100 in the world. While RED
-                                    has become a part of another company and no longer serves external clients, there
-                                    have been tremendous learnings that we accumulated during the 8 years of its
-                                    existence and excellence in the field.
-                                </dd>
-                                <dd>
-                                    That's why Redd XF was created. Our mission is to pass on what we've learned to
-                                    others in the industry, helping them elevate their work and create amazing products
-                                    and experiences. We're here to inspire and support the next wave of design talent,
-                                    because we know that great design can change the world.
-                                </dd>
-                            </dl>
-
-                        </div>
-                        <!-- End Text -->
-
-                    </div>
-                </div>
-
-            </section>
-            <!-- End Logotypes -->
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0" />
-            <!-- End Divider -->
-
-            <!-- Featured Videos Section -->
-            <section class="page-section bg-gray-lighter" id="featured">
-                <div class="container relative">
-
-                    <div class="text-center mb-80 mb-sm-50">
-                        <div class="row">
-                            <div class="col-sm-6 offset-sm-3">
-                                <h2 class="section-title">Featured Videos</h2>
-                                <p class="section-title-descr">
-                                    We think these videos will be most valuable to you.
-                                </p>
-                            </div>
-                            <div class="col-sm-3 text-sm-end pt-30 pt-xs-0">
-                                <!-- <a href="blog-classic-sidebar-right-dark.html" class="section-more">View All<i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-6 col-lg-6 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=6n_U-AWtVLs" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/ReviewOfReplit.png" alt="Review of Replit, the Figma killer" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Review of Replit, the Figma killer</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Feb 3, 2025
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-6 col-lg-6 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=uQgPwASdn5U" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/aiimpactonuxdesign.png" alt="AI: Impact on UX Design, Software and the World" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">AI: Impact on UX Design, Software and the World</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Jan 7, 2025
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                         
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-6 col-lg-6 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=u_cEEB6D2Q8" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/becomeAWeb3UXDesigner.jpg" alt="Become a Web3 UX Designer" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Become a Web3 UX Designer</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Dec 12, 2024
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-6 col-lg-6 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=pWzm4IwFXZI" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/TheUltimateGuidetoChoosingtheRightUXDesignAgency.jpg" alt="The Ultimate Guide to Choosing the Right UX Design Agency" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                The Ultimate Guide to Choosing the Right UX Design Agency
-                            </h3>
-                            <div class="post-prev-info">
-                                Nov 25, 2024
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                    </div>
-
-                </div>
-            </section>
-            <!-- End Featured Videos Section -->
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0" />
-            <!-- End Divider -->
-
-
-            <!-- Interviews Section-->
-            <section class="page-section" id="interviews">
-                <div class="container relative">
-
-                    <div class="text-center mb-80 mb-sm-50">
-                        <h2 class="section-title">Interviews</h2>
-                        <p class="section-title-descr">
-                            These are a few conversations with some of the best minds in the industry. And there are plenty more than those below.
-                        </p>
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=ZKZ2hqeJAV0" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/pratibhabhaskaran.jpg" alt="XF with Pratibha Bhaskaran" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">What You Don't Learn in Design Schools</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Pratibha Bhaskaran, Founder And/Or Design
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=S8Q8JM1i12M" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/philipjohn.jpg" alt="XF with Philip John" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Crafting Brand Narratives</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Philip John, Creative Director, 48 Degrees
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=Zr_qmvoTbZ4" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/mayurrelekar.jpg" alt="Blockchains and UX Design" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Blockchains and UX Design</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Mayur Relekar, Founder &amp; CEO, Arcana Network
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=xwccLHizZkc" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/jaydutta.jpg" alt="Design Shift in Orgs" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Design Shift in Orgs</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Jay Dutta, Senior Vice President, UX Design, MakeMyTrip.com
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=WwPuphKozPI" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/dalpatprajapati.jpg" alt="Living Between Blockchain, Tech and Design" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Living Between Blockchain, Tech and Design</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Dalpat Prajapati, Head of Design, Polygon
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=SBcn_1MmIGE" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/rahulgonsalves.jpg" alt="IKEA and the Architect" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Why design is too important to leave to designers alone</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Rahul Gonsalves, Founder and CEO, Obvious
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                        
-
-                    </div>
-
-                    <div class="row text-center">
-                        <div class="local-scroll">
-                            <a href="interviews.html" class="btn btn-mod btn-large btn-round">View All Interviews</a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0" />
-            <!-- End Divider -->
-
-
-            <!-- Design Section-->
-            <section class="page-section bg-gray-lighter" id="design">
-                <div class="container relative">
-
-                    <div class="text-center mb-80 mb-sm-50">
-                        <h2 class="section-title">Design Patterns</h2>
-                        <p class="section-title-descr">
-                            We've thought about some common design patterns and how they can be implemented in your
-                            projects. Here are some popular ones.
-                        </p>
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=u_cEEB6D2Q8" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/becomeAWeb3UXDesigner.jpg" alt="Become a Web3 UX Designer" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Become a Web3 UX Designer</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Sharan, Founder, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=flGWL54hJR4" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/web3-wallets-for-mainstream.jpg" alt="Work Description" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Designing Web3 Wallets People Will Love</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Sharan, Founder, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=Oi6XFdZW69A" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/uxpatterns-searchsortfilter.jpg" alt="Work Description" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Search, Sort and Filter Sorted</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Rozann, Design Lead, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=6UBKNN-n-tA" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/uxpatterns-voiceinterfaces.jpg" alt="Work Description" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Integrating Voice Interfaces into Apps</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Shailja, Experience Designer, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=9wlrht5Gopk" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/keyboardonlynavigation.jpg" alt="Work Description" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Keyboard-only Navigation</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Krithika, Experience Designer, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                    </div>
-
-                    <div class="row text-center">
-                        <div class="local-scroll">
-                            <a href="design.html" class="btn btn-mod btn-large btn-round">View All Design Videos</a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0" />
-            <!-- End Divider -->
-
-
-            <!-- Reviews Section-->
-            <section class="page-section" id="reviews">
-                <div class="container relative">
-
-                    <div class="text-center mb-80 mb-sm-50">
-                        <h2 class="section-title">Reviews</h2>
-                        <p class="section-title-descr">
-                            We've reviewed some of the most popular products and services out there. Here are a few of
-                            them.
-                        </p>
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=6n_U-AWtVLs" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/ReviewOfReplit.png" alt="Review of Replit, the Figma killer" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Review of Replit, the Figma killer</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Review by Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=7GPtfH1lYkI" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/5aiassistantsreviewed.jpg" alt="UX Review of Personal AI Assistant Devices" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">5 Personal AI Assistant Devices</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Review by Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=_U2i5HnWkyI" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/uxreview-microsoftteams.jpg" alt="UX Review of Microsoft Teams" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Microsoft Teams</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Review by Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=m1uD56f2MoQ" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/uxreview-spotify.jpg" alt="UX Review of Spotify" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Spotify</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Review by Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-
-                    </div>
-
-                    <div class="row text-center">
-                        <div class="local-scroll">
-                            <a href="reviews.html" class="btn btn-mod btn-large btn-round">View All Reviews</a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0" />
-            <!-- End Divider -->
-
-
-            <!-- Build Section-->
-            <section class="page-section bg-gray-lighter" id="build">
-                <div class="container relative">
-
-                    <div class="text-center mb-80 mb-sm-50">
-                        <h2 class="section-title">Build</h2>
-                        <p class="section-title-descr">
-                            We've not just thought about things, we've also built some of them and here's what we've learnt.
-                        </p>
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=XOg_iRfln6U" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/prototypedesign.jpg" alt="Use ChatGPT to Prototype your Design Today" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Use ChatGPT to Prototype your Design Today</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Sharan, Founder, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=pnThZl5NBBU" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/digitalartinstallations.jpg" alt="Digital Art Installations you can Own" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Redd Scapes: Digital Art Installations you can Own</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Redd Team
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-                        
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=P4mCOtgdLO0" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/reddboard.jpg" alt="Redd Board: Live share, Draw, Comment, from Anywhere" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                <a href="blog-single-sidebar-right-dark.html">Redd Board: Live share, Draw, Comment, from Anywhere</a>
-                            </h3>
-                            <div class="post-prev-info">
-                                Redd Team
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                    </div>
-
-                    <div class="row text-center">
-                        <div class="local-scroll">
-                            <a href="build.html" class="btn btn-mod btn-large btn-round">View All Build Videos</a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Business Section -->
-            <section class="page-section" id="business-of-design">
-                <div class="container relative">
-
-                    <div class="text-center mb-80 mb-sm-50">
-                        <h2 class="section-title">Business of Design</h2>
-                        <p class="section-title-descr">
-                            This section explores the business side of design. If you're an entrepreneur or running a design team, this is for you.
-                        </p>
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=uQgPwASdn5U" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/aiimpactonuxdesign.png" alt="AI: Impact on UX Design, Software and the World" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                AI: Impact on UX Design, Software and the World
-                            </h3>
-                            <div class="post-prev-info">
-                                Sharan, Founder, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=pWzm4IwFXZI" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/TheUltimateGuidetoChoosingtheRightUXDesignAgency.jpg" alt="The Ultimate Guide to Choosing the Right UX Design Agency" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                The Ultimate Guide to Choosing the Right UX Design Agency
-                            </h3>
-                            <div class="post-prev-info">
-                                Sharan, Founder, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                        <!-- Post Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50">
-                            <div class="post-prev-img">
-                                <a href="https://www.youtube.com/watch?v=3ckaYWWNzRU" class="work-lightbox-link mfp-iframe">
-                                    <img src="images/design-proposals-that-boost-conversions.jpg" alt="Design proposals that boost conversions" class="wow scaleOutIn rounded-corners-10" data-wow-duration="1.2s" data-wow-offset="0" />
-                                </a>
-                            </div>
-                            <h3 class="post-prev-title">
-                                Design Proposals that Boost Conversions
-                            </h3>
-                            <div class="post-prev-info">
-                                Sharan, Founder, Redd
-                            </div>
-                            <div class="post-prev-more">&nbsp;</div>
-                        </div>
-                        <!-- End Post Item -->
-
-                    </div>
-
-                    <div class="row text-center">
-                    <div class="local-scroll">
-                        <a href="business.html" class="btn btn-mod btn-large btn-round">View All Business of Design Videos</a>
-                    </div>
-
-                </div>
-            </section>
-            <!-- End Design Proposals Section -->
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0" />
-            <!-- End Divider -->
-
-
-            <!-- Contact Section -->
-            <section class="page-section bg-gray-lighter" id="contact">
-                <div class="container relative">
-
-                    <div class="text-center mb-80 mb-sm-50">
-                        <h2 class="section-title">Contact Us</h2>
-                        <p class="section-title-descr">
-                            We're always looking for speakers to talk about design. If you have a story to share or a
-                            unique perspective on a subject related to design, we'd love to hear from you. Get in touch.
-                        </p>
-                    </div>
-
-                    <div class="row mb-60 mb-xs-40">
-
-                        <div class="col-md-10 offset-md-1">
-                            <div class="row">
-
-                                <!-- Phone -->
-                                <div class="col-sm-6 col-lg-4 pb-20">
-                                    <div class="contact-item wow fadeScaleIn" data-wow-delay="0" data-wow-duration="1s">
-                                        <div class="ci-icon">
-                                            <i class="fa fa-phone-alt"></i>
-                                        </div>
-                                        <div class="ci-title">
-                                            To Participate
-                                        </div>
-                                        <a href="mailto:participate@redd.in?Subject=Let's talk">participate@redd.in</a>
-                                    </div>
-                                </div>
-                                <!-- End Phone -->
-
-                                <!-- Address -->
-                                <div class="col-sm-6 col-lg-4 pb-20">
-                                    <div class="contact-item wow fadeScaleIn" data-wow-delay=".1s"
-                                        data-wow-duration="1s">
-                                        <div class="ci-icon">
-                                            <i class="fa fa-map-marker-alt"></i>
-                                        </div>
-                                        <div class="ci-title">
-                                            To Join the Team
-                                        </div>
-                                        <div class="ci-text">
-                                            <a href="mailto:work@redd.in?Subject=Work related query">work@redd.in</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Address -->
-
-                                <!-- Email -->
-                                <div class="col-sm-6 col-lg-4 pb-20">
-                                    <div class="contact-item wow fadeScaleIn" data-wow-delay=".2s"
-                                        data-wow-duration="1s">
-                                        <div class="ci-icon">
-                                            <i class="fa fa-envelope"></i>
-                                        </div>
-                                        <div class="ci-title">
-                                            To Collaborate with Us
-                                        </div>
-                                        <div class="ci-text">
-                                            <a
-                                                href="mailto:marketing@redd.in?Subject=Marketing related query">marketing@redd.in</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Email -->
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-            <!-- End Contact Section -->
-
-        </main>
-
-        <!-- Footer -->
-        <footer class="page-section bg-dark-lighter light-content footer pb-100 pb-sm-50" data-background="images/ReddXF-Background-Imagery-HiRes.png">
-            <div class="container">
-
-                <!-- Footer Text -->
-                <div class="footer-text">
-
-                    <!-- Logo -->
-                    <div class="footer-logo mb-20">
-                        <a href="index.html#home"><img src="images/Redd Logo Mark Only - White on Black.png" alt="Redd XF Logo" width="300" /></a>
-                    </div>
-
-                </div>
-                <!-- End Footer Text -->
-
-            </div>
-
-            <!-- Top Link -->
-            <div class="local-scroll">
-                <a href="#top" class="link-to-top"><i class="link-to-top-icon"></i><span class="sr-only">Scroll to
-                        top</span></a>
-            </div>
-            <!-- End Top Link -->
-
-        </footer>
-        <!-- End Footer -->
-
+    
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
     </div>
-    <!-- End Page Wrap -->
 
-    <!-- JS -->
-    <script src="js/cursoranimation.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/SmoothScroll.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.localScroll.min.js"></script>
-    <script src="js/jquery.viewport.mini.js"></script>
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.lazyload.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/morphext.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/objectFitPolyfill.min.js"></script>
-    <script src="js/splitting.min.js"></script>
+    <script>
+        // Parse date from article date string
+        function parseArticleDate(dateStr) {
+            if (!dateStr) return new Date(0);
+            const date = new Date(dateStr);
+            return isNaN(date.getTime()) ? new Date(0) : date;
+        }
 
+        // Sort articles by date (newest first)
+        function sortArticlesByDate() {
+            const articlesList = document.querySelector('.articles-list');
+            if (!articlesList) return;
+            
+            const articles = Array.from(articlesList.querySelectorAll('.article-item'));
+            if (articles.length === 0) return;
+            
+            articles.sort((a, b) => {
+                const dateA = parseArticleDate(a.querySelector('.article-date').textContent.trim());
+                const dateB = parseArticleDate(b.querySelector('.article-date').textContent.trim());
+                return dateB.getTime() - dateA.getTime(); // Newest first
+            });
+
+            // Reorder the articles in the DOM
+            articles.forEach(article => articlesList.appendChild(article));
+        }
+
+        // Sort articles when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', sortArticlesByDate);
+        } else {
+            sortArticlesByDate(); // DOM already loaded
+        }
+    </script>
 </body>
-
 </html>

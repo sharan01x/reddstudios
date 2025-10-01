@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Ways to Improve Patient Experience with UX Design Principles | Redd XF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .header .date {
+            font-size: 0.8em;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>Four Ways to Improve Patient Experience with UX Design Principles</h1>
+                <div class="subtitle">Post my experience in designing an interface for a birthing hospital the importance of UX in this space was highlighted.</div>
+                <div class="date">21 Feb 2019</div>
+            </div>
+
+            
+
+            <div class="content">
+                <p>At 37, Anu is having her first pregnancy. She’s nervous. She relies on her hospital for timely support and information. But she has to wait three hours for an appointment and doesn’t get notifications. She plans to renege.</p>
+<p>Modern medical care needs to go beyond helping Anu deliver her baby, and improve her overall <em>patient experience</em>. With rampant competition and an aware, digitally savvy customer base, patient experience — timely appointments, easy access to information and good communication with doctors — can increase patient loyalty besides eliminating waste and reducing costs. An effective, intuitive way for hospitals to improve patient experience is to embrace technology and UX design principles.</p>
+<h2><strong>HOW DO UX DESIGN PRINCIPLES HELP IN DELIVERING BETTER PATIENT EXPERIENCE?</strong></h2>
+<p>It involves using technology to reorganise services <em>according to how patients behave as opposed to how the hospital’s default system runs.</em> From our research, we’ve identified four UX drivers that can improve patient experience:</p>
+<blockquote>
+<p>”AN EFFECTIVE, INTUITIVE WAY FOR HOSPITALS TO IMPROVE PATIENT EXPERIENCE IS TO EMBRACE TECHNOLOGY AND UX DESIGN PRINCIPLES. </p>
+</blockquote>
+<h2><strong>#1 ELASTICITY</strong></h2>
+<p>This refers to how “elastic” or flexible the hospital’s <em>communication</em> is. For example, customers during registration are asked for unnecessary information. This creates delay and distress. Instead, a quick online registration process through a bot in an app can ensure only Anu’s critical information is requested on priority. Another pain point for Anu is having to go to multiple places for information. Consultation cards on the same app can have their status updated to let Anu know what she needs to do next, depending on where she is in her pregnancy journey. For example, if her doctor gives complex post-consultation instructions, then cards appearing after the consultation can break them down into easy steps for Anu.</p>
+<p><img src="/outputs/c1af5dc6/images/c1af5dc6_Healthcare-2.webp"></p>
+<h2><strong>#2 EASE</strong></h2>
+<p>This deals with how the hospital helps the patient save <em>time</em>. Research shows the more touch points a patient has to go through, the greater their dissatisfaction. Through an online experience, Anu’s entire user journey can be completed on the same app — from check-in, to seeing her spot in the queue, to getting updated on doctor status, etc. Another way of creating ease is time slots instead of exact times. Research shows failure to comply with exact times causes patients to become anxious. Instead, a flexible time slot manages Anu’s expectations and, if she is 15 minutes late, she doesn’t create a domino effect on other patients’ wait time. Anu also shouldn’t be wasting time searching for medical records before every consultation. By digitising everything on the app, she or even her spouse gets easy access. A chat facility is another great time-saver; she can just connect with her doctor instantly in case of a query.</p>
+<p><img src="/outputs/c1af5dc6/images/c1af5dc6_Healthcare-3.webp"></p>
+<h2><strong>#3 EMPATHY</strong></h2>
+<p>Good UX is about increasing empathy for Anu’s journey. In addition to many of the above tactics, there are more overt ways to do this. For example, the app can collapse Anu’s complex pregnancy journey into easily accessible milestones on a timeline. So, on any given day, she can take comfort in looking at her journey. Moreover, she can book lab appointments and RSVP for events from this view. Giving Anu access to a community is another example. A lot of first-time parents are anxious. Accessing a community through the app can open up invaluable peer-group support.</p>
+<p><img src="/outputs/c1af5dc6/images/c1af5dc6_Healthcare-4.webp"></p>
+<h2><strong>#4 EFFICIENCY</strong></h2>
+<p>Introducing technology with UX design principles can streamline processes and remove inefficiencies. This increases productivity and brings down costs. That’s not all; the platform becomes a one-stop shop for all of the hospital’s packages. This creates simple, effective communication around each package which, in turn, can result in better conversions.</p>
+<h1>Conclusion</h1>
+<p>In conclusion, <em>sensitivity</em>, <em>relevance</em> and <em>sociability</em> guiding all UX decisions make for a vastly improved patient experience. Also, let’s not forget integrating tech and UX paves the way for machine learning and AI which can unlock a whole new level of efficiency and patient satisfaction!</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>

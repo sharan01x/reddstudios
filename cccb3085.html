@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixing Censorship with Web3 | Redd XF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .header .date {
+            font-size: 0.8em;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>Fixing Censorship with Web3</h1>
+                <div class="subtitle">It’s important to keep striving for better models of censorship that can benefit society without infringing on individual rights and freedoms.</div>
+                <div class="date">2023-02-28</div>
+            </div>
+
+            
+
+            <div class="content">
+                <h1>Introduction</h1>
+<p>Censorship has been around as long as information has been recorded and shared. Different groups, including religious authorities, governments, and corporations, have used censorship as a way to control what people can see and hear, sometimes for legitimate reasons but often to influence public opinion in their favour. It's important to keep striving for better models of censorship that can benefit society without infringing on individual rights and freedoms.</p>
+<p>The emergence of both Web3 and AI presents an opportunity to find new solutions to this problem. These two fields intersect and could potentially lead to innovative approaches that balance the need for censorship with respect for individual liberties. The following is such an idea. </p>
+<h1>The Need for a Redesign</h1>
+<p>The shortcomings of the current censorship system have led to a demand for a new approach. To illustrate this, consider a tech company that creates a massive social media platform with over a billion users across several countries like Twitter or Facebook. </p>
+<p>On this platform, let's take one example of a video that was actually posted by a user that depicted the burning of an American flag. This is very likely to offend some users who may hail from the country that the flag represents. The offended users have a few options at their disposal. They may respond to the initial post and ask the user to take down the post because they're offended, or, they may report the post to the platform for being offensive. The platform then decides whether the post is required to be taken down. </p>
+<p>Then some form of the following decision tree ensues within the department of the social media platform in charge of handling such user reports:</p>
+<ol>
+<li>Is the post in line with the published set of standards related to posting content on the platform?</li>
+<li>Was the first user right to post the content?</li>
+<li>Was the second user right to be offended by the content? </li>
+<li>Is the offensiveness "sufficient" to warrant the removal of the post?</li>
+<li>How much of a political or economic backlash will the platform face if it chooses to leave the post online or take it down?</li>
+</ol>
+<p>Consider another example that occurred more recently. The artist Lindsay Mills shared a photo of her baby on various social media platforms. The photo showed the mother and baby, with only the baby's butt visible. While some platforms allowed the photo to remain, one platform not only removed the post but also banned Mills' account. This decision was made by an algorithm without human involvement, and appeals to restore the account were unsuccessful. The incident gained attention because Mills is married to Edward Snowden.</p>
+<p>These examples demonstrate the gray areas surrounding censorship, as society was divided on the appropriate course of action in each case. They highlight the problems with the mechanisms behind censorship, as corporations hold significant influence over society but are not elected to make these decisions.:</p>
+<p>Furthermore, the following questions arise:</p>
+<ol>
+<li>Will the platform make a decision based on standards that have been clearly published?</li>
+<li>What was considered during the setting of these standards? </li>
+<li>Who was involved in setting these standards? Were the people that weighed in on the standards representative of the population of users that will eventually use it or was it more representative of the standards of the corporation and where it was founded? </li>
+<li>Should the standards be the same across geographies and cultures? Is it a lowest-common-denominator approach that is safe for all or were other factors taken into account for setting these standards?</li>
+<li>What is the basis for judging whether the content that clearly lies in the grey areas should be taken down or not? Is it simply how large a body of people it offends? How is the voice expressing the minority opinion protected?</li>
+<li>Do these standards change based on who the audience is, by age, by gender, by their own level of maturity? Can a user have control over what they want to be able to see or not? </li>
+<li>Can I make up my own mind after exposure to the said content?</li>
+<li>Does it evolve as a society's views on issues change over time? What doesn't change?</li>
+<li>How does the platform handle pressure from external entities such as influential people, large groups or even governments of countries? What are the concessions it will make in this regard?</li>
+</ol>
+<p>The platform cannot avoid adopting a specific political viewpoint because there's no way around it. But if it holds any political leaning too strongly, it may loose users to rival platforms that do the same thing but only differ in their political ideologies. This is exactly what happened when Twitter decided to de-platform Trump. The problem with this then is it creates echo chambers where users are surrounded only by people that agree with them and view anyone with an alternative viewpoint as the other. We loose the public town squares where ideas are debated which is essential to building stable societies with moderate political leanings instead of societies that may erupt into civil wars at any moment. </p>
+<p>Furthermore, we are entrusting the responsibility of making decisions beneficial for society as a whole to a corporation whose sole purpose is generating profits for its shareholders. The mechanism does not allow for the consideration of societal well-being, as corporations must prioritise profits and their ability to sustain losses in a confrontation with political figures or governments pressuring them to make specific decisions. A single misstep can lead to lawsuits that could bankrupt the company.</p>
+<p>When did it become a tech company's responsibility to determine censorship implementation on a platform? Why do we accept this as the only approach when tech companies have consistently demonstrated their inadequacy in handling the responsibility of building good societies?</p>
+<h1>A Decentralised Solution</h1>
+<p>A more effective approach would be to begin with the recognition that free speech is a fundamental right for all individuals. From this foundation, the solution should not focus on prohibiting certain forms of expression, but rather on preventing individuals from encountering offensive content. Although the distinction may appear subtle, the solutions for each approach differ significantly. By focusing on the latter, several benefits arise, as outlined below:</p>
+<ol>
+<li>The fundamental right to freedom of speech is maintained with no one being de-platformed</li>
+<li>The user can control what they want to be exposed to or not be exposed to on an individual level and it can change over time on an individual basis</li>
+<li>No other individual or entity dictates the standards for determining what someone should or should not be exposed to</li>
+<li>This system cannot be corrupted by external forces putting pressure on any single body</li>
+</ol>
+<p>While researching how a solution for this could work, the movie industry stood out as having a model that we could build upon. The film industry rates movies with suitability ratings like "PG-13," indicating whether it's appropriate for viewers aged 13 or older, and streaming services like Netflix provide additional information such as "Contains adult themes" or "Has crude humor" to help audiences make informed decisions. Even if two audiences are demographically identical, they may choose differently based on their preferences. This model has been effective in movies, so what if it was applied to content on the internet with the necessary modifications?</p>
+<p>One potential approach is to assign tags to all posts on a fictional social media platform that describe the content. Viewers could then apply filters based on these tags to allow or prevent the content from appearing in their timeline. This central idea serves as the starting point for outlining how such a system could operate.</p>
+<h2>Step 1: Tagging the content</h2>
+<p>While AI models had to be trained to properly identify content in the beginning, the models have become pretty good at this task today. Now the model can be tested against the content to produce the right tags in the content. This is true for text, audio or video based content and across languages. So in the first pass, any new content that's posted on a platform can be processed through AI models first to create a tag cloud for the content. </p>
+<p>Tags can be improved upon by groups of people post the initial stage to provide an additional layer of meaning through the lens of different individuals. This should happen over time as well so as to not allow the meaning of the content to stagnate in time as the same content could change its relevance at a different point in time. </p>
+<h2>Step 2: Setting up filters</h2>
+<p>On the receiving end of the content pipeline, the users need to mark content that they find offensive. But this process could be explicitly done with the user flagging some content as offensive, but also could be done through observing the viewing patterns such as the user scrolling past the content faster than they do on other content or hitting the 'skip' or 'stop' buttons on videos. One may argue that platforms like YouTube are already doing some version of this, but there are two big differences. Firstly, the data is maintained in a silo on the YouTube servers and not by the users themselves. Secondly, the goal of these platforms is self-serving and to increase viewership on the platform, not to do what the user wants. </p>
+<p>While the above process gets better over time, users could also adopt filter sets from other pre-built filters created by people they trust, as starting points for their own filters to achieve immediate relief. This set then gets modified with the users own interactions with various platforms over time using on-device AI engines that are becoming more and more prevalent. </p>
+<h2>Step 3: Viewing content</h2>
+<p>This is probably the simplest part. There can be timelines titled "For You" which is a view that applies the preference filters on the content being viewed and a second timeline titled, "Unfiltered" which shows all the content on the timeline if the user so wishes. This again is not even a new mechanism as most content platforms already use such devices.</p>
+<h1>A Solution for the Age of AI and Web3</h1>
+<p>While thinking through the solutions here, it was clear that the solution to the problem of censorship is not based on the imagining of technologies that don't yet exist but the repurposing of those that already do. So why hasn't it been done yet? I believe there are two reasons. Firstly, as anyone in software can tell you, the higher the amount of input you require from a user, the lower it's adoption rate is going to be. So a self-learning system like AI or ML was necessary to exist for this to work otherwise it would have been humanly impossible to build a system that works. Secondly, the filters and learnings that a company like YouTube would develop about it's user's preferences were guarded as intellectual property of the company and not shared with even the user. So a decentralised system like Web3 needed to exist for such a system to work across the web.</p>
+<p>We're living in some really interesting times when these kinds of ideas will suddenly come to life because of the fertile ground created by AI and decentralisation that have culminated to put the user at the centre of the technological universe.</p>
+<h1>Conclusion</h1>
+<p>There are obviously a lot more steps and nuances to consider when building this system, for example, how would such a system work for children and those that are not as tech savvy or even handle content that is clearly illegal across all nations. But I'm sure there are smarter people that could propose better ideas based on the foundation that has been proposed here. I just didn't want to write an article pointing out all the problems without at least proposing a potentially better solution. If you are interested in discussing any of the ideas proposed here a little further, please do reach out.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>

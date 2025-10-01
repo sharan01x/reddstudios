@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The UX Problem with the Voting System in India | Redd XF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .header .date {
+            font-size: 0.8em;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>The UX Problem with the Voting System in India</h1>
+                <div class="subtitle">Something as important as voting is fraught with UX problems and the intention of the voter is not well expressed within the systems that exist in places such as India</div>
+                <div class="date">30 May 2019</div>
+            </div>
+
+            
+
+            <div class="content">
+                <h1>Introduction</h1>
+<p>A vote is defined as a right to express a wish, choice or opinion. In the context of a democracy, it is the right to express one’s opinion on how s/he would like to be governed. If that’s the primary objective of a vote, is the mechanism we are using to capture the user’s opinions serving our nation well? And from my own corner of the world armed with my own tool kit, I wonder if thoughtful UX design could make it better.</p>
+<p>So what’s the problem that we need to fix this? In the “plurality voting system” that is followed in India, which we use to vote representatives to the lower house of the Parliament, a citizen is allowed one vote and to only cast it in the affirmative. This is an extremely limited form of expressing one’s opinion. Everything is hunky-dory if there’s a candidate that represents your views, you just cast your vote for them. But what do you do in the case where there are no candidates that represent your convictions? The only choices you’re left with are to express your support for the least objectionable of the candidates, abstain from voting, cast your vote for “None Of The Above” or use your vote tactically to mitigate your losses. Are any of these options clearly communicating the opinions of the citizen? Is a vote for an opponent the same as a vote for a candidate? Is a vote for the least objectionable candidate the same as support <em>for</em> their mandate? It’s no wonder that one of the most common refrains during voting season is: “It’s like choosing between the devil and the deep sea.”</p>
+<p>All of these choices leave people disenfranchised and hopeless about being able to affect change through their votes. In fact, these plurality voting systems face much more criticism than that. In a long enough timeline, these systems result in fewer political parties, reduced incentives for new players to participate, increased gerrymandering, the use of “spoiler” candidates with the sole objective of detracting from the front runners and finally, the increased use and influence (and therefore the privatisation) of mass media on political outcomes. None of these are the desired results for a nation or even the conspiracy of any political party or candidate. Not even the most jaded among us can agree with the idea that a political party wants to lead a citizenry in a direction that it doesn’t want to go. The parties just want to win the game. These are just the definite outcomes produced by a system whose rules are defined in a certain way. We find that this happens very often in UX as well. Whatever we set as the goals, key performance indicators or criteria for progress, we see the users of the system strive for this. Set new goals or new criteria, the users of the system start to strive for that new goal.</p>
+<p>So, what can we do to improve our voting system? We can change the rules that govern them. We can design voting methods that keep the process efficient and also more expressive. While there are no perfect systems out there, all we can adopt is the spirit of building “a more perfect union.” We have to keep trying to find better solutions and keep fixing the new problems we find. In other words, we need to evolve.</p>
+<p>There are many different solutions one could think of, but for the age of our democracy, I find two models that would work better for India:</p>
+<h2><strong>MODEL #1: PARLIAMENTARY-STYLE VOTING FOR ELECTION TO THE LOWER HOUSE</strong></h2>
+<p>New bills are proposed all the time in the Parliament and votes are sought in order to make decisions on them and either passed forward or rejected. The polling is done with a “Yay” or “Nay” vote.</p>
+<p>This system is efficient and much more expressive:</p>
+<ol>
+<li>It tells everyone the bottom line of whether or not enough votes were received to win.</li>
+<li>It expresses what kind of support it had.</li>
+<li>It expresses what kind of opposition it had.</li>
+<li>It also expresses how close the vote was.</li>
+</ol>
+<p>This model can be used such that a voter could cast one vote as they do today but could cast it either in favour of OR against a candidate (you can only do one or the other).</p>
+<p>This simple change would result in the following advantages:</p>
+<ol>
+<li>It doesn’t have the negative effect of devolving into a scenario where there are fewer political parties.</li>
+<li>There is clearer indication to candidates from previous polling data on what the voter base is looking for.</li>
+<li>It would result in more moderate mandates that appeal to larger voter bases as parties now have to worry about the supporter’s views as well as the dissenter’s.</li>
+<li>It encourages new participants to come into the arena with new ideas.</li>
+<li>It would lead to the formation of more stable governments and therefore stronger economies.</li>
+</ol>
+<blockquote>
+<p>BY APPLYING UX DESIGN PRINCIPLES TO OUR VOTING METHODS, IT IS, IN FACT, POSSIBLE TO DEVELOP A SYSTEM THAT ALLOWS THE VOTER’S VOICE TO BE TRULY HEARD.</p>
+</blockquote>
+<p><img src="/outputs/606545a5/images/606545a5_VotingUX-2.webp"></p>
+<h2><strong>MODEL #2: RANKING OF CANDIDATES</strong></h2>
+<p>This is a much more involved process but even more expressive than the first model. This model involves ranking all of the candidates in order of preference. Just as in today’s model of affirmative voting, this ranking model is only done in the affirmative. In addition to the advantages of the system above, the ranking also expresses the following:</p>
+<ol>
+<li>There is no way to easily predict who the winners may be. And this is a good thing because then you can’t game the system.</li>
+<li>It has the potential to clearly express not just the mandate that won, but also the specific points within it that actually caused the most affirmations.</li>
+</ol>
+<h1>CONCLUSION</h1>
+<p>There may well be other better-suited models of voting but by applying UX design principles to our voting methods, it is, in fact, possible to develop a system that allows the voter’s voice to be truly heard. It would not only reflect the actual democratic choice of the citizens, but also benefit our nation as a whole. As one of the few countries that has electronic voting, it would pave the way for India to be a more authentic democracy as well as the largest.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>
