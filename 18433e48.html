@@ -379,28 +379,28 @@
 <h3>Step 1: Create the SD card image</h3>
 <p>For this, simply do the following:</p>
 <p><strong>1.1</strong> Download the <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a> software and open the file and follow the instructions to install the software on your Mac as you would any other software
-   <img src="/outputs/18433e48/images/18433e48_timecapsule-9.png"></p>
+   <img src="18433e48_timecapsule-9.png"></p>
 <p><strong>1.2</strong> Plug in the Micro SD card into your Mac. It doesn't matter if it isn't already formatted.</p>
 <p><strong>1.3</strong> Choose the Raspberry Pi OS Lite (64-bit) image to write to the Micro SD card
-   <img src="/outputs/18433e48/images/18433e48_timecapsule-1.png">
-<img src="/outputs/18433e48/images/18433e48_timecapsule-2.png"></p>
-<p><img src="/outputs/18433e48/images/18433e48_timecapsule-3.png">
+   <img src="18433e48_timecapsule-1.png">
+<img src="18433e48_timecapsule-2.png"></p>
+<p><img src="18433e48_timecapsule-3.png">
 <strong>1.4</strong> Choose the Micro SD card that you just inserted into your Mac as the storage destination and click 'Next'
-   <img src="/outputs/18433e48/images/18433e48_timecapsule-1.png">
+   <img src="18433e48_timecapsule-1.png">
 <strong>1.5</strong> In the next step of OS customisation, make sure to Edit Settings and in the first tab
-   <img src="/outputs/18433e48/images/18433e48_timecapsule-5.png"></p>
+   <img src="18433e48_timecapsule-5.png"></p>
 <p><strong>1.5.1</strong> Setup the host name -- this is the name of your Pi on the network. I've called mine "pinstripes", but you could just call it "timecapsule" or anything else you'd like
-   <img src="/outputs/18433e48/images/18433e48_timecapsule-6.png">  </p>
+   <img src="18433e48_timecapsule-6.png">  </p>
 <p><strong>1.5.2</strong> User name and password for the machine. I suggest you set it to the default username and password for now which are 'pi' and 'raspberry'. You can change this later if you'd like.</p>
 <p><strong>1.5.3</strong> Provide the SSID and password to enable it to connect to your Wifi network. You don't need this if you're using a different Raspberry Pi that connects using a LAN cable.</p>
 <p><strong>1.5.4</strong> On the second tab called "Services", make sure that you enable SSH and use the password authentication mechanism. This will allow you to remotely log into your Pi with the user name and password that you setup in the previous step.
-   <img src="/outputs/18433e48/images/18433e48_timecapsule-7.png"></p>
+   <img src="18433e48_timecapsule-7.png"></p>
 <p><strong>1.5.5</strong> Hit "Save" and in the next screen click "Yes" and then "Next" to begin the imaging step. You may need to type in your login and password for your computer to tell your computer that you authorise this action.</p>
 <p>In about 15 minutes your Micro SD card is going to be ready. Just eject your card if not already done before pulling it out of your computer.</p>
 <h3>Step 2: Initialise your Pi and set it up on your network</h3>
 <p><strong>2.1</strong> Setup the host name -- this is the name of your Pi on the network, so you could just call it "timecapsule" for simplicity or name it anything else you'd likePlug in your Micro SD card into your Pi and then plug in the power cable to the Pi. After about 5 minutes, the Pi would have booted up and then connected to your network over Wifi (or LAN in case that's how you'd connected). You don't need to plug in your external hard drive to the Pi as yet. </p>
 <p><strong>2.2</strong>  Open up a Terminal window on a laptop on the network and type in <code>ping timecapsule.local</code>. Replace "timecapsule" with whatever you named your Pi in Step 1.5.1. This should return the IP address of your Pi on the network.
-   <img src="/outputs/18433e48/images/18433e48_timecapsule-10.png"></p>
+   <img src="18433e48_timecapsule-10.png"></p>
 <p><strong>2.3</strong>  Now type in <code>arp -a</code> and get the MAC addresses of all the devices connected to your network. Look for the Pi's MAC address that corresponds to its IP address you found in the previous step.</p>
 <p><strong>2.4</strong> Now log into your router which assigns the IP addresses on your network and setup a fixed IP address for your Raspberry Pi's MAC address. This whole thing may work without this address reservation, but I've never tested it. So if you absolutely cannot perform this step, just go through the rest and let me know if it works for you.</p>
 <p><strong>2.5</strong> If you've reserved a specific IP address for your Pi and it is different from the one it is currently assigned, you will need to reboot your Pi by turning off the power. </p>
@@ -408,12 +408,12 @@
 <h3>Step 3: Prepare your external hard drive</h3>
 <p><strong>3.1</strong> Get your external drive. Be sure you're using a hard drive that doesn't have any data that you want to retain as it will be lost forever once you're done with this step. Connect the hard drive to your Mac.</p>
 <p><strong>3.2</strong> Use "Disk Utility" to Erase and initialise your external drive. Name the drive anything you'd like such as "TimeCapsule" but make sure to use "Exfat" and if asked, the "GUID" options for maximum compatibility of the drive across different OS's. 
-<img src="/outputs/18433e48/images/18433e48_timecapsule-11.png">
-<img src="/outputs/18433e48/images/18433e48_timecapsule-12.png"></p>
+<img src="18433e48_timecapsule-11.png">
+<img src="18433e48_timecapsule-12.png"></p>
 <p><strong>3.3</strong> Once the process is complete, eject your drive from your laptop. It is ready for plugging into your Pi in the next step.</p>
 <h3>Step 4: Get the software setup</h3>
 <p><strong>4.1</strong> While connected to your Pi through a Terminal window, do the following to update your Pi's OS:</p>
-<p><img src="/outputs/18433e48/images/18433e48_timecapsule-13.png"></p>
+<p><img src="18433e48_timecapsule-13.png"></p>
 <pre><code>1. `sudo apt update`
 2. `sudo apt upgrade`
 3. `sudo apt install exfat-fuse -y`
@@ -436,8 +436,8 @@
 <p>That's it, you're ready to go and setup the Time Machine backup from your Mac as always! </p>
 <h2>Troubleshooting</h2>
 <p>If for any reason you don't see the newly setup drive when you are setting up Time Machine on your Mac, try to connect to the drive first on the network by going to the Finder &gt; Go &gt; Connect to Server and then typing in <code>smb://192.168.0.25</code> replacing this with the IP address of your newly setup Time Capsule. You should be able to connect to the Raspberry Pi drive. Post that the Time Machine should automatically find the drive on the network. If for any reason this still doesn't work, there's probably some step above that you've missed. So give that a shot again.</p>
-<p><img src="/outputs/18433e48/images/18433e48_timecapsule-14.png">
-<img src="/outputs/18433e48/images/18433e48_timecapsule-15.png"></p>
+<p><img src="18433e48_timecapsule-14.png">
+<img src="18433e48_timecapsule-15.png"></p>
 <h2>Bonus Step</h2>
 <p>Make a case for the Raspberry Pi and the hard drive to be situated together. I'm designing something for this purpose and should have a 3D printable file posted here soon. Check back in a bit. But if you'd like to print something else, look at the plethora of stuff that's available to you on <a href="https://www.printables.com/search/models?q=raspberry%20pi%203a+&amp;ctx=models">Printables</a>.</p>
             </div>

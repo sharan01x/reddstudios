@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is there room for another dating app? | Redd XF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .header .date {
+            font-size: 0.8em;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>Is there room for another dating app?</h1>
+                <div class="subtitle">Examining whether there's a packaging problem</div>
+                <div class="date">18 Jul 2023</div>
+            </div>
+
+            
+
+            <div class="content">
+                <h1>The Need</h1>
+<p>Meeting the person that is now my wife had been quite a challenge. I probably have been helped by friends, family and work colleagues and when that didn't work, I even joined a singles group, signed up online on matrimonial sites and even dating apps. I finally met my wife on a dating app called OkCupid. To say that this field of allowing people to find each other is dear to me would be an understatement.</p>
+<p>I've been happily married for a while now. I have several single friends my age and while a few of them want to find someone and get married eventually, some are choosing to stay single and are quite content doing so. However they would still like companionship and would like to meet people that are similarly inclined.</p>
+<p>In a recent conversation with four twenty-something user experience designers, I asked about dating apps and whether they are serving the needs of people their age group. But surprisingly the complaints were the same as for those that belong to the older group I spoke of above. All of them said they had issues meeting people and that no dating app was serving them well. </p>
+<p>On a broader societal level India has always been thought of as a nation with very traditional values and therefore the population had a majority of married people. But this trend is changing. People are getting married later in life if at all and many are also choosing to stay single, not seeing getting married and having kids as the final goal. Divorce laws in India are also complicated to say the least and this may be a contributing factor to people choosing to stay single. </p>
+<hr />
+<p><img src="f9cca0fc_Pencil-sketch-of-a-happy-couple-sitting-across-each-other-at-a-sidewalk-cafe-in-a-European-city-with-2.jpeg.webp"></p>
+<h1>The Problems</h1>
+<p>In my research, I've funnily had absolutely no trouble getting people to tell me about the issues they've faced while using dating apps. It usually ends up becoming an hour-long conversation and everyone wants to explain their individual journeys and issues that they've run into. In a lot of ways they want to vent their frustration and when someone like me comes along and asks what the issues are, it's like opening the flood gates to a dam. But I feel their pain as I've been there myself.</p>
+<p>To whit, the issues they presented for dating were as follows:</p>
+<ol>
+<li>Men find it harder to meet women as the percentage of men on dating platforms is much higher. This may be because it's traditionally been uncommon for women to put their profiles online.</li>
+<li>It is not easy to convert an online encounter into a physical meeting due to concerns regarding security. They typically want to be very sure of the person before they meet.</li>
+<li>People prefer to meet others in real life rather than online as that is a more authentic way to find someone.</li>
+<li>Creating a good profile is key and people request others who have found success to create their profiles. But this inadvertently also adds to the catfishing concern as the profiles may not be authentic at all.</li>
+<li>People don't always know that the person they are meeting online are verified in any way and this adds to security concerns.</li>
+<li>Dating apps that require women to initiate the connection may be adding a hurdle to introverted women. They may prefer to be approached instead. But this an an all-or-nothing kind of offering on such platforms.</li>
+<li>Ghosting is a big concern as people may be spending inordinate amounts of time trying to build a relationship with someone they met online whereas the other person may be not be interested at all but doesn't know how to end this.</li>
+<li>The online medium is skewed towards good-looking people. The fact is that most platforms offer huge databases of people and it's practically impossible to sift through all without being extremely quick to judge either based on photos or based on scanning of profiles very quickly.</li>
+<li>There are several scams that have occurred based on people meeting each other online in India. Scams involve extortion, confidence scams, honey traps and lots of other such issues that make this kind of meeting very dubious. </li>
+</ol>
+<p>There are some things that could be solved through better employment of technology. But there are a lot of things that can be solved in the real-world realm. </p>
+<hr />
+<p><img src="f9cca0fc_Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-with-sharp-focus-on-.jpeg.webp"></p>
+<h1>Room for Another</h1>
+<p>With the passage of time, it's a good idea to evaluate old decisions over again. While I had previously thought that this market is overcrowded and that there is dating-app-fatigue that has set in, I think the advent of AI has made it possible to evaluate this once again. </p>
+<p>Yes, I am very aware that platforms like e-harmony and OKCupid, and lots of others, have indeed marketed based on this idea. However, I don't think they had the tools we have today to make that claim in earnest. Besides, the one flaw in their thinking was that they were only able to go so far as making a recommendation of who they would match with; they were never able to evaluate whether they had made the right prediction because they had no mechanism to receive such feedback. If they didn't get any feedback, it definitely didn't help make future recommendations any better either.</p>
+<p>If one were to venture into this field, this is a key aspect that I would evaluate: did they have good recommendation engines that not only had recommendations but also had feedback loops to make future recommendations better?</p>
+<hr />
+<p><img src="f9cca0fc_Pencil-sketch-of-two-people-in-business-suits-having-coffee-at-a-sidewalk-cafe-in-a-European-city-h.jpeg.webp"></p>
+<h1>The Business Case</h1>
+<p>In my quick study of this field I've come to the conclusion that the demand is off-the-charts. No platform has solved this problem as yet, so there's definitely room for another entrant. There is no dearth of money as people are willing to pay out of money in order to meet the right person. So it can definitely be a profitable venture. But the solution has to be packaged correctly and the right promises need to be made. </p>
+<h2>The Goal</h2>
+<p>First and foremost it is important to set the right goals for a platform. Is it meant to result in a date, is it meant to result in a relationship, is it meant to result in a marriage or is it simply to develop companionship in this changing world. I think apps and platforms that promise finding the person to get married to are obviously overselling what they are capable of. I'd go so far as to say that even if they promise a great date. It takes a lot more to make a date memorable than the matching of characteristics in databases. I'd love to see an app that promises that the user would meet good people and that's it, because that's a promise that can be kept. </p>
+<h2>Target Audience</h2>
+<p>While some people may be looking at getting married, some may simply be looking for companionship or even to meet other singles because the conversations with their married friends maybe something they can't relate with anymore. I think it would be prudent to simply focus on the people looking to make friends. If something more were to develop from this, that's just the cherry on top and not the baseline expectation. </p>
+<p>This may also therefore not be an age or gender-related qualification. </p>
+<h2>Packaging</h2>
+<p>In my mind, the following are the core areas to keep in mind when designing a solution:</p>
+<h3>1. Security</h3>
+<p>As mentioned above, we need to make security the main focus area. We need to find ways to make sure that people feel confident when participating on a platform. Vetted profiles, membership through recommendations, attracting people through the right channels, etc. are some of the things that we can do to make sure of this.</p>
+<h3>2. Authenticity</h3>
+<p>While making an effort to make all the profiles on the platform look good, the authenticity of the profile must not be lost. There is a fine balance here that must be found. Maybe the profile is written by those trained in it, but there could also be a video that the user records of themselves saying things that should be added with it.</p>
+<h3>3. Matching</h3>
+<p>At the fundamental level this is a matching problem. There is a lot of noise to sift through to find good information and characteristics to match people against. People often lie about themselves in order to appear a certain way and no questionnaire can overcome this hurdle. Or, they may not express what they want for fear of being judged for it. Yet again, they may simply not know what they want. All of this makes the matching problem more difficult for any system, but not for machine learning systems. Building a good matching engine that powers all of this is therefore the most important task. And for this, we need as many signals and feedback as possible.</p>
+<h3>4. Efficiency</h3>
+<p>This is one of the most ignored metrics within this field. People spend inordinate amounts of time trying to find the right person that they would like to be with. This increases the fatigue that they face and makes a lot of people give up in the middle of the process. Any new system that is built should definitely consider making this entire process more efficient. The system should try to match a person with a group of people that they share common ground with. The individual they meet within that group that they connect with is almost unnecessary to focus on.</p>
+<h2>Pricing</h2>
+<p>Pricing will obviously play a key role here. Pricing can be used to create an elite group that keeps the non-serious participants out, but too high a price and it will become elitist and exclusionary. People should also not be paying for individual participation, but rather for a few different events together so that they interact repeatedly as that is key to the success of this program. </p>
+<hr />
+<p><img src="f9cca0fc_Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-highly-detailed-and.jpeg.webp"></p>
+<h1>Conclusion</h1>
+<p>The world is yearning for deeper connections. With the power of technology at our fingertips, it's time to harness it and create platforms that truly bring people together. We must seize this opportunity to build communities, foster companionship, and combat the growing loneliness in our society. It's time to reimagine dating platforms as platforms that serve this need, where the focus is on meeting good people and forming meaningful connections. Let's embrace the advancements in AI and recommendation engines to make this vision a reality. We have the tools, the potential, and the responsibility to improve the human connection. It's time to take action and create a platform that truly changes lives. It must be attempted because it is important to achieve.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>
