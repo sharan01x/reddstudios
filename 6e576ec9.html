@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution, Not Revolution | Redd XF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .header .date {
+            font-size: 0.8em;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+            <div class="floating-logo">
+                <a href="index.html">
+                    <img src="logo_b799f78b.png" alt="Redd XF Logo" class="logo-icon" />
+                </a>
+            </div>
+        
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>Evolution, Not Revolution</h1>
+                <div class="subtitle">How Gradual Progress Can Lead to Success in Product Design</div>
+                <div class="date">08 Sept 2025</div>
+            </div>
+
+            <div class="audio-section"><h3> Audio</h3><div class="audio-grid">
+                <div class="audio-item">
+                    <div class="audio-label">
+                        <i class="fas fa-volume-up"></i>&nbsp;Reader
+                    </div>
+                    <audio controls preload="metadata">
+                        <source src="6e576ec9_audio.mp3" type="audio/mpeg">
+                        Your browser does not support audio.
+                    </audio>
+                </div>
+            
+                <div class="audio-item">
+                    <div class="audio-label">
+                        <i class="fas fa-podcast"></i>&nbsp;Podcast
+                    </div>
+                    <audio controls preload="metadata">
+                        <source src="6e576ec9_podcast.mp3" type="audio/mpeg">
+                        Your browser does not support audio.
+                    </audio>
+                </div>
+            </div></div>
+
+            <div class="content">
+                <p>The Apple Newton was a revolutionary product that was packed with cutting edge technology like touch screens, handwriting recognition and wireless data transfer. It was well ahead of everyone else and was defining a brand new product category. It failed. But not only that, other companies launched only three years later with almost identical products ended up succeeding. This is one of the strangest things that seem to happen in product companies and I wish I had figured out the answer before I did, as it would have saved me making the same mistake two times. <img alt="Generated image" src="6e576ec9_20250927_175202.png" /></p>
+<h2>Obi: A Learning Experience</h2>
+<p>Ever since my twin and I learnt to program when we were 8 years old, we had been dreaming of producing products. Our first real product, one that was actually used by others, was an inventory management system built with Visual Basic 5. It was built for our family's jewellery store. We were in the ninth grade and were paid with <em>bhel puri!</em> It wasn't a lucrative project, but it was a delicious one. It was a thrill to see an entire store using and be dependent on our software!</p>
+<p>Later, around 2008, we had a second run at building another version of the inventory management system, when we had a custom software development company and were considering building a product  to help us scale our revenues. We looked at the competition and what they offered, their feature sets, their pricing methods and understood all the artificial boundaries they had in place and decided we could do better, way better.</p>
+<p>Our software, named Obi, would be the following:</p>
+<p>1. On the software side -- we would deliver a modern UX that any user could figure out how to use on their own. We didn't want to build the clunky software that required "training" that companies would charge handsomely for.</p>
+<p>2. On the pricing side -- we would deliver the software on the web (the term "cloud" hadn't been invented at this time) and charge per user without bifurcation within user types.</p>
+<p>3. On the upgrades front -- we wouldn't charge for upgrades. We just factored the cost of upgrading once a year and melded that into the monthly cost.</p>
+<p>There were several other aspects that were different in our case, but for the sake of brevity, we were doing exactly what SaaS companies do today.</p>
+<p>We went out the door and started talking to customers and waiting for the hordes to come and break our doors down. But, that didn't happen. The objections  we got from our customers were unsurmountable for a small software company like ours and after 1 year of running the operations and only a few clients to speak of, paying us a very small amount, we just couldn't sustain it any longer and had to shut down. This, despite a customer actually walking into our office and offering to pay us more than we asked so that he could keep using it at his store! </p>
+<p>I joined Adobe as a UX designer at the end of 2009 using Obi to demonstrate that I had the experience of building "beautiful software" (the UX term hadn't become well known at the time). </p>
+<p>Two years later, around 2010, most of the competitors had begun to do everything almost exactly as we had and found great success. It would have been more comforting if we had been completely wrong, but our predictions of the future came out to be exactly true. I heard someone say "Being too early is the same as being wrong". While they described my problem perfectly, I still didn't know what the solution was. I needed to break down what "being early" was. In the relative stability of a 9 to 5 job, I finally figured it out.</p>
+<h2>The Existing Environment</h2>
+<p>An innovator imagines that their ability to look far into the future is what gives them an edge. We build the vision of the future based on a series of logical milestones, and arrive at the shape of what we believe is the future. The fault in our approach was that we didn't consider their existing environment in which our potential customers exist, which is integral to the decisions they make.</p>
+<p>For example, we were right in assuming that most software of the future would be web based because it not only solves the need for installation, but also makes it simple for upgrades and makes the system infinitely more accessible from anywhere on the planet. But our customers lived in a world where nearly all software was sold on CDs that they could hold in their hands. It gave them the confidence that they would always have and be able to use it whereas something on the web could disappear tomorrow. </p>
+<p>They were also transitioning from a world that believed software wasn't something one paid for leave alone pay in perpetuity for. They also believed that choosing to upgrade was meant to be optional. "Normal" upgrade cycles were once a year and done only when they saw that new version had a lot of improvements over the existing one. They wanted to be able to compare and then make the choice to upgrade or not.</p>
+<p>They also saw the training was an essential service that a software developer had to provide because in their experience, they had always used clunky software that required that training. No upstart like us would come and shake that notion with our fancy user-oriented design. But having the infrastructure to provide the training was also a signal that indicated that we were big enough to be around in the future. Inventory management systems are a core part of the operation of a company, so this was an assurance that they would need before they switched to using our software.</p>
+<p>It's quite interesting that I find a lot of parallels exist between architecture and product design. There is a famous quote by Eliel Saarinen, the architect, that goes, “Always design a thing by considering it in its next larger context—a chair in a room, a room in a house, a house in an environment, an environment in a city plan.” He really was onto something there. </p>
+<h2>The Comfort of the Status Quo</h2>
+<p>Obi was different in all these respects. It was new and different on too many fronts all at once. In a sales cycle, we may have the opportunity to counter one or two of the objections that a potential customer may pose to us, but if there are so many different aspects that they have to wrap their heads around, then the default decision is to maintain status quo and reject the offer. </p>
+<p>Customers will make the effort of doing the cognitive work if the end result is something that is 10X better than the current situation not when something is only a moderate improvement over the existing solution. In our case with Obi, we were doing a lot of things differently, but the end result was that the customer would still only be able to manage their inventory a little more efficiently, nothing changed apart from that. </p>
+<p>There's the old adage, <em>"One can only be wrong if they try to do something."</em> (which is an interesting antonym of <em>"Only those who try can succeed"</em> which is meant to motivate entrepreneurs, but that's a different discussion altogether). In other words, we simply didn't offer the user a big enough of a reason to experiment with so many different variables. All they'd see at the end was a modest improvement in the operation and a reduction in cost that didn't really make a difference to their profits.</p>
+<h2>The EnR Framework</h2>
+<p>Given this understanding I began to work on a framework that would allow us to chart a course for how to develop products. </p>
+<p>Starting with a vision of the future is good. It works well as a goal to shoot for but also solves the "faster horses" problem, as the Henry Ford quote goes. No one but the innovator can dream up a future vision of a product. Only solid domain expertise will allow us to see that.</p>
+<p>But once that vision is well understood, the next step is actually to chart a course from the present to that future. You can do that by creating milestones that take into consideration what the current environment is and makes tweaks that will get you from the present to the next milestone. Each milestone makes one change and one change only. This will afford time for the environment to catch up and the user to be brought along the path making only minor changes to their understanding each time. </p>
+<p>It also makes sense to poll users on their opinions of the features developed at this resolution because these changes are gradual. The feedback can be integrated into the development of the next milestone even making fixes wherever required. Before long, we'd have arrived safely at the future you had imagined long ago. This way of getting to that future is a more resilient option as well as it will be on solid footing each time.</p>
+<p>But this framework is heavily dependent on a strong feedback mechanism that allows you to hear from users often and in large numbers. I'll cover more about this in a future article. This framework is also not useful in some leapfrog products such as ChatGPT or the like that had no precedents. So it is not useful in those situations.</p>
+<h2>Conclusion</h2>
+<p>The 'Evolution, not Revolution' framework is an important concept in design and innovation that I had to develop in order to handle my work in product design.</p>
+<p>If Apple had launched Newton at a lower price point that validated whether someone would want a PDA, they may have given themselves the opportunity to validate that idea before packing in expensive touchpad technology or handwriting recognition. If they had done that, they may have not only cornered the PDA market but could very well have entered the mobile phone market about 15 years before they actually did. </p>
+<p>I hoped they'd have learnt their lesson from previous mistakes, but we're seeing instead that they're repeating them with the Vision Pro. The platform has some great potential, so I hope they fix things soon.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>
