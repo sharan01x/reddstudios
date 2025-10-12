@@ -5,9 +5,17 @@
         <link>https://redd.in</link>
         <description>A space for ideas, opinions and experiments</description>
         <language>en-us</language>
-        <lastBuildDate>Sun, 12 Oct 2025 17:27:29 </lastBuildDate>
+        <lastBuildDate>Sun, 12 Oct 2025 17:43:16 </lastBuildDate>
         <managingEditor>sharanx</managingEditor>
         <atom:link href="https://redd.in/rss.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Evolution, Not Revolution</title>
+            <link>https://redd.in/6e576ec9.html</link>
+            <description>How Gradual Progress Can Lead to Success in Product Design</description>
+            <guid isPermaLink="true">https://redd.in/6e576ec9.html</guid>
+            <pubDate>Mon, 08 Sep 2025 20:08:14 </pubDate>
+            <dc:creator>sharanx</dc:creator>
+        </item>
         <item>
             <title>8 Crucial Insights from Building an AI-Infused App</title>
             <link>https://redd.in/3e62d0c6.html</link>
