@@ -44,12 +44,117 @@
             font-size: 1.8em;
             color: #999;
             font-weight: 400;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
         }
 
-        .header .date {
-            font-size: 0.8em;
-            color: #333333;
+        /* Tags Display (below subtitle) */
+        .tags-display-view {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag-chip-view {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #f0f0f0;
+            color: #666;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Author & Date Display */
+        .article-metadata {
+            padding: 1rem 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .author-date-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .authors-byline {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .author-info-display {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .author-separator {
+            color: #666;
+            margin: 0 0.25rem;
+        }
+
+        .author-avatar-small {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .author-icon {
+            font-size: 1.75rem;
+            color: #666;
+        }
+
+        .author-name-display {
+            font-weight: 600;
+            color: #242424;
+            font-size: 0.95rem;
+        }
+
+        .author-socials {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            color: #999;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: #242424;
+        }
+
+        .social-icon i {
+            font-size: 0.95rem;
+            color: inherit;
+        }
+
+        .date-display {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            margin-left: auto;
+        }
+
+        .date {
+            color: #242424;
+            font-size: 0.95rem;
             font-weight: 600;
         }
 
@@ -349,8 +454,10 @@
             <div class="header">
                 <h1>DIY: A Raspberry Pi based Time Capsule</h1>
                 <div class="subtitle">I built an efficient Apple Time Capsule clone that will perform the task of allowing any externally connected hard drive to be used as a backup destination using the Time Machine setup on your Mac.</div>
-                <div class="date">04 Aug 2024</div>
+                <div class="tags-display-view"><span class="tag-chip-view">DIY</span><span class="tag-chip-view">product</span><span class="tag-chip-view">design</span></div>
             </div>
+            
+            <div class="article-metadata"><div class="author-date-row"><div class="authors-byline"><span class="author-info-display"><img src="profile_43f164ef.jpeg" alt="sharanx" class="author-avatar-small" /><span class="author-name-display">sharanx</span><span class="author-socials"><a href="https://warpcast.com/sharanx" target="_blank" rel="noopener noreferrer" class="social-icon" title="farcaster: sharanx"><i class="fas fa-circle-nodes"></i></a><a href="https://hey.xyz/u/sharan" target="_blank" rel="noopener noreferrer" class="social-icon" title="lens: sharan"><i class="fa-solid fa-camera"></i></a><a href="https://linkedin.com/in/sharangrandigae" target="_blank" rel="noopener noreferrer" class="social-icon" title="linkedin: sharangrandigae"><i class="fab fa-linkedin"></i></a><a href="https://mastodon.social/@sharanx" target="_blank" rel="noopener noreferrer" class="social-icon" title="mastodon: sharanx"><i class="fa-brands fa-mastodon"></i></a><a href="https://twitter.com/sharan01x" target="_blank" rel="noopener noreferrer" class="social-icon" title="twitter: sharan01x"><i class="fab fa-twitter"></i></a></span></span></div><div class="date-display"><span class="date">04 Aug 2024</span></div></div></div>
 
             
 

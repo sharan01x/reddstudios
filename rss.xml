@@ -9,7 +9,7 @@
     <description>Building startups, pushing pixels, slicing videos, compiling code or writing verse. This is a space for experimentation with ideas.</description>
     <language>en-us</language>
     <pubDate>Mon, 08 Sep 2025 20:08:14 +0000</pubDate>
-    <lastBuildDate>Sun, 12 Oct 2025 17:05:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Oct 2025 17:43:25 +0000</lastBuildDate>
     <generator>Move37 Blog Publisher</generator>
     <atom:link href="https://redd.in/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -661,6 +661,71 @@
 </div>]]></content:encoded>
     </item>
     <item>
+      <title>A Curated List of Videos to Understand Crypto</title>
+      <link>https://redd.in/dd39fcda.html</link>
+      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
+      <dc:creator><![CDATA[sharanx]]></dc:creator>
+      <guid isPermaLink="false">https://redd.in/dd39fcda.html?p=dd39fcda</guid>
+      <description><![CDATA[This list of videos will help you understand crypto and Web3 better.]]></description>
+      <content:encoded><![CDATA[<div class="content">
+<h1>The Basics of Crypto</h1>
+<p>The following is a collection of great videos to watch to understand the field of crypto and Web3. I hope to keep this updated with new things I learn.</p>
+<h2>Economics Concepts (Yes, start here)</h2>
+<ol>
+<li>What is money? <a href="https://youtu.be/rubNhvbuBI8">Short version</a>, <a href="https://youtu.be/bjvMt0xaSUQ">medium version</a> and the <a href="https://youtu.be/d_34YjXAU5Y">long version</a>.</li>
+<li>How is money created? <a href="https://youtu.be/mzoX7zEZ6h4">https://youtu.be/mzoX7zEZ6h4</a></li>
+</ol>
+<h2>Blockchain Concepts</h2>
+<ol>
+<li>What is a blockchain? The <a href="https://youtu.be/hYip_Vuv8J0">concept</a> and the <a href="https://youtu.be/SSo_EIwHSd4">visual example</a> and <a href="https://youtu.be/_160oMzblY8">a demo</a></li>
+<li>What is a Bitcoin? <a href="https://youtu.be/bBC-nXj3Ng4">https://youtu.be/bBC-nXj3Ng4</a></li>
+<li>Consensus mechanisms: <a href="https://youtu.be/M3EFi_POhps">Proof of Stake vs. Proof of Work</a> and <a href="https://youtu.be/3QCykHU89To">other mechanisms</a></li>
+<li>What are smart contracts? <a href="https://youtu.be/ZE2HxTmxfrI">Visual explanation</a></li>
+<li>What are NFT’s? <a href="https://youtu.be/451V-lBLfuo">Basic</a> and <a href="https://youtu.be/4dkl5O9LOKg">more detailed</a></li>
+</ol>
+<h2>Additional Information</h2>
+<ol>
+<li>The evolution of the web: <a href="https://youtu.be/RXHITeaGB8Q">With Marc Andreesen and Chris Dixon</a></li>
+<li>Mental models to understand Web3: <a href="https://youtu.be/jezH_7qEk50">By Chris Dixon</a></li>
+<li>A good overview of the crypto industry: <a href="https://youtu.be/2wxtiNgXBaU">By Chris Dixon</a></li>
+<li>Future of Applications: By <a href="https://youtu.be/3jPYk7ucrjo">Balaji Srinivasan</a></li>
+</ol>
+<hr/>
+<h1>Glossary of Terms to Understand</h1>
+<p>| Wallets                 | The software that allows you to interact with a blockchain and stores your private key to encrypt messages and public keys to decrypt them                                                                                                                                                                      |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hardware Wallets        | Software wallets that are running on independent devices and are considered more secure as they cannot be hacked remotely                                                                                                                                                                                       |
+| Private and Public Keys | A long set of hexadecimal numbers that can be used to cryptographically sign transactions. The Private Key is used to encode a message (or transaction) and the public key can be used to decrypt that message.                                                                                                 |
+| Coins                   | A unit of account on a blockchain that is usually used to pay for conducting operations on that chain. For example Bitcoin, Ethereum and Atom.                                                                                                                                                                  |
+| Tokens                  | It is a unit of account created for specific use that is based on the code of a different coin and therefore doesn’t have a blockchain of its own. For example Matic, DAI, UNI, etc.                                                                                                                            |
+| Alt Coins               | Anything that’s not Bitcoin                                                                                                                                                                                                                                                                                     |
+| Shit Coins              | Any coin that doesn’t have good fundamentals and instead probably built to simply pump its value and dump it on the market. Doge coin is a prime example.                                                                                                                                                       |
+| Metamask                | A software wallet that is used as a browser plug-in                                                                                                                                                                                                                                                             |
+| HODL                    | Means Hold On for Dear Life. It is an investment strategy where people buy a coin and hold on to it for many years instead of selling it.                                                                                                                                                                       |
+| WAGMI                   | “We Are Going to Make It” or “We All Gonna Make It”. A positive affirmation.                                                                                                                                                                                                                                    |
+| BTFD                    | Buy The F*&amp;king Dip. An indication to buy a token or coin when the prices are low.                                                                                                                                                                                                                              |
+| BUIDL                   | Build, spelt differently to indicate building in Web3                                                                                                                                                                                                                                                           |
+| Bear Market             | When sentiments in the market are low                                                                                                                                                                                                                                                                           |
+| Bull Market             | When sentiments in the markets are high and when new all-time-high’s are usually being hit                                                                                                                                                                                                                      |
+| Layer 1 Chains          | Blockchains that are the final settlement layers and provide their own security                                                                                                                                                                                                                                 |
+| Layer 2 Chains          | Blockchains built on top of L1 chains that usually do not perform their own security or finality and are instead built to handle fast and cheap transactions                                                                                                                                                    |
+| App Chains              | Application specific blockchains as opposed to general purpose blockchains                                                                                                                                                                                                                                      |
+| DEX                     | Decentralised Exchanges. They are typically exchanges where one coin or token can be changed for another coin or token. They usually do not have any KYC requirements. For example UniSwap, SushiSwap, DYDX.                                                                                                    |
+| CEX                     | Centralised Exchanges where the same operations as DEX’s can take place. They usually have KYC requirements and make it simpler for new users.                                                                                                                                                                  |
+| Stable Coins            | Any coin whose value is pegged to a US dollar or any other Fiat currency. They have properties of tokens so that they can be used in crypto transactions (as Fiat currencies can’t be used in this way). But their value is based on the real-world value of the Fiat currency it represents.                   |
+| DeFi                    | Decentralised Finance. It represents an industry within crypto that is trying to build equivalent infrastructures that are present in traditional finance institutions like banks. They enable people to deposit their currencies and earn interest, lend their money to others, borrow money from others, etc. |
+| Cefi, TradFi            | The slang for centralised finance or traditional finance                                                                                                                                                                                                                                                        |
+| Staking                 | The act of securing a Proof of Stake network by depositing coins into staking pools                                                                                                                                                                                                                             |
+| Delegation              | If the amount of a coin or token you have is low and you can’t meet the minimum requirements of staking, you can delegate your tokens to someone else and they will then stake your tokens once they have the required number of tokens.                                                                        |
+| Liquidity Pools         |                                                                                                                                                                                                                                                                                                                 |
+| Automatic Market Makers |                                                                                                                                                                                                                                                                                                                 |
+| The Merge               | This is the point where the Ethereum blockchain switched its consensus mechanism from Proof of Work to Proof of Stake. It was a major milestone and therefore got a name.                                                                                                                                       |
+| ERC20                   | A coding standard for tokens that are built on the Ethereum blockchain. Examples of this include ETH, OP, ARB and others.                                                                                                                                                                                       |
+| ERC 721                 | A coding standard for NFT’s that are built on the Ethereum blockchain. This is usually used when you have only one copy of an NFT, called “1 of 1”. Usually used to represent ownership of expensive objects.                                                                                                   |
+| ERC 1155                | A coding standard for NFT’s that are built on the Ethereum blockchain. It is usually used when multiple copies of an NFT are produced by the creator.                                                                                                                                                           |</p>
+</div>]]></content:encoded>
+    </item>
+    <item>
       <title>Review of the Rabbit R1</title>
       <link>https://redd.in/3eb3bbbb.html</link>
       <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
@@ -1045,106 +1110,6 @@
 </div>]]></content:encoded>
     </item>
     <item>
-      <title>Lenskart</title>
-      <link>https://redd.in/1fa29c9a.html</link>
-      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
-      <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/1fa29c9a.html?p=1fa29c9a</guid>
-      <description><![CDATA[Project walkthrough]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<div style="display: table-row;">
-<div style="display: table-cell; width:25%;">
-<b>Client</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Industry</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Year</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Deliverables</b>
-</div>
-</div>
-<div style="display: table-row;">
-<div style="display: table-cell;">
-Lenskart
-</div>
-<div style="display: table-cell;">
-Prescription Glasses<br/>
-Sunglasses<br/>
-Contact Lenses
-</div>
-<div style="display: table-cell;">
-2018
-</div>
-<div style="display: table-cell;">
-Website design<br/>
-Communications
-</div>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>FIS Mobile Banking</title>
-      <link>https://redd.in/1023569b.html</link>
-      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
-      <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/1023569b.html?p=1023569b</guid>
-      <description><![CDATA[<div style="display: table;width: 100%;">]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<div style="display: table-row;">
-<div style="display: table-cell; width:25%;">
-<b>Client</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Industry</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Year</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Deliverables</b>
-</div>
-</div>
-<div style="display: table-row;">
-<div style="display: table-cell;">
-FIS Solutions
-</div>
-<div style="display: table-cell;">
-Core banking application for rural bankers
-</div>
-<div style="display: table-cell;">
-2017-2018
-</div>
-<div style="display: table-cell;">
-Tablet App Design<br/>
-Mobile App Design
-</div>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Design Must Humanise Technology</title>
-      <link>https://redd.in/9f31ab4a.html</link>
-      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
-      <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/9f31ab4a.html?p=9f31ab4a</guid>
-      <description><![CDATA[Technology must function within the world of regular people]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<p>To humanise technology is to make technology function within the framework defined by the capabilities and limitations of regular people. </p>
-<p>For a long period of history technology concerned itself with the development of tools that made things faster, better or cheaper. As a result, we began communicating with more people, exposing ourselves to and processing more information, increased our area of influence and in general became more productive. We began to achieve things in seconds that would otherwise take us hours or days before. </p>
-<p>Take for example a farmer in the 18th century needing to learn about the best times to sow and harvest a crop, he would have to ask around, find someone who knew of anyone who grew that crop, physically walk the miles to meet the person and then learn about it. It would normally have been more than a day’s task. It’s not necessary to mention that a farmer today with the same problem can solve all of this in a matter of minutes by looking things up on the net or sending a message over email. His days have suddenly opened up and he can do a lot more.</p>
-<p><img src="9f31ab4a_Humanise-2.webp"/></p>
-<p>Technology kept getting better and enabling us to do more. But today, one can argue that we’ve filled the cup of human capabilities to the brim. We are inundated with messages, notifications, emails, news feeds, phone calls and so much more on a daily basis. We are expected to be more productive, make more decisions and provide our attention to a lot more things than we ever used to. And it all has happened in a rather short period of time and our bodies and minds haven’t had the time in an evolutionary scale to adapt to it. Consequently, we are seeing greater number of cases of attention deficit disorders, of depression, of stress resulting in greater strains on inter-personal relationships. We as a species are just not able to keep up with the speed and quantum that technology can produce today. </p>
-<p>To understand this better, consider the sequence of events when you receive an email. A red badge pops up over the application icon attracting your attention to it, a notification on your desktop may pop-up offering you a quick preview of what the message says and if you’re like many people today, you probably have your phone also hooked up to the mail service and you get the same notifications on that device too. If you’re using a smartwatch, then you add one more device that’s attracting your attention to the same email. Your mind suddenly registers a sense of urgency given that all so many of these things are telling you about this mail. Even if you are aware consciously that it’s just an email, it nevertheless succeeds at least in creating a nagging sensation in your mind until you deal with it — even if it is a discount coupon for some new offer on a shopping site that you couldn’t care less about.</p>
-<p><img src="9f31ab4a_Humanise-3.webp"/></p>
-<p>This feeling you may have experienced is by no means a trivial one. It is so common that there have been several articles talking about methods to achieve the “zero inbox”, a supposed ideal state where you have no emails left unanswered in your inbox. There have been CEO’s writing about the tricks they’ve used and there have also been applications that claim to help you achieve that ideal. A lot of people in companies also associate their sense of how productive they’ve been based on the achievement of this goal. The goal seems to be to find a stable stance in front of the door while ignoring the fact that there is a full-size battle tank on the other side! We don’t have a fighting chance.</p>
-<p>To humanise email technology would be to design the emailing process with the goal of accommodating email into the users life without disrupting it. What if we kept in mind the following questions when designing the email system: What does the user go through when an email is received? How much is he or she actually capable of doing? How much rest does the person require between tasks? Is now the best time to notify the user of a new email? Does the user really need to be notified of this email? Can the application provide assistance by presenting it in a form that is easy for the human to make decisions on, like presenting them with the possible responses included? Instead of acting like a petulant child that is begging for attention all the time, can we fashion the email system like a well-mannered adult that sought your attention only when it knew you’re free?</p>
-<p>Given the arc on which technology is progressing into the future, it is imperative that we as designers find ways to make technology more palatable to human beings and accommodate it into their lives instead of the other way around. And that’s precisely our goal here at Redd.</p>
-</div>]]></content:encoded>
-    </item>
-    <item>
       <title>The UX Problem with the Voting System in India</title>
       <link>https://redd.in/606545a5.html</link>
       <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
@@ -1188,6 +1153,58 @@ Mobile App Design
 </ol>
 <h1>CONCLUSION</h1>
 <p>There may well be other better-suited models of voting but by applying UX design principles to our voting methods, it is, in fact, possible to develop a system that allows the voter’s voice to be truly heard. It would not only reflect the actual democratic choice of the citizens, but also benefit our nation as a whole. As one of the few countries that has electronic voting, it would pave the way for India to be a more authentic democracy as well as the largest.</p>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Seven Structural Elements to Keep in Mind for Web3 UX Design</title>
+      <link>https://redd.in/ae374ed1.html</link>
+      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
+      <dc:creator><![CDATA[sharanx]]></dc:creator>
+      <guid isPermaLink="false">https://redd.in/ae374ed1.html?p=ae374ed1</guid>
+      <description><![CDATA[The structure of web3 influences the design of the applications]]></description>
+      <content:encoded><![CDATA[<div class="content">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/b1EKFhTJfdk?si=4zbUpZP9iV4fz326" title="YouTube video player" width="560"></iframe>
+<h1>Introduction</h1>
+<p>Web3 is a decentralised internet powered by cryptography and blockchain technology that allows for transacting with any entity in the world without the need for trusted middle men. It has specific uses in fields where having a trusted third-party middleman may prove to be corruptible, inefficient or expensive. But far too often UX designers are starting from equivalents in Web2 creating poor user experiences.</p>
+<h1>Unique Elements</h1>
+<p>There are several effects that the difference between these two structures affect the UX of applications built on top and the following are some main differences that UX designers must account for while designing Web3 applications:</p>
+<h2>1.  DECENTRALISATION IS SLOW AND EXPENSIVE</h2>
+<p>Since nodes in Web3 are distributed and are of different technical capabilities, data transmission across the network takes a lot of time compared to centralised systems. These processes can cause delays on the application layer, making them slow and expensive. In order to combat this, transactions are bunched up together before being written to the blockchain as a single write operation if far less expensive than several transactions writing the same amount of data.</p>
+<p>It’s therefore essential for a UX designer designing applications to decide which data needs to be written to the blockchain and also when in a user’s sessions that needs to happen. For instance, in building a decentralised version of Instagram, would you record every “like” of the user as they occur, or collect all of them and commit them only at the end of the user’s session?</p>
+<p>Many applications also adopt a Web2.5 design approach, where less critical interactions such as “likes” are stored on a centralised server for faster processing, while more critical data, such as who posted which picture, is written to the blockchain.</p>
+<p>But there may other approaches that suit your applications and the right solution would entirely depend on the specifics.</p>
+<h2>2. THE BLOCKCHAIN HAS THE DATA</h2>
+<p>One of the most surprising ideas to me was that in the Web2 world, an application typically includes both a front-end and a back-end/storage layer delivered as an app. However, with data and storage openly available on a blockchain, the user interface and user experience <strong>is</strong> the application. This means that someone else could write a new UX layer for the same data, and the user could choose which application interface they prefer, losing nothing when switching between apps.</p>
+<p>So, what’s the knock-on effect of this? It makes the UX layer super competitive, and the quality of experiences will only improve going forward. The app no longer stands for how well it manages to hoard and guard user data, but rather how good the experience is.</p>
+<h2>3. IT’S COMMUNITY OWNED</h2>
+<p>Unlike products and services in Web2 that are owned by corporations driven by the interests of investors and shareholders, Web3 has “projects” and “protocols” that are owned by communities, not individuals, due to the philosophy of decentralisation.</p>
+<p>While there are participants attempting to amass wealth rather than distribute it to the community, more and more projects are evaluated on their decentralisation and ownership distribution. This impacts how things are designed because in traditional Web2 UX design, a good designer tries to balance the user’s needs against the needs of the company. However, in Web3, the success of the project is aligned with its users, as they hold the tokens and assign them their value.</p>
+<p>With data no longer locked into an app residing in a database, it brings honesty to the equation. Apps that prioritise user interests will win in the future. App that use dark UX patterns to deceive users will not be successful in Web3.</p>
+<h2>4. NO COMMUNICATION CHANNELS EXIST, YET</h2>
+<p>In Web3, there is a lack of email or chat communication tools for peer-to-peer communication, and there is no de-facto protocol that can be assumed to be universally subscribed to such as email in Web2. Although tools like Push protocol and EthMail exist, they are not yet widely used and cannot be relied on for communication. This means that if someone buys something from your Web3 marketplace, there is currently no way to follow up with them to update them on the status of their purchase or to fix any issues, and they must come back and check with you.</p>
+<p>Asking for their email address is not always an option, as it could compromise their pseudonymity, allowing you to connect their email address to their wallet and potentially uncover all their blockchain activities. Therefore, it is important to design around this depending on the context.</p>
+<p>What I did on one project where a certain process would take upwards of a few days to complete was to allow the user to download a calendar appointment that stated when they needed to come back and check on the status of this process. You just need to be innovative about how to solve these kinds of problems.</p>
+<h2>5. THE WALLET IS EVERYTHING</h2>
+<p>In Web3, everything is based on cryptography using the concept of a pair of public and private keys. This provides users with pseudonymity, but not anonymity, in an otherwise transparent and open world. These keys are essential not only for authorising payments but also for verifying wallet ownership, interacting with smart contracts and linking all purchases to the wallet. Essentially, everything is connected to the wallet.</p>
+<p>However, this user-facing aspect of Web3 is largely unfamiliar to most people. Although it is vitally important to understand, most people do not know what these keys are. Losing or exposing the private key can result in the loss of all assets tied to it. Therefore, this area requires considerable design intervention to help people understand the significance of the keys, the right way to generate key pairs and the proper ways to store and protect them.</p>
+<p>Then comes the usage of the wallet itself. It is used to sign messages from applications to authenticate yourself and also authorise transactions being made on your behalf. But these messages keep popping up with messages asking you permission for something reminding me of the early days of Windows 10 where the user kept getting asked to authorise even the most banal tasks. A lot more polish is required to only seek the user’s attention when you absolutely need it.</p>
+<p>The technology is still so new that sometimes the messages from the underlying stack are exposed to the user, and they are presented with only hexadecimal code, asking them to sign the transactions. Wallet developers have a lot of work to do to make this a lot more user-friendly.</p>
+<h2>6. SMART CONTRACTS RULE</h2>
+<p>This is another concept in Web3 that has no equivalent in Web2. Smart Contracts are computer essentially programs that run on a network that was created to enforce an agreement between two parties. This means that two parties can rely on a transaction completing as agreed without the need for third-party guarantors and any associated expenses or delays, making transactions more efficient.</p>
+<p>However, since Smart Contracts are written in code and they can be difficult for people to understand. Although the code behind these contracts can be viewed on blockchain explorers, more work needs to be done to make them accessible to the mainstream. When this happens, it will revolutionise everything!</p>
+<h2>7. CENSORSHIP IS DONE DIFFERENTLY</h2>
+<p>In Web2, platforms that are owned by individuals or a small group have another problem in that they are also held responsible for implementing the censorship on them. In theory this sounds okay and the obvious thing to do, but if you explore this question more closely, there are many problems with this supposition:</p>
+<ol>
+<li>They may very well be ill-suited to doing the job and may end up censoring things that shouldn’t have been censored excluding ideas that shouldn’t be excluded.</li>
+<li>They have no option but to impose their world views on their systems and if they have a very large world-wide user-base, they will essentially be imposing their views on all of them superseding what’s culturally right.</li>
+<li>Because they’re a central authority that can make these changes, they may be pressured by external individuals or groups to impose censorship that they themselves may not agree with.</li>
+<li>There is always the question of “But what about the children?” that sneaks into every conversation about censorship and since there’s no argument against that, the lowest common denominator is set as the bar.</li>
+</ol>
+<p>The political leanings of a platform have been the reason for new ones to be setup creating silos and echo chambers that only confirm your already held beliefs without public discourse or the meeting of minds in the middle. This technology has the potential to fracture societies instead of bringing them together.</p>
+<p>Web3 has a different architecture that does not have central authorities that can censor others, making it a haven for free speech absolutists. Adults who believe they should be exposed to all kinds of ideas to progress in life can do so without censorship. For individuals who want a certain level of censorship, they can choose to use a filter and block certain types of content. This step allows individuals to make their own choices without resorting to drastic measures of stifling someone’s voice or de-platforming them. Although it is not a whole solution, it is a step in the right direction. A lot of work has to be done in this field in terms of making this UX better.</p>
+<h1>Conclusion</h1>
+<p>A decentralised internet can solve a lot of the issues that plague the world right now and give rise to new ways of interacting with others around the world. For this to become a reality, it needs mass adoption and the only thing stopping it is the complexity. User Experience designers can make a huge difference to adoption by making things much simpler for the everyday user. So if you’re a designer on this journey, kudos to you, you’re making a huge difference to the world.</p>
+<p>However, things need to be evaluated from the ground up based on the underlying decentralised architecture in order to deliver superlative experiences that are either at par or even better than the Web2 versions as this is indeed possible.</p>
 </div>]]></content:encoded>
     </item>
     <item>
@@ -1346,45 +1363,6 @@ Mobile App Design
 </div>]]></content:encoded>
     </item>
     <item>
-      <title>Cloudnine Hospitals</title>
-      <link>https://redd.in/2de0bd53.html</link>
-      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
-      <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/2de0bd53.html?p=2de0bd53</guid>
-      <description><![CDATA[<div style="display: table;width: 100%;">]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<div style="display: table-row;">
-<div style="display: table-cell; width:25%;">
-<b>Client</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Industry</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Year</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Deliverables</b>
-</div>
-</div>
-<div style="display: table-row;">
-<div style="display: table-cell;">
-Cloudnine Hospitals
-</div>
-<div style="display: table-cell;">
-Specialty Chain of Birthing Hospitals
-</div>
-<div style="display: table-cell;">
-2018-2019
-</div>
-<div style="display: table-cell;">
-3 Apps Designed<br/>
-Service Design
-</div>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
       <title>Generative AI Art Experiments</title>
       <link>https://redd.in/d8ae5f1e.html</link>
       <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
@@ -1392,7 +1370,6 @@ Service Design
       <guid isPermaLink="false">https://redd.in/d8ae5f1e.html?p=d8ae5f1e</guid>
       <description><![CDATA[Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Here are my experiments.]]></description>
       <content:encoded><![CDATA[<div class="content">
-<hr/>
 <h1>Introduction</h1>
 <p>Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Being able to imagine something and bring it to life in the form of an image or video is a tempting prospect. While one part of the design world lamented the fact that these tools may replace our roles, I belong to the small minority that looks at these new technologies with the hope that it would lead to better design. I could after all never call myself a designer if I had never run into Photoshop all those years ago.</p>
 <p>So I dove in head-first into figuring out what this new frontier holds for us. This is an on-going experiment and I am just documenting my learnings as I go along.</p>
@@ -1417,16 +1394,8 @@ Service Design
 <li>AI art is dividing the world into the group that thinks this is art and the group that thinks it isn’t</li>
 <li>No one expected AI would set its sights on the creative fields first.</li>
 </ol>
-<div style="display: table;">
-<div style="display: table-row;">
-<div style="display: table-cell;">
-<img alt="Image 1" src="d8ae5f1e_GenerativeAIArt-2.webp"/>
-</div>
-<div style="display: table-cell;">
-<img alt="Image 2" src="d8ae5f1e_GenerativeAIArt-3.webp"/>
-</div>
-</div>
-</div>
+<p><img alt="Image 1" src="d8ae5f1e_GenerativeAIArt-2.webp"/></p>
+<p><img alt="Image 2" src="d8ae5f1e_GenerativeAIArt-3.webp"/></p>
 <h1>February 2023: MidJourney</h1>
 <p>I ran into MidJourney back in late 2022 through a colleague who was using it to create some artwork that I was quite impressed with. I thought to try it out but the version that existed at the time was just not that great with the simple “prompts” I was able to provide it. It took too many tries and much too long to generate something just remotely close to what I wanted.</p>
 <p>I saw others developing images that looked a lot better and saw what they had prompted MJ in order to produce it. I copied one of them that had produced a very cool image of a cat to produce an image of a dog. My dog image had three eyes!</p>
@@ -1451,33 +1420,13 @@ Service Design
 <li>Stable Diffusion came onto my radar as a platform that provides us more control within the AI generative tools space. So I started exploring that next.</li>
 </ol>
 <h3>‘SCRIBE’ CHARACTERS CREATED WITH BLENDER</h3>
-<div style="display: table;">
-<div style="display: table-row;">
-<div style="display: table-cell;">
-<img alt="Image 1" src="d8ae5f1e_GenerativeAIArt-4.webp"/>
-</div>
-<div style="display: table-cell;">
-<img alt="Image 2" src="d8ae5f1e_GenerativeAIArt-5.webp"/>
-</div>
-<div style="display: table-cell;">
-<img alt="Image 3" src="d8ae5f1e_GenerativeAIArt-6.webp"/>
-</div>
-</div>
-</div>
+<p><img alt="Image 1" src="d8ae5f1e_GenerativeAIArt-4.webp"/></p>
+<p><img alt="Image 2" src="d8ae5f1e_GenerativeAIArt-5.webp"/></p>
+<p><img alt="Image 3" src="d8ae5f1e_GenerativeAIArt-6.webp"/></p>
 <h3>‘SCRIBE’ CHARACTERS CREATED WITH MIDJOURNEY 5.0</h3>
-<div style="display: table;">
-<div style="display: table-row;">
-<div style="display: table-cell;">
-<img alt="Image 1" src="d8ae5f1e_GenerativeAIArt-7.webp"/>
-</div>
-<div style="display: table-cell;">
-<img alt="Image 2" src="d8ae5f1e_GenerativeAIArt-8.webp"/>
-</div>
-<div style="display: table-cell;">
-<img alt="Image 3" src="d8ae5f1e_GenerativeAIArt-9.webp"/>
-</div>
-</div>
-</div>
+<p><img alt="Image 1" src="d8ae5f1e_GenerativeAIArt-7.webp"/></p>
+<p><img alt="Image 2" src="d8ae5f1e_GenerativeAIArt-8.webp"/></p>
+<p><img alt="Image 3" src="d8ae5f1e_GenerativeAIArt-9.webp"/></p>
 </div>]]></content:encoded>
     </item>
     <item>
