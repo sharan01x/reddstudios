@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-15T13:09:58.746787+00:00",
+  "last_updated": "2025-10-15T13:12:18.540174+00:00",
   "files": {
     "6e576ec9.html": {
       "checksum": "4c56e1446d0b87cde80302b1f1cd862ce7b7f7912732afa54dfdb3b5f41771b6",
@@ -38,16 +38,34 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "a759d29542c9335b012810917a6e22d101ad5a16bc4b0946aaaf343ec6d86b2f",
-      "size": 10924,
-      "modified": "2025-10-15T13:09:58.742169+00:00",
+      "checksum": "17eab38912ed28cc74a599c1af9b4e818643992029108f90fe3860242eb65b60",
+      "size": 11436,
+      "modified": "2025-10-15T13:12:18.532591+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "bf76fb7cec0b2e0b3e2a69786e4812a94efb40f5e6c17cf5fe79e78f73b86d65",
-      "size": 11266,
-      "modified": "2025-10-15T13:09:58.746571+00:00",
+      "checksum": "d5193c44079c77f5d846eea7ea39176be263495decbfd6a391ce84fe3376ab7e",
+      "size": 16622,
+      "modified": "2025-10-15T13:12:18.539927+00:00",
       "type": "rss"
+    },
+    "9f31ab4a.html": {
+      "checksum": "5c6553b181753c6b5fbd73152bcb770a6809684d675e45d9fbf1175778cb5616",
+      "size": 17359,
+      "modified": "2025-10-15T13:12:18.522010+00:00",
+      "type": "article"
+    },
+    "9f31ab4a_Humanise-2.webp": {
+      "checksum": "7984fdc1afd1bd6770bb318386051bf9b04a8a74cd4c55c5ec572c9df4b0b9ed",
+      "size": 4268,
+      "modified": "2025-08-04T05:30:57.996087+00:00",
+      "type": "image"
+    },
+    "9f31ab4a_Humanise-3.webp": {
+      "checksum": "af7773c31a382e11c4ff3f82f77b25ba175d27fa89033ffbd838f0479cb6d2d2",
+      "size": 14896,
+      "modified": "2025-08-04T05:30:57.996963+00:00",
+      "type": "image"
     }
   }
 }
