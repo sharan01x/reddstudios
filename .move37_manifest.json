@@ -1,10 +1,10 @@
 {
-  "last_updated": "2025-10-15T13:47:03.387837+00:00",
+  "last_updated": "2025-10-15T14:20:08.914746+00:00",
   "files": {
     "6e576ec9.html": {
       "checksum": "4c56e1446d0b87cde80302b1f1cd862ce7b7f7912732afa54dfdb3b5f41771b6",
       "size": 23433,
-      "modified": "2025-10-15T13:47:03.358106+00:00",
+      "modified": "2025-10-15T14:20:08.824358+00:00",
       "type": "article"
     },
     "6e576ec9_audio.mp3": {
@@ -38,21 +38,21 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "17eab38912ed28cc74a599c1af9b4e818643992029108f90fe3860242eb65b60",
-      "size": 11436,
-      "modified": "2025-10-15T13:47:03.381202+00:00",
+      "checksum": "21a4ec197c1e4376ab350660af2deffa53d69b633e67079ba6abf224cc7ed53a",
+      "size": 27553,
+      "modified": "2025-10-15T14:20:08.854564+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "fd91f501119cc7f1cbc86fa0c5ad2dd526a5dc6ee16088d0a7c43d51ae89c740",
-      "size": 16622,
-      "modified": "2025-10-15T13:47:03.387604+00:00",
+      "checksum": "fbb35c19837e9a002a1ee1eb8ae1bb88d2c22498a9e9a1f1031cec4c5f5330bb",
+      "size": 312644,
+      "modified": "2025-10-15T14:20:08.914164+00:00",
       "type": "rss"
     },
     "9f31ab4a.html": {
       "checksum": "5c6553b181753c6b5fbd73152bcb770a6809684d675e45d9fbf1175778cb5616",
       "size": 17359,
-      "modified": "2025-10-15T13:12:18.522010+00:00",
+      "modified": "2025-10-15T14:19:26.097691+00:00",
       "type": "article"
     },
     "9f31ab4a_Humanise-2.webp": {
@@ -65,6 +65,504 @@
       "checksum": "af7773c31a382e11c4ff3f82f77b25ba175d27fa89033ffbd838f0479cb6d2d2",
       "size": 14896,
       "modified": "2025-08-04T05:30:57.996963+00:00",
+      "type": "image"
+    },
+    "3e62d0c6.html": {
+      "checksum": "3fb30724f6855b8bbad5e6ee01e49851cb1aa43c10c9d423874f42d4c18d1ca8",
+      "size": 19532,
+      "modified": "2025-10-15T14:07:51.328638+00:00",
+      "type": "article"
+    },
+    "3e62d0c6_audio.mp3": {
+      "checksum": "bae8c126dfc3d3bcff1831faf8113b43dbb89f1833c0f047126546a1987aa791",
+      "size": 4064220,
+      "modified": "2025-08-06T14:38:40.519562+00:00",
+      "type": "audio"
+    },
+    "3e62d0c6_podcast.mp3": {
+      "checksum": "490738e12ce5a37e0fa69d0fabcbe6871408f97b5e06ad0138fb0f07630d5ef0",
+      "size": 1377063,
+      "modified": "2025-08-06T14:36:27.526828+00:00",
+      "type": "podcast"
+    },
+    "3e62d0c6_20250804_174247.png": {
+      "checksum": "9210561e014a7f4c470ed318956f72f7e62a5a49a903fd095c4127f68263cd0a",
+      "size": 1352176,
+      "modified": "2025-08-04T15:42:47.528725+00:00",
+      "type": "image"
+    },
+    "3e62d0c6_20250804_173507.png": {
+      "checksum": "030af720f7596a95092a0e32e0e3a3435fab2050d75c4d59f35d100e28fcfc51",
+      "size": 1090678,
+      "modified": "2025-08-04T15:35:07.935962+00:00",
+      "type": "image"
+    },
+    "3e62d0c6_20250804_174821.png": {
+      "checksum": "c52347ee2fccacb459f2fd1a75892fef4cb2c92ce55d351c0fe6532e5e095c1f",
+      "size": 1553551,
+      "modified": "2025-08-04T15:48:21.359946+00:00",
+      "type": "image"
+    },
+    "3e62d0c6_20250806_165053.png": {
+      "checksum": "24b558415a827e68f911ea5f7566f5984c52222deb4c1a3c7ff485bb6572adc6",
+      "size": 1156755,
+      "modified": "2025-08-06T14:50:53.859987+00:00",
+      "type": "image"
+    },
+    "3e62d0c6_20250804_170429.png": {
+      "checksum": "2a7aad24135f77b49e4696775ac748cd1f264ba7819d82e9a43521e1a7510b14",
+      "size": 1049519,
+      "modified": "2025-08-04T15:04:29.995030+00:00",
+      "type": "image"
+    },
+    "99458576.html": {
+      "checksum": "cc28820a1ddef4be3426c206b406654f406174ebc17636a4ec52e3550f650ebc",
+      "size": 29278,
+      "modified": "2025-10-15T14:13:56.805339+00:00",
+      "type": "article"
+    },
+    "99458576_audio.mp3": {
+      "checksum": "95076901990b1005d7df8448da2d9913343328acd7f8bb1cd185eaaf645f26ff",
+      "size": 30622124,
+      "modified": "2025-08-04T05:30:57.993645+00:00",
+      "type": "audio"
+    },
+    "d83f23e4.html": {
+      "checksum": "4fc1b8c7efd63d5498107c93b4a99893bae9fe1005ef032b71334c41deade2c4",
+      "size": 16748,
+      "modified": "2025-10-15T14:14:16.744552+00:00",
+      "type": "article"
+    },
+    "d83f23e4_20250628_155823.png": {
+      "checksum": "60562a4e40aab691b711d7be6c2d99582becaed3ed0082edab9ff61706747f06",
+      "size": 579245,
+      "modified": "2025-08-04T05:30:58.029716+00:00",
+      "type": "image"
+    },
+    "d5288f82.html": {
+      "checksum": "b0286cea1501e2fda39a75ff377041caeaac3348a3b2a4f6726d6c967bc2f9f6",
+      "size": 26703,
+      "modified": "2025-10-15T14:16:00.317678+00:00",
+      "type": "article"
+    },
+    "4b31984b.html": {
+      "checksum": "e48698b36872415c1eb6ba44695abc58b77a7d0cb9d0d68a50098b8e0a292608",
+      "size": 29084,
+      "modified": "2025-10-15T14:16:21.006917+00:00",
+      "type": "article"
+    },
+    "a51973c2.html": {
+      "checksum": "84f168cb6fc5698d72b783fd5ccaed23fef4c01d88616714c854efc3042ac4c0",
+      "size": 34979,
+      "modified": "2025-10-15T14:16:27.696108+00:00",
+      "type": "article"
+    },
+    "253b9d68.html": {
+      "checksum": "414b7a705af661362c7b0a4b29daf6e8e34dba87ebfe2a248a82af1c175bdbb7",
+      "size": 20045,
+      "modified": "2025-10-15T14:16:33.091981+00:00",
+      "type": "article"
+    },
+    "bc36ebfa.html": {
+      "checksum": "1ad9b3e6adb1953b5f54b85b8c213d4f79193226a5238d6f9d2bf6ed2470c691",
+      "size": 19784,
+      "modified": "2025-10-15T14:17:02.908285+00:00",
+      "type": "article"
+    },
+    "9b4e1115.html": {
+      "checksum": "f4ba2f0ba1eaf7363e04998f4ff613ad038432d2b12d040edebc32b99b36314e",
+      "size": 18899,
+      "modified": "2025-10-15T14:17:08.611241+00:00",
+      "type": "article"
+    },
+    "3d3d37a0.html": {
+      "checksum": "dee5e10395e373d861f0866615f914cd35e68df9d7382323edb16084dbfb7c3c",
+      "size": 13154,
+      "modified": "2025-10-15T14:17:16.962578+00:00",
+      "type": "article"
+    },
+    "18433e48.html": {
+      "checksum": "260169360e961f1fa49b630d21a13a27b11d73811a5424aaf03cd57c9aef8761",
+      "size": 24324,
+      "modified": "2025-10-15T14:17:26.023635+00:00",
+      "type": "article"
+    },
+    "18433e48_timecapsule-10.png": {
+      "checksum": "401f26594b53ecfe42be0fc71b49f61124b5de0f1f45c194849bb1551d953c53",
+      "size": 392091,
+      "modified": "2025-08-04T05:30:57.800669+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-11.png": {
+      "checksum": "080cc93a9b831a9738f1c2e309b5e8cdd5b8a1cd5d3ce06abfba9667a21c3683",
+      "size": 882990,
+      "modified": "2025-08-04T05:30:57.804077+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-13.png": {
+      "checksum": "7445cc10bc39acb4741db6394d75753a69fe541a61e8bb04b8aae92c3eb6b554",
+      "size": 93540,
+      "modified": "2025-08-04T05:30:57.807767+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-12.png": {
+      "checksum": "9303bc3f5ebc5ea96d14284317d19e56c591e6ac4cca59f1f5b91dc2654f10d1",
+      "size": 602245,
+      "modified": "2025-08-04T05:30:57.806906+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-9.png": {
+      "checksum": "ad4543de76c7790afdd7b2ef92d243ac3d92e10d6e31317d644aef9dc9c24af4",
+      "size": 588279,
+      "modified": "2025-08-04T05:30:57.818321+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-15.png": {
+      "checksum": "7c4a65d3329d2d7ede97e2fb9022ab71aef5ddebcde7d7f927c38f45a7a270ab",
+      "size": 200305,
+      "modified": "2025-08-04T05:30:57.809976+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-14.png": {
+      "checksum": "548263f84be7b3d0c37998004646329b2ab7cfcb8d620748622b74006207b3f3",
+      "size": 215897,
+      "modified": "2025-08-04T05:30:57.808823+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-5.png": {
+      "checksum": "66b18e8425ddb725e511d9012e4e94f8718f49b85e3bc11f7d243f48cbae87bf",
+      "size": 115212,
+      "modified": "2025-08-04T05:30:57.812738+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-6.png": {
+      "checksum": "fdbcc5fc3a096fd6d7a9229965e340d2d2d62d0b523c21b0bc6b74f2c6200d4b",
+      "size": 143584,
+      "modified": "2025-08-04T05:30:57.813789+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-7.png": {
+      "checksum": "0e4457873bda773cebbc41cdb0c80f13e3061883226775d71c66f0b6d3886f34",
+      "size": 111274,
+      "modified": "2025-08-04T05:30:57.814948+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-3.png": {
+      "checksum": "7750d61b93a8407a0cd55da95be977f951cc51a634d01891d38b5438b6d88838",
+      "size": 163845,
+      "modified": "2025-08-04T05:30:57.811893+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-2.png": {
+      "checksum": "3afec923a0378dce5bdf9dc533694f09959175d3fd34b6720a88ab450dd05b5a",
+      "size": 159148,
+      "modified": "2025-08-04T05:30:57.810912+00:00",
+      "type": "image"
+    },
+    "18433e48_timecapsule-1.png": {
+      "checksum": "63079c4cb36f5876cd1c0995332b48d158cb01e6ca5a3eb8b9e0ff46c21ab13c",
+      "size": 99297,
+      "modified": "2025-08-04T05:30:57.798184+00:00",
+      "type": "image"
+    },
+    "6b67b868.html": {
+      "checksum": "41ceb3feec7ee64e82415c5993f3144ef271299cd1ffd1bd2180fa1b32b884a0",
+      "size": 19580,
+      "modified": "2025-10-15T14:17:36.060817+00:00",
+      "type": "article"
+    },
+    "3eb3bbbb.html": {
+      "checksum": "1cc0dbba4a382b44820011daaad32bc119d8c8efbf39112f75f38a9615167371",
+      "size": 24050,
+      "modified": "2025-10-15T14:17:43.102623+00:00",
+      "type": "article"
+    },
+    "3eb3bbbb_RabbitR1-2.png": {
+      "checksum": "2f9021b3fec674e7872a38df75d91d99b6a0367c46096076c07b5f1049f9d518",
+      "size": 2084862,
+      "modified": "2025-08-04T05:30:57.844875+00:00",
+      "type": "image"
+    },
+    "3eb3bbbb_RabbitR1-3.png": {
+      "checksum": "531878813f37ad5f7041a84253ddbd67ea94b6beb3a4440a0f77a44967f04a52",
+      "size": 1764064,
+      "modified": "2025-08-04T05:30:57.850397+00:00",
+      "type": "image"
+    },
+    "f9cca0fc.html": {
+      "checksum": "2effdb113a6a220b0df7a830a965bb633775429ab3fb3344c3d64af215810d80",
+      "size": 23453,
+      "modified": "2025-10-15T14:17:54.974145+00:00",
+      "type": "article"
+    },
+    "f9cca0fc_Pencil-sketch-of-two-people-in-business-suits-having-coffee-at-a-sidewalk-cafe-in-a-European-city-h.jpeg.webp": {
+      "checksum": "dedd981260a4b9a352035b15d05d2fbcc49eef1e333cf32e1c3acb458c349898",
+      "size": 677076,
+      "modified": "2025-08-04T05:30:58.084916+00:00",
+      "type": "image"
+    },
+    "f9cca0fc_Pencil-sketch-of-a-happy-couple-sitting-across-each-other-at-a-sidewalk-cafe-in-a-European-city-with-2.jpeg.webp": {
+      "checksum": "fc8030db9f36c515050d1a39d236355c16068bed671bc71e642a5e6d9e6fe8aa",
+      "size": 565356,
+      "modified": "2025-08-04T05:30:58.077858+00:00",
+      "type": "image"
+    },
+    "f9cca0fc_Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-highly-detailed-and.jpeg.webp": {
+      "checksum": "5e5e472ee64e9e68762caf7d5df4142d3975735a59bbb9cbf976bd21e304ad73",
+      "size": 739272,
+      "modified": "2025-08-04T05:30:58.079635+00:00",
+      "type": "image"
+    },
+    "f9cca0fc_Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-with-sharp-focus-on-.jpeg.webp": {
+      "checksum": "7c12e84d1e491b3dd17b37ddbe33162ed093cd5f164d0c9df3c8c2feaf5b1f7b",
+      "size": 626156,
+      "modified": "2025-08-04T05:30:58.082411+00:00",
+      "type": "image"
+    },
+    "d8ae5f1e.html": {
+      "checksum": "305152e0377513347925065ae629995c9b49c122f436829683dcbbc3aa13f3c8",
+      "size": 19473,
+      "modified": "2025-10-15T14:18:00.722879+00:00",
+      "type": "article"
+    },
+    "d8ae5f1e_GenerativeAIArt-5.webp": {
+      "checksum": "cfbeebc45e511b717e10de67d77baf093b2abb2db71bb99365ad2ac531e4bb90",
+      "size": 1305230,
+      "modified": "2025-08-04T05:30:58.049449+00:00",
+      "type": "image"
+    },
+    "d8ae5f1e_GenerativeAIArt-9.webp": {
+      "checksum": "fa421096154c2d88fadbe52126450352a6c891820d9b144eeab1e102a3622460",
+      "size": 2069850,
+      "modified": "2025-08-04T05:30:58.073552+00:00",
+      "type": "image"
+    },
+    "d8ae5f1e_GenerativeAIArt-8.webp": {
+      "checksum": "11967ba09a7f47eb3bd1bea2a5c8f46ecc0ae7b0460a660ecef5aee2d14722d8",
+      "size": 2159516,
+      "modified": "2025-08-04T05:30:58.067410+00:00",
+      "type": "image"
+    },
+    "d8ae5f1e_GenerativeAIArt-4.webp": {
+      "checksum": "74fa8bed5829b441bfc5c2935a8210727574a5328e30389ba3debc6024959047",
+      "size": 1425932,
+      "modified": "2025-08-04T05:30:58.045341+00:00",
+      "type": "image"
+    },
+    "d8ae5f1e_GenerativeAIArt-3.webp": {
+      "checksum": "e53bd05c5493e0cdada75968bac1a611845bd6aa49b096d6e8f3e2cf5f334bb8",
+      "size": 1638170,
+      "modified": "2025-08-04T05:30:58.040779+00:00",
+      "type": "image"
+    },
+    "d8ae5f1e_GenerativeAIArt-2.webp": {
+      "checksum": "60e29c4ff7d6b74d77e7856bba2bb654911bcad69cf5e5abe9e01999316542e8",
+      "size": 1031178,
+      "modified": "2025-08-04T05:30:58.033397+00:00",
+      "type": "image"
+    },
+    "d8ae5f1e_GenerativeAIArt-7.webp": {
+      "checksum": "db10fa7a7ce11f7c7697e07683f9ba971de0324b6d25913861ccbe8c7630f32e",
+      "size": 1789146,
+      "modified": "2025-08-04T05:30:58.062235+00:00",
+      "type": "image"
+    },
+    "d8ae5f1e_GenerativeAIArt-6.webp": {
+      "checksum": "f54a4acd8440b586974463225273b7f9c2d8fce05786e67736d151cb3c1ff918",
+      "size": 1569652,
+      "modified": "2025-08-04T05:30:58.055933+00:00",
+      "type": "image"
+    },
+    "08134e4f.html": {
+      "checksum": "7b18050e4c9bd86f137b29234ef37627f625215c970fba0bb0bb774992a50fa4",
+      "size": 22023,
+      "modified": "2025-10-15T14:18:05.578036+00:00",
+      "type": "article"
+    },
+    "08134e4f_BetterTools-3.webp": {
+      "checksum": "e174f094c2c26b597f1eb7ba4e61bcb55e33e81491f453ab9bf32d30a2183b08",
+      "size": 426080,
+      "modified": "2025-08-04T05:30:57.781093+00:00",
+      "type": "image"
+    },
+    "08134e4f_BetterTools-2.webp": {
+      "checksum": "7ed03257d6d3af84610947e0c546ad8081e65df6af3a457c31495db1b8e224fb",
+      "size": 737528,
+      "modified": "2025-08-04T05:30:57.779597+00:00",
+      "type": "image"
+    },
+    "08134e4f_BetterTools-4.webp": {
+      "checksum": "305e69126179dd3586fa65b0595fa7e421ae9710e9cb0be82c088a0524cde4a2",
+      "size": 53292,
+      "modified": "2025-08-04T05:30:57.781639+00:00",
+      "type": "image"
+    },
+    "ca1ff969.html": {
+      "checksum": "c50feadf4f4462e83f0065a275fddef5d3d8bc8305c25960e0f354e4734d5050",
+      "size": 27452,
+      "modified": "2025-10-15T14:18:10.448596+00:00",
+      "type": "article"
+    },
+    "cccb3085.html": {
+      "checksum": "5b5735ff2f2e25e964191e3d9f31cd745b06473cde78ea95807840f3b2fe0f0f",
+      "size": 24964,
+      "modified": "2025-10-15T14:18:14.795321+00:00",
+      "type": "article"
+    },
+    "ae374ed1.html": {
+      "checksum": "17eb35db4fff6169f52b584211a448a3a1c03c5522fec5cbe5263cdb15678058",
+      "size": 23413,
+      "modified": "2025-10-15T14:18:19.423092+00:00",
+      "type": "article"
+    },
+    "dd39fcda.html": {
+      "checksum": "de167f70e97c566b5a3a559b55be0805f655ec29a9c64926d459323e235d6363",
+      "size": 24889,
+      "modified": "2025-10-15T14:18:23.332151+00:00",
+      "type": "article"
+    },
+    "d0364a95.html": {
+      "checksum": "924666d671fc8bd27409fded83d8d2b03813e4c06c726af086cab47d77020b6f",
+      "size": 35549,
+      "modified": "2025-10-15T14:18:27.366837+00:00",
+      "type": "article"
+    },
+    "37f872a3.html": {
+      "checksum": "b7885c8051f3ef8ad1e714a7bab909ebd2c87baee3985eb2c0bfd9a0ae8e28f3",
+      "size": 20117,
+      "modified": "2025-10-15T14:18:37.017448+00:00",
+      "type": "article"
+    },
+    "37f872a3_DesigningForBillionUsers-4.webp": {
+      "checksum": "60a07787028d45cd6e2e40d072b26d556741054b1f5ffc25aabd029028b04f17",
+      "size": 29748,
+      "modified": "2025-08-04T05:30:57.837541+00:00",
+      "type": "image"
+    },
+    "37f872a3_DesigningForBillionUsers-2.webp": {
+      "checksum": "0f112edfe484740397fc5569643301b7a351cad1a2804a145e9af9292b8d20ab",
+      "size": 42822,
+      "modified": "2025-08-04T05:30:57.836908+00:00",
+      "type": "image"
+    },
+    "37f872a3_DesigningForBillionUsers-3.webp": {
+      "checksum": "02f2fbf76f0e8a5d23cc17b8a3c1321029d5ea4f33ac16ed3e8ca054c5e8aa94",
+      "size": 128962,
+      "modified": "2025-08-04T05:30:57.837344+00:00",
+      "type": "image"
+    },
+    "e7160570.html": {
+      "checksum": "dc41c112600853bdd2acf950b3ac57eac62d0298b55788df181836b14b3c45c8",
+      "size": 19822,
+      "modified": "2025-10-15T14:18:43.997176+00:00",
+      "type": "article"
+    },
+    "606545a5.html": {
+      "checksum": "ea38badec04a5401af3907b1b102f32920cc943f9839ff3c918c65fbdc00fb48",
+      "size": 18988,
+      "modified": "2025-10-15T14:18:51.090578+00:00",
+      "type": "article"
+    },
+    "606545a5_VotingUX-2.webp": {
+      "checksum": "cdcc449ba0b568542cc227ea21ee59999b5c8f52715e2ab0d36ea9b860b316c5",
+      "size": 217014,
+      "modified": "2025-08-04T05:30:57.854142+00:00",
+      "type": "image"
+    },
+    "915d435a.html": {
+      "checksum": "6c338700fe9175afe0918c330ab6ec911fa31690dffcffa2dd3fb0678d83f8bc",
+      "size": 20744,
+      "modified": "2025-10-15T14:18:56.707577+00:00",
+      "type": "article"
+    },
+    "915d435a_DesignReflectValues-4.webp": {
+      "checksum": "13530b2f97287d08183ffd978e9cf0512e17a97d8bcbfbe511819a32287bfdb3",
+      "size": 1158478,
+      "modified": "2025-08-04T05:30:57.859721+00:00",
+      "type": "image"
+    },
+    "915d435a_DesignReflectValues-3.webp": {
+      "checksum": "151eba62a7d442d14153c0b694dd7fce6dbd5f724c77dcc821f7ce8fe37e40b2",
+      "size": 322430,
+      "modified": "2025-08-04T05:30:57.856597+00:00",
+      "type": "image"
+    },
+    "915d435a_DesignReflectValues-2.webp": {
+      "checksum": "af75cad0d12c54397d7f71b5584d0425592328810d2228f163def313a7b763a5",
+      "size": 234232,
+      "modified": "2025-08-04T05:30:57.855501+00:00",
+      "type": "image"
+    },
+    "c1af5dc6.html": {
+      "checksum": "b2c46a768e3a084ad3e1b0d8bf19a7f7d8814b08eb0e2cb3ebebbf62b128bc87",
+      "size": 17148,
+      "modified": "2025-10-15T14:19:01.168467+00:00",
+      "type": "article"
+    },
+    "c1af5dc6_Healthcare-2.webp": {
+      "checksum": "a6a01461c5d105cd7c67113d95c3c8a77fb45e9971421062c136f00dba611140",
+      "size": 1452642,
+      "modified": "2025-08-04T05:30:58.019674+00:00",
+      "type": "image"
+    },
+    "c1af5dc6_Healthcare-3.webp": {
+      "checksum": "ab104959c0f25b724ba0cf73228a2564db7a625a72ef8abbf31aad18e250d077",
+      "size": 244548,
+      "modified": "2025-08-04T05:30:58.021074+00:00",
+      "type": "image"
+    },
+    "c1af5dc6_Healthcare-4.webp": {
+      "checksum": "7013ea68bc59bc951f9bfc42d4c82b5df9e5057fed556fddadffc5d03f88147d",
+      "size": 36244,
+      "modified": "2025-08-04T05:30:58.022332+00:00",
+      "type": "image"
+    },
+    "80e0ac3c.html": {
+      "checksum": "32ed3d7197243ac414e0027a2f6ea87d7abea20a47895af54d45ff3f759f390e",
+      "size": 18865,
+      "modified": "2025-10-15T14:19:06.503805+00:00",
+      "type": "article"
+    },
+    "b21695b0.html": {
+      "checksum": "011ac0a7962cdf4e50dd7332c4250616e13be30184e5ec158e87424494801f01",
+      "size": 25538,
+      "modified": "2025-10-15T14:19:19.869353+00:00",
+      "type": "article"
+    },
+    "b21695b0_Aircraft-6.webp": {
+      "checksum": "1fd657df6f2bd81c3efdc9fa79b5a73b9ecb6f9cf70cd0a6edad7bf937c367b5",
+      "size": 19666,
+      "modified": "2025-08-04T05:30:58.011050+00:00",
+      "type": "image"
+    },
+    "b21695b0_Aircraft-7.webp": {
+      "checksum": "9a6429cb697f1023c291703482766526a3a1cb38d0c665b2ec480d6fbd2bfe28",
+      "size": 125606,
+      "modified": "2025-08-04T05:30:58.012459+00:00",
+      "type": "image"
+    },
+    "b21695b0_Aircraft-3.webp": {
+      "checksum": "769b93d228995093236ea71dd649b1762a4709e0f41e9d1a1c9aafcde38eaf0f",
+      "size": 6796,
+      "modified": "2025-08-04T05:30:58.009687+00:00",
+      "type": "image"
+    },
+    "b21695b0_Aircraft-8.webp": {
+      "checksum": "3d5dc2c120dad33585f6329b595286935b3b195c821776b1d8403e0054d95fc0",
+      "size": 26530,
+      "modified": "2025-08-04T05:30:58.012636+00:00",
+      "type": "image"
+    },
+    "b21695b0_Aircraft-4.webp": {
+      "checksum": "5c4c5c7ee74d5321df4861aef45c4a5ffd43d9b5a9745b08b8134f4d9087e737",
+      "size": 29742,
+      "modified": "2025-08-04T05:30:58.010220+00:00",
+      "type": "image"
+    },
+    "b21695b0_Aircraft-5.webp": {
+      "checksum": "47f9051172951e8c9b495d3c27a16368fbdbf5c17826aab20622a89ddbed1d96",
+      "size": 32348,
+      "modified": "2025-08-04T05:30:58.010523+00:00",
       "type": "image"
     }
   }
