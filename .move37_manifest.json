@@ -1,24 +1,6 @@
 {
   "last_updated": "2025-10-15T13:12:18.540174+00:00",
   "files": {
-    "6e576ec9.html": {
-      "checksum": "4c56e1446d0b87cde80302b1f1cd862ce7b7f7912732afa54dfdb3b5f41771b6",
-      "size": 23433,
-      "modified": "2025-10-15T13:09:58.721311+00:00",
-      "type": "article"
-    },
-    "6e576ec9_audio.mp3": {
-      "checksum": "bca79c1167bdd1b04056e726583a445546af81482a98ecaec5f365c57ed02b96",
-      "size": 6470853,
-      "modified": "2025-09-29T12:00:02.901024+00:00",
-      "type": "audio"
-    },
-    "6e576ec9_podcast.mp3": {
-      "checksum": "2959d466d1dd9077f1295b22dd00b0dcbb7b751b9742b39697ba9f4475ef9c2f",
-      "size": 806013,
-      "modified": "2025-09-27T16:02:52.589035+00:00",
-      "type": "podcast"
-    },
     "logo_b799f78b.png": {
       "checksum": "b3b4b4556309f8373da6abf22ab30db10963e65b1ec7f75f5a9fb6169dc55872",
       "size": 3805,
@@ -30,12 +12,6 @@
       "size": 877914,
       "modified": "2025-10-13T17:48:56.349286+00:00",
       "type": "profile_image"
-    },
-    "6e576ec9_20250927_175202.png": {
-      "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
-      "size": 1364109,
-      "modified": "2025-09-27T15:52:02.589256+00:00",
-      "type": "image"
     },
     "index.html": {
       "checksum": "17eab38912ed28cc74a599c1af9b4e818643992029108f90fe3860242eb65b60",
