@@ -1,36 +1,6 @@
 {
-  "last_updated": "2025-10-16T20:32:21.950608+00:00",
+  "last_updated": "2025-10-20T02:00:18.167740+00:00",
   "files": {
-    "6e576ec9.html": {
-      "checksum": "4c56e1446d0b87cde80302b1f1cd862ce7b7f7912732afa54dfdb3b5f41771b6",
-      "size": 23433,
-      "modified": "2025-10-16T20:32:21.827400+00:00",
-      "type": "article"
-    },
-    "6e576ec9_audio.mp3": {
-      "checksum": "c2acb33fb33fc9c12097085aad2839812dae21f6447da0b872ef451f0ce9f566",
-      "size": 6467757,
-      "modified": "2025-10-16T13:17:57.342781+00:00",
-      "type": "audio"
-    },
-    "6e576ec9_podcast.mp3": {
-      "checksum": "c3794ac6a307e3e6bf353bac32598c10407f0fe2711b68bc906b1c05c19c92a1",
-      "size": 1010848,
-      "modified": "2025-10-16T20:25:14.991136+00:00",
-      "type": "podcast"
-    },
-    "logo_b799f78b.png": {
-      "checksum": "b3b4b4556309f8373da6abf22ab30db10963e65b1ec7f75f5a9fb6169dc55872",
-      "size": 3805,
-      "modified": "2025-08-04T05:24:02.668828+00:00",
-      "type": "logo"
-    },
-    "profile_43f164ef.jpeg": {
-      "checksum": "76e878b97ce177760f552cfc64c978acd3d3989108d780bb433efe6292be8176",
-      "size": 877914,
-      "modified": "2025-10-13T17:48:56.349286+00:00",
-      "type": "profile_image"
-    },
     "6e576ec9_20250927_175202.png": {
       "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
       "size": 1364109,
@@ -38,52 +8,16 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "21a4ec197c1e4376ab350660af2deffa53d69b633e67079ba6abf224cc7ed53a",
-      "size": 27553,
-      "modified": "2025-10-16T20:32:21.891005+00:00",
+      "checksum": "274bfd712a9ca48c41c276a4141288fdccad485bcf5464cb6ab8221124aae4ce",
+      "size": 27433,
+      "modified": "2025-10-20T02:00:18.109968+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "22aa98af7d99d1a64e3b05ef99142d871e1dbde293682b6cbf1b8b39926ddaae",
-      "size": 312644,
-      "modified": "2025-10-16T20:32:21.950170+00:00",
+      "checksum": "f798b1c04b6954243b1c8b68a0816ff8ec5017d417b608ec259729a2be1ed7ed",
+      "size": 282160,
+      "modified": "2025-10-20T02:00:18.167127+00:00",
       "type": "rss"
-    },
-    "9f31ab4a.html": {
-      "checksum": "5c6553b181753c6b5fbd73152bcb770a6809684d675e45d9fbf1175778cb5616",
-      "size": 17359,
-      "modified": "2025-10-15T14:19:26.097691+00:00",
-      "type": "article"
-    },
-    "9f31ab4a_Humanise-2.webp": {
-      "checksum": "7984fdc1afd1bd6770bb318386051bf9b04a8a74cd4c55c5ec572c9df4b0b9ed",
-      "size": 4268,
-      "modified": "2025-08-04T05:30:57.996087+00:00",
-      "type": "image"
-    },
-    "9f31ab4a_Humanise-3.webp": {
-      "checksum": "af7773c31a382e11c4ff3f82f77b25ba175d27fa89033ffbd838f0479cb6d2d2",
-      "size": 14896,
-      "modified": "2025-08-04T05:30:57.996963+00:00",
-      "type": "image"
-    },
-    "3e62d0c6.html": {
-      "checksum": "3fb30724f6855b8bbad5e6ee01e49851cb1aa43c10c9d423874f42d4c18d1ca8",
-      "size": 19532,
-      "modified": "2025-10-15T14:07:51.328638+00:00",
-      "type": "article"
-    },
-    "3e62d0c6_audio.mp3": {
-      "checksum": "bae8c126dfc3d3bcff1831faf8113b43dbb89f1833c0f047126546a1987aa791",
-      "size": 4064220,
-      "modified": "2025-08-06T14:38:40.519562+00:00",
-      "type": "audio"
-    },
-    "3e62d0c6_podcast.mp3": {
-      "checksum": "490738e12ce5a37e0fa69d0fabcbe6871408f97b5e06ad0138fb0f07630d5ef0",
-      "size": 1377063,
-      "modified": "2025-08-06T14:36:27.526828+00:00",
-      "type": "podcast"
     },
     "3e62d0c6_20250804_174247.png": {
       "checksum": "9210561e014a7f4c470ed318956f72f7e62a5a49a903fd095c4127f68263cd0a",
@@ -115,10 +49,40 @@
       "modified": "2025-08-04T15:04:29.995030+00:00",
       "type": "image"
     },
+    "blog.css": {
+      "checksum": "bf3b36be094d57009ffb7efe01a782d155e5b53b2284a3bf1bbf17103cdae9cf",
+      "size": 928,
+      "modified": "2025-10-20T02:00:18.062081+00:00",
+      "type": "css"
+    },
+    "f52b3f80.html": {
+      "checksum": "841947da5d304513ad86f8ffe8cf18d7da835bd18f3a192b87496ace7b8932c9",
+      "size": 23411,
+      "modified": "2025-10-19T23:34:31.565653+00:00",
+      "type": "article"
+    },
+    "3e62d0c6.html": {
+      "checksum": "6c7c95a183fd645a7fdfb00c70db9ff9737eedee4c8f372afa5c6cac7fdd90eb",
+      "size": 19576,
+      "modified": "2025-10-19T23:35:15.484929+00:00",
+      "type": "article"
+    },
+    "3e62d0c6_audio.mp3": {
+      "checksum": "bae8c126dfc3d3bcff1831faf8113b43dbb89f1833c0f047126546a1987aa791",
+      "size": 4064220,
+      "modified": "2025-08-06T14:38:40.519562+00:00",
+      "type": "audio"
+    },
+    "3e62d0c6_podcast.mp3": {
+      "checksum": "490738e12ce5a37e0fa69d0fabcbe6871408f97b5e06ad0138fb0f07630d5ef0",
+      "size": 1377063,
+      "modified": "2025-08-06T14:36:27.526828+00:00",
+      "type": "podcast"
+    },
     "99458576.html": {
-      "checksum": "cc28820a1ddef4be3426c206b406654f406174ebc17636a4ec52e3550f650ebc",
-      "size": 29278,
-      "modified": "2025-10-15T14:13:56.805339+00:00",
+      "checksum": "0fc26c6027e0c087e4f86e079d8f79d5375ad617140508ad0ea3fcb79e71f496",
+      "size": 29322,
+      "modified": "2025-10-19T23:35:20.278367+00:00",
       "type": "article"
     },
     "99458576_audio.mp3": {
@@ -127,64 +91,46 @@
       "modified": "2025-08-04T05:30:57.993645+00:00",
       "type": "audio"
     },
-    "d83f23e4.html": {
-      "checksum": "4fc1b8c7efd63d5498107c93b4a99893bae9fe1005ef032b71334c41deade2c4",
-      "size": 16748,
-      "modified": "2025-10-15T14:14:16.744552+00:00",
-      "type": "article"
-    },
-    "d83f23e4_20250628_155823.png": {
-      "checksum": "60562a4e40aab691b711d7be6c2d99582becaed3ed0082edab9ff61706747f06",
-      "size": 579245,
-      "modified": "2025-08-04T05:30:58.029716+00:00",
-      "type": "image"
-    },
     "d5288f82.html": {
-      "checksum": "b0286cea1501e2fda39a75ff377041caeaac3348a3b2a4f6726d6c967bc2f9f6",
-      "size": 26703,
-      "modified": "2025-10-15T14:16:00.317678+00:00",
+      "checksum": "cc8a810b4e1508219a0d5f5fd7505775739cc969958841c2a1f587a6575e4489",
+      "size": 26747,
+      "modified": "2025-10-19T23:35:38.685128+00:00",
       "type": "article"
     },
     "4b31984b.html": {
-      "checksum": "e48698b36872415c1eb6ba44695abc58b77a7d0cb9d0d68a50098b8e0a292608",
-      "size": 29084,
-      "modified": "2025-10-15T14:16:21.006917+00:00",
+      "checksum": "145071dee386bf583e2c1b750d9c423a2bf8228255ea4211d88b3cbe7861feb0",
+      "size": 29128,
+      "modified": "2025-10-19T23:35:43.877923+00:00",
       "type": "article"
     },
     "a51973c2.html": {
-      "checksum": "84f168cb6fc5698d72b783fd5ccaed23fef4c01d88616714c854efc3042ac4c0",
-      "size": 34979,
-      "modified": "2025-10-15T14:16:27.696108+00:00",
+      "checksum": "52ca95bf7ad5fe1b5858122ceef482ffd278a21560aff368fbae512e32b00611",
+      "size": 35023,
+      "modified": "2025-10-19T23:35:47.744780+00:00",
       "type": "article"
     },
     "253b9d68.html": {
-      "checksum": "414b7a705af661362c7b0a4b29daf6e8e34dba87ebfe2a248a82af1c175bdbb7",
-      "size": 20045,
-      "modified": "2025-10-15T14:16:33.091981+00:00",
+      "checksum": "0a16538904465fab8f54752c0c99959b5e3a11f397a1e7f0bddb57aba99e09df",
+      "size": 20089,
+      "modified": "2025-10-19T23:35:52.073977+00:00",
       "type": "article"
     },
     "bc36ebfa.html": {
-      "checksum": "1ad9b3e6adb1953b5f54b85b8c213d4f79193226a5238d6f9d2bf6ed2470c691",
-      "size": 19784,
-      "modified": "2025-10-15T14:17:02.908285+00:00",
+      "checksum": "c9e9625235f646bdf06759d479ec30333cd11deb4712447b9f6c910b9c74cafa",
+      "size": 19828,
+      "modified": "2025-10-19T23:35:55.561512+00:00",
       "type": "article"
     },
     "9b4e1115.html": {
-      "checksum": "f4ba2f0ba1eaf7363e04998f4ff613ad038432d2b12d040edebc32b99b36314e",
-      "size": 18899,
-      "modified": "2025-10-15T14:17:08.611241+00:00",
-      "type": "article"
-    },
-    "3d3d37a0.html": {
-      "checksum": "dee5e10395e373d861f0866615f914cd35e68df9d7382323edb16084dbfb7c3c",
-      "size": 13154,
-      "modified": "2025-10-15T14:17:16.962578+00:00",
+      "checksum": "01776de706480f7fcb811566f453e86fe1dc6b8b01281a66333bfcfe244ffb1a",
+      "size": 18943,
+      "modified": "2025-10-19T23:35:59.223193+00:00",
       "type": "article"
     },
     "18433e48.html": {
-      "checksum": "260169360e961f1fa49b630d21a13a27b11d73811a5424aaf03cd57c9aef8761",
-      "size": 24324,
-      "modified": "2025-10-15T14:17:26.023635+00:00",
+      "checksum": "e49804c26d0361a20b072bfca77b4a2a5ade457cf01c4a0a5c986cca7a389cbd",
+      "size": 24368,
+      "modified": "2025-10-19T23:36:08.148027+00:00",
       "type": "article"
     },
     "18433e48_timecapsule-10.png": {
@@ -266,15 +212,15 @@
       "type": "image"
     },
     "6b67b868.html": {
-      "checksum": "41ceb3feec7ee64e82415c5993f3144ef271299cd1ffd1bd2180fa1b32b884a0",
-      "size": 19580,
-      "modified": "2025-10-15T14:17:36.060817+00:00",
+      "checksum": "a9904a968d64ce0d170868ba14d3c145f9914a128a875b5fe6d2ffea13b919ab",
+      "size": 19624,
+      "modified": "2025-10-19T23:36:18.879822+00:00",
       "type": "article"
     },
     "3eb3bbbb.html": {
-      "checksum": "1cc0dbba4a382b44820011daaad32bc119d8c8efbf39112f75f38a9615167371",
-      "size": 24050,
-      "modified": "2025-10-15T14:17:43.102623+00:00",
+      "checksum": "4b107871cfc4b08c5a7efafce0c1da15de869e83f9689ec79e24f1e04c3b3ab0",
+      "size": 24094,
+      "modified": "2025-10-19T23:36:21.834411+00:00",
       "type": "article"
     },
     "3eb3bbbb_RabbitR1-2.png": {
@@ -290,9 +236,9 @@
       "type": "image"
     },
     "f9cca0fc.html": {
-      "checksum": "2effdb113a6a220b0df7a830a965bb633775429ab3fb3344c3d64af215810d80",
-      "size": 23453,
-      "modified": "2025-10-15T14:17:54.974145+00:00",
+      "checksum": "3a1515ea10d214cc8ad6661527ef704601941bb0155eec97d435a3d969543e1d",
+      "size": 23497,
+      "modified": "2025-10-19T23:37:45.485403+00:00",
       "type": "article"
     },
     "f9cca0fc_Pencil-sketch-of-two-people-in-business-suits-having-coffee-at-a-sidewalk-cafe-in-a-European-city-h.jpeg.webp": {
@@ -320,9 +266,9 @@
       "type": "image"
     },
     "d8ae5f1e.html": {
-      "checksum": "305152e0377513347925065ae629995c9b49c122f436829683dcbbc3aa13f3c8",
-      "size": 19473,
-      "modified": "2025-10-15T14:18:00.722879+00:00",
+      "checksum": "0b18ce144be87d1d8b40f13dd97ad501ac95c337fefd1972c163c6353237985f",
+      "size": 19517,
+      "modified": "2025-10-19T23:37:48.686645+00:00",
       "type": "article"
     },
     "d8ae5f1e_GenerativeAIArt-5.webp": {
@@ -374,9 +320,9 @@
       "type": "image"
     },
     "08134e4f.html": {
-      "checksum": "7b18050e4c9bd86f137b29234ef37627f625215c970fba0bb0bb774992a50fa4",
-      "size": 22023,
-      "modified": "2025-10-15T14:18:05.578036+00:00",
+      "checksum": "b88d76b61ab9556b7e6f8fc037c1f75c6947e5b404ef8836e041299e95689699",
+      "size": 22067,
+      "modified": "2025-10-19T23:37:51.900718+00:00",
       "type": "article"
     },
     "08134e4f_BetterTools-3.webp": {
@@ -398,39 +344,45 @@
       "type": "image"
     },
     "ca1ff969.html": {
-      "checksum": "c50feadf4f4462e83f0065a275fddef5d3d8bc8305c25960e0f354e4734d5050",
-      "size": 27452,
-      "modified": "2025-10-15T14:18:10.448596+00:00",
+      "checksum": "d3bc5ff27c32f4babc6aa4042183e362c6c789cdca7685aa8b7809413ef9ae73",
+      "size": 27496,
+      "modified": "2025-10-19T23:37:55.387467+00:00",
       "type": "article"
     },
     "cccb3085.html": {
-      "checksum": "5b5735ff2f2e25e964191e3d9f31cd745b06473cde78ea95807840f3b2fe0f0f",
-      "size": 24964,
-      "modified": "2025-10-15T14:18:14.795321+00:00",
+      "checksum": "197dc518c52d13754d2173e9b6d5fe6f051ef2be0504d4544932c73e8ff351ce",
+      "size": 25008,
+      "modified": "2025-10-19T23:37:58.843262+00:00",
       "type": "article"
     },
     "ae374ed1.html": {
-      "checksum": "17eb35db4fff6169f52b584211a448a3a1c03c5522fec5cbe5263cdb15678058",
-      "size": 23413,
-      "modified": "2025-10-15T14:18:19.423092+00:00",
+      "checksum": "40d8cd4f3c62d9ed13e77baba6cee502c2ae4d987d7204197642d89899b0c618",
+      "size": 23457,
+      "modified": "2025-10-19T23:38:02.259403+00:00",
       "type": "article"
     },
     "dd39fcda.html": {
-      "checksum": "de167f70e97c566b5a3a559b55be0805f655ec29a9c64926d459323e235d6363",
-      "size": 24889,
-      "modified": "2025-10-15T14:18:23.332151+00:00",
+      "checksum": "48c1e109a96c4b04ed787a9dccfbed647cbad48bc2886fb86352b253ad63aacc",
+      "size": 24933,
+      "modified": "2025-10-19T23:38:07.310576+00:00",
       "type": "article"
     },
     "d0364a95.html": {
-      "checksum": "924666d671fc8bd27409fded83d8d2b03813e4c06c726af086cab47d77020b6f",
-      "size": 35549,
-      "modified": "2025-10-15T14:18:27.366837+00:00",
+      "checksum": "f5f5e18745c145455bf980a7d11a42924b4f8f9e178ecd83e04f409f1b930442",
+      "size": 35593,
+      "modified": "2025-10-19T23:38:10.673301+00:00",
       "type": "article"
     },
+    "40599a8c_AuditOneProjectSheet-1.webp": {
+      "checksum": "2c2619b541d0736d1ecc4c9cc2a7481c485ff0c3450c424a3578e989833dbbbb",
+      "size": 70448,
+      "modified": "2025-08-04T05:30:57.851313+00:00",
+      "type": "image"
+    },
     "37f872a3.html": {
-      "checksum": "b7885c8051f3ef8ad1e714a7bab909ebd2c87baee3985eb2c0bfd9a0ae8e28f3",
-      "size": 20117,
-      "modified": "2025-10-15T14:18:37.017448+00:00",
+      "checksum": "28f9a6553e3efa4f1d5bab31e37419e0e58338de15f673e73e76793cadaeb832",
+      "size": 20161,
+      "modified": "2025-10-19T23:38:23.460849+00:00",
       "type": "article"
     },
     "37f872a3_DesigningForBillionUsers-4.webp": {
@@ -452,15 +404,15 @@
       "type": "image"
     },
     "e7160570.html": {
-      "checksum": "dc41c112600853bdd2acf950b3ac57eac62d0298b55788df181836b14b3c45c8",
-      "size": 19822,
-      "modified": "2025-10-15T14:18:43.997176+00:00",
+      "checksum": "0d67440bd8793c930a28ec321a928e26a770c064d709d794d79f4fd48b010798",
+      "size": 19866,
+      "modified": "2025-10-19T23:38:26.491501+00:00",
       "type": "article"
     },
     "606545a5.html": {
-      "checksum": "ea38badec04a5401af3907b1b102f32920cc943f9839ff3c918c65fbdc00fb48",
-      "size": 18988,
-      "modified": "2025-10-15T14:18:51.090578+00:00",
+      "checksum": "7c37e6b89ed4ea3fab2cf136e5b043d120d7d18736c1f841535842d0c1260278",
+      "size": 19032,
+      "modified": "2025-10-19T23:38:29.482452+00:00",
       "type": "article"
     },
     "606545a5_VotingUX-2.webp": {
@@ -470,9 +422,9 @@
       "type": "image"
     },
     "915d435a.html": {
-      "checksum": "6c338700fe9175afe0918c330ab6ec911fa31690dffcffa2dd3fb0678d83f8bc",
-      "size": 20744,
-      "modified": "2025-10-15T14:18:56.707577+00:00",
+      "checksum": "293b784c6b4931b1bad667868198203107802bf6bcbc16b44865615bf5f7a5ce",
+      "size": 20788,
+      "modified": "2025-10-19T23:38:32.687932+00:00",
       "type": "article"
     },
     "915d435a_DesignReflectValues-4.webp": {
@@ -494,9 +446,9 @@
       "type": "image"
     },
     "c1af5dc6.html": {
-      "checksum": "b2c46a768e3a084ad3e1b0d8bf19a7f7d8814b08eb0e2cb3ebebbf62b128bc87",
-      "size": 17148,
-      "modified": "2025-10-15T14:19:01.168467+00:00",
+      "checksum": "180b71fe8781694e027e7f48f14b0d65f540447f791b3800133f517fc1667426",
+      "size": 17192,
+      "modified": "2025-10-19T23:38:35.966734+00:00",
       "type": "article"
     },
     "c1af5dc6_Healthcare-2.webp": {
@@ -518,15 +470,15 @@
       "type": "image"
     },
     "80e0ac3c.html": {
-      "checksum": "32ed3d7197243ac414e0027a2f6ea87d7abea20a47895af54d45ff3f759f390e",
-      "size": 18865,
-      "modified": "2025-10-15T14:19:06.503805+00:00",
+      "checksum": "600c8c58a31bbd461f8924d2d9e05f5071052d031dddb9cc03037bf7567ff69a",
+      "size": 18909,
+      "modified": "2025-10-19T23:38:39.663771+00:00",
       "type": "article"
     },
     "b21695b0.html": {
-      "checksum": "011ac0a7962cdf4e50dd7332c4250616e13be30184e5ec158e87424494801f01",
-      "size": 25538,
-      "modified": "2025-10-15T14:19:19.869353+00:00",
+      "checksum": "b5dbe455f9f004ab4dd89f819a92f99ce931d64323e420c23060d8c8907d8571",
+      "size": 25582,
+      "modified": "2025-10-19T23:38:48.671230+00:00",
       "type": "article"
     },
     "b21695b0_Aircraft-6.webp": {
@@ -564,6 +516,54 @@
       "size": 32348,
       "modified": "2025-08-04T05:30:58.010523+00:00",
       "type": "image"
+    },
+    "9f31ab4a.html": {
+      "checksum": "184c274fa84fc76719d4e640d6cf17905603cd077d80029948c05654c22bcd24",
+      "size": 17403,
+      "modified": "2025-10-19T23:38:51.629395+00:00",
+      "type": "article"
+    },
+    "9f31ab4a_Humanise-2.webp": {
+      "checksum": "7984fdc1afd1bd6770bb318386051bf9b04a8a74cd4c55c5ec572c9df4b0b9ed",
+      "size": 4268,
+      "modified": "2025-08-04T05:30:57.996087+00:00",
+      "type": "image"
+    },
+    "9f31ab4a_Humanise-3.webp": {
+      "checksum": "af7773c31a382e11c4ff3f82f77b25ba175d27fa89033ffbd838f0479cb6d2d2",
+      "size": 14896,
+      "modified": "2025-08-04T05:30:57.996963+00:00",
+      "type": "image"
+    },
+    "logo_8b2c4ff1.png": {
+      "checksum": "b3b4b4556309f8373da6abf22ab30db10963e65b1ec7f75f5a9fb6169dc55872",
+      "size": 3805,
+      "modified": "2025-10-20T00:43:22.576538+00:00",
+      "type": "logo"
+    },
+    "profile_fe9d148b.jpeg": {
+      "checksum": "76e878b97ce177760f552cfc64c978acd3d3989108d780bb433efe6292be8176",
+      "size": 877914,
+      "modified": "2025-10-20T01:30:29.671969+00:00",
+      "type": "profile_image"
+    },
+    "6e576ec9.html": {
+      "checksum": "746983e372d08a993d8d8c662b2e94a43f8e4fb910e0bedb5e4d83c7cd6343c5",
+      "size": 23477,
+      "modified": "2025-10-20T02:00:18.079459+00:00",
+      "type": "article"
+    },
+    "6e576ec9_audio.mp3": {
+      "checksum": "c2acb33fb33fc9c12097085aad2839812dae21f6447da0b872ef451f0ce9f566",
+      "size": 6467757,
+      "modified": "2025-10-16T13:17:57.342781+00:00",
+      "type": "audio"
+    },
+    "6e576ec9_podcast.mp3": {
+      "checksum": "c3794ac6a307e3e6bf353bac32598c10407f0fe2711b68bc906b1c05c19c92a1",
+      "size": 1010848,
+      "modified": "2025-10-16T20:25:14.991136+00:00",
+      "type": "podcast"
     }
   }
 }
