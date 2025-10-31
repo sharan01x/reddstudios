@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Age of Goal Based Computing is Here | Redd XF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.58;
+            color: #242424;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .article-card {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.8em;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        /* Tags Display (below subtitle) */
+        .tags-display-view {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag-chip-view {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #f0f0f0;
+            color: #666;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Author & Date Display */
+        .article-metadata {
+            padding: 1rem 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .author-date-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .authors-byline {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .author-info-display {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .author-separator {
+            color: #666;
+            margin: 0 0.25rem;
+        }
+
+        .author-avatar-small {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .author-icon {
+            font-size: 1.75rem;
+            color: #666;
+        }
+
+        .author-name-display {
+            font-weight: 600;
+            color: #242424;
+            font-size: 0.95rem;
+        }
+
+        .author-socials {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            color: #999;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: #242424;
+        }
+
+        .social-icon i {
+            font-size: 0.95rem;
+            color: inherit;
+        }
+
+        .date-display {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            margin-left: auto;
+        }
+
+        .date {
+            color: #242424;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .audio-section {
+            background: #f9f9f9;
+            padding: 16px 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .audio-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .audio-grid.single-audio {
+            grid-template-columns: 1fr;
+        }
+
+        .audio-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .audio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            height: 32px;
+        }
+
+        .content {
+            padding: 32px 0 60px 0;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #242424;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .content h1 {
+            font-size: 2.4em;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .content h3 {
+            font-size: 1.4em;
+            line-height: 1.4;
+        }
+
+        .content p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            line-height: 1.58;
+            color: #242424;
+        }
+
+        .content ol, .content ul {
+            padding-left: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 24px 0;
+            display: block;
+        }
+
+        .sources-section {
+            border-top: 1px solid #e6e6e6;
+            padding-top: 24px;
+            margin-top: 32px;
+        }
+
+        .sources-section h3 {
+            color: #666;
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sources-list li {
+            margin-bottom: 8px;
+        }
+
+        .sources-list a {
+            color: #444444;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 8px 12px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .sources-list a:hover {
+            background: #e8e8e8;
+        }
+
+        .navigation {
+            padding: 20px 0;
+            border-bottom: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #242424;
+        }
+
+        /* Floating logo styles */
+        .floating-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+            object-fit: cover;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            background: transparent;
+            color: #aaaaaa;
+            text-align: right;
+            font-size: 0.9em;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+
+        .footer a {
+            color: #aaaaaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer i {
+            color: rgb(231, 76, 60);
+        }
+
+        /* Floating back button */
+        .floating-back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #242424;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.2s ease;
+        }
+
+        .floating-back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            color: #e74c3c;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.4em;
+            }
+
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.6em;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-logo {
+                left: 20px;
+                top: 20px;
+            }
+
+            .footer {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+                <div class="floating-logo">
+                    <a href="index.html">
+                        <img src="logo_8b2c4ff1.png" alt="Redd XF Logo" class="logo-icon" />
+                    </a>
+                </div>
+            
+
+    <!-- Floating back button -->
+    <a href="index.html" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+
+        <div class="article-card">
+            <div class="header">
+                <h1>The Age of Goal Based Computing is Here</h1>
+                <div class="subtitle">Among the many things AI has enabled, it has now made possible an entirely new method of interacting with our computers.</div>
+                <div class="tags-display-view"><span class="tag-chip-view">design</span><span class="tag-chip-view">ux</span><span class="tag-chip-view">ai</span></div>
+            </div>
+            
+            <div class="article-metadata"><div class="author-date-row"><div class="authors-byline"><span class="author-info-display"><img src="profile_3bc25658.jpeg" alt="sharanx" class="author-avatar-small" /><span class="author-name-display">sharanx</span><span class="author-socials"><a href="https://warpcast.com/sharanx" target="_blank" rel="noopener noreferrer" class="social-icon" title="farcaster: sharanx"><i class="fas fa-circle-nodes"></i></a><a href="https://hey.xyz/u/sharan" target="_blank" rel="noopener noreferrer" class="social-icon" title="lens: sharan"><i class="fa-solid fa-camera"></i></a><a href="https://linkedin.com/in/sharangrandigae" target="_blank" rel="noopener noreferrer" class="social-icon" title="linkedin: sharangrandigae"><i class="fab fa-linkedin"></i></a><a href="https://mastodon.social/@sharanx" target="_blank" rel="noopener noreferrer" class="social-icon" title="mastodon: sharanx"><i class="fa-brands fa-mastodon"></i></a><a href="https://twitter.com/sharan01x" target="_blank" rel="noopener noreferrer" class="social-icon" title="twitter: sharan01x"><i class="fab fa-twitter"></i></a></span></span></div><div class="date-display"><span class="date">17 Apr 2025</span></div></div></div>
+
+            
+
+            <div class="content">
+                <h1>Introduction</h1>
+<p>I have <a href="https://redd.in/blog/5-personal-ai-assistant-devices-reviewed/">long believed</a> that we are on the precipice of changing the fundamental way in which humans will interact with computers. We are stepping into an age where we are going to simply be able to tell our computers the goals we want to achieve and they will figure out the steps in order to achieve it and then execute it for us. But this powerful idea is founded on the notion that your computer will know what there is to know about you, including your preferences, your data and whatever else you can supply it. But that brings up many new questions regarding privacy, data ownership and data residency. But don't worry, I'm not here just to whine, (though I will), but I also come bearing a solution and even ways for you to participate in it.</p>
+<h1>Background</h1>
+<p>To begin to understand the importance of what we're currently living through, it is important for me to provide you a bit of background about three aspects of this industry.</p>
+<p>First, I want to point out the evolution of computing from the perspective of how much effort it takes to have your computer do what you need it to do, the effort has been reducing over time. We've gone from writing our instructions on punch cards to writing programs using almost english sounding programming languages like BASIC or Python. After that, the evolution plateaued until the birth of LLMs. Now, we can speak to them in natural language and have them do things for us.</p>
+<p>The second progression that I want you to pay attention to is the number of things a particular program is capable of doing. You see, at first you needed to employ programmers in your office to write you custom programs because there was just no other way to having your company use the efficiency that computers could bring to your organisation. Post that phase, applications were available to people to just download, install and use. Now app developers who were competing for the user's dollars, either built apps to serve a niche audience or started building super-apps that could do everything. The latter group quickly ran into the limitations of the Graphical User Interface (GUI) because there was only so many things you can pack into a screen and still be user-friendly. This was the case, again, until LLMs. Now you had computers that could do anything, even write programs to do specific things.</p>
+<p>Thirdly, apps have been very specific solutions to a problem. As such, they've been very brittle as you could only ask the app to do certain things and that's it. Even when speech technology was applied, you still spent time learning the phrases that you could use a la, "Hey Google, turn my lights on in the living room". If you said that phrase differently than it had been setup with, for example, if you said, "Hey, it's too dark in the living room" -- you couldn't expect your app to understand that phrase. This hurdle again has been overcome by LLM's because they can understand your meaning <em>past</em> your words. For example, you could say "I'm thirsty", "I'm parched" or even be euphemistic like "My mouth feels like the Sahara desert right now" and it would still get the meaning you want to convey. From a UX perspective, this ability for technology to fit into the life of human beings seamless is what I find most powerful.</p>
+<p>So we are at the threshold of these three progressions having come to a head at once. This means that not only are our computers going to be super capable going forward, it's going to be incredibly simple to use and no one has to spend any time even learning them. Can you imagine what an unlock this is for society? And this is the first time in history that the benefits of this technology is not just going to those of us who grew up with technology in our lives and we've found it comfortable because we spent the time learning them, it's going to be a massive unlock for those that were so far left behind the technological divide or even the english-language. These include people like my parents who find their smartphones challenging to use.</p>
+<p>This, is huge.</p>
+<h1>Context is Everything</h1>
+<p>For AI systems to go from just being effective on the baseline (based on what it's learnt about humans as a whole from the internet) to doing things for you the way you prefer it be done requires understanding your context. They need to be able to study your behaviours and patterns in order to be able to emulate them. This may mean giving the AI access to not just your emails, calendars, contacts, photos but even allow it to watch your health data, medical records, your passwords, etc.</p>
+<p>That's when they can go to a place where they can understand that you prefer to say "clutch" over "cool" or like to order from this particular Chinese restaurant and the other one is there as a backup or that you prefer your screen font size large because you have trouble reading or even to cancel all your appointments automatically if you woke up unwell one day. It can figure all this out without you ever having to tell it these things explicitly.</p>
+<p>But AI isn't just going to be a useful assistant to have, it will soon become essential. We live in a world where information is being produced at unprecedented rates and we feel compelled to keep up. But we are reaching the limits of human capabilities and that's just going to continue to be the case. There will be hundreds of decisions that we can delegate to AI that's working on our behalf, the least of which is deciding which email is spam and which isn't. If you want to participate in an accelerating world, having an AI assistant will become a necessity in the same way having a smartphone today is seen as a necessity.</p>
+<p>So, the question is, where do you get your AI assistant.</p>
+<h1>Shop Around</h1>
+<p>If there's one thing we've learnt from the mistakes made by the social media decade is that if the service is free, you are the product. We've also seen the many ways data about users have been used against them. To most readers of this blog, I don't need to list the kinds of things these large technology companies learn about us just through the ways in which we shop or even the intonations of our voice. We've seen how effective and accurate they have been, including stories about products being suggested to dads of teenagers who were pregnant, even before the dad knew about that pregnancy!</p>
+<p>I would never trust these corporations with my context data, especially when that data could reveal infinitely more information than my social media profile ever could.</p>
+<p>Let me be clear, I don't think these corporations are necessarily evil. I find it hard to imagine anyone waking up every morning with the sole intention to destroy other people's lives. But the incentives of corporations are definitely not aligned to serving the user. They are beholden to their shareholders and are mandated with generating profits for them. This mechanism doesn't allow anyone to see the user as anything more than a resource to derive value from. If value can be generated by selling their data to the highest bidder, so be it.</p>
+<p>Given this equation, let's suppose you go ask a question about a certain type of cancer to the AI assistant from one of these large corporations or submitted a scan to this assistant with the intention of getting a second opinion. What if that AI assistant saw that and realised that your insurance company may be willing to pay a huge amount for that information because they could loose a lot more if they continue to cover you if you fell ill. Do you think the assistant would be programmed to act on your behalf or to generate a profit for the corporation?</p>
+<p>The good news is that we don't need to rely on these corporations. The open source world has realised these pitfalls and have been hard at work developing technologies that will ensure that this kind of a future doesn't need to befall us. I also realise how important these efforts are and have been contributing my time and efforts to such projects as well.</p>
+<h1>The Solution is Simple</h1>
+<p>While these big companies that own the frontier AI models want to portray themselves as the only option for this sort of intelligence, don't be fooled. Know that you can have absolutely great stuff available to you without any of them in the picture. You can retain complete ownership of your data while still getting all the convenience. You can do all this locally, in the privacy of your own computer. You don't have to learn prompting strategies either.</p>
+<p>You can install Ollama and Move 37 on your machine and you're good to go! All of it is completely free and you can even check and audit the code if you're so inclined. Granted it's a little bit of work to get this installed right now, but they are all making things easier all the time.</p>
+<p>If you'd like to see a demo of this, I'd be happy to create one. If you want to find out how to install this also, I can create another video about it. But for now, here's a very quick walkthrough.</p>
+<p>[COMING SOON]</p>
+<p>As mentioned, these two projects are available for free, from these locations. So go check them out:</p>
+<ul>
+<li><a href="https://www.ollama.com">Ollama</a></li>
+<li><a href="https://github.com/sharan01x/move37">Move37</a></li>
+</ul>
+<hr />
+<h1>Conclusion</h1>
+<p>If you believe in an open future where individuals retain control over their own destinies, you can start using these technologies for yourself. But if you feel like you'd want to contribute more and be a part of these movements, there are many ways you can participate depending on your skills.</p>
+<p>If you're technically inclined:</p>
+<ol>
+<li>Move37 is looking for help in testing, verifying the code completeness and various other items listed in their roadmap.</li>
+<li>UX designers can propose new ways to organise the frontend to make things easier and more efficient.</li>
+<li>The installation process could use a lot of simplifying and that's something that you can contribute to, especially on Move37.</li>
+</ol>
+<p>If you're not an engineer:</p>
+<ol>
+<li>Use and provide feedback and spot bugs</li>
+<li>Spread the word and get more people to realise the problem and understand that there are solutions</li>
+<li>Create videos talking about the projects</li>
+<li>Add new recipes -- the steps for using various applications</li>
+<li>Suggest new ideas and features that can be built</li>
+<li>Star the projects on GitHub so that they get more visibility</li>
+<li>Just donate to the projects if you've got the money, they can use it.</li>
+</ol>
+<p>But whatever you choose, thanks for being a part of this! Until next time, ciao!</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by <a href="https://redd.in/" target="_blank">Redd</a>
+    </div>
+</body>
+</html>
