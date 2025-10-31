@@ -9,7 +9,7 @@
     <description>Building startups, pushing pixels, slicing videos, compiling code or writing verse.</description>
     <language>en-us</language>
     <pubDate>Mon, 08 Sep 2025 20:08:14 +0000</pubDate>
-    <lastBuildDate>Mon, 20 Oct 2025 02:00:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Oct 2025 10:48:48 +0000</lastBuildDate>
     <generator>Move37 Blog Publisher</generator>
     <atom:link href="https://redd.in/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -646,71 +646,6 @@
 <p>Introducing technology with UX design principles can streamline processes and remove inefficiencies. This increases productivity and brings down costs. That’s not all; the platform becomes a one-stop shop for all of the hospital’s packages. This creates simple, effective communication around each package which, in turn, can result in better conversions.</p>
 <h1>Conclusion</h1>
 <p>In conclusion, <em>sensitivity</em>, <em>relevance</em> and <em>sociability</em> guiding all UX decisions make for a vastly improved patient experience. Also, let’s not forget integrating tech and UX paves the way for machine learning and AI which can unlock a whole new level of efficiency and patient satisfaction!</p>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>A Curated List of Videos to Understand Crypto</title>
-      <link>https://redd.in/dd39fcda.html</link>
-      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
-      <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/dd39fcda.html?p=dd39fcda</guid>
-      <description><![CDATA[This list of videos will help you understand crypto and Web3 better.]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<h1>The Basics of Crypto</h1>
-<p>The following is a collection of great videos to watch to understand the field of crypto and Web3. I hope to keep this updated with new things I learn.</p>
-<h2>Economics Concepts (Yes, start here)</h2>
-<ol>
-<li>What is money? <a href="https://youtu.be/rubNhvbuBI8">Short version</a>, <a href="https://youtu.be/bjvMt0xaSUQ">medium version</a> and the <a href="https://youtu.be/d_34YjXAU5Y">long version</a>.</li>
-<li>How is money created? <a href="https://youtu.be/mzoX7zEZ6h4">https://youtu.be/mzoX7zEZ6h4</a></li>
-</ol>
-<h2>Blockchain Concepts</h2>
-<ol>
-<li>What is a blockchain? The <a href="https://youtu.be/hYip_Vuv8J0">concept</a> and the <a href="https://youtu.be/SSo_EIwHSd4">visual example</a> and <a href="https://youtu.be/_160oMzblY8">a demo</a></li>
-<li>What is a Bitcoin? <a href="https://youtu.be/bBC-nXj3Ng4">https://youtu.be/bBC-nXj3Ng4</a></li>
-<li>Consensus mechanisms: <a href="https://youtu.be/M3EFi_POhps">Proof of Stake vs. Proof of Work</a> and <a href="https://youtu.be/3QCykHU89To">other mechanisms</a></li>
-<li>What are smart contracts? <a href="https://youtu.be/ZE2HxTmxfrI">Visual explanation</a></li>
-<li>What are NFT’s? <a href="https://youtu.be/451V-lBLfuo">Basic</a> and <a href="https://youtu.be/4dkl5O9LOKg">more detailed</a></li>
-</ol>
-<h2>Additional Information</h2>
-<ol>
-<li>The evolution of the web: <a href="https://youtu.be/RXHITeaGB8Q">With Marc Andreesen and Chris Dixon</a></li>
-<li>Mental models to understand Web3: <a href="https://youtu.be/jezH_7qEk50">By Chris Dixon</a></li>
-<li>A good overview of the crypto industry: <a href="https://youtu.be/2wxtiNgXBaU">By Chris Dixon</a></li>
-<li>Future of Applications: By <a href="https://youtu.be/3jPYk7ucrjo">Balaji Srinivasan</a></li>
-</ol>
-<hr/>
-<h1>Glossary of Terms to Understand</h1>
-<p>| Wallets                 | The software that allows you to interact with a blockchain and stores your private key to encrypt messages and public keys to decrypt them                                                                                                                                                                      |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Hardware Wallets        | Software wallets that are running on independent devices and are considered more secure as they cannot be hacked remotely                                                                                                                                                                                       |
-| Private and Public Keys | A long set of hexadecimal numbers that can be used to cryptographically sign transactions. The Private Key is used to encode a message (or transaction) and the public key can be used to decrypt that message.                                                                                                 |
-| Coins                   | A unit of account on a blockchain that is usually used to pay for conducting operations on that chain. For example Bitcoin, Ethereum and Atom.                                                                                                                                                                  |
-| Tokens                  | It is a unit of account created for specific use that is based on the code of a different coin and therefore doesn’t have a blockchain of its own. For example Matic, DAI, UNI, etc.                                                                                                                            |
-| Alt Coins               | Anything that’s not Bitcoin                                                                                                                                                                                                                                                                                     |
-| Shit Coins              | Any coin that doesn’t have good fundamentals and instead probably built to simply pump its value and dump it on the market. Doge coin is a prime example.                                                                                                                                                       |
-| Metamask                | A software wallet that is used as a browser plug-in                                                                                                                                                                                                                                                             |
-| HODL                    | Means Hold On for Dear Life. It is an investment strategy where people buy a coin and hold on to it for many years instead of selling it.                                                                                                                                                                       |
-| WAGMI                   | “We Are Going to Make It” or “We All Gonna Make It”. A positive affirmation.                                                                                                                                                                                                                                    |
-| BTFD                    | Buy The F*&amp;king Dip. An indication to buy a token or coin when the prices are low.                                                                                                                                                                                                                              |
-| BUIDL                   | Build, spelt differently to indicate building in Web3                                                                                                                                                                                                                                                           |
-| Bear Market             | When sentiments in the market are low                                                                                                                                                                                                                                                                           |
-| Bull Market             | When sentiments in the markets are high and when new all-time-high’s are usually being hit                                                                                                                                                                                                                      |
-| Layer 1 Chains          | Blockchains that are the final settlement layers and provide their own security                                                                                                                                                                                                                                 |
-| Layer 2 Chains          | Blockchains built on top of L1 chains that usually do not perform their own security or finality and are instead built to handle fast and cheap transactions                                                                                                                                                    |
-| App Chains              | Application specific blockchains as opposed to general purpose blockchains                                                                                                                                                                                                                                      |
-| DEX                     | Decentralised Exchanges. They are typically exchanges where one coin or token can be changed for another coin or token. They usually do not have any KYC requirements. For example UniSwap, SushiSwap, DYDX.                                                                                                    |
-| CEX                     | Centralised Exchanges where the same operations as DEX’s can take place. They usually have KYC requirements and make it simpler for new users.                                                                                                                                                                  |
-| Stable Coins            | Any coin whose value is pegged to a US dollar or any other Fiat currency. They have properties of tokens so that they can be used in crypto transactions (as Fiat currencies can’t be used in this way). But their value is based on the real-world value of the Fiat currency it represents.                   |
-| DeFi                    | Decentralised Finance. It represents an industry within crypto that is trying to build equivalent infrastructures that are present in traditional finance institutions like banks. They enable people to deposit their currencies and earn interest, lend their money to others, borrow money from others, etc. |
-| Cefi, TradFi            | The slang for centralised finance or traditional finance                                                                                                                                                                                                                                                        |
-| Staking                 | The act of securing a Proof of Stake network by depositing coins into staking pools                                                                                                                                                                                                                             |
-| Delegation              | If the amount of a coin or token you have is low and you can’t meet the minimum requirements of staking, you can delegate your tokens to someone else and they will then stake your tokens once they have the required number of tokens.                                                                        |
-| Liquidity Pools         |                                                                                                                                                                                                                                                                                                                 |
-| Automatic Market Makers |                                                                                                                                                                                                                                                                                                                 |
-| The Merge               | This is the point where the Ethereum blockchain switched its consensus mechanism from Proof of Work to Proof of Stake. It was a major milestone and therefore got a name.                                                                                                                                       |
-| ERC20                   | A coding standard for tokens that are built on the Ethereum blockchain. Examples of this include ETH, OP, ARB and others.                                                                                                                                                                                       |
-| ERC 721                 | A coding standard for NFT’s that are built on the Ethereum blockchain. This is usually used when you have only one copy of an NFT, called “1 of 1”. Usually used to represent ownership of expensive objects.                                                                                                   |
-| ERC 1155                | A coding standard for NFT’s that are built on the Ethereum blockchain. It is usually used when multiple copies of an NFT are produced by the creator.                                                                                                                                                           |</p>
 </div>]]></content:encoded>
     </item>
     <item>

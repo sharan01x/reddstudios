@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-20T02:00:18.167740+00:00",
+  "last_updated": "2025-10-31T10:48:48.003405+00:00",
   "files": {
     "6e576ec9_20250927_175202.png": {
       "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
@@ -8,15 +8,15 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "274bfd712a9ca48c41c276a4141288fdccad485bcf5464cb6ab8221124aae4ce",
-      "size": 27433,
-      "modified": "2025-10-20T02:00:18.109968+00:00",
+      "checksum": "ae5f8fb3dec973ae1dbd81f8268bf846a33a99ae5ffe5ae5e3c46aa0e4abac80",
+      "size": 26682,
+      "modified": "2025-10-31T10:48:47.709375+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "f798b1c04b6954243b1c8b68a0816ff8ec5017d417b608ec259729a2be1ed7ed",
-      "size": 282160,
-      "modified": "2025-10-20T02:00:18.167127+00:00",
+      "checksum": "342645b6f54ad32c8beb6e3df10c0b72e395c9a68d51e39e4124f9e0c24481e9",
+      "size": 269428,
+      "modified": "2025-10-31T10:48:48.001379+00:00",
       "type": "rss"
     },
     "3e62d0c6_20250804_174247.png": {
@@ -52,7 +52,7 @@
     "blog.css": {
       "checksum": "bf3b36be094d57009ffb7efe01a782d155e5b53b2284a3bf1bbf17103cdae9cf",
       "size": 928,
-      "modified": "2025-10-20T02:00:18.062081+00:00",
+      "modified": "2025-10-31T10:48:47.703375+00:00",
       "type": "css"
     },
     "f52b3f80.html": {
@@ -359,12 +359,6 @@
       "checksum": "40d8cd4f3c62d9ed13e77baba6cee502c2ae4d987d7204197642d89899b0c618",
       "size": 23457,
       "modified": "2025-10-19T23:38:02.259403+00:00",
-      "type": "article"
-    },
-    "dd39fcda.html": {
-      "checksum": "48c1e109a96c4b04ed787a9dccfbed647cbad48bc2886fb86352b253ad63aacc",
-      "size": 24933,
-      "modified": "2025-10-19T23:38:07.310576+00:00",
       "type": "article"
     },
     "d0364a95.html": {
