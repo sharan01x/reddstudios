@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-27T16:09:33.811341+00:00",
+  "last_updated": "2025-11-27T18:52:23.717820+00:00",
   "files": {
     "6e576ec9_20250927_175202.png": {
       "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
@@ -8,15 +8,15 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "9be55d24594c8c9456a6cb694e8e7e48c9b6debbf75e8f4a45b0a8f64f2a51e2",
-      "size": 27650,
-      "modified": "2025-11-27T16:09:33.589804+00:00",
+      "checksum": "0c47d4876ac15b55ad282a89ac12962883a1338bdc5fb7b34b45a78ac5d784b4",
+      "size": 28156,
+      "modified": "2025-11-27T18:52:23.447279+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "670cb712372fe199124443470045081fd1f7aa08bb7f5c504d194a8664cad3bb",
-      "size": 295525,
-      "modified": "2025-11-27T16:09:33.758807+00:00",
+      "checksum": "e712473577e4c9ea832cab6cc2300b9f6cae56fa052cc6fdf079a078c27b6365",
+      "size": 306065,
+      "modified": "2025-11-27T18:52:23.715284+00:00",
       "type": "rss"
     },
     "3e62d0c6_20250804_174247.png": {
@@ -52,7 +52,7 @@
     "blog.css": {
       "checksum": "bf3b36be094d57009ffb7efe01a782d155e5b53b2284a3bf1bbf17103cdae9cf",
       "size": 928,
-      "modified": "2025-11-27T16:09:33.554803+00:00",
+      "modified": "2025-11-27T18:52:23.416278+00:00",
       "type": "css"
     },
     "f52b3f80.html": {
@@ -605,6 +605,18 @@
       "checksum": "19ca49cbd78130d06bee5e1904957e37108980a17b41eec4ac1d2ca9f23add56",
       "size": 25525,
       "modified": "2025-11-27T16:09:33.575803+00:00",
+      "type": "article"
+    },
+    "4222f787_9fc2db4e37624552af258a5232644310.png": {
+      "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
+      "size": 1364109,
+      "modified": "2025-11-27T18:43:21.212269+00:00",
+      "type": "image"
+    },
+    "4222f787.html": {
+      "checksum": "e22ad8ede54634ff1058f73f8e17fe8a7332c85d2c5d9fed062b476da4b10086",
+      "size": 22605,
+      "modified": "2025-11-27T18:52:23.437279+00:00",
       "type": "article"
     }
   }
