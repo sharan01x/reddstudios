@@ -8,51 +8,75 @@
     <link>https://redd.in/</link>
     <description>Building startups, pushing pixels, slicing videos, compiling code or writing verse.</description>
     <language>en-us</language>
-    <pubDate>Mon, 08 Sep 2025 20:08:14 +0000</pubDate>
-    <lastBuildDate>Fri, 31 Oct 2025 13:19:08 +0000</lastBuildDate>
+    <pubDate>Tue, 25 Nov 2025 17:12:46 +0000</pubDate>
+    <lastBuildDate>Thu, 27 Nov 2025 16:09:33 +0000</lastBuildDate>
     <generator>Move37 Blog Publisher</generator>
     <atom:link href="https://redd.in/rss.xml" rel="self" type="application/rss+xml" />
 
     <item>
-      <title>Evolution, Not Revolution</title>
-      <link>https://redd.in/6e576ec9.html</link>
-      <pubDate>Mon, 08 Sep 2025 20:08:14 +0000</pubDate>
+      <title>Six Things to Consider when Integrating AI into your UX</title>
+      <link>https://redd.in/bd45aaa3.html</link>
+      <pubDate>Tue, 25 Nov 2025 17:12:46 +0000</pubDate>
       <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/6e576ec9.html?p=6e576ec9</guid>
-      <description><![CDATA[How Gradual Progress Can Lead to Success in Product Design]]></description>
+      <guid isPermaLink="false">https://redd.in/bd45aaa3.html?p=bd45aaa3</guid>
+      <description><![CDATA[I built an app with AI features baked in, and learnt how to do it right]]></description>
       <content:encoded><![CDATA[<div class="content">
-<p>The Apple Newton was a revolutionary product that was packed with cutting edge technology like touch screens, handwriting recognition and wireless data transfer. It was well ahead of everyone else and was defining a brand new product category. It failed. But not only that, other companies launched only three years later with almost identical products ended up succeeding. This is one of the strangest things that seem to happen in product companies and I wish I had figured out the answer before I did, as it would have saved me making the same mistake two times. <img alt="Generated image" src="6e576ec9_20250927_175202.png"/></p>
-<h2>Obi: A Learning Experience</h2>
-<p>Ever since my twin and I learnt to program when we were 8 years old, we had been dreaming of producing products. Our first real product, one that was actually used by others, was an inventory management system built with Visual Basic 5. It was built for our family's jewellery store. We were in the ninth grade and were paid with <em>bhel puri!</em> It wasn't a lucrative project, but it was a delicious one. It was a thrill to see an entire store using and be dependent on our software!</p>
-<p>Later, around 2008, we had a second run at building another version of the inventory management system, when we had a custom software development company and were considering building a product  to help us scale our revenues. We looked at the competition and what they offered, their feature sets, their pricing methods and understood all the artificial boundaries they had in place and decided we could do better, way better.</p>
-<p>Our software, named Obi, would be the following:</p>
-<p>1. On the software side -- we would deliver a modern UX that any user could figure out how to use on their own. We didn't want to build the clunky software that required "training" that companies would charge handsomely for.</p>
-<p>2. On the pricing side -- we would deliver the software on the web (the term "cloud" hadn't been invented at this time) and charge per user without bifurcation within user types.</p>
-<p>3. On the upgrades front -- we wouldn't charge for upgrades. We just factored the cost of upgrading once a year and melded that into the monthly cost.</p>
-<p>There were several other aspects that were different in our case, but for the sake of brevity, we were doing exactly what SaaS companies do today.</p>
-<p>We went out the door and started talking to customers and waiting for the hordes to come and break our doors down. But, that didn't happen. The objections  we got from our customers were unsurmountable for a small software company like ours and after 1 year of running the operations and only a few clients to speak of, paying us a very small amount, we just couldn't sustain it any longer and had to shut down. This, despite a customer actually walking into our office and offering to pay us more than we asked so that he could keep using it at his store! </p>
-<p>I joined Adobe as a UX designer at the end of 2009 using Obi to demonstrate that I had the experience of building "beautiful software" (the UX term hadn't become well known at the time). </p>
-<p>Two years later, around 2010, most of the competitors had begun to do everything almost exactly as we had and found great success. It would have been more comforting if we had been completely wrong, but our predictions of the future came out to be exactly true. I heard someone say "Being too early is the same as being wrong". While they described my problem perfectly, I still didn't know what the solution was. I needed to break down what "being early" was. In the relative stability of a 9 to 5 job, I finally figured it out.</p>
-<h2>The Existing Environment</h2>
-<p>An innovator imagines that their ability to look far into the future is what gives them an edge. We build the vision of the future based on a series of logical milestones, and arrive at the shape of what we believe is the future. The fault in our approach was that we didn't consider their existing environment in which our potential customers exist, which is integral to the decisions they make.</p>
-<p>For example, we were right in assuming that most software of the future would be web based because it not only solves the need for installation, but also makes it simple for upgrades and makes the system infinitely more accessible from anywhere on the planet. But our customers lived in a world where nearly all software was sold on CDs that they could hold in their hands. It gave them the confidence that they would always have and be able to use it whereas something on the web could disappear tomorrow. </p>
-<p>They were also transitioning from a world that believed software wasn't something one paid for leave alone pay in perpetuity for. They also believed that choosing to upgrade was meant to be optional. "Normal" upgrade cycles were once a year and done only when they saw that new version had a lot of improvements over the existing one. They wanted to be able to compare and then make the choice to upgrade or not.</p>
-<p>They also saw the training was an essential service that a software developer had to provide because in their experience, they had always used clunky software that required that training. No upstart like us would come and shake that notion with our fancy user-oriented design. But having the infrastructure to provide the training was also a signal that indicated that we were big enough to be around in the future. Inventory management systems are a core part of the operation of a company, so this was an assurance that they would need before they switched to using our software.</p>
-<p>It's quite interesting that I find a lot of parallels exist between architecture and product design. There is a famous quote by Eliel Saarinen, the architect, that goes, “Always design a thing by considering it in its next larger context—a chair in a room, a room in a house, a house in an environment, an environment in a city plan.” He really was onto something there. </p>
-<h2>The Comfort of the Status Quo</h2>
-<p>Obi was different in all these respects. It was new and different on too many fronts all at once. In a sales cycle, we may have the opportunity to counter one or two of the objections that a potential customer may pose to us, but if there are so many different aspects that they have to wrap their heads around, then the default decision is to maintain status quo and reject the offer. </p>
-<p>Customers will make the effort of doing the cognitive work if the end result is something that is 10X better than the current situation not when something is only a moderate improvement over the existing solution. In our case with Obi, we were doing a lot of things differently, but the end result was that the customer would still only be able to manage their inventory a little more efficiently, nothing changed apart from that. </p>
-<p>There's the old adage, <em>"One can only be wrong if they try to do something."</em> (which is an interesting antonym of <em>"Only those who try can succeed"</em> which is meant to motivate entrepreneurs, but that's a different discussion altogether). In other words, we simply didn't offer the user a big enough of a reason to experiment with so many different variables. All they'd see at the end was a modest improvement in the operation and a reduction in cost that didn't really make a difference to their profits.</p>
-<h2>The EnR Framework</h2>
-<p>Given this understanding I began to work on a framework that would allow us to chart a course for how to develop products. </p>
-<p>Starting with a vision of the future is good. It works well as a goal to shoot for but also solves the "faster horses" problem, as the Henry Ford quote goes. No one but the innovator can dream up a future vision of a product. Only solid domain expertise will allow us to see that.</p>
-<p>But once that vision is well understood, the next step is actually to chart a course from the present to that future. You can do that by creating milestones that take into consideration what the current environment is and makes tweaks that will get you from the present to the next milestone. Each milestone makes one change and one change only. This will afford time for the environment to catch up and the user to be brought along the path making only minor changes to their understanding each time. </p>
-<p>It also makes sense to poll users on their opinions of the features developed at this resolution because these changes are gradual. The feedback can be integrated into the development of the next milestone even making fixes wherever required. Before long, we'd have arrived safely at the future you had imagined long ago. This way of getting to that future is a more resilient option as well as it will be on solid footing each time.</p>
-<p>But this framework is heavily dependent on a strong feedback mechanism that allows you to hear from users often and in large numbers. I'll cover more about this in a future article. This framework is also not useful in some leapfrog products such as ChatGPT or the like that had no precedents. So it is not useful in those situations.</p>
+<h2>Building Move 37</h2>
+<p>As a bit of background, I built <a href="https://move37.works/">Move 37</a>, an application that is a reimagining of word processors like Word or Pages, to better suit today's media landscape. We have several forms of content, everything from blogs and social media posts to podcasts and videos, and it is possible to communicate a single idea in all these forms with a few tweaks to the core content. Like the leaps that were made possible when the word processing applications were shipped on computers, with Move 37, a single individual today could become a media publishing house that served content in the form that their consumers wanted it. On demand. </p>
+<p>Unsurprisingly, this is exactly the sort of thing that artificial intelligence (AI), specifically Large Language Models (LLMs) are well suited for. </p>
+<p><img alt="Move37Screenshot.png" src="bd45aaa3_24f6fb13e8c4448dbceb5889b68c7690.png"/></p>
+<p>Being a digital product designer, it was impossible for me to not observe the various ways in which AI could be employed within the application and the effects that each choice would have. If I employ AI well, it becomes and extremely useful tool that saves an incredible amount of time and effort. If I employ it badly, I could create AI slop generation engine. Or the worst crime of all, I could kill the user's agency where they don't use their own judgement anymore and end up becoming button-pushing-monkeys in the long run. </p>
+<p>My deep realisation was that there was a very fine line between these two choices and it was important to pay attention not only to the places where AI should be employed, but more importantly, where not to use it. </p>
+<p>This article is a way for me to log my learnings, as it were. But if you are someone infusing AI capabilities into your application, I hope all the time and effort spent in learning these lessons give you a leg up in your endeavour.</p>
+<h2>Strengths and Weaknesses</h2>
+<p>Before I began, I wanted to understand what AI is and isn't capable of within the context of my application. As I saw it, it's strengths are:</p>
+<ul>
+<li>AI is multimodal and can produce text, images, audio and video -- exactly what I need</li>
+<li>Since they are Language Models, they are very good at languages and a perfect fit not only for spelling and grammar checks, but also for translations across languages.</li>
+<li>AI has a vast knowledge base and can find and check facts very simply and that makes it very suited to being a writing aid</li>
+<li>Unlike programs that can recognise text or images, AI can understand the ideas discussed in the text or images and this is useful in comparing various pieces of knowledge, especially when the same idea has been expressed in multiple ways</li>
+<li>AI can be used in 'fuzzy situations' where you are not working with exact information and this makes it extremely suitable for searching knowledge bases or for creative applications, like in creating illustrations</li>
+</ul>
+<p>And, it's weaknesses are:</p>
+<ul>
+<li>It really doesn't know when it makes a mistake. It is always confident in what it says. This quality makes AI a liability in many situations. </li>
+<li>The same input doesn't produce the same output. This makes programs more suitable when exact outputs are required from exact inputs.</li>
+<li>It can be extremely slow if employed in performing basic operations. </li>
+<li>Don't rely on AI for calculations. While this is likely to change very quickly, LLMs aren't flawless at mathematics as yet.</li>
+</ul>
+<h2>Things to Consider</h2>
+<h3>Privacy</h3>
+<p>My first thought was about privacy. Granted that the application I was building was meant for publishing, but still, I wanted to build this on a strong foundation of privacy. I didn't want any aspect of the data from the application going to centralised AI models if I could help it. </p>
+<p><img alt="OpenSourceModels.png" src="bd45aaa3_520f932aea984933827ce657c27f9e91.png"/></p>
+<p>The reason for it is quite simple, these centralised models like the ones from OpenAI, Anthropic, Google and others are very capable. But since the data going to them are going to be collected and mined, I didn't want any user data to end up in that pile. While no one expects these companies to use the data against their users, one must never give rise to such a possibility. </p>
+<p>So if you must use AI, try to use something locally hosted. If that is not a possibility, try to use open source models from a number of different models and service providers as in Move 37's case. </p>
+<p>But to be clear, Move 37 does have the frontier models present as an option of last resort so that the user is always able to perform their actions. But in all the usage so far, we've never had to use this option.</p>
+<h3>Speed</h3>
+<p>AI can do a lot of things and the temptation to use it in many situations is always present. But keep in mind that even with home automation being all the rage, we still haven't been able to get rid of physical light switches from our homes. Would you be asking Alexa or Google to turn on the light switch if you were standing in front of it? The analogy exists in the application world as well. Sometimes it is just faster to use a program to do a job than to employ AI to do it. </p>
+<p>For example, Move 37 is capable of taking social media messages and posting them for you. Now, I could have built in methods to instruct AI to go to LinkedIn and post the message for the user, but this would take a very long time to perform as the AI needs to take screenshots of your computer at every step, send it to the server, analyse it, plan the next steps and then do it on the user's computer. This was the case on <em>every</em> run. But since LinkedIn's website wasn't changing everyday, this level of analysis being performed on every run was not only slow and inefficient, it was also quite expensive. This was much more easily handled by taking a scripted approach where the application would look for this element first, perform this action next, etc. This was incredibly fast and also performed with absolutely no use of AI.</p>
+<p>It's best to always begin with asking whether you need to employ AI for the task.</p>
+<h3>Accuracy</h3>
+<p>I already spoke about not using AI to do mathematics, but it is also important to keep in mind that the output from the models cannot be tightly controlled either. Expecting output accuracy from is a fool's errand. For example, there is a function in Move 37 where if you provide the text for a social media post, it is automatically converted into different lengths as they are required by different social media channels i. e. 280 characters for Twitter/X, 3000 for LinkedIn, etc. In my first attempt at doing this, I sent in all the accounts along with their limits to the AI and asked it to give me a structured JSON output with the text variations assigned to the specific accounts. </p>
+<p><img alt="Variations.png" src="bd45aaa3_5f623f480eef4512810fc96a9ee524c3.png"/></p>
+<p>This failed because the LLMs wouldn't always respect the different variants all the time. It did do it sometimes, and that lulls you into thinking that what you built will work in every case, but that's just not true. The solution to this was to have the AI create the text variations and get that sent to a function that would count the characters and assign it reliably to the right accounts.</p>
+<h3>Affordances</h3>
+<p>But that's not all. Every output can also vary. As in the previous example, I had instructed the AI to provide a JSON output and even provided the example in my prompt. But the output, while JSON, had different formatting. Sometimes it included the outermost braces and sometimes it didn't. You'd always have to write functions that would normalise these outputs and use it correctly.</p>
+<p>A less technical example may be that you ask the AI to count the number of items in a list. The output can be "5", "five" or even "There were 5 items", "I counted 5 items". If you needed to use this output in the application's interface, you would first need to think about these possibilities and try to include instructions in your. prompt regarding the output and format that you need. If you need to use the output within the interface, it would also be good for you to consider these possibilities and build affordances within your interface to be able to handle these possibilities.</p>
+<p>Not only that, every model behaves a little differently. Even within specific models, newer versions of the same model will handle scenarios differently. So keeping all these aspects in mind when building your program would be a good idea. Otherwise you run the risk of making your application very brittle.</p>
+<h3>Creativity</h3>
+<p>I'd argue that this is one of the best use cases for AI. If there's any space within your application where you need a creative take on things, using AI there would probably be a good idea. But be careful to use the output from the AI only as fodder for the creative endeavour and not the output itself.</p>
+<p>In Move 37, I built a podcast module that would take the text of the article and create a podcast script from it and also produce the audio version of it automatically. The entire task took about 5 to 10 minutes. I thought this was a great use for AI, but I quickly realised that this would take away from the value of the podcast because the human had no role to play in it. That approach sometimes resulted in shallow coverage of the depth of an article that the user wrote. In other words, it created AI slop.</p>
+<p><img alt="Podcasts.png" src="bd45aaa3_23b58e151fc64ba4b2d50e85a31c3dac.png"/></p>
+<p>So I redesigned the module to first display the script of the podcast that was generated by the AI. This acted as a great starting point for the user and saved them an immense amount of time. The user could always start from scratch of course, but usually seeing a draft of something makes you think about how you could write it better, even if that meant re-writing the whole thing. And I think that's a great use of AI in the creative process.</p>
+<h3>Taste</h3>
+<p>As I've already illustrated in the points above, AI can be used in a lot of ways, but if we make the effort to position it as a tool, we'd be extracting real value from it and keeping our skills sharp, if not sharper. As I have faced several times myself, the temptation to make AI go "just one step further and complete the job" is exactly the line we must not cross. </p>
+<p>One more important point I need to explicitly call out is to never put the AI in a place where it makes decisions for the user. There least important reason for this is that no one knows what data went into training the AI, not even those that trained the AI because the data sets are so large that no single human has ever verified all of it. This necessarily means that you can never be sure of the reasons behind the AI's decisions. </p>
+<p>But I think the bigger point is that doing so slowly chips away a very important quality from the user, which is taste. We develop our sense of taste by making a vast number of decisions and seeing whether the outcomes matches the vision of the world we want to see created. This is a core human quality. It is what drives us to bend and shape the world around us. This is something that should never be outsourced to anyone. Because, in the future neither effort nor skills are going to be barriers for us to do something. In such a world, the only thing that matters is taste.</p>
 <h2>Conclusion</h2>
-<p>The 'Evolution, not Revolution' framework is an important concept in design and innovation that I had to develop in order to handle my work in product design.</p>
-<p>If Apple had launched Newton at a lower price point that validated whether someone would want a PDA, they may have given themselves the opportunity to validate that idea before packing in expensive touchpad technology or handwriting recognition. If they had done that, they may have not only cornered the PDA market but could very well have entered the mobile phone market about 15 years before they actually did. </p>
-<p>I hoped they'd have learnt their lesson from previous mistakes, but we're seeing instead that they're repeating them with the Vision Pro. The platform has some great potential, so I hope they fix things soon.</p>
+<p>There was a time when websites with SSL protection indicated it through a lock icon placed in the address bar. Today, it's the opposite where websites with SSL protection is the default and you're warned when you access a site without that protection. In the same way, we're headed into a world where AI will be the default engine that performs most actions within an application. But until then, it would be a good idea to communicate which parts of your app are using AI so that users take the precaution they need when using that function within the app. </p>
+<p><img alt="ParagraphImplementationOfAI.png" src="bd45aaa3_5c1ffcdb50e84f1daaa6fc91da08b325.png"/></p>
+<p>Paragraph, the blog publication platform does this really nicely where it indicates the use of AI clearly within their interface. I am yet to do this consistently for Move 37, but I thought I'd still mention it since this was important. </p>
+<p>If you'd like to discuss this or other topics related to AI or UX, feel free to reach out over <a href="https://x.com/sharan01x">Twitter/X</a> or other socials listed on <a href="https://redd.in">Redd XF</a>, my blog. If you'd like to use Move 37 completely for free, go check it out at <a href="https://move37.works/">https://move37.works</a>.</p>
 </div>]]></content:encoded>
     </item>
     <item>
@@ -436,58 +460,6 @@
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/f52b3f80.html?p=f52b3f80</guid>
       <description><![CDATA[Among the many things AI has enabled, it has now made possible an entirely new method of interacting with our computers.]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<h1>Introduction</h1>
-<p>I have <a href="https://redd.in/blog/5-personal-ai-assistant-devices-reviewed/">long believed</a> that we are on the precipice of changing the fundamental way in which humans will interact with computers. We are stepping into an age where we are going to simply be able to tell our computers the goals we want to achieve and they will figure out the steps in order to achieve it and then execute it for us. But this powerful idea is founded on the notion that your computer will know what there is to know about you, including your preferences, your data and whatever else you can supply it. But that brings up many new questions regarding privacy, data ownership and data residency. But don't worry, I'm not here just to whine, (though I will), but I also come bearing a solution and even ways for you to participate in it.</p>
-<h1>Background</h1>
-<p>To begin to understand the importance of what we're currently living through, it is important for me to provide you a bit of background about three aspects of this industry.</p>
-<p>First, I want to point out the evolution of computing from the perspective of how much effort it takes to have your computer do what you need it to do, the effort has been reducing over time. We've gone from writing our instructions on punch cards to writing programs using almost english sounding programming languages like BASIC or Python. After that, the evolution plateaued until the birth of LLMs. Now, we can speak to them in natural language and have them do things for us.</p>
-<p>The second progression that I want you to pay attention to is the number of things a particular program is capable of doing. You see, at first you needed to employ programmers in your office to write you custom programs because there was just no other way to having your company use the efficiency that computers could bring to your organisation. Post that phase, applications were available to people to just download, install and use. Now app developers who were competing for the user's dollars, either built apps to serve a niche audience or started building super-apps that could do everything. The latter group quickly ran into the limitations of the Graphical User Interface (GUI) because there was only so many things you can pack into a screen and still be user-friendly. This was the case, again, until LLMs. Now you had computers that could do anything, even write programs to do specific things.</p>
-<p>Thirdly, apps have been very specific solutions to a problem. As such, they've been very brittle as you could only ask the app to do certain things and that's it. Even when speech technology was applied, you still spent time learning the phrases that you could use a la, "Hey Google, turn my lights on in the living room". If you said that phrase differently than it had been setup with, for example, if you said, "Hey, it's too dark in the living room" -- you couldn't expect your app to understand that phrase. This hurdle again has been overcome by LLM's because they can understand your meaning <em>past</em> your words. For example, you could say "I'm thirsty", "I'm parched" or even be euphemistic like "My mouth feels like the Sahara desert right now" and it would still get the meaning you want to convey. From a UX perspective, this ability for technology to fit into the life of human beings seamless is what I find most powerful.</p>
-<p>So we are at the threshold of these three progressions having come to a head at once. This means that not only are our computers going to be super capable going forward, it's going to be incredibly simple to use and no one has to spend any time even learning them. Can you imagine what an unlock this is for society? And this is the first time in history that the benefits of this technology is not just going to those of us who grew up with technology in our lives and we've found it comfortable because we spent the time learning them, it's going to be a massive unlock for those that were so far left behind the technological divide or even the english-language. These include people like my parents who find their smartphones challenging to use.</p>
-<p>This, is huge.</p>
-<h1>Context is Everything</h1>
-<p>For AI systems to go from just being effective on the baseline (based on what it's learnt about humans as a whole from the internet) to doing things for you the way you prefer it be done requires understanding your context. They need to be able to study your behaviours and patterns in order to be able to emulate them. This may mean giving the AI access to not just your emails, calendars, contacts, photos but even allow it to watch your health data, medical records, your passwords, etc.</p>
-<p>That's when they can go to a place where they can understand that you prefer to say "clutch" over "cool" or like to order from this particular Chinese restaurant and the other one is there as a backup or that you prefer your screen font size large because you have trouble reading or even to cancel all your appointments automatically if you woke up unwell one day. It can figure all this out without you ever having to tell it these things explicitly.</p>
-<p>But AI isn't just going to be a useful assistant to have, it will soon become essential. We live in a world where information is being produced at unprecedented rates and we feel compelled to keep up. But we are reaching the limits of human capabilities and that's just going to continue to be the case. There will be hundreds of decisions that we can delegate to AI that's working on our behalf, the least of which is deciding which email is spam and which isn't. If you want to participate in an accelerating world, having an AI assistant will become a necessity in the same way having a smartphone today is seen as a necessity.</p>
-<p>So, the question is, where do you get your AI assistant.</p>
-<h1>Shop Around</h1>
-<p>If there's one thing we've learnt from the mistakes made by the social media decade is that if the service is free, you are the product. We've also seen the many ways data about users have been used against them. To most readers of this blog, I don't need to list the kinds of things these large technology companies learn about us just through the ways in which we shop or even the intonations of our voice. We've seen how effective and accurate they have been, including stories about products being suggested to dads of teenagers who were pregnant, even before the dad knew about that pregnancy!</p>
-<p>I would never trust these corporations with my context data, especially when that data could reveal infinitely more information than my social media profile ever could.</p>
-<p>Let me be clear, I don't think these corporations are necessarily evil. I find it hard to imagine anyone waking up every morning with the sole intention to destroy other people's lives. But the incentives of corporations are definitely not aligned to serving the user. They are beholden to their shareholders and are mandated with generating profits for them. This mechanism doesn't allow anyone to see the user as anything more than a resource to derive value from. If value can be generated by selling their data to the highest bidder, so be it.</p>
-<p>Given this equation, let's suppose you go ask a question about a certain type of cancer to the AI assistant from one of these large corporations or submitted a scan to this assistant with the intention of getting a second opinion. What if that AI assistant saw that and realised that your insurance company may be willing to pay a huge amount for that information because they could loose a lot more if they continue to cover you if you fell ill. Do you think the assistant would be programmed to act on your behalf or to generate a profit for the corporation?</p>
-<p>The good news is that we don't need to rely on these corporations. The open source world has realised these pitfalls and have been hard at work developing technologies that will ensure that this kind of a future doesn't need to befall us. I also realise how important these efforts are and have been contributing my time and efforts to such projects as well.</p>
-<h1>The Solution is Simple</h1>
-<p>While these big companies that own the frontier AI models want to portray themselves as the only option for this sort of intelligence, don't be fooled. Know that you can have absolutely great stuff available to you without any of them in the picture. You can retain complete ownership of your data while still getting all the convenience. You can do all this locally, in the privacy of your own computer. You don't have to learn prompting strategies either.</p>
-<p>You can install Ollama and Move 37 on your machine and you're good to go! All of it is completely free and you can even check and audit the code if you're so inclined. Granted it's a little bit of work to get this installed right now, but they are all making things easier all the time.</p>
-<p>If you'd like to see a demo of this, I'd be happy to create one. If you want to find out how to install this also, I can create another video about it. But for now, here's a very quick walkthrough.</p>
-<p>[COMING SOON]</p>
-<p>As mentioned, these two projects are available for free, from these locations. So go check them out:</p>
-<ul>
-<li><a href="https://www.ollama.com">Ollama</a></li>
-<li><a href="https://github.com/sharan01x/move37">Move37</a></li>
-</ul>
-<hr/>
-<h1>Conclusion</h1>
-<p>If you believe in an open future where individuals retain control over their own destinies, you can start using these technologies for yourself. But if you feel like you'd want to contribute more and be a part of these movements, there are many ways you can participate depending on your skills.</p>
-<p>If you're technically inclined:</p>
-<ol>
-<li>Move37 is looking for help in testing, verifying the code completeness and various other items listed in their roadmap.</li>
-<li>UX designers can propose new ways to organise the frontend to make things easier and more efficient.</li>
-<li>The installation process could use a lot of simplifying and that's something that you can contribute to, especially on Move37.</li>
-</ol>
-<p>If you're not an engineer:</p>
-<ol>
-<li>Use and provide feedback and spot bugs</li>
-<li>Spread the word and get more people to realise the problem and understand that there are solutions</li>
-<li>Create videos talking about the projects</li>
-<li>Add new recipes -- the steps for using various applications</li>
-<li>Suggest new ideas and features that can be built</li>
-<li>Star the projects on GitHub so that they get more visibility</li>
-<li>Just donate to the projects if you've got the money, they can use it.</li>
-</ol>
-<p>But whatever you choose, thanks for being a part of this! Until next time, ciao!</p>
-</div>]]></content:encoded>
     </item>
     <item>
       <title>Is there room for another dating app?</title>
@@ -732,132 +704,37 @@
 </ol>
 <hr/>
 <h1>Glossary of Terms to Understand</h1>
-<table>
-<thead>
-<tr>
-<th>Wallets</th>
-<th>The software that allows you to interact with a blockchain and stores your private key to encrypt messages and public keys to decrypt them</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Hardware Wallets</td>
-<td>Software wallets that are running on independent devices and are considered more secure as they cannot be hacked remotely</td>
-</tr>
-<tr>
-<td>Private and Public Keys</td>
-<td>A long set of hexadecimal numbers that can be used to cryptographically sign transactions. The Private Key is used to encode a message (or transaction) and the public key can be used to decrypt that message.</td>
-</tr>
-<tr>
-<td>Coins</td>
-<td>A unit of account on a blockchain that is usually used to pay for conducting operations on that chain. For example Bitcoin, Ethereum and Atom.</td>
-</tr>
-<tr>
-<td>Tokens</td>
-<td>It is a unit of account created for specific use that is based on the code of a different coin and therefore doesn’t have a blockchain of its own. For example Matic, DAI, UNI, etc.</td>
-</tr>
-<tr>
-<td>Alt Coins</td>
-<td>Anything that’s not Bitcoin</td>
-</tr>
-<tr>
-<td>Shit Coins</td>
-<td>Any coin that doesn’t have good fundamentals and instead probably built to simply pump its value and dump it on the market. Doge coin is a prime example.</td>
-</tr>
-<tr>
-<td>Metamask</td>
-<td>A software wallet that is used as a browser plug-in</td>
-</tr>
-<tr>
-<td>HODL</td>
-<td>Means Hold On for Dear Life. It is an investment strategy where people buy a coin and hold on to it for many years instead of selling it.</td>
-</tr>
-<tr>
-<td>WAGMI</td>
-<td>“We Are Going to Make It” or “We All Gonna Make It”. A positive affirmation.</td>
-</tr>
-<tr>
-<td>BTFD</td>
-<td>Buy The F*&amp;king Dip. An indication to buy a token or coin when the prices are low.</td>
-</tr>
-<tr>
-<td>BUIDL</td>
-<td>Build, spelt differently to indicate building in Web3</td>
-</tr>
-<tr>
-<td>Bear Market</td>
-<td>When sentiments in the market are low</td>
-</tr>
-<tr>
-<td>Bull Market</td>
-<td>When sentiments in the markets are high and when new all-time-high’s are usually being hit</td>
-</tr>
-<tr>
-<td>Layer 1 Chains</td>
-<td>Blockchains that are the final settlement layers and provide their own security</td>
-</tr>
-<tr>
-<td>Layer 2 Chains</td>
-<td>Blockchains built on top of L1 chains that usually do not perform their own security or finality and are instead built to handle fast and cheap transactions</td>
-</tr>
-<tr>
-<td>App Chains</td>
-<td>Application specific blockchains as opposed to general purpose blockchains</td>
-</tr>
-<tr>
-<td>DEX</td>
-<td>Decentralised Exchanges. They are typically exchanges where one coin or token can be changed for another coin or token. They usually do not have any KYC requirements. For example UniSwap, SushiSwap, DYDX.</td>
-</tr>
-<tr>
-<td>CEX</td>
-<td>Centralised Exchanges where the same operations as DEX’s can take place. They usually have KYC requirements and make it simpler for new users.</td>
-</tr>
-<tr>
-<td>Stable Coins</td>
-<td>Any coin whose value is pegged to a US dollar or any other Fiat currency. They have properties of tokens so that they can be used in crypto transactions (as Fiat currencies can’t be used in this way). But their value is based on the real-world value of the Fiat currency it represents.</td>
-</tr>
-<tr>
-<td>DeFi</td>
-<td>Decentralised Finance. It represents an industry within crypto that is trying to build equivalent infrastructures that are present in traditional finance institutions like banks. They enable people to deposit their currencies and earn interest, lend their money to others, borrow money from others, etc.</td>
-</tr>
-<tr>
-<td>Cefi, TradFi</td>
-<td>The slang for centralised finance or traditional finance</td>
-</tr>
-<tr>
-<td>Staking</td>
-<td>The act of securing a Proof of Stake network by depositing coins into staking pools</td>
-</tr>
-<tr>
-<td>Delegation</td>
-<td>If the amount of a coin or token you have is low and you can’t meet the minimum requirements of staking, you can delegate your tokens to someone else and they will then stake your tokens once they have the required number of tokens.</td>
-</tr>
-<tr>
-<td>Liquidity Pools</td>
-<td></td>
-</tr>
-<tr>
-<td>Automatic Market Makers</td>
-<td></td>
-</tr>
-<tr>
-<td>The Merge</td>
-<td>This is the point where the Ethereum blockchain switched its consensus mechanism from Proof of Work to Proof of Stake. It was a major milestone and therefore got a name.</td>
-</tr>
-<tr>
-<td>ERC20</td>
-<td>A coding standard for tokens that are built on the Ethereum blockchain. Examples of this include ETH, OP, ARB and others.</td>
-</tr>
-<tr>
-<td>ERC 721</td>
-<td>A coding standard for NFT’s that are built on the Ethereum blockchain. This is usually used when you have only one copy of an NFT, called “1 of 1”. Usually used to represent ownership of expensive objects.</td>
-</tr>
-<tr>
-<td>ERC 1155</td>
-<td>A coding standard for NFT’s that are built on the Ethereum blockchain. It is usually used when multiple copies of an NFT are produced by the creator.</td>
-</tr>
-</tbody>
-</table>
+<p>| Wallets                 | The software that allows you to interact with a blockchain and stores your private key to encrypt messages and public keys to decrypt them                                                                                                                                                                      |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hardware Wallets        | Software wallets that are running on independent devices and are considered more secure as they cannot be hacked remotely                                                                                                                                                                                       |
+| Private and Public Keys | A long set of hexadecimal numbers that can be used to cryptographically sign transactions. The Private Key is used to encode a message (or transaction) and the public key can be used to decrypt that message.                                                                                                 |
+| Coins                   | A unit of account on a blockchain that is usually used to pay for conducting operations on that chain. For example Bitcoin, Ethereum and Atom.                                                                                                                                                                  |
+| Tokens                  | It is a unit of account created for specific use that is based on the code of a different coin and therefore doesn’t have a blockchain of its own. For example Matic, DAI, UNI, etc.                                                                                                                            |
+| Alt Coins               | Anything that’s not Bitcoin                                                                                                                                                                                                                                                                                     |
+| Shit Coins              | Any coin that doesn’t have good fundamentals and instead probably built to simply pump its value and dump it on the market. Doge coin is a prime example.                                                                                                                                                       |
+| Metamask                | A software wallet that is used as a browser plug-in                                                                                                                                                                                                                                                             |
+| HODL                    | Means Hold On for Dear Life. It is an investment strategy where people buy a coin and hold on to it for many years instead of selling it.                                                                                                                                                                       |
+| WAGMI                   | “We Are Going to Make It” or “We All Gonna Make It”. A positive affirmation.                                                                                                                                                                                                                                    |
+| BTFD                    | Buy The F*&amp;king Dip. An indication to buy a token or coin when the prices are low.                                                                                                                                                                                                                              |
+| BUIDL                   | Build, spelt differently to indicate building in Web3                                                                                                                                                                                                                                                           |
+| Bear Market             | When sentiments in the market are low                                                                                                                                                                                                                                                                           |
+| Bull Market             | When sentiments in the markets are high and when new all-time-high’s are usually being hit                                                                                                                                                                                                                      |
+| Layer 1 Chains          | Blockchains that are the final settlement layers and provide their own security                                                                                                                                                                                                                                 |
+| Layer 2 Chains          | Blockchains built on top of L1 chains that usually do not perform their own security or finality and are instead built to handle fast and cheap transactions                                                                                                                                                    |
+| App Chains              | Application specific blockchains as opposed to general purpose blockchains                                                                                                                                                                                                                                      |
+| DEX                     | Decentralised Exchanges. They are typically exchanges where one coin or token can be changed for another coin or token. They usually do not have any KYC requirements. For example UniSwap, SushiSwap, DYDX.                                                                                                    |
+| CEX                     | Centralised Exchanges where the same operations as DEX’s can take place. They usually have KYC requirements and make it simpler for new users.                                                                                                                                                                  |
+| Stable Coins            | Any coin whose value is pegged to a US dollar or any other Fiat currency. They have properties of tokens so that they can be used in crypto transactions (as Fiat currencies can’t be used in this way). But their value is based on the real-world value of the Fiat currency it represents.                   |
+| DeFi                    | Decentralised Finance. It represents an industry within crypto that is trying to build equivalent infrastructures that are present in traditional finance institutions like banks. They enable people to deposit their currencies and earn interest, lend their money to others, borrow money from others, etc. |
+| Cefi, TradFi            | The slang for centralised finance or traditional finance                                                                                                                                                                                                                                                        |
+| Staking                 | The act of securing a Proof of Stake network by depositing coins into staking pools                                                                                                                                                                                                                             |
+| Delegation              | If the amount of a coin or token you have is low and you can’t meet the minimum requirements of staking, you can delegate your tokens to someone else and they will then stake your tokens once they have the required number of tokens.                                                                        |
+| Liquidity Pools         |                                                                                                                                                                                                                                                                                                                 |
+| Automatic Market Makers |                                                                                                                                                                                                                                                                                                                 |
+| The Merge               | This is the point where the Ethereum blockchain switched its consensus mechanism from Proof of Work to Proof of Stake. It was a major milestone and therefore got a name.                                                                                                                                       |
+| ERC20                   | A coding standard for tokens that are built on the Ethereum blockchain. Examples of this include ETH, OP, ARB and others.                                                                                                                                                                                       |
+| ERC 721                 | A coding standard for NFT’s that are built on the Ethereum blockchain. This is usually used when you have only one copy of an NFT, called “1 of 1”. Usually used to represent ownership of expensive objects.                                                                                                   |
+| ERC 1155                | A coding standard for NFT’s that are built on the Ethereum blockchain. It is usually used when multiple copies of an NFT are produced by the creator.                                                                                                                                                           |</p>
 </div>]]></content:encoded>
     </item>
     <item>
@@ -940,80 +817,6 @@
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/99458576.html?p=99458576</guid>
       <description><![CDATA[Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<h1>Introduction</h1>
-<p>In my previous video, I wondered why design and coding tools had to be different and require constant translation when moving between them. Just two days later, Paul Graham tweeted that one of his well-known companies had ditched Figma in favour of Replit — validation that my curiosity was onto something big. As someone always eager to explore innovative tools, I couldn’t resist diving in myself. In this review, I’ll walk you through my experience with Replit and share whether it truly lives up to the hype.</p>
-<hr/>
-<h1>Disclaimer</h1>
-<p>Firstly, I must say that this article is in no way sponsored by Replit. I paid for the account myself and used the software and these opinions are mine alone. I got myself the $25/month plan. I paid extra per month firstly because I was just testing this out, but also because I feel that committing to a single platform for a whole year makes no sense when new tools are being developed and released all the time.</p>
-<hr/>
-<h1>Using Replit</h1>
-<h2>Objective</h2>
-<p>So, my objective was simple:  I wanted to prompt my way into bringing a working product to life and it needed to have the UX and UI that I wanted for it. The application that I was trying to build was one that could be used to take notes during meetings, summarise it and then share it with the user. I chose this as it’s not too complex but also not as easy as the demo apps that have been shown to work in a lot of cases.</p>
-<h2>Third Attempt</h2>
-<p>After signing up, I was presented this box that asked what I wanted to build today. In my first two attempts, I said that I wanted to build an audio recording application that does such and such. For some reason this just didn’t work. It failed miserably, but we’ll talk more about it later on. So what I describe here is my third attempt where I changed tactics and tried to approach this in a very non-technical way. </p>
-<p>I began by stating that I wanted to build an app that would take notes during meetings. I further specified that there should be a toggle button to start and stop recordings, that it should clearly indicated that it is active and also send the recordings to a server for processing where it would be transcribed and the meeting notes generated. </p>
-<p>I didn’t specifically mention any platforms or specifications of the UI. I was hesitant to provide too much detail as I have seen AI agents breakdown because of this. Providing too little detail also doesn’t usually provide me the output that I want, so I’m never quite sure exactly how much detail I needed to provide. But there’s a helpful, “Improve Prompt” button and I’ve seen that clicking these usually provides the level of detail that is expected by the system. So I clicked it and it added details about the UI itself and chose “dark mode” for some reason. I’m not a fan, but I don’t hate it enough to want to change it for a trial app, so I just went ahead and asked it to start building.</p>
-<p>Some interesting things happened at this point. It started “Thinking…” and after a few seconds came back and reiterated what it thought I wanted it to build. Mind you, I had just asked it to improve my prompt, so from my perspective it was already aware of what it was supposed to build, so when it said something like, “So you want to build…” with added surprise like it had become aware of this message for the very first time, it felt like I was talking to a moron, not something that was going to make things any easier. </p>
-<p>It feels like I’m splitting hairs here. I know the system needs to confirm what’s been understood, but I have seen more and more AI based interfaces use these conversational style interfaces and end up making this mistake of not keeping the user’s context in mind. </p>
-<p>Anyway, the good thing was that it suggested additional features that I could add on to my initial request. The suggestions were great and extremely relevant, but, not something I really needed to consider at this moment. This was really mis-timed and should have been something that was suggested after the main request was completed (which it actually does). It would have made more sense to ask questions that it needed clarifications on at this point.</p>
-<p>Moreover, my experience with using AI based tools to create applications has taught me that it is better to start small and then build up the set of features that you want. So you need to do some planning yourself actually. </p>
-<p>Anyway, I asked it to just go ahead and build out the basic application first and then it began whirring away. The chat flow moved to the left and the right side showed a section called “Progress” and lots of things started to fly by. Pieces of code, snapshots of interfaces and more pieces of code, more snapshots, a database getting created, dependencies being installed, etc. and then finally, after about 3 to 5 minutes, it stopped, a panel slid up with the application in view (this is a nice feature by the way), and then in the chat, it asked me to confirm if the interface was visible to me. It had been taking snapshots until now, so I wasn’t sure what the question was. I clicked around on the interface and saw all the required components were indeed there. I clicked the microphone button and saw that nothing really happened. So I assumed that this is what was supposed to happen and so I responded in the chat stating that exactly, that the interface looked fine but nothing functioned as yet. But it didn’t quite respond to me and instead just went ahead and started building out the functionality. </p>
-<p>Again, I saw a whole lot of code flash by and then it finally stopped and asked me to test out the functionality. To my utter amazement the application worked and even had a nice visualisation and everything. I started recording, said a few things and when I stopped it, it saved the recording and then moved it to the server.</p>
-<p>The layout was a little messed up and I also needed to improve the algorithm behind the uploading to the server bit, because it was possible that the mobile phone that is recording the meeting isn't always going to be able to stay connected to the server. So in such circumstances, it should save the recordings locally and then try to attempt to push the recording to the server whenever it connects again.</p>
-<h2>Making Changes</h2>
-<p>After having made some edits in the previous attempts, I realised what was possible to edit and what wasn't. So I just cut to the chase and got rid of troublesome elements and made it make some changes that I needed. </p>
-<p>I was able to add additional features quite easily, but when I tried to ask it to work on a feature to mitigate upload issues and instead, to chunk the uploads in 10 second blocks and then try to upload it to the server, it failed to do this level of a complex task. But at this time, when I tried to go back to a previous checkpoint where things were working, it completely failed that and it seemed like it's roll-back wasn't well done. It seems that when it comes to using AI tools for development and prototyping work, there's no going back, only forward.</p>
-<h2>Failures</h2>
-<p>There was one early attempt that I made where Replit hit an obstacle that it couldn't surmount. It gave me 3 options to continue trying,  try a different approach or to rewrite the whole thing in a completely different way. </p>
-<p>I responded in the chat stating that exactly, that the interface looked fine but nothing functioned as yet. But it didn't quite respond to me and instead just went ahead and started building out the functionality. There was a stop button and I clicked that but by that time, I think some code was written and that was that. It was a bad build and I just couldn't recover from that point onwards. I had to scrap the project and begin again.</p>
-<h2>Using Templates</h2>
-<p>I even thought that I am making my life difficult by trying to build an app from scratch. There are a lot of templates available on Replit and I thought I'd try that out. But when I use a template, the AI Agent is no longer available to me and I can only talk to the AI Assistant that cannot write the code like the agent. I thought this was really strange and I didn't proceed with using the templates even though they seemed really appealing to me as starting points. </p>
-<hr/>
-<h1>Lessons Learnt</h1>
-<p>This was a very informative experience for me. When I used the trial version, it ran out of available credits. If you've watched an older video of mine, you know that I have tried using GitHub Copilot and Windsurf and I ran into some problems there that made the left the development experience wanting. So I was actually really looking forward to trying out Replit because I had heard so much about it. But here's where I think things are at with Replit:</p>
-<h2>Making multiple attempts is required</h2>
-<p>I've seen this with other coding agents and it's kind of interesting that I am seeing the same pattern occur here, but your chances of creating the application that you want in one shot is next to impossible. You need to go through the process multiple times like a video game and running into different bosses and striking out and then starting making sure to avoid those pitfalls when you try to build it all over again. </p>
-<h2>Start small and then add on</h2>
-<p>While Replit provides you the options to add a whole number of features all at the beginning, it's not a good idea. I think it's best to start with the barebones version of the application first and then once you have that bit working, add on new features.</p>
-<h2>Editing the UI is hard</h2>
-<p>When I referenced elements on the screen by a certain logical name, it wasn't always understood by the agent. But since there's no way to point at a thing and identify them, it just wasn't possible to edit some elements. </p>
-<p>I also didn't see where the files were until much later, so going through the code and referring to a specific element just wasn't easy either.</p>
-<p>So I used UI strategies where I worked around the need for these difficult elements. </p>
-<h2>Checkpoints don't work well</h2>
-<p>When I realised that the checkpoints weren't working as expected and weren't as reliable, I began downloading the files at the points where I felt I had things functioning just like I wanted. </p>
-<p>Additionally, there was a point where I chose the wrong checkpoint that was a much earlier version of the code where things had been working. Once it tried to restore to that point, there was no way to go forward to the next checkpoint instead. This was severely frustrating for me.</p>
-<h2>Couldn't bring it to life</h2>
-<p>Despite the three attempts, I couldn't bring the project to life. I downloaded the code and while I tried to get it to function locally, I haven't been able to install the database and build the structure as yet. There's no file backup for the database elements, so I've got to figure this out on my own. I'm really not looking forward to this. </p>
-<hr/>
-<h1>Bottom Line</h1>
-<h2>Not there yet</h2>
-<p>I don't know what Paul Graham's acquaintance was thinking when they've committed to working with Replit and remove Figma. I don't think Replit is there yet. Can they get there in the future? I sure hope so. But will I be replacing Figma, Framer and Windsurf right now? No, not at all. </p>
-<h2>UX is not great</h2>
-<p>If you watch some videos of Replit from before, you'll notice that the agent chat window has gone from being the ancillary element on the right to the primary element on the left. This signals that they thing of code and files as secondary elements to writing the code right now. But they haven't evolved fully as yet. In order to appeal to designers or non-developers, the interface needs to be able to refer to elements and operate them in different ways. As an example, if I had a way to point at elements on the right-side preview pane, it would have made my life so very easy.</p>
-<p>Additionally, they need to provide a way to build and utilise design systems at the same time. </p>
-<h2>Really not meant to create stuff you have in mind</h2>
-<p>It occurred to me that if I begin with a very specific idea in my mind and try to recreate that using Replit, it's going to be super hard if not impossible. So this tool really isn't about doing that, but instead to explore new ideas and interactions. </p>
-<p>Even if I gave Replit exactly the same set of commands in the same order, I don't think it would arrive at the same output at the end. That's a challenge for anyone that wants to have any kind of control over the outcomes. But for exploration, it's a fine approach. </p>
-<h2>I wouldn't build anything large or serious</h2>
-<p>As mentioned before, I have to assume that I need to attempt to build the project multiple times. This limits the kinds of things I can do with Replit. I cannot imagine building a large application. </p>
-<p>Since the project that was output in the end felt like a precarious Jenga tower, I am not exactly certain that this application would perform well in production. I'm just not that confident. If it's a blog or a static website, that's an entirely different matter and I probably wouldn't feel the same way about that. </p>
-<h2>Deployment is a nice touch</h2>
-<p>I think Claude and OpenAI demonstrated the artefacts panel in their interfaces. I found that to be extremely important because we could avoid the environment setup and things like that. With Replit, they've taken that to the next level by including deployment. So not only can you test and see stuff while building it, you don't have to deal with deployment issues that are all too common when you're ready to push the app and make it live. </p>
-<h2>Local software incompatibility</h2>
-<p>One of the biggest issues that you will face with Replit and it's ilk is that you cannot have it interface with locally running software. In this example itself, I had the option of having this app work with Ollama installed locally because I would actually be running many tests and didn't want to hook it up to OpenAI. But there was no way to do this that I could figure out. </p>
-<h2>They're straddling two boats and need to commit</h2>
-<p>While it's perfectly natural for every startup to pivot when they find new product-market-fits, I think Replit is currently mid-pivot as they haven't really committed to building tools for non-developers as yet. They began as a developer focussed tool to begin with, and they haven't completely changed their focus and redesigned the older tools to suit the needs of designers and other non-developers. Once they commit, I think I would expect a lot more from them.</p>
-<hr/>
-<h1>Conclusion</h1>
-<p>I have never hit "Cancel Subscription" on any tool faster than I did with Replit. The task they've undertaken is hard, but they're not yet where they need to be to get me as a user. My experience developing an application was much better with Windsurf (in conjunction with Perplexity) and I'll be going back to it. </p>
-<p>But if this blog has somehow made its way to the Replit team, I would happily invite them to a chat with me as I can recommend many more things that they could do to get users like me on board. Otherwise, I wish them well and hope to use their software after a few months to see if it will suit me then. Until then, I wish them luck!</p>
-<hr/>
-<h1>Accompanying video</h1>
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="338" src="https://www.youtube.com/embed/6n_U-AWtVLs" title="YouTube video player" width="600"></iframe>
-<h4>Supplement video contrasting features with Lovable.dev</h4>
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="338" src="https://www.youtube.com/embed/EPCrwNTKr5s" title="YouTube video player" width="600"></iframe>
-</div>]]></content:encoded>
     </item>
     <item>
       <title>How to start designing for Web3</title>
@@ -1242,86 +1045,6 @@
 <img src="18433e48_timecapsule-15.png"/></p>
 <h2>Bonus Step</h2>
 <p>Make a case for the Raspberry Pi and the hard drive to be situated together. I'm designing something for this purpose and should have a 3D printable file posted here soon. Check back in a bit. But if you'd like to print something else, look at the plethora of stuff that's available to you on <a href="https://www.printables.com/search/models?q=raspberry%20pi%203a+&amp;ctx=models">Printables</a>.</p>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Lenskart</title>
-      <link>https://redd.in/1fa29c9a.html</link>
-      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
-      <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/1fa29c9a.html?p=1fa29c9a</guid>
-      <description><![CDATA[Project walkthrough]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<div style="display: table-row;">
-<div style="display: table-cell; width:25%;">
-<b>Client</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Industry</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Year</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Deliverables</b>
-</div>
-</div>
-<div style="display: table-row;">
-<div style="display: table-cell;">
-Lenskart
-</div>
-<div style="display: table-cell;">
-Prescription Glasses<br/>
-Sunglasses<br/>
-Contact Lenses
-</div>
-<div style="display: table-cell;">
-2018
-</div>
-<div style="display: table-cell;">
-Website design<br/>
-Communications
-</div>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>FIS Mobile Banking</title>
-      <link>https://redd.in/1023569b.html</link>
-      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
-      <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/1023569b.html?p=1023569b</guid>
-      <description><![CDATA[Designing a white-labelled banking application that also works for remote and rural areas]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<div style="display: table-row;">
-<div style="display: table-cell; width:25%;">
-<b>Client</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Industry</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Year</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Deliverables</b>
-</div>
-</div>
-<div style="display: table-row;">
-<div style="display: table-cell;">
-FIS Solutions
-</div>
-<div style="display: table-cell;">
-Core banking application for rural bankers
-</div>
-<div style="display: table-cell;">
-2017-2018
-</div>
-<div style="display: table-cell;">
-Tablet App Design<br/>
-Mobile App Design
-</div>
-</div>
 </div>]]></content:encoded>
     </item>
     <item>
@@ -1598,45 +1321,6 @@ Mobile App Design
 </div>]]></content:encoded>
     </item>
     <item>
-      <title>Cloudnine Hospitals</title>
-      <link>https://redd.in/2de0bd53.html</link>
-      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
-      <dc:creator><![CDATA[sharanx]]></dc:creator>
-      <guid isPermaLink="false">https://redd.in/2de0bd53.html?p=2de0bd53</guid>
-      <description><![CDATA[Designing the UX of a birthing hospital chain]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<div style="display: table-row;">
-<div style="display: table-cell; width:25%;">
-<b>Client</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Industry</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Year</b>
-</div>
-<div style="display: table-cell;width:25%;">
-<b>Deliverables</b>
-</div>
-</div>
-<div style="display: table-row;">
-<div style="display: table-cell;">
-Cloudnine Hospitals
-</div>
-<div style="display: table-cell;">
-Specialty Chain of Birthing Hospitals
-</div>
-<div style="display: table-cell;">
-2018-2019
-</div>
-<div style="display: table-cell;">
-3 Apps Designed<br/>
-Service Design
-</div>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
       <title>Generative AI Art Experiments</title>
       <link>https://redd.in/d8ae5f1e.html</link>
       <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
@@ -1744,42 +1428,6 @@ Service Design
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/bc36ebfa.html?p=bc36ebfa</guid>
       <description><![CDATA[There is a problem with Web3 wallets, they're just too complex. But where's the problem stemming from and how do we solve it?]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<h1>Web3 Wallets for Mainstream Users</h1>
-<p>Web3, the next phase of the internet powered by blockchain technology, promises to revolutionise industries, but its complexity continues to alienate mainstream users. At the heart of this challenge is the Web3 wallet—a fundamental tool required for engaging with decentralised applications (dApps), managing cryptocurrencies, and accessing blockchain networks. While Web3 enthusiasts have embraced the wallet system, its cryptographic foundations and technical jargon have left everyday users overwhelmed and frustrated. To drive mainstream adoption of Web3, we need to focus on fixing the wallet experience, making it intuitive and accessible.</p>
-<p>In this blog, we’ll explore why the wallet is the crux of Web3 usability challenges and how a thoughtful redesign grounded in familiar concepts, like banking, can unlock its full potential.</p>
-<h3>The Wallet Conundrum: Complexity Meets Confusion</h3>
-<p>The primary function of a Web3 wallet is to store a user's private and public keys. These cryptographic keys are used to authorise transactions and prove the user's identity within the blockchain ecosystem. But this process, while secure and revolutionary, is incredibly foreign to non-technical users. Terms like "private key," "public key," and "signing messages" can cause even the most tech-savvy Web2 users to shy away. The need for simplification is apparent.</p>
-<p>In Web2, users can easily send and receive money through banks or payment apps without ever having to understand the mechanics behind these systems. Web3, by contrast, demands users grasp cryptographic principles or risk losing access to their digital assets. The complexity isn't just a barrier; it's a deterrent.</p>
-<p>Many existing wallets, such as Zerion or Rabby, have attempted to ease the user experience by iterating on older designs. And while they have indeed made Web3 more user-friendly, they still fall short of the mainstream appeal necessary for broad adoption. These wallets are excellent by Web3 standards, but they remain inscrutable for the average Web2 user, leaving us to ask: Why can't a Web3 wallet be as intuitive as the apps we're already accustomed to?</p>
-<h3>Terminology Matters: The Language of Web3</h3>
-<p>A significant part of the problem lies in the terminology itself. In Web3, terms like "wallet" are used inaccurately. In traditional banking, a wallet implies a place where you store something—cash, cards, and other financial instruments. However, in Web3, a wallet doesn’t "store" money in the traditional sense. Instead, it acts more like an access card to funds stored on the blockchain. Misleading terminology adds to the confusion, making it harder for users to understand how to manage their digital assets.</p>
-<p>Open-source development, which is central to the Web3 ecosystem, has contributed to this confusion. Over time, various developers have used different terms to describe the same concepts, leading to inconsistent vocabulary across platforms. For instance, "public key," "wallet address," and "externally owned account" all refer to the same thing, but new users won’t know that. This inconsistency hinders their ability to trust and navigate the system confidently.</p>
-<p>Language is powerful, and when users encounter familiar terms, they can better grasp unfamiliar concepts. Web2 sites like e-commerce platforms utilise relatable language ("add to cart," "checkout") that immediately makes sense to users. The same approach needs to be applied to Web3 wallets if we want to make them accessible to the average person.</p>
-<h3>Building Familiarity: Banking as a Metaphor</h3>
-<p>To solve the wallet problem, we need to rethink the entire framework. Instead of framing wallets with cryptographic jargon, we should use a metaphor that resonates with mainstream users. And what’s more familiar than banking? Banking is a 2,000-year-old institution, and most people are already acquainted with its core concepts.</p>
-<p>By reimagining the Web3 wallet as a piece of "banking software," we can translate complex blockchain concepts into terms users already understand. For instance, the wallet itself could be referred to as "banking software," the wallet address as an "account number," the private key as a "signature," blockchain networks as "networks," and the various fees associated with a transaction such as "tip", "gas" and such could be simplified into "transaction fees," just as people are used to paying on traditional payment platforms.</p>
-<p>This banking analogy would not only make Web3 wallets more relatable but also help ease users into the system without overwhelming them with technical details.</p>
-<h3>A Three-Account Structure: Enhancing Security and Usability</h3>
-<p>In addition to simplifying the terminology, a redesigned Web3 wallet should also mimic the structure of traditional banking. A banking app typically offers various types of accounts—checking, savings, and investment—and the same can be applied to Web3.</p>
-<ol>
-<li>
-<p><strong>Checking Account</strong>: This would be where users conduct everyday transactions with known entities or individuals, similar to a checking account in traditional banking.</p>
-</li>
-<li>
-<p><strong>Savings Account</strong>: This would serve as a secure place to store assets, where users could stake cryptocurrencies or simply keep them safe. It would allow users to generate interest on their holdings without needing to interact with external applications.</p>
-</li>
-<li>
-<p><strong>Investment Account</strong>: For users seeking higher risk and reward opportunities, this account would enable interaction with decentralised applications (dApps) for staking, lending, or other investment activities.</p>
-</li>
-</ol>
-<p>This compartmentalisation not only makes the system more intuitive but also enhances security. By limiting the interactions of the checking and savings accounts with external applications, users can reduce their exposure to potential security risks. Only the investment account, which is meant for higher-risk activities, would be open to external dApps.</p>
-<h3>The Road Ahead: Evolving Web3 for the Mainstream</h3>
-<p>In conclusion, the wallet is the linchpin of Web3 adoption. If we can make the wallet experience seamless and intuitive, we can unlock Web3’s immense potential for a wider audience. The key lies in rethinking both the terminology and structure, using familiar banking concepts to demystify the process. By addressing these foundational issues, we can bridge the gap between Web2 and Web3, paving the way for mass adoption.</p>
-<p>For designers and developers working on Web3 applications, this means prioritising usability over technical prowess. It means considering what mainstream users already know and building upon that knowledge, rather than introducing new, foreign concepts. The future of Web3 is bright, but only if we can make it accessible to everyone.</p>
-<h1>Video with screens</h1>
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="338" src="https://www.youtube.com/embed/flGWL54hJR4" title="YouTube video player" width="600"></iframe>
-</div>]]></content:encoded>
     </item>
     <item>
       <title>Five personal AI assistant devices reviewed and what they need to fix</title>
@@ -1788,33 +1436,6 @@ Service Design
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/9b4e1115.html?p=9b4e1115</guid>
       <description><![CDATA[The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential.]]></description>
-      <content:encoded><![CDATA[<div class="content">
-<h2>Why Aren’t Personal AI Assistants Taking Off?</h2>
-<p>Before diving into the nitty-gritty, let’s get one thing clear. The personal AI assistants I’m referring to aren’t like Siri or Google Assistant on your phone. We’re talking about devices that can break down complex tasks and execute them for you—whether it’s running apps, searching the web, or even coding in some cases.</p>
-<p>These devices are mostly aimed at early adopters right now, but the goal is to create something for everyone. If you picture the product adoption lifecycle, we’re still in the early adopter phase. Right now, companies are testing their products in different niches, trying to figure out what sticks. It’s a chaotic phase, and we’re seeing an explosion of ideas—some good, some not so much. A lot of these ideas won’t make it to the mainstream, but that’s what makes this phase so exciting.</p>
-<p>Now, let’s dig into the seven mistakes these AI assistant products are making and how I think they can course-correct.</p>
-<h3>1. Not Using the Right Metaphor</h3>
-<p>The first mistake is starting with the wrong metaphor. Products need to fit into a framework that users already understand. People don’t like adopting something completely alien. I always say evolution trumps revolution, especially in mass-market products. Finding a metaphor that connects the new with the familiar is crucial. AI assistants should be positioned as an evolution of tools people already know, not a radical shift that alienates potential users.</p>
-<h3>2. Limited Accessibility and Reachability</h3>
-<p>For an AI assistant to succeed, it needs to be extremely accessible. Think about the evolution of computing—from desktops to laptops, tablets, smartphones, and now wearables. The goal is to bring tech closer to the user. Personal AI devices need to occupy that space between a smartphone and the user—something wearable that’s always available at a moment’s notice.</p>
-<p>Users are going to need to learn a new behaviour—one where they think in terms of goals, not apps. The easier we make it for them to access the assistant, the quicker they’ll adapt. ^1c44a7</p>
-<h3>3. Lack of Multimodal Inputs and Outputs</h3>
-<p>Let’s be honest—audio alone isn’t enough. Yes, voice commands are intuitive and efficient for certain tasks, but information needs to be delivered in various ways. Visual feedback, like images and text, allows users to process information faster. Devices that rely only on voice, like some AI pins or pendants, miss out on the efficiency that visual data provides. The solution is to design devices with both visual and auditory outputs.</p>
-<h3>4. Poor Data Privacy Protections</h3>
-<p>With AI, the question of privacy becomes even more critical. These devices will have access to mountains of personal data, and without strong privacy protections, they could easily become surveillance tools. The safest way to ensure privacy? Keep the data on the device itself. I think open-source projects like Open Interpreter, which runs locally on the user’s device, are on the right track. This model protects privacy and offers immediate feedback—something that cloud-based models struggle with.</p>
-<h3>5. Lag in Response Time</h3>
-<p>For AI assistants to feel natural, they need to respond quickly. Research shows that interactions that take longer than 400 milliseconds feel slow and clunky. Devices relying on cloud-based AI models are always going to have some lag, no matter how fast the server is. To hit that magical threshold of 400 milliseconds, AI models need to run locally on the device. Otherwise, users will experience delays that break the flow of interaction.</p>
-<h3>6. Lack of Interoperability</h3>
-<p>We’re transitioning to a new kind of computing—one where AI agents handle tasks for us. These agents need to be able to interact seamlessly with existing systems and applications. If a user wants their AI assistant to book an Uber or play a song on Spotify, the interaction needs to be flawless. Devices that struggle with this will quickly fall out of favour. The future belongs to AI assistants that can bridge both the current and future computing models.</p>
-<h3>7. Failure to Create Universal Interfaces</h3>
-<p>The final mistake I see is the lack of universal, adaptable interfaces. Every request a user makes might require a different interface—one that adapts in real-time. If I ask my AI assistant to book an Uber, the interface might display a map. If I want to pick between two songs, I’ll need a list. These interfaces need to be generated on the fly, based on the user’s specific request. A rigid interface simply won’t cut it.  </p>
-<h2>The Future of AI Assistants</h2>
-<p>In my opinion, the best form factor for personal AI assistants is a wearable device—specifically a smartwatch. It’s close to the user, easy to access, and can incorporate the necessary screen for visual feedback. While today’s smartwatches may not have the power to run advanced AI models, the tech is catching up. With chip technology becoming more efficient and AI models getting smaller, we’re not far from a future where AI-powered smartwatches will be the norm.</p>
-<p>Ultimately, while none of the current products on the market have quite nailed it yet, some are closer than others. But in the end, it’s the big players—Google, Microsoft, and Meta—that are best positioned to dominate the personal AI assistant space. They have the data, and in AI, data is king.</p>
-<p>As much as I root for the underdog, I wouldn’t bet my money on any of the current startups trying to break into this space. The race will be won by those with the resources to gather and process the vast amounts of data required to create truly effective AI assistants.</p>
-<h1>Watch the Video</h1>
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="338" src="https://www.youtube.com/embed/7GPtfH1lYkI" title="YouTube video player" width="600"></iframe>
-</div>]]></content:encoded>
     </item>
     <item>
       <title>Better tools should be better employed</title>
@@ -1859,6 +1480,48 @@ Service Design
 </blockquote>
 <h1>Conclusion</h1>
 <p>I think technology is a tool like any other and can be beneficial or detrimental depending on how we use it. It will always lure us with its promise of speed, scale, spread, smarts and asynchrony. While it can improve our lives, indiscriminate employment of it will only result in poor outputs. We must be vigilant about what we employ these tools for. Reduction of effort is a great reason to use technology, but if it can impede our thoughtfulness, it is probably a bad use of it.</p>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Untitled Article</title>
+      <link>https://redd.in/6e576ec9.html</link>
+      <pubDate>Thu, 27 Nov 2025 16:09:33 +0000</pubDate>
+      <dc:creator><![CDATA[sharanx]]></dc:creator>
+      <guid isPermaLink="false">https://redd.in/6e576ec9.html?p=6e576ec9</guid>
+      <description><![CDATA[]]></description>
+      <content:encoded><![CDATA[<div class="content">
+<p>The Apple Newton was a revolutionary product that was packed with cutting edge technology like touch screens, handwriting recognition and wireless data transfer. It was well ahead of everyone else and was defining a brand new product category. It failed. But not only that, other companies launched only three years later with almost identical products ended up succeeding. This is one of the strangest things that seem to happen in product companies and I wish I had figured out the answer before I did, as it would have saved me making the same mistake two times. <img alt="Generated image" src="6e576ec9_20250927_175202.png"/></p>
+<h2>Obi: A Learning Experience</h2>
+<p>Ever since my twin and I learnt to program when we were 8 years old, we had been dreaming of producing products. Our first real product, one that was actually used by others, was an inventory management system built with Visual Basic 5. It was built for our family's jewellery store. We were in the ninth grade and were paid with <em>bhel puri!</em> It wasn't a lucrative project, but it was a delicious one. It was a thrill to see an entire store using and be dependent on our software!</p>
+<p>Later, around 2008, we had a second run at building another version of the inventory management system, when we had a custom software development company and were considering building a product  to help us scale our revenues. We looked at the competition and what they offered, their feature sets, their pricing methods and understood all the artificial boundaries they had in place and decided we could do better, way better.</p>
+<p>Our software, named Obi, would be the following:</p>
+<p>1. On the software side -- we would deliver a modern UX that any user could figure out how to use on their own. We didn't want to build the clunky software that required "training" that companies would charge handsomely for.</p>
+<p>2. On the pricing side -- we would deliver the software on the web (the term "cloud" hadn't been invented at this time) and charge per user without bifurcation within user types.</p>
+<p>3. On the upgrades front -- we wouldn't charge for upgrades. We just factored the cost of upgrading once a year and melded that into the monthly cost.</p>
+<p>There were several other aspects that were different in our case, but for the sake of brevity, we were doing exactly what SaaS companies do today.</p>
+<p>We went out the door and started talking to customers and waiting for the hordes to come and break our doors down. But, that didn't happen. The objections  we got from our customers were unsurmountable for a small software company like ours and after 1 year of running the operations and only a few clients to speak of, paying us a very small amount, we just couldn't sustain it any longer and had to shut down. This, despite a customer actually walking into our office and offering to pay us more than we asked so that he could keep using it at his store! </p>
+<p>I joined Adobe as a UX designer at the end of 2009 using Obi to demonstrate that I had the experience of building "beautiful software" (the UX term hadn't become well known at the time). </p>
+<p>Two years later, around 2010, most of the competitors had begun to do everything almost exactly as we had and found great success. It would have been more comforting if we had been completely wrong, but our predictions of the future came out to be exactly true. I heard someone say "Being too early is the same as being wrong". While they described my problem perfectly, I still didn't know what the solution was. I needed to break down what "being early" was. In the relative stability of a 9 to 5 job, I finally figured it out.</p>
+<h2>The Existing Environment</h2>
+<p>An innovator imagines that their ability to look far into the future is what gives them an edge. We build the vision of the future based on a series of logical milestones, and arrive at the shape of what we believe is the future. The fault in our approach was that we didn't consider their existing environment in which our potential customers exist, which is integral to the decisions they make.</p>
+<p>For example, we were right in assuming that most software of the future would be web based because it not only solves the need for installation, but also makes it simple for upgrades and makes the system infinitely more accessible from anywhere on the planet. But our customers lived in a world where nearly all software was sold on CDs that they could hold in their hands. It gave them the confidence that they would always have and be able to use it whereas something on the web could disappear tomorrow. </p>
+<p>They were also transitioning from a world that believed software wasn't something one paid for leave alone pay in perpetuity for. They also believed that choosing to upgrade was meant to be optional. "Normal" upgrade cycles were once a year and done only when they saw that new version had a lot of improvements over the existing one. They wanted to be able to compare and then make the choice to upgrade or not.</p>
+<p>They also saw the training was an essential service that a software developer had to provide because in their experience, they had always used clunky software that required that training. No upstart like us would come and shake that notion with our fancy user-oriented design. But having the infrastructure to provide the training was also a signal that indicated that we were big enough to be around in the future. Inventory management systems are a core part of the operation of a company, so this was an assurance that they would need before they switched to using our software.</p>
+<p>It's quite interesting that I find a lot of parallels exist between architecture and product design. There is a famous quote by Eliel Saarinen, the architect, that goes, “Always design a thing by considering it in its next larger context—a chair in a room, a room in a house, a house in an environment, an environment in a city plan.” He really was onto something there. </p>
+<h2>The Comfort of the Status Quo</h2>
+<p>Obi was different in all these respects. It was new and different on too many fronts all at once. In a sales cycle, we may have the opportunity to counter one or two of the objections that a potential customer may pose to us, but if there are so many different aspects that they have to wrap their heads around, then the default decision is to maintain status quo and reject the offer. </p>
+<p>Customers will make the effort of doing the cognitive work if the end result is something that is 10X better than the current situation not when something is only a moderate improvement over the existing solution. In our case with Obi, we were doing a lot of things differently, but the end result was that the customer would still only be able to manage their inventory a little more efficiently, nothing changed apart from that. </p>
+<p>There's the old adage, <em>"One can only be wrong if they try to do something."</em> (which is an interesting antonym of <em>"Only those who try can succeed"</em> which is meant to motivate entrepreneurs, but that's a different discussion altogether). In other words, we simply didn't offer the user a big enough of a reason to experiment with so many different variables. All they'd see at the end was a modest improvement in the operation and a reduction in cost that didn't really make a difference to their profits.</p>
+<h2>The EnR Framework</h2>
+<p>Given this understanding I began to work on a framework that would allow us to chart a course for how to develop products. </p>
+<p>Starting with a vision of the future is good. It works well as a goal to shoot for but also solves the "faster horses" problem, as the Henry Ford quote goes. No one but the innovator can dream up a future vision of a product. Only solid domain expertise will allow us to see that.</p>
+<p>But once that vision is well understood, the next step is actually to chart a course from the present to that future. You can do that by creating milestones that take into consideration what the current environment is and makes tweaks that will get you from the present to the next milestone. Each milestone makes one change and one change only. This will afford time for the environment to catch up and the user to be brought along the path making only minor changes to their understanding each time. </p>
+<p>It also makes sense to poll users on their opinions of the features developed at this resolution because these changes are gradual. The feedback can be integrated into the development of the next milestone even making fixes wherever required. Before long, we'd have arrived safely at the future you had imagined long ago. This way of getting to that future is a more resilient option as well as it will be on solid footing each time.</p>
+<p>But this framework is heavily dependent on a strong feedback mechanism that allows you to hear from users often and in large numbers. I'll cover more about this in a future article. This framework is also not useful in some leapfrog products such as ChatGPT or the like that had no precedents. So it is not useful in those situations.</p>
+<h2>Conclusion</h2>
+<p>The 'Evolution, not Revolution' framework is an important concept in design and innovation that I had to develop in order to handle my work in product design.</p>
+<p>If Apple had launched Newton at a lower price point that validated whether someone would want a PDA, they may have given themselves the opportunity to validate that idea before packing in expensive touchpad technology or handwriting recognition. If they had done that, they may have not only cornered the PDA market but could very well have entered the mobile phone market about 15 years before they actually did. </p>
+<p>I hoped they'd have learnt their lesson from previous mistakes, but we're seeing instead that they're repeating them with the Vision Pro. The platform has some great potential, so I hope they fix things soon.</p>
 </div>]]></content:encoded>
     </item>
   </channel>
