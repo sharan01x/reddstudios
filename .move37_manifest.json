@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-28T08:41:16.241437+00:00",
+  "last_updated": "2025-11-28T12:41:47.560019+00:00",
   "files": {
     "6e576ec9_20250927_175202.png": {
       "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
@@ -8,15 +8,15 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "18fe41968fb029008b813aac87ac45161b55e5fa0ff673617498af22a7b16546",
-      "size": 27608,
-      "modified": "2025-11-28T08:41:16.020226+00:00",
+      "checksum": "a193a8d4e268e70b344cef0aaf1b425ae8892aa85ee3e13796b85413f9d9e6ff",
+      "size": 28204,
+      "modified": "2025-11-28T12:41:47.321706+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "fa26ab53c1d7ba09c839aa9375872c72f3a36ff8032184042203c71356bd4a91",
-      "size": 292633,
-      "modified": "2025-11-28T08:41:16.239230+00:00",
+      "checksum": "ebeb691986e7dfab339f119a1a81009fdeaf83dbb478f0cc69b7d8e20839aa66",
+      "size": 307129,
+      "modified": "2025-11-28T12:41:47.558710+00:00",
       "type": "rss"
     },
     "3e62d0c6_20250804_174247.png": {
@@ -52,7 +52,7 @@
     "blog.css": {
       "checksum": "bf3b36be094d57009ffb7efe01a782d155e5b53b2284a3bf1bbf17103cdae9cf",
       "size": 928,
-      "modified": "2025-11-28T08:41:16.014225+00:00",
+      "modified": "2025-11-28T12:41:47.285705+00:00",
       "type": "css"
     },
     "f52b3f80.html": {
@@ -611,6 +611,12 @@
       "checksum": "e22ad8ede54634ff1058f73f8e17fe8a7332c85d2c5d9fed062b476da4b10086",
       "size": 22605,
       "modified": "2025-11-27T18:52:23.437279+00:00",
+      "type": "article"
+    },
+    "bd45aaa3.html": {
+      "checksum": "306e8ef0e72b85c313e7db96f9ca9730dd8a099199291248c9e12d33a9b5368f",
+      "size": 26584,
+      "modified": "2025-11-28T12:41:47.306706+00:00",
       "type": "article"
     }
   }
