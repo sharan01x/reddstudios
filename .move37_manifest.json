@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-03T18:22:52.389246+00:00",
+  "last_updated": "2025-12-06T12:28:47.045881+00:00",
   "files": {
     "6e576ec9_20250927_175202.png": {
       "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
@@ -10,13 +10,13 @@
     "index.html": {
       "checksum": "bf8d85a7cd9265795f73a5b042682877146ec3180db0f126eb58b16af3d4a75c",
       "size": 27813,
-      "modified": "2025-12-03T18:22:52.097787+00:00",
+      "modified": "2025-12-06T12:28:46.718061+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "3e662ccbbfd56723b5dc3e0341863263f5a347f08d4ae39f360d878c81981119",
-      "size": 296226,
-      "modified": "2025-12-03T18:22:52.387807+00:00",
+      "checksum": "97ef2c50bfc9285f0121b35573946c905cdc9ae5f8dffeccc59e02ac43cfa1a8",
+      "size": 296336,
+      "modified": "2025-12-06T12:28:47.043069+00:00",
       "type": "rss"
     },
     "3e62d0c6_20250804_174247.png": {
@@ -52,7 +52,7 @@
     "blog.css": {
       "checksum": "bf3b36be094d57009ffb7efe01a782d155e5b53b2284a3bf1bbf17103cdae9cf",
       "size": 928,
-      "modified": "2025-12-03T18:22:52.021782+00:00",
+      "modified": "2025-12-06T12:28:46.535057+00:00",
       "type": "css"
     },
     "f52b3f80.html": {
@@ -614,9 +614,9 @@
       "type": "article"
     },
     "bd45aaa3.html": {
-      "checksum": "045c3e707eaffaa8f82875a4caac939117c41b08f7af93f7aa74811b96a4c98e",
-      "size": 26654,
-      "modified": "2025-12-03T18:22:52.059785+00:00",
+      "checksum": "b7f072e935af95d0e9a2a17ec3b5b90e1704d7bd1219965349e5874b9825c5af",
+      "size": 26765,
+      "modified": "2025-12-06T12:28:46.616058+00:00",
       "type": "article"
     },
     "bd45aaa3_audio.mp3": {
@@ -624,6 +624,18 @@
       "size": 8823384,
       "modified": "2025-12-03T18:05:21.307885+00:00",
       "type": "audio"
+    },
+    "bd45aaa3_d6ad19e7addc4bc0b5d210f4f10efbc3.png": {
+      "checksum": "66e9a1c635dd78003c7940c37fb50c7c05675c589f692a36ffec0d0731fe15c7",
+      "size": 428957,
+      "modified": "2025-12-06T12:28:05.607064+00:00",
+      "type": "image"
+    },
+    "bd45aaa3_689407b95b7e4e3a92ab3f87367dd220.png": {
+      "checksum": "66e9a1c635dd78003c7940c37fb50c7c05675c589f692a36ffec0d0731fe15c7",
+      "size": 428957,
+      "modified": "2025-12-06T12:27:10.724732+00:00",
+      "type": "image"
     }
   }
 }

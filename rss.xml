@@ -9,7 +9,7 @@
     <description>Building startups, pushing pixels, slicing videos, compiling code or writing verse.</description>
     <language>en-us</language>
     <pubDate>Thu, 27 Nov 2025 18:42:35 +0000</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2025 18:22:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 12:28:47 +0000</lastBuildDate>
     <generator>Move37 Blog Publisher</generator>
     <atom:link href="https://redd.in/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -64,6 +64,7 @@
       <guid isPermaLink="false">https://redd.in/bd45aaa3.html?p=bd45aaa3</guid>
       <description><![CDATA[Real-world lessons from building an AI-powered editor that keeps users in control instead of becoming button-pushing monkeys]]></description>
       <content:encoded><![CDATA[<div class="content">
+<p><img alt="Screenshot 2025-12-04 at 23.45.02.png" src="bd45aaa3_d6ad19e7addc4bc0b5d210f4f10efbc3.png"/></p>
 <h2>Building Move 37</h2>
 <p>Microsoft Word and Apple Pages have got to be among the most used applications of all time. Everyone uses them. But these are dinosaurs in the digital age. They are relics of a period that preceded the internet, leave alone AI. They were built to ease publishing in an age of paper and print. Would we build these applications the same way if we were to build it from scratch today?</p>
 <p>Look at the media landscape today. We have several forms of content, everything from blogs and social media posts to podcasts and videos. So the model of creating a document just doesn't work anymore. What if we instead began with a core idea and then derived the various forms of it based on the constraints of the medium on which it would be delivered? Also, people consume content differently today. Some people prefer to listen to things during their commute, some prefer to read stuff on their phone, and some prefer to watch a debate on their tablet. So it isn't sufficient to simply deliver content in one form and call it a day anymore. We need to be able to reach our audience where they are. </p>
