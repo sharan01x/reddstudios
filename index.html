@@ -17,155 +17,179 @@
             padding: 0;
         }
         
-                 .container {
-             max-width: 680px;
-             margin: 0 auto;
-             padding: 30px 20px;
-         }
-         
-         .header {
-             background: white;
-             color: #242424;
-             padding: 40px 0 40px 0;
-             text-align: center;
-         }
-         
-         /* Responsive container widths */
-         @media (min-width: 768px) {
-             .container {
-                 max-width: 900px;
-                 padding: 40px 30px;
-             }
-         }
-         
-         @media (min-width: 1024px) {
-             .container {
-                 max-width: 900px;
-                 padding: 50px 40px;
-             }
-         }
-         
-         @media (min-width: 1440px) {
-             .container {
-                 max-width: 900px;
-             }
-         }
-         
-         @media (min-width: 1600px) {
-             .container {
-                 max-width: 900px;
-             }
-         }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        .header {
+            background: white;
+            color: #242424;
+            padding: 40px 0 40px 0;
+            text-align: center;
+        }
+        
+        /* Responsive container widths */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 900px;
+                padding: 40px 30px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 900px;
+                padding: 50px 40px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 900px;
+            }
+        }
         
         .header h1 {
-             font-size: 2.8em;
-             margin-bottom: 16px;
-             font-weight: 700;
-             line-height: 1.2;
-             letter-spacing: -0.02em;
-         }
-         
-         .header .subtitle {
-             font-size: 1.2em;
-             color: #999;
-             font-weight: 400;
-             max-width: 600px;
-             margin: 0 auto;
-         }
-         
-         /* Responsive header typography */
-         @media (min-width: 1024px) {
-             .header h1 {
-                 font-size: 3.2em;
-             }
-             
-             .header .subtitle {
-                 font-size: 1.3em;
-                 max-width: 700px;
-             }
-         }
-         
-         @media (min-width: 1440px) {
-             .header h1 {
-                 font-size: 3.6em;
-             }
-             
-             .header .subtitle {
-                 font-size: 1.4em;
-                 max-width: 800px;
-             }
-         }
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
         
+        .header .subtitle {
+            font-size: 1.2em;
+            color: #999;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Responsive header typography */
+        @media (min-width: 1024px) {
+            .header h1 {
+                font-size: 3.2em;
+            }
+            
+            .header .subtitle {
+                font-size: 1.3em;
+                max-width: 700px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .header h1 {
+                font-size: 3.6em;
+            }
+            
+            .header .subtitle {
+                font-size: 1.4em;
+                max-width: 800px;
+            }
+        }
+        
+        /* Tab Navigation Styles */
+        .tabs-container {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .tabs-nav {
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        
+        .tabs-nav::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .tab-button {
+            padding: 12px 24px;
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            color: #666;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        .tab-button:hover {
+            color: #242424;
+        }
+        
+        .tab-button.active {
+            color: #242424;
+            border-bottom-color: #242424;
+        }
+        
+        .tab-button i {
+            margin-right: 8px;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Content list styles - Articles tab uses masonry */
         .articles-list {
-             margin-top: 40px;
-             column-width: 260px;
-             column-gap: 24px;
-         }
-         
-         .article-item {
-             background: white;
-             border: 1px solid #e6e6e6;
-             border-radius: 8px;
-             padding: 24px;
-             transition: all 0.2s ease;
-             height: auto;
-             margin-bottom: 24px;
-             box-sizing: border-box;
-             display: inline-block;
-             width: 100%;
-             break-inside: avoid;
-         }
-         
-         /* Better article padding on larger screens */
-         @media (min-width: 1024px) {
-             .article-item {
-                 padding: 28px;
-                 border-radius: 12px;
-             }
-         }
-         
-         @media (min-width: 1440px) {
-             .article-item {
-                 padding: 32px;
-             }
-         }
-         
-         .article-item:hover {
-             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-             transform: translateY(-2px);
-         }
-         
-         /* Tablet: 2 columns */
-         @media (min-width: 768px) {
-             .articles-list {
-                 column-width: 260px;
-                 column-gap: 24px;
-             }
-         }
-         
-         /* Desktop: 3 columns */
-         @media (min-width: 1024px) {
-             .articles-list {
-                 column-width: 260px;
-                 column-gap: 24px;
-             }
-         }
-         
-         /* Large desktop: 4 columns */
-         @media (min-width: 1440px) {
-             .articles-list {
-                 column-width: 260px;
-                 column-gap: 24px;
-             }
-         }
-         
-         /* Extra large: 5 columns */
-         @media (min-width: 1600px) {
-             .articles-list {
-                 column-width: 260px;
-                 column-gap: 24px;
-             }
-         }
+            margin-top: 20px;
+            column-width: 260px;
+            column-gap: 24px;
+        }
+        
+        /* Playlist container for Audio/Podcast tabs */
+        .playlist-container {
+            margin-top: 20px;
+        }
+        
+        .article-item {
+            background: white;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.2s ease;
+            height: auto;
+            margin-bottom: 24px;
+            box-sizing: border-box;
+            display: inline-block;
+            width: 100%;
+            break-inside: avoid;
+        }
+        
+        .article-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        /* Better padding on larger screens */
+        @media (min-width: 1024px) {
+            .article-item {
+                padding: 28px;
+                border-radius: 12px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .article-item {
+                padding: 32px;
+            }
+        }
         
         .article-header h2 {
             margin: 0 0 8px 0;
@@ -191,7 +215,8 @@
         
         .article-meta {
             display: flex;
-            gap: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
             font-size: 0.85em;
             color: #888;
             margin-top: 12px;
@@ -203,32 +228,171 @@
             gap: 4px;
         }
         
-        .no-articles {
+        .article-author {
+            color: #666;
+        }
+        
+        /* Tags */
+        .article-tags, .playlist-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        
+        .tag {
+            background: #f5f5f5;
+            color: #666;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        
+        /* Playlist Item Styles - Full width rows */
+        .playlist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.15s ease;
+        }
+        
+        .playlist-item:last-child {
+            border-bottom: none;
+        }
+        
+        .playlist-item:hover {
+            background-color: #fafafa;
+        }
+        
+        .playlist-item.playing {
+            background-color: #f5f5f5;
+        }
+        
+        .playlist-number {
+            flex-shrink: 0;
+            width: 32px;
+            font-size: 0.9em;
+            color: #888;
+            padding-top: 2px;
+        }
+        
+        .playlist-info {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .playlist-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #242424;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+        
+        .playlist-subtitle {
+            font-size: 0.95em;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .playlist-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.85em;
+            color: #888;
+        }
+        
+        .playlist-author {
+            color: #666;
+        }
+        
+        .playlist-author::after {
+            content: "·";
+            margin-left: 8px;
+            color: #ccc;
+        }
+        
+        .playlist-date {
+            color: #888;
+        }
+        
+        .playlist-player {
+            flex-shrink: 0;
+            width: 280px;
+        }
+        
+        .audio-player, .podcast-player {
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+        }
+        
+        /* Podcast specific styles */
+        .playlist-item.podcast {
+            align-items: flex-start;
+        }
+        
+        .podcast-artwork-container {
+            flex-shrink: 0;
+        }
+        
+        .podcast-artwork {
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+        
+        .podcast-artwork-placeholder {
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            background: #f5f5f5;
+            border: 1px dashed #ddd;
+        }
+        
+        .podcast-episode-badge {
+            display: inline-block;
+            font-size: 0.7em;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 6px;
+        }
+        
+        @media (min-width: 768px) {
+            .podcast-artwork {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .podcast-artwork-placeholder {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .playlist-player {
+                width: 320px;
+            }
+        }
+        
+        .no-content {
             text-align: center;
             color: #666;
             font-style: italic;
             padding: 40px 0;
-        }
-        
-        .footer {
-            text-align: center;
-            color: #aaa;
-            margin-top: 60px;
-            padding-top: 20px;
-            font-size: 0.9em;
-        }
-        
-        .footer a {
-            color: #aaa;
-            text-decoration: none;
-        }
-        
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        
-        .footer i {
-            color: #e74c3c;
         }
         
         @media (min-width: 769px) {
@@ -254,6 +418,52 @@
             .article-meta {
                 flex-direction: column;
                 gap: 8px;
+            }
+            
+            .tab-button {
+                padding: 10px 16px;
+                font-size: 0.9em;
+            }
+            
+            /* Mobile playlist layout - stack vertically */
+            .playlist-item {
+                flex-direction: column;
+                gap: 12px;
+                padding: 12px;
+                margin: 5px 0;
+            }
+            
+            .playlist-number {
+                display: none;
+            }
+            
+            .playlist-player {
+                width: 100%;
+            }
+            
+            .playlist-item.podcast {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+            .playlist-item.podcast .podcast-artwork-container {
+                flex-shrink: 0;
+            }
+            
+            .playlist-item.podcast .playlist-info {
+                flex: 1;
+                min-width: 200px;
+            }
+            
+            .playlist-item.podcast .playlist-player {
+                width: 100%;
+                flex-basis: 100%;
+                margin-top: 8px;
+            }
+            
+            .podcast-artwork, .podcast-artwork-placeholder {
+                width: 50px;
+                height: 50px;
             }
         }
         
@@ -322,7 +532,6 @@
 <body>
     
     
-    
     <div class="container">
         <div class="header">
             <h1>Redd XF</h1>
@@ -334,66 +543,31 @@
             </div>
         </div>
         
-        <div class="articles-list">
-            
+        <!-- Tabs Navigation -->
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-button active" data-tab="articles">
+                    <i class="fas fa-newspaper"></i>Articles
+                </button>
+                <button class='tab-button' data-tab='audio'><i class='fas fa-headphones'></i>Audio</button>
+                <button class='tab-button' data-tab='podcasts'><i class='fas fa-podcast'></i>Podcasts</button>
+            </div>
+        </div>
+        
+        <!-- Articles Tab Content -->
+        <div id="articles-tab" class="tab-content active">
+            <div class="articles-list">
+                
                 <div class="article-item">
                     <div class="article-header">
-                        <h2><a href="99458576.html">Review of Replit, the Figma Killer</a></h2>
-                        <div class="article-subtitle">Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.</div>
+                        <h2><a href="4222f787.html">Evolution, Not Revolution</a></h2>
+                        <div class="article-subtitle">How Gradual Progress Can Lead to Success in Product Design</div>
                     </div>
                     <div class="article-meta">
-                        <span class="article-date">31 Jul 2025</span>
+                        <span class="article-date">08 Sept 2025</span>
+                        <span class="article-author">by sharanx</span>
                     </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="bc36ebfa.html">Designing Web3 Wallets for Mainstream Users</a></h2>
-                        <div class="article-subtitle">There is a problem with Web3 wallets, they're just too complex. But where's the problem stemming from and how do we solve it?</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">30 Sept 2024</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="606545a5.html">The UX Problem with the Voting System in India</a></h2>
-                        <div class="article-subtitle">Something as important as voting is fraught with UX problems and the intention of the voter is not well expressed within the systems that exist in places such as India</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">30 May 2019</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="d5288f82.html">The New Age of the Design Generalist</a></h2>
-                        <div class="article-subtitle">AI tools have made coding simpler. Skills are no longer relevant. Imagination and envisioning a particular future is more necessary than ever.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">30 Dec 2024</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="08134e4f.html">Better tools should be better employed</a></h2>
-                        <div class="article-subtitle">When you have access to tools that provide you unlimited capability, how should these tools be used.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">29 Jun 2023</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="cccb3085.html">Fixing Censorship with Web3</a></h2>
-                        <div class="article-subtitle">It’s important to keep striving for better models of censorship that can benefit society without infringing on individual rights and freedoms.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">28 Feb 2023</span>
-                    </div>
+                    <div class="article-tags"><span class="tag">ux</span><span class="tag">design</span><span class="tag">product</span></div>
                 </div>
             
                 <div class="article-item">
@@ -403,207 +577,9 @@
                     </div>
                     <div class="article-meta">
                         <span class="article-date">25 Nov 2025</span>
+                        <span class="article-author">by sharanx</span>
                     </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="6b67b868.html">My experiments with 3D printing</a></h2>
-                        <div class="article-subtitle">My foray into the world of 3D printing and my learnings and insights so far. This is work in progress and will continue to be edited.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">24 Jan 2024</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="e7160570.html">Co-existence of Voice Interfaces in Apps</a></h2>
-                        <div class="article-subtitle">While every sci-fi show depicts Voice Interfaces as the future as it seemingly makes for very simple interactions with devices. I examine this idea.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">23 Aug 2019</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="d0364a95.html">Six Ways to Supercharge the UX of Web3 Wallets</a></h2>
-                        <div class="article-subtitle">Wallets are the entry point to web3 and they shoulder a huge responsibility</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">22 Jun 2022</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="c1af5dc6.html">Four Ways to Improve Patient Experience with UX Design Principles</a></h2>
-                        <div class="article-subtitle">Post my experience in designing an interface for a birthing hospital the importance of UX in this space was highlighted.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">21 Feb 2019</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="ca1ff969.html">Eight Essential Rules for Mastering Ethical UX Design</a></h2>
-                        <div class="article-subtitle">Reflecting on the work of many others and my own work within the field, I have distilled the following rules to act as a guide</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">21 Apr 2023</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="f9cca0fc.html">Is there room for another dating app?</a></h2>
-                        <div class="article-subtitle">Examining whether there's a packaging problem</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">18 Jul 2023</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="37f872a3.html">Designing for the Next Billion Users</a></h2>
-                        <div class="article-subtitle">These next big wave of users is coming not from the west but from the young, educated youth of India with access to cheap data plans and speaking many different languages.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">17 Oct 2019</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="f52b3f80.html">The Age of Goal Based Computing is Here</a></h2>
-                        <div class="article-subtitle">Among the many things AI has enabled, it has now made possible an entirely new method of interacting with our computers.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">17 Apr 2025</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="a51973c2.html">The Ultimate Guide to Hiring the Right UX Design Agency</a></h2>
-                        <div class="article-subtitle">It doesn't matter that the design agency has a high rating if they aren't a good fit for your project. But how do you find the right one?</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">15 Nov 2024</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="d8ae5f1e.html">Generative AI Art Experiments</a></h2>
-                        <div class="article-subtitle">Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Here are my experiments.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">13 Jul 2023</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="9b4e1115.html">Five personal AI assistant devices reviewed and what they need to fix</a></h2>
-                        <div class="article-subtitle">The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">12 Sept 2024</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="ae374ed1.html">Seven Structural Elements to Keep in Mind for Web3 UX Design</a></h2>
-                        <div class="article-subtitle">The structure of web3 influences the design of the applications</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">12 Feb 2023</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="dd39fcda.html">A Curated List of Videos to Understand Crypto</a></h2>
-                        <div class="article-subtitle">This list of videos will help you understand crypto and Web3 better.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">11 Oct 2022</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="3eb3bbbb.html">Review of the Rabbit R1</a></h2>
-                        <div class="article-subtitle">A detailed review of the newly launched Rabbit R1, exploring its hardware and software design, its strategic position in the market and its potential challenges</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">10 Jan 2024</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="80e0ac3c.html">The Five Promises of Technology</a></h2>
-                        <div class="article-subtitle">Having a framework to evaluate the use of technology is useful in evaluating how it can be employed</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">10 Jan 2019</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="4222f787.html">Evolution, Not Revolution</a></h2>
-                        <div class="article-subtitle">How Gradual Progress Can Lead to Success in Product Design</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">08 Sept 2025</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="253b9d68.html">Design Proposals that Boost Conversion Rates</a></h2>
-                        <div class="article-subtitle">Building proposal templates takes a lot of effort and you're still left unsure of whether you've done it right. This article tries to help you fix that.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">05 Nov 2024</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="9f31ab4a.html">Design Must Humanise Technology</a></h2>
-                        <div class="article-subtitle">Technology must function within the world of regular people</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">05 Dec 2016</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="915d435a.html">Why Your Design Should Reflect Your Values</a></h2>
-                        <div class="article-subtitle">User experience designers who are designing these experiences have their own world views that shape their designs. This is the right thing to do.</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">05 Apr 2019</span>
-                    </div>
-                </div>
-            
-                <div class="article-item">
-                    <div class="article-header">
-                        <h2><a href="4b31984b.html">How to start designing for Web3</a></h2>
-                        <div class="article-subtitle">Web3 is a burgeoning field, but you can't just take Web2 designs and expect them to work in Web3. What should you keep in mind?</div>
-                    </div>
-                    <div class="article-meta">
-                        <span class="article-date">04 Dec 2024</span>
-                    </div>
+                    <div class="article-tags"><span class="tag">ai</span><span class="tag">design</span><span class="tag">ux</span></div>
                 </div>
             
                 <div class="article-item">
@@ -613,7 +589,189 @@
                     </div>
                     <div class="article-meta">
                         <span class="article-date">04 Aug 2025</span>
+                        <span class="article-author">by sharanx</span>
                     </div>
+                    <div class="article-tags"><span class="tag">ai</span><span class="tag">design</span><span class="tag">technology</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="d0364a95.html">Six Ways to Supercharge the UX of Web3 Wallets</a></h2>
+                        <div class="article-subtitle">Wallets are the entry point to web3 and they shoulder a huge responsibility</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">22 Jun 2022</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span><span class="tag">web3</span><span class="tag">decentralisation</span><span class="tag">crypto</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="253b9d68.html">Design Proposals that Boost Conversion Rates</a></h2>
+                        <div class="article-subtitle">Building proposal templates takes a lot of effort and you're still left unsure of whether you've done it right. This article tries to help you fix that.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">05 Nov 2024</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">business</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="cccb3085.html">Fixing Censorship with Web3</a></h2>
+                        <div class="article-subtitle">It’s important to keep striving for better models of censorship that can benefit society without infringing on individual rights and freedoms.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">28 Feb 2023</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">opinion</span><span class="tag">decentralisation</span><span class="tag">web3</span><span class="tag">design</span><span class="tag">censorship</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="e7160570.html">Co-existence of Voice Interfaces in Apps</a></h2>
+                        <div class="article-subtitle">While every sci-fi show depicts Voice Interfaces as the future as it seemingly makes for very simple interactions with devices. I examine this idea.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">23 Aug 2019</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span><span class="tag">voice</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="915d435a.html">Why Your Design Should Reflect Your Values</a></h2>
+                        <div class="article-subtitle">User experience designers who are designing these experiences have their own world views that shape their designs. This is the right thing to do.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">05 Apr 2019</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span><span class="tag">opinion</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="f52b3f80.html">The Age of Goal Based Computing is Here</a></h2>
+                        <div class="article-subtitle">Among the many things AI has enabled, it has now made possible an entirely new method of interacting with our computers.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">17 Apr 2025</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span><span class="tag">ai</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="f9cca0fc.html">Is there room for another dating app?</a></h2>
+                        <div class="article-subtitle">Examining whether there's a packaging problem</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">18 Jul 2023</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">opinion</span><span class="tag">society</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="a51973c2.html">The Ultimate Guide to Hiring the Right UX Design Agency</a></h2>
+                        <div class="article-subtitle">It doesn't matter that the design agency has a high rating if they aren't a good fit for your project. But how do you find the right one?</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">15 Nov 2024</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">business</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="c1af5dc6.html">Four Ways to Improve Patient Experience with UX Design Principles</a></h2>
+                        <div class="article-subtitle">Post my experience in designing an interface for a birthing hospital the importance of UX in this space was highlighted.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">21 Feb 2019</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="dd39fcda.html">A Curated List of Videos to Understand Crypto</a></h2>
+                        <div class="article-subtitle">This list of videos will help you understand crypto and Web3 better.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">11 Oct 2022</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">crypto</span><span class="tag">web3</span><span class="tag">banking</span><span class="tag">decentralisation</span><span class="tag">finance</span><span class="tag">technology</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="3eb3bbbb.html">Review of the Rabbit R1</a></h2>
+                        <div class="article-subtitle">A detailed review of the newly launched Rabbit R1, exploring its hardware and software design, its strategic position in the market and its potential challenges</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">10 Jan 2024</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">technology</span><span class="tag">hardware</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="6b67b868.html">My experiments with 3D printing</a></h2>
+                        <div class="article-subtitle">My foray into the world of 3D printing and my learnings and insights so far. This is work in progress and will continue to be edited.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">24 Jan 2024</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">3D</span><span class="tag">design</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="99458576.html">Review of Replit, the Figma Killer</a></h2>
+                        <div class="article-subtitle">Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">31 Jul 2025</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span><span class="tag">ai</span><span class="tag">tools</span><span class="tag">technology</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="4b31984b.html">How to start designing for Web3</a></h2>
+                        <div class="article-subtitle">Web3 is a burgeoning field, but you can't just take Web2 designs and expect them to work in Web3. What should you keep in mind?</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">04 Dec 2024</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">crypto</span><span class="tag">ux</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="37f872a3.html">Designing for the Next Billion Users</a></h2>
+                        <div class="article-subtitle">These next big wave of users is coming not from the west but from the young, educated youth of India with access to cheap data plans and speaking many different languages.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">17 Oct 2019</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span></div>
                 </div>
             
                 <div class="article-item">
@@ -623,7 +781,69 @@
                     </div>
                     <div class="article-meta">
                         <span class="article-date">04 Aug 2024</span>
+                        <span class="article-author">by sharanx</span>
                     </div>
+                    <div class="article-tags"><span class="tag">DIY</span><span class="tag">product</span><span class="tag">design</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="9f31ab4a.html">Design Must Humanise Technology</a></h2>
+                        <div class="article-subtitle">Technology must function within the world of regular people</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">05 Dec 2016</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">technology</span><span class="tag">design</span><span class="tag">ux</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="606545a5.html">The UX Problem with the Voting System in India</a></h2>
+                        <div class="article-subtitle">Something as important as voting is fraught with UX problems and the intention of the voter is not well expressed within the systems that exist in places such as India</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">30 May 2019</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">society</span><span class="tag">ux</span><span class="tag">design</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="ae374ed1.html">Seven Structural Elements to Keep in Mind for Web3 UX Design</a></h2>
+                        <div class="article-subtitle">The structure of web3 influences the design of the applications</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">12 Feb 2023</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">ux</span><span class="tag">web3</span><span class="tag">decentralisation</span><span class="tag">design</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="ca1ff969.html">Eight Essential Rules for Mastering Ethical UX Design</a></h2>
+                        <div class="article-subtitle">Reflecting on the work of many others and my own work within the field, I have distilled the following rules to act as a guide</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">21 Apr 2023</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">ux</span><span class="tag">ethics</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="d5288f82.html">The New Age of the Design Generalist</a></h2>
+                        <div class="article-subtitle">AI tools have made coding simpler. Skills are no longer relevant. Imagination and envisioning a particular future is more necessary than ever.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">30 Dec 2024</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span><span class="tag">ai</span></div>
                 </div>
             
                 <div class="article-item">
@@ -633,10 +853,172 @@
                     </div>
                     <div class="article-meta">
                         <span class="article-date">04 Apr 2017</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span><span class="tag">ux</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="d8ae5f1e.html">Generative AI Art Experiments</a></h2>
+                        <div class="article-subtitle">Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Here are my experiments.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">13 Jul 2023</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">technology</span><span class="tag">art</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="80e0ac3c.html">The Five Promises of Technology</a></h2>
+                        <div class="article-subtitle">Having a framework to evaluate the use of technology is useful in evaluating how it can be employed</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">10 Jan 2019</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">technology</span><span class="tag">opinion</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="bc36ebfa.html">Designing Web3 Wallets for Mainstream Users</a></h2>
+                        <div class="article-subtitle">There is a problem with Web3 wallets, they're just too complex. But where's the problem stemming from and how do we solve it?</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">30 Sept 2024</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">design</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="9b4e1115.html">Five personal AI assistant devices reviewed and what they need to fix</a></h2>
+                        <div class="article-subtitle">The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">12 Sept 2024</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">product</span><span class="tag">hardware</span><span class="tag">design</span><span class="tag">technology</span></div>
+                </div>
+            
+                <div class="article-item">
+                    <div class="article-header">
+                        <h2><a href="08134e4f.html">Better tools should be better employed</a></h2>
+                        <div class="article-subtitle">When you have access to tools that provide you unlimited capability, how should these tools be used.</div>
+                    </div>
+                    <div class="article-meta">
+                        <span class="article-date">29 Jun 2023</span>
+                        <span class="article-author">by sharanx</span>
+                    </div>
+                    <div class="article-tags"><span class="tag">ux</span><span class="tag">opinion</span></div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <!-- Audio Tab Content -->
+        <div id='audio-tab' class='tab-content'><div class='playlist-container'>
+                <div class="playlist-item" data-index="0">
+                    <div class="playlist-number">1</div>
+                    <div class="playlist-info">
+                        <div class="playlist-title">Evolution, Not Revolution</div>
+                        <div class="playlist-subtitle">How Gradual Progress Can Lead to Success in Product Design</div>
+                        <div class="playlist-meta">
+                            <span class="playlist-author">sharanx</span>
+                            <span class="playlist-date">08 Sept 2025</span>
+                        </div>
+                        <div class="playlist-tags"><span class="tag">ux</span><span class="tag">design</span><span class="tag">product</span></div>
+                    </div>
+                    <div class="playlist-player">
+                        <audio class="audio-player" data-index="0" controls preload="none">
+                            <source src="4222f787_audio.mp3" type="audio/mpeg">
+                        </audio>
                     </div>
                 </div>
             
-        </div>
+                <div class="playlist-item" data-index="1">
+                    <div class="playlist-number">2</div>
+                    <div class="playlist-info">
+                        <div class="playlist-title">Beyond the Hype: Practical AI UX for Real Products</div>
+                        <div class="playlist-subtitle">Real-world lessons from building an AI-powered editor that keeps users in control instead of becoming button-pushing monkeys</div>
+                        <div class="playlist-meta">
+                            <span class="playlist-author">sharanx</span>
+                            <span class="playlist-date">25 Nov 2025</span>
+                        </div>
+                        <div class="playlist-tags"><span class="tag">ai</span><span class="tag">design</span><span class="tag">ux</span></div>
+                    </div>
+                    <div class="playlist-player">
+                        <audio class="audio-player" data-index="1" controls preload="none">
+                            <source src="bd45aaa3_audio.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            
+                <div class="playlist-item" data-index="2">
+                    <div class="playlist-number">3</div>
+                    <div class="playlist-info">
+                        <div class="playlist-title">8 Crucial Insights from Building an AI-Infused App</div>
+                        <div class="playlist-subtitle">Discover the critical lessons gained from developing a cutting-edge application in the evolving landscape of programming</div>
+                        <div class="playlist-meta">
+                            <span class="playlist-author">sharanx</span>
+                            <span class="playlist-date">04 Aug 2025</span>
+                        </div>
+                        <div class="playlist-tags"><span class="tag">ai</span><span class="tag">design</span><span class="tag">technology</span></div>
+                    </div>
+                    <div class="playlist-player">
+                        <audio class="audio-player" data-index="2" controls preload="none">
+                            <source src="3e62d0c6_audio.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            
+                <div class="playlist-item" data-index="3">
+                    <div class="playlist-number">4</div>
+                    <div class="playlist-info">
+                        <div class="playlist-title">Review of Replit, the Figma Killer</div>
+                        <div class="playlist-subtitle">Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.</div>
+                        <div class="playlist-meta">
+                            <span class="playlist-author">sharanx</span>
+                            <span class="playlist-date">31 Jul 2025</span>
+                        </div>
+                        <div class="playlist-tags"><span class="tag">design</span><span class="tag">ux</span><span class="tag">ai</span><span class="tag">tools</span><span class="tag">technology</span></div>
+                    </div>
+                    <div class="playlist-player">
+                        <audio class="audio-player" data-index="3" controls preload="none">
+                            <source src="99458576_audio.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div></div>
+        
+        <!-- Podcasts Tab Content -->
+        <div id='podcasts-tab' class='tab-content'><div class='playlist-container'>
+                <div class="playlist-item podcast" data-index="0">
+                    <div class="podcast-artwork-container">
+                        <div class="podcast-artwork-placeholder"></div>
+                    </div>
+                    <div class="playlist-info">
+                        <div class="podcast-episode-badge">S1E1</div>
+                        <div class="playlist-title">8 Crucial Insights from Building an AI-Infused App</div>
+                        <div class="playlist-subtitle">Discover the critical lessons gained from developing a cutting-edge application in the evolving landscape of programming</div>
+                        <div class="playlist-meta">
+                            <span class="playlist-author">sharanx</span>
+                            <span class="playlist-date">04 Aug 2025</span>
+                        </div>
+                        <div class="playlist-tags"><span class="tag">ai</span><span class="tag">design</span><span class="tag">technology</span></div>
+                    </div>
+                    <div class="playlist-player">
+                        <audio class="podcast-player" data-index="0" controls preload="none">
+                            <source src="3e62d0c6_podcast.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div></div>
     </div>
     
     <!-- Footer -->
@@ -645,6 +1027,114 @@
     </div>
 
     <script>
+        // Tab switching functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and content
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = button.dataset.tab + '-tab';
+                const tabContent = document.getElementById(tabId);
+                if (tabContent) {
+                    tabContent.classList.add('active');
+                }
+            });
+        });
+        
+        // Audio playlist functionality
+        (function() {
+            const DELAY_BETWEEN_TRACKS = 5000; // 5 seconds delay
+            
+            // Get all audio and podcast players
+            const audioPlayers = document.querySelectorAll('.audio-player');
+            const podcastPlayers = document.querySelectorAll('.podcast-player');
+            
+            // Get playlist items for each type
+            const audioItems = document.querySelectorAll('#audio-tab .playlist-item');
+            const podcastItems = document.querySelectorAll('#podcasts-tab .playlist-item');
+            
+            // Audio tab playlist
+            audioPlayers.forEach((player, index) => {
+                player.addEventListener('play', () => {
+                    // Pause all other audio and podcast players
+                    audioPlayers.forEach((p, i) => {
+                        if (i !== index) p.pause();
+                    });
+                    podcastPlayers.forEach(p => p.pause());
+                    
+                    // Update playing state
+                    audioItems.forEach((item, i) => {
+                        item.classList.toggle('playing', i === index);
+                    });
+                    podcastItems.forEach(item => {
+                        item.classList.remove('playing');
+                    });
+                });
+                
+                player.addEventListener('ended', () => {
+                    // Remove playing state
+                    audioItems[index]?.classList.remove('playing');
+                    
+                    // Auto-advance to next track after delay
+                    const nextIndex = index + 1;
+                    if (nextIndex < audioPlayers.length) {
+                        setTimeout(() => {
+                            audioPlayers[nextIndex].play();
+                        }, DELAY_BETWEEN_TRACKS);
+                    }
+                });
+                
+                player.addEventListener('pause', () => {
+                    if (!player.ended) {
+                        audioItems[index]?.classList.remove('playing');
+                    }
+                });
+            });
+            
+            // Podcast tab playlist
+            podcastPlayers.forEach((player, index) => {
+                player.addEventListener('play', () => {
+                    // Pause all other audio and podcast players
+                    podcastPlayers.forEach((p, i) => {
+                        if (i !== index) p.pause();
+                    });
+                    audioPlayers.forEach(p => p.pause());
+                    
+                    // Update playing state
+                    podcastItems.forEach((item, i) => {
+                        item.classList.toggle('playing', i === index);
+                    });
+                    audioItems.forEach(item => {
+                        item.classList.remove('playing');
+                    });
+                });
+                
+                player.addEventListener('ended', () => {
+                    // Remove playing state
+                    podcastItems[index]?.classList.remove('playing');
+                    
+                    // Auto-advance to next track after delay
+                    const nextIndex = index + 1;
+                    if (nextIndex < podcastPlayers.length) {
+                        setTimeout(() => {
+                            podcastPlayers[nextIndex].play();
+                        }, DELAY_BETWEEN_TRACKS);
+                    }
+                });
+                
+                player.addEventListener('pause', () => {
+                    if (!player.ended) {
+                        podcastItems[index]?.classList.remove('playing');
+                    }
+                });
+            });
+        })();
+        
         // Parse date from article date string
         function parseArticleDate(dateStr) {
             if (!dateStr) return new Date(0);
@@ -657,17 +1147,17 @@
             const articlesList = document.querySelector('.articles-list');
             if (!articlesList) return;
             
-            const articles = Array.from(articlesList.querySelectorAll('.article-item'));
-            if (articles.length === 0) return;
+            const items = Array.from(articlesList.querySelectorAll('.article-item'));
+            if (items.length === 0) return;
             
-            articles.sort((a, b) => {
-                const dateA = parseArticleDate(a.querySelector('.article-date').textContent.trim());
-                const dateB = parseArticleDate(b.querySelector('.article-date').textContent.trim());
+            items.sort((a, b) => {
+                const dateA = parseArticleDate(a.querySelector('.article-date')?.textContent?.trim());
+                const dateB = parseArticleDate(b.querySelector('.article-date')?.textContent?.trim());
                 return dateB.getTime() - dateA.getTime(); // Newest first
             });
 
-            // Reorder the articles in the DOM
-            articles.forEach(article => articlesList.appendChild(article));
+            // Reorder the items in the DOM
+            items.forEach(item => articlesList.appendChild(item));
         }
 
         // Sort articles when page loads
