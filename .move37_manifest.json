@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-12T16:40:41.881610+00:00",
+  "last_updated": "2026-01-14T13:25:07.200142+00:00",
   "files": {
     "6e576ec9_20250927_175202.png": {
       "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
@@ -8,15 +8,15 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "2b934085ab74e597e4c019e5a3a445a38ab0263db406c431bf2edd65eaf6925c",
-      "size": 53531,
-      "modified": "2025-12-12T16:40:41.567673+00:00",
+      "checksum": "5116cd0ba50010144ca5ba9747a7a8c7f34d836154f05888f7509c939f95bb89",
+      "size": 51548,
+      "modified": "2026-01-14T13:25:06.832997+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "a9249a041ecffb0d42ceb7ef4f8830f743569139c73b7fde3c29b2814a8cf6ed",
-      "size": 312533,
-      "modified": "2025-12-12T16:40:41.879679+00:00",
+      "checksum": "35590436f300db0e4965efaba6c1526aa301c7d83ee2ad20c043ea2fccade2cc",
+      "size": 307027,
+      "modified": "2026-01-14T13:25:07.198019+00:00",
       "type": "rss"
     },
     "3e62d0c6_20250804_174247.png": {
@@ -52,7 +52,7 @@
     "blog.css": {
       "checksum": "bf3b36be094d57009ffb7efe01a782d155e5b53b2284a3bf1bbf17103cdae9cf",
       "size": 928,
-      "modified": "2025-12-12T16:40:41.383670+00:00",
+      "modified": "2026-01-14T13:25:06.576982+00:00",
       "type": "css"
     },
     "f52b3f80.html": {
@@ -329,12 +329,6 @@
       "checksum": "40d8cd4f3c62d9ed13e77baba6cee502c2ae4d987d7204197642d89899b0c618",
       "size": 23457,
       "modified": "2025-10-19T23:38:02.259403+00:00",
-      "type": "article"
-    },
-    "dd39fcda.html": {
-      "checksum": "48c1e109a96c4b04ed787a9dccfbed647cbad48bc2886fb86352b253ad63aacc",
-      "size": 24933,
-      "modified": "2025-10-19T23:38:07.310576+00:00",
       "type": "article"
     },
     "d0364a95.html": {
@@ -642,6 +636,12 @@
       "size": 8823384,
       "modified": "2025-12-03T18:05:21.307885+00:00",
       "type": "audio"
+    },
+    "dd39fcda.html": {
+      "checksum": "1dae3c36d2d3ccef012516f148c63f6673d2b99058e388f7b13aa62a03d4b837",
+      "size": 19615,
+      "modified": "2026-01-14T13:25:06.824996+00:00",
+      "type": "article"
     }
   }
 }
