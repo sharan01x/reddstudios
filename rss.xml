@@ -9,7 +9,7 @@
     <description>Building startups, pushing pixels, slicing videos, compiling code or writing verse.</description>
     <language>en-us</language>
     <pubDate>Thu, 27 Nov 2025 18:42:35 +0000</pubDate>
-    <lastBuildDate>Mon, 26 Jan 2026 20:14:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 20:20:39 +0000</lastBuildDate>
     <generator>Move37 Blog Publisher</generator>
     <atom:link href="https://redd.in/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -1652,6 +1652,42 @@
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/bc36ebfa.html?p=bc36ebfa</guid>
       <description><![CDATA[There is a problem with Web3 wallets, they're just too complex. But where's the problem stemming from and how do we solve it?]]></description>
+      <content:encoded><![CDATA[<div class="content">
+<h1>Web3 Wallets for Mainstream Users</h1>
+<p>Web3, the next phase of the internet powered by blockchain technology, promises to revolutionise industries, but its complexity continues to alienate mainstream users. At the heart of this challenge is the Web3 wallet—a fundamental tool required for engaging with decentralised applications (dApps), managing cryptocurrencies, and accessing blockchain networks. While Web3 enthusiasts have embraced the wallet system, its cryptographic foundations and technical jargon have left everyday users overwhelmed and frustrated. To drive mainstream adoption of Web3, we need to focus on fixing the wallet experience, making it intuitive and accessible.</p>
+<p>In this blog, we’ll explore why the wallet is the crux of Web3 usability challenges and how a thoughtful redesign grounded in familiar concepts, like banking, can unlock its full potential.</p>
+<h3>The Wallet Conundrum: Complexity Meets Confusion</h3>
+<p>The primary function of a Web3 wallet is to store a user's private and public keys. These cryptographic keys are used to authorise transactions and prove the user's identity within the blockchain ecosystem. But this process, while secure and revolutionary, is incredibly foreign to non-technical users. Terms like "private key," "public key," and "signing messages" can cause even the most tech-savvy Web2 users to shy away. The need for simplification is apparent.</p>
+<p>In Web2, users can easily send and receive money through banks or payment apps without ever having to understand the mechanics behind these systems. Web3, by contrast, demands users grasp cryptographic principles or risk losing access to their digital assets. The complexity isn't just a barrier; it's a deterrent.</p>
+<p>Many existing wallets, such as Zerion or Rabby, have attempted to ease the user experience by iterating on older designs. And while they have indeed made Web3 more user-friendly, they still fall short of the mainstream appeal necessary for broad adoption. These wallets are excellent by Web3 standards, but they remain inscrutable for the average Web2 user, leaving us to ask: Why can't a Web3 wallet be as intuitive as the apps we're already accustomed to?</p>
+<h3>Terminology Matters: The Language of Web3</h3>
+<p>A significant part of the problem lies in the terminology itself. In Web3, terms like "wallet" are used inaccurately. In traditional banking, a wallet implies a place where you store something—cash, cards, and other financial instruments. However, in Web3, a wallet doesn’t "store" money in the traditional sense. Instead, it acts more like an access card to funds stored on the blockchain. Misleading terminology adds to the confusion, making it harder for users to understand how to manage their digital assets.</p>
+<p>Open-source development, which is central to the Web3 ecosystem, has contributed to this confusion. Over time, various developers have used different terms to describe the same concepts, leading to inconsistent vocabulary across platforms. For instance, "public key," "wallet address," and "externally owned account" all refer to the same thing, but new users won’t know that. This inconsistency hinders their ability to trust and navigate the system confidently.</p>
+<p>Language is powerful, and when users encounter familiar terms, they can better grasp unfamiliar concepts. Web2 sites like e-commerce platforms utilise relatable language ("add to cart," "checkout") that immediately makes sense to users. The same approach needs to be applied to Web3 wallets if we want to make them accessible to the average person.</p>
+<h3>Building Familiarity: Banking as a Metaphor</h3>
+<p>To solve the wallet problem, we need to rethink the entire framework. Instead of framing wallets with cryptographic jargon, we should use a metaphor that resonates with mainstream users. And what’s more familiar than banking? Banking is a 2,000-year-old institution, and most people are already acquainted with its core concepts.</p>
+<p>By reimagining the Web3 wallet as a piece of "banking software," we can translate complex blockchain concepts into terms users already understand. For instance, the wallet itself could be referred to as "banking software," the wallet address as an "account number," the private key as a "signature," blockchain networks as "networks," and the various fees associated with a transaction such as "tip", "gas" and such could be simplified into "transaction fees," just as people are used to paying on traditional payment platforms.</p>
+<p>This banking analogy would not only make Web3 wallets more relatable but also help ease users into the system without overwhelming them with technical details.</p>
+<h3>A Three-Account Structure: Enhancing Security and Usability</h3>
+<p>In addition to simplifying the terminology, a redesigned Web3 wallet should also mimic the structure of traditional banking. A banking app typically offers various types of accounts—checking, savings, and investment—and the same can be applied to Web3.</p>
+<ol>
+<li>
+<p><strong>Checking Account</strong>: This would be where users conduct everyday transactions with known entities or individuals, similar to a checking account in traditional banking.</p>
+</li>
+<li>
+<p><strong>Savings Account</strong>: This would serve as a secure place to store assets, where users could stake cryptocurrencies or simply keep them safe. It would allow users to generate interest on their holdings without needing to interact with external applications.</p>
+</li>
+<li>
+<p><strong>Investment Account</strong>: For users seeking higher risk and reward opportunities, this account would enable interaction with decentralised applications (dApps) for staking, lending, or other investment activities.</p>
+</li>
+</ol>
+<p>This compartmentalisation not only makes the system more intuitive but also enhances security. By limiting the interactions of the checking and savings accounts with external applications, users can reduce their exposure to potential security risks. Only the investment account, which is meant for higher-risk activities, would be open to external dApps.</p>
+<h3>The Road Ahead: Evolving Web3 for the Mainstream</h3>
+<p>In conclusion, the wallet is the linchpin of Web3 adoption. If we can make the wallet experience seamless and intuitive, we can unlock Web3’s immense potential for a wider audience. The key lies in rethinking both the terminology and structure, using familiar banking concepts to demystify the process. By addressing these foundational issues, we can bridge the gap between Web2 and Web3, paving the way for mass adoption.</p>
+<p>For designers and developers working on Web3 applications, this means prioritising usability over technical prowess. It means considering what mainstream users already know and building upon that knowledge, rather than introducing new, foreign concepts. The future of Web3 is bright, but only if we can make it accessible to everyone.</p>
+<h1>Video with screens</h1>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="338" src="https://www.youtube.com/embed/flGWL54hJR4" title="YouTube video player" width="600"></iframe>
+</div>]]></content:encoded>
     </item>
     <item>
       <title>Five personal AI assistant devices reviewed and what they need to fix</title>
@@ -1660,6 +1696,33 @@
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/9b4e1115.html?p=9b4e1115</guid>
       <description><![CDATA[The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential.]]></description>
+      <content:encoded><![CDATA[<div class="content">
+<h2>Why Aren’t Personal AI Assistants Taking Off?</h2>
+<p>Before diving into the nitty-gritty, let’s get one thing clear. The personal AI assistants I’m referring to aren’t like Siri or Google Assistant on your phone. We’re talking about devices that can break down complex tasks and execute them for you—whether it’s running apps, searching the web, or even coding in some cases.</p>
+<p>These devices are mostly aimed at early adopters right now, but the goal is to create something for everyone. If you picture the product adoption lifecycle, we’re still in the early adopter phase. Right now, companies are testing their products in different niches, trying to figure out what sticks. It’s a chaotic phase, and we’re seeing an explosion of ideas—some good, some not so much. A lot of these ideas won’t make it to the mainstream, but that’s what makes this phase so exciting.</p>
+<p>Now, let’s dig into the seven mistakes these AI assistant products are making and how I think they can course-correct.</p>
+<h3>1. Not Using the Right Metaphor</h3>
+<p>The first mistake is starting with the wrong metaphor. Products need to fit into a framework that users already understand. People don’t like adopting something completely alien. I always say evolution trumps revolution, especially in mass-market products. Finding a metaphor that connects the new with the familiar is crucial. AI assistants should be positioned as an evolution of tools people already know, not a radical shift that alienates potential users.</p>
+<h3>2. Limited Accessibility and Reachability</h3>
+<p>For an AI assistant to succeed, it needs to be extremely accessible. Think about the evolution of computing—from desktops to laptops, tablets, smartphones, and now wearables. The goal is to bring tech closer to the user. Personal AI devices need to occupy that space between a smartphone and the user—something wearable that’s always available at a moment’s notice.</p>
+<p>Users are going to need to learn a new behaviour—one where they think in terms of goals, not apps. The easier we make it for them to access the assistant, the quicker they’ll adapt. ^1c44a7</p>
+<h3>3. Lack of Multimodal Inputs and Outputs</h3>
+<p>Let’s be honest—audio alone isn’t enough. Yes, voice commands are intuitive and efficient for certain tasks, but information needs to be delivered in various ways. Visual feedback, like images and text, allows users to process information faster. Devices that rely only on voice, like some AI pins or pendants, miss out on the efficiency that visual data provides. The solution is to design devices with both visual and auditory outputs.</p>
+<h3>4. Poor Data Privacy Protections</h3>
+<p>With AI, the question of privacy becomes even more critical. These devices will have access to mountains of personal data, and without strong privacy protections, they could easily become surveillance tools. The safest way to ensure privacy? Keep the data on the device itself. I think open-source projects like Open Interpreter, which runs locally on the user’s device, are on the right track. This model protects privacy and offers immediate feedback—something that cloud-based models struggle with.</p>
+<h3>5. Lag in Response Time</h3>
+<p>For AI assistants to feel natural, they need to respond quickly. Research shows that interactions that take longer than 400 milliseconds feel slow and clunky. Devices relying on cloud-based AI models are always going to have some lag, no matter how fast the server is. To hit that magical threshold of 400 milliseconds, AI models need to run locally on the device. Otherwise, users will experience delays that break the flow of interaction.</p>
+<h3>6. Lack of Interoperability</h3>
+<p>We’re transitioning to a new kind of computing—one where AI agents handle tasks for us. These agents need to be able to interact seamlessly with existing systems and applications. If a user wants their AI assistant to book an Uber or play a song on Spotify, the interaction needs to be flawless. Devices that struggle with this will quickly fall out of favour. The future belongs to AI assistants that can bridge both the current and future computing models.</p>
+<h3>7. Failure to Create Universal Interfaces</h3>
+<p>The final mistake I see is the lack of universal, adaptable interfaces. Every request a user makes might require a different interface—one that adapts in real-time. If I ask my AI assistant to book an Uber, the interface might display a map. If I want to pick between two songs, I’ll need a list. These interfaces need to be generated on the fly, based on the user’s specific request. A rigid interface simply won’t cut it.  </p>
+<h2>The Future of AI Assistants</h2>
+<p>In my opinion, the best form factor for personal AI assistants is a wearable device—specifically a smartwatch. It’s close to the user, easy to access, and can incorporate the necessary screen for visual feedback. While today’s smartwatches may not have the power to run advanced AI models, the tech is catching up. With chip technology becoming more efficient and AI models getting smaller, we’re not far from a future where AI-powered smartwatches will be the norm.</p>
+<p>Ultimately, while none of the current products on the market have quite nailed it yet, some are closer than others. But in the end, it’s the big players—Google, Microsoft, and Meta—that are best positioned to dominate the personal AI assistant space. They have the data, and in AI, data is king.</p>
+<p>As much as I root for the underdog, I wouldn’t bet my money on any of the current startups trying to break into this space. The race will be won by those with the resources to gather and process the vast amounts of data required to create truly effective AI assistants.</p>
+<h1>Watch the Video</h1>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="338" src="https://www.youtube.com/embed/7GPtfH1lYkI" title="YouTube video player" width="600"></iframe>
+</div>]]></content:encoded>
     </item>
     <item>
       <title>Better tools should be better employed</title>
@@ -1709,7 +1772,7 @@
     <item>
       <title>Untitled Article</title>
       <link>https://redd.in/bd45aaa3.html</link>
-      <pubDate>Mon, 26 Jan 2026 20:14:56 +0000</pubDate>
+      <pubDate>Mon, 26 Jan 2026 20:20:39 +0000</pubDate>
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/bd45aaa3.html?p=bd45aaa3</guid>
       <description><![CDATA[]]></description>
