@@ -9,7 +9,7 @@
     <description>Building startups, pushing pixels, slicing videos, compiling code or writing verse.</description>
     <language>en-us</language>
     <pubDate>Thu, 27 Nov 2025 18:42:35 +0000</pubDate>
-    <lastBuildDate>Wed, 14 Jan 2026 13:25:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 20:14:56 +0000</lastBuildDate>
     <generator>Move37 Blog Publisher</generator>
     <atom:link href="https://redd.in/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -437,6 +437,58 @@
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/f52b3f80.html?p=f52b3f80</guid>
       <description><![CDATA[Among the many things AI has enabled, it has now made possible an entirely new method of interacting with our computers.]]></description>
+      <content:encoded><![CDATA[<div class="content">
+<h1>Introduction</h1>
+<p>I have <a href="https://redd.in/blog/5-personal-ai-assistant-devices-reviewed/">long believed</a> that we are on the precipice of changing the fundamental way in which humans will interact with computers. We are stepping into an age where we are going to simply be able to tell our computers the goals we want to achieve and they will figure out the steps in order to achieve it and then execute it for us. But this powerful idea is founded on the notion that your computer will know what there is to know about you, including your preferences, your data and whatever else you can supply it. But that brings up many new questions regarding privacy, data ownership and data residency. But don't worry, I'm not here just to whine, (though I will), but I also come bearing a solution and even ways for you to participate in it.</p>
+<h1>Background</h1>
+<p>To begin to understand the importance of what we're currently living through, it is important for me to provide you a bit of background about three aspects of this industry.</p>
+<p>First, I want to point out the evolution of computing from the perspective of how much effort it takes to have your computer do what you need it to do, the effort has been reducing over time. We've gone from writing our instructions on punch cards to writing programs using almost english sounding programming languages like BASIC or Python. After that, the evolution plateaued until the birth of LLMs. Now, we can speak to them in natural language and have them do things for us.</p>
+<p>The second progression that I want you to pay attention to is the number of things a particular program is capable of doing. You see, at first you needed to employ programmers in your office to write you custom programs because there was just no other way to having your company use the efficiency that computers could bring to your organisation. Post that phase, applications were available to people to just download, install and use. Now app developers who were competing for the user's dollars, either built apps to serve a niche audience or started building super-apps that could do everything. The latter group quickly ran into the limitations of the Graphical User Interface (GUI) because there was only so many things you can pack into a screen and still be user-friendly. This was the case, again, until LLMs. Now you had computers that could do anything, even write programs to do specific things.</p>
+<p>Thirdly, apps have been very specific solutions to a problem. As such, they've been very brittle as you could only ask the app to do certain things and that's it. Even when speech technology was applied, you still spent time learning the phrases that you could use a la, "Hey Google, turn my lights on in the living room". If you said that phrase differently than it had been setup with, for example, if you said, "Hey, it's too dark in the living room" -- you couldn't expect your app to understand that phrase. This hurdle again has been overcome by LLM's because they can understand your meaning <em>past</em> your words. For example, you could say "I'm thirsty", "I'm parched" or even be euphemistic like "My mouth feels like the Sahara desert right now" and it would still get the meaning you want to convey. From a UX perspective, this ability for technology to fit into the life of human beings seamless is what I find most powerful.</p>
+<p>So we are at the threshold of these three progressions having come to a head at once. This means that not only are our computers going to be super capable going forward, it's going to be incredibly simple to use and no one has to spend any time even learning them. Can you imagine what an unlock this is for society? And this is the first time in history that the benefits of this technology is not just going to those of us who grew up with technology in our lives and we've found it comfortable because we spent the time learning them, it's going to be a massive unlock for those that were so far left behind the technological divide or even the english-language. These include people like my parents who find their smartphones challenging to use.</p>
+<p>This, is huge.</p>
+<h1>Context is Everything</h1>
+<p>For AI systems to go from just being effective on the baseline (based on what it's learnt about humans as a whole from the internet) to doing things for you the way you prefer it be done requires understanding your context. They need to be able to study your behaviours and patterns in order to be able to emulate them. This may mean giving the AI access to not just your emails, calendars, contacts, photos but even allow it to watch your health data, medical records, your passwords, etc.</p>
+<p>That's when they can go to a place where they can understand that you prefer to say "clutch" over "cool" or like to order from this particular Chinese restaurant and the other one is there as a backup or that you prefer your screen font size large because you have trouble reading or even to cancel all your appointments automatically if you woke up unwell one day. It can figure all this out without you ever having to tell it these things explicitly.</p>
+<p>But AI isn't just going to be a useful assistant to have, it will soon become essential. We live in a world where information is being produced at unprecedented rates and we feel compelled to keep up. But we are reaching the limits of human capabilities and that's just going to continue to be the case. There will be hundreds of decisions that we can delegate to AI that's working on our behalf, the least of which is deciding which email is spam and which isn't. If you want to participate in an accelerating world, having an AI assistant will become a necessity in the same way having a smartphone today is seen as a necessity.</p>
+<p>So, the question is, where do you get your AI assistant.</p>
+<h1>Shop Around</h1>
+<p>If there's one thing we've learnt from the mistakes made by the social media decade is that if the service is free, you are the product. We've also seen the many ways data about users have been used against them. To most readers of this blog, I don't need to list the kinds of things these large technology companies learn about us just through the ways in which we shop or even the intonations of our voice. We've seen how effective and accurate they have been, including stories about products being suggested to dads of teenagers who were pregnant, even before the dad knew about that pregnancy!</p>
+<p>I would never trust these corporations with my context data, especially when that data could reveal infinitely more information than my social media profile ever could.</p>
+<p>Let me be clear, I don't think these corporations are necessarily evil. I find it hard to imagine anyone waking up every morning with the sole intention to destroy other people's lives. But the incentives of corporations are definitely not aligned to serving the user. They are beholden to their shareholders and are mandated with generating profits for them. This mechanism doesn't allow anyone to see the user as anything more than a resource to derive value from. If value can be generated by selling their data to the highest bidder, so be it.</p>
+<p>Given this equation, let's suppose you go ask a question about a certain type of cancer to the AI assistant from one of these large corporations or submitted a scan to this assistant with the intention of getting a second opinion. What if that AI assistant saw that and realised that your insurance company may be willing to pay a huge amount for that information because they could loose a lot more if they continue to cover you if you fell ill. Do you think the assistant would be programmed to act on your behalf or to generate a profit for the corporation?</p>
+<p>The good news is that we don't need to rely on these corporations. The open source world has realised these pitfalls and have been hard at work developing technologies that will ensure that this kind of a future doesn't need to befall us. I also realise how important these efforts are and have been contributing my time and efforts to such projects as well.</p>
+<h1>The Solution is Simple</h1>
+<p>While these big companies that own the frontier AI models want to portray themselves as the only option for this sort of intelligence, don't be fooled. Know that you can have absolutely great stuff available to you without any of them in the picture. You can retain complete ownership of your data while still getting all the convenience. You can do all this locally, in the privacy of your own computer. You don't have to learn prompting strategies either.</p>
+<p>You can install Ollama and Move 37 on your machine and you're good to go! All of it is completely free and you can even check and audit the code if you're so inclined. Granted it's a little bit of work to get this installed right now, but they are all making things easier all the time.</p>
+<p>If you'd like to see a demo of this, I'd be happy to create one. If you want to find out how to install this also, I can create another video about it. But for now, here's a very quick walkthrough.</p>
+<p>[COMING SOON]</p>
+<p>As mentioned, these two projects are available for free, from these locations. So go check them out:</p>
+<ul>
+<li><a href="https://www.ollama.com">Ollama</a></li>
+<li><a href="https://github.com/sharan01x/move37">Move37</a></li>
+</ul>
+<hr/>
+<h1>Conclusion</h1>
+<p>If you believe in an open future where individuals retain control over their own destinies, you can start using these technologies for yourself. But if you feel like you'd want to contribute more and be a part of these movements, there are many ways you can participate depending on your skills.</p>
+<p>If you're technically inclined:</p>
+<ol>
+<li>Move37 is looking for help in testing, verifying the code completeness and various other items listed in their roadmap.</li>
+<li>UX designers can propose new ways to organise the frontend to make things easier and more efficient.</li>
+<li>The installation process could use a lot of simplifying and that's something that you can contribute to, especially on Move37.</li>
+</ol>
+<p>If you're not an engineer:</p>
+<ol>
+<li>Use and provide feedback and spot bugs</li>
+<li>Spread the word and get more people to realise the problem and understand that there are solutions</li>
+<li>Create videos talking about the projects</li>
+<li>Add new recipes -- the steps for using various applications</li>
+<li>Suggest new ideas and features that can be built</li>
+<li>Star the projects on GitHub so that they get more visibility</li>
+<li>Just donate to the projects if you've got the money, they can use it.</li>
+</ol>
+<p>But whatever you choose, thanks for being a part of this! Until next time, ciao!</p>
+</div>]]></content:encoded>
     </item>
     <item>
       <title>Is there room for another dating app?</title>
@@ -647,6 +699,32 @@
 <p>Introducing technology with UX design principles can streamline processes and remove inefficiencies. This increases productivity and brings down costs. That’s not all; the platform becomes a one-stop shop for all of the hospital’s packages. This creates simple, effective communication around each package which, in turn, can result in better conversions.</p>
 <h1>Conclusion</h1>
 <p>In conclusion, <em>sensitivity</em>, <em>relevance</em> and <em>sociability</em> guiding all UX decisions make for a vastly improved patient experience. Also, let’s not forget integrating tech and UX paves the way for machine learning and AI which can unlock a whole new level of efficiency and patient satisfaction!</p>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>The app-less world and it&#x27;s implications on the world of computing</title>
+      <link>https://redd.in/48ebf926.html</link>
+      <pubDate>Thu, 31 Jul 2025 14:14:41 +0000</pubDate>
+      <dc:creator><![CDATA[sharanx]]></dc:creator>
+      <guid isPermaLink="false">https://redd.in/48ebf926.html?p=48ebf926</guid>
+      <description><![CDATA[Among the many things AI has enabled, it now has made it possible to think beyond building software applications.]]></description>
+      <content:encoded><![CDATA[<div class="content">
+<h1>Background</h1>
+<p>I have long believed that we are on the precipice of changing the fundamental way in which humans will interact with computers. Humans will soon be in a place where they can think in terms of the goals they want to achieve rather than thinking about the apps they need to string together in order to achieve the various pieces of it. The required technological pieces such as the [[2024-01-10-rabbit-r1-review#^a18b65|LAM]] and [[2024-12-30-the-new-age-of-design#^5b3b30|Just-in-Time Code]] being developed makes me believe that we are getting closer to this becoming real. There is still one big piece of the puzzle that is necessary which is the context of the user, but it's only a matter of time and this will be achieved.</p>
+<h1>Data</h1>
+<p>As of the writing of this article, the entities that have data about us are the large corporations that have spent years amassing it from our interactions in the digital sphere. They run very large data centres to store and process all this data to understand the user's context and preferences. Hundreds and thousands of lines of code have been written to do this. So far it's been employed to serve us ads or sell us stuff. </p>
+<p>But we are now at a place where the hardware required for the user to be able to record this data about themselves is cheap enough that they could do this at their own homes. Open Source AI engines are also sophisticated and capable enough to replace the need for the many lines of code and instead be able to mine this data to understand the user's preferences or to know what they said in the previous meeting whenever it is required.</p>
+<h1>Digital Twin</h1>
+<p>So, in theory, we can build a "digital twin" of a user that exists entirely in a computer that's owned and controlled by them. This digital twin will be useful in so many ways. For instance, it can be examined to understand their preferred cuisine in order to order lunch or even to identify signs of depression if it comes to that. This digital twin is also available at all hours, so can represent the human in many digital spheres while the human is asleep.</p>
+<h1>AI Agents</h1>
+<p>AI agents are becoming more and more capable. They are able to search the web, make API calls, do calculations, make good decisions, write code, use computers and software applications and do it using multi-modal inputs and outputs. </p>
+<p>Very quickly, this AI agent can learn to perform any tasks that the human may perform. The user will begin to speak to their agents in terms of the goals they want to achieve and leave it to the agent to figure out the plan and break it down into tasks that will help achieve that goal. The agent will operate software applications in oder to achieve these tasks. The human will use it to interact with and execute everything certainly in the digital sphere, but maybe some things in the physical world too (taxi hailing, ordering food or products, etc.)</p>
+<p>These agents can also filter their actions through the Digital Twin in order to make choices and decisions just as the user would. </p>
+<h1>Implications</h1>
+<p>Firstly, the AI agent becomes the universal interface for the user. This may happen gradually at first, but there is a real possibility that this becomes indispensable soon. </p>
+<p>Secondly, if the agent is capable of writing code as required to perform a task, software as we know it will not be necessary anymore. </p>
+<p>Thirdly, if the primary user of websites and applications is the AI agent, they will cease to exist in their current form and become far more like API's. Future app-stores will be selling specialised data bundles or algorithms that will help analyse the user's own data in novel ways. </p>
+<p>Fourthly, with the human interacting more with the agent than with computers or phones, this may reduce their dependence on technology. We may finally settle on computing form factors such as the smart watch in the future.</p>
 </div>]]></content:encoded>
     </item>
     <item>
@@ -1631,7 +1709,7 @@
     <item>
       <title>Untitled Article</title>
       <link>https://redd.in/bd45aaa3.html</link>
-      <pubDate>Wed, 14 Jan 2026 13:25:07 +0000</pubDate>
+      <pubDate>Mon, 26 Jan 2026 20:14:56 +0000</pubDate>
       <dc:creator><![CDATA[sharanx]]></dc:creator>
       <guid isPermaLink="false">https://redd.in/bd45aaa3.html?p=bd45aaa3</guid>
       <description><![CDATA[]]></description>
