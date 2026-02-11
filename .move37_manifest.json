@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-12T12:27:14.511282+00:00",
+  "last_updated": "2026-02-11T19:43:02.395305+00:00",
   "files": {
     "6e576ec9_20250927_175202.png": {
       "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
@@ -8,70 +8,52 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "e8263bdc695fedeafd3fc593ce3b2dfed49a9e1d9a3f8e2fa8489fc98f8a5014",
-      "size": 50724,
-      "modified": "2025-12-12T12:27:14.455580+00:00",
+      "checksum": "57ae9623d7b45065b8991b9d7a72596c40a5941a48ae3868a965a51fbfe06286",
+      "size": 51764,
+      "modified": "2026-02-11T19:43:02.339386+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "db7076232261cc8066ebad2743887c69eaf355e1442ab10c30dbba3cc6d8cde5",
-      "size": 308816,
-      "modified": "2025-12-12T12:27:14.510721+00:00",
+      "checksum": "cd658867a5d17ad1b944e6ec824c37b46e0aaf2f5c811c9dda70a2ff062c5d57",
+      "size": 314356,
+      "modified": "2026-02-11T19:43:02.394841+00:00",
       "type": "rss"
     },
     "3e62d0c6_20250804_174247.png": {
       "checksum": "9210561e014a7f4c470ed318956f72f7e62a5a49a903fd095c4127f68263cd0a",
       "size": 1352176,
-      "modified": "2025-08-04T15:42:47.528725+00:00",
+      "modified": "2026-02-11T19:23:56.788779+00:00",
       "type": "image"
     },
     "3e62d0c6_20250804_173507.png": {
       "checksum": "030af720f7596a95092a0e32e0e3a3435fab2050d75c4d59f35d100e28fcfc51",
       "size": 1090678,
-      "modified": "2025-08-04T15:35:07.935962+00:00",
+      "modified": "2026-02-11T19:23:56.785450+00:00",
       "type": "image"
     },
     "3e62d0c6_20250804_174821.png": {
       "checksum": "c52347ee2fccacb459f2fd1a75892fef4cb2c92ce55d351c0fe6532e5e095c1f",
       "size": 1553551,
-      "modified": "2025-08-04T15:48:21.359946+00:00",
+      "modified": "2026-02-11T19:23:56.781957+00:00",
       "type": "image"
     },
     "3e62d0c6_20250806_165053.png": {
       "checksum": "24b558415a827e68f911ea5f7566f5984c52222deb4c1a3c7ff485bb6572adc6",
       "size": 1156755,
-      "modified": "2025-08-06T14:50:53.859987+00:00",
+      "modified": "2026-02-11T19:23:56.791184+00:00",
       "type": "image"
     },
     "3e62d0c6_20250804_170429.png": {
       "checksum": "2a7aad24135f77b49e4696775ac748cd1f264ba7819d82e9a43521e1a7510b14",
       "size": 1049519,
-      "modified": "2025-08-04T15:04:29.995030+00:00",
+      "modified": "2026-02-11T19:23:56.787186+00:00",
       "type": "image"
     },
     "blog.css": {
       "checksum": "bf3b36be094d57009ffb7efe01a782d155e5b53b2284a3bf1bbf17103cdae9cf",
       "size": 928,
-      "modified": "2025-12-12T12:27:14.403593+00:00",
+      "modified": "2026-02-11T19:43:02.285991+00:00",
       "type": "css"
-    },
-    "3e62d0c6.html": {
-      "checksum": "6c7c95a183fd645a7fdfb00c70db9ff9737eedee4c8f372afa5c6cac7fdd90eb",
-      "size": 19576,
-      "modified": "2025-10-19T23:35:15.484929+00:00",
-      "type": "article"
-    },
-    "3e62d0c6_audio.mp3": {
-      "checksum": "bae8c126dfc3d3bcff1831faf8113b43dbb89f1833c0f047126546a1987aa791",
-      "size": 4064220,
-      "modified": "2025-08-06T14:38:40.519562+00:00",
-      "type": "audio"
-    },
-    "3e62d0c6_podcast.mp3": {
-      "checksum": "490738e12ce5a37e0fa69d0fabcbe6871408f97b5e06ad0138fb0f07630d5ef0",
-      "size": 1377063,
-      "modified": "2025-08-06T14:36:27.526828+00:00",
-      "type": "podcast"
     },
     "d5288f82.html": {
       "checksum": "cc8a810b4e1508219a0d5f5fd7505775739cc969958841c2a1f587a6575e4489",
@@ -570,6 +552,42 @@
       "size": 15898,
       "modified": "2025-12-12T12:27:14.450115+00:00",
       "type": "article"
+    },
+    "4222f787.html": {
+      "checksum": "83a8594434a2b512ec2de0414ca637dff7308d9d3c43a1df2c789f9c757853c3",
+      "size": 23145,
+      "modified": "2026-02-11T19:42:44.235967+00:00",
+      "type": "article"
+    },
+    "4222f787_audio.mp3": {
+      "checksum": "b0cb32c2f711fefec1e1133e49373f19f4606602a9625d3076a580cfd039edba",
+      "size": 6463581,
+      "modified": "2026-02-11T19:23:56.746404+00:00",
+      "type": "audio"
+    },
+    "4222f787_9fc2db4e37624552af258a5232644310.png": {
+      "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
+      "size": 1364109,
+      "modified": "2026-02-11T19:23:56.749713+00:00",
+      "type": "image"
+    },
+    "3e62d0c6.html": {
+      "checksum": "1747e3a3ed04d928193d2d0d06242ec52b05e03f0ec2b743e4989d79eef88a8c",
+      "size": 19607,
+      "modified": "2026-02-11T19:43:02.312659+00:00",
+      "type": "article"
+    },
+    "3e62d0c6_audio.mp3": {
+      "checksum": "bae8c126dfc3d3bcff1831faf8113b43dbb89f1833c0f047126546a1987aa791",
+      "size": 4064220,
+      "modified": "2026-02-11T19:23:56.775754+00:00",
+      "type": "audio"
+    },
+    "3e62d0c6_podcast.mp3": {
+      "checksum": "490738e12ce5a37e0fa69d0fabcbe6871408f97b5e06ad0138fb0f07630d5ef0",
+      "size": 1377063,
+      "modified": "2026-02-11T19:23:56.761473+00:00",
+      "type": "podcast"
     }
   }
 }
