@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-26T20:20:39.355464+00:00",
+  "last_updated": "2025-12-12T12:27:14.511282+00:00",
   "files": {
     "6e576ec9_20250927_175202.png": {
       "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
@@ -8,232 +8,346 @@
       "type": "image"
     },
     "index.html": {
-      "checksum": "887518c2532394cc0e9962f10ae54ad63bfde7e579432c69b1925477554f718b",
-      "size": 52358,
-      "modified": "2026-01-26T20:20:39.060022+00:00",
+      "checksum": "e8263bdc695fedeafd3fc593ce3b2dfed49a9e1d9a3f8e2fa8489fc98f8a5014",
+      "size": 50724,
+      "modified": "2025-12-12T12:27:14.455580+00:00",
       "type": "index"
     },
     "rss.xml": {
-      "checksum": "223ff807c7ffa5ad5de5019d61dbf47491af0b7b6130f8f2e0e0e0796963cbb9",
-      "size": 336010,
-      "modified": "2026-01-26T20:20:39.353027+00:00",
+      "checksum": "db7076232261cc8066ebad2743887c69eaf355e1442ab10c30dbba3cc6d8cde5",
+      "size": 308816,
+      "modified": "2025-12-12T12:27:14.510721+00:00",
       "type": "rss"
     },
     "3e62d0c6_20250804_174247.png": {
       "checksum": "9210561e014a7f4c470ed318956f72f7e62a5a49a903fd095c4127f68263cd0a",
       "size": 1352176,
-      "modified": "2025-11-02T17:33:47.390782+00:00",
+      "modified": "2025-08-04T15:42:47.528725+00:00",
       "type": "image"
     },
     "3e62d0c6_20250804_173507.png": {
       "checksum": "030af720f7596a95092a0e32e0e3a3435fab2050d75c4d59f35d100e28fcfc51",
       "size": 1090678,
-      "modified": "2025-11-02T17:33:47.392782+00:00",
+      "modified": "2025-08-04T15:35:07.935962+00:00",
       "type": "image"
     },
     "3e62d0c6_20250804_174821.png": {
       "checksum": "c52347ee2fccacb459f2fd1a75892fef4cb2c92ce55d351c0fe6532e5e095c1f",
       "size": 1553551,
-      "modified": "2025-11-02T17:33:47.397782+00:00",
+      "modified": "2025-08-04T15:48:21.359946+00:00",
       "type": "image"
     },
     "3e62d0c6_20250806_165053.png": {
       "checksum": "24b558415a827e68f911ea5f7566f5984c52222deb4c1a3c7ff485bb6572adc6",
       "size": 1156755,
-      "modified": "2025-11-02T17:33:47.400782+00:00",
+      "modified": "2025-08-06T14:50:53.859987+00:00",
       "type": "image"
     },
     "3e62d0c6_20250804_170429.png": {
       "checksum": "2a7aad24135f77b49e4696775ac748cd1f264ba7819d82e9a43521e1a7510b14",
       "size": 1049519,
-      "modified": "2025-11-02T17:33:47.403782+00:00",
+      "modified": "2025-08-04T15:04:29.995030+00:00",
       "type": "image"
     },
     "blog.css": {
       "checksum": "bf3b36be094d57009ffb7efe01a782d155e5b53b2284a3bf1bbf17103cdae9cf",
       "size": 928,
-      "modified": "2026-01-26T20:20:39.031022+00:00",
+      "modified": "2025-12-12T12:27:14.403593+00:00",
       "type": "css"
+    },
+    "3e62d0c6.html": {
+      "checksum": "6c7c95a183fd645a7fdfb00c70db9ff9737eedee4c8f372afa5c6cac7fdd90eb",
+      "size": 19576,
+      "modified": "2025-10-19T23:35:15.484929+00:00",
+      "type": "article"
+    },
+    "3e62d0c6_audio.mp3": {
+      "checksum": "bae8c126dfc3d3bcff1831faf8113b43dbb89f1833c0f047126546a1987aa791",
+      "size": 4064220,
+      "modified": "2025-08-06T14:38:40.519562+00:00",
+      "type": "audio"
+    },
+    "3e62d0c6_podcast.mp3": {
+      "checksum": "490738e12ce5a37e0fa69d0fabcbe6871408f97b5e06ad0138fb0f07630d5ef0",
+      "size": 1377063,
+      "modified": "2025-08-06T14:36:27.526828+00:00",
+      "type": "podcast"
+    },
+    "d5288f82.html": {
+      "checksum": "cc8a810b4e1508219a0d5f5fd7505775739cc969958841c2a1f587a6575e4489",
+      "size": 26747,
+      "modified": "2025-10-19T23:35:38.685128+00:00",
+      "type": "article"
+    },
+    "4b31984b.html": {
+      "checksum": "145071dee386bf583e2c1b750d9c423a2bf8228255ea4211d88b3cbe7861feb0",
+      "size": 29128,
+      "modified": "2025-10-19T23:35:43.877923+00:00",
+      "type": "article"
+    },
+    "a51973c2.html": {
+      "checksum": "52ca95bf7ad5fe1b5858122ceef482ffd278a21560aff368fbae512e32b00611",
+      "size": 35023,
+      "modified": "2025-10-19T23:35:47.744780+00:00",
+      "type": "article"
+    },
+    "253b9d68.html": {
+      "checksum": "0a16538904465fab8f54752c0c99959b5e3a11f397a1e7f0bddb57aba99e09df",
+      "size": 20089,
+      "modified": "2025-10-19T23:35:52.073977+00:00",
+      "type": "article"
+    },
+    "bc36ebfa.html": {
+      "checksum": "c9e9625235f646bdf06759d479ec30333cd11deb4712447b9f6c910b9c74cafa",
+      "size": 19828,
+      "modified": "2025-10-19T23:35:55.561512+00:00",
+      "type": "article"
+    },
+    "9b4e1115.html": {
+      "checksum": "01776de706480f7fcb811566f453e86fe1dc6b8b01281a66333bfcfe244ffb1a",
+      "size": 18943,
+      "modified": "2025-10-19T23:35:59.223193+00:00",
+      "type": "article"
+    },
+    "18433e48.html": {
+      "checksum": "e49804c26d0361a20b072bfca77b4a2a5ade457cf01c4a0a5c986cca7a389cbd",
+      "size": 24368,
+      "modified": "2025-10-19T23:36:08.148027+00:00",
+      "type": "article"
     },
     "18433e48_timecapsule-10.png": {
       "checksum": "401f26594b53ecfe42be0fc71b49f61124b5de0f1f45c194849bb1551d953c53",
       "size": 392091,
-      "modified": "2025-11-02T17:33:47.358782+00:00",
+      "modified": "2025-08-04T05:30:57.800669+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-11.png": {
       "checksum": "080cc93a9b831a9738f1c2e309b5e8cdd5b8a1cd5d3ce06abfba9667a21c3683",
       "size": 882990,
-      "modified": "2025-11-02T17:33:47.361782+00:00",
+      "modified": "2025-08-04T05:30:57.804077+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-13.png": {
       "checksum": "7445cc10bc39acb4741db6394d75753a69fe541a61e8bb04b8aae92c3eb6b554",
       "size": 93540,
-      "modified": "2025-11-02T17:33:47.361782+00:00",
+      "modified": "2025-08-04T05:30:57.807767+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-12.png": {
       "checksum": "9303bc3f5ebc5ea96d14284317d19e56c591e6ac4cca59f1f5b91dc2654f10d1",
       "size": 602245,
-      "modified": "2025-11-02T17:33:47.364782+00:00",
+      "modified": "2025-08-04T05:30:57.806906+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-9.png": {
       "checksum": "ad4543de76c7790afdd7b2ef92d243ac3d92e10d6e31317d644aef9dc9c24af4",
       "size": 588279,
-      "modified": "2025-11-02T17:33:47.367782+00:00",
+      "modified": "2025-08-04T05:30:57.818321+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-15.png": {
       "checksum": "7c4a65d3329d2d7ede97e2fb9022ab71aef5ddebcde7d7f927c38f45a7a270ab",
       "size": 200305,
-      "modified": "2025-11-02T17:33:47.368782+00:00",
+      "modified": "2025-08-04T05:30:57.809976+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-14.png": {
       "checksum": "548263f84be7b3d0c37998004646329b2ab7cfcb8d620748622b74006207b3f3",
       "size": 215897,
-      "modified": "2025-11-02T17:33:47.369782+00:00",
+      "modified": "2025-08-04T05:30:57.808823+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-5.png": {
       "checksum": "66b18e8425ddb725e511d9012e4e94f8718f49b85e3bc11f7d243f48cbae87bf",
       "size": 115212,
-      "modified": "2025-11-02T17:33:47.369782+00:00",
+      "modified": "2025-08-04T05:30:57.812738+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-6.png": {
       "checksum": "fdbcc5fc3a096fd6d7a9229965e340d2d2d62d0b523c21b0bc6b74f2c6200d4b",
       "size": 143584,
-      "modified": "2025-11-02T17:33:47.370782+00:00",
+      "modified": "2025-08-04T05:30:57.813789+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-7.png": {
       "checksum": "0e4457873bda773cebbc41cdb0c80f13e3061883226775d71c66f0b6d3886f34",
       "size": 111274,
-      "modified": "2025-11-02T17:33:47.371782+00:00",
+      "modified": "2025-08-04T05:30:57.814948+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-3.png": {
       "checksum": "7750d61b93a8407a0cd55da95be977f951cc51a634d01891d38b5438b6d88838",
       "size": 163845,
-      "modified": "2025-11-02T17:33:47.371782+00:00",
+      "modified": "2025-08-04T05:30:57.811893+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-2.png": {
       "checksum": "3afec923a0378dce5bdf9dc533694f09959175d3fd34b6720a88ab450dd05b5a",
       "size": 159148,
-      "modified": "2025-11-02T17:33:47.372782+00:00",
+      "modified": "2025-08-04T05:30:57.810912+00:00",
       "type": "image"
     },
     "18433e48_timecapsule-1.png": {
       "checksum": "63079c4cb36f5876cd1c0995332b48d158cb01e6ca5a3eb8b9e0ff46c21ab13c",
       "size": 99297,
-      "modified": "2025-11-02T17:33:47.373782+00:00",
+      "modified": "2025-08-04T05:30:57.798184+00:00",
       "type": "image"
+    },
+    "6b67b868.html": {
+      "checksum": "a9904a968d64ce0d170868ba14d3c145f9914a128a875b5fe6d2ffea13b919ab",
+      "size": 19624,
+      "modified": "2025-10-19T23:36:18.879822+00:00",
+      "type": "article"
+    },
+    "3eb3bbbb.html": {
+      "checksum": "4b107871cfc4b08c5a7efafce0c1da15de869e83f9689ec79e24f1e04c3b3ab0",
+      "size": 24094,
+      "modified": "2025-10-19T23:36:21.834411+00:00",
+      "type": "article"
     },
     "3eb3bbbb_RabbitR1-2.png": {
       "checksum": "2f9021b3fec674e7872a38df75d91d99b6a0367c46096076c07b5f1049f9d518",
       "size": 2084862,
-      "modified": "2025-11-02T17:33:47.380782+00:00",
+      "modified": "2025-08-04T05:30:57.844875+00:00",
       "type": "image"
     },
     "3eb3bbbb_RabbitR1-3.png": {
       "checksum": "531878813f37ad5f7041a84253ddbd67ea94b6beb3a4440a0f77a44967f04a52",
       "size": 1764064,
-      "modified": "2025-11-02T17:33:47.382782+00:00",
+      "modified": "2025-08-04T05:30:57.850397+00:00",
       "type": "image"
+    },
+    "f9cca0fc.html": {
+      "checksum": "3a1515ea10d214cc8ad6661527ef704601941bb0155eec97d435a3d969543e1d",
+      "size": 23497,
+      "modified": "2025-10-19T23:37:45.485403+00:00",
+      "type": "article"
     },
     "f9cca0fc_Pencil-sketch-of-two-people-in-business-suits-having-coffee-at-a-sidewalk-cafe-in-a-European-city-h.jpeg.webp": {
       "checksum": "dedd981260a4b9a352035b15d05d2fbcc49eef1e333cf32e1c3acb458c349898",
       "size": 677076,
-      "modified": "2025-11-02T17:33:47.485784+00:00",
+      "modified": "2025-08-04T05:30:58.084916+00:00",
       "type": "image"
     },
     "f9cca0fc_Pencil-sketch-of-a-happy-couple-sitting-across-each-other-at-a-sidewalk-cafe-in-a-European-city-with-2.jpeg.webp": {
       "checksum": "fc8030db9f36c515050d1a39d236355c16068bed671bc71e642a5e6d9e6fe8aa",
       "size": 565356,
-      "modified": "2025-11-02T17:33:47.487784+00:00",
+      "modified": "2025-08-04T05:30:58.077858+00:00",
       "type": "image"
     },
     "f9cca0fc_Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-highly-detailed-and.jpeg.webp": {
       "checksum": "5e5e472ee64e9e68762caf7d5df4142d3975735a59bbb9cbf976bd21e304ad73",
       "size": 739272,
-      "modified": "2025-11-02T17:33:47.487784+00:00",
+      "modified": "2025-08-04T05:30:58.079635+00:00",
       "type": "image"
     },
     "f9cca0fc_Pencil-sketch-of-a-happy-group-of-friends-at-a-sidewalk-cafe-in-a-European-city-with-sharp-focus-on-.jpeg.webp": {
       "checksum": "7c12e84d1e491b3dd17b37ddbe33162ed093cd5f164d0c9df3c8c2feaf5b1f7b",
       "size": 626156,
-      "modified": "2025-11-02T17:33:47.488784+00:00",
+      "modified": "2025-08-04T05:30:58.082411+00:00",
       "type": "image"
+    },
+    "d8ae5f1e.html": {
+      "checksum": "0b18ce144be87d1d8b40f13dd97ad501ac95c337fefd1972c163c6353237985f",
+      "size": 19517,
+      "modified": "2025-10-19T23:37:48.686645+00:00",
+      "type": "article"
     },
     "d8ae5f1e_GenerativeAIArt-5.webp": {
       "checksum": "cfbeebc45e511b717e10de67d77baf093b2abb2db71bb99365ad2ac531e4bb90",
       "size": 1305230,
-      "modified": "2025-11-02T17:33:47.456784+00:00",
+      "modified": "2025-08-04T05:30:58.049449+00:00",
       "type": "image"
     },
     "d8ae5f1e_GenerativeAIArt-9.webp": {
       "checksum": "fa421096154c2d88fadbe52126450352a6c891820d9b144eeab1e102a3622460",
       "size": 2069850,
-      "modified": "2025-11-02T17:33:47.458783+00:00",
+      "modified": "2025-08-04T05:30:58.073552+00:00",
       "type": "image"
     },
     "d8ae5f1e_GenerativeAIArt-8.webp": {
       "checksum": "11967ba09a7f47eb3bd1bea2a5c8f46ecc0ae7b0460a660ecef5aee2d14722d8",
       "size": 2159516,
-      "modified": "2025-11-02T17:33:47.461784+00:00",
+      "modified": "2025-08-04T05:30:58.067410+00:00",
       "type": "image"
     },
     "d8ae5f1e_GenerativeAIArt-4.webp": {
       "checksum": "74fa8bed5829b441bfc5c2935a8210727574a5328e30389ba3debc6024959047",
       "size": 1425932,
-      "modified": "2025-11-02T17:33:47.463784+00:00",
+      "modified": "2025-08-04T05:30:58.045341+00:00",
       "type": "image"
     },
     "d8ae5f1e_GenerativeAIArt-3.webp": {
       "checksum": "e53bd05c5493e0cdada75968bac1a611845bd6aa49b096d6e8f3e2cf5f334bb8",
       "size": 1638170,
-      "modified": "2025-11-02T17:33:47.470784+00:00",
+      "modified": "2025-08-04T05:30:58.040779+00:00",
       "type": "image"
     },
     "d8ae5f1e_GenerativeAIArt-2.webp": {
       "checksum": "60e29c4ff7d6b74d77e7856bba2bb654911bcad69cf5e5abe9e01999316542e8",
       "size": 1031178,
-      "modified": "2025-11-02T17:33:47.471784+00:00",
+      "modified": "2025-08-04T05:30:58.033397+00:00",
       "type": "image"
     },
     "d8ae5f1e_GenerativeAIArt-7.webp": {
       "checksum": "db10fa7a7ce11f7c7697e07683f9ba971de0324b6d25913861ccbe8c7630f32e",
       "size": 1789146,
-      "modified": "2025-11-02T17:33:47.473784+00:00",
+      "modified": "2025-08-04T05:30:58.062235+00:00",
       "type": "image"
     },
     "d8ae5f1e_GenerativeAIArt-6.webp": {
       "checksum": "f54a4acd8440b586974463225273b7f9c2d8fce05786e67736d151cb3c1ff918",
       "size": 1569652,
-      "modified": "2025-11-02T17:33:47.480784+00:00",
+      "modified": "2025-08-04T05:30:58.055933+00:00",
       "type": "image"
+    },
+    "08134e4f.html": {
+      "checksum": "b88d76b61ab9556b7e6f8fc037c1f75c6947e5b404ef8836e041299e95689699",
+      "size": 22067,
+      "modified": "2025-10-19T23:37:51.900718+00:00",
+      "type": "article"
     },
     "08134e4f_BetterTools-3.webp": {
       "checksum": "e174f094c2c26b597f1eb7ba4e61bcb55e33e81491f453ab9bf32d30a2183b08",
       "size": 426080,
-      "modified": "2025-11-02T17:33:47.499784+00:00",
+      "modified": "2025-08-04T05:30:57.781093+00:00",
       "type": "image"
     },
     "08134e4f_BetterTools-2.webp": {
       "checksum": "7ed03257d6d3af84610947e0c546ad8081e65df6af3a457c31495db1b8e224fb",
       "size": 737528,
-      "modified": "2025-11-02T17:33:47.500784+00:00",
+      "modified": "2025-08-04T05:30:57.779597+00:00",
       "type": "image"
     },
     "08134e4f_BetterTools-4.webp": {
       "checksum": "305e69126179dd3586fa65b0595fa7e421ae9710e9cb0be82c088a0524cde4a2",
       "size": 53292,
-      "modified": "2025-11-02T17:33:47.500784+00:00",
+      "modified": "2025-08-04T05:30:57.781639+00:00",
       "type": "image"
+    },
+    "ca1ff969.html": {
+      "checksum": "d3bc5ff27c32f4babc6aa4042183e362c6c789cdca7685aa8b7809413ef9ae73",
+      "size": 27496,
+      "modified": "2025-10-19T23:37:55.387467+00:00",
+      "type": "article"
+    },
+    "cccb3085.html": {
+      "checksum": "197dc518c52d13754d2173e9b6d5fe6f051ef2be0504d4544932c73e8ff351ce",
+      "size": 25008,
+      "modified": "2025-10-19T23:37:58.843262+00:00",
+      "type": "article"
+    },
+    "ae374ed1.html": {
+      "checksum": "40d8cd4f3c62d9ed13e77baba6cee502c2ae4d987d7204197642d89899b0c618",
+      "size": 23457,
+      "modified": "2025-10-19T23:38:02.259403+00:00",
+      "type": "article"
+    },
+    "d0364a95.html": {
+      "checksum": "f5f5e18745c145455bf980a7d11a42924b4f8f9e178ecd83e04f409f1b930442",
+      "size": 35593,
+      "modified": "2025-10-19T23:38:10.673301+00:00",
+      "type": "article"
     },
     "40599a8c_AuditOneProjectSheet-1.webp": {
       "checksum": "2c2619b541d0736d1ecc4c9cc2a7481c485ff0c3450c424a3578e989833dbbbb",
@@ -241,112 +355,160 @@
       "modified": "2025-08-04T05:30:57.851313+00:00",
       "type": "image"
     },
+    "37f872a3.html": {
+      "checksum": "28f9a6553e3efa4f1d5bab31e37419e0e58338de15f673e73e76793cadaeb832",
+      "size": 20161,
+      "modified": "2025-10-19T23:38:23.460849+00:00",
+      "type": "article"
+    },
     "37f872a3_DesigningForBillionUsers-4.webp": {
       "checksum": "60a07787028d45cd6e2e40d072b26d556741054b1f5ffc25aabd029028b04f17",
       "size": 29748,
-      "modified": "2025-11-02T17:33:47.376782+00:00",
+      "modified": "2025-08-04T05:30:57.837541+00:00",
       "type": "image"
     },
     "37f872a3_DesigningForBillionUsers-2.webp": {
       "checksum": "0f112edfe484740397fc5569643301b7a351cad1a2804a145e9af9292b8d20ab",
       "size": 42822,
-      "modified": "2025-11-02T17:33:47.376782+00:00",
+      "modified": "2025-08-04T05:30:57.836908+00:00",
       "type": "image"
     },
     "37f872a3_DesigningForBillionUsers-3.webp": {
       "checksum": "02f2fbf76f0e8a5d23cc17b8a3c1321029d5ea4f33ac16ed3e8ca054c5e8aa94",
       "size": 128962,
-      "modified": "2025-11-02T17:33:47.377782+00:00",
+      "modified": "2025-08-04T05:30:57.837344+00:00",
       "type": "image"
+    },
+    "e7160570.html": {
+      "checksum": "0d67440bd8793c930a28ec321a928e26a770c064d709d794d79f4fd48b010798",
+      "size": 19866,
+      "modified": "2025-10-19T23:38:26.491501+00:00",
+      "type": "article"
+    },
+    "606545a5.html": {
+      "checksum": "7c37e6b89ed4ea3fab2cf136e5b043d120d7d18736c1f841535842d0c1260278",
+      "size": 19032,
+      "modified": "2025-10-19T23:38:29.482452+00:00",
+      "type": "article"
     },
     "606545a5_VotingUX-2.webp": {
       "checksum": "cdcc449ba0b568542cc227ea21ee59999b5c8f52715e2ab0d36ea9b860b316c5",
       "size": 217014,
-      "modified": "2025-11-02T17:33:47.497784+00:00",
+      "modified": "2025-08-04T05:30:57.854142+00:00",
       "type": "image"
+    },
+    "915d435a.html": {
+      "checksum": "293b784c6b4931b1bad667868198203107802bf6bcbc16b44865615bf5f7a5ce",
+      "size": 20788,
+      "modified": "2025-10-19T23:38:32.687932+00:00",
+      "type": "article"
     },
     "915d435a_DesignReflectValues-4.webp": {
       "checksum": "13530b2f97287d08183ffd978e9cf0512e17a97d8bcbfbe511819a32287bfdb3",
       "size": 1158478,
-      "modified": "2025-11-02T17:33:47.375782+00:00",
+      "modified": "2025-08-04T05:30:57.859721+00:00",
       "type": "image"
     },
     "915d435a_DesignReflectValues-3.webp": {
       "checksum": "151eba62a7d442d14153c0b694dd7fce6dbd5f724c77dcc821f7ce8fe37e40b2",
       "size": 322430,
-      "modified": "2025-11-02T17:33:47.375782+00:00",
+      "modified": "2025-08-04T05:30:57.856597+00:00",
       "type": "image"
     },
     "915d435a_DesignReflectValues-2.webp": {
       "checksum": "af75cad0d12c54397d7f71b5584d0425592328810d2228f163def313a7b763a5",
       "size": 234232,
-      "modified": "2025-11-02T17:33:47.376782+00:00",
+      "modified": "2025-08-04T05:30:57.855501+00:00",
       "type": "image"
+    },
+    "c1af5dc6.html": {
+      "checksum": "180b71fe8781694e027e7f48f14b0d65f540447f791b3800133f517fc1667426",
+      "size": 17192,
+      "modified": "2025-10-19T23:38:35.966734+00:00",
+      "type": "article"
     },
     "c1af5dc6_Healthcare-2.webp": {
       "checksum": "a6a01461c5d105cd7c67113d95c3c8a77fb45e9971421062c136f00dba611140",
       "size": 1452642,
-      "modified": "2025-11-02T17:33:47.496784+00:00",
+      "modified": "2025-08-04T05:30:58.019674+00:00",
       "type": "image"
     },
     "c1af5dc6_Healthcare-3.webp": {
       "checksum": "ab104959c0f25b724ba0cf73228a2564db7a625a72ef8abbf31aad18e250d077",
       "size": 244548,
-      "modified": "2025-11-02T17:33:47.496784+00:00",
+      "modified": "2025-08-04T05:30:58.021074+00:00",
       "type": "image"
     },
     "c1af5dc6_Healthcare-4.webp": {
       "checksum": "7013ea68bc59bc951f9bfc42d4c82b5df9e5057fed556fddadffc5d03f88147d",
       "size": 36244,
-      "modified": "2025-11-02T17:33:47.496784+00:00",
+      "modified": "2025-08-04T05:30:58.022332+00:00",
       "type": "image"
+    },
+    "80e0ac3c.html": {
+      "checksum": "600c8c58a31bbd461f8924d2d9e05f5071052d031dddb9cc03037bf7567ff69a",
+      "size": 18909,
+      "modified": "2025-10-19T23:38:39.663771+00:00",
+      "type": "article"
+    },
+    "b21695b0.html": {
+      "checksum": "b5dbe455f9f004ab4dd89f819a92f99ce931d64323e420c23060d8c8907d8571",
+      "size": 25582,
+      "modified": "2025-10-19T23:38:48.671230+00:00",
+      "type": "article"
     },
     "b21695b0_Aircraft-6.webp": {
       "checksum": "1fd657df6f2bd81c3efdc9fa79b5a73b9ecb6f9cf70cd0a6edad7bf937c367b5",
       "size": 19666,
-      "modified": "2025-11-02T17:33:47.485784+00:00",
+      "modified": "2025-08-04T05:30:58.011050+00:00",
       "type": "image"
     },
     "b21695b0_Aircraft-7.webp": {
       "checksum": "9a6429cb697f1023c291703482766526a3a1cb38d0c665b2ec480d6fbd2bfe28",
       "size": 125606,
-      "modified": "2025-11-02T17:33:47.485784+00:00",
+      "modified": "2025-08-04T05:30:58.012459+00:00",
       "type": "image"
     },
     "b21695b0_Aircraft-3.webp": {
       "checksum": "769b93d228995093236ea71dd649b1762a4709e0f41e9d1a1c9aafcde38eaf0f",
       "size": 6796,
-      "modified": "2025-11-02T17:33:47.485784+00:00",
+      "modified": "2025-08-04T05:30:58.009687+00:00",
       "type": "image"
     },
     "b21695b0_Aircraft-8.webp": {
       "checksum": "3d5dc2c120dad33585f6329b595286935b3b195c821776b1d8403e0054d95fc0",
       "size": 26530,
-      "modified": "2025-11-02T17:33:47.485784+00:00",
+      "modified": "2025-08-04T05:30:58.012636+00:00",
       "type": "image"
     },
     "b21695b0_Aircraft-4.webp": {
       "checksum": "5c4c5c7ee74d5321df4861aef45c4a5ffd43d9b5a9745b08b8134f4d9087e737",
       "size": 29742,
-      "modified": "2025-11-02T17:33:47.485784+00:00",
+      "modified": "2025-08-04T05:30:58.010220+00:00",
       "type": "image"
     },
     "b21695b0_Aircraft-5.webp": {
       "checksum": "47f9051172951e8c9b495d3c27a16368fbdbf5c17826aab20622a89ddbed1d96",
       "size": 32348,
-      "modified": "2025-11-02T17:33:47.485784+00:00",
+      "modified": "2025-08-04T05:30:58.010523+00:00",
       "type": "image"
+    },
+    "9f31ab4a.html": {
+      "checksum": "184c274fa84fc76719d4e640d6cf17905603cd077d80029948c05654c22bcd24",
+      "size": 17403,
+      "modified": "2025-10-19T23:38:51.629395+00:00",
+      "type": "article"
     },
     "9f31ab4a_Humanise-2.webp": {
       "checksum": "7984fdc1afd1bd6770bb318386051bf9b04a8a74cd4c55c5ec572c9df4b0b9ed",
       "size": 4268,
-      "modified": "2025-11-02T17:33:47.354782+00:00",
+      "modified": "2025-08-04T05:30:57.996087+00:00",
       "type": "image"
     },
     "9f31ab4a_Humanise-3.webp": {
       "checksum": "af7773c31a382e11c4ff3f82f77b25ba175d27fa89033ffbd838f0479cb6d2d2",
       "size": 14896,
-      "modified": "2025-11-02T17:33:47.354782+00:00",
+      "modified": "2025-08-04T05:30:57.996963+00:00",
       "type": "image"
     },
     "logo_8b2c4ff1.png": {
@@ -379,274 +541,34 @@
       "modified": "2025-10-16T20:25:14.991136+00:00",
       "type": "podcast"
     },
-    "bd45aaa3_24f6fb13e8c4448dbceb5889b68c7690.png": {
-      "checksum": "609cf166b3d08913f69292e6e4237a9b8fe11db74b55c6403585e63f3bacdffa",
-      "size": 30942,
-      "modified": "2025-11-27T15:04:33.129768+00:00",
-      "type": "image"
-    },
-    "bd45aaa3_5c1ffcdb50e84f1daaa6fc91da08b325.png": {
-      "checksum": "71a399f8181e499b3ab70107bf8ae78db444ece8c5e4947201718e61f53ca96a",
-      "size": 14329,
-      "modified": "2025-11-27T14:44:09.929226+00:00",
-      "type": "image"
-    },
-    "bd45aaa3_23b58e151fc64ba4b2d50e85a31c3dac.png": {
-      "checksum": "cb3fd694d0713702e61e477b8b0e1781ec283545633c50ef7691ad9f11a21b88",
-      "size": 63667,
-      "modified": "2025-11-27T15:05:53.945258+00:00",
-      "type": "image"
-    },
-    "bd45aaa3_5f623f480eef4512810fc96a9ee524c3.png": {
-      "checksum": "2173484d51e8fc021c5fe9b1b4c5e27b656455b51587c84bad8ee5a7a7891be0",
-      "size": 15105,
-      "modified": "2025-11-27T15:06:00.883386+00:00",
-      "type": "image"
-    },
-    "bd45aaa3_520f932aea984933827ce657c27f9e91.png": {
-      "checksum": "bd9c42167aa7fe7c2445ae1e2457cf3a455e470a0c7c42692436ab0f13a981a0",
-      "size": 54798,
-      "modified": "2025-11-27T15:05:41.476028+00:00",
-      "type": "image"
-    },
-    "profile_806472e9.jpg": {
-      "checksum": "f2b3aff3ce1078a88080c53f3f4a20c39c551dedb00325f23f52d34e36050b79",
-      "size": 164203,
-      "modified": "2025-11-27T16:00:53.471187+00:00",
-      "type": "profile_image"
-    },
-    "4222f787_9fc2db4e37624552af258a5232644310.png": {
-      "checksum": "bfd947d202a65270146e205b2d05f78ea0ac8e96676e4ffccab1e5adcf9b756f",
-      "size": 1364109,
-      "modified": "2025-11-27T18:43:21.212269+00:00",
-      "type": "image"
-    },
-    "bd45aaa3_d6ad19e7addc4bc0b5d210f4f10efbc3.png": {
-      "checksum": "66e9a1c635dd78003c7940c37fb50c7c05675c589f692a36ffec0d0731fe15c7",
-      "size": 428957,
-      "modified": "2025-12-06T12:28:05.607064+00:00",
-      "type": "image"
-    },
-    "bd45aaa3_689407b95b7e4e3a92ab3f87367dd220.png": {
-      "checksum": "66e9a1c635dd78003c7940c37fb50c7c05675c589f692a36ffec0d0731fe15c7",
-      "size": 428957,
-      "modified": "2025-12-06T12:27:10.724732+00:00",
-      "type": "image"
-    },
-    "4222f787.html": {
-      "checksum": "6fcd708895cd5455d0b8533f5f0099008c57d1b3332dc67117a7aa73a5ce649d",
-      "size": 23137,
-      "modified": "2025-12-10T23:34:29.008689+00:00",
+    "dd39fcda.html": {
+      "checksum": "37eb52cb5a30cf266c71aeaf7bbff201649d6518f759523e919eab5e7c781ea9",
+      "size": 19609,
+      "modified": "2025-10-31T11:07:21.437068+00:00",
       "type": "article"
-    },
-    "4222f787_audio.mp3": {
-      "checksum": "b0cb32c2f711fefec1e1133e49373f19f4606602a9625d3076a580cfd039edba",
-      "size": 6463581,
-      "modified": "2025-12-03T18:03:37.543885+00:00",
-      "type": "audio"
-    },
-    "3e62d0c6.html": {
-      "checksum": "3a6d8bf3d7751c99c16d0d6d84c7b79b62a9680a5328dcf4e3e8ad43bf2b3f4e",
-      "size": 19599,
-      "modified": "2025-12-10T23:34:39.504869+00:00",
-      "type": "article"
-    },
-    "3e62d0c6_audio.mp3": {
-      "checksum": "bae8c126dfc3d3bcff1831faf8113b43dbb89f1833c0f047126546a1987aa791",
-      "size": 4064220,
-      "modified": "2025-11-02T17:33:47.292780+00:00",
-      "type": "audio"
-    },
-    "3e62d0c6_podcast.mp3": {
-      "checksum": "490738e12ce5a37e0fa69d0fabcbe6871408f97b5e06ad0138fb0f07630d5ef0",
-      "size": 1377063,
-      "modified": "2025-11-02T17:33:47.298780+00:00",
-      "type": "podcast"
     },
     "99458576.html": {
-      "checksum": "63e4d29d36a211e7da8c435cfd16608c737c198bc062c7cf3fd1bf09748b9306",
-      "size": 29345,
-      "modified": "2025-12-10T23:34:55.847150+00:00",
+      "checksum": "af4966ee56ba1bf2febf87e82de2aa34807cdb911eae2f9573e71dba2c0fb313",
+      "size": 29346,
+      "modified": "2025-12-10T22:01:19.551097+00:00",
       "type": "article"
     },
     "99458576_audio.mp3": {
       "checksum": "95076901990b1005d7df8448da2d9913343328acd7f8bb1cd185eaaf645f26ff",
       "size": 30622124,
-      "modified": "2025-11-02T17:33:47.189779+00:00",
+      "modified": "2025-08-04T05:30:57.993645+00:00",
       "type": "audio"
-    },
-    "bd45aaa3.html": {
-      "checksum": "c7fd0816e268e3d4f6b48d8fe7df5d21d3b6dd40f25311eba38d15df423a63a8",
-      "size": 26772,
-      "modified": "2025-12-12T16:40:41.469671+00:00",
-      "type": "article"
-    },
-    "bd45aaa3_audio.mp3": {
-      "checksum": "5ee5f98f6cd68865a5086bce4676f0cf4d51fe4423baa43443b154fb218aaf20",
-      "size": 8823384,
-      "modified": "2025-12-03T18:05:21.307885+00:00",
-      "type": "audio"
-    },
-    "dd39fcda.html": {
-      "checksum": "1dae3c36d2d3ccef012516f148c63f6673d2b99058e388f7b13aa62a03d4b837",
-      "size": 19615,
-      "modified": "2026-01-14T13:25:06.824996+00:00",
-      "type": "article"
-    },
-    "48ebf926.html": {
-      "checksum": "11956ca786d99d8979eff538a168d58996bd51af65230dc9202d370821a58eda",
-      "size": 16176,
-      "modified": "2026-01-26T20:10:58.621830+00:00",
-      "type": "article"
     },
     "f52b3f80.html": {
-      "checksum": "3f99377109e0a1af32f83c21cf2f7e35b31b49e6e3a7ecea9e6045e347aeec18",
-      "size": 22955,
-      "modified": "2026-01-26T20:13:58.619990+00:00",
+      "checksum": "1e7898fc6070346edef9b7446b8d3b68f20f95d2cb3920607b816c47635abb72",
+      "size": 23435,
+      "modified": "2025-12-10T22:03:03.426152+00:00",
       "type": "article"
     },
-    "d5288f82.html": {
-      "checksum": "78f1eaa5a44eab54ff109867be94d96e780331a8200f977a3ff91f75d835dfe1",
-      "size": 26291,
-      "modified": "2026-01-26T20:14:24.225439+00:00",
-      "type": "article"
-    },
-    "4b31984b.html": {
-      "checksum": "ef018922899f0dfe6be9cd89ecd859b330f819026d3c477cb705d5ca22c21ff0",
-      "size": 28672,
-      "modified": "2026-01-26T20:14:38.744694+00:00",
-      "type": "article"
-    },
-    "a51973c2.html": {
-      "checksum": "cdf5dfdd0f3bdd73e417cc6acafaeeec16eb88440311e729eee5c768cbfb579b",
-      "size": 34567,
-      "modified": "2026-01-26T20:14:56.414005+00:00",
-      "type": "article"
-    },
-    "253b9d68.html": {
-      "checksum": "3f1dff9b69c55be75889a891a8f843ab4960de1dc2ea99c7deec0775146b740d",
-      "size": 19633,
-      "modified": "2026-01-26T20:15:27.024542+00:00",
-      "type": "article"
-    },
-    "18433e48.html": {
-      "checksum": "2a30059ae3ee548715300a0099e0631951337a6fedb1b091ec4477793fa672ed",
-      "size": 23912,
-      "modified": "2026-01-26T20:15:48.778924+00:00",
-      "type": "article"
-    },
-    "bc36ebfa.html": {
-      "checksum": "098daaef26c1e9252b5bad76ca156c017f845a767b26a776c43e166f55796900",
-      "size": 19372,
-      "modified": "2026-01-26T20:18:08.703381+00:00",
-      "type": "article"
-    },
-    "9b4e1115.html": {
-      "checksum": "6a5073ffc75f0f053a5c9d641224bc0e64bedfac3a0b8181195b1364498d867c",
-      "size": 18487,
-      "modified": "2026-01-26T20:18:15.332498+00:00",
-      "type": "article"
-    },
-    "6b67b868.html": {
-      "checksum": "d6ff837aff1308c97c7077cca97f9fc4cc7818db3885684eb80ce35cb4575484",
-      "size": 19168,
-      "modified": "2026-01-26T20:18:31.128775+00:00",
-      "type": "article"
-    },
-    "3eb3bbbb.html": {
-      "checksum": "6dc9de357497035699d873eee1f8b758934c30bbccd0eb0bfb2c73a964363b49",
-      "size": 23638,
-      "modified": "2026-01-26T20:18:35.879859+00:00",
-      "type": "article"
-    },
-    "f9cca0fc.html": {
-      "checksum": "27429e5b3a7a6344ead18e278d68d0a74dd7c8d47c9800dc7c80c08852e89c55",
-      "size": 23041,
-      "modified": "2026-01-26T20:18:49.319095+00:00",
-      "type": "article"
-    },
-    "d8ae5f1e.html": {
-      "checksum": "8cfb00c697f8dff7655815fe46afc0339a02852f10d8aa75096130d4b943c133",
-      "size": 19061,
-      "modified": "2026-01-26T20:18:56.937228+00:00",
-      "type": "article"
-    },
-    "08134e4f.html": {
-      "checksum": "492313da42c0860aaa7b6b3dc51d47c1481460b25123d2fefc5de162b1fb303f",
-      "size": 21611,
-      "modified": "2026-01-26T20:19:03.756348+00:00",
-      "type": "article"
-    },
-    "ca1ff969.html": {
-      "checksum": "3f34a625e16fdf9cc7c754f7618685a0b4110f6f900ab17ebd12f73f50ef8e32",
-      "size": 27040,
-      "modified": "2026-01-26T20:19:10.700470+00:00",
-      "type": "article"
-    },
-    "cccb3085.html": {
-      "checksum": "4b550a0a6880e6d94b3278e099cae5ee4c6c0c5b5a11bfc5e77997123e246f03",
-      "size": 24552,
-      "modified": "2026-01-26T20:19:16.701576+00:00",
-      "type": "article"
-    },
-    "ae374ed1.html": {
-      "checksum": "198909961da7285d66d1b624ee7ff8841224d5bdc33a4ff4bc38a34c936e897f",
-      "size": 23001,
-      "modified": "2026-01-26T20:19:21.660663+00:00",
-      "type": "article"
-    },
-    "d0364a95.html": {
-      "checksum": "f59ecc7f2e801e11e40767c2569533f65ae37590fd5a6e529fe9d3145d4ed856",
-      "size": 35137,
-      "modified": "2026-01-26T20:19:32.790858+00:00",
-      "type": "article"
-    },
-    "37f872a3.html": {
-      "checksum": "e0e252405209adddd795f8928b48dbd3eee34439688ef7e7cf4b22f40b9365e0",
-      "size": 19705,
-      "modified": "2026-01-26T20:19:45.506082+00:00",
-      "type": "article"
-    },
-    "e7160570.html": {
-      "checksum": "bcf48459cdc7250638d681daba13a4854855e5a226527ced9d9fd307746674ff",
-      "size": 19410,
-      "modified": "2026-01-26T20:19:50.500169+00:00",
-      "type": "article"
-    },
-    "606545a5.html": {
-      "checksum": "06b01de71377074aeeccf6eac531127600e9233635930469c14f6497c4ab34d3",
-      "size": 18576,
-      "modified": "2026-01-26T20:19:56.770279+00:00",
-      "type": "article"
-    },
-    "915d435a.html": {
-      "checksum": "44d0554c6bf59f7be816e71527bd3c13d8ee6a017d00deb72c8ea56426e60882",
-      "size": 20332,
-      "modified": "2026-01-26T20:20:03.759402+00:00",
-      "type": "article"
-    },
-    "c1af5dc6.html": {
-      "checksum": "06f11a93ac23285f19ef7390fd9d025d93676c029699e19eaf0d3d1812618c2e",
-      "size": 16736,
-      "modified": "2026-01-26T20:20:08.766490+00:00",
-      "type": "article"
-    },
-    "80e0ac3c.html": {
-      "checksum": "81f8f53c130e8af4184a74adc6242aa2fc4f9e51a5c8bd2e7da221a51f429e85",
-      "size": 18453,
-      "modified": "2026-01-26T20:20:14.303587+00:00",
-      "type": "article"
-    },
-    "b21695b0.html": {
-      "checksum": "22e110f50462be5e4114274b891921cba3b6f4bf4745a56c4980aff4fa672b7e",
-      "size": 25126,
-      "modified": "2026-01-26T20:20:33.777930+00:00",
-      "type": "article"
-    },
-    "9f31ab4a.html": {
-      "checksum": "bc74bb22614b8e2d1f96ab69158fdb2141f7506ecdb1ba1ef79b1d46fa4139f4",
-      "size": 16947,
-      "modified": "2026-01-26T20:20:39.048022+00:00",
+    "3c715754.html": {
+      "checksum": "844da641f707ff2d2a0963a4c462685ed28f90914cadf591c19dbe96de4e2215",
+      "size": 15898,
+      "modified": "2025-12-12T12:27:14.450115+00:00",
       "type": "article"
     }
   }
