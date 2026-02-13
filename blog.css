@@ -304,6 +304,13 @@ a:hover { opacity: 0.65; }
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+.post-content.post-content--no-image,
+.post-content.post-content--short {
+    font-size: 1.45rem;
+}
+.post-content.post-content--no-image.post-content--short {
+    font-size: 1.88rem;
+}
 .post-meta {
     display: flex;
     flex-wrap: wrap;
