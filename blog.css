@@ -427,7 +427,11 @@ a:hover { opacity: 0.65; }
 }
 
 /* === ARTICLE PAGE SPECIFICS === */
-.article-card { background: white; margin-bottom: 20px; }
+/* Let the article page use the global grey background instead of a white center column */
+.article-card {
+    background: transparent;
+    margin-bottom: 20px;
+}
 
 .tags-display-view {
     display: flex;
