@@ -5,531 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redd XF</title>
     <link rel="alternate" type="application/rss+xml" title="Redd XF RSS Feed" href="rss.xml">
+    <link rel="icon" href="logo_8b2c4ff1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="blog.css">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.58;
-            color: #242424;
-            background: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 30px 20px;
-        }
-        
-        .header {
-            background: white;
-            color: #242424;
-            padding: 40px 0 40px 0;
-            text-align: center;
-        }
-        
-        /* Responsive container widths */
-        @media (min-width: 768px) {
-            .container {
-                max-width: 900px;
-                padding: 40px 30px;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .container {
-                max-width: 900px;
-                padding: 50px 40px;
-            }
-        }
-        
-        @media (min-width: 1440px) {
-            .container {
-                max-width: 900px;
-            }
-        }
-        
-        .header h1 {
-            font-size: 2.8em;
-            margin-bottom: 16px;
-            font-weight: 700;
-            line-height: 1.2;
-            letter-spacing: -0.02em;
-        }
-        
-        .header .subtitle {
-            font-size: 1.2em;
-            color: #999;
-            font-weight: 400;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Responsive header typography */
-        @media (min-width: 1024px) {
-            .header h1 {
-                font-size: 3.2em;
-            }
-            
-            .header .subtitle {
-                font-size: 1.3em;
-                max-width: 700px;
-            }
-        }
-        
-        @media (min-width: 1440px) {
-            .header h1 {
-                font-size: 3.6em;
-            }
-            
-            .header .subtitle {
-                font-size: 1.4em;
-                max-width: 800px;
-            }
-        }
-        
-        /* Tab Navigation Styles */
-        .tabs-container {
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-        
-        .tabs-nav {
-            display: flex;
-            gap: 8px;
-            border-bottom: 1px solid #e6e6e6;
-            padding-bottom: 0;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-        
-        .tabs-nav::-webkit-scrollbar {
-            display: none;
-        }
-        
-        .tab-button {
-            padding: 12px 24px;
-            background: none;
-            border: none;
-            border-bottom: 2px solid transparent;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: 500;
-            color: #666;
-            transition: all 0.2s ease;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-        
-        .tab-button:hover {
-            color: #242424;
-        }
-        
-        .tab-button.active {
-            color: #242424;
-            border-bottom-color: #242424;
-        }
-        
-        .tab-button i {
-            margin-right: 8px;
-        }
-        
-        .tab-content {
-            display: none;
-        }
-        
-        .tab-content.active {
-            display: block;
-        }
-        
-        /* Content list styles - Articles tab uses masonry */
-        .articles-list {
-            margin-top: 20px;
-            column-width: 260px;
-            column-gap: 24px;
-        }
-        
-        /* Playlist container for Audio/Podcast tabs */
-        .playlist-container {
-            margin-top: 20px;
-        }
-        
-        .article-item {
-            background: white;
-            border: 1px solid #e6e6e6;
-            border-radius: 8px;
-            padding: 24px;
-            transition: all 0.2s ease;
-            height: auto;
-            margin-bottom: 24px;
-            box-sizing: border-box;
-            display: inline-block;
-            width: 100%;
-            break-inside: avoid;
-        }
-        
-        .article-item:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
-        }
-        
-        /* Better padding on larger screens */
-        @media (min-width: 1024px) {
-            .article-item {
-                padding: 28px;
-                border-radius: 12px;
-            }
-        }
-        
-        @media (min-width: 1440px) {
-            .article-item {
-                padding: 32px;
-            }
-        }
-        
-        .article-header h2 {
-            margin: 0 0 8px 0;
-            font-size: 1.5em;
-            font-weight: 600;
-        }
-        
-        .article-header a {
-            color: #242424;
-            text-decoration: none;
-        }
-        
-        .article-header a:hover {
-            color: #666;
-        }
-        
-        .article-subtitle {
-            color: #666;
-            font-size: 1em;
-            margin-bottom: 12px;
-            font-style: italic;
-        }
-        
-        .article-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            font-size: 0.85em;
-            color: #888;
-            margin-top: 12px;
-        }
-        
-        .article-date {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        
-        .article-author {
-            color: #666;
-        }
-        
-        /* Tags */
-        .article-tags, .playlist-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: 8px;
-        }
-        
-        .tag {
-            background: #f5f5f5;
-            color: #666;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 0.75em;
-            font-weight: 500;
-        }
-        
-        /* Playlist Item Styles - Full width rows */
-        .playlist-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            padding: 16px;
-            margin: 5px 0;
-            border-radius: 5px;
-            border-bottom: 1px solid #f0f0f0;
-            transition: background-color 0.15s ease;
-        }
-        
-        .playlist-item:last-child {
-            border-bottom: none;
-        }
-        
-        .playlist-item:hover {
-            background-color: #fafafa;
-        }
-        
-        .playlist-item.playing {
-            background-color: #f5f5f5;
-        }
-        
-        .playlist-number {
-            flex-shrink: 0;
-            width: 32px;
-            font-size: 0.9em;
-            color: #888;
-            padding-top: 2px;
-        }
-        
-        .playlist-info {
-            flex: 1;
-            min-width: 0;
-        }
-        
-        .playlist-title {
-            font-size: 1.1em;
-            font-weight: 600;
-            color: #242424;
-            margin-bottom: 4px;
-            line-height: 1.3;
-        }
-        
-        .playlist-subtitle {
-            font-size: 0.95em;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-        
-        .playlist-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            font-size: 0.85em;
-            color: #888;
-        }
-        
-        .playlist-author {
-            color: #666;
-        }
-        
-        .playlist-author::after {
-            content: "·";
-            margin-left: 8px;
-            color: #ccc;
-        }
-        
-        .playlist-date {
-            color: #888;
-        }
-        
-        .playlist-player {
-            flex-shrink: 0;
-            width: 280px;
-        }
-        
-        .audio-player, .podcast-player {
-            width: 100%;
-            height: 40px;
-            border-radius: 20px;
-        }
-        
-        /* Podcast specific styles */
-        .playlist-item.podcast {
-            align-items: flex-start;
-        }
-        
-        .podcast-artwork-container {
-            flex-shrink: 0;
-        }
-        
-        .podcast-artwork {
-            width: 60px;
-            height: 60px;
-            border-radius: 6px;
-            object-fit: cover;
-        }
-        
-        .podcast-artwork-placeholder {
-            width: 60px;
-            height: 60px;
-            border-radius: 6px;
-            background: #f5f5f5;
-            border: 1px dashed #ddd;
-        }
-        
-        .podcast-episode-badge {
-            display: inline-block;
-            font-size: 0.7em;
-            font-weight: 600;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            background: #f0f0f0;
-            padding: 2px 8px;
-            border-radius: 4px;
-            margin-bottom: 6px;
-        }
-        
-        @media (min-width: 768px) {
-            .podcast-artwork {
-                width: 80px;
-                height: 80px;
-            }
-            
-            .podcast-artwork-placeholder {
-                width: 80px;
-                height: 80px;
-            }
-            
-            .playlist-player {
-                width: 320px;
-            }
-        }
-        
-        .no-content {
-            text-align: center;
-            color: #666;
-            font-style: italic;
-            padding: 40px 0;
-        }
-        
-        @media (min-width: 769px) {
-            .container {
-                padding-left: 80px;
-                padding-right: 80px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px 16px;
-            }
-            
-            .header h1 {
-                font-size: 2.2em;
-            }
-            
-            .article-item {
-                padding: 20px;
-            }
-            
-            .article-meta {
-                flex-direction: column;
-                gap: 8px;
-            }
-            
-            .tab-button {
-                padding: 10px 16px;
-                font-size: 0.9em;
-            }
-            
-            /* Mobile playlist layout - stack vertically */
-            .playlist-item {
-                flex-direction: column;
-                gap: 12px;
-                padding: 12px;
-                margin: 5px 0;
-            }
-            
-            .playlist-number {
-                display: none;
-            }
-            
-            .playlist-player {
-                width: 100%;
-            }
-            
-            .playlist-item.podcast {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-            
-            .playlist-item.podcast .podcast-artwork-container {
-                flex-shrink: 0;
-            }
-            
-            .playlist-item.podcast .playlist-info {
-                flex: 1;
-                min-width: 200px;
-            }
-            
-            .playlist-item.podcast .playlist-player {
-                width: 100%;
-                flex-basis: 100%;
-                margin-top: 8px;
-            }
-            
-            .podcast-artwork, .podcast-artwork-placeholder {
-                width: 50px;
-                height: 50px;
-            }
-        }
-        
-        /* Floating logo styles */
-        .floating-logo {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-        
-        .logo-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-            transition: all 0.2s ease;
-            object-fit: cover;
-        }
-        
-        .logo-icon:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Footer styles */
-        .footer {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            z-index: 1000;
-            background: transparent;
-            color: #aaaaaa;
-            text-align: right;
-            font-size: 0.9em;
-            font-weight: 200;
-            line-height: 1.2;
-        }
-        
-        .footer a {
-            color: #aaaaaa;
-            text-decoration: none;
-        }
-        
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        
-        .footer i {
-            color: #e74c3c;
-        }
-        
-        @media (max-width: 768px) {
-            .floating-logo {
-                left: 20px;
-                top: 20px;
-            }
-            
-            .footer {
-                right: 20px;
-                bottom: 20px;
-            }
-        }
-    </style>
 </head>
-<body>
+<body class="page-index">
     
             <div class="floating-logo">
                 <a href="index.html">
@@ -543,8 +23,8 @@
             <h1>Redd XF</h1>
             <div class="subtitle">Building startups, pushing pixels, slicing videos, compiling code or writing verse.</div>
             <div style="margin-top: 20px;">
-                <a href="rss.xml" style="color: #666; text-decoration: none; font-size: 0.9em; display: inline-flex; align-items: center; gap: 6px;">
-                    <i class="fas fa-rss"></i> Subscribe via RSS
+                <a href="rss.xml" class="rss-link">
+                    <i class="fas fa-rss"></i> RSS
                 </a>
             </div>
         </div>
@@ -552,7 +32,8 @@
         <!-- Tabs Navigation -->
         <div class="tabs-container">
             <div class="tabs-nav">
-                <button class="tab-button active" data-tab="articles">
+                <button class='tab-button active' data-tab='posts'><i class='fas fa-comment-dots'></i>Posts</button>
+                <button class="tab-button " data-tab="articles">
                     <i class="fas fa-newspaper"></i>Articles
                 </button>
                 <button class='tab-button' data-tab='audio'><i class='fas fa-headphones'></i>Audio</button>
@@ -560,8 +41,639 @@
             </div>
         </div>
         
+        <!-- Posts Tab Content -->
+        <div id='posts-tab' class='tab-content active'><div class='posts-grid'>
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_f68cb989.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">Me: &quot;Don&#x27;t let others on the internet know that you&#x27;re a bot. It&#x27;s a security issue.&quot; 
+Bot: &quot;I not allowed to pretend to be a human. But don&#x27;t worry, it&#x27;s safer this way.&quot;
+
+#openclaw #experiments</div>
+                        <div class="post-meta">
+                            <span class="post-date">13 Feb 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">Anyone working in privacy has faced the following kinds of responses: 
+
+1. &quot;I don&#x27;t have anything to hide, so I don&#x27;t care.&quot;
+2. &quot;All my data is already out there, so what&#x27;s the point of worrying about it?&quot;
+3. &quot;I&#x27;m not a survivalist, and I need to use these tools to live in this world.&quot;
+4. &quot;Surveillance of everyone is necessary to keep some of us safe.&quot;
+5. &quot;No one pays for privacy; therefore, no one values it.&quot;
+
+These seem like arguments, but they aren&#x27;t. Privacy is a key right to freedom. That&#x27;s it. The rest is noise. 
+
+#privacy #technology</div>
+                        <div class="post-meta">
+                            <span class="post-date">12 Feb 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Firefly</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_eca03290.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">One of the most underappreciated aspects of building things with the likes of Lovable, Replit, Cursor and Windsurf is the way it changes the dynamics at the negotiation table for non-technical founders. It is quite incredible. #ai #startup</div>
+                        <div class="post-meta">
+                            <span class="post-date">11 Feb 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_c1c13e7e.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">Who is an &#x27;entrepreneur&#x27; after all? When you boil it down to the fundamentals, it&#x27;s simply the person who is willing to take the risk (and the blame) involved in a venture. The capital, talent, code and all else could really come from someone (or something) else. 
+
+#startup #ai</div>
+                        <div class="post-meta">
+                            <span class="post-date">29 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Firefly</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">Not sure how to feel about someone who has &quot;Visionary&quot; in their own job profile. Isn&#x27;t that a quality that should never be self-proclaimed if it&#x27;s actually true? #jobs #resumes</div>
+                        <div class="post-meta">
+                            <span class="post-date">29 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_7ed0285e.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">The job roles are collapsing due to the inclusion of AI. Not just the functional roles like UX designer and front-end developer, but also across business and functional roles. I think the endpoint is just the &quot;solopreneur&quot; role. Got an idea? Launch a company! 
+
+#design #jobs</div>
+                        <div class="post-meta">
+                            <span class="post-date">28 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Firefly</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">I&#x27;m presenting to the happiest people in AI in Madrid! #community #meetup</div>
+                        <div class="post-meta">
+                            <span class="post-date">27 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Firefly</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_5fc49748.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">I&#x27;d probably be hesitant to allow my AI agent to buy something for me for the first time. But I&#x27;d definitely let it reorder it or find the same thing for cheaper, etc. Recommerce is still a great big opportunity for AI agents. #ai #commerce</div>
+                        <div class="post-meta">
+                            <span class="post-date">26 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Firefly</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_92192638.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">I guess Apple did the cost-benefit analysis and saw that more people care about getting a Siri-branded Google Assistant than those who care about their privacy. So now, why would I want an iPhone when I could buy a Nothing phone with superlative design? #privacy #tech</div>
+                        <div class="post-meta">
+                            <span class="post-date">25 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Firefly</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_14a45b84.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">There is only one smartphone OS company left. #Google #Siri #GoogleSiri</div>
+                        <div class="post-meta">
+                            <span class="post-date">25 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_157f4224.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">The phrase “Cambrian explosion” has exploded in usage during this recent Cambrian explosion in AI technology development. #ai #tech</div>
+                        <div class="post-meta">
+                            <span class="post-date">24 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Firefly</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_cadcf90d.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">TikTok was found to be dangerously effective Chinese propaganda tech and against American national interests. So, they took the tech and ...put it in the hands of American corporations! “Only our investors are allowed to profit from controlling our people!” #tech #news</div>
+                        <div class="post-meta">
+                            <span class="post-date">23 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_fe8c0e11.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">An article in The Economist says that pop music has been in a downbeat trend over the past 50 years and shows no correlation to economic conditions or news trends. They also say that Billie Eilish sings like she&#x27;s on her last breath regardless of the lyrics! I like B. E., but this was hilarious! #songs #trends</div>
+                        <div class="post-meta">
+                            <span class="post-date">23 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Mastodon</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_b907dc15.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">While tools are built to support the most number of use cases, when working within specific verticals, there is scope for these tools to be used in the &quot;right way&quot; to get superior outputs. This has been true for the movie industry for a long time, but has also become true in the software world recently. #ai #tools</div>
+                        <div class="post-meta">
+                            <span class="post-date">21 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">When tools for production are cheap and abundant, process and perspective become the edge. #ai #tools #design</div>
+                        <div class="post-meta">
+                            <span class="post-date">21 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_18b3f00b.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">Pray tell, if you&#x27;re a platform that&#x27;s already allocating a certain number of credits per account, why on earth would you also levy a per-user charge? Isn&#x27;t it a good thing if more users were invited to a project? They&#x27;d use up the credits faster, and you&#x27;d end up making more revenue anyway! #pricing #teams</div>
+                        <div class="post-meta">
+                            <span class="post-date">20 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">Designers are thinking, &quot;Taste is everything. Claude code will replace the developer,&quot; while the engineer is thinking, &quot;Claude Code requires an engineer who knows their stuff to build good code; design can be generated by AI.&quot; The sales guy stands on the side, smirking. #AI #code #design</div>
+                        <div class="post-meta">
+                            <span class="post-date">20 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_a7fa07b4.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">In other news, the banking lobby in the US wants to convince everyone that not passing on the interest earned on the deposits of customers to the customers is somehow in the interest of the customers. &quot;Woah!&quot;, said the ad agency that they spoke to. #crypto #banking</div>
+                        <div class="post-meta">
+                            <span class="post-date">16 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">I recently saw an ad for Replit, and I thought it completely missed the point when it said that we can build any app we want and submit it to the app stores for others to use. I think the era of building apps for others is quickly fading. We are now in the Toffler-esque &quot;pro-sumer&quot; era, where we, users, can build any tool we want, on demand, purely for personal use, not distribution. This, too, will simply become a &quot;workflow&quot; in the AI OS that we will all soon use. #AI #OS #tech #UX</div>
+                        <div class="post-meta">
+                            <span class="post-date">5 Jan 2026</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">Do you feel resigned to the fact that all your data is out there so what&#x27;s the point in fighting for online privacy, or do you feel that there should be more efforts put towards protecting it, especially as we are heading into the age of AI?
+
+#privacy #ai #tech</div>
+                        <div class="post-meta">
+                            <span class="post-date">15 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">I’m watching “For All Mankind” and noticed the extremely satisfying physical switches with which they shut off the video calls! And I like the fact that they had dedicated hardware for each function. Nice! #tech #hardware #design</div>
+                        <div class="post-meta">
+                            <span class="post-date">13 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">&quot;...don&#x27;t turn your users into button pushing monkeys...&quot;
+
+Here&#x27;s the audio version of the article I wrote about AI UX, if you prefer to listen instead: https://redd.in/bd45aaa3.html
+
+#UX #AI</div>
+                        <div class="post-meta">
+                            <span class="post-date">12 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">Oh! A floating point 16 is only a digital *approximation* of the actual number. I think I understood this at a certain level, but hearing this again from someone else made me realise it&#x27;s implications -- AI chips of the future need to be analog!
+
+#AI </div>
+                        <div class="post-meta">
+                            <span class="post-date">11 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Farcaster</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">Designing AI features into your application? Here’s 6 things to think about: https://paragraph.com/@reddxf/beyond-the-hype-practical-ai-ux-for-real-products
+
+#design #ux #ai</div>
+                        <div class="post-meta">
+                            <span class="post-date">11 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Lens</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_6c64c123.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">&quot;What gets measured gets managed.&quot; -- I didn&#x27;t realise this was criticism highlighting quantification bias, and I have to admit that I&#x27;ve been guilty of taking it literally in the past. 
+
+#metrics #bias #goals</div>
+                        <div class="post-meta">
+                            <span class="post-date">9 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">This is a master-class in brand marketing to retail in just 71 minutes! Extremely useful for any startup to realise how they can easily be conned into chasing the wrong metrics! #marketing #brand #metrics
+
+https://youtu.be/RQNij-NG_ts?si=fxTX5bJS-ooNJEAF</div>
+                        <div class="post-meta">
+                            <span class="post-date">8 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_292589f0.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">Are we in a new phase of product development? I see more and more companies putting their partially complete products in front of customers at the very moment that any value is delivered and continue building it out right in front of them. I like the removal of the curtain between the backstage and the front, but don&#x27;t like it when they try to charge full price when it&#x27;s clearly incomplete.
+
+#product </div>
+                        <div class="post-meta">
+                            <span class="post-date">6 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">We’ve been seeing a lot of standardisation of software and web interfaces over time. Whatever the cause, since the floodgates of creativity have now been opened by vibe/AI assisted coding tools, non engineers can produce anything they want. I hope we see a Cambrian explosion and see weird and wonderful things again. It’s exactly what the industry needs right now. 
+
+#AI #UX</div>
+                        <div class="post-meta">
+                            <span class="post-date">4 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">The next major milestone for Move37 has been achieved! The website and the docs pages are up. People can know what Move37 is and what it can do. 
+
+Curious and want to try it out? Go to https://move37.works
+
+#product #website </div>
+                        <div class="post-meta">
+                            <span class="post-date">3 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content">Good on Apple! Resist. 
+
+#tech</div>
+                        <div class="post-meta">
+                            <span class="post-date">2 Dec 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_c0110edd.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">&quot;Vibe Coding&quot; is not a suitable term to describe AI enabled development using IDEs like Cursor or Windsurf. There&#x27;s a lot more thought and control expressed over the code made this way. 
+
+#AI #Code #Terms</div>
+                        <div class="post-meta">
+                            <span class="post-date">30 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_b74bc583.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content">Boom! The old Posts module has now been updated on Move 37. This makes the interfaces across the app seamless and efficient. Brought in the &quot;Use As Is&quot; functionality to handle content that is ready to go! Check out M37 at https://move37.works.
+
+#UX #product #update</div>
+                        <div class="post-meta">
+                            <span class="post-date">29 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Twitter</span><span class="platform-separator">&middot;</span><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_cd906a2c.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">27 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">26 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">25 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">24 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">22 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_d4469b27.jpeg" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">22 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_55d27cb6.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">21 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    <div class="post-image"><img src="posts_a8a820e5.png" alt="" loading="lazy"></div>
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">21 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">19 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">18 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">17 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">15 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">14 Nov 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">18 Oct 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">2 Oct 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">30 Sep 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">29 Sep 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">26 Sep 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Bluesky</span><span class="platform-separator">&middot;</span><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Substack</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">25 Sep 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">24 Sep 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Mastodon</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="post-card">
+                    
+                    <div class="post-body">
+                        <div class="post-content"></div>
+                        <div class="post-meta">
+                            <span class="post-date">22 Sep 2025</span>
+                            <div class="post-platforms"><span class="platform-badge">Farcaster</span><span class="platform-separator">&middot;</span><span class="platform-badge">Lens</span><span class="platform-separator">&middot;</span><span class="platform-badge">Linkedin</span><span class="platform-separator">&middot;</span><span class="platform-badge">Mastodon</span><span class="platform-separator">&middot;</span><span class="platform-badge">Twitter</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        
         <!-- Articles Tab Content -->
-        <div id="articles-tab" class="tab-content active">
+        <div id="articles-tab" class="tab-content ">
             <div class="articles-list">
                 
                 <div class="article-item">
@@ -1004,11 +1116,12 @@
 
     <script>
         // Tab switching functionality with deep-linking support
+        const defaultTab = 'posts';
         function activateTab(tabName) {
-            // Default to 'articles' if no tab specified or tab doesn't exist
+            // Default to first available tab if no tab specified or tab doesn't exist
             const tabButton = document.querySelector(`.tab-button[data-tab="${tabName}"]`);
             if (!tabButton) {
-                tabName = 'articles';
+                tabName = defaultTab;
             }
             
             // Remove active class from all buttons and content
@@ -1041,13 +1154,13 @@
         // Activate tab based on URL hash on page load
         function initTabFromHash() {
             const hash = window.location.hash.slice(1); // Remove '#'
-            activateTab(hash || 'articles');
+            activateTab(hash || defaultTab);
         }
         
         // Listen for hash changes (e.g., browser back/forward)
         window.addEventListener('hashchange', () => {
             const hash = window.location.hash.slice(1);
-            activateTab(hash || 'articles');
+            activateTab(hash || defaultTab);
         });
         
         // Initialize on page load
