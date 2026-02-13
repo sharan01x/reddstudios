@@ -9,7 +9,8 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: #111;
-    background: #fff;
+    background: rgb(238, 238, 238);
+    position: relative;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
@@ -155,6 +156,7 @@ a:hover { opacity: 0.65; }
 .article-item {
     border: 1px solid #e8e8e8;
     border-radius: 8px;
+    background: #fff;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -267,6 +269,7 @@ a:hover { opacity: 0.65; }
 .post-card {
     border: 1px solid #e8e8e8;
     border-radius: 8px;
+    background: #fff;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -323,12 +326,15 @@ a:hover { opacity: 0.65; }
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    padding: 16px 0;
-    border-bottom: 1px solid #f0f0f0;
-    transition: background-color 0.15s ease;
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    background: #fff;
+    transition: border-color 0.2s, background-color 0.2s;
 }
-.playlist-item:last-child { border-bottom: none; }
-.playlist-item:hover { background-color: #fafafa; }
+.playlist-item:last-child { margin-bottom: 0; }
+.playlist-item:hover { border-color: #ccc; background-color: #fff; }
 .playlist-item.playing { background-color: #f5f5f5; }
 .playlist-number {
     flex-shrink: 0;
@@ -696,31 +702,6 @@ audio { width: 100%; height: 32px; }
 .footer a:hover { opacity: 1; text-decoration: underline; }
 .footer i { color: #999; }
 
-/* === HERO TYPOGRAPHY BACKGROUND === */
-.hero-type-bg {
-    position: fixed;
-    top: 0;
-    left: -5%;
-    width: 110%;
-    height: 100vh;
-    font-size: clamp(3rem, 7vw, 6rem);
-    font-weight: 900;
-    color: rgba(0, 0, 0, 0.025);
-    letter-spacing: -0.04em;
-    line-height: 1.15;
-    overflow: hidden;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    padding: 40px 5%;
-    transition: opacity 0.5s ease;
-}
-.hero-type-bg.hidden { opacity: 0; }
-.hero-type-bg.visible { opacity: 1; }
-
 /* === TEXT MAGNIFICATION ON HOVER === */
 .post-content,
 .article-header a,
@@ -814,7 +795,7 @@ body {
     .posts-grid { grid-template-columns: 1fr; }
     .articles-list { grid-template-columns: 1fr; }
 
-    .playlist-item { flex-direction: column; gap: 12px; padding: 12px 0; }
+    .playlist-item { flex-direction: column; gap: 12px; padding: 12px; }
     .playlist-number { display: none; }
     .playlist-player { width: 100%; }
 
@@ -836,6 +817,4 @@ body {
     .floating-logo { left: 16px; top: 16px; }
     .footer { right: 16px; bottom: 16px; }
     .floating-back-button { left: 16px; bottom: 16px; }
-
-    .hero-type-bg { font-size: 3rem; }
 }
