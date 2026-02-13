@@ -306,10 +306,12 @@ a:hover { opacity: 0.65; }
 }
 .post-content.post-content--no-image,
 .post-content.post-content--short {
-    font-size: 1.45rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 .post-content.post-content--no-image.post-content--short {
     font-size: 1.88rem;
+    font-weight: 800;
 }
 .post-meta {
     display: flex;
