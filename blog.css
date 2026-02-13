@@ -28,6 +28,8 @@ a:hover { opacity: 0.65; }
     max-width: 720px;
     margin: 0 auto;
     padding: 40px 24px;
+    position: relative;
+    z-index: 1;
 }
 
 .page-index .container { max-width: 720px; }
@@ -271,7 +273,8 @@ a:hover { opacity: 0.65; }
     transition: border-color 0.2s, opacity 0.3s, transform 0.3s;
 }
 .post-card:hover { border-color: #ccc; }
-.post-card.hidden-by-filter {
+.post-card.hidden-by-filter,
+.article-item.hidden-by-filter {
     display: none;
 }
 .post-image {
@@ -695,23 +698,28 @@ audio { width: 100%; height: 32px; }
 
 /* === HERO TYPOGRAPHY BACKGROUND === */
 .hero-type-bg {
-    position: absolute;
-    top: -20px;
+    position: fixed;
+    top: 0;
     left: -5%;
     width: 110%;
-    font-size: clamp(4rem, 10vw, 8rem);
+    height: 100vh;
+    font-size: clamp(3rem, 7vw, 6rem);
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.03);
+    color: rgba(0, 0, 0, 0.025);
     letter-spacing: -0.04em;
-    line-height: 1;
-    white-space: nowrap;
+    line-height: 1.15;
     overflow: hidden;
-    text-overflow: ellipsis;
     pointer-events: none;
     user-select: none;
     z-index: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding: 40px 5%;
+    transition: opacity 0.5s ease;
 }
-.header { position: relative; z-index: 1; }
+.hero-type-bg.hidden { opacity: 0; }
+.hero-type-bg.visible { opacity: 1; }
 
 /* === TEXT MAGNIFICATION ON HOVER === */
 .post-content,
