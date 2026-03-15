@@ -1,21 +1,19 @@
 ---
 title: "Evolution, Not Revolution"
 subtitle: "How Gradual Progress Can Lead to Success in Product Design"
-date: "2025-09-08"
+date: "08 Sept 2025"
 author: "sharanx"
-tags: ["ux", "design", "product"]
-audio: "/4222f787_audio.mp3"
+tags: ["ux","design","product"]
+audio: "4222f787_audio.mp3"
 ---
 
 The Apple Newton was a revolutionary product that was packed with cutting edge technology like touch screens, handwriting recognition and wireless data transfer. It was well ahead of everyone else and was defining a brand new product category. It failed. But not only that, other companies launched only three years later with almost identical products ended up succeeding. This is one of the strangest things that seem to happen in product companies and I wish I had figured out the answer before I did, as it would have saved me making the same mistake two times.
-
-![Evolution Not Revolution](/4222f787_9fc2db4e37624552af258a5232644310.png)
 
 ## Obi: A Learning Experience
 
 Ever since my twin and I learnt to program when we were 8 years old, we had been dreaming of producing products. Our first real product, one that was actually used by others, was an inventory management system built with Visual Basic 5. It was built for our family's jewellery store. We were in the ninth grade and were paid with bhel puri! It wasn't a lucrative project, but it was a delicious one. It was a thrill to see an entire store using and be dependent on our software!
 
-Later, around 2008, we had a second run at building another version of the inventory management system, when we had a custom software development company and were considering building a product to help us scale our revenues. We looked at the competition and what they offered, their feature sets, their pricing methods and understood all the artificial boundaries they had in place and decided we could do better, way better.
+Later, around 2008, we had a second run at building another version of the inventory management system, when we had a custom software development company and were considering building a product  to help us scale our revenues. We looked at the competition and what they offered, their feature sets, their pricing methods and understood all the artificial boundaries they had in place and decided we could do better, way better.
 
 Our software, named Obi, would be the following:
 
@@ -27,11 +25,11 @@ Our software, named Obi, would be the following:
 
 There were several other aspects that were different in our case, but for the sake of brevity, we were doing exactly what SaaS companies do today.
 
-We went out the door and started talking to customers and waiting for the hordes to come and break our doors down. But, that didn't happen. The objections we got from our customers were unsurmountable for a small software company like ours and after 1 year of running the operations and only a few clients to speak of, paying us a very small amount, we just couldn't sustain it any longer and had to shut down. This, despite a customer actually walking into our office and offering to pay us more than we asked so that he could keep using it at his store!
+We went out the door and started talking to customers and waiting for the hordes to come and break our doors down. But, that didn't happen. The objections  we got from our customers were unsurmountable for a small software company like ours and after 1 year of running the operations and only a few clients to speak of, paying us a very small amount, we just couldn't sustain it any longer and had to shut down. This, despite a customer actually walking into our office and offering to pay us more than we asked so that he could keep using it at his store!
 
 I joined Adobe as a UX designer at the end of 2009 using Obi to demonstrate that I had the experience of building "beautiful software" (the UX term hadn't become well known at the time).
 
-Two years later, around 2010, most of the competitors had begun to do everything almost exactly as we had and found great success. It would have been more comforting if we had been completely wrong, but our predictions of the future came out to be exactly true. I heard someone say "Being too early is the same as being wrong". While they described my problem perfectly, I still didn't know what the solution was. I needed to break down what "being early" was. In the relative stability of a 9 to 5 job, I finally figured it out.
+Two years later, around 2010, most of the competitors had begun to do everything almost exactly as we had and found great success. It would have been more comforting if we had been completely wrong, but our predictions of the future came out to be exactly true. I heard someone say "Being too early is the same as being wrong". While they described my problem perfectly, I still didn't know what the solution was. I needed to break down what "being early" was. In the relative stability of a 9 to 5 job, I finally figured it out.
 
 ## The Existing Environment
 
@@ -41,17 +39,17 @@ For example, we were right in assuming that most software of the future would be
 
 They were also transitioning from a world that believed software wasn't something one paid for leave alone pay in perpetuity for. They also believed that choosing to upgrade was meant to be optional. "Normal" upgrade cycles were once a year and done only when they saw that new version had a lot of improvements over the existing one. They wanted to be able to compare and then make the choice to upgrade or not.
 
-They also saw the training was an essential service that a software developer had to provide because in their experience, they had always used clunky software that required that training. No upstart like us would come and shake that notion with our fancy user-oriented design. But having the infrastructure to provide the training was also a signal that indicated that we were big enough to be around in the future. Inventory management systems are a core part of the operation of a company, so this was an assurance that they would need before they switched to using our software.
+They also saw the training was an essential service that a software developer had to provide because in their experience, they had always used clunky software that required that training. No upstart like us would come and shake that notion with our fancy user-oriented design. But having the infrastructure to provide the training was also a signal that indicated that we were big enough to be around in the future. Inventory management systems are a core part of the operation of a company, so this was an assurance that they would need before they switched to using our software.
 
-It's quite interesting that I find a lot of parallels exist between architecture and product design. There is a famous quote by Eliel Saarinen, the architect, that goes, "Always design a thing by considering it in its next larger context—a chair in a room, a room in a house, a house in an environment, an environment in a city plan." He really was onto something there.
+It's quite interesting that I find a lot of parallels exist between architecture and product design. There is a famous quote by Eliel Saarinen, the architect, that goes, “Always design a thing by considering it in its next larger context—a chair in a room, a room in a house, a house in an environment, an environment in a city plan.” He really was onto something there.
 
 ## The Comfort of the Status Quo
 
-Obi was different in all these respects. It was new and different on too many fronts all at once. In a sales cycle, we may have the opportunity to counter one or two of the objections that a potential customer may pose to us, but if there are so many different aspects that they have to wrap their heads around, then the default decision is to maintain status quo and reject the offer.
+Obi was different in all these respects. It was new and different on too many fronts all at once. In a sales cycle, we may have the opportunity to counter one or two of the objections that a potential customer may pose to us, but if there are so many different aspects that they have to wrap their heads around, then the default decision is to maintain status quo and reject the offer.
 
-Customers will make the effort of doing the cognitive work if the end result is something that is 10X better than the current situation not when something is only a moderate improvement over the existing solution. In our case with Obi, we were doing a lot of things differently, but the end result was that the customer would still only be able to manage their inventory a little more efficiently, nothing changed apart from that.
+Customers will make the effort of doing the cognitive work if the end result is something that is 10X better than the current situation not when something is only a moderate improvement over the existing solution. In our case with Obi, we were doing a lot of things differently, but the end result was that the customer would still only be able to manage their inventory a little more efficiently, nothing changed apart from that.
 
-There's the old adage, "One can only be wrong if they try to do something." (which is an interesting antonym of "Only those who try can succeed" which is meant to motivate entrepreneurs, but that's a different discussion altogether). In other words, we simply didn't offer the user a big enough of a reason to experiment with so many different variables. All they'd see at the end was a modest improvement in the operation and a reduction in cost that didn't really make a difference to their profits.
+There's the old adage, "One can only be wrong if they try to do something." (which is an interesting antonym of "Only those who try can succeed" which is meant to motivate entrepreneurs, but that's a different discussion altogether). In other words, we simply didn't offer the user a big enough of a reason to experiment with so many different variables. All they'd see at the end was a modest improvement in the operation and a reduction in cost that didn't really make a difference to their profits.
 
 ## The EnR Framework
 

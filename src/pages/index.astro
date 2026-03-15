@@ -4,6 +4,8 @@ import { getCollection } from 'astro:content';
 
 const articles = await getCollection('articles');
 const posts = await getCollection('posts');
+const audioArticles = articles.filter(a => a.data.audio);
+const podcastArticles = articles.filter(a => a.data.podcast);
 
 const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
 const articleTags = [...new Set(articles.flatMap(a => a.data.tags))].sort();
@@ -99,12 +101,63 @@ const formatDate = (dateStr: string) => {
         
         <!-- Audio Tab Content -->
         <div id="audio-tab" class="tab-content">
-            <div class="no-content">No audio content yet.</div>
+            <div class="playlist-container">
+                {audioArticles.map((article, index) => (
+                    <div class="playlist-item" data-index={index}>
+                        <div class="playlist-number">{index + 1}</div>
+                        <div class="playlist-info">
+                            <div class="playlist-title">{article.data.title}</div>
+                            <div class="playlist-subtitle">{article.data.subtitle}</div>
+                            <div class="playlist-meta">
+                                <span class="playlist-author">{article.data.author}</span>
+                                <span class="playlist-date">{formatDate(article.data.date)}</span>
+                            </div>
+                            <div class="playlist-tags">
+                                {article.data.tags.map(tag => (
+                                    <span class="tag">{tag}</span>
+                                ))}
+                            </div>
+                        </div>
+                        <div class="playlist-player">
+                            <audio class="audio-player" data-index={index} controls preload="none">
+                                <source src={article.data.audio} type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
         
         <!-- Podcasts Tab Content -->
         <div id="podcasts-tab" class="tab-content">
-            <div class="no-content">No podcast episodes yet.</div>
+            <div class="playlist-container">
+                {podcastArticles.map((article, index) => (
+                    <div class="playlist-item podcast" data-index={index}>
+                        <div class="podcast-artwork-container">
+                            <div class="podcast-artwork-placeholder"></div>
+                        </div>
+                        <div class="playlist-info">
+                            <div class="podcast-episode-badge">S1E{index + 1}</div>
+                            <div class="playlist-title">{article.data.title}</div>
+                            <div class="playlist-subtitle">{article.data.subtitle}</div>
+                            <div class="playlist-meta">
+                                <span class="playlist-author">{article.data.author}</span>
+                                <span class="playlist-date">{formatDate(article.data.date)}</span>
+                            </div>
+                            <div class="playlist-tags">
+                                {article.data.tags.map(tag => (
+                                    <span class="tag">{tag}</span>
+                                ))}
+                            </div>
+                        </div>
+                        <div class="playlist-player">
+                            <audio class="podcast-player" data-index={index} controls preload="none">
+                                <source src={article.data.podcast} type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     </div>
 </BaseLayout>
@@ -154,5 +207,81 @@ const formatDate = (dateStr: string) => {
                 });
             });
         });
+        
+        // Audio playlist functionality
+        (function() {
+            const DELAY_BETWEEN_TRACKS = 5000;
+            
+            const audioPlayers = document.querySelectorAll('.audio-player');
+            const podcastPlayers = document.querySelectorAll('.podcast-player');
+            const audioItems = document.querySelectorAll('#audio-tab .playlist-item');
+            const podcastItems = document.querySelectorAll('#podcasts-tab .playlist-item');
+            
+            audioPlayers.forEach((player, index) => {
+                player.addEventListener('play', () => {
+                    audioPlayers.forEach((p, i) => {
+                        if (i !== index) p.pause();
+                    });
+                    podcastPlayers.forEach(p => p.pause());
+                    
+                    audioItems.forEach((item, i) => {
+                        item.classList.toggle('playing', i === index);
+                    });
+                    podcastItems.forEach(item => {
+                        item.classList.remove('playing');
+                    });
+                });
+                
+                player.addEventListener('ended', () => {
+                    audioItems[index]?.classList.remove('playing');
+                    
+                    const nextIndex = index + 1;
+                    if (nextIndex < audioPlayers.length) {
+                        setTimeout(() => {
+                            audioPlayers[nextIndex].play();
+                        }, DELAY_BETWEEN_TRACKS);
+                    }
+                });
+                
+                player.addEventListener('pause', () => {
+                    if (!player.ended) {
+                        audioItems[index]?.classList.remove('playing');
+                    }
+                });
+            });
+            
+            podcastPlayers.forEach((player, index) => {
+                player.addEventListener('play', () => {
+                    podcastPlayers.forEach((p, i) => {
+                        if (i !== index) p.pause();
+                    });
+                    audioPlayers.forEach(p => p.pause());
+                    
+                    podcastItems.forEach((item, i) => {
+                        item.classList.toggle('playing', i === index);
+                    });
+                    audioItems.forEach(item => {
+                        item.classList.remove('playing');
+                    });
+                });
+                
+                player.addEventListener('ended', () => {
+                    podcastItems[index]?.classList.remove('playing');
+                    
+                    const nextIndex = index + 1;
+                    if (nextIndex < podcastPlayers.length) {
+                        setTimeout(() => {
+                            podcastPlayers[nextIndex].play();
+                        }, DELAY_BETWEEN_TRACKS);
+                    }
+                });
+                
+                player.addEventListener('pause', () => {
+                    if (!player.ended) {
+                        podcastItems[index]?.classList.remove('playing');
+                    }
+                });
+            });
+        })();
     });
 </script>

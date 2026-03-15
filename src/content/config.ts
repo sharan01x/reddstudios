@@ -9,6 +9,7 @@ const articles = defineCollection({
     author: z.string().default('sharanx'),
     tags: z.array(z.string()).default([]),
     audio: z.string().optional(),
+    podcast: z.string().optional(),
     image: z.string().optional(),
   }),
 });

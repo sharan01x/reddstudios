@@ -1,0 +1,55 @@
+---
+title: "Five personal AI assistant devices reviewed and what they need to fix"
+subtitle: "The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential."
+date: "12 Sept 2024"
+author: "sharanx"
+tags: ["product","hardware","design","technology"]
+---
+
+## Why Aren’t Personal AI Assistants Taking Off?
+
+Before diving into the nitty-gritty, let’s get one thing clear. The personal AI assistants I’m referring to aren’t like Siri or Google Assistant on your phone. We’re talking about devices that can break down complex tasks and execute them for you—whether it’s running apps, searching the web, or even coding in some cases.
+
+These devices are mostly aimed at early adopters right now, but the goal is to create something for everyone. If you picture the product adoption lifecycle, we’re still in the early adopter phase. Right now, companies are testing their products in different niches, trying to figure out what sticks. It’s a chaotic phase, and we’re seeing an explosion of ideas—some good, some not so much. A lot of these ideas won’t make it to the mainstream, but that’s what makes this phase so exciting.
+
+Now, let’s dig into the seven mistakes these AI assistant products are making and how I think they can course-correct.
+
+### 1. Not Using the Right Metaphor
+
+The first mistake is starting with the wrong metaphor. Products need to fit into a framework that users already understand. People don’t like adopting something completely alien. I always say evolution trumps revolution, especially in mass-market products. Finding a metaphor that connects the new with the familiar is crucial. AI assistants should be positioned as an evolution of tools people already know, not a radical shift that alienates potential users.
+
+### 2. Limited Accessibility and Reachability
+
+For an AI assistant to succeed, it needs to be extremely accessible. Think about the evolution of computing—from desktops to laptops, tablets, smartphones, and now wearables. The goal is to bring tech closer to the user. Personal AI devices need to occupy that space between a smartphone and the user—something wearable that’s always available at a moment’s notice.
+
+Users are going to need to learn a new behaviour—one where they think in terms of goals, not apps. The easier we make it for them to access the assistant, the quicker they’ll adapt. ^1c44a7
+
+### 3. Lack of Multimodal Inputs and Outputs
+
+Let’s be honest—audio alone isn’t enough. Yes, voice commands are intuitive and efficient for certain tasks, but information needs to be delivered in various ways. Visual feedback, like images and text, allows users to process information faster. Devices that rely only on voice, like some AI pins or pendants, miss out on the efficiency that visual data provides. The solution is to design devices with both visual and auditory outputs.
+
+### 4. Poor Data Privacy Protections
+
+With AI, the question of privacy becomes even more critical. These devices will have access to mountains of personal data, and without strong privacy protections, they could easily become surveillance tools. The safest way to ensure privacy? Keep the data on the device itself. I think open-source projects like Open Interpreter, which runs locally on the user’s device, are on the right track. This model protects privacy and offers immediate feedback—something that cloud-based models struggle with.
+
+### 5. Lag in Response Time
+
+For AI assistants to feel natural, they need to respond quickly. Research shows that interactions that take longer than 400 milliseconds feel slow and clunky. Devices relying on cloud-based AI models are always going to have some lag, no matter how fast the server is. To hit that magical threshold of 400 milliseconds, AI models need to run locally on the device. Otherwise, users will experience delays that break the flow of interaction.
+
+### 6. Lack of Interoperability
+
+We’re transitioning to a new kind of computing—one where AI agents handle tasks for us. These agents need to be able to interact seamlessly with existing systems and applications. If a user wants their AI assistant to book an Uber or play a song on Spotify, the interaction needs to be flawless. Devices that struggle with this will quickly fall out of favour. The future belongs to AI assistants that can bridge both the current and future computing models.
+
+### 7. Failure to Create Universal Interfaces
+
+The final mistake I see is the lack of universal, adaptable interfaces. Every request a user makes might require a different interface—one that adapts in real-time. If I ask my AI assistant to book an Uber, the interface might display a map. If I want to pick between two songs, I’ll need a list. These interfaces need to be generated on the fly, based on the user’s specific request. A rigid interface simply won’t cut it.  
+
+## The Future of AI Assistants
+
+In my opinion, the best form factor for personal AI assistants is a wearable device—specifically a smartwatch. It’s close to the user, easy to access, and can incorporate the necessary screen for visual feedback. While today’s smartwatches may not have the power to run advanced AI models, the tech is catching up. With chip technology becoming more efficient and AI models getting smaller, we’re not far from a future where AI-powered smartwatches will be the norm.
+
+Ultimately, while none of the current products on the market have quite nailed it yet, some are closer than others. But in the end, it’s the big players—Google, Microsoft, and Meta—that are best positioned to dominate the personal AI assistant space. They have the data, and in AI, data is king.
+
+As much as I root for the underdog, I wouldn’t bet my money on any of the current startups trying to break into this space. The race will be won by those with the resources to gather and process the vast amounts of data required to create truly effective AI assistants.
+
+# Watch the Video
