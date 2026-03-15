@@ -242,39 +242,42 @@ const extractYouTubeVideos = (content: string) => {
         
         <!-- Videos Tab Content -->
         <div id="videos-tab" class="tab-content">
-            <div class="playlist-container">
+            <div class="videos-grid">
                 {additionalVideos.map((video, index) => (
-                    <div class="playlist-item video" data-index={index}>
-                        <div class="playlist-info">
-                            <div class="playlist-title">{video.title}</div>
-                            <div class="playlist-subtitle">{video.subtitle}</div>
-                            <div class="playlist-meta">
-                                <span class="playlist-author">{video.author}</span>
-                                <span class="playlist-date">{formatDate(video.date)}</span>
+                    <div class="video-card" data-index={index}>
+                        <div class="video-thumbnail-container">
+                            <a 
+                                href={`https://www.youtube.com/watch?v=${video.videoId}`} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="video-thumbnail-link"
+                            >
+                                <img 
+                                    src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`} 
+                                    alt={video.title}
+                                    loading="lazy"
+                                    class="video-thumbnail"
+                                />
+                                <div class="video-play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">
+                                <a href={`https://www.youtube.com/watch?v=${video.videoId}`} target="_blank" rel="noopener noreferrer">
+                                    {video.title}
+                                </a>
+                            </h3>
+                            <p class="video-subtitle">{video.subtitle}</p>
+                            <div class="video-meta">
+                                <span class="video-author">by {video.author}</span>
+                                <span class="video-date">{formatDate(video.date)}</span>
                             </div>
-                            <div class="playlist-tags">
+                            <div class="video-tags">
                                 {video.tags.map(tag => (
                                     <span class="tag">{tag}</span>
                                 ))}
-                            </div>
-                        </div>
-                        <div class="playlist-player">
-                            <div class="video-thumbnails">
-                                <a 
-                                    href={`https://www.youtube.com/watch?v=${video.videoId}`} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    class="video-thumbnail"
-                                >
-                                    <img 
-                                        src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`} 
-                                        alt="YouTube video thumbnail"
-                                        loading="lazy"
-                                    />
-                                    <div class="video-play-icon">
-                                        <i class="fas fa-play"></i>
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -282,38 +285,42 @@ const extractYouTubeVideos = (content: string) => {
                 {videoArticles.map((article, index) => {
                     const videoIds = extractYouTubeVideos(article.body);
                     return (
-                        <div class="playlist-item video" data-index={index + additionalVideos.length}>
-                            <div class="playlist-info">
-                                <div class="playlist-title">{article.data.title}</div>
-                                <div class="playlist-subtitle">{article.data.subtitle}</div>
-                                <div class="playlist-meta">
-                                    <span class="playlist-author">{article.data.author}</span>
-                                    <span class="playlist-date">{formatDate(article.data.date)}</span>
+                        <div class="video-card" data-index={index + additionalVideos.length}>
+                            <div class="video-thumbnail-container">
+                                {videoIds.map(videoId => (
+                                    <a 
+                                        key={videoId}
+                                        href={`https://www.youtube.com/watch?v=${videoId}`} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        class="video-thumbnail-link"
+                                    >
+                                        <img 
+                                            src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`} 
+                                            alt={article.data.title}
+                                            loading="lazy"
+                                            class="video-thumbnail"
+                                        />
+                                        <div class="video-play-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">
+                                    <a href={`/articles/${article.slug}`} target="_blank" rel="noopener noreferrer">
+                                        {article.data.title}
+                                    </a>
+                                </h3>
+                                <p class="video-subtitle">{article.data.subtitle}</p>
+                                <div class="video-meta">
+                                    <span class="video-author">by {article.data.author}</span>
+                                    <span class="video-date">{formatDate(article.data.date)}</span>
                                 </div>
-                                <div class="playlist-tags">
+                                <div class="video-tags">
                                     {article.data.tags.map(tag => (
                                         <span class="tag">{tag}</span>
-                                    ))}
-                                </div>
-                            </div>
-                            <div class="playlist-player">
-                                <div class="video-thumbnails">
-                                    {videoIds.map(videoId => (
-                                        <a 
-                                            href={`https://www.youtube.com/watch?v=${videoId}`} 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            class="video-thumbnail"
-                                        >
-                                            <img 
-                                                src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`} 
-                                                alt="YouTube video thumbnail"
-                                                loading="lazy"
-                                            />
-                                            <div class="video-play-icon">
-                                                <i class="fas fa-play"></i>
-                                            </div>
-                                        </a>
                                     ))}
                                 </div>
                             </div>
