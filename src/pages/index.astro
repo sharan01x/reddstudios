@@ -335,6 +335,29 @@ const extractYouTubeVideos = (content: string) => {
 </BaseLayout>
 
 <script>
+    // Function to activate a tab by name
+    function activateTab(tabName) {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.classList.remove('active');
+        });
+        tabContents.forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        const targetButton = document.querySelector(`.tab-button[data-tab="${tabName}"]`);
+        if (targetButton) {
+            targetButton.classList.add('active');
+        }
+        
+        const targetContent = document.getElementById(`${tabName}-tab`);
+        if (targetContent) {
+            targetContent.classList.add('active');
+        }
+    }
+    
     document.addEventListener('DOMContentLoaded', function() {
         const tabButtons = document.querySelectorAll('.tab-button');
         const tabContents = document.querySelectorAll('.tab-content');
@@ -455,5 +478,20 @@ const extractYouTubeVideos = (content: string) => {
                 });
             });
         })();
+        
+        // Handle tab activation from URL hash on page load
+        function initTabFromHash() {
+            const hash = window.location.hash.slice(1); // Remove '#'
+            activateTab(hash || 'posts');
+        }
+        
+        // Listen for hash changes (e.g., browser back/forward)
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.slice(1);
+            activateTab(hash || 'posts');
+        });
+        
+        // Initialize on page load
+        initTabFromHash();
     });
 </script>

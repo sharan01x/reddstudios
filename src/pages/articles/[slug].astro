@@ -20,7 +20,7 @@ const formatDate = (dateStr: string) => {
 ---
 
 <BaseLayout title={`${article.data.title} | Redd XF`} bodyClass="page-article">
-    <a href="/#articles" class="floating-back-button" title="Back to Articles">
+    <a href="javascript:void(0)" class="floating-back-button" title="Back to Articles" onclick="activateTab('articles'); window.location.hash = 'articles';">
         <i class="fas fa-arrow-left"></i>
     </a>
 
