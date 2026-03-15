@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('articles');
+const posts = await getCollection('posts');
+
+const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
+const articleTags = [...new Set(articles.flatMap(a => a.data.tags))].sort();
+
+const formatDate = (dateStr: string) => {
+  const date = new Date(dateStr);
+  return date.toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' });
+};
+---
+
+<BaseLayout title="Redd XF">
+    <div class="container">
+        <div class="header">
+            <h1>Redd XF</h1>
+            <div class="subtitle">Building startups, pushing pixels, slicing videos, compiling code or writing verse.</div>
+            <div style="margin-top: 20px;">
+                <a href="https://reddxf.substack.com" class="rss-link" target="_blank" rel="noopener">
+                    <i class="fas fa-envelope"></i> Subscribe
+                </a>
+                <a href="/rss.xml" class="rss-link" style="margin-left: 15px;">
+                    <i class="fas fa-rss"></i> RSS
+                </a>
+            </div>
+        </div>
+        
+        <!-- Tabs Navigation -->
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-button active" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</button>
+                <button class="tab-button" data-tab="articles"><i class="fas fa-newspaper"></i>Articles</button>
+                <button class="tab-button" data-tab="audio"><i class="fas fa-headphones"></i>Audio</button>
+                <button class="tab-button" data-tab="podcasts"><i class="fas fa-podcast"></i>Podcasts</button>
+            </div>
+        </div>
+        
+        <!-- Posts Tab Content -->
+        <div id="posts-tab" class="tab-content active">
+            <div class="tags-cloud">
+                <button class="tag-filter active" data-tag="all">All</button>
+                {allTags.map(tag => (
+                    <button class="tag-filter" data-tag={tag}>#{tag}</button>
+                ))}
+            </div>
+            <div class="posts-grid">
+                {posts.map((post, index) => (
+                    <div class="post-card" data-tags={post.data.tags.join(' ')}>
+                        {post.data.image && (
+                            <div class="post-image">
+                                <img src={post.data.image} alt="" loading="lazy">
+                            </div>
+                        )}
+                        <div class="post-body">
+                            <div class={`post-content ${!post.data.image ? 'post-content--no-image' : ''} ${post.body.length < 200 ? 'post-content--short' : ''}`}>
+                                {post.body}
+                            </div>
+                            <div class="post-meta">
+                                <span class="post-date">{formatDate(post.data.date)}</span>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+        
+        <!-- Articles Tab Content -->
+        <div id="articles-tab" class="tab-content">
+            <div class="tags-cloud" id="articles-tags-cloud">
+                <button class="tag-filter active" data-tag="all" data-scope="articles">All</button>
+                {articleTags.map(tag => (
+                    <button class="tag-filter" data-tag={tag} data-scope="articles">{tag}</button>
+                ))}
+            </div>
+            <div class="articles-list">
+                {articles.map((article) => (
+                    <div class="article-item" data-tags={article.data.tags.join(' ')}>
+                        <div class="article-header">
+                            <h2><a href={`/articles/${article.slug}`}>{article.data.title}</a></h2>
+                            <div class="article-subtitle">{article.data.subtitle}</div>
+                        </div>
+                        <div class="article-meta">
+                            <span class="article-date">{formatDate(article.data.date)}</span>
+                            <span class="article-author">by {article.data.author}</span>
+                        </div>
+                        <div class="article-tags">
+                            {article.data.tags.map(tag => (
+                                <span class="tag">{tag}</span>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+        
+        <!-- Audio Tab Content -->
+        <div id="audio-tab" class="tab-content">
+            <div class="no-content">No audio content yet.</div>
+        </div>
+        
+        <!-- Podcasts Tab Content -->
+        <div id="podcasts-tab" class="tab-content">
+            <div class="no-content">No podcast episodes yet.</div>
+        </div>
+    </div>
+</BaseLayout>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tab = button.dataset.tab;
+                
+                tabButtons.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                button.classList.add('active');
+                document.getElementById(`${tab}-tab`)?.classList.add('active');
+            });
+        });
+        
+        const tagFilters = document.querySelectorAll('.tag-filter');
+        
+        tagFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                const tag = filter.dataset.tag;
+                const scope = filter.dataset.scope || 'posts';
+                const container = scope === 'articles' ? '.articles-list' : '.posts-grid';
+                const items = document.querySelectorAll(`${container} > *`);
+                const cloud = filter.closest('.tags-cloud');
+                const filters = cloud?.querySelectorAll('.tag-filter');
+                
+                filters?.forEach(f => f.classList.remove('active'));
+                filter.classList.add('active');
+                
+                items.forEach(item => {
+                    if (tag === 'all') {
+                        item.classList.remove('hidden-by-filter');
+                    } else {
+                        const tags = item.dataset.tags || '';
+                        if (tags.toLowerCase().includes(tag.toLowerCase())) {
+                            item.classList.remove('hidden-by-filter');
+                        } else {
+                            item.classList.add('hidden-by-filter');
+                        }
+                    }
+                });
+            });
+        });
+    });
+</script>

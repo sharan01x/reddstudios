@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+    const articles = await getCollection('articles');
+    return articles.map(article => ({
+        params: { slug: article.slug },
+        props: { article },
+    }));
+}
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+
+const formatDate = (dateStr: string) => {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' });
+};
+---
+
+<BaseLayout title={`${article.data.title} | Redd XF`} bodyClass="page-article">
+    <a href="/#articles" class="floating-back-button" title="Back to Articles">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+        <div class="article-card">
+            <div class="header">
+                <h1>{article.data.title}</h1>
+                <div class="subtitle">{article.data.subtitle}</div>
+                <div class="tags-display-view">
+                    {article.data.tags.map(tag => (
+                        <span class="tag-chip-view">{tag}</span>
+                    ))}
+                </div>
+            </div>
+            
+            <div class="article-metadata">
+                <div class="author-date-row">
+                    <div class="authors-byline">
+                        <span class="author-info-display">
+                            <img src="/profile_e2244840.png" alt={article.data.author} class="author-avatar-small" />
+                            <span class="author-name-display">{article.data.author}</span>
+                            <span class="author-socials">
+                                <a href="https://linkedin.com/in/sharangrandigae" target="_blank" rel="noopener noreferrer" class="social-icon" title="linkedin: sharangrandigae">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://mastodon.social/@sharanx" target="_blank" rel="noopener noreferrer" class="social-icon" title="mastodon: sharanx">
+                                    <i class="fa-brands fa-mastodon"></i>
+                                </a>
+                                <a href="https://twitter.com/sharan01x" target="_blank" rel="noopener noreferrer" class="social-icon" title="twitter: sharan01x">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="date-display">
+                        <span class="date">{formatDate(article.data.date)}</span>
+                    </div>
+                </div>
+            </div>
+
+            {article.data.audio && (
+                <div class="audio-section">
+                    <h3><i class="fas fa-volume-up"></i> Audio</h3>
+                    <div class="audio-grid single-audio">
+                        <div class="audio-item">
+                            <div class="audio-label">
+                                <i class="fas fa-volume-up"></i>&nbsp;Reader
+                            </div>
+                            <audio controls preload="metadata">
+                                <source src={article.data.audio} type="audio/mpeg">
+                                Your browser does not support audio.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            <div class="content">
+                <Content />
+            </div>
+        </div>
+    </div>
+</BaseLayout>
