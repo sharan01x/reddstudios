@@ -15,6 +15,66 @@ const videoArticles = articles
   })
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
+// Additional videos from user-provided list
+const additionalVideos = [
+  {
+    title: "8 Crucial Insights from Building an AI-Infused App",
+    subtitle: "Discover the critical lessons gained from developing a cutting-edge application in the evolving landscape of programming",
+    date: "04 Aug 2025",
+    author: "sharanx",
+    tags: ["ai", "design", "technology"],
+    videoId: "HcqI67Ij8sc"
+  },
+  {
+    title: "How to go from designing UX in Web2 to Web3",
+    subtitle: "Understanding the transition from traditional web design to decentralized web experiences",
+    date: "01 Aug 2025",
+    author: "sharanx",
+    tags: ["ux", "web3", "design"],
+    videoId: "u_cEEB6D2Q8"
+  },
+  {
+    title: "Review of Replit, the Figma Killer",
+    subtitle: "Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.",
+    date: "31 Jul 2025",
+    author: "sharanx",
+    tags: ["design", "ux", "ai", "tools", "technology"],
+    videoId: "EPCrwNTKr5s"
+  },
+  {
+    title: "Five personal AI assistant devices reviewed and what they need to fix",
+    subtitle: "The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven't lived up to their full potential.",
+    date: "12 Sept 2024",
+    author: "sharanx",
+    tags: ["product", "hardware", "design", "technology"],
+    videoId: "7GPtfH1lYkI"
+  },
+  {
+    title: "The Ultimate Guide to Hiring the Right UX Design Agency",
+    subtitle: "It doesn't matter that the design agency has a high rating if they aren't a good fit for your project. But how do you find the right one?",
+    date: "15 Nov 2024",
+    author: "sharanx",
+    tags: ["design", "business"],
+    videoId: "pWzm4IwFXZI"
+  },
+  {
+    title: "Designing Web3 Wallets for Mainstream Users",
+    subtitle: "There is a problem with Web3 wallets, they're just too complex. But where's the problem stemming from and how do we solve it?",
+    date: "30 Sept 2024",
+    author: "sharanx",
+    tags: ["design"],
+    videoId: "flGWL54hJR4"
+  },
+  {
+    title: "The New Age of the Design Generalist",
+    subtitle: "Exploring the evolving role of designers who can work across multiple disciplines",
+    date: "01 Jan 2025",
+    author: "sharanx",
+    tags: ["design", "ux", "product"],
+    videoId: "uQgPwASdn5U"
+  }
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
 const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
 const articleTags = [...new Set(articles.flatMap(a => a.data.tags))].sort();
 
@@ -183,10 +243,46 @@ const extractYouTubeVideos = (content: string) => {
         <!-- Videos Tab Content -->
         <div id="videos-tab" class="tab-content">
             <div class="playlist-container">
+                {additionalVideos.map((video, index) => (
+                    <div class="playlist-item video" data-index={index}>
+                        <div class="playlist-info">
+                            <div class="playlist-title">{video.title}</div>
+                            <div class="playlist-subtitle">{video.subtitle}</div>
+                            <div class="playlist-meta">
+                                <span class="playlist-author">{video.author}</span>
+                                <span class="playlist-date">{formatDate(video.date)}</span>
+                            </div>
+                            <div class="playlist-tags">
+                                {video.tags.map(tag => (
+                                    <span class="tag">{tag}</span>
+                                ))}
+                            </div>
+                        </div>
+                        <div class="playlist-player">
+                            <div class="video-thumbnails">
+                                <a 
+                                    href={`https://www.youtube.com/watch?v=${video.videoId}`} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="video-thumbnail"
+                                >
+                                    <img 
+                                        src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`} 
+                                        alt="YouTube video thumbnail"
+                                        loading="lazy"
+                                    />
+                                    <div class="video-play-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                ))}
                 {videoArticles.map((article, index) => {
                     const videoIds = extractYouTubeVideos(article.body);
                     return (
-                        <div class="playlist-item video" data-index={index}>
+                        <div class="playlist-item video" data-index={index + additionalVideos.length}>
                             <div class="playlist-info">
                                 <div class="playlist-title">{article.data.title}</div>
                                 <div class="playlist-subtitle">{article.data.subtitle}</div>
