@@ -7,12 +7,31 @@ const posts = await getCollection('posts');
 const audioArticles = articles.filter(a => a.data.audio);
 const podcastArticles = articles.filter(a => a.data.podcast);
 
+// Extract YouTube videos from articles
+const videoArticles = articles
+  .filter(article => {
+    const content = article.body;
+    return content.includes('youtube.com') || content.includes('youtu.be');
+  })
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
 const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
 const articleTags = [...new Set(articles.flatMap(a => a.data.tags))].sort();
 
 const formatDate = (dateStr: string) => {
   const date = new Date(dateStr);
   return date.toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' });
+};
+
+// Extract YouTube video IDs from content
+const extractYouTubeVideos = (content: string) => {
+  const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/g;
+  const matches = [];
+  let match;
+  while ((match = youtubeRegex.exec(content)) !== null) {
+    matches.push(match[1]);
+  }
+  return matches;
 };
 ---
 
@@ -38,6 +57,7 @@ const formatDate = (dateStr: string) => {
                 <button class="tab-button" data-tab="articles"><i class="fas fa-newspaper"></i>Articles</button>
                 <button class="tab-button" data-tab="audio"><i class="fas fa-headphones"></i>Audio</button>
                 <button class="tab-button" data-tab="podcasts"><i class="fas fa-podcast"></i>Podcasts</button>
+                <button class="tab-button" data-tab="videos"><i class="fas fa-video"></i>Videos</button>
             </div>
         </div>
         
@@ -157,6 +177,53 @@ const formatDate = (dateStr: string) => {
                         </div>
                     </div>
                 ))}
+            </div>
+        </div>
+        
+        <!-- Videos Tab Content -->
+        <div id="videos-tab" class="tab-content">
+            <div class="playlist-container">
+                {videoArticles.map((article, index) => {
+                    const videoIds = extractYouTubeVideos(article.body);
+                    return (
+                        <div class="playlist-item video" data-index={index}>
+                            <div class="playlist-info">
+                                <div class="playlist-title">{article.data.title}</div>
+                                <div class="playlist-subtitle">{article.data.subtitle}</div>
+                                <div class="playlist-meta">
+                                    <span class="playlist-author">{article.data.author}</span>
+                                    <span class="playlist-date">{formatDate(article.data.date)}</span>
+                                </div>
+                                <div class="playlist-tags">
+                                    {article.data.tags.map(tag => (
+                                        <span class="tag">{tag}</span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div class="playlist-player">
+                                <div class="video-thumbnails">
+                                    {videoIds.map(videoId => (
+                                        <a 
+                                            href={`https://www.youtube.com/watch?v=${videoId}`} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            class="video-thumbnail"
+                                        >
+                                            <img 
+                                                src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`} 
+                                                alt="YouTube video thumbnail"
+                                                loading="lazy"
+                                            />
+                                            <div class="video-play-icon">
+                                                <i class="fas fa-play"></i>
+                                            </div>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     </div>
