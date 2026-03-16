@@ -9,15 +9,7 @@ const posts = await getCollection('posts');
 const audioArticles = articles.filter(a => a.data.audio);
 const podcastArticles = articles.filter(a => a.data.podcast);
 
-// Extract YouTube videos from articles
-const videoArticles = articles
-  .filter(article => {
-    const content = article.body;
-    return content.includes('youtube.com') || content.includes('youtu.be');
-  })
-  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
-
-// Additional videos from user-provided list
+const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
 const additionalVideos = [
   {
     title: "8 Crucial Insights from Building an AI-Infused App",
@@ -77,23 +69,11 @@ const additionalVideos = [
   }
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
 const articleTags = [...new Set(articles.flatMap(a => a.data.tags))].sort();
 
 const formatDate = (dateStr: string) => {
   const date = new Date(dateStr);
   return date.toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' });
-};
-
-// Extract YouTube video IDs from content
-const extractYouTubeVideos = (content: string) => {
-  const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/g;
-  const matches = [];
-  let match;
-  while ((match = youtubeRegex.exec(content)) !== null) {
-    matches.push(match[1]);
-  }
-  return matches;
 };
 ---
 
@@ -284,51 +264,7 @@ const extractYouTubeVideos = (content: string) => {
                         </div>
                     </div>
                 ))}
-                {videoArticles.map((article, index) => {
-                    const videoIds = extractYouTubeVideos(article.body);
-                    return (
-                        <div class="video-card" data-index={index + additionalVideos.length}>
-                            <div class="video-thumbnail-container">
-                                {videoIds.map(videoId => (
-                                    <a 
-                                        key={videoId}
-                                        href={`https://www.youtube.com/watch?v=${videoId}`} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        class="video-thumbnail-link"
-                                    >
-                                        <img 
-                                            src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`} 
-                                            alt={article.data.title}
-                                            loading="lazy"
-                                            class="video-thumbnail"
-                                        />
-                                        <div class="video-play-overlay">
-                                            <i class="fas fa-play"></i>
-                                        </div>
-                                    </a>
-                                ))}
-                            </div>
-                            <div class="video-info">
-                                <h3 class="video-title">
-                                    <a href={`/articles/${article.slug}`} target="_blank" rel="noopener noreferrer">
-                                        {article.data.title}
-                                    </a>
-                                </h3>
-                                <p class="video-subtitle">{article.data.subtitle}</p>
-                                <div class="video-meta">
-                                    <span class="video-author">by {article.data.author}</span>
-                                    <span class="video-date">{formatDate(article.data.date)}</span>
-                                </div>
-                                <div class="video-tags">
-                                    {article.data.tags.map(tag => (
-                                        <span class="tag">{tag}</span>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    );
-                })}
+
             </div>
         </div>
     </div>
