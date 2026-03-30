@@ -1,9 +1,12 @@
 ---
+
 title: "Eight Essential Rules for Mastering Ethical UX Design"
+audio: "a7d66894_audio.mp3"
 subtitle: "Reflecting on the work of many others and my own work within the field, I have distilled the following rules to act as a guide"
 date: "21 Apr 2023"
 author: "sharanx"
 tags: ["ux","ethics"]
+
 ---
 
 # Introduction

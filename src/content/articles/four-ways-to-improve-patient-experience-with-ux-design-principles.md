@@ -1,9 +1,12 @@
 ---
+
 title: "Four Ways to Improve Patient Experience with UX Design Principles"
+audio: "06cdbb56_audio.mp3"
 subtitle: "Post my experience in designing an interface for a birthing hospital the importance of UX in this space was highlighted."
 date: "21 Feb 2019"
 author: "sharanx"
 tags: ["design","ux"]
+
 ---
 
 At 37, Anu is having her first pregnancy. She’s nervous. She relies on her hospital for timely support and information. But she has to wait three hours for an appointment and doesn’t get notifications. She plans to renege.

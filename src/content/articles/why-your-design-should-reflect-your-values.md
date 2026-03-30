@@ -1,9 +1,12 @@
 ---
+
 title: "Why Your Design Should Reflect Your Values"
+audio: "8d2a002d_audio.mp3"
 subtitle: "User experience designers who are designing these experiences have their own world views that shape their designs. This is the right thing to do."
 date: "05 Apr 2019"
 author: "sharanx"
 tags: ["design","ux","opinion"]
+
 ---
 
 ## INTRODUCTION

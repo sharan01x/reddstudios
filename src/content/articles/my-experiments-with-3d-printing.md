@@ -1,9 +1,12 @@
 ---
+
 title: "My experiments with 3D printing"
+audio: "da3183bf_audio.mp3"
 subtitle: "My foray into the world of 3D printing and my learnings and insights so far. This is work in progress and will continue to be edited."
 date: "24 Jan 2024"
 author: "sharanx"
 tags: ["3D","design"]
+
 ---
 
 # 3D Printing: A Journey into a Promising, Yet Challenging Field

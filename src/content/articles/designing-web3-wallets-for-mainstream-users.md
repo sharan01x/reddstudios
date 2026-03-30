@@ -1,9 +1,12 @@
 ---
+
 title: "Designing Web3 Wallets for Mainstream Users"
+audio: "73374960_audio.mp3"
 subtitle: "There is a problem with Web3 wallets, they're just too complex. But where's the problem stemming from and how do we solve it?"
 date: "30 Sept 2024"
 author: "sharanx"
 tags: ["design"]
+
 ---
 
 # Web3 Wallets for Mainstream Users

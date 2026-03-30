@@ -81,7 +81,7 @@ const formatDate = (dateStr: string) => {
     <div class="container">
         <div class="header">
             <h1>Redd XF</h1>
-            <div class="subtitle">Building startups, pushing pixels, slicing videos, compiling code or writing verse.</div>
+            <div class="subtitle">For Designers Who Build</div>
             <div style="margin-top: 20px;">
                 <a href="https://reddxf.substack.com" class="rss-link" target="_blank" rel="noopener">
                     <i class="fas fa-envelope"></i> Subscribe
@@ -144,7 +144,7 @@ const formatDate = (dateStr: string) => {
                 {articles.map((article) => (
                     <div class="article-item" data-tags={article.data.tags.join(' ')}>
                         <div class="article-header">
-                            <h2><a href={`/articles/${article.slug}`}>{article.data.title}</a></h2>
+                            <h2><a href={`/articles/${article.id.replace(/\.md$/, '')}`}>{article.data.title}</a></h2>
                             <div class="article-subtitle">{article.data.subtitle}</div>
                         </div>
                         <div class="article-meta">

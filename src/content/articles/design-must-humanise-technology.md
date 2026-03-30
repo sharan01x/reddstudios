@@ -1,9 +1,12 @@
 ---
+
 title: "Design Must Humanise Technology"
+audio: "ca5c7260_audio.mp3"
 subtitle: "Technology must function within the world of regular people"
 date: "05 Dec 2016"
 author: "sharanx"
 tags: ["technology","design","ux"]
+
 ---
 
 To humanise technology is to make technology function within the framework defined by the capabilities and limitations of regular people. 

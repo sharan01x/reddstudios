@@ -1,9 +1,12 @@
 ---
+
 title: "A Curated List of Videos to Understand Crypto"
+audio: "e34914e0_audio.mp3"
 subtitle: "This list of videos will help you understand crypto and Web3 better."
 date: "11 Oct 2022"
 author: "sharanx"
 tags: ["crypto","web3","banking","decentralisation","finance","technology"]
+
 ---
 
 # The Basics of Crypto

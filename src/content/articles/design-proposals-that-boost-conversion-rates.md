@@ -1,9 +1,12 @@
 ---
+
 title: "Design Proposals that Boost Conversion Rates"
+audio: "863de098_audio.mp3"
 subtitle: "Building proposal templates takes a lot of effort and you're still left unsure of whether you've done it right. This article tries to help you fix that."
 date: "05 Nov 2024"
 author: "sharanx"
 tags: ["design","business"]
+
 ---
 
 # Creating a Winning UX Design Proposal: A Comprehensive Guide

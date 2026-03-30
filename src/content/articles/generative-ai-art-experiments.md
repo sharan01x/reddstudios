@@ -1,9 +1,12 @@
 ---
+
 title: "Generative AI Art Experiments"
+audio: "59086f30_audio.mp3"
 subtitle: "Artificial Intelligence (AI) based design tools have captivated our collective imagination in the field of design. Here are my experiments."
 date: "13 Jul 2023"
 author: "sharanx"
 tags: ["technology","art"]
+
 ---
 
 # Introduction

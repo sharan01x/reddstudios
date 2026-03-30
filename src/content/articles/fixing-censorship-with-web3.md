@@ -1,9 +1,12 @@
 ---
+
 title: "Fixing Censorship with Web3"
+audio: "12dc2f19_audio.mp3"
 subtitle: "It’s important to keep striving for better models of censorship that can benefit society without infringing on individual rights and freedoms."
 date: "28 Feb 2023"
 author: "sharanx"
 tags: ["opinion","decentralisation","web3","design","censorship"]
+
 ---
 
 # Introduction

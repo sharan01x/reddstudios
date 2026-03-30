@@ -1,9 +1,12 @@
 ---
+
 title: "The Age of Goal Based Computing is Here"
+audio: "11f0598d_audio.mp3"
 subtitle: "Among the many things AI has enabled, it has now made possible an entirely new method of interacting with our computers."
 date: "17 Apr 2025"
 author: "sharanx"
 tags: ["design","ux","ai"]
+
 ---
 
 # Introduction

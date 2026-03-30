@@ -1,9 +1,12 @@
 ---
+
 title: "DIY: A Raspberry Pi based Time Capsule"
+audio: "97027e0b_audio.mp3"
 subtitle: "I built an efficient Apple Time Capsule clone that will perform the task of allowing any externally connected hard drive to be used as a backup destination using the Time Machine setup on your Mac."
 date: "04 Aug 2024"
 author: "sharanx"
 tags: ["DIY","product","design"]
+
 ---
 
 ## What this is

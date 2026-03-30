@@ -6,7 +6,6 @@ author: "sharanx"
 tags: ["ux","design","product"]
 audio: "4222f787_audio.mp3"
 ---
-
 The Apple Newton was a revolutionary product that was packed with cutting edge technology like touch screens, handwriting recognition and wireless data transfer. It was well ahead of everyone else and was defining a brand new product category. It failed. But not only that, other companies launched only three years later with almost identical products ended up succeeding. This is one of the strangest things that seem to happen in product companies and I wish I had figured out the answer before I did, as it would have saved me making the same mistake two times.
 
 ## Obi: A Learning Experience

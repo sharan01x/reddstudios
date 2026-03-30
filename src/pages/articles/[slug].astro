@@ -1,17 +1,17 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
     const articles = await getCollection('articles');
     return articles.map(article => ({
-        params: { slug: article.slug },
+        params: { slug: article.id.replace(/\.md$/, '') },
         props: { article },
     }));
 }
 
 const { article } = Astro.props;
-const { Content } = await article.render();
+const { Content } = await render(article);
 
 const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
@@ -70,7 +70,7 @@ const formatDate = (dateStr: string) => {
                                 <i class="fas fa-volume-up"></i>&nbsp;Reader
                             </div>
                             <audio controls preload="metadata">
-                                <source src={article.data.audio} type="audio/mpeg">
+                                <source src={`/${article.data.audio}`} type="audio/mpeg">
                                 Your browser does not support audio.
                             </audio>
                         </div>
@@ -80,7 +80,7 @@ const formatDate = (dateStr: string) => {
                                     <i class="fas fa-podcast"></i>&nbsp;Podcast
                                 </div>
                                 <audio controls preload="metadata">
-                                    <source src={article.data.podcast} type="audio/mpeg">
+                                    <source src={`/${article.data.podcast}`} type="audio/mpeg">
                                     Your browser does not support audio.
                                 </audio>
                             </div>

@@ -1,9 +1,12 @@
 ---
+
 title: "The Five Promises of Technology"
+audio: "636215fd_audio.mp3"
 subtitle: "Having a framework to evaluate the use of technology is useful in evaluating how it can be employed"
 date: "10 Jan 2019"
 author: "sharanx"
 tags: ["technology","opinion"]
+
 ---
 
 # Introduction

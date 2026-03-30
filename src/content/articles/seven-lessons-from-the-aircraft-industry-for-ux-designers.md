@@ -1,9 +1,12 @@
 ---
+
 title: "Seven Lessons from the Aircraft Industry for UX Designers"
+audio: "db1a8b10_audio.mp3"
 subtitle: "There are a lot of things that have happened in the aircraft industry that apply in the user experience design field"
 date: "04 Apr 2017"
 author: "sharanx"
 tags: ["design","ux"]
+
 ---
 
 # Introduction

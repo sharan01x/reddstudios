@@ -1,9 +1,12 @@
 ---
+
 title: "Co-existence of Voice Interfaces in Apps"
+audio: "3affedad_audio.mp3"
 subtitle: "While every sci-fi show depicts Voice Interfaces as the future as it seemingly makes for very simple interactions with devices. I examine this idea."
 date: "23 Aug 2019"
 author: "sharanx"
 tags: ["design","ux","voice"]
+
 ---
 
 # Introduction

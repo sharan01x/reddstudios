@@ -1,9 +1,12 @@
 ---
+
 title: "Seven Structural Elements to Keep in Mind for Web3 UX Design"
+audio: "c763e555_audio.mp3"
 subtitle: "The structure of web3 influences the design of the applications"
 date: "12 Feb 2023"
 author: "sharanx"
 tags: ["ux","web3","decentralisation","design"]
+
 ---
 
 # Introduction

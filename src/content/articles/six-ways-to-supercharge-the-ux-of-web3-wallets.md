@@ -1,9 +1,12 @@
 ---
+
 title: "Six Ways to Supercharge the UX of Web3 Wallets"
+audio: "6aed0a39_audio.mp3"
 subtitle: "Wallets are the entry point to web3 and they shoulder a huge responsibility"
 date: "22 Jun 2022"
 author: "sharanx"
 tags: ["design","ux","web3","decentralisation","crypto"]
+
 ---
 
 # Let’s Set the Context

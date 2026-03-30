@@ -1,9 +1,12 @@
 ---
+
 title: "Better tools should be better employed"
+audio: "fed1f4a9_audio.mp3"
 subtitle: "When you have access to tools that provide you unlimited capability, how should these tools be used."
 date: "29 Jun 2023"
 author: "sharanx"
 tags: ["ux","opinion"]
+
 ---
 
 # Introduction

@@ -4,7 +4,7 @@ subtitle: "Discover the critical lessons gained from developing a cutting-edge a
 date: "04 Aug 2025"
 author: "sharanx"
 tags: ["ai","design","technology"]
-audio: "3e62d0c6_audio.mp3"
+audio: "f5ab62b5_audio.mp3"
 podcast: "3e62d0c6_podcast.mp3"
 ---
 
