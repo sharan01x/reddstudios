@@ -6,7 +6,6 @@ subtitle: "There is a problem with Web3 wallets, they're just too complex. But w
 date: "30 Sept 2024"
 author: "sharanx"
 tags: ["design"]
-image: "40599a8c_AuditOneProjectSheet-1.webp"
 
 ---
 
