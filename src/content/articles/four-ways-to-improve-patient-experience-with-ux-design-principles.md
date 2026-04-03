@@ -6,6 +6,7 @@ subtitle: "Post my experience in designing an interface for a birthing hospital 
 date: "21 Feb 2019"
 author: "sharanx"
 tags: ["design","ux"]
+image: "c1af5dc6_Healthcare-2.webp"
 
 ---
 

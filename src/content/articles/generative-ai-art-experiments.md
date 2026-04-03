@@ -6,6 +6,7 @@ subtitle: "Artificial Intelligence (AI) based design tools have captivated our c
 date: "13 Jul 2023"
 author: "sharanx"
 tags: ["technology","art"]
+image: "d8ae5f1e_GenerativeAIArt-2.webp"
 
 ---
 

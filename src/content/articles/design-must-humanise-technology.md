@@ -6,6 +6,7 @@ subtitle: "Technology must function within the world of regular people"
 date: "05 Dec 2016"
 author: "sharanx"
 tags: ["technology","design","ux"]
+image: "9f31ab4a_Humanise-2.webp"
 
 ---
 

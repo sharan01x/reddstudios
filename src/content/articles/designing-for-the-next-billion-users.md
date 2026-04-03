@@ -6,6 +6,7 @@ subtitle: "These next big wave of users is coming not from the west but from the
 date: "17 Oct 2019"
 author: "sharanx"
 tags: ["design","ux"]
+image: "37f872a3_DesigningForBillionUsers-2.webp"
 
 ---
 

@@ -6,6 +6,7 @@ subtitle: "Something as important as voting is fraught with UX problems and the 
 date: "30 May 2019"
 author: "sharanx"
 tags: ["society","ux","design"]
+image: "606545a5_VotingUX-2.webp"
 
 ---
 

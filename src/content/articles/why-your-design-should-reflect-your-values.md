@@ -6,6 +6,7 @@ subtitle: "User experience designers who are designing these experiences have th
 date: "05 Apr 2019"
 author: "sharanx"
 tags: ["design","ux","opinion"]
+image: "915d435a_DesignReflectValues-2.webp"
 
 ---
 

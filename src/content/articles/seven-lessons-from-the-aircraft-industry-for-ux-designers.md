@@ -6,6 +6,7 @@ subtitle: "There are a lot of things that have happened in the aircraft industry
 date: "04 Apr 2017"
 author: "sharanx"
 tags: ["design","ux"]
+image: "b21695b0_Aircraft-3.webp"
 
 ---
 

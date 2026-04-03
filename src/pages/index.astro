@@ -143,18 +143,27 @@ const formatDate = (dateStr: string) => {
             <div class="articles-list">
                 {articles.map((article) => (
                     <div class="article-item" data-tags={article.data.tags.join(' ')}>
-                        <div class="article-header">
-                            <h2><a href={`/articles/${article.id.replace(/\.md$/, '')}`}>{article.data.title}</a></h2>
-                            <div class="article-subtitle">{article.data.subtitle}</div>
-                        </div>
-                        <div class="article-meta">
-                            <span class="article-date">{formatDate(article.data.date)}</span>
-                            <span class="article-author">by {article.data.author}</span>
-                        </div>
-                        <div class="article-tags">
-                            {article.data.tags.map(tag => (
-                                <span class="tag">{tag}</span>
-                            ))}
+                        {article.data.image && (
+                            <div class="article-image">
+                                <a href={`/articles/${article.id.replace(/\.md$/, '')}`}>
+                                    <img src={`/${article.data.image}`} alt={article.data.title} loading="lazy">
+                                </a>
+                            </div>
+                        )}
+                        <div class="article-content">
+                            <div class="article-header">
+                                <h2><a href={`/articles/${article.id.replace(/\.md$/, '')}`}>{article.data.title}</a></h2>
+                                <div class="article-subtitle">{article.data.subtitle}</div>
+                            </div>
+                            <div class="article-meta">
+                                <span class="article-date">{formatDate(article.data.date)}</span>
+                                <span class="article-author">by {article.data.author}</span>
+                            </div>
+                            <div class="article-tags">
+                                {article.data.tags.map(tag => (
+                                    <span class="tag">{tag}</span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}

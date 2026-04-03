@@ -6,6 +6,7 @@ subtitle: "Examining whether there's a packaging problem"
 date: "18 Jul 2023"
 author: "sharanx"
 tags: ["opinion","society"]
+image: "f9cca0fc_Pencil-sketch-of-a-happy-couple-sitting-across-each-other-at-a-sidewalk-cafe-in-a-European-city-with-2.jpeg.webp"
 
 ---
 

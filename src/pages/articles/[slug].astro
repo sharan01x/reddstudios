@@ -26,6 +26,12 @@ const formatDate = (dateStr: string) => {
 
     <div class="container">
         <div class="article-card">
+            {article.data.image && (
+                <div class="featured-image-container">
+                    <img src={`/${article.data.image}`} alt={article.data.title} class="featured-image" />
+                </div>
+            )}
+            
             <div class="header">
                 <h1>{article.data.title}</h1>
                 <div class="subtitle">{article.data.subtitle}</div>

@@ -160,9 +160,29 @@ a:hover { opacity: 0.65; }
     padding: 24px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
     transition: border-color 0.2s;
 }
 .article-item:hover { border-color: #ccc; }
+
+/* Article image in listing */
+.article-image {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.article-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
+.article-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .article-header h2 {
     margin: 0 0 6px 0;
     font-size: 1.25rem;
@@ -431,6 +451,19 @@ a:hover { opacity: 0.65; }
 .article-card {
     background: transparent;
     margin-bottom: 20px;
+}
+
+/* Featured Image */
+.featured-image-container {
+    margin: 0 0 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.featured-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .tags-display-view {

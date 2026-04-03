@@ -6,6 +6,7 @@ subtitle: "When you have access to tools that provide you unlimited capability, 
 date: "29 Jun 2023"
 author: "sharanx"
 tags: ["ux","opinion"]
+image: "08134e4f_BetterTools-2.webp"
 
 ---
 
