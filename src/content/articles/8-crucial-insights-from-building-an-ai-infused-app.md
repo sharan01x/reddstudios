@@ -1,11 +1,15 @@
 ---
-title: "8 Crucial Insights from Building an AI-Infused App"
-subtitle: "Discover the critical lessons gained from developing a cutting-edge application in the evolving landscape of programming"
-date: "04 Aug 2025"
-author: "sharanx"
-tags: ["ai","design","technology"]
-audio: "f5ab62b5_audio.mp3"
-podcast: "3e62d0c6_podcast.mp3"
+title: 8 Crucial Insights from Building an AI-Infused App
+subtitle: Discover the critical lessons gained from developing a cutting-edge application in the evolving landscape of programming
+date: 04 Aug 2025
+author: sharanx
+tags:
+  - ai
+  - design
+  - technology
+audio: f5ab62b5_audio.mp3
+podcast: 3e62d0c6_podcast.mp3
+image: 8-crucial-insights.png
 ---
 
 # Introduction

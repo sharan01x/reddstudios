@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "evolution-not-revolution.md",
+                "file": "diy-a-raspberry-pi-based-time-capsule.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "evolution-not-revolution"
+              "title": "diy-a-raspberry-pi-based-time-capsule"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -185,8 +185,10 @@
   },
   "active": "ba9794210f54f35c",
   "lastOpenFiles": [
-    "the-five-promises-of-technology.md",
+    "evolution-not-revolution.md",
+    "review-of-replit-the-figma-killer.md",
     "8-crucial-insights-from-building-an-ai-infused-app.md",
-    "evolution-not-revolution.md"
+    "UX Designers - Adapt or Die.md",
+    "the-five-promises-of-technology.md"
   ]
 }

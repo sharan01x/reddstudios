@@ -1,10 +1,16 @@
 ---
-title: "Review of Replit, the Figma Killer"
-subtitle: "Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true."
-date: "31 Jul 2025"
-author: "sharanx"
-tags: ["design","ux","ai","tools","technology"]
-audio: "99458576_audio.mp3"
+title: Review of Replit, the Figma Killer
+subtitle: Replit has been thought of as a tool that will replace Figma. I tested it out to see if that is true.
+date: 31 Jul 2025
+author: sharanx
+tags:
+  - design
+  - ux
+  - ai
+  - tools
+  - technology
+audio: 99458576_audio.mp3
+image: review-of-rabbit-r1.png
 ---
 
 # Introduction
