@@ -6,6 +6,7 @@ author: "sharanx"
 tags:
   - ai
   - design
+draft: true
 image: "ux-designers-adapt-or-die.png"
 audio: "ux-designers-adapt-or-die.mp3"
 ---
