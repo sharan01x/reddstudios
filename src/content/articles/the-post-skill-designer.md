@@ -1,7 +1,8 @@
 ---
 title: The Post-Skill Designer
 subtitle: "From tool mastery to strategic thinking — why designers must evolve beyond the 'how' to own the 'why'"
-date: 2026-04-03
+date: 06 Apr 2026
+author: sharanx
 tags:
   - ai
   - design
