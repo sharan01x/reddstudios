@@ -7,6 +7,7 @@ tags:
   - ai
   - design
 image: "the-post-skill-designer.png"
+audio: ef5c5748_audio.mp3
 ---
 # A Rude Awakening
 
