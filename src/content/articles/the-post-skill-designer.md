@@ -1,7 +1,7 @@
 ---
 title: The Post-Skill Designer
-created_at: 2026-04-03
-updated_at: 2026-04-04
+subtitle: "From tool mastery to strategic thinking — why designers must evolve beyond the 'how' to own the 'why'"
+date: 2026-04-03
 tags:
   - ai
   - design
