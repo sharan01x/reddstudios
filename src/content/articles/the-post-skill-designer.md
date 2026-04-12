@@ -48,7 +48,7 @@ I've learnt that taste is a skill that is developed by working on three things:
 
 All of these are things that can be taught. When training humans, you explain the science behind human perception and then expose them to hundreds and thousands of examples -- essentially pattern recognition and then they are capable of producing tasteful work. If it is pattern recognition, then we're in the domain of machine learning and AI. It has been proven time and again that the outputs from these generative engines are indistinguishable from those produced by humans. So, if the output from this is indistinguishable from the human generated version, by definition, it cannot be the differentiator. 
 
-Therefore even taste delivered by AI will soon (if not already) hit the "good enough" threshold. This is why I wouldn't stake my flag on this particular quality in the long term.
+Therefore even taste delivered by AI will soon (if not already) hit the "good enough" threshold. While some designers will remain and serve the need here, they will be serving an ever diminishing size of market. And when it comes to UX designers specifically, we've got the additional threat of interfaces completely disappearing as agents acting on behalf of uses using other applications solely through Application Programming Interfaces (APIs). This is why I wouldn't stake my flag on this particular quality in the long term.
 
 ## Beyond the Function
 
