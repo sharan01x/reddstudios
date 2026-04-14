@@ -12,6 +12,14 @@ const podcastArticles = articles.filter(a => a.data.podcast);
 const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
 const additionalVideos = [
   {
+    title: "The Post-Skill Designer",
+    subtitle: "From tool mastery to strategic thinking — why designers must evolve beyond the 'how' to own the 'why'",
+    date: "12 Apr 2026",
+    author: "sharanx",
+    tags: ["ai", "design"],
+    videoId: "DJxPsWgtEdc"
+  },
+  {
     title: "8 Crucial Insights from Building an AI-Infused App",
     subtitle: "Discover the critical lessons gained from developing a cutting-edge application in the evolving landscape of programming",
     date: "04 Aug 2025",
@@ -95,45 +103,16 @@ const formatDate = (dateStr: string) => {
         <!-- Tabs Navigation -->
         <div class="tabs-container">
             <div class="tabs-nav">
-                <button class="tab-button active" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</button>
-                <button class="tab-button" data-tab="articles"><i class="fas fa-newspaper"></i>Articles</button>
+                <button class="tab-button active" data-tab="articles"><i class="fas fa-newspaper"></i>Articles</button>
                 <button class="tab-button" data-tab="audio"><i class="fas fa-headphones"></i>Audio</button>
                 <button class="tab-button" data-tab="podcasts"><i class="fas fa-podcast"></i>Podcasts</button>
                 <button class="tab-button" data-tab="videos"><i class="fas fa-video"></i>Videos</button>
-            </div>
-        </div>
-        
-        <!-- Posts Tab Content -->
-        <div id="posts-tab" class="tab-content active">
-            <div class="tags-cloud">
-                <button class="tag-filter active" data-tag="all">All</button>
-                {allTags.map(tag => (
-                    <button class="tag-filter" data-tag={tag}>#{tag}</button>
-                ))}
-            </div>
-            <div class="posts-grid">
-                {posts.map((post, index) => (
-                    <div class="post-card" data-tags={post.data.tags.join(' ')}>
-                        {post.data.image && (
-                            <div class="post-image">
-                                <img src={post.data.image} alt="" loading="lazy">
-                            </div>
-                        )}
-                        <div class="post-body">
-                            <div class={`post-content ${!post.data.image ? 'post-content--no-image' : ''} ${post.body.length < 200 ? 'post-content--short' : ''}`}>
-                                {post.body}
-                            </div>
-                            <div class="post-meta">
-                                <span class="post-date">{formatDate(post.data.date)}</span>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+                <button class="tab-button" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</button>
             </div>
         </div>
         
         <!-- Articles Tab Content -->
-        <div id="articles-tab" class="tab-content">
+        <div id="articles-tab" class="tab-content active">
             <div class="tags-cloud" id="articles-tags-cloud">
                 <button class="tag-filter active" data-tag="all" data-scope="articles">All</button>
                 {articleTags.map(tag => (
@@ -274,6 +253,35 @@ const formatDate = (dateStr: string) => {
                     </div>
                 ))}
 
+            </div>
+        </div>
+        
+        <!-- Posts Tab Content -->
+        <div id="posts-tab" class="tab-content">
+            <div class="tags-cloud">
+                <button class="tag-filter active" data-tag="all">All</button>
+                {allTags.map(tag => (
+                    <button class="tag-filter" data-tag={tag}>#{tag}</button>
+                ))}
+            </div>
+            <div class="posts-grid">
+                {posts.map((post, index) => (
+                    <div class="post-card" data-tags={post.data.tags.join(' ')}>
+                        {post.data.image && (
+                            <div class="post-image">
+                                <img src={post.data.image} alt="" loading="lazy">
+                            </div>
+                        )}
+                        <div class="post-body">
+                            <div class={`post-content ${!post.data.image ? 'post-content--no-image' : ''} ${post.body.length < 200 ? 'post-content--short' : ''}`}>
+                                {post.body}
+                            </div>
+                            <div class="post-meta">
+                                <span class="post-date">{formatDate(post.data.date)}</span>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     </div>
