@@ -58,4 +58,4 @@ Jobs that were centred around skill, the domain of "how" something is done, will
 
 Organisations of the future will follow a similar path. We don't need to do the work of learning different tools, processes and skills. That's going to be abstracted away. So, when creation becomes easy, there's nothing to celebrate in the act of simply bringing something to life. The harder question is and has always been the "why" behind it all and we now get to focus on that. We need to go from the brush and the canvas to the very reason for painting at all. 
 
-Stop asking how something should be done and start asking what problem you're really solving and solve that whether it belongs within the "UX Designer" function or not. Incidentally, that's the real moat.
+So, we've got to stop asking how something should be done and start asking what problem you're really solving and solve that whether it belongs within the "UX Designer" function or not. Put simply, we've got to become entrepreneurs, and that's the real moat.
