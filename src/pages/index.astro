@@ -435,13 +435,13 @@ const formatDate = (dateStr: string) => {
         // Handle tab activation from URL hash on page load
         function initTabFromHash() {
             const hash = window.location.hash.slice(1); // Remove '#'
-            activateTab(hash || 'posts');
+            activateTab(hash || 'articles');
         }
         
         // Listen for hash changes (e.g., browser back/forward)
         window.addEventListener('hashchange', () => {
             const hash = window.location.hash.slice(1);
-            activateTab(hash || 'posts');
+            activateTab(hash || 'articles');
         });
         
         // Initialize on page load
