@@ -100,6 +100,11 @@ const formatDate = (dateStr: string) => {
             </div>
         </div>
         
+        <!-- Mobile Hamburger Menu -->
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        
         <!-- Tabs Navigation -->
         <div class="tabs-container">
             <div class="tabs-nav">
@@ -109,6 +114,15 @@ const formatDate = (dateStr: string) => {
                 <button class="tab-button" data-tab="videos"><i class="fas fa-video"></i>Videos</button>
                 <button class="tab-button" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</button>
             </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu-dropdown">
+            <button class="mobile-menu-item active" data-tab="articles"><i class="fas fa-newspaper"></i>Articles</button>
+            <button class="mobile-menu-item" data-tab="audio"><i class="fas fa-headphones"></i>Audio</button>
+            <button class="mobile-menu-item" data-tab="podcasts"><i class="fas fa-podcast"></i>Podcasts</button>
+            <button class="mobile-menu-item" data-tab="videos"><i class="fas fa-video"></i>Videos</button>
+            <button class="mobile-menu-item" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</button>
         </div>
         
         <!-- Articles Tab Content -->
@@ -292,9 +306,13 @@ const formatDate = (dateStr: string) => {
     function activateTab(tabName) {
         const tabButtons = document.querySelectorAll('.tab-button');
         const tabContents = document.querySelectorAll('.tab-content');
+        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
         
         tabButtons.forEach(button => {
             button.classList.remove('active');
+        });
+        mobileMenuItems.forEach(item => {
+            item.classList.remove('active');
         });
         tabContents.forEach(content => {
             content.classList.remove('active');
@@ -303,6 +321,11 @@ const formatDate = (dateStr: string) => {
         const targetButton = document.querySelector(`.tab-button[data-tab="${tabName}"]`);
         if (targetButton) {
             targetButton.classList.add('active');
+        }
+        
+        const targetMobileItem = document.querySelector(`.mobile-menu-item[data-tab="${tabName}"]`);
+        if (targetMobileItem) {
+            targetMobileItem.classList.add('active');
         }
         
         const targetContent = document.getElementById(`${tabName}-tab`);
@@ -314,17 +337,67 @@ const formatDate = (dateStr: string) => {
     document.addEventListener('DOMContentLoaded', function() {
         const tabButtons = document.querySelectorAll('.tab-button');
         const tabContents = document.querySelectorAll('.tab-content');
+        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenuDropdown = document.querySelector('.mobile-menu-dropdown');
         
+        // Desktop tab buttons
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const tab = button.dataset.tab;
                 
                 tabButtons.forEach(b => b.classList.remove('active'));
+                mobileMenuItems.forEach(m => m.classList.remove('active'));
                 tabContents.forEach(c => c.classList.remove('active'));
                 
                 button.classList.add('active');
                 document.getElementById(`${tab}-tab`)?.classList.add('active');
+                
+                // Update mobile menu item
+                const mobileItem = document.querySelector(`.mobile-menu-item[data-tab="${tab}"]`);
+                if (mobileItem) {
+                    mobileItem.classList.add('active');
+                }
             });
+        });
+        
+        // Mobile menu items
+        mobileMenuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const tab = item.dataset.tab;
+                
+                tabButtons.forEach(b => b.classList.remove('active'));
+                mobileMenuItems.forEach(m => m.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                item.classList.add('active');
+                document.getElementById(`${tab}-tab`)?.classList.add('active');
+                
+                // Update desktop tab button
+                const desktopButton = document.querySelector(`.tab-button[data-tab="${tab}"]`);
+                if (desktopButton) {
+                    desktopButton.classList.add('active');
+                }
+                
+                // Close mobile menu
+                mobileMenuDropdown?.classList.remove('active');
+                if (mobileMenuToggle) {
+                    mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+        
+        // Mobile menu toggle
+        mobileMenuToggle?.addEventListener('click', () => {
+            const isActive = mobileMenuDropdown?.classList.contains('active');
+            
+            if (isActive) {
+                mobileMenuDropdown?.classList.remove('active');
+                mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            } else {
+                mobileMenuDropdown?.classList.add('active');
+                mobileMenuToggle.innerHTML = '<i class="fas fa-times"></i>';
+            }
         });
         
         const tagFilters = document.querySelectorAll('.tag-filter');
