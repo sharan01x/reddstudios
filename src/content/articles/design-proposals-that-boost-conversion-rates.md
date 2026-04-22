@@ -6,6 +6,7 @@ subtitle: "Building proposal templates takes a lot of effort and you're still le
 date: "05 Nov 2024"
 author: "sharanx"
 tags: ["design","business"]
+image: "design-proposals-conversion.png"
 
 ---
 

@@ -6,6 +6,7 @@ subtitle: "It’s important to keep striving for better models of censorship tha
 date: "28 Feb 2023"
 author: "sharanx"
 tags: ["opinion","decentralisation","web3","design","censorship"]
+image: "fixing-censorship-web3.png"
 
 ---
 

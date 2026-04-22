@@ -6,6 +6,7 @@ subtitle: "My foray into the world of 3D printing and my learnings and insights 
 date: "24 Jan 2024"
 author: "sharanx"
 tags: ["3D","design"]
+image: "3d-printing-experiments.png"
 
 ---
 

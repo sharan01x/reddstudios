@@ -6,6 +6,7 @@ subtitle: "Among the many things AI has enabled, it has now made possible an ent
 date: "17 Apr 2025"
 author: "sharanx"
 tags: ["design","ux","ai"]
+image: "goal-based-computing.png"
 
 ---
 

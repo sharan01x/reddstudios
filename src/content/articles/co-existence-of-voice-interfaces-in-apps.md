@@ -6,6 +6,7 @@ subtitle: "While every sci-fi show depicts Voice Interfaces as the future as it 
 date: "23 Aug 2019"
 author: "sharanx"
 tags: ["design","ux","voice"]
+image: "co-existence-voice-interfaces.png"
 
 ---
 

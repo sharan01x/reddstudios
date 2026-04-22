@@ -6,6 +6,7 @@ subtitle: "Having a framework to evaluate the use of technology is useful in eva
 date: "10 Jan 2019"
 author: "sharanx"
 tags: ["technology","opinion"]
+image: "five-promises-technology.png"
 
 ---
 

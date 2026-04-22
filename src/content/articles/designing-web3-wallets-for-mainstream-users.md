@@ -6,6 +6,7 @@ subtitle: "There is a problem with Web3 wallets, they're just too complex. But w
 date: "30 Sept 2024"
 author: "sharanx"
 tags: ["design"]
+image: "web3-wallets-mainstream.png"
 
 ---
 

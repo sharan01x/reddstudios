@@ -6,6 +6,7 @@ subtitle: "Reflecting on the work of many others and my own work within the fiel
 date: "21 Apr 2023"
 author: "sharanx"
 tags: ["ux","ethics"]
+image: "ethical-ux-design.png"
 
 ---
 

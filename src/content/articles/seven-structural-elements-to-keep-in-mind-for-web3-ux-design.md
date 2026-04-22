@@ -6,6 +6,7 @@ subtitle: "The structure of web3 influences the design of the applications"
 date: "12 Feb 2023"
 author: "sharanx"
 tags: ["ux","web3","decentralisation","design"]
+image: "seven-structural-web3.png"
 
 ---
 

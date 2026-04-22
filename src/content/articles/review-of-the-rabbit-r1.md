@@ -6,6 +6,7 @@ subtitle: "A detailed review of the newly launched Rabbit R1, exploring its hard
 date: "10 Jan 2024"
 author: "sharanx"
 tags: ["design","technology","hardware"]
+image: "rabbit-r1-review.png"
 
 ---
 

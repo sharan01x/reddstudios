@@ -6,6 +6,7 @@ subtitle: "Wallets are the entry point to web3 and they shoulder a huge responsi
 date: "22 Jun 2022"
 author: "sharanx"
 tags: ["design","ux","web3","decentralisation","crypto"]
+image: "supercharge-web3-ux.png"
 
 ---
 
