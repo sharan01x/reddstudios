@@ -10,7 +10,7 @@ tags:
   - tools
   - technology
 audio: 99458576_audio.mp3
-image: review-of-rabbit-r1.png
+image: posts_dc67d83a.png
 ---
 
 # Introduction

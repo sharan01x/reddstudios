@@ -1,12 +1,14 @@
 ---
-
-title: "How to start designing for Web3"
-audio: "5ccc0d84_audio.mp3"
-subtitle: "Web3 is a burgeoning field, but you can't just take Web2 designs and expect them to work in Web3. What should you keep in mind?"
-date: "04 Dec 2024"
-author: "sharanx"
-tags: ["design","crypto","ux"]
-
+title: How to start designing for Web3
+audio: 5ccc0d84_audio.mp3
+subtitle: Web3 is a burgeoning field, but you can't just take Web2 designs and expect them to work in Web3. What should you keep in mind?
+date: 04 Dec 2024
+author: sharanx
+tags:
+  - design
+  - crypto
+  - ux
+image: posts_14a45b84.png
 ---
 
 # How to go from designing UX in Web2 to Web3

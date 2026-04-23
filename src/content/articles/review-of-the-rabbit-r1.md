@@ -1,13 +1,14 @@
 ---
-
-title: "Review of the Rabbit R1"
-audio: "5c7be3f1_audio.mp3"
-subtitle: "A detailed review of the newly launched Rabbit R1, exploring its hardware and software design, its strategic position in the market and its potential challenges"
-date: "10 Jan 2024"
-author: "sharanx"
-tags: ["design","technology","hardware"]
-image: "rabbit-r1-review.png"
-
+title: Review of the Rabbit R1
+audio: 5c7be3f1_audio.mp3
+subtitle: A detailed review of the newly launched Rabbit R1, exploring its hardware and software design, its strategic position in the market and its potential challenges
+date: 10 Jan 2024
+author: sharanx
+tags:
+  - design
+  - technology
+  - hardware
+image: review-of-rabbit-r1.png
 ---
 
 # The Launch of Something New

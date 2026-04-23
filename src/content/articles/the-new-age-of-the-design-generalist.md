@@ -1,12 +1,14 @@
 ---
-
-title: "The New Age of the Design Generalist"
-audio: "a4c88805_audio.mp3"
-subtitle: "AI tools have made coding simpler. Skills are no longer relevant. Imagination and envisioning a particular future is more necessary than ever."
-date: "30 Dec 2024"
-author: "sharanx"
-tags: ["design","ux","ai"]
-
+title: The New Age of the Design Generalist
+audio: a4c88805_audio.mp3
+subtitle: AI tools have made coding simpler. Skills are no longer relevant. Imagination and envisioning a particular future is more necessary than ever.
+date: 30 Dec 2024
+author: sharanx
+tags:
+  - design
+  - ux
+  - ai
+image: posts_4a4b1b2d.png
 ---
 
 # The 'Boring' Part

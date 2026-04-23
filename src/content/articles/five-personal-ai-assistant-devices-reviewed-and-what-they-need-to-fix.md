@@ -1,12 +1,15 @@
 ---
-
-title: "Five personal AI assistant devices reviewed and what they need to fix"
-audio: "629f25a2_audio.mp3"
-subtitle: "The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential."
-date: "12 Sept 2024"
-author: "sharanx"
-tags: ["product","hardware","design","technology"]
-
+title: Five personal AI assistant devices reviewed and what they need to fix
+audio: 629f25a2_audio.mp3
+subtitle: The world of AI assistants has taken a sharp leap forward with new devices emerging every year. However, despite the excitement around these personal AI assistant devices, many haven’t lived up to their full potential.
+date: 12 Sept 2024
+author: sharanx
+tags:
+  - product
+  - hardware
+  - design
+  - technology
+image: personal-assistants.png
 ---
 
 ## Why Aren’t Personal AI Assistants Taking Off?
