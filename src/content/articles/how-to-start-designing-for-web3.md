@@ -8,6 +8,7 @@ tags:
   - design
   - crypto
   - ux
+  - web3
 image: posts_14a45b84.png
 ---
 
@@ -148,3 +149,5 @@ As a UX designer in Web3, you're not just designing interfaces – you're design
 Remember, every great interface began with someone asking, "Couldn't this be simpler?" That's your mission in Web3. The technology is ready; now it's time to make it human.
 
 # Accompanying Video
+
+<iframe width=480 height=270 src="https://www.youtube.com/embed/u_cEEB6D2Q8" allowfullscreen></iframe>

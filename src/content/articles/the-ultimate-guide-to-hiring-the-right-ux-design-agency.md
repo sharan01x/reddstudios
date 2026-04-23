@@ -188,3 +188,5 @@ I relate this story because it’s a great metaphor for choosing the right agenc
 Having said that, I hope this article is useful to you in making the right choice. But if you need any help, do reach out to me once you’ve shortlisted your agencies, and I’d be happy to help you make the final choice!
 
 # Accompanying Video
+
+<iframe width=480 height=270 src="https://www.youtube.com/embed/pWzm4IwFXZI" allowfullscreen></iframe>

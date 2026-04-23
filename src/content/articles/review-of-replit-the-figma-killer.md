@@ -139,4 +139,9 @@ But if this blog has somehow made its way to the Replit team, I would happily in
 
 # Accompanying video
 
-Supplement video contrasting features with Lovable.dev
+<iframe width=480 height=270 src="https://www.youtube.com/embed/6n_U-AWtVLs" allowfullscreen></iframe> 
+
+
+# Supplement video contrasting features with Lovable.dev
+
+<iframe width=480 height=270 src="https://www.youtube.com/embed/3ckaYWWNzRU" allowfullscreen></iframe>

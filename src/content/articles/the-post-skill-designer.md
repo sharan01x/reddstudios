@@ -62,4 +62,4 @@ So, we've got to stop asking how something should be done and start asking what 
 
 ## Related Video
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/DJxPsWgtEdc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/DJxPsWgtEdc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

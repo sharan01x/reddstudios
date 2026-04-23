@@ -65,3 +65,5 @@ In conclusion, the wallet is the linchpin of Web3 adoption. If we can make the w
 For designers and developers working on Web3 applications, this means prioritising usability over technical prowess. It means considering what mainstream users already know and building upon that knowledge, rather than introducing new, foreign concepts. The future of Web3 is bright, but only if we can make it accessible to everyone.
 
 # Video with screens
+
+<iframe width=480 height=270 src="https://www.youtube.com/embed/flGWL54hJR4" allowfullscreen></iframe>

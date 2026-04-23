@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "how-to-start-designing-for-web3.md",
+                "file": "the-post-skill-designer.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "how-to-start-designing-for-web3"
+              "title": "the-post-skill-designer"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "web3",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -186,17 +185,25 @@
   },
   "active": "ba9794210f54f35c",
   "lastOpenFiles": [
-    "design-must-humanise-technology.md",
+    "from-time-telling-to-clock-building.md",
+    "design-proposals-that-boost-conversion-rates.md",
+    "diy-a-raspberry-pi-based-time-capsule.md",
+    "the-ultimate-guide-to-hiring-the-right-ux-design-agency.md",
+    "six-ways-to-supercharge-the-ux-of-web3-wallets.md",
+    "how-to-start-designing-for-web3.md",
+    "the-post-skill-designer.md",
+    "review-of-replit-the-figma-killer.md",
+    "fixing-censorship-with-web3.md",
+    "five-personal-ai-assistant-devices-reviewed-and-what-they-need-to-fix.md",
+    "designing-web3-wallets-for-mainstream-users.md",
+    "8-crucial-insights-from-building-an-ai-infused-app.md",
     "co-existence-of-voice-interfaces-in-apps.md",
     "better-tools-should-be-better-employed.md",
-    "five-personal-ai-assistant-devices-reviewed-and-what-they-need-to-fix.md",
-    "the-ultimate-guide-to-hiring-the-right-ux-design-agency.md",
+    "a-curated-list-of-videos-to-understand-crypto.md",
+    "design-must-humanise-technology.md",
     "the-new-age-of-the-design-generalist.md",
-    "review-of-replit-the-figma-killer.md",
     "review-of-the-rabbit-r1.md",
-    "diy-a-raspberry-pi-based-time-capsule.md",
     "evolution-not-revolution.md",
-    "8-crucial-insights-from-building-an-ai-infused-app.md",
     "UX Designers - Adapt or Die.md",
     "the-five-promises-of-technology.md"
   ]

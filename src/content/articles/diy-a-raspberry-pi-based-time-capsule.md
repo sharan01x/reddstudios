@@ -131,3 +131,7 @@ If for any reason you don't see the newly setup drive when you are setting up Ti
 ## Bonus Step
 
 Make a case for the Raspberry Pi and the hard drive to be situated together. I'm designing something for this purpose and should have a 3D printable file posted here soon. Check back in a bit. But if you'd like to print something else, look at the plethora of stuff that's available to you on Printables.
+
+# Accompanying Video
+
+<iframe width=480 height=270 src="https://www.youtube.com/embed/6CS_KSBqiS8" allowfullscreen></iframe>

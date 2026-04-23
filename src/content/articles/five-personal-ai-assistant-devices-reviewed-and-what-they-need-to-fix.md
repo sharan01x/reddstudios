@@ -58,4 +58,6 @@ Ultimately, while none of the current products on the market have quite nailed i
 
 As much as I root for the underdog, I wouldn’t bet my money on any of the current startups trying to break into this space. The race will be won by those with the resources to gather and process the vast amounts of data required to create truly effective AI assistants.
 
-# Watch the Video
+# Accompanying Video
+
+<iframe width=480 height=270 src="https://www.youtube.com/embed/7GPtfH1lYkI" allowfullscreen></iframe>

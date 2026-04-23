@@ -52,4 +52,6 @@ The advent of AI coding tools allows developers to focus on higher-level questio
 
 This journey of building Move 37 has been incredibly enriching, filling me with confidence in the potential of AI-infused development. I'm now ready to explore iOS app development and automate more aspects of my workflow, empowered by the realisation that these tasks are within my reach. The future of app development, with its lowered barriers to entry and enhanced capabilities, promises to be exciting and accessible to a broader range of creators.
 
-### Accompanying video
+# Accompanying video
+
+<iframe width=480 height=270 src="https://www.youtube.com/embed/uecQiRyQUSw" allowfullscreen></iframe>

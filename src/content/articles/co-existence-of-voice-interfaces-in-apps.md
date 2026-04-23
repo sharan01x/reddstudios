@@ -31,7 +31,7 @@ The reason for this is simple — each interface offers some specific advantage 
 
 Until brain-machine interfaces like the one that Neuralink is working on become mainstream, all other interfaces including voice-based ones can be only a part of a collection of interfaces that will be used by humans. They will therefore need to be integrated into existing user interfaces and not thought of as replacements for anything. So the principle of design needs to be that of coexistence, not of replacement.
 
-DESIGN FOR CO-EXISTENCE, NOT REPLACEMENT 
+>DESIGN FOR CO-EXISTENCE, NOT REPLACEMENT 
 
 Secondly, we are talking about integrating voice-based interfaces into existing applications here using technologies like DialogFlow or Slang and this is not the same as creating a skill for Google or Alexa that could potentially be linked to a website or an app.
 
@@ -47,9 +47,8 @@ While designing interfaces for Voice UI, the following need to be considered:
 - Provide a way for power users to understand how to harness the power of voice — Users may intuitively begin using the voice features in the app but in the initial period when people may not really know how this works, providing them with the ability to understand what’s possible may be required. What we did to enable this is to have an information icon placed to the right of the activation button. Tapping this will bring up a sheet with all the available types of commands that can be issued on the application. This sheet could also be presented when the user says things like “What can I say?” or “What can you do?” which are equivalent commands on Google Assistant or Siri.
 - Design for voice-only workflows — Voice-only workflows are powerful new user journeys that come up when working with voice. You don’t need to work through screens sequentially anymore and in most cases, multiple steps can be combined. In this example, the user can ask to check out and the cart page will show up after which the user can choose the method of payment and the delivery address. However, with voice, these two steps can be combined using a simple command like, “Checkout using card number ending with 0399 and deliver it to my home”. Upon this command being issued, a user is brought to a confirmation page that shows the card chosen and the address chosen and all the user needs to do is hit “Proceed”.
 
-THIS IS AN EXTREMELY POWERFUL NEW CAPABILITY THAT IS OFFERED THROUGH VOICE INTERFACES AND REQUIRES UX DESIGNERS TO THINK DIFFERENTLY WHEN DESIGNING. 
-
-Eliel Saarinen, Architect
+>THIS IS AN EXTREMELY POWERFUL NEW CAPABILITY THAT IS OFFERED THROUGH VOICE INTERFACES AND REQUIRES UX DESIGNERS TO THINK DIFFERENTLY WHEN DESIGNING. 
+> Eliel Saarinen, Architect
 
 ## ADDITIONAL THOUGHTS
 

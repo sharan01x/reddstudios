@@ -77,8 +77,9 @@ A well-crafted UX design proposal is more than a sales document; it’s an oppor
 With this framework, I hope you’ll find the proposal process smoother, more efficient, and ultimately more successful.
 
 # Accompanying Video
+<iframe width=480 height=270 src="https://www.youtube.com/embed/3ckaYWWNzRU" allowfullscreen></iframe> 
 
 # Useful Items Mentioned
 
-- General Purpose Proposal Template for UX Projects
-- General Purpose Proposal Worksheet
+- [General Purpose Proposal Template for UX Projects](https://www.patreon.com/reddxf/shop/general-ux-design-proposal-template-585912?utm_campaign=productshare_creator&utm_content=join_link)
+- [General Purpose Proposal Worksheet](https://www.patreon.com/reddxf/shop/general-ux-design-proposal-worksheet-586169?utm_campaign=productshare_creator&utm_content=join_link)
