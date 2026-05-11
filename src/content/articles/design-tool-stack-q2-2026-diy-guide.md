@@ -217,3 +217,9 @@ While this setup is definitely a lot better than working with the closed frontie
 The thinking we did when working through low-fidelity wireframes is just not possible with this new workflow. We need different ways to force that thinking even when the tools are far too efficient to need it.
 
 That is the stack I am running in Q2 2026. It is not a perfect replacement for every design task, but it has already changed how I think about the gap between design and working software. If you try this, or a variant of it, let me know what you find.
+
+---
+
+## Related Video
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/lQHyLYXlunI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
