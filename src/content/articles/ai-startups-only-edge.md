@@ -1,5 +1,5 @@
 ---
-title: "AI, Startups, and the Only Edge That Matters"
+title: "Execution is Dead"
 subtitle: "When execution becomes free, taste becomes the only currency"
 date: 20 May 2026
 author: sharanx
