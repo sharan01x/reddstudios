@@ -16,6 +16,8 @@ That was true when execution required engineers, capital, and months of runway. 
 
 AI is about to flip that equation entirely.
 
+![The Inversion](/execution-inversion.png)
+
 ## The Wrong Mental Model
 
 The common forecast for how AI reshapes business is "solopreneur enterprises": one person with a fleet of AI agents replacing an entire company. This is directionally true but still thinks inside the wrong frame. It assumes the future still has *companies* — just smaller ones.
@@ -38,6 +40,8 @@ The software company, as a durable entity selling a fixed tool to a stable user 
 
 This does not mean nothing survives. It means what survives is something else.
 
+![The Collapse](/execution-collapse.png)
+
 ## What Survives
 
 When execution is commoditized, the creator's taste becomes the only compression function for meaning.
@@ -51,6 +55,8 @@ This is the shift coming to software.
 The people who endure will not be running software companies in the traditional sense. They will be tastemakers, curators, directors — individuals with a point of view so sharp that others delegate their judgment to them. Their business will not be selling subscriptions to a codebase. It will be the irreducible asset of a distribution channel built on trust.
 
 They will not build software. They will describe what should exist. They will point. They will filter. They will earn the right to say, *"This matters,"* and have people believe them.
+
+![The Director's Frame](/execution-director.png)
 
 ## The Only Edge That Matters
 
@@ -70,8 +76,12 @@ Stop optimizing for product-market fit as if the product is the point. The produ
 
 Build things that are unmistakably yours. Speak to a point of view that someone could disagree with — and not try to cater to the 80% majority as we do today. Create work where people sense the hand of a specific mind behind it, even if that hand was amplified by AI. Release software if you must — but understand that the software is disposable. What transfers is the trust.
 
+![The Signature](/execution-signature.png)
+
 In the long run, the individuals who endure will not be the ones with the best AI stack or the most polished app. They will be the ones who built the distribution channel no one else can buy: a body of work, a perspective, and a group of people who believe them when they say, *"This is worth your time."*
 
 That is the only edge that matters.
 
 Software is where this shift is most visible right now — AI has gotten furthest, fastest here. But the same arc is already hitting writing, design, music, video, and education. Anywhere digital execution gets cheap, the same compression happens: companies dissolve, products become disposable, and the only thing that survives is a point of view trusted by an audience. It was never about the medium. It was always about the judgment.
+
+![The Hand](/execution-hand.png)
