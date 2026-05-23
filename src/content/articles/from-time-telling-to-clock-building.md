@@ -61,3 +61,7 @@ There may be fewer designers focused purely on execution. But there will be grea
 The question, then, is not whether design survives this shift.
 
 It is whether we continue telling time—or learn to build the clocks.
+
+## Related Video
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/7mrwHzkFA70" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
