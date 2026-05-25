@@ -44,7 +44,7 @@ This does not mean nothing survives. It means what survives is something else.
 
 ## What Survives
 
-When execution is commoditized, the creator's taste becomes the only compression function for meaning.
+When execution is commoditized, the creator's judgement becomes the only compression function for meaning.
 
 Think about film. Cameras, editing suites, and VFX tools are available off-the-shelf. Anyone can buy them. Yet a "Christopher Nolan film," a "Studio Ghibli film," a "Quentin Tarantino film" — these phrases mean something precise. They refer not to equipment, but to a specific worldview, sensibility, and trust. You show up because you trust that particular brain's judgment about what is worth your time.
 
@@ -64,7 +64,7 @@ If software itself has no moat, what survives?
 
 **Distribution. But not the kind you rent. The kind you earn.**
 
-Not a Discord server. Not a follower count. Not a marketing funnel. A group of people who trust your judgment about what is worth building, worth using, worth paying attention to. That trust is earned through taste — a unique perspective that filters noise into signal. It compounds slowly and is impossible to replicate, because it is inseparable from the person who formed it.
+Not a Discord server. Not a follower count. Not a marketing funnel. A group of people who trust your judgment about what is worth building, worth using, worth paying attention to. That trust is earned through judgement — a unique perspective that filters noise into signal. That trust compounds slowly and is impossible to replicate, because it is inseparable from the person whose judgement formed it.
 
 When every other advantage — technical skill, feature velocity, capital, team size — has been flattened by AI, this is the only structural advantage left. It is also the hardest to build, because it cannot be bought, hacked, or delegated to an agent.
 
@@ -72,7 +72,7 @@ When every other advantage — technical skill, feature velocity, capital, team 
 
 The implication for builders is not to build a better company. It is to stop thinking like a company at all.
 
-Stop optimizing for product-market fit as if the product is the point. The product is temporary scaffolding — proof that your taste is real, that your judgment produces signal. The real asset is the audience that forms around that proof.
+Stop optimizing for product-market fit as if the product is the point. The product is temporary scaffolding — proof that your judgement produces signal. The real asset is the audience that forms around that proof.
 
 Build things that are unmistakably yours. Speak to a point of view that someone could disagree with — and not try to cater to the 80% majority as we do today. Create work where people sense the hand of a specific mind behind it, even if that hand was amplified by AI. Release software if you must — but understand that the software is disposable. What transfers is the trust.
 
