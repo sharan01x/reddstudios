@@ -1,6 +1,6 @@
 ---
 title: "The Design Tool Stack for Q2 2026: A DIY Guide"
-subtitle: "How I replaced Figma with AI agents, Ollama and Hermes to build working prototypes"
+subtitle: "How I replaced Figma with Hermes AI agents and Ollama"
 date: 30 Apr 2026
 author: sharanx
 tags:
