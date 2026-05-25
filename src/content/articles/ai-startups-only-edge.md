@@ -82,10 +82,10 @@ In the long run, the individuals who endure will not be the ones with the best A
 
 That is the only edge that matters.
 
-## Related Video
-
-<iframe width="480" height="270" src="https://www.youtube.com/embed/heV3QX7T3Tg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Software is where this shift is most visible right now — AI has gotten furthest, fastest here. But the same arc is already hitting writing, design, music, video, and education. Anywhere digital execution gets cheap, the same compression happens: companies dissolve, products become disposable, and the only thing that survives is a point of view trusted by an audience. It was never about the medium. It was always about the judgment.
 
 ![The Hand](/execution-hand.png)
+
+## Related Video
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/heV3QX7T3Tg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
