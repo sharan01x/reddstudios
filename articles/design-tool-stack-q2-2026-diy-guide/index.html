@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Design Tool Stack for Q2 2026: A DIY Guide | Redd XF</title><meta name="description" content="For the Post-Skill Designer"><link rel="alternate" type="application/rss+xml" title="Redd XF RSS Feed" href="/rss.xml"><link rel="icon" href="/logo_8b2c4ff1.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="/blog.css"><script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_HFB139SSCTbjzHK0MdGZWCicWmJcSlp8YenXs6h0hkW',{api_host:'https://eu.i.posthog.com'})
+    </script><style>.giscus-comments-container[data-astro-cid-qdzwzgpn]{margin-top:80px;padding-top:40px;border-top:1px solid #e0e0e0}.comments-heading[data-astro-cid-qdzwzgpn]{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;margin-bottom:24px;color:#111}.giscus-wrapper[data-astro-cid-qdzwzgpn]{margin-bottom:60px}.giscus-wrapper[data-astro-cid-qdzwzgpn] iframe[data-astro-cid-qdzwzgpn]{width:100%!important}
+</style></head> <body class="page-article"> <div class="floating-logo"> <a href="/"> <img src="/logo_8b2c4ff1.png" alt="Redd XF Logo" class="logo-icon"> </a> </div>  <a href="/#articles" class="floating-back-button" title="Back to Articles"> <i class="fas fa-arrow-left"></i> </a> <div class="container"> <div class="article-card"> <div class="featured-image-container"> <img src="/design-tool-stack-q2-2026-diy-guide.png" alt="The Design Tool Stack for Q2 2026: A DIY Guide" class="featured-image"> </div> <div class="header"> <h1>The Design Tool Stack for Q2 2026: A DIY Guide</h1> <div class="subtitle">How I replaced Figma with Hermes AI agents and Ollama</div> <div class="tags-display-view"> <span class="tag-chip-view">design</span><span class="tag-chip-view">DIY</span><span class="tag-chip-view">tools</span><span class="tag-chip-view">ai</span> </div> </div> <div class="article-metadata"> <div class="author-date-row"> <div class="authors-byline"> <span class="author-info-display"> <img src="/profile_e2244840.png" alt="sharanx" class="author-avatar-small"> <span class="author-name-display">sharanx</span> <span class="author-socials"> <a href="https://linkedin.com/in/sharangrandigae" target="_blank" rel="noopener noreferrer" class="social-icon" title="linkedin: sharangrandigae"> <i class="fab fa-linkedin"></i> </a> <a href="https://mastodon.social/@sharanx" target="_blank" rel="noopener noreferrer" class="social-icon" title="mastodon: sharanx"> <i class="fa-brands fa-mastodon"></i> </a> <a href="https://twitter.com/sharan01x" target="_blank" rel="noopener noreferrer" class="social-icon" title="twitter: sharan01x"> <i class="fab fa-twitter"></i> </a> </span> </span> </div> <div class="date-display"> <span class="date">Apr 30, 2026</span> </div> </div> </div> <div class="audio-section"> <h3><i class="fas fa-volume-up"></i> Audio</h3> <div class="audio-grid single-audio"> <div class="audio-item"> <div class="audio-label"> <i class="fas fa-volume-up"></i>&nbsp;Reader
+</div> <audio controls preload="metadata"> <source src="/design-tool-stack-q2-2026-diy-guide.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio> </div>  </div> </div> <div class="content"> <p>I began my AI tooling adoption when Midjourney started to produce images of great quality. That was great for images, but I was always of the mentality that finding new tools was not where I wanted to spend my time. I just wanted to get things done.</p>
+<p>Windsurf, Cursor, Krea.ai, Replicate, OpenCode and OpenWork were trialled, and I saw various levels of success. But it was with the release of Claude Sonnet 4.5 and Claude Code and other agentic coding platforms that I started to see real impact. Today, I rarely touch a specialised design tool. Figma has become a super-specialised tool that I only reach for when I need to lay out a social media banner. Even then, it feels like a trip to a foreign country where I have forgotten the language.</p>
+<p>The future looked promising, but I had to figure out a lot of details to make this happen. This article is a record of the design stack I have built up to replace the old toolchain.</p>
+<hr>
+<h2 id="what-i-need-from-a-design-workflow">What I Need From a Design Workflow</h2>
+<p>So when building all these tools as well as producing my regular outputs, I identified four main goals I needed to achieve:</p>
+<h3 id="1-exploration">1. Exploration</h3>
+<p>When initially working on a project, I need to try out multiple variations of design with different emphasis on different parts of the workflow, suitability to different audiences, and even design themes. Using AI to do this was unbelievably productive. These things would take a long time before, but now could be done with no more effort than typing a well-structured prompt.</p>
+<h3 id="2-bridging-the-gap">2. Bridging the Gap</h3>
+<p>In the next stage, once I choose a specific direction, I need control over the changes I make on the outputs. Here, like Cursor or Claude Code does, pointing to different elements and asking for changes is the gold standard. Tools that allow this specific interaction win over the tools that do not.</p>
+<h3 id="3-hand-off">3. Hand-off</h3>
+<p>Hand-off to the next stage in the life-cycle needs to become easier. With Figma, the hand-off was on a design surface and while the developer got some code, there was really a lot of discussion-led development that was still required. My requirement was to deliver working code that displays full functionality including micro-interactions, transitions, animations, and responsive layout.</p>
+<h3 id="4-extending">4. Extending</h3>
+<p>Once a project is delivered, it usually requires feature additions or modifications. That task may be performed by another team member or even a different team. In these circumstances, I need to have the right things to build upon when that happens.</p>
+<p>I evaluated the various tools against this backdrop of needs and the results are described below.</p>
+<hr>
+<h2 id="installing-the-basic-requirements">Installing the Basic Requirements</h2>
+<p>There are two tools you need to install: Ollama (for models) and Hermes Agent (for agentic tooling). I will show you the fastest way to do this, and then break the steps down below in case the shortcut does not work for you.</p>
+<h3 id="option-a-single-command-installation">Option A: Single Command Installation</h3>
+<p>The simplest way to get started is with this command. It installs both Ollama and Hermes Agent, hooks them together, and sets the agent to use the latest available model:</p>
+<p><code>ollama launch hermes --model deepseek-v4-pro:cloud</code></p>
+<p><strong>Note:</strong> At the time of writing (April 2026), the best model I have found is DeepSeek V4 Pro. You can replace the model name with anything newer you find on the <a href="https://ollama.com/search">Ollama Models</a> page.</p>
+<h3 id="option-b-manual-setup">Option B: Manual Setup</h3>
+<p>If the shortcut command does not work for any reason, follow these three steps.</p>
+<h4 id="step-1-install-ollama">Step 1: Install Ollama</h4>
+<p>While some people prefer to use the frontier models from Anthropic or OpenAI, I have never been a big fan for two reasons:</p>
+<ol>
+<li>They are not always most efficient in terms of costs or time taken.</li>
+<li>They are not private, so this limits the kinds of projects I can work with them on.</li>
+</ol>
+<p>I wanted to work with all the options available to me and for this reason, I wanted to work with other models that are available. There are many tasks that just do not need frontier-level intelligence and I wanted to be able to use the right tool for the right job. I went through many options, but found the Ollama subscription (also $20/mo) gave me the most flexible set of options.</p>
+<p>The added benefit over using OpenRouter or another service is that I can switch between the more powerful cloud-hosted models and the more private locally running models without switching anything but the models. This is critical for headache-free operations.</p>
+<p>Ollama has its own minimal and beautiful chat interface and will do for most common question-answering sessions if you need it.</p>
+<p><strong>Installation:</strong> Download Ollama from <a href="https://ollama.com/download">their website</a>.</p>
+<h4 id="step-2-install-hermes-agent">Step 2: Install Hermes Agent</h4>
+<p>This is an agent harness that is comparable to OpenCode. It has agents, memory and the ability to develop and run skills, but I find that Hermes has been built with more security in mind and comes with many built-in tools and skills that make it great to use out of the box.</p>
+<p>One important feature that Hermes Agent has is that it can build its own skills. So if it notices that I am doing something that it expects will be a task I am likely to repeat, it will just turn it into a skill. I find this incredibly helpful.</p>
+<p><strong>Installation:</strong> <a href="https://hermes-agent.nousresearch.com/docs">Simple steps to follow</a></p>
+<h4 id="step-3-connect-the-two">Step 3: Connect the two</h4>
+<h5 id="1-make-ollama-available-to-other-apps">1. Make Ollama available to other apps</h5>
+<p>Go to Ollama Settings and click on “Expose Ollama to the network”. This will make your Ollama server available at the default location of <code>http://localhost:11434/v1</code> which is the OpenAI-compatible endpoint.</p>
+<h5 id="2-connect-hermes-to-ollama">2. Connect Hermes to Ollama</h5>
+<p>If you used the shortcut command and it worked, you can skip this. If not, run the following command in the terminal:</p>
+<p><code>hermes setup</code></p>
+<p>That will take you through a wizard where you can configure the Model &#x26; Provider. Choose ‘custom’ as the provider (unless Ollama is an option) and provide the local Ollama URI:</p>
+<p><code>http://localhost:11434/v1</code></p>
+<p>or</p>
+<p><code>http://127.0.0.1:11434/v1</code></p>
+<p>I recommend using the latest and greatest model name that is available. At the time of writing it is DeepSeek V4 Pro:</p>
+<p><code>deepseek-v4-pro:cloud</code></p>
+<p>You can find the models available in Ollama by going to the <a href="https://ollama.com/search">Ollama Models</a> page.</p>
+<p>Use “dummy-key” or anything else as the API key and ask it to auto-detect context length. And that is it. You have got everything you need.</p>
+<hr>
+<h2 id="using-hermes-agent">Using Hermes Agent</h2>
+<p>All you have to do to use Hermes Agent is open a terminal window and type in:</p>
+<p><code>hermes</code></p>
+<p>This will launch a chat interface and you can ask it to start building websites, applications, and so on. That is the Claude Code equivalent experience. But if you want to get the most out of your setup, look at performing some of the quality-of-life steps detailed below.</p>
+<hr>
+<h2 id="quality-of-life-upgrades">Quality of Life Upgrades</h2>
+<h3 id="1-add-a-messaging-interface">1. Add a messaging interface</h3>
+<p>Since I do not expect to be using the agent only when I am in front of the computer, I want to make it available to me remotely. This is easily achieved by using one of the many supported gateways in Hermes. I chose Slack because I can have multiple threads easily and the interface is familiar. Others have liked Discord. I would caution against Telegram because of the threading limitations.</p>
+<h3 id="2-add-better-memory">2. Add better memory</h3>
+<p>Hermes Agent comes with a robust memory system already built in, but I find that it only gets better if I ask it to use the Honcho memory system as well. It is a lot more involved and technical, so skip this if you are not comfortable with the terminal or Docker. I do not recommend using the hosted Honcho setup as that is a privacy hazard in my opinion.</p>
+<h3 id="3-add-multiple-profiles">3. Add multiple profiles</h3>
+<p>One more thing that helps with memory and context management is to create multiple Hermes Agent profiles. Basically, run multiple agents with the same infrastructure. You can assign different Slack App credentials to each and keep having separate conversations with each of them.</p>
+<p>While the documentation may lead you to think of each profile as a separate function, like coding, marketing, and so on, I find it easier to think of them as people.</p>
+<p>For example, I created five different agent profiles:</p>
+<ol>
+<li>
+<p>One main agent that I frequently talk with about performing all sorts of personal tasks. Sometimes it needs to write a small program to get the task done, sometimes it does research on the web, and at other times it manages medical reports and sets up reminders.</p>
+</li>
+<li>
+<p>One agent assigned to teaching me languages.</p>
+</li>
+<li>
+<p>One dedicated coding agent. This is because I have a lot of code that needs to be written and I do not need this agent to also have context about what my dog’s medications need to be.</p>
+</li>
+<li>
+<p>One running parts of my business.</p>
+</li>
+<li>
+<p>One dedicated to doing things privately on my computer. I use a locally running model for this so that not even anonymised data leaves my system.</p>
+</li>
+</ol>
+<p>The only limitation of these profiles is that they cannot communicate with each other. This is probably a good thing. But I had imagined being able to hand off a task between each agent, and that is not possible in the way Hermes Agent is architected at this point in time.</p>
+<h3 id="4-add-soul">4. Add soul</h3>
+<p>There is a SOUL.md file for each profile that you create. Take the time to add details about the agent and what they each need to know about you, your computer setup and organisation, what their default communication styles should be, and so on. I reduced a lot of repetition by specifying a “home” folder for each agent where I want it to look in case it does not know something I reference. It saved me a lot of time that I would otherwise spend telling it simple things like where it can find the company operations manual, or what the schedule is for upcoming writing exercises.</p>
+<p>Another thing to specify in the Soul is the conditions under which you want it to delegate a task. More on this next.</p>
+<h3 id="5-add-delegation">5. Add delegation</h3>
+<p>Hermes Agent provides the ability to assign a different model to use as a delegate within the same profile. For example, you may want to use DeepSeek V4 Flash as the primary model and DeepSeek V4 Pro as the delegate model. By doing this, you get the fast and inexpensive responses when you ask a question, but when you need something more complicated done, your agent delegates the task and it will then use the more powerful model to do those things.</p>
+<p>As mentioned above, in the coding profile’s SOUL.md, I specified that “You should delegate any long-running or complicated coding tasks.” This automatically makes my life easier and employs the more powerful model when it needs to.</p>
+<h3 id="6-add-mcps-chrome-paper-and-framer">6. Add MCPs (Chrome, Paper and Framer)</h3>
+<p>Google Chrome, Framer and Paper all offer connections to agents over MCP servers. Getting these configured makes it extremely simple to make edits, view them and share them as necessary. Just get your credentials and server URLs and ask your assistant to configure itself for these MCP servers and it will set it up.</p>
+<h3 id="7-add-github">7. Add GitHub</h3>
+<p>Since I am going further with design and developing working prototypes, GitHub is a great platform for version control and for collaboration on projects. Hermes Agent knows how to use GitHub even if you do not, so just ask it to start using it.</p>
+<h3 id="8-use-voice">8. Use voice</h3>
+<p>It is just a lot faster to provide directions and inputs to your agents through voice. Working with code is difficult to do this way, but you will save yourself a lot of time by not having to type, which you will do a lot.</p>
+<hr>
+<h2 id="what-my-design-workflow-looks-like-now">What My Design Workflow Looks Like Now</h2>
+<p>With the tool stack that I have described, my new design workflow looks like this:</p>
+<h3 id="step-1-plan-with-the-agent">Step 1: Plan with the agent</h3>
+<p>I describe what I want to achieve and ask the agent to specifically work on an implementation plan and not begin implementing it just yet. I specifically ask it to ask me any questions that it may have after it develops an implementation plan.</p>
+<h3 id="step-2-debate-and-influence">Step 2: Debate and influence</h3>
+<p>Usually, agents are meant to make assumptions about defaults and proceed to get the job done. But forcing it to respond with questions after developing an implementation plan forces it to list out the assumptions it is making. This is where you can influence the design of your application.</p>
+<h3 id="step-3-watch-every-step-and-intervene">Step 3: Watch every step and intervene</h3>
+<p>Once you ask the agent to begin developing the application, you can see the thinking stream where it is making more of the detailed assumptions. This is where you watch and understand how it is thinking through stuff. Often, if you find that it is making the wrong assumptions, you can redirect it and tell it to go a different direction by interrupting the agent.</p>
+<h3 id="step-4-test-and-refine">Step 4: Test and refine</h3>
+<p>I always ask the application to be launched and test it often. When there are errors, I copy and paste the entire error and ask it to fix it. If I need to fix something and if that object can only be best identified by pointing to it, I will switch tools and go to Cursor or Windsurf and open up the same page there and use the tools to pick the element and ask for the changes there. I can then return to Slack and continue working on the application with Hermes Agent.</p>
+<h3 id="step-5-create-design-systems">Step 5: Create design systems</h3>
+<p>As we go along, I tell Hermes Agent to develop and iterate over the design system that governs the application. It is usually developed as a markdown file that I include as part of the project.</p>
+<hr>
+<h2 id="limitations">Limitations</h2>
+<h3 id="1-figma-is-a-no-go">1. Figma is a no-go</h3>
+<p>I tried integrating my AI workflow within existing design tools like Figma, but this was not always successful and felt like a force-fit in a lot of situations.</p>
+<h3 id="2-inter-agent-communication">2. Inter-agent communication</h3>
+<p>As mentioned, the various Hermes Agent profiles cannot communicate between each other. I have not found a workaround to this as yet. So for the time being, I have to repeat some of the things I may have already told one agent, but need to convey it over again to another agent.</p>
+<p>In an ideal world, I would be talking to just one agent and it would hand off the task to the right agent with the right context and make sure the job gets done. I think we will get there.</p>
+<h3 id="3-privacy">3. Privacy</h3>
+<p>While this setup is definitely a lot better than working with the closed frontier model providers, the only guarantee that your private data will not be used by the model providers for training their models is their contracts specifying this with Ollama. There is no real assurance that your data is perfectly safe unless you are using the locally running models. If you still need to use the power of larger hosted models, you could benefit from having only fragments of your information available to each of these providers by rotating models often.</p>
+<h3 id="4-low-fidelity-wireframes">4. Low fidelity wireframes</h3>
+<p>The thinking we did when working through low-fidelity wireframes is just not possible with this new workflow. We need different ways to force that thinking even when the tools are far too efficient to need it.</p>
+<p>That is the stack I am running in Q2 2026. It is not a perfect replacement for every design task, but it has already changed how I think about the gap between design and working software. If you try this, or a variant of it, let me know what you find.</p>
+<hr>
+<h2 id="related-video">Related Video</h2>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/lQHyLYXlunI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div> <div class="giscus-comments-container" data-astro-cid-qdzwzgpn> <div class="giscus-wrapper" data-astro-cid-qdzwzgpn> <h3 class="comments-heading" data-astro-cid-qdzwzgpn>Discussion</h3> <script src="https://giscus.app/client.js" data-repo="sharan01x/reddxf" data-repo-id="R_kgDOK9Tj5g" data-category="General" data-category-id="DIC_kwDOK9Tj5s4C6Scy" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="noborder_light" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script> </div> </div> </div> </div>  <div class="footer"> <i class="fa fa-heart"></i> </div> </body></html>
