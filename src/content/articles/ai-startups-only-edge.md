@@ -8,6 +8,7 @@ tags:
   - startups
 image: ai-startups-edge.png
 audio: ai-startups-only-edge.mp3
+podcast: ai-startups-only-edge_podcast.mp3
 ---
 
 For decades, the startup world repeated one mantra: *"Ideas are cheap. Execution is everything."*
