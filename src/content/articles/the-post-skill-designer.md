@@ -8,6 +8,7 @@ tags:
   - design
 image: "the-post-skill-designer.png"
 audio: "the-post-skill-designer.mp3"
+podcast: "the-post-skill-designer_podcast.mp3"
 ---
 
 # A Rude Awakening

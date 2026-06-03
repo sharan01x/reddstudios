@@ -1,6 +1,7 @@
 ---
 title: The New Age of the Design Generalist
 audio: a4c88805_audio.mp3
+podcast: the-new-age-of-the-design-generalist_podcast.mp3
 subtitle: AI tools have made coding simpler. Skills are no longer relevant. Imagination and envisioning a particular future is more necessary than ever.
 date: 30 Dec 2024
 author: sharanx

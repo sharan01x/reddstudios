@@ -10,6 +10,7 @@ tags:
   - tools
   - technology
 audio: 99458576_audio.mp3
+podcast: review-of-replit-the-figma-killer_podcast.mp3
 image: posts_dc67d83a.png
 ---
 
