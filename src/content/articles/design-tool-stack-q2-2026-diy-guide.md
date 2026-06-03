@@ -9,6 +9,7 @@ tags:
   - tools
   - ai
 audio: design-tool-stack-q2-2026-diy-guide.mp3
+podcast: design-tool-stack-q2-2026-diy-guide_podcast.mp3
 image: design-tool-stack-q2-2026-diy-guide.png
 ---
 
