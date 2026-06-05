@@ -11,19 +11,15 @@ image: taste-statistical-judgement-human.png
 audio: taste-statistical-judgement-human.mp3
 ---
 
-AI has taste. If that sentence makes you bristle, I don't blame you. But stay with me because this is important. Designers think that taste is the one island where they will find refuge from the AI tsunami approaching them. Taste won't. But judgement will. 
-
----
+If the title makes you bristle, it's probably because you thought taste was the one human quality that can't be replicated by AI. I thought so too, because it was comforting. But it is an existential question for me as a designer and as such I knew that I'd better spend the time to understand this well. I learnt that taste won't save us. But judgement will. 
 
 ## Taste is Learnt
 
-As anyone that's been to design or art school will tell you, the first thing you do is learn about the works of other artists and designers. In my Art History 101 class, one of the subjects I loved the most, I had this amazing text book that exposed me to so many works of art over time. Among many other things, I learnt the patterns that we find beautiful, understand the nuances of composition and how that can affect someone looking at it and appreciate the cultural impact that these works had on societies of their times. It taught 19-year-olds like me an appreciation for the arts. It taught us taste. 
+As anyone who's been to design or art school will tell you, the first thing you do is learn about the works of other artists and designers. In my Art History 101 class, one of the subjects I loved the most, I had this amazing textbook that exposed me to so many works of art over time. Among many other things, I learnt the patterns that we find beautiful, understood the nuances of composition and how they affect someone looking at them, and appreciated the cultural impact that these works had on societies of their times. It taught 19-year-olds like me an appreciation for the arts. It taught us taste. 
 
-Now, AI has been trained on millions of art works and design outputs -- more than anything I may ever be exposed to over my entire lifetime. Additionally, at its core, AI is a pattern hunting machine driven by statistics. It has perception built-in. It has been trained on discernment. It has restraint as a foundation layer because it works on the constraints of energy. In other words, it has all the components of taste.
+Now, AI has been trained on millions of artworks and design outputs — more than anything I may ever be exposed to over my entire lifetime. Additionally, at its core, AI is a pattern-hunting machine driven by statistics. It has built-in perception. It has been trained on discernment. It has restraint as a foundation layer because it is constrained by energy. In other words, it has all the components of taste.
 
-Whenever I've tried to use it to produce something, its outputs are what most would find acceptable. That *is* a demonstration of taste. But no one would find the output fresh and new either, and *that's* worth exploring. 
-
----
+Whenever I've tried to use it to produce something, the outputs have been what most would find acceptable. That *is* a demonstration of taste. But no one would find the output fresh and new either, and *that's* worth exploring. 
 
 ## The Taste Graph
 
@@ -36,8 +32,6 @@ AI lives here.
 When you ask an AI to design a landing page, it produces something clean, well-proportioned, with a three-column layout and the back button placed on the left of the screen. The typography works. The spacing breathes. The hierarchy scans. Nobody would call it ugly, and nobody would call it surprising. It has taste — statistical taste. It has learned from millions of examples which decisions land in the acceptable zone, and it reproduces that zone with mechanical consistency.
 
 This is not a criticism. The middle is profitable, professional, and functional. But it is not where new directions come from. New directions come from the edges.
-
----
 
 ## Judgement Acts On the Curve
 
@@ -53,19 +47,15 @@ The same pattern plays out everywhere. Hip-hop. Techno. Grunge. Dubstep. Minimal
 
 AI can generate something in the style of punk. It can even produce something genuinely unusual by accident. But deciding that punk should be pulled toward the centre — that has always been a human decision.
 
-One could object that if AI learns from enough successful transitions — punk to stadium, hip-hop to billboard, minimalism to Apple store — it could learn which edges deserve promotion. But, judgement is exercised in real time, before success is knowable. It requires living in the present moment, sensing what the centre has grown too comfortable with, and acting before the data confirms you were right. That's a human quality.
-
----
+One could object that if AI learns from enough successful transitions — punk to stadium, hip-hop to Billboard, minimalism to Apple Store — it could learn which edges deserve promotion. But judgement is exercised in real time, before success is knowable. It requires living in the present moment, sensing what the centre has grown too comfortable with, and acting before the data confirms you were right. That's a human quality.
 
 ## Judgement Is Timed
 
 Banksy's stencil work is not powerful because of its technical execution. A competent art student could reproduce it. Its power comes from how precisely it captures a specific cultural moment — early-2000s Britain, obsessed with consumerism and surveillance. Remove Banksy from that context and the same spray paint on the same wall is just vandalism. The judgement was in the *when*, not the technique.
 
-This pattern is universal because culture is always in motion. Warhol held a mirror to 1960s mass production. Bjork heard glossy predictability settling over late-90s music and answered with glitch and orchestra. Gehry shattered the glass-and-steel complacency of 1990s architecture. Each was a commentary on the specific norms their era had grown too comfortable with. 
+This pattern is universal because culture is always in motion. Warhol held a mirror to 1960s mass production. Björk heard glossy predictability settling over late-90s music and answered with glitch and orchestra. Gehry shattered the glass-and-steel complacency of 1990s architecture. Each was a commentary on the specific norms their era had grown too comfortable with. 
 
 The centre shifts with every generation, and so must the act of pushing against it.
-
----
 
 ## Judgement Cascades
 
@@ -77,12 +67,10 @@ She traces the colour from Oscar de la Renta's collection, through Yves Saint La
 
 The point is not that fashion matters more than we admit. It is that what Andy thinks is her own casual choice is actually the residue of a judgement made far above her. Someone decided that cerulean, not turquoise, not lapis, was the colour that deserved attention this season. That decision cascaded through an entire supply chain — design houses, manufacturers, distributors, marketers — and reshaped what thousands of people would wear, buy, and see themselves in. Judgement does not stay in the boardroom. It reaches into your closet, your screen, your street. It shapes aspiration, commerce, and identity, often invisibly.
 
-AI can produce cerulean. It learned that blues work, that cerulean appeared in enough training examples to count as acceptable. But deciding that cerulean should *be the colour this year* — that has always been a human role. And that role is not reserved for fashion editors in Paris. **It is the work of anyone who shapes what others will see, use, and inhabit.** Which brings us to the question most designers are now quietly asking themselves.
-
----
+AI can produce cerulean. It learned that blues work, that cerulean appeared in enough training examples to count as acceptable. But deciding that cerulean should *be the colour this year* — that has always been a human role. And that role is not reserved for fashion editors in Paris. **It is the work of anyone who shapes what others will see, use, and inhabit.** That brings us to the question most designers are now quietly asking themselves.
 
 ## Choosing Between Two Equals
 
 For years, taste was enough. A designer's ability to pair the right typeface with the right grid, to know when whitespace had gone from elegant to empty — that was the moat. But AI is filling that moat with statistical concrete. The reflexive response is to ask: *What can I make that AI would not make?* That reflex is a trap. Being defined by what you are against is not a strategy — it is a cage. The better question is simpler: *Now that the baseline is handled, what world do I want to build?*
 
-In the long term, AI will handle the baseline. We will no longer choose between right and wrong — the obvious, the competent, the merely acceptable — because the machine will see both options and produce the safer one before we even ask. The work that remains is harder: choosing between two rights. And that requires judgement — the consistent application of perspective, formed through experience, sharpened by living inside culture, and willing to take a position on where the world should go next.
+In the long term, AI will handle the baseline. We will no longer choose between right and wrong — the obvious, the competent, the merely acceptable — because the machine will see both options and produce the safer one before we even ask. The work that remains is harder: choosing between two rights. And that requires judgement — the consistent application of perspective, formed through experience, sharpened by living inside culture, and requiring the willingness to take a position on where the world should go next.
