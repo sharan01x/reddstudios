@@ -11,13 +11,13 @@ image: taste-statistical-judgement-human.png
 audio: taste-statistical-judgement-human.mp3
 ---
 
-If the title makes you bristle, it's probably because you thought taste was the one human quality that can't be replicated by AI. I thought so too, because it was comforting. But it is an existential question for me as a designer and as such I knew that I'd better spend the time to understand this well. I learnt that taste won't save us. But judgement will. 
+If the title makes you bristle, it's probably because you thought taste was the one human quality that can't be replicated by AI. I thought so too, because it was comforting. But as a designer, this is an existential question — one I knew I had to take the time to understand properly. I learnt that taste won't save us. But judgement will. 
 
 ## Taste is Learnt
 
-As anyone who's been to design or art school will tell you, the first thing you do is learn about the works of other artists and designers. In my Art History 101 class, one of the subjects I loved the most, I had this amazing textbook that exposed me to so many works of art over time. Among many other things, I learnt the patterns that we find beautiful, understood the nuances of composition and how they affect someone looking at them, and appreciated the cultural impact that these works had on societies of their times. It taught 19-year-olds like me an appreciation for the arts. It taught us taste. 
+As anyone who's been to design or art school will tell you, the first thing you do is learn about the works of other artists and designers. In my Art History 101 class — one of the subjects I loved the most — I had an amazing textbook that exposed me to countless works of art across history. Among many other things, I learnt the patterns that we find beautiful, understood the nuances of composition and how they affect the viewer, and appreciated the cultural impact that these works had on the societies of their time. It taught 19-year-olds like me an appreciation for the arts. It taught us taste. 
 
-Now, AI has been trained on millions of artworks and design outputs — more than anything I may ever be exposed to over my entire lifetime. Additionally, at its core, AI is a pattern-hunting machine driven by statistics. It has built-in perception. It has been trained on discernment. It has restraint as a foundation layer because it is constrained by energy. In other words, it has all the components of taste.
+Now, AI has been trained on millions of artworks and design outputs — more than I will ever be exposed to in my entire lifetime. Additionally, at its core, AI is a pattern-hunting machine driven by statistics. It has built-in perception. It has been trained to discern. Restraint is built in, because it is constrained by energy. In other words, it has all the components of taste.
 
 Whenever I've tried to use it to produce something, the outputs have been what most would find acceptable. That *is* a demonstration of taste. But no one would find the output fresh and new either, and *that's* worth exploring. 
 
