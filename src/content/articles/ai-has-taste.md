@@ -75,4 +75,6 @@ For years, taste was enough. A designer's ability to pair the right typeface wit
 
 In the long term, AI will handle the baseline. We will no longer choose between right and wrong — the obvious, the competent, the merely acceptable — because the machine will see both options and produce the safer one before we even ask. The work that remains is harder: choosing between two rights. And that requires judgement — the consistent application of perspective, formed through experience, sharpened by living inside culture, and requiring the willingness to take a position on where the world should go next.
 
+## Related Video
+
 <iframe width="480" height="270" src="https://www.youtube.com/embed/yZvxK37-IyE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
