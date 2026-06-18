@@ -1,12 +1,12 @@
 /* ==============================================
    Blog Styles — Monochromatic Typography-First
    ============================================== */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
-    font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: #111;
     background: rgb(238, 238, 238);
@@ -61,36 +61,31 @@ a:hover { opacity: 0.65; }
     text-align: center;
 }
 .header h1 {
-    font-family: 'Barlow', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 900;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.035em;
     line-height: 1.08;
     margin: 0 0 16px 0;
     color: #000;
-    text-transform: lowercase;
 }
 .header .subtitle {
-    font-family: 'Barlow', sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.05rem;
     color: #666;
     font-weight: 400;
     max-width: 560px;
     margin: 0 auto;
     line-height: 1.5;
-    text-transform: lowercase;
 }
 .rss-link {
-    font-family: 'IBM Plex Mono', monospace;
     color: #999;
     text-decoration: none;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.06em;
 }
 .rss-link:hover { color: #666; opacity: 1; }
 
@@ -100,23 +95,15 @@ a:hover { opacity: 0.65; }
     padding: 40px 0 20px 0;
 }
 .page-article .header h1 {
-    font-family: 'Barlow', sans-serif;
-    font-size: 3.05rem;
-    font-weight: 900;
-    letter-spacing: -0.03em;
-    line-height: 1.1;
+    font-size: 2.8rem;
     margin-bottom: 12px;
-    text-transform: lowercase;
 }
 .page-article .header .subtitle {
-    font-family: 'Barlow', sans-serif;
     font-size: 1.5rem;
     color: #888;
-    font-weight: 400;
+    font-weight: 300;
     max-width: none;
     margin: 0 0 12px 0;
-    line-height: 1.5;
-    text-transform: lowercase;
 }
 
 /* === TABS NAVIGATION === */
@@ -130,13 +117,13 @@ a:hover { opacity: 0.65; }
     background: none;
     border: none;
     padding: 12px 24px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 500;
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
     color: #999;
     cursor: pointer;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.08em;
     border-bottom: 2px solid transparent;
     margin-bottom: -2px;
     transition: color 0.2s, border-color 0.2s;
@@ -198,14 +185,12 @@ a:hover { opacity: 0.65; }
     background: none;
     border: none;
     padding: 12px 20px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 500;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
     color: #333;
     cursor: pointer;
     text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
     transition: background-color 0.2s;
     display: flex;
     align-items: center;
@@ -287,12 +272,10 @@ a:hover { opacity: 0.65; }
 
 .article-header h2 {
     margin: 0 0 6px 0;
-    font-family: 'Barlow', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.3;
-    letter-spacing: -0.02em;
-    text-transform: lowercase;
+    letter-spacing: -0.01em;
 }
 .article-header a {
     color: #111;
@@ -300,25 +283,23 @@ a:hover { opacity: 0.65; }
 }
 .article-header a:hover { opacity: 0.7; }
 .article-subtitle {
-    font-family: 'Barlow', sans-serif;
     color: #666;
     font-size: 0.92rem;
     margin-bottom: 8px;
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 .article-meta {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: #999;
     margin-top: auto;
     padding-top: 12px;
     border-top: 1px solid #f0f0f0;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.05em;
     font-weight: 500;
 }
 .article-date {
@@ -336,15 +317,14 @@ a:hover { opacity: 0.65; }
     margin-top: 10px;
 }
 .tag {
-    font-family: 'IBM Plex Mono', monospace;
     background: #f2f2f2;
     color: #555;
     padding: 3px 10px;
     border-radius: 3px;
     font-size: 0.65rem;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.05em;
 }
 
 /* === TAGS CLOUD FILTER === */
@@ -357,16 +337,16 @@ a:hover { opacity: 0.65; }
     margin-bottom: 20px;
 }
 .tag-filter {
-    font-family: 'IBM Plex Mono', monospace;
     background: #f2f2f2;
     color: #666;
     border: 1px solid transparent;
     padding: 5px 14px;
     border-radius: 20px;
+    font-family: inherit;
     font-size: 0.72rem;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.05em;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -425,7 +405,6 @@ a:hover { opacity: 0.65; }
     flex: 1;
 }
 .post-content {
-    font-family: 'Barlow', sans-serif;
     font-size: 0.92rem;
     line-height: 1.55;
     color: #222;
@@ -447,11 +426,10 @@ a:hover { opacity: 0.65; }
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: #999;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.05em;
     font-weight: 500;
     margin-top: auto;
     padding-top: 12px;
@@ -484,32 +462,27 @@ a:hover { opacity: 0.65; }
 }
 .playlist-info { flex: 1; min-width: 0; }
 .playlist-title {
-    font-family: 'Barlow', sans-serif;
     font-size: 1.05rem;
     font-weight: 700;
     color: #111;
     margin-bottom: 4px;
     line-height: 1.3;
-    letter-spacing: -0.01em;
-    text-transform: lowercase;
 }
 .playlist-subtitle {
-    font-family: 'Barlow', sans-serif;
     font-size: 0.9rem;
     color: #666;
     font-style: italic;
     margin-bottom: 8px;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 .playlist-meta {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     color: #999;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.04em;
     font-weight: 500;
 }
 .playlist-author { color: #777; }
@@ -544,12 +517,11 @@ a:hover { opacity: 0.65; }
 }
 .podcast-episode-badge {
     display: inline-block;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.6rem;
-    font-weight: 500;
+    font-weight: 700;
     color: #888;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.06em;
     background: #f0f0f0;
     padding: 2px 8px;
     border-radius: 3px;
@@ -595,11 +567,10 @@ a:hover { opacity: 0.65; }
     background: #f0f0f0;
     color: #555;
     border-radius: 3px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem;
-    font-weight: 500;
+    font-size: 0.7rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.04em;
 }
 
 /* Author & Date metadata */
@@ -637,7 +608,6 @@ a:hover { opacity: 0.65; }
 }
 .author-icon { font-size: 1.75rem; color: #999; }
 .author-name-display {
-    font-family: 'Barlow', sans-serif;
     font-weight: 600;
     color: #111;
     font-size: 0.9rem;
@@ -668,12 +638,11 @@ a:hover { opacity: 0.65; }
     margin-left: auto;
 }
 .date {
-    font-family: 'IBM Plex Mono', monospace;
     color: #111;
-    font-size: 0.72rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.04em;
 }
 
 /* Audio section (in-article) */
@@ -686,12 +655,11 @@ a:hover { opacity: 0.65; }
 }
 .audio-section h3 {
     margin: 0 0 12px 0;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 500;
+    font-size: 0.75rem;
+    font-weight: 600;
     color: #888;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.06em;
 }
 .audio-grid {
     display: grid;
@@ -713,19 +681,16 @@ audio { width: 100%; height: 32px; }
 /* Article content */
 .content { padding: 32px 0 60px 0; }
 .content h1, .content h2, .content h3 {
-    font-family: 'Barlow', sans-serif;
     color: #000;
     margin-top: 36px;
     margin-bottom: 16px;
     font-weight: 800;
     letter-spacing: -0.02em;
-    text-transform: lowercase;
 }
 .content h1 { font-size: 2.2rem; line-height: 1.2; }
 .content h2 { font-size: 1.6rem; line-height: 1.3; }
 .content h3 { font-size: 1.3rem; line-height: 1.4; }
 .content p {
-    font-family: 'Barlow', sans-serif;
     margin-bottom: 24px;
     font-size: 1.05rem;
     line-height: 1.7;
@@ -734,7 +699,6 @@ audio { width: 100%; height: 32px; }
 .content ol, .content ul {
     padding-left: 2em;
     margin-bottom: 1.2em;
-    font-family: 'Barlow', sans-serif;
     font-size: 1.05rem;
     line-height: 1.8;
 }
@@ -753,13 +717,12 @@ audio { width: 100%; height: 32px; }
     margin-top: 40px;
 }
 .sources-section h3 {
-    font-family: 'IBM Plex Mono', monospace;
     color: #888;
-    font-size: 0.72rem;
-    font-weight: 500;
+    font-size: 0.75rem;
+    font-weight: 600;
     margin-bottom: 16px;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.06em;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -769,7 +732,6 @@ audio { width: 100%; height: 32px; }
 .sources-list a {
     color: #444;
     text-decoration: none;
-    font-family: 'Barlow', sans-serif;
     font-size: 0.85rem;
     font-weight: normal;
     padding: 8px 12px;
@@ -790,7 +752,6 @@ audio { width: 100%; height: 32px; }
     color: #666;
     font-weight: normal;
     text-decoration: none;
-    font-family: 'Barlow', sans-serif;
     font-size: 0.85rem;
     display: inline-flex;
     align-items: center;
@@ -803,7 +764,6 @@ audio { width: 100%; height: 32px; }
 .no-content {
     text-align: center;
     color: #999;
-    font-family: 'Barlow', sans-serif;
     font-size: 0.9rem;
     padding: 48px 0;
     font-weight: 400;
@@ -1068,12 +1028,9 @@ body {
 
 .video-title {
     margin: 0 0 8px 0;
-    font-family: 'Barlow', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     line-height: 1.4;
-    letter-spacing: -0.01em;
-    text-transform: lowercase;
 }
 
 .video-title a {
@@ -1088,7 +1045,6 @@ body {
 
 .video-subtitle {
     margin: 0 0 12px 0;
-    font-family: 'Barlow', sans-serif;
     font-size: 0.9rem;
     color: #666;
     line-height: 1.5;
@@ -1103,11 +1059,8 @@ body {
     align-items: center;
     gap: 12px;
     margin-bottom: 12px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.65rem;
+    font-size: 0.85rem;
     color: #888;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
 }
 
 .video-author {
