@@ -966,6 +966,8 @@ pre {
     font-size: 0.85rem;
     line-height: 1.55;
     margin: 24px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 code {
