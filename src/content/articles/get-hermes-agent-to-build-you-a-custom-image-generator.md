@@ -7,6 +7,7 @@ tags:
   - ai
   - design
 image: custom-image-generators.png
+audio: custom-image-generators_audio.mp3
 ---
 
 Hermes Agent can build the design tools you need. In this series, we start with the most essential one: a custom image generator that bakes in your unique style so you never have to repeat it. I'll also show you how to generate images for free using local models.
@@ -171,3 +172,7 @@ Flux 2 Pro on Replicate supports multiple reference images. You can supply a log
 Models such as Flux 2 Pro also support in-painting, object replacement, colour swaps, and canvas expansion. You can wrap those capabilities in simple CLI commands.
 
 If you build any of these extensions — or the tool itself — share your experience. If you hit a problem you cannot solve, reach out. Next week I will cover building analogous tools for audio generation.
+
+## Related Video
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/JoeQObvq294" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
