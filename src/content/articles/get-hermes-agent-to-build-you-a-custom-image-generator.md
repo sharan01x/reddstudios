@@ -48,6 +48,8 @@ This should result in a locally built utility. Verify it works:
 Use the Bonsai tool via CLI to generate an image of a chameleon that is 500×500 pixels in size.
 ```
 
+![Bonsai output: chameleon generated at 500×500 pixels](/bonsai-chameleon.png)
+
 Bonsai is fast — on my Mac it takes about 6–10 seconds depending on dimensions. Once generated, your agent should provide the image path. If anything fails, ask the agent to debug it.
 
 With Bonsai installed, we can build the abstraction layer that makes switching models effortless.
@@ -79,6 +81,8 @@ Test it:
 ```
 Use `image37` to create an image of "Sunshine and rainbows with a dreamy setting using pastel colours". If you need instructions, read the AGENTS.md file in the tool's folder.
 ```
+
+![image37 test output: sunshine and rainbows with pastel colours](/sunshine-rainbows.png)
 
 This is your image-generation equivalent of "Hello, world!" — you should receive the path to the stored image. Debug any issues with the agent before moving on.
 
@@ -112,6 +116,8 @@ Implementation should be quick. Verify the integration:
 Using the image37 tool, create an image with the flux-2-flex model: a close-up shot of an alligator's eye in black-and-white wildlife photography style.
 ```
 
+![Flux 2 Flex output: close-up of an alligator's eye in black-and-white wildlife photography](/flux-alligator-eye.png)
+
 You should get a crisp, detailed result. If not, have the agent debug.
 
 Repeat these steps for any additional Replicate models you want. Recommended options:
@@ -135,6 +141,8 @@ Update image37 so the following text is appended to every image-generation promp
 
 Replace the sample style with your own. From now on, every image generated through `image37` will share that look without extra manual effort.
 
+![image37 style output: cinematic shot with Leica M6 / Kodak Portra 400 film grain aesthetic](/image37-style-example.png)
+
 ## Use-Case Prompts
 
 We are finally in an era of goal-oriented computing: tell the machine *what* you need, not *how* to do it. The `use-case` parameter embodies that idea. Describe what the image is for, and the AI constructs the right prompt automatically.
@@ -148,6 +156,8 @@ For example, if the use case is "I need an accent image for a paragraph about bl
 
 Update the AGENTS.md file after implementing this feature.
 ```
+
+![Use-case output: blockchain accent image generated from a goal description](/use-case-blockchain.png)
 
 Now `image37` can help you when you are stuck for a visual concept.
 
@@ -170,6 +180,10 @@ Flux 2 Pro on Replicate supports multiple reference images. You can supply a log
 ### 4. Editing features
 
 Models such as Flux 2 Pro also support in-painting, object replacement, colour swaps, and canvas expansion. You can wrap those capabilities in simple CLI commands.
+
+![Editing example: in-painting result](/editing-example-1.jpg)
+
+![Editing example: canvas expansion result](/editing-example-2.jpg)
 
 If you build any of these extensions — or the tool itself — share your experience. If you hit a problem you cannot solve, reach out. Next week I will cover building analogous tools for audio generation.
 
