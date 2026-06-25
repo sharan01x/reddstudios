@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>corners</title>
+<style>
+:root {
+  --ink: #111111;
+  --ink-alt: #1A1A18;
+  --orange: #E74C3C;
+  --cream: #F0ECE5;
+  --cream-muted: #888880;
+  --cream-hint: #505048;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  background: var(--ink);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+}
+
+.signature {
+  position: absolute;
+  user-select: none;
+  display: block;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.signature img {
+  height: 20px;
+  width: auto;
+  display: block;
+  opacity: 0.18;
+  transition: opacity 0.3s ease;
+}
+
+.signature:hover img {
+  opacity: 0.5;
+}
+
+#grid {
+  display: grid;
+  gap: 8px;
+}
+
+.cell {
+  background: var(--cream);
+  transition: border-radius 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.cell:nth-child(3n)   { background: var(--orange); }
+.cell:nth-child(5n+1) { background: var(--cream-muted); }
+.cell:nth-child(7n+2) { background: var(--cream-hint); }
+.cell:nth-child(11n)  { background: var(--ink-alt); }
+</style>
+</head>
+<body>
+<div id="grid"></div>
+<a href="https://github.com/sharan01x/art" target="_blank" rel="noopener noreferrer" class="signature">
+  <img src="signature.png" alt="Sharan + Hound">
+</a>
+
+<script>
+const grid = document.getElementById('grid');
+const GAP = 8;
+const TARGET_CELL = 88;
+
+const availableW = window.innerWidth - 80;
+const availableH = window.innerHeight - 80;
+
+const COLS = Math.max(6, Math.floor((availableW + GAP) / (TARGET_CELL + GAP)));
+const ROWS = Math.max(6, Math.floor((availableH + GAP) / (TARGET_CELL + GAP)));
+
+const cellSize = Math.floor(Math.min(
+  (availableW - (COLS - 1) * GAP) / COLS,
+  (availableH - (ROWS - 1) * GAP) / ROWS
+));
+
+const gridW = COLS * cellSize + (COLS - 1) * GAP;
+const gridH = ROWS * cellSize + (ROWS - 1) * GAP;
+
+grid.style.width = gridW + 'px';
+grid.style.height = gridH + 'px';
+grid.style.gridTemplateColumns = `repeat(${COLS}, ${cellSize}px)`;
+grid.style.gridTemplateRows = `repeat(${ROWS}, ${cellSize}px)`;
+
+const signature = document.querySelector('.signature');
+
+function positionSignature() {
+  const gridRect = grid.getBoundingClientRect();
+  const bodyRect = document.body.getBoundingClientRect();
+  const sigWidth = signature.offsetWidth || 191;
+  const left = gridRect.right - bodyRect.left - sigWidth;
+  const top = gridRect.bottom - bodyRect.top + 15;
+  signature.style.left = left + 'px';
+  signature.style.top = top + 'px';
+}
+
+// Initial position after grid is rendered
+positionSignature();
+
+// Reposition after image loads so offsetWidth is correct
+const sigImg = signature.querySelector('img');
+if (sigImg) {
+  sigImg.onload = positionSignature;
+  if (sigImg.complete) positionSignature();
+}
+window.addEventListener('load', positionSignature);
+window.addEventListener('resize', positionSignature);
+
+const MAX_MERGE = Math.max(COLS, ROWS) >= 20 ? 3 : 2;
+
+const slots = Array(ROWS * COLS).fill(false);
+
+function isFilled(r, c) {
+  if (r >= ROWS || c >= COLS) return true;
+  return slots[r * COLS + c];
+}
+
+function canPlace(r, c, size) {
+  if (r + size > ROWS || c + size > COLS) return false;
+  for (let i = r; i < r + size; i++) {
+    for (let j = c; j < c + size; j++) {
+      if (slots[i * COLS + j]) return false;
+    }
+  }
+  return true;
+}
+
+function markFilled(r, c, size) {
+  for (let i = r; i < r + size; i++) {
+    for (let j = c; j < c + size; j++) {
+      slots[i * COLS + j] = true;
+    }
+  }
+}
+
+function randomCorners() {
+  const tl = Math.random() < 0.5 ? '0%' : '100%';
+  const tr = Math.random() < 0.5 ? '0%' : '100%';
+  const br = Math.random() < 0.5 ? '0%' : '100%';
+  const bl = Math.random() < 0.5 ? '0%' : '100%';
+  return `${tl} ${tr} ${br} ${bl}`;
+}
+
+const cells = [];
+
+for (let r = 0; r < ROWS; r++) {
+  for (let c = 0; c < COLS; c++) {
+    if (isFilled(r, c)) continue;
+
+    let size = 1;
+    const roll = Math.random();
+
+    if (MAX_MERGE >= 3 && roll < 0.03 && canPlace(r, c, 3)) {
+      size = 3;
+    } else if (MAX_MERGE >= 2 && roll < 0.12 && canPlace(r, c, 2)) {
+      size = 2;
+    }
+
+    markFilled(r, c, size);
+    cells.push({ r, c, size });
+  }
+}
+
+// Shuffle DOM order so nth-child colouring is distributed
+for (let i = cells.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [cells[i], cells[j]] = [cells[j], cells[i]];
+}
+
+cells.forEach(({ r, c, size }) => {
+  const cell = document.createElement('div');
+  cell.className = 'cell';
+  // Explicit grid placement — exact position regardless of DOM order
+  cell.style.gridRow = `${r + 1} / span ${size}`;
+  cell.style.gridColumn = `${c + 1} / span ${size}`;
+  cell.style.borderRadius = randomCorners();
+
+  cell.addEventListener('mouseenter', () => {
+    cell.style.borderRadius = randomCorners();
+  });
+
+  grid.appendChild(cell);
+});
+</script>
+</body>
+</html>

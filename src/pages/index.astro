@@ -136,6 +136,7 @@ const formatDate = (dateStr: string) => {
                 <button class="tab-button" data-tab="audio"><i class="fas fa-headphones"></i>Audio</button>
                 <button class="tab-button" data-tab="podcasts"><i class="fas fa-podcast"></i>Podcasts</button>
                 <button class="tab-button" data-tab="videos"><i class="fas fa-video"></i>Videos</button>
+                <button class="tab-button" data-tab="art"><i class="fas fa-palette"></i>Art</button>
                 <button class="tab-button" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</button>
             </div>
         </div>
@@ -146,6 +147,7 @@ const formatDate = (dateStr: string) => {
             <button class="mobile-menu-item" data-tab="audio"><i class="fas fa-headphones"></i>Audio</button>
             <button class="mobile-menu-item" data-tab="podcasts"><i class="fas fa-podcast"></i>Podcasts</button>
             <button class="mobile-menu-item" data-tab="videos"><i class="fas fa-video"></i>Videos</button>
+            <button class="mobile-menu-item" data-tab="art"><i class="fas fa-palette"></i>Art</button>
             <button class="mobile-menu-item" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</button>
         </div>
         
@@ -291,6 +293,66 @@ const formatDate = (dateStr: string) => {
                     </div>
                 ))}
 
+            </div>
+        </div>
+        
+        <!-- Art Tab Content -->
+        <div id="art-tab" class="tab-content">
+            <div class="art-grid">
+                <div class="art-card">
+                    <div class="art-preview-container">
+                        <a href="/art/corners/index.html" target="_blank" rel="noopener noreferrer" class="art-preview-link">
+                            <img src="/art/corners/signature.png" alt="corners" class="art-preview-img" />
+                            <div class="art-play-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="art-info">
+                        <h3 class="art-title">
+                            <a href="/art/corners/index.html" target="_blank" rel="noopener noreferrer">
+                                corners
+                            </a>
+                        </h3>
+                        <p class="art-description">
+                            A dark field of cream, rust, and shadow squares that breathe under your cursor. 
+                            Each cell is a binary die roll: sharp or soft, square or circle. There's no goal, 
+                            just the pleasure of touching a surface that responds. It's about <em>presence</em> — 
+                            being with something that changes when you touch it.
+                        </p>
+                        <a href="/art/corners/index.html" target="_blank" rel="noopener noreferrer" class="art-link">
+                            Open →
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="art-card">
+                    <div class="art-preview-container">
+                        <a href="/art/corners-ball/index.html" target="_blank" rel="noopener noreferrer" class="art-preview-link">
+                            <img src="/art/corners-ball/signature.png" alt="corners-ball" class="art-preview-img" />
+                            <div class="art-play-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="art-info">
+                        <h3 class="art-title">
+                            <a href="/art/corners-ball/index.html" target="_blank" rel="noopener noreferrer">
+                                corners-ball
+                            </a>
+                        </h3>
+                        <p class="art-description">
+                            The mischievous twin. The red circles are the only things anchoring the world in its 
+                            cream state. Chase them away and the whole page flips. It's a conditional identity: 
+                            the piece only knows who it is while the red circles exist. It's about 
+                            <em>consequence</em> — your choices dissolve the world into its inverse, and you decide 
+                            whether to bring the red back or let it stay flipped.
+                        </p>
+                        <a href="/art/corners-ball/index.html" target="_blank" rel="noopener noreferrer" class="art-link">
+                            Open →
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         
