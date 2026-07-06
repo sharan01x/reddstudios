@@ -15,23 +15,23 @@ The following is a collection of great videos to watch to understand the field o
 
 ## Economics Concepts (Yes, start here)
 
-- What is money? Short version, medium version and the long version.
-- How is money created? https://youtu.be/mzoX7zEZ6h4
+- What is money? [Short version](https://youtu.be/rubNhvbuBI8), [medium version](https://youtu.be/bjvMt0xaSUQ) and the [long version](https://youtu.be/d_34YjXAU5Y).
+- How is money created? [https://youtu.be/mzoX7zEZ6h4](https://youtu.be/mzoX7zEZ6h4)
 
 ## Blockchain Concepts
 
-- What is a blockchain? The concept and the visual example and a demo
-- What is a Bitcoin? https://youtu.be/bBC-nXj3Ng4
-- Consensus mechanisms: Proof of Stake vs. Proof of Work and other mechanisms
-- What are smart contracts? Visual explanation
-- What are NFT’s? Basic and more detailed
+- What is a blockchain? The [concept](https://youtu.be/hYip_Vuv8J0) and the [visual example](https://youtu.be/SSo_EIwHSd4) and [a demo](https://youtu.be/_160oMzblY8)
+- What is a Bitcoin? [https://youtu.be/bBC-nXj3Ng4](https://youtu.be/bBC-nXj3Ng4)
+- Consensus mechanisms: [Proof of Stake vs. Proof of Work](https://youtu.be/M3EFi_POhps) and [other mechanisms](https://youtu.be/3QCykHU89To)
+- What are smart contracts? [Visual explanation](https://youtu.be/ZE2HxTmxfrI)
+- What are NFT's? [Basic](https://youtu.be/451V-lBLfuo) and [more detailed](https://youtu.be/4dkl5O9LOKg)
 
 ## Additional Information
 
-- The evolution of the web: With Marc Andreesen and Chris Dixon
-- Mental models to understand Web3: By Chris Dixon
-- A good overview of the crypto industry: By Chris Dixon
-- Future of Applications: By Balaji Srinivasan
+- The evolution of the web: [With Marc Andreesen and Chris Dixon](https://youtu.be/RXHITeaGB8Q)
+- Mental models to understand Web3: [By Chris Dixon](https://youtu.be/jezH_7qEk50)
+- A good overview of the crypto industry: [By Chris Dixon](https://youtu.be/2wxtiNgXBaU)
+- Future of Applications: By [Balaji Srinivasan](https://youtu.be/3jPYk7ucrjo)
 
 # Glossary of Terms to Understand
 
