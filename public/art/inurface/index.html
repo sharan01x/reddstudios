@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In[ur]face</title>
+    <style>
+        :root {
+            --ink: #0D0C0B;
+            --ink-warm: #1C1916;
+            --amber: #E8A87C;
+            --orange: #E74C3C;
+            --cream: #F5F0E8;
+            --cream-muted: #9A958C;
+            --cream-hint: #5C5852;
+            --card-bg: #FAFAF8;
+            --card-border: rgba(0,0,0,0.06);
+            --label-color: #8A8A82;
+            --input-border: #E0DDD8;
+            --input-border-focus: #E74C3C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: var(--ink);
+            font-family: -apple-system, 'SF Pro Display', system-ui, sans-serif;
+            cursor: default;
+        }
+
+        /* ── Cyclorama backdrop: seamless wall-to-floor curve ── */
+        .viewport {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:
+                radial-gradient(ellipse 80% 60% at 50% 30%, #F8F6F3 0%, #E8E4DF 40%, transparent 70%),
+                linear-gradient(to bottom,
+                    #E8E4DF 0%,
+                    #D8D4CE 45%,
+                    #D0CCC6 55%,
+                    #C8C4BE 65%,
+                    #BEBAB4 100%);
+            perspective: 1200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Very faint warmth glow — barely visible in bright studio */
+        .ambient-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(232, 168, 124, 0.025) 0%, rgba(232, 168, 124, 0.01) 40%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+            mix-blend-mode: multiply;
+            will-change: transform, opacity;
+        }
+
+        /* Floor shadow — sits below the card on the cyclorama floor */
+        .floor-shadow {
+            position: absolute;
+            width: 360px;
+            height: 60px;
+            background: radial-gradient(ellipse, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.06) 50%, transparent 80%);
+            border-radius: 50%;
+            z-index: 1;
+            pointer-events: none;
+            will-change: transform, opacity;
+            opacity: 0.15;
+        }
+
+        .card-wrapper {
+            position: relative;
+            z-index: 2;
+            width: 420px;
+            will-change: transform;
+            transform-style: preserve-3d;
+        }
+
+        /* The card itself — cream, softly lit, generous rounding */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 44px 40px 40px;
+            box-shadow:
+                0 1px 0 rgba(255,255,255,0.8) inset,
+                0 20px 50px -10px rgba(0,0,0,0.12),
+                0 6px 16px -5px rgba(0,0,0,0.06);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Subtle top sheen — the "light from above" */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60%;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.04) 0%, transparent 100%);
+            pointer-events: none;
+            border-radius: 20px 20px 0 0;
+        }
+
+        /* The "eye" — a faint highlight that tracks the cursor like a reflection */
+        .card-glint {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background: radial-gradient(circle at var(--glint-x, 50%) var(--glint-y, 30%), rgba(0,0,0,0.03) 0%, transparent 30%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 1;
+            will-change: transform;
+        }
+
+        header {
+            margin-bottom: 36px;
+        }
+
+        header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1A1A18;
+            letter-spacing: -0.01em;
+        }
+
+        header .subtitle {
+            font-size: 0.7rem;
+            color: var(--cream-muted);
+            margin-top: 6px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--label-color);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        /* ── Box-style input containers ── */
+        input[type="number"],
+        input[type="text"] {
+            flex: 1;
+            background: #F5F3F0;
+            border: 1px solid var(--input-border);
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 1.35rem;
+            font-weight: 500;
+            outline: none;
+            color: #1A1A18;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-variant-numeric: tabular-nums;
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+            appearance: none;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input::placeholder {
+            color: #C8C5C0;
+            font-weight: 400;
+        }
+
+        input:focus {
+            border-color: var(--input-border-focus);
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.08);
+        }
+
+        input:disabled {
+            color: #B0ADA8;
+            cursor: default;
+            opacity: 0.6;
+        }
+
+        .pill {
+            padding: 5px 14px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            background: #F0EDE8;
+            color: #6A6660;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        .pill.disabled {
+            opacity: 0.6;
+            cursor: default;
+        }
+
+        .recipient-row {
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+
+        .recipient-row input {
+            font-size: 0.9rem;
+            font-weight: 400;
+            width: 100%;
+            flex: 1;
+        }
+
+        /* ── Digit land animation: font-size based, 50% larger start ── */
+        @keyframes digitLand {
+            0%   { font-size: 2.4rem; opacity: 0.3; }
+            60%  { font-size: 1.5rem;  opacity: 1; }
+            100% { font-size: 1.35rem; opacity: 1; }
+        }
+
+        .digit-pop {
+            display: inline-block;
+            animation: digitLand 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        /* ── Wallet address formatting animations ── */
+        @keyframes addrSlideIn {
+            0%   { opacity: 0; transform: translateX(-4px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes addrHighlight {
+            0%   { background: rgba(231, 76, 60, 0.08); }
+            100% { background: transparent; }
+        }
+
+        .addr-char {
+            display: inline-block;
+            animation: addrSlideIn 0.25s ease forwards;
+            opacity: 0;
+        }
+
+        .addr-highlight {
+            animation: addrHighlight 0.6s ease forwards;
+        }
+
+        .cta {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background: #1A1A18;
+            color: #FAFAF8;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-top: 24px;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.2s ease;
+            letter-spacing: 0.01em;
+        }
+
+        .cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .cta:active {
+            transform: translateY(0);
+        }
+
+        /* Signature */
+        .signature {
+            position: absolute;
+            user-select: none;
+            display: block;
+            text-decoration: none;
+            z-index: 10;
+        }
+
+        .signature img {
+            height: 20px;
+            width: auto;
+            display: block;
+            opacity: 0.18;
+            transition: opacity 0.4s ease;
+        }
+
+        .signature:hover img {
+            opacity: 0.3;
+        }
+
+        /* ── Dreaming numbers: float from idle focused field ── */
+        .dream-number {
+            position: absolute;
+            font-family: -apple-system, 'SF Pro Display', system-ui, sans-serif;
+            font-variant-numeric: tabular-nums;
+            font-weight: 500;
+            pointer-events: none;
+            z-index: 3;
+            will-change: transform, opacity;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="viewport" id="viewport">
+        <div class="ambient-glow" id="glow"></div>
+        <div class="floor-shadow" id="shadow"></div>
+        <div class="card-wrapper" id="cardWrapper">
+            <main class="card">
+                <div class="card-glint" id="glint"></div>
+                <div class="card-content" id="cardContent">
+                    <header>
+                        <h1>In[ur]face</h1>
+                        <div class="subtitle">Bridge</div>
+                    </header>
+
+                    <section>
+                        <label>Send</label>
+                        <div class="input-group">
+                            <input type="number" placeholder="0.00" id="sendInput">
+                            <span class="pill">ETH</span>
+                        </div>
+                    </section>
+
+                    <section>
+                        <label>Receive</label>
+                        <div class="input-group">
+                            <input type="number" placeholder="0.00" id="receiveInput">
+                            <span class="pill">USDC</span>
+                        </div>
+                    </section>
+
+                    <section>
+                        <label>Recipient</label>
+                        <div class="recipient-row">
+                            <input type="text" placeholder="Select recipient" id="recipientInput">
+                        </div>
+                    </section>
+
+                    <button class="cta" id="sendBtn">Send</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <a href="https://github.com/sharan01x/art" target="_blank" rel="noopener noreferrer" class="signature" id="sig">
+        <img src="signature.png" alt="Sharan + Hound">
+    </a>
+
+    <script>
+        // ─── Elements ───────────────────────────────────────────
+        const viewport    = document.getElementById('viewport');
+        const cardWrapper = document.getElementById('cardWrapper');
+        const cardContent = document.getElementById('cardContent');
+        const shadow      = document.getElementById('shadow');
+        const glow        = document.getElementById('glow');
+        const glint       = document.getElementById('glint');
+        const sig         = document.getElementById('sig');
+        const sendInput   = document.getElementById('sendInput');
+        const recipientInput = document.getElementById('recipientInput');
+
+        // ─── Config ─────────────────────────────────────────────
+        const MAX_ROTATE_X   = 10;
+        const MAX_ROTATE_Y   = 14;
+        const MAX_SHIFT_X    = 16;
+        const MAX_SHIFT_Y    = 12;
+        const ACTIVE_SCALE   = 1.03;
+        const IDLE_SCALE     = 1.0;
+        // Drooping / sad starting state — top tilts AWAY from viewer (faces down)
+        const DROOP_ROT_X    = -8;
+        const DROOP_TRANS_Y  = 12;
+        const DROOP_SCALE    = 0.97;
+        const SLEEP_SCALE    = 0.97;
+        const SLEEP_ROT_X    = -8;
+        const PERSPECTIVE    = 1000;
+
+        // Spring damping
+        const ACTIVE_DAMP    = 0.12;
+        const SLEEP_DAMP     = 0.04;
+        const DROOP_DAMP    = 0.03;   // slow, melancholy droop
+
+        // ─── State ──────────────────────────────────────────────
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let isInside = false;
+        let isSleeping = true;  // Start in sleeping/drooping state
+        let isFrozen = false;   // Frozen when an input is focused
+
+        // Zip-away animation
+        let curZipX = 0, targetZipX = 0;
+
+        // Current rendered values — start at drooping position
+        let curRotX = DROOP_ROT_X, curRotY = 0, curShiftX = 0, curShiftY = DROOP_TRANS_Y, curScale = DROOP_SCALE;
+        let curGlowX = window.innerWidth / 2, curGlowY = window.innerHeight / 2, curGlowOp = 0;
+        let curGlintX = 50, curGlintY = 30;
+        let curShadowOp = 0.08, curShadowScale = 0.95, curShadowX = 0;
+
+        // Digit boost: form scales up as digits are typed
+        let digitBoost = 0, targetDigitBoost = 0;
+
+        // Breathing phase for idle animation
+        let breathPhase = 0;
+
+        // ─── Mouse Events ───────────────────────────────────────
+        function fieldHasContent() {
+            return !!(sendInput.value || document.getElementById('receiveInput').value || recipientRawValue);
+        }
+
+        viewport.addEventListener('mouseenter', () => {
+            isInside = true;
+            isSleeping = false;
+        });
+
+        viewport.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            isInside = true;
+            isSleeping = false;
+        });
+
+        viewport.addEventListener('mouseleave', () => {
+            isInside = false;
+            setTimeout(() => {
+                if (!isInside && !fieldHasContent()) isSleeping = true;
+            }, 400);
+        });
+
+        // ─── Pause tracking when field focused ──────────────────
+        // Collect all inputs inside the card
+        const cardInputs = document.querySelectorAll('.card input');
+        cardInputs.forEach(inp => {
+            inp.addEventListener('focus', () => {
+                // If currently drooping, perk up to neutral first
+                if (isSleeping || !isInside) {
+                    isSleeping = false;
+                    // Force perk-up: set targets to neutral idle
+                    isInside = true;  // temporarily treat as awake to perk up
+                    setTimeout(() => {
+                        isFrozen = true;
+                    }, 300); // Allow 300ms to perk up before freezing
+                } else {
+                    isFrozen = true;
+                }
+            });
+            inp.addEventListener('blur', () => {
+                isFrozen = false;
+                if (!isInside) {
+                    setTimeout(() => {
+                        if (!isInside && !fieldHasContent()) isSleeping = true;
+                    }, 400);
+                }
+            });
+        });
+
+        // ─── Animation Loop ─────────────────────────────────────
+        function animate() {
+            // When frozen (field focused), skip mouse tracking but keep digit boost + zip
+            if (isFrozen) {
+                digitBoost += (targetDigitBoost - digitBoost) * 0.08;
+                curZipX += (targetZipX - curZipX) * 0.08;
+                const totalScale = curScale + digitBoost;
+                cardWrapper.style.transform =
+                    `perspective(${PERSPECTIVE}px) ` +
+                    `rotateX(${curRotX.toFixed(3)}deg) ` +
+                    `rotateY(${curRotY.toFixed(3)}deg) ` +
+                    `translateX(${(curShiftX + curZipX).toFixed(2)}px) ` +
+                    `translateY(${curShiftY.toFixed(2)}px) ` +
+                    `translateZ(20px) ` +
+                    `scale(${totalScale.toFixed(4)})`;
+                requestAnimationFrame(animate);
+                return;
+            }
+
+            // Normalized cursor position (-1 to 1 from center)
+            const cx = window.innerWidth / 2;
+            const cy = window.innerHeight / 2;
+            const nx = (mouseX - cx) / cx;
+            const ny = (mouseY - cy) / cy;
+
+            // Target values
+            let tgtRotX, tgtRotY, tgtShiftX, tgtShiftY, tgtScale;
+            let tgtGlowOp, tgtShadowOp, tgtShadowScale, tgtShadowX;
+            let tgtGlintX, tgtGlintY;
+            let damp;
+
+            if (isInside && !isSleeping) {
+                // ── Awake: card turns toward cursor, leans in ──
+                damp = ACTIVE_DAMP;
+                tgtRotX   = -ny * MAX_ROTATE_X;
+                tgtRotY   = nx * MAX_ROTATE_Y;
+                tgtShiftX = nx * MAX_SHIFT_X;
+                tgtShiftY = ny * MAX_SHIFT_Y;
+                tgtScale  = ACTIVE_SCALE;
+
+                // Glow brightens slightly
+                tgtGlowOp = 0.5;
+                tgtGlowX  = mouseX;
+                tgtGlowY  = mouseY;
+
+                // Shadow shifts opposite to the tilt
+                tgtShadowOp    = 0.18;
+                tgtShadowScale = 1 + Math.abs(ny) * 0.12 + Math.abs(nx) * 0.06;
+                tgtShadowX     = -nx * 22;
+
+                // Glint follows cursor across card surface
+                tgtGlintX = 50 + nx * 25;
+                tgtGlintY = 30 - ny * 20;
+            } else {
+                if (fieldHasContent()) {
+                    // ── Content: fields have data, stay happy-neutral ──
+                    damp = SLEEP_DAMP;
+                    tgtRotX   = 0;
+                    tgtRotY   = 0;
+                    tgtShiftX = 0;
+                    tgtShiftY = 0;
+                    tgtScale  = IDLE_SCALE;
+                    tgtGlowOp = 0.15;
+                    tgtGlowX  = cx;
+                    tgtGlowY  = cy;
+                    tgtShadowOp    = 0.12;
+                    tgtShadowScale = 1;
+                    tgtShadowX     = 0;
+                    tgtGlintX = 50;
+                    tgtGlintY = 30;
+                } else {
+                    // ── Drooping/sleeping: melancholy return + gentle breathing ──
+                    damp = isSleeping ? SLEEP_DAMP : DROOP_DAMP;
+                    breathPhase += 0.012;
+
+                    const breath = Math.sin(breathPhase) * 0.004;
+                    const breathRot = Math.sin(breathPhase * 0.7) * 0.3;
+
+                    tgtRotX   = SLEEP_ROT_X + breathRot;
+                    tgtRotY   = 0;
+                    tgtShiftX = 0;
+                    tgtShiftY = DROOP_TRANS_Y;
+                    tgtScale  = SLEEP_SCALE + breath;
+
+                    tgtGlowOp = 0;
+                    tgtGlowX  = cx;
+                    tgtGlowY  = cy;
+
+                    tgtShadowOp    = 0.06;
+                    tgtShadowScale = 0.95;
+                    tgtShadowX     = 0;
+
+                    tgtGlintX = 50;
+                    tgtGlintY = 30;
+                }
+            }
+
+            // ── Lerp current → target ──
+            curRotX       += (tgtRotX - curRotX) * damp;
+            curRotY       += (tgtRotY - curRotY) * damp;
+            curShiftX     += (tgtShiftX - curShiftX) * damp;
+            curShiftY     += (tgtShiftY - curShiftY) * damp;
+            curScale      += (tgtScale - curScale) * damp;
+
+            curGlowX      += (tgtGlowX - curGlowX) * damp;
+            curGlowY      += (tgtGlowY - curGlowY) * damp;
+            curGlowOp     += (tgtGlowOp - curGlowOp) * damp;
+
+            curGlintX     += (tgtGlintX - curGlintX) * damp;
+            curGlintY     += (tgtGlintY - curGlintY) * damp;
+
+            curShadowOp   += (tgtShadowOp - curShadowOp) * damp;
+            curShadowScale+= (tgtShadowScale - curShadowScale) * damp;
+            curShadowX    += (tgtShadowX - curShadowX) * damp;
+
+            // Smooth digit boost decay/growth
+            digitBoost += (targetDigitBoost - digitBoost) * 0.08;
+
+            // Smooth zip-away
+            curZipX += (targetZipX - curZipX) * 0.08;
+
+            // ── Apply transforms ──
+            const totalScale = curScale + digitBoost;
+            cardWrapper.style.transform =
+                `perspective(${PERSPECTIVE}px) ` +
+                `rotateX(${curRotX.toFixed(3)}deg) ` +
+                `rotateY(${curRotY.toFixed(3)}deg) ` +
+                `translateX(${(curShiftX + curZipX).toFixed(2)}px) ` +
+                `translateY(${curShiftY.toFixed(2)}px) ` +
+                `translateZ(20px) ` +
+                `scale(${totalScale.toFixed(4)})`;
+
+            // Subtle parallax: card content shifts slightly more than the wrapper
+            const parallaxX = curShiftX * 0.15;
+            const parallaxY = curShiftY * 0.15;
+            cardContent.style.transform =
+                `translateX(${parallaxX.toFixed(2)}px) ` +
+                `translateY(${parallaxY.toFixed(2)}px)`;
+
+            // Glow
+            glow.style.transform =
+                `translate(${(curGlowX - 300).toFixed(1)}px, ${(curGlowY - 300).toFixed(1)}px)`;
+            glow.style.opacity = curGlowOp.toFixed(3);
+
+            // Glint via CSS custom properties
+            glint.style.setProperty('--glint-x', curGlintX.toFixed(1) + '%');
+            glint.style.setProperty('--glint-y', curGlintY.toFixed(1) + '%');
+
+            // Shadow — positioned directly below the card's center on the floor plane
+            const cardCenterX = window.innerWidth / 2 + curShiftX + curZipX;
+            const cardCenterY = window.innerHeight / 2 + curShiftY;
+            const shadowW = 360;
+            const shadowH = 60;
+            const floorGap = 40;
+            shadow.style.left = (cardCenterX - shadowW / 2 + curShadowX) + 'px';
+            shadow.style.top = (cardCenterY + 180 + floorGap) + 'px';
+            shadow.style.transform = `scale(${curShadowScale.toFixed(3)})`;
+            shadow.style.opacity = curShadowOp.toFixed(3);
+
+            requestAnimationFrame(animate);
+        }
+
+        requestAnimationFrame(animate);
+
+        // ─── Digit Land Animation (Send input) ──────────────────
+        // We overlay animated digit spans on top of the input.
+        // Approach: render a mirror div on top of the input; each
+        // character is a span. On each input event, diff the old
+        // and new value and apply digitLand to newly added chars.
+
+        function setupDigitAnimation(inputEl) {
+            // Create a mirror overlay
+            const mirror = document.createElement('div');
+            mirror.style.cssText = `
+                position: absolute;
+                top: 0; left: 0;
+                padding: 10px 14px;
+                font-size: 1.35rem;
+                font-weight: 500;
+                font-family: -apple-system, 'SF Pro Display', system-ui, sans-serif;
+                font-variant-numeric: tabular-nums;
+                color: #1A1A18;
+                pointer-events: none;
+                white-space: pre;
+                line-height: normal;
+                letter-spacing: normal;
+            `;
+            // Position it absolutely inside the input's parent
+            const parent = inputEl.parentElement;
+            if (getComputedStyle(parent).position === 'static') {
+                parent.style.position = 'relative';
+            }
+            // Insert mirror next to input (same stacking context)
+            inputEl.parentElement.insertBefore(mirror, inputEl.nextSibling);
+            // Make input text transparent (caret still visible)
+            inputEl.style.color = 'transparent';
+            inputEl.style.caretColor = '#1A1A18';
+
+            let prevValue = inputEl.value;
+
+            function renderMirror(animateChars) {
+                const val = inputEl.value || '';
+                mirror.innerHTML = '';
+                for (let i = 0; i < val.length; i++) {
+                    const span = document.createElement('span');
+                    span.textContent = val[i];
+                    if (animateChars.has(i)) {
+                        span.classList.add('digit-pop');
+                    }
+                    mirror.appendChild(span);
+                }
+                if (val.length === 0) {
+                    mirror.textContent = '';
+                }
+            }
+
+            renderMirror(new Set());
+
+            inputEl.addEventListener('input', (e) => {
+                const newVal = inputEl.value;
+                const animateChars = new Set();
+
+                // Update digit boost: +0.1 per digit, cap at +0.4
+                const digitCount = newVal.replace(/\D/g,'').length;
+                targetDigitBoost = Math.min(Math.floor(digitCount / 2) * 0.1, 0.4);
+
+                // Find which characters are newly added
+                if (newVal.length > prevValue.length) {
+                    // Characters were added — find the insertion point
+                    let commonPrefix = 0;
+                    while (commonPrefix < prevValue.length &&
+                           commonPrefix < newVal.length &&
+                           prevValue[commonPrefix] === newVal[commonPrefix]) {
+                        commonPrefix++;
+                    }
+                    // Animate all newly added characters
+                    for (let i = commonPrefix; i < newVal.length; i++) {
+                        animateChars.add(i);
+                    }
+                }
+
+                prevValue = newVal;
+                renderMirror(animateChars);
+            });
+
+            inputEl.addEventListener('focus', () => {
+                prevValue = inputEl.value;
+                renderMirror(new Set());
+                // Set initial boost based on existing digits
+                targetDigitBoost = Math.min(Math.floor(inputEl.value.replace(/\D/g,'').length / 2) * 0.1, 0.4);
+            });
+
+            inputEl.addEventListener('blur', () => {
+                targetDigitBoost = 0;
+            });
+        }
+
+        // Apply digit animation to all number inputs (Send and Receive)
+        document.querySelectorAll('.card input[type="number"]').forEach(setupDigitAnimation);
+
+        // ─── Wallet Address Formatting (Recipient field) ────────
+        let recipientRawValue = '';
+        let recipientFocused = false;
+
+        function formatAddressGroups(raw) {
+            // Group into chunks of 5, separated by spaces
+            const clean = raw.replace(/\s/g, '');
+            const groups = [];
+            for (let i = 0; i < clean.length; i += 5) {
+                groups.push(clean.substring(i, i + 5));
+            }
+            return groups.join(' ');
+        }
+
+        function abbreviateAddress(grouped) {
+            const clean = grouped.replace(/\s/g, '');
+            if (clean.length <= 15) return grouped;
+            return clean.substring(0, 5) + '...' + clean.substring(clean.length - 5);
+        }
+
+        function renderRecipient(fullFormatted, animateAll) {
+            // Keep the input value intact so typing accumulates correctly
+            recipientInput.style.color = 'transparent';
+            recipientInput.style.caretColor = '#1A1A18';
+
+            // Create or get mirror
+            let mirror = document.getElementById('recipientMirror');
+            if (!mirror) {
+                mirror = document.createElement('div');
+                mirror.id = 'recipientMirror';
+                mirror.style.cssText = `
+                    position: absolute;
+                    top: 0; left: 0;
+                    padding: 10px 14px;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    font-family: -apple-system, 'SF Pro Display', system-ui, sans-serif;
+                    color: #1A1A18;
+                    pointer-events: none;
+                    white-space: pre;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    max-width: calc(100% - 28px);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                `;
+                const parent = recipientInput.parentElement;
+                if (getComputedStyle(parent).position === 'static') {
+                    parent.style.position = 'relative';
+                }
+                recipientInput.parentElement.insertBefore(mirror, recipientInput.nextSibling);
+            }
+
+            // Highlight effect when full paste
+            if (animateAll) {
+                mirror.classList.remove('addr-highlight');
+                void mirror.offsetWidth; // force reflow
+                mirror.classList.add('addr-highlight');
+            }
+
+            mirror.innerHTML = '';
+            for (let i = 0; i < fullFormatted.length; i++) {
+                const span = document.createElement('span');
+                span.textContent = fullFormatted[i];
+                span.classList.add('addr-char');
+                span.style.animationDelay = (animateAll ? Math.min(i * 0.015, 0.3) : 0) + 's';
+                mirror.appendChild(span);
+            }
+        }
+
+        function updateRecipientDisplay() {
+            const raw = recipientRawValue;
+            if (!raw) {
+                recipientInput.value = '';
+                let mirror = document.getElementById('recipientMirror');
+                if (mirror) mirror.innerHTML = '';
+                recipientInput.style.color = '';
+                recipientInput.style.caretColor = '';
+                return;
+            }
+
+            if (recipientFocused) {
+                // Show full grouped form
+                const grouped = formatAddressGroups(raw);
+                renderRecipient(grouped, false);
+            } else {
+                // Show abbreviated form
+                const grouped = formatAddressGroups(raw);
+                const abbreviated = abbreviateAddress(grouped);
+                renderRecipient(abbreviated, false);
+            }
+        }
+
+        recipientInput.addEventListener('focus', () => {
+            recipientFocused = true;
+            if (recipientRawValue) {
+                updateRecipientDisplay();
+            }
+        });
+
+        recipientInput.addEventListener('blur', () => {
+            recipientFocused = false;
+            if (recipientRawValue) {
+                updateRecipientDisplay();
+            }
+        });
+
+        recipientInput.addEventListener('input', (e) => {
+            // Detect if this was a paste (long content suddenly appearing)
+            const newVal = recipientInput.value;
+            const isPaste = Math.abs(newVal.length - recipientRawValue.length) > 5;
+
+            // Store raw value (strip existing spaces for clean grouping)
+            recipientRawValue = newVal.replace(/\s/g, '');
+
+            if (recipientRawValue) {
+                const grouped = formatAddressGroups(recipientRawValue);
+                renderRecipient(grouped, isPaste);
+            } else {
+                updateRecipientDisplay();
+            }
+        });
+
+        recipientInput.addEventListener('paste', (e) => {
+            // Let the paste happen, then format
+            setTimeout(() => {
+                recipientRawValue = recipientInput.value.replace(/\s/g, '');
+                const grouped = formatAddressGroups(recipientRawValue);
+                renderRecipient(grouped, true);
+            }, 0);
+        });
+
+        // ─── Dreaming Numbers: idle field animation ─────────────
+        let dreamInterval = null;
+        let dreamIdleTimer = null;
+        const activeDreams = new Set();
+        const MAX_DREAMS = 12;
+
+        function createDreamNumber() {
+            if (activeDreams.size >= MAX_DREAMS) return;
+            const focusedEl = document.activeElement;
+            if (!focusedEl) return;
+            if (focusedEl.id !== 'sendInput' && focusedEl.id !== 'receiveInput' && focusedEl.id !== 'recipientInput') return;
+
+            const isHex = focusedEl.id === 'recipientInput';
+            const char = isHex
+                ? '0123456789abcdef'[Math.floor(Math.random() * 16)]
+                : '0123456789'[Math.floor(Math.random() * 10)];
+
+            const el = document.createElement('div');
+            el.className = 'dream-number';
+            el.textContent = char;
+
+            const rect = focusedEl.getBoundingClientRect();
+            // Approximate caret position: input left + padding + (text length * char width)
+            const charW = isHex ? 10 : 14;
+            const textWidth = (focusedEl.value || '').length * charW;
+            const caretApprox = Math.min(rect.left + 14 + textWidth, rect.right - 10);
+            const startX = caretApprox + (Math.random() - 0.5) * 40;
+            const startY = rect.top + rect.height / 2;
+            const drift = (Math.random() - 0.5) * 200;
+            const rise = 80 + Math.random() * 150;
+            const duration = 3 + Math.random() * 3;
+
+            el.style.cssText = `
+                position: absolute;
+                left: ${startX}px;
+                top: ${startY}px;
+                font-size: ${0.9 + Math.random() * 0.8}rem;
+                color: ${isHex ? '#8A8A82' : '#9A958C'};
+                opacity: 0;
+                transition: transform ${duration}s ease-out, opacity ${duration * 0.4}s ease-in;
+            `;
+
+            viewport.appendChild(el);
+            activeDreams.add(el);
+
+            void el.offsetWidth;
+            el.style.opacity = '0.6';
+            el.style.transform = `translate(${drift}px, -${rise}px)`;
+
+            setTimeout(() => {
+                el.style.transition = 'transform 0.8s ease-out, opacity 0.8s ease-out';
+                el.style.transform = `translate(${drift}px, -${rise + 30}px)`;
+                el.style.opacity = '0';
+            }, duration * 1000 - 800);
+
+            setTimeout(() => {
+                if (el.parentElement) el.remove();
+                activeDreams.delete(el);
+            }, duration * 1000 + 100);
+        }
+
+        function startDreams() {
+            if (dreamInterval) return;
+            createDreamNumber();
+            dreamInterval = setInterval(() => {
+                createDreamNumber();
+            }, 1200 + Math.random() * 800);
+        }
+
+        function stopDreams() {
+            if (dreamInterval) {
+                clearInterval(dreamInterval);
+                dreamInterval = null;
+            }
+        }
+
+        function onDreamTyping() {
+            stopDreams();
+            const activeEl = document.activeElement;
+            if (activeEl && (activeEl.id === 'sendInput' || activeEl.id === 'receiveInput' || activeEl.id === 'recipientInput')) {
+                if (dreamIdleTimer) clearTimeout(dreamIdleTimer);
+                dreamIdleTimer = setTimeout(() => {
+                    if (document.activeElement === activeEl) startDreams();
+                }, 10000);
+            }
+        }
+
+        [sendInput, document.getElementById('receiveInput'), recipientInput].forEach(inp => {
+            if (!inp) return;
+            inp.addEventListener('input', onDreamTyping);
+            inp.addEventListener('focus', () => {
+                stopDreams();
+                if (dreamIdleTimer) clearTimeout(dreamIdleTimer);
+                dreamIdleTimer = setTimeout(() => {
+                    if (document.activeElement === inp) startDreams();
+                }, 10000);
+            });
+            inp.addEventListener('blur', () => {
+                if (dreamIdleTimer) clearTimeout(dreamIdleTimer);
+                stopDreams();
+            });
+        });
+
+        // ─── Send Button: zip away if all fields filled ─────────
+        const sendBtn = document.getElementById('sendBtn');
+        sendBtn.addEventListener('click', () => {
+            const sendVal = sendInput.value;
+            const recVal  = document.getElementById('receiveInput').value;
+            const recipVal = recipientRawValue;
+            if (sendVal && recVal && recipVal) {
+                // All fields filled — trigger zip-away
+                targetZipX = window.innerWidth;
+                // Fade shadow as card leaves
+                curShadowOp = 0;
+            }
+        });
+
+        // ─── Signature Positioning ──────────────────────────────
+        function positionSignature() {
+            const sigWidth = sig.offsetWidth || 191;
+            sig.style.left = (window.innerWidth - 40 - sigWidth) + 'px';
+            sig.style.top  = (window.innerHeight - 45) + 'px';
+        }
+        positionSignature();
+        window.addEventListener('resize', positionSignature);
+
+        const sigImg = sig.querySelector('img');
+        if (sigImg) {
+            sigImg.onload = positionSignature;
+            if (sigImg.complete) positionSignature();
+        }
+
+        // ─── Audio: snap/clap detection triggers Send ───────────
+        const AUDIO_THRESHOLD = 0.18;
+        let audioCtx = null;
+        let audioAnalyser = null;
+        let audioData = null;
+        let snapCooldown = false;
+
+        function trySend() {
+            const sendVal = sendInput.value;
+            const recVal  = document.getElementById('receiveInput').value;
+            const recipVal = recipientRawValue;
+            if (sendVal && recVal && recipVal) {
+                targetZipX = window.innerWidth;
+                curShadowOp = 0;
+            }
+        }
+
+        async function startMic() {
+            if (audioCtx) return;
+            try {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                const source = audioCtx.createMediaStreamSource(stream);
+                audioAnalyser = audioCtx.createAnalyser();
+                audioAnalyser.fftSize = 512;
+                audioAnalyser.smoothingTimeConstant = 0.6;
+                source.connect(audioAnalyser);
+                audioData = new Uint8Array(audioAnalyser.frequencyBinCount);
+                monitorAudio();
+            } catch (err) {
+                console.log('Mic unavailable:', err.name);
+            }
+        }
+
+        function monitorAudio() {
+            if (!audioAnalyser) return;
+            audioAnalyser.getByteFrequencyData(audioData);
+            let sum = 0;
+            for (let i = 0; i < audioData.length; i++) {
+                sum += audioData[i];
+            }
+            const avg = sum / audioData.length / 255;
+
+            if (avg > AUDIO_THRESHOLD && !snapCooldown) {
+                trySend();
+                snapCooldown = true;
+                setTimeout(() => { snapCooldown = false; }, 2000);
+            }
+            requestAnimationFrame(monitorAudio);
+        }
+
+        // Browser requires user gesture for mic access
+        document.addEventListener('click', startMic, { once: true });
+        document.addEventListener('keydown', startMic, { once: true });
+    </script>
+</body>
+</html>
