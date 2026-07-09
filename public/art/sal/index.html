@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In[ur]face</title>
+    <title>sal</title>
     <style>
         :root {
             --ink: #0D0C0B;
@@ -43,32 +43,34 @@
             align-items: center;
             justify-content: center;
             background:
-                radial-gradient(ellipse 80% 60% at 50% 30%, #F8F6F3 0%, #E8E4DF 40%, transparent 70%),
+                radial-gradient(ellipse 85% 70% at 50% 40%, #FFFFFF 0%, #F5F5F5 25%, #E8E8E8 45%, transparent 72%),
                 linear-gradient(to bottom,
-                    #E8E4DF 0%,
-                    #D8D4CE 45%,
-                    #D0CCC6 55%,
-                    #C8C4BE 65%,
-                    #BEBAB4 100%);
+                    #B8B8B8 0%,
+                    #C8C8C8 25%,
+                    #D8D8D8 42%,
+                    #E5E5E5 50%,
+                    #D0D0D0 58%,
+                    #C0C0C0 75%,
+                    #A8A8A8 100%);
             perspective: 1200px;
             overflow: hidden;
             position: relative;
         }
 
-        /* Very faint warmth glow — barely visible in bright studio */
+        /* Very faint cool glow — white studio light */
         .ambient-glow {
             position: absolute;
             width: 600px;
             height: 600px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(232, 168, 124, 0.025) 0%, rgba(232, 168, 124, 0.01) 40%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.015) 40%, transparent 70%);
             pointer-events: none;
             z-index: 0;
-            mix-blend-mode: multiply;
+            mix-blend-mode: overlay;
             will-change: transform, opacity;
         }
 
-        /* Floor shadow — sits below the card on the cyclorama floor */
+        /* Floor shadow — cast by the card onto the studio floor */
         .floor-shadow {
             position: absolute;
             width: 360px;
@@ -358,7 +360,7 @@
                 <div class="card-glint" id="glint"></div>
                 <div class="card-content" id="cardContent">
                     <header>
-                        <h1>In[ur]face</h1>
+                        <h1>sal</h1>
                         <div class="subtitle">Bridge</div>
                     </header>
 
@@ -449,6 +451,63 @@
         // Breathing phase for idle animation
         let breathPhase = 0;
 
+        // ─── Fill progress: 3-stage card colour shift ──
+        // Stage 1: white (1 field) → soft blush #EFB4B8
+        // Stage 2: #EFB4B8 (2 fields) → coral #E46F78
+        // Stage 3: #E46F78 (3 fields) → crimson #D92938
+        const COL_STAGE1_START = { r: 250, g: 250, b: 248 }; // white
+        const COL_STAGE1_END   = { r: 239, g: 180, b: 184 }; // #EFB4B8
+        const COL_STAGE2_END   = { r: 228, g: 111, b: 120 }; // #E46F78
+        const COL_STAGE3_END   = { r: 217, g:  41, b:  56 }; // #D92938
+        let fillProgress = 0;
+        let targetFillProgress = 0;
+
+        function lerp(a, b, t) { return a + (b - a) * t; }
+
+        function updateFillProgress() {
+            let filledCount = 0;
+            if (sendInput.value.trim()) filledCount++;
+            if (document.getElementById('receiveInput').value.trim()) filledCount++;
+            if (recipientRawValue) filledCount++;
+            targetFillProgress = filledCount / 3;
+        }
+
+        function getFillColour(t) {
+            // t is 0..1 across all three stages
+            let r, g, b;
+            if (t <= 1/3) {
+                // Stage 1: white → #90B19E
+                const st = t * 3;
+                r = lerp(COL_STAGE1_START.r, COL_STAGE1_END.r, st);
+                g = lerp(COL_STAGE1_START.g, COL_STAGE1_END.g, st);
+                b = lerp(COL_STAGE1_START.b, COL_STAGE1_END.b, st);
+            } else if (t <= 2/3) {
+                // Stage 2: #90B19E → #286542
+                const st = (t - 1/3) * 3;
+                r = lerp(COL_STAGE1_END.r, COL_STAGE2_END.r, st);
+                g = lerp(COL_STAGE1_END.g, COL_STAGE2_END.g, st);
+                b = lerp(COL_STAGE1_END.b, COL_STAGE2_END.b, st);
+            } else {
+                // Stage 3: #286542 → #084A24
+                const st = (t - 2/3) * 3;
+                r = lerp(COL_STAGE2_END.r, COL_STAGE3_END.r, st);
+                g = lerp(COL_STAGE2_END.g, COL_STAGE3_END.g, st);
+                b = lerp(COL_STAGE2_END.b, COL_STAGE3_END.b, st);
+            }
+            return { r: Math.round(r), g: Math.round(g), b: Math.round(b) };
+        }
+
+        function applyFillColour() {
+            const c = getFillColour(fillProgress);
+            document.querySelector('.card').style.background = `rgb(${c.r}, ${c.g}, ${c.b})`;
+
+            // Labels: lighten toward white as card darkens
+            const labels = document.querySelectorAll('.card label');
+            const labelBrightness = Math.round(lerp(138, 255, fillProgress));
+            const labelCol = `rgb(${labelBrightness}, ${labelBrightness}, ${labelBrightness})`;
+            labels.forEach(l => l.style.color = labelCol);
+        }
+
         // ─── Mouse Events ───────────────────────────────────────
         function fieldHasContent() {
             return !!(sendInput.value || document.getElementById('receiveInput').value || recipientRawValue);
@@ -502,10 +561,15 @@
 
         // ─── Animation Loop ─────────────────────────────────────
         function animate() {
-            // When frozen (field focused), skip mouse tracking but keep digit boost + zip
+            // When frozen (field focused), skip mouse tracking but keep digit boost + zip + fill
             if (isFrozen) {
                 digitBoost += (targetDigitBoost - digitBoost) * 0.08;
                 curZipX += (targetZipX - curZipX) * 0.08;
+
+                // Still interpolate fill progress while frozen
+                fillProgress += (targetFillProgress - fillProgress) * 0.06;
+                applyFillColour();
+
                 const totalScale = curScale + digitBoost;
                 cardWrapper.style.transform =
                     `perspective(${PERSPECTIVE}px) ` +
@@ -639,6 +703,10 @@
                 `translateX(${parallaxX.toFixed(2)}px) ` +
                 `translateY(${parallaxY.toFixed(2)}px)`;
 
+            // Lerp fill progress and apply
+            fillProgress += (targetFillProgress - fillProgress) * 0.06;
+            applyFillColour();
+
             // Glow
             glow.style.transform =
                 `translate(${(curGlowX - 300).toFixed(1)}px, ${(curGlowY - 300).toFixed(1)}px)`;
@@ -726,6 +794,8 @@
                 const digitCount = newVal.replace(/\D/g,'').length;
                 targetDigitBoost = Math.min(Math.floor(digitCount / 2) * 0.1, 0.4);
 
+                updateFillProgress();
+
                 // Find which characters are newly added
                 if (newVal.length > prevValue.length) {
                     // Characters were added — find the insertion point
@@ -750,6 +820,7 @@
                 renderMirror(new Set());
                 // Set initial boost based on existing digits
                 targetDigitBoost = Math.min(Math.floor(inputEl.value.replace(/\D/g,'').length / 2) * 0.1, 0.4);
+                updateFillProgress();
             });
 
             inputEl.addEventListener('blur', () => {
@@ -881,6 +952,7 @@
             } else {
                 updateRecipientDisplay();
             }
+            updateFillProgress();
         });
 
         recipientInput.addEventListener('paste', (e) => {
@@ -889,6 +961,7 @@
                 recipientRawValue = recipientInput.value.replace(/\s/g, '');
                 const grouped = formatAddressGroups(recipientRawValue);
                 renderRecipient(grouped, true);
+                updateFillProgress();
             }, 0);
         });
 
