@@ -175,3 +175,7 @@ Some of you will notice that we asked audio37 to keep the outputs in a "storage"
 Building these kinds of tools can be a rewarding process. It is a lot of power in your hands. But if you do get stuck or are unable to figure out how to get this kind of tool to suit a specific need of yours, just drop me a message and I may be able to help you. If you got everything working, then congrats and have fun!
 
 Next week, I am going to be talking about building a similar tool for video production. You should tune back in for that!
+
+## Related Video
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/47rOVbW2rHw" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
