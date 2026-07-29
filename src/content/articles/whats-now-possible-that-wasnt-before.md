@@ -95,3 +95,7 @@ India gained independence nearly eight decades ago. But regardless of whether th
 I recently got pulled back into the same old argument: AI art isn't real art, only hours with a pencil or brush confer the title. I asked the question I've asked before — should I not be an artist because I never mastered those tools? Banksy used stencils. I used Photoshop. The tool's only job is to serve expression. Hours spent learning to mix paint or control a brushstroke are admirable, but they shouldn't be the gatekeeper of expression.
 
 These pieces were my way of testing a boundary. What happens when a corner radius moves? When stillness becomes the input? When an interface has a soul? When law looks like code? Each one started as a question I didn't know how to answer — and AI gave me the means to find out.
+
+## Related Video
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/-i2guTUtZl4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
