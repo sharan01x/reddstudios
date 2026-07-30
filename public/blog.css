@@ -153,6 +153,12 @@ a:hover { opacity: 0.65; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 
+/* Tab links: prevent global a:hover opacity */
+.tabs-nav a:hover,
+.mobile-menu-dropdown a:hover {
+    opacity: 1;
+}
+
 /* === MOBILE HAMBURGER MENU === */
 .mobile-menu-toggle {
     display: none;
