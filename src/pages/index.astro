@@ -233,7 +233,7 @@ const formatDate = (dateStr: string) => {
                             </div>
                         </div>
                         <div class="playlist-player">
-                            <audio class="audio-player" data-index={index} controls preload="none">
+                            <audio class="audio-player" data-index={index} data-article-title={article.data.title} data-audio-type="reader" controls preload="none">
                                 <source src={article.data.audio} type="audio/mpeg">
                             </audio>
                         </div>
@@ -265,7 +265,7 @@ const formatDate = (dateStr: string) => {
                             </div>
                         </div>
                         <div class="playlist-player">
-                            <audio class="podcast-player" data-index={index} controls preload="none">
+                            <audio class="podcast-player" data-index={index} data-article-title={article.data.title} data-audio-type="podcast" controls preload="none">
                                 <source src={article.data.podcast} type="audio/mpeg">
                             </audio>
                         </div>
@@ -688,5 +688,91 @@ const formatDate = (dateStr: string) => {
         
         // Initialize on page load
         initTabFromHash();
+    });
+</script>
+
+<script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Tab switch tracking
+        const tabObserver = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                    const el = mutation.target;
+                    if (el.classList.contains('tab-content') && el.classList.contains('active')) {
+                        const tabName = el.id.replace('-tab', '');
+                        if (window.posthog) {
+                            window.posthog.capture('tab_switch', {
+                                tab_name: tabName,
+                                page_path: location.pathname
+                            });
+                        }
+                    }
+                }
+            });
+        });
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tabObserver.observe(tab, { attributes: true, attributeFilter: ['class'] });
+        });
+
+        // Tag filter tracking
+        document.querySelectorAll('.tag-filter').forEach(filter => {
+            filter.addEventListener('click', function() {
+                const tag = filter.dataset.tag;
+                const scope = filter.dataset.scope || 'posts';
+                if (window.posthog && tag && tag !== 'all') {
+                    window.posthog.capture('tag_filter', {
+                        tag: tag,
+                        scope: scope,
+                        page_path: location.pathname
+                    });
+                }
+            });
+        });
+
+        // Audio tracking for index page
+        function trackIndexAudio(containerSelector, defaultType) {
+            const container = document.querySelector(containerSelector);
+            if (!container) return;
+            window.xfAnalytics.initAudioTracking(
+                container,
+                audio => audio.dataset.audioType || defaultType,
+                audio => audio.dataset.articleTitle || 'unknown'
+            );
+        }
+        trackIndexAudio('#audio-tab', 'reader');
+        trackIndexAudio('#podcasts-tab', 'podcast');
+
+        // Video thumbnail click tracking
+        document.querySelectorAll('.video-thumbnail-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const card = link.closest('.video-card');
+                const titleEl = card?.querySelector('.video-title');
+                const title = titleEl ? titleEl.textContent.trim() : 'unknown';
+                const href = link.getAttribute('href') || '';
+                const videoIdMatch = href.match(/v=([a-zA-Z0-9_-]+)/);
+                if (window.posthog) {
+                    window.posthog.capture('video_thumbnail_click', {
+                        video_title: title,
+                        video_id: videoIdMatch ? videoIdMatch[1] : 'unknown',
+                        page_path: location.pathname
+                    });
+                }
+            });
+        });
+
+        // Art piece click tracking
+        document.querySelectorAll('.art-preview-link, .art-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = link.getAttribute('href') || '';
+                const slugMatch = href.match(/\/art\/([^/]+)\//);
+                const slug = slugMatch ? slugMatch[1] : 'unknown';
+                if (window.posthog) {
+                    window.posthog.capture('art_piece_open', {
+                        art_slug: slug,
+                        page_path: location.pathname
+                    });
+                }
+            });
+        });
     });
 </script>

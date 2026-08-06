@@ -76,7 +76,7 @@ const formatDate = (dateStr: string) => {
                             <div class="audio-label">
                                 <i class="fas fa-volume-up"></i>&nbsp;Reader
                             </div>
-                            <audio controls preload="metadata">
+                            <audio controls preload="metadata" data-article-slug={article.id.replace(/\.md$/, '')} data-audio-type="reader">
                                 <source src={`/${article.data.audio}`} type="audio/mpeg">
                                 Your browser does not support audio.
                             </audio>
@@ -86,7 +86,7 @@ const formatDate = (dateStr: string) => {
                                 <div class="audio-label">
                                     <i class="fas fa-podcast"></i>&nbsp;Podcast
                                 </div>
-                                <audio controls preload="metadata">
+                                <audio controls preload="metadata" data-article-slug={article.id.replace(/\.md$/, '')} data-audio-type="podcast">
                                     <source src={`/${article.data.podcast}`} type="audio/mpeg">
                                     Your browser does not support audio.
                                 </audio>
@@ -103,4 +103,19 @@ const formatDate = (dateStr: string) => {
             <GiscusComments />
         </div>
     </div>
+
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.xfAnalytics.initScrollTracking([25, 50, 75, 90]);
+
+            const audioSection = document.querySelector('.audio-section');
+            if (audioSection) {
+                window.xfAnalytics.initAudioTracking(
+                    audioSection,
+                    audio => audio.dataset.audioType,
+                    audio => audio.dataset.articleSlug
+                );
+            }
+        });
+    </script>
 </BaseLayout>

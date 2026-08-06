@@ -23,6 +23,110 @@ const { title, description = 'For the Post-Skill Designer', bodyClass = 'page-in
         !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
         posthog.init('phc_HFB139SSCTbjzHK0MdGZWCicWmJcSlp8YenXs6h0hkW',{api_host:'https://eu.i.posthog.com'})
     </script>
+    <script is:inline>
+        window.xfAnalytics = {
+            _audioProgress: {},
+            _scrollDepth: {},
+
+            slugFromPath() {
+                const p = location.pathname;
+                const m = p.match(/^\/articles\/(.+?)(?:\/)?$/);
+                return m ? m[1] : p;
+            },
+
+            trackAudioProgress(audioEl, audioType, articleSlug) {
+                const key = audioType + '_' + articleSlug;
+                if (!window.xfAnalytics._audioProgress[key]) {
+                    window.xfAnalytics._audioProgress[key] = {25:false, 50:false, 75:false, 90:false, 100:false};
+                }
+                const dur = audioEl.duration;
+                if (!dur || dur === Infinity) return;
+                const pct = (audioEl.currentTime / dur) * 100;
+                const prog = window.xfAnalytics._audioProgress[key];
+                [25,50,75,90,100].forEach(th => {
+                    if (!prog[th] && pct >= th) {
+                        prog[th] = true;
+                        if (window.posthog) {
+                            window.posthog.capture('audio_progress', {
+                                article_slug: articleSlug,
+                                audio_type: audioType,
+                                progress_pct: th,
+                                current_time: Math.round(audioEl.currentTime),
+                                page_path: location.pathname
+                            });
+                        }
+                    }
+                });
+            },
+
+            trackAudioPlay(audioEl, audioType, articleSlug) {
+                if (window.posthog) {
+                    window.posthog.capture('audio_play', {
+                        article_slug: articleSlug,
+                        audio_type: audioType,
+                        current_time: Math.round(audioEl.currentTime || 0),
+                        page_path: location.pathname
+                    });
+                }
+            },
+
+            trackAudioEnded(audioEl, audioType, articleSlug) {
+                const dur = audioEl.duration;
+                if (window.posthog) {
+                    window.posthog.capture('audio_completion', {
+                        article_slug: articleSlug,
+                        audio_type: audioType,
+                        duration: Math.round(dur || 0),
+                        page_path: location.pathname
+                    });
+                }
+            },
+
+            initAudioTracking(container, typeGetter, slugGetter) {
+                const audios = container.querySelectorAll('audio');
+                audios.forEach(audio => {
+                    const type = typeof typeGetter === 'function' ? typeGetter(audio) : typeGetter;
+                    const slug = typeof slugGetter === 'function' ? slugGetter(audio) : slugGetter;
+                    if (!slug || !type) return;
+                    audio.addEventListener('play', () => this.trackAudioPlay(audio, type, slug));
+                    audio.addEventListener('timeupdate', () => this.trackAudioProgress(audio, type, slug));
+                    audio.addEventListener('ended', () => this.trackAudioEnded(audio, type, slug));
+                });
+            },
+
+            initScrollTracking(thresholds) {
+                const page = location.pathname;
+                if (!this._scrollDepth[page]) {
+                    this._scrollDepth[page] = {};
+                    (thresholds || [25,50,75,90]).forEach(t => { this._scrollDepth[page][t] = false; });
+                }
+                const maxScroll = () => {
+                    const h = document.documentElement;
+                    return h.scrollHeight - h.clientHeight;
+                };
+                const onScroll = () => {
+                    const max = maxScroll();
+                    if (max <= 0) return;
+                    const pct = (window.scrollY / max) * 100;
+                    const page = location.pathname;
+                    const state = this._scrollDepth[page];
+                    (thresholds || [25,50,75,90]).forEach(th => {
+                        if (!state[th] && pct >= th) {
+                            state[th] = true;
+                            if (window.posthog) {
+                                window.posthog.capture('article_scroll', {
+                                    depth_pct: th,
+                                    page_path: page,
+                                    article_slug: this.slugFromPath()
+                                });
+                            }
+                        }
+                    });
+                };
+                window.addEventListener('scroll', onScroll, { passive: true });
+            }
+        };
+    </script>
 </head>
 <body class={bodyClass}>
     <div class="floating-logo">
