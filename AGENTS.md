@@ -11,6 +11,7 @@ Website at redd.in. YouTube channel @reddxf.
 - **Stats tool:** `~/Documents/Code/reddxf-statistics/` (Node.js + SQLite)
 - **Social posting:** SocialsPoster (`~/Documents/Code/SocialsPoster/`), Paragraph API
 - **Deploy:** Push to `main` branch → GitHub Pages auto-deploys to redd.in
+- **Sitemap:** `@astrojs/sitemap` integration — auto-generated on build, no manual maintenance needed
 
 ## Project Structure
 
@@ -35,6 +36,29 @@ npm run dev      # Local dev server (http://localhost:4321)
 npm run build    # Production build → dist/
 npm run preview  # Preview production build
 ```
+
+## Sitemap & SEO
+
+The site uses the `@astrojs/sitemap` integration (configured in `astro.config.mjs`) to automatically generate sitemap files during build.
+
+### Generated Files
+
+- `sitemap-index.xml` — Main sitemap index (lists all sub-sitemaps)
+- `sitemap-0.xml` — Contains all page URLs (homepage + all articles)
+
+Both are generated into `dist/` on `npm run build` and deployed to:
+- `https://redd.in/sitemap-index.xml` (submit this to Google Search Console)
+- `https://redd.in/sitemap-0.xml`
+
+### Google Search Console
+
+- **Sitemap URL to submit:** `sitemap-index.xml`
+- **Property:** `redd.in` (URL prefix method)
+- The sitemap is regenerated automatically whenever new articles are added and the site is built — no manual sitemap updates needed.
+
+### Adding SEO to New Articles
+
+The sitemap picks up all pages automatically. No action needed beyond the normal build & deploy flow when adding articles.
 
 ## Deploy (CRITICAL — do not skip)
 
