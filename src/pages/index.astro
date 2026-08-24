@@ -133,7 +133,7 @@ const formatDate = (dateStr: string) => {
 };
 ---
 
-<BaseLayout title="Redd XF">
+<BaseLayout title="Redd XF" canonicalPath="/">
     <div class="container">
         <div class="header">
             <h1>Redd XF</h1>
@@ -188,14 +188,14 @@ const formatDate = (dateStr: string) => {
                     <div class="article-item" data-tags={article.data.tags.join(' ')}>
                         {article.data.image && (
                             <div class="article-image">
-                                <a href={`/articles/${article.id.replace(/\.md$/, '')}`}>
+                                <a href={`/articles/${article.id.replace(/\.md$/, '')}/`}>
                                     <img src={`/${article.data.image}`} alt={article.data.title} loading="lazy">
                                 </a>
                             </div>
                         )}
                         <div class="article-content">
                             <div class="article-header">
-                                <h2><a href={`/articles/${article.id.replace(/\.md$/, '')}`}>{article.data.title}</a></h2>
+                                <h2><a href={`/articles/${article.id.replace(/\.md$/, '')}/`}>{article.data.title}</a></h2>
                                 <div class="article-subtitle">{article.data.subtitle}</div>
                             </div>
                             <div class="article-meta">

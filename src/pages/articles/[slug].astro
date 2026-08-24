@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content } = await render(article);
+const articleSlug = article.id.replace(/\.md$/, '');
 
 const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
@@ -20,7 +21,7 @@ const formatDate = (dateStr: string) => {
 };
 ---
 
-<BaseLayout title={`${article.data.title} | Redd XF`} bodyClass="page-article">
+<BaseLayout title={`${article.data.title} | Redd XF`} description={article.data.subtitle} bodyClass="page-article" canonicalPath={`/articles/${articleSlug}/`}>
     <a href="/#articles" class="floating-back-button" title="Back to Articles">
         <i class="fas fa-arrow-left"></i>
     </a>

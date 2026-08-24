@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Page Not Found | Redd XF</title>
+    <meta name="description" content="This page could not be found. Browse articles, videos, and art on Redd XF.">
+    <link rel="canonical" href="https://redd.in/">
+    <link rel="icon" href="/logo_8b2c4ff1.png">
+    <link rel="stylesheet" href="/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg, #0a0a0a);
+            color: var(--text, #e0e0e0);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .error-container {
+            text-align: center;
+            max-width: 500px;
+            padding: 2rem;
+        }
+        .error-code {
+            font-size: 5rem;
+            font-weight: 200;
+            margin: 0;
+            color: var(--accent, #ff6b35);
+        }
+        .error-message {
+            font-size: 1.25rem;
+            margin: 1rem 0 2rem;
+            opacity: 0.7;
+        }
+        .error-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--accent, #ff6b35);
+            border-radius: 4px;
+            text-decoration: none;
+            color: var(--accent, #ff6b35);
+            transition: background 0.2s, color 0.2s;
+        }
+        .error-link:hover {
+            background: var(--accent, #ff6b35);
+            color: var(--bg, #0a0a0a);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">This page could not be found. It may have been moved or no longer exists.</p>
+        <a href="/" class="error-link"><i class="fas fa-arrow-left"></i> Back to Redd XF</a>
+    </div>
+</body>
+</html>

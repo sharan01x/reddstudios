@@ -3,9 +3,12 @@ export interface Props {
   title: string;
   description?: string;
   bodyClass?: string;
+  canonicalPath?: string;
 }
 
-const { title, description = 'For the Post-Skill Designer', bodyClass = 'page-index' } = Astro.props;
+const { title, description = 'For the Post-Skill Designer', bodyClass = 'page-index', canonicalPath } = Astro.props;
+const siteUrl = 'https://redd.in';
+const canonical = canonicalPath ? `${siteUrl}${canonicalPath}` : siteUrl;
 ---
 
 <!DOCTYPE html>
@@ -14,7 +17,18 @@ const { title, description = 'For the Post-Skill Designer', bodyClass = 'page-in
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
-    <meta name="description" content={description}>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Redd XF" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${siteUrl}/logo_8b2c4ff1.png`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${siteUrl}/logo_8b2c4ff1.png`} />
     <link rel="alternate" type="application/rss+xml" title="Redd XF RSS Feed" href="/rss.xml">
     <link rel="icon" href="/logo_8b2c4ff1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
