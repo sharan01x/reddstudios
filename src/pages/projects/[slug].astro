@@ -1,0 +1,165 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+    const projects = await getCollection('projects');
+    return projects.map(project => ({
+        params: { slug: project.id.replace(/\.md$/, '') },
+        props: { project },
+    }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const projectSlug = project.id.replace(/\.md$/, '');
+
+const formatDate = (dateStr: string) => {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' });
+};
+
+// Placeholder images for the gallery — replace with actual project images later
+const galleryImages = [
+    'project-placeholder.png',
+    'project-placeholder.png',
+    'project-placeholder.png',
+];
+---
+
+<BaseLayout title={`${project.data.title} | Redd XF`} description={project.data.subtitle} bodyClass="page-project" canonicalPath={`/projects/${projectSlug}/`}>
+    <a href="/#projects" class="floating-back-button" title="Back to Projects">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+        <div class="project-card">
+            {project.data.image && (
+                <div class="featured-image-container">
+                    <img src={`/${project.data.image}`} alt={project.data.title} class="featured-image" />
+                </div>
+            )}
+
+            <div class="header">
+                <h1>{project.data.title}</h1>
+                <div class="subtitle">{project.data.subtitle}</div>
+                <div class="tags-display-view">
+                    {project.data.tags.map(tag => (
+                        <span class="tag-chip-view">{tag}</span>
+                    ))}
+                </div>
+            </div>
+
+            <div class="project-metadata">
+                <div class="metadata-row">
+                    <div class="metadata-item">
+                        <span class="metadata-label">Project Name</span>
+                        <span class="metadata-value">{project.data.title}</span>
+                    </div>
+                    {project.data.client && (
+                        <div class="metadata-item">
+                            <span class="metadata-label">Client</span>
+                            <span class="metadata-value">{project.data.client}</span>
+                        </div>
+                    )}
+                    <div class="metadata-item">
+                        <span class="metadata-label">Date</span>
+                        <span class="metadata-value">{formatDate(project.data.date)}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-description">
+                <h2>Description</h2>
+                <Content />
+            </div>
+
+            <div class="project-gallery">
+                <h2>Work</h2>
+                <div class="gallery-grid" id="project-gallery">
+                    {galleryImages.map((img, index) => (
+                        <div class="gallery-item" data-index={index}>
+                            <img src={`/${img}`} alt={`${project.data.title} — image ${index + 1}`} loading="lazy" class="gallery-thumb" data-index={index} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+            <img src="" alt="" class="lightbox-img" />
+            <button class="lightbox-nav lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-counter"><span id="lightbox-current">1</span> / <span id="lightbox-total">{galleryImages.length}</span></div>
+        </div>
+    </div>
+
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.xfAnalytics.initScrollTracking([25, 50, 75, 90]);
+
+            const galleryImages = Array.from(document.querySelectorAll('.gallery-thumb'));
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = lightbox.querySelector('.lightbox-img');
+            const lightboxCurrent = document.getElementById('lightbox-current');
+            const lightboxTotal = document.getElementById('lightbox-total');
+            const closeBtn = lightbox.querySelector('.lightbox-close');
+            const prevBtn = lightbox.querySelector('.lightbox-prev');
+            const nextBtn = lightbox.querySelector('.lightbox-next');
+            const backdrop = lightbox.querySelector('.lightbox-backdrop');
+
+            let currentIndex = 0;
+            const total = galleryImages.length;
+
+            function openLightbox(index) {
+                currentIndex = index;
+                const src = galleryImages[index].getAttribute('src');
+                const alt = galleryImages[index].getAttribute('alt');
+                lightboxImg.setAttribute('src', src);
+                lightboxImg.setAttribute('alt', alt);
+                lightboxCurrent.textContent = (index + 1).toString();
+                lightboxTotal.textContent = total.toString();
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                lightboxImg.setAttribute('src', '');
+                document.body.style.overflow = '';
+            }
+
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % total;
+                openLightbox(currentIndex);
+            }
+
+            function prevImage() {
+                currentIndex = (currentIndex - 1 + total) % total;
+                openLightbox(currentIndex);
+            }
+
+            galleryImages.forEach((img, index) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', () => openLightbox(index));
+            });
+
+            closeBtn.addEventListener('click', closeLightbox);
+            backdrop.addEventListener('click', closeLightbox);
+            nextBtn.addEventListener('click', nextImage);
+            prevBtn.addEventListener('click', prevImage);
+
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+            });
+        });
+    </script>
+</BaseLayout>

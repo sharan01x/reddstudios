@@ -5,11 +5,13 @@ import { getCollection } from 'astro:content';
 const articles = await getCollection('articles').then(articles => 
   articles.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
 );
-const posts = await getCollection('posts');
+const projects = await getCollection('projects').then(projects => 
+  projects.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+);
 const audioArticles = articles.filter(a => a.data.audio);
 const podcastArticles = articles.filter(a => a.data.podcast);
 
-const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
+const projectTags = [...new Set(projects.flatMap(p => p.data.tags))].sort();
 const additionalVideos = [
   {
     title: "What's Now Possible That Wasn't Before",
@@ -161,7 +163,7 @@ const formatDate = (dateStr: string) => {
                 <a href="#podcasts" class="tab-button" data-tab="podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
                 <a href="#videos" class="tab-button" data-tab="videos"><i class="fas fa-video"></i>Videos</a>
                 <a href="#art" class="tab-button" data-tab="art"><i class="fas fa-palette"></i>Art</a>
-                <a href="#posts" class="tab-button" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</a>
+                <a href="#projects" class="tab-button" data-tab="projects"><i class="fas fa-briefcase"></i>Projects</a>
             </div>
         </div>
         
@@ -172,7 +174,7 @@ const formatDate = (dateStr: string) => {
             <a href="#podcasts" class="mobile-menu-item" data-tab="podcasts"><i class="fas fa-podcast"></i>Podcasts</a>
             <a href="#videos" class="mobile-menu-item" data-tab="videos"><i class="fas fa-video"></i>Videos</a>
             <a href="#art" class="mobile-menu-item" data-tab="art"><i class="fas fa-palette"></i>Art</a>
-            <a href="#posts" class="mobile-menu-item" data-tab="posts"><i class="fas fa-comment-dots"></i>Posts</a>
+            <a href="#projects" class="mobile-menu-item" data-tab="projects"><i class="fas fa-briefcase"></i>Projects</a>
         </div>
         
         <!-- Articles Tab Content -->
@@ -463,28 +465,39 @@ const formatDate = (dateStr: string) => {
             </div>
         </div>
         
-        <!-- Posts Tab Content -->
-        <div id="posts-tab" class="tab-content">
-            <div class="tags-cloud">
-                <button class="tag-filter active" data-tag="all">All</button>
-                {allTags.map(tag => (
-                    <button class="tag-filter" data-tag={tag}>#{tag}</button>
+        <!-- Projects Tab Content -->
+        <div id="projects-tab" class="tab-content">
+            <div class="tags-cloud" id="projects-tags-cloud">
+                <button class="tag-filter active" data-tag="all" data-scope="projects">All</button>
+                {projectTags.map(tag => (
+                    <button class="tag-filter" data-tag={tag} data-scope="projects">{tag}</button>
                 ))}
             </div>
-            <div class="posts-grid">
-                {posts.map((post, index) => (
-                    <div class="post-card" data-tags={post.data.tags.join(' ')}>
-                        {post.data.image && (
-                            <div class="post-image">
-                                <img src={post.data.image} alt="" loading="lazy">
+            <div class="projects-list">
+                {projects.map((project) => (
+                    <div class="project-item" data-tags={project.data.tags.join(' ')}>
+                        {project.data.image && (
+                            <div class="project-image">
+                                <a href={`/projects/${project.id.replace(/\.md$/, '')}/`}>
+                                    <img src={`/${project.data.image}`} alt={project.data.title} loading="lazy">
+                                </a>
                             </div>
                         )}
-                        <div class="post-body">
-                            <div class={`post-content ${!post.data.image ? 'post-content--no-image' : ''} ${post.body.length < 200 ? 'post-content--short' : ''}`}>
-                                {post.body}
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2><a href={`/projects/${project.id.replace(/\.md$/, '')}/`}>{project.data.title}</a></h2>
+                                <div class="project-subtitle">{project.data.subtitle}</div>
                             </div>
-                            <div class="post-meta">
-                                <span class="post-date">{formatDate(post.data.date)}</span>
+                            <div class="project-meta">
+                                <span class="project-date">{formatDate(project.data.date)}</span>
+                                {project.data.client && (
+                                    <span class="project-client">{project.data.client}</span>
+                                )}
+                            </div>
+                            <div class="project-tags">
+                                {project.data.tags.map(tag => (
+                                    <span class="tag">{tag}</span>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -573,8 +586,8 @@ const formatDate = (dateStr: string) => {
         tagFilters.forEach(filter => {
             filter.addEventListener('click', () => {
                 const tag = filter.dataset.tag;
-                const scope = filter.dataset.scope || 'posts';
-                const container = scope === 'articles' ? '.articles-list' : '.posts-grid';
+                const scope = filter.dataset.scope || 'projects';
+                const container = scope === 'articles' ? '.articles-list' : scope === 'projects' ? '.projects-list' : '.posts-grid';
                 const items = document.querySelectorAll(`${container} > *`);
                 const cloud = filter.closest('.tags-cloud');
                 const filters = cloud?.querySelectorAll('.tag-filter');
@@ -718,7 +731,7 @@ const formatDate = (dateStr: string) => {
         document.querySelectorAll('.tag-filter').forEach(filter => {
             filter.addEventListener('click', function() {
                 const tag = filter.dataset.tag;
-                const scope = filter.dataset.scope || 'posts';
+                const scope = filter.dataset.scope || 'projects';
                 if (window.posthog && tag && tag !== 'all') {
                     window.posthog.capture('tag_filter', {
                         tag: tag,
