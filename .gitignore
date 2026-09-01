@@ -26,4 +26,7 @@ npm-debug.log*
 # Astro
 .astro/
 .worktrees/
+
+# Internal docs — venture plan symlink (canonical in ~/Documents/ReddGroup/)
 AGENTS.md
+plan.md
