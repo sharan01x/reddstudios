@@ -1,5 +1,5 @@
 ---
-title: "citystories"
+title: "City Stories"
 subtitle: "Walking guides that tell the story of a city"
 date: "27 Aug 2026"
 author: sharanx

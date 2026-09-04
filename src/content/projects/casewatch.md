@@ -1,5 +1,5 @@
 ---
-title: "casewatch"
+title: "CaseWatch"
 subtitle: "V1 of the case tracker tool"
 date: "20 Jul 2024"
 author: sharanx

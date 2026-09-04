@@ -1,5 +1,5 @@
 ---
-title: "secondread"
+title: "SecondRead"
 subtitle: "Plain-English code audits for non-technical founders"
 date: "27 Aug 2026"
 author: sharanx

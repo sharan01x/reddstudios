@@ -1,5 +1,5 @@
 ---
-title: "move37"
+title: "Move 37"
 subtitle: "Unlock your mind"
 date: "17 Feb 2026"
 author: sharanx
