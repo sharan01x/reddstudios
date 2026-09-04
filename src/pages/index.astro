@@ -474,18 +474,20 @@ const formatDate = (dateStr: string) => {
                 ))}
             </div>
             <div class="projects-list">
-                {projects.map((project) => (
+                {projects.map((project) => {
+                    const projectLink = project.data.website || `https://github.com/sharan01x/${project.id.replace(/\.md$/, '')}`;
+                    return (
                     <div class="project-item" data-tags={project.data.tags.join(' ')}>
                         {project.data.image && (
                             <div class="project-image">
-                                <a href={`/projects/${project.id.replace(/\.md$/, '')}/`}>
+                                <a href={projectLink} target="_blank" rel="noopener noreferrer">
                                     <img src={`/${project.data.image}`} alt={project.data.title} loading="lazy">
                                 </a>
                             </div>
                         )}
                         <div class="project-content">
                             <div class="project-header">
-                                <h2><a href={`/projects/${project.id.replace(/\.md$/, '')}/`}>{project.data.title}</a></h2>
+                                <h2><a href={projectLink} target="_blank" rel="noopener noreferrer">{project.data.title}</a></h2>
                                 <div class="project-subtitle">{project.data.subtitle}</div>
                             </div>
                             <div class="project-meta">
@@ -501,7 +503,8 @@ const formatDate = (dateStr: string) => {
                             </div>
                         </div>
                     </div>
-                ))}
+                    );
+                })}
             </div>
         </div>
     </div>

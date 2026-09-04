@@ -7,8 +7,9 @@ tags:
   - ai
   - reading
   - tools
-image: "project-placeholder.png"
+image: "reader.webp"
 client: "Redd Group"
+website: "https://github.com/sharan01x/reader"
 ---
 
 A modern EPUB reader that goes beyond pagination. Features semantic search across entire books, RAG-based chat for asking questions about the text, and integrated audio playback for listening on the go.

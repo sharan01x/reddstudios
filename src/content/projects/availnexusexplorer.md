@@ -9,6 +9,7 @@ tags:
   - explorer
 image: "project-placeholder.png"
 client: "Avail"
+website: "https://github.com/sharan01x/availnexusexplorer"
 ---
 
 An explorer for the Avail Nexus — showing cross-chain interactions, rollup settlements, and the unified interface that connects the modular blockchain ecosystem.

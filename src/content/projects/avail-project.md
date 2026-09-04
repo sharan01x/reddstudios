@@ -7,8 +7,9 @@ tags:
   - ux
   - design
   - web3
-image: "avail-project.png"
+image: "avail-website.webp"
 client: "Avail"
+website: "https://github.com/sharan01x/avail-website"
 ---
 
 A comprehensive UX overhaul for Avail's ecosystem of products, focused on simplifying the complexity of modular blockchain interactions for everyday users.

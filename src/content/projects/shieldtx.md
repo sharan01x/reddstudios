@@ -9,6 +9,7 @@ tags:
   - blockchain
 image: "project-placeholder.png"
 client: "Avail"
+website: "https://github.com/sharan01x/shieldtx"
 ---
 
 A secure transaction framework designed to protect users in the Web3 space. Focuses on safe signing flows, transaction simulation, and fraud detection before execution.

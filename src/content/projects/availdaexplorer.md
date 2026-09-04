@@ -9,6 +9,7 @@ tags:
   - explorer
 image: "project-placeholder.png"
 client: "Avail"
+website: "https://github.com/sharan01x/availdaexplorer"
 ---
 
 A block explorer focused on Data Availability (DA) within the Avail modular blockchain network. Visualises blob submissions, validation proofs, and network health in real time.

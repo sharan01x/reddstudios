@@ -7,8 +7,9 @@ tags:
   - music
   - app
   - audio
-image: "project-placeholder.png"
+image: "xfm.webp"
 client: "Personal"
+website: "https://github.com/sharan01x/xfm"
 ---
 
 A minimal, distraction-free music player focused on the listening experience. Clean interface, no unnecessary features — just you and your music.

@@ -9,6 +9,7 @@ tags:
   - branding
 image: "project-placeholder.png"
 client: "Avail"
+website: "https://github.com/sharan01x/availdesigntools"
 ---
 
 An AI-powered design generation pipeline that produces on-brand assets at scale. Built to maintain visual consistency across marketing materials, social posts, and product interfaces.
