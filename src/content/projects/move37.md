@@ -7,7 +7,7 @@ tags:
   - ai
   - productivity
   - app
-image: "project-placeholder.png"
+image: "move37.webp"
 client: "Redd Group"
 website: "https://github.com/sharan01x/move37"
 ---
